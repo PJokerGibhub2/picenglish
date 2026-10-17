@@ -11,7 +11,7 @@
 
 import { h, mount, clear, toast } from './ui.js';
 import { inAppBrowser } from './speech.js';
-import { startRecording, playBlob, abortRecording } from './recorder.js';
+import { startRecording, playBlob, abortRecording, micDiagnosticsReport } from './recorder.js';
 import * as store from './store.js';
 
 /**
@@ -84,10 +84,23 @@ export function micPanel(opts = {}) {
       toast('เริ่มอัดไม่ได้', 'err');
       statusEl.textContent = 'เริ่มอัดไม่ได้ — ' + why;
       // ทางออก: ฝึกต่อได้แม้ไมค์ใช้ไม่ได้ (ให้คะแนนตัวเอง)
-      mount(resultBox, h('button', {
-        class: 'btn btn-ghost btn-block btn-sm', type: 'button', style: { marginTop: '10px' },
-        onclick: () => { if (onNext) onNext(); },
-      }, 'ฝึกต่อโดยไม่ใช้ไมค์ →'));
+      mount(resultBox,
+        h('button', {
+          class: 'btn btn-ghost btn-block btn-sm', type: 'button', style: { marginTop: '10px' },
+          onclick: async (e) => {
+            e.currentTarget.disabled = true;
+            e.currentTarget.textContent = 'กำลังตรวจ…';
+            const rep = await micDiagnosticsReport();
+            try { await navigator.clipboard.writeText(rep); } catch (err) { /* ignore */ }
+            statusEl.style.whiteSpace = 'pre-wrap';
+            statusEl.style.textAlign = 'left';
+            statusEl.textContent = rep + '\n(คัดลอกแล้ว — ส่งให้ผู้พัฒนาได้เลย)';
+          },
+        }, '🔍 ตรวจละเอียด (คัดลอกอัตโนมัติ)'),
+        h('button', {
+          class: 'btn btn-ghost btn-block btn-sm', type: 'button', style: { marginTop: '8px' },
+          onclick: () => { if (onNext) onNext(); },
+        }, 'ฝึกต่อโดยไม่ใช้ไมค์ →'));
       return;
     }
     recording = true;

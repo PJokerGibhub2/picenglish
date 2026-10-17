@@ -465,7 +465,10 @@ export function roleplay(root, params = {}) {
         resolve({ said: said || '', blob: blob && blob.size > 200 ? blob : null, err: err || null });
       };
       (async () => {
-        if (recordEnabled()) {
+        // ⚠️ Android: การถือสตรีมไมค์ไว้พร้อม SpeechRecognition ทำให้ตัวรู้จำแย่งไมค์
+        // แล้วจบด้วย error audio-capture (อาการ "ไม่ได้ยินเสียง") → บน Android ไม่อัดพร้อมกัน
+        const safeConcurrent = !/Android/i.test(navigator.userAgent || '');
+        if (recordEnabled() && safeConcurrent) {
           try { recHandle = await startRecording(); } catch (e) { recHandle = null; }
         }
         const r = createRecognizer({
@@ -602,8 +605,11 @@ export function roleplay(root, params = {}) {
       actionBox.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '4px' },
         text: 'ฟังสลับไปมาเพื่อเทียบจังหวะและเสียง — หูของคุณคือครูที่ดีที่สุด' }));
     } else if (recordEnabled()) {
+      const android = /Android/i.test(navigator.userAgent || '');
       actionBox.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '8px' },
-        text: 'ครั้งนี้บันทึกเสียงไม่สำเร็จ (ไมค์อาจถูกแอปอื่นใช้อยู่) — ลองใหม่ได้' }));
+        text: android
+          ? 'โหมด Android: ให้คะแนนจากเสียงพูดโดยตรง (ไม่ได้เก็บไฟล์เสียงไว้ฟังเทียบ)'
+          : 'ครั้งนี้บันทึกเสียงไม่สำเร็จ (ไมค์อาจถูกแอปอื่นใช้อยู่) — ลองใหม่ได้' }));
     }
 
     // ---- สอนออกเสียงคำที่ยังไม่ชัด ----

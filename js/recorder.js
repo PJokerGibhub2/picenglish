@@ -33,6 +33,35 @@ let lastMime = '';
  * iOS/Safari = audio/mp4 (AAC) เท่านั้น · Chrome/Android = webm/opus
  * ถ้าไม่มี isTypeSupported ให้เดา mp4 (iOS รุ่นเก่า)
  */
+let lastGumError = '';
+
+/**
+ * ขอสิทธิ์ไมโครโฟนแบบไล่ลดเงื่อนไข
+ * Android บางรุ่น (Samsung/Oppo ฯลฯ) โยน OverconstrainedError หรือให้สตรีมเงียบ
+ * เมื่อใส่ echoCancellation/noiseSuppression → ลองใหม่แบบ audio:true
+ */
+async function getMicStream() {
+  const attempts = [
+    { audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } },
+    { audio: true },
+    { audio: { channelCount: 1 } },
+  ];
+  let lastErr = null;
+  for (const constraints of attempts) {
+    try {
+      const s = await navigator.mediaDevices.getUserMedia(constraints);
+      lastGumError = '';
+      return s;
+    } catch (err) {
+      lastErr = err;
+      lastGumError = (err && err.name ? err.name : 'Error') + (err && err.message ? ': ' + err.message : '');
+    }
+  }
+  throw lastErr || new Error('getUserMedia failed');
+}
+
+/** ข้อผิดพลาดล่าสุดจากการขอสิทธิ์ไมค์ (ไว้แสดงผล/วินิจฉัย) */
+export function lastMicError() { return lastGumError; }
 function pickMime() {
   if (typeof MediaRecorder === 'undefined') return '';
   const list = [
@@ -71,9 +100,7 @@ export async function startRecording(opts = {}) {
   if (!recordingSupported()) return null;
   if (currentRec && currentRec.state === 'recording') return null;
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({
-      audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
-    });
+    const stream = await getMicStream();
     const mime = pickMime();
     const rec = createRecorder(stream, mime);
     lastMime = rec.mimeType || mime || 'audio/mp4';
@@ -164,7 +191,7 @@ export async function testMicrophone(ms = 3000, onLevel = null) {
   const handle = await startRecording({
     onLevel: (l) => { peak = Math.max(peak, l); if (onLevel) onLevel(l); },
   });
-  if (!handle) { info.error = 'permission'; return info; }
+  if (!handle) { info.error = lastGumError || 'permission'; return info; }
   info.mime = lastMime;
   const t0 = Date.now();
   await new Promise((r) => setTimeout(r, ms));
@@ -172,7 +199,7 @@ export async function testMicrophone(ms = 3000, onLevel = null) {
   info.durationMs = Date.now() - t0;
   info.peak = peak;
   if (blob && blob.size > 0) { info.ok = true; info.bytes = blob.size; info.mime = blob.type || lastMime; }
-  else info.error = 'no-audio';
+  else info.error = lastGumError || 'no-audio';
   return info;
 }
 
@@ -402,6 +429,7 @@ export async function micDiagnosticsReport() {
     'permission=' + d.permission,
     'audioInputs=' + d.inputs,
     'mime=' + (d.mime || 'none'),
+    'gum=' + (lastGumError || 'ok'),
     'ua=' + d.platform,
   ].join(' | ');
 }
