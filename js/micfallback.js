@@ -10,6 +10,7 @@
  */
 
 import { h, mount, clear, toast } from './ui.js';
+import { inAppBrowser } from './speech.js';
 import { startRecording, playBlob, abortRecording } from './recorder.js';
 import * as store from './store.js';
 
@@ -76,8 +77,10 @@ export function micPanel(opts = {}) {
     peak = 0;
     handle = await startRecording({ onLevel: setLevel });
     if (!handle) {
-      toast('เริ่มอัดไม่ได้ — ตรวจสิทธิ์ไมโครโฟน', 'err');
-      statusEl.textContent = 'เริ่มอัดไม่ได้ — ไปที่ตั้งค่าเบราว์เซอร์แล้วอนุญาตไมค์';
+      const app = inAppBrowser();
+      const why = app ? ('เบราว์เซอร์ในแอป ' + app + ' มักบล็อกไมค์ — เปิดลิงก์ใน Chrome/Safari') : 'ไปที่ตั้งค่าเบราว์เซอร์แล้วอนุญาตไมค์';
+      toast('เริ่มอัดไม่ได้', 'err');
+      statusEl.textContent = 'เริ่มอัดไม่ได้ — ' + why;
       return;
     }
     recording = true;

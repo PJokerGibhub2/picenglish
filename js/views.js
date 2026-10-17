@@ -11,7 +11,7 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, speakSentence, renderSentence, clearHighlight, loadVoices,
-  englishVoices, sttSupported, sttSupport, createRecognizer, alignWords,
+  englishVoices, sttSupported, sttSupport, sttErrorReason, inAppBrowser, createRecognizer, alignWords,
 } from './speech.js';
 import { micPanel } from './micfallback.js';
 import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
@@ -138,6 +138,8 @@ export function learn(root, params = {}) {
 
   function destroy() { stopSpeaking(); }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function picker() {
     mount(root);
@@ -300,6 +302,8 @@ export function listen(root) {
 
   function destroy() { stopSpeaking(); autoNext = false; playing = false; }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function rebuildList() {
     list = shuffle(wordsOf(catId));
@@ -484,6 +488,8 @@ export function quiz(root) {
 
   function destroy() { stopSpeaking(); }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function build() {
     const pool = shuffle(wordsOf(catId));
@@ -632,6 +638,8 @@ export function match(root) {
 
   function destroy() { stopSpeaking(); clearInterval(timerId); }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function setup() {
     mount(root);
@@ -790,6 +798,8 @@ export function speakView(root) {
     recording = false;
   }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function render() {
     mount(root);
@@ -833,8 +843,20 @@ export function speakView(root) {
     }, '🎤');
 
     const status = h('div', { class: 'small muted center', style: { marginTop: '8px' }, text: sttSupported() ? 'กดไมค์แล้วพูดตามประโยคด้านบน' : 'เบราว์เซอร์ไม่รองรับ' });
+    // ทางออกเสมอ: สลับไปโหมดอัดเสียงเทียบเสียงได้ทุกเมื่อ
+    if (sttSupported() && !forceRecordMode) {
+      root.appendChild(h('div', { class: 'center', style: { marginTop: '8px' } },
+        h('button', {
+          class: 'btn btn-ghost btn-sm', type: 'button',
+          onclick: () => { forceRecordMode = true; lastSttError = ''; render(); },
+        }, '🎙️ ใช้โหมดอัดเสียงเทียบเสียง')));
+      if (inAppBrowser()) {
+        root.appendChild(h('div', { class: 'tiny center', style: { color: 'var(--warn)', marginTop: '8px' },
+          text: 'ตรวจพบว่าเปิดในแอป ' + inAppBrowser() + ' — ไมค์มักถูกบล็อก แนะนำเปิดใน Chrome/Safari' }));
+      }
+    }
     // ไม่มี SpeechRecognition (iPhone/iPad/Safari) → อัดเสียง + ฟังเทียบ + ประเมินตัวเอง
-    if (!sttSupported()) {
+    if (forceRecordMode || !sttSupported()) {
       mic.classList.add('hidden');
       transcript.classList.add('hidden');
       status.classList.add('hidden');
@@ -842,7 +864,7 @@ export function speakView(root) {
         ? [current.word]
         : target.split(/\s+/).map((w) => w.replace(/[^A-Za-z']/g, '')).filter((w) => w.length > 3).slice(0, 6);
       root.appendChild(micPanel({
-        banner: '⚠️ ' + sttSupport().note,
+        banner: '⚠️ ' + (lastSttError || sttSupport().note),
         audioText: target,
         speak: () => say(target, { rate: S().rate }),
         flagWords: wds,
@@ -869,9 +891,14 @@ export function speakView(root) {
         onError: (err) => {
           recording = false;
           mic.classList.remove('rec');
-          status.textContent = err === 'not-allowed'
-            ? 'ไม่ได้รับอนุญาตให้ใช้ไมโครโฟน — กรุณาอนุญาตในเบราว์เซอร์'
-            : 'เกิดข้อผิดพลาด: ' + err;
+          status.textContent = sttErrorReason(err);
+          const hard = ['not-allowed', 'service-not-allowed', 'audio-capture', 'network'];
+          if (hard.includes(err)) {
+            lastSttError = sttErrorReason(err);
+            forceRecordMode = true;
+            toast('สลับเป็นโหมดอัดเสียงเทียบเสียงให้แล้ว', 'ok');
+            render();
+          }
         },
         onEnd: () => {
           recording = false;
@@ -944,6 +971,8 @@ export function review(root) {
 
   function destroy() { stopSpeaking(); }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function home() {
     mount(root);
@@ -1080,6 +1109,8 @@ export function mine(root) {
   let tab = 'fav';
   function destroy() { stopSpeaking(); }
   const go = (fn) => { destroy(); fn(); };
+  let forceRecordMode = false;   // ตัวรู้จำเสียงล้มเหลว → ใช้โหมดอัดเสียงแทน
+  let lastSttError = '';
 
   function render() {
     mount(root);

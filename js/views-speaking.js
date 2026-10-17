@@ -16,7 +16,7 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, renderSentence, clearHighlight, speakSentence,
-  sttSupported, sttSupport, createRecognizer, alignWords, sentenceSimilarity,
+  sttSupported, sttSupport, sttErrorReason, createRecognizer, alignWords, sentenceSimilarity,
 } from './speech.js';
 import {
   recordingSupported, startRecording, playBlob, stopPlayback,
@@ -195,6 +195,7 @@ export function roleplay(root, params = {}) {
   let scores = [];              // [{index, score}]
   let rec = null;
   let recording = false;
+  let noStt = false;   // ตัวรู้จำเสียงล้มเหลว → โหมดอัดเสียง
   let busy = false;
   let bubbleBox = null;
   let actionBox = null;
@@ -515,8 +516,12 @@ export function roleplay(root, params = {}) {
         return;
       }
       if (blob) lineBlobs.set(lineKey, blob);
-      if (err === 'not-allowed') {
-        hint.textContent = 'ไม่ได้รับอนุญาตให้ใช้ไมค์ — เปิดสิทธิ์ในตั้งค่าเบราว์เซอร์ แล้วลองใหม่';
+      const hardErr = ['not-allowed', 'service-not-allowed', 'audio-capture', 'network'];
+      if (hardErr.includes(err)) {
+        noStt = true;
+        toast(sttErrorReason(err), 'err');
+        hint.textContent = sttErrorReason(err);
+        if (typeof renderAction === 'function') renderAction(d, line, i);
         return;
       }
       if (err === 'unsupported') { toast('เบราว์เซอร์นี้ไม่รองรับการฟังเสียง', 'err'); return; }

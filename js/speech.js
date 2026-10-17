@@ -427,3 +427,26 @@ export function alignWords(target, said) {
   const score = tw.length ? Math.round((ok.filter(Boolean).length / tw.length) * 100) : 0;
   return { marks: ok, score, missed, targetWords: tw };
 }
+
+/** แปลงรหัสข้อผิดพลาดของ SpeechRecognition เป็นคำแนะนำภาษาไทยที่ทำตามได้ */
+export function sttErrorReason(err) {
+  const map = {
+    'not-allowed': 'ยังไม่อนุญาตให้ใช้ไมโครโฟน — กดไอคอนรูปไมค์/กุญแจบนแถบที่อยู่เว็บ แล้วเลือก "อนุญาต"',
+    'service-not-allowed': 'เบราว์เซอร์นี้ปิดระบบฟังเสียงไว้ — ถ้าเปิดจาก LINE/Facebook ให้กดเปิดใน Chrome หรือ Safari แทน',
+    'audio-capture': 'ไม่พบไมโครโฟน หรือมีแอปอื่นใช้ไมค์อยู่ — ปิดแอปนั้นแล้วลองใหม่',
+    network: 'Android ต้องต่ออินเทอร์เน็ตเพื่อใช้ระบบฟังเสียงของ Google — เน็ตไม่ถึงหรือ VPN บล็อกอยู่',
+    'no-speech': 'ไม่ได้ยินเสียง — พูดดังขึ้นอีกนิดแล้วลองใหม่',
+    aborted: 'หยุดฟังก่อนกำหนด — กดไมค์แล้วพูดใหม่',
+  };
+  return map[err] || ('เกิดข้อผิดพลาด: ' + (err || 'unknown'));
+}
+
+/** ตรวจว่าเปิดอยู่ในเบราว์เซอร์ของแอป (LINE/FB/IG/TikTok) ซึ่งมักบล็อกไมค์ */
+export function inAppBrowser() {
+  try {
+    const ua = navigator.userAgent || '';
+    const m = ua.match(/\b(Line|FBAN|FBAV|Instagram|TikTok|MicroMessenger|KAKAOTALK|NAVER)\b/i);
+    if (m) return m[1];
+    return /\bwv\b/.test(ua) ? 'WebView' : '';
+  } catch (e) { return ''; }
+}

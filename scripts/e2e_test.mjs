@@ -1,4 +1,4 @@
-/**
+﻿/**
  * e2e_test.mjs — ทดสอบการทำงานจริงของแอปผ่าน Chrome DevTools Protocol
  *
  * วิธีใช้:
@@ -554,6 +554,18 @@ const PAGE_TEST = `(async () => {
     await sleep(400);
   }
 
+  /* ---------- 10.9) ทางออก: สลับเป็นโหมดอัดเสียงได้เสมอ ---------- */
+  location.hash = '#/learn';
+  await sleep(400);
+  location.hash = '#/speak';
+  await sleep(1200);
+  const switchBtn = findByText('ใช้โหมดอัดเสียงเทียบเสียง');
+  ok('มีปุ่มสลับเป็นโหมดอัดเสียงเสมอ (ไม่ติดกับดัก)', !!switchBtn);
+  if (switchBtn) {
+    switchBtn.click();
+    await sleep(1000);
+    ok('สลับแล้วเห็นแผงอัดเสียงจริง', !!$('button[aria-label="อัดเสียง"]'));
+  }
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');
   const probe = words.find((w) => w.word === 'receipt') || words[0];
