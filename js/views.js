@@ -1,4 +1,4 @@
-/**
+﻿/**
  * views.js — หน้าจอทั้งหมดของแอป PicEnglish
  * ทุกหน้าคืนค่าเป็นฟังก์ชัน cleanup เพื่อให้ router เรียกตอนออกจากหน้า (หยุดเสียงที่ค้างอยู่)
  */
@@ -168,6 +168,13 @@ export function learn(root, params = {}) {
       class: 'btn btn-primary btn-block', type: 'button', style: { marginTop: '14px' },
       onclick: () => go(() => { catId = null; startSession(); }),
     }, '🎲 เรียนรวมทุกหมวด (สุ่ม)'));
+    root.appendChild(h('div', { class: 'section-title', text: 'ฟังและทำความเข้าใจ' }));
+    root.appendChild(h('a', { href: '#/listen', class: 'list-item' },
+      h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '🎧' }),
+      h('div', { class: 'lt' },
+        h('b', { style: { fontFamily: 'var(--font)' }, text: 'ฟังประโยค + ไฮไลท์คำ' }),
+        h('div', { text: 'อ่านตามพร้อมไฮไลท์ แตะคำใดก็ได้เพื่อฟัง' })),
+      h('span', { class: 'pill', text: 'ฟัง' })));
 
     root.appendChild(h('div', { class: 'small muted center', style: { marginTop: '10px' }, text: `เรียนไปแล้วทั้งหมด ${totalLearned} คำ` }));
   }

@@ -7,7 +7,7 @@ const KEY = 'picenglish.v1';
 
 const DEFAULTS = {
   settings: {
-    theme: 'auto',          // auto | light | dark
+    theme: 'dark',          // dark = ค่าเริ่มต้น (พรีเมียม) | light | auto
     rate: 0.92,             // ความเร็วเสียงอ่าน
     voiceURI: '',           // เลือกเสียงอ่าน (ว่าง = อัตโนมัติ)
     voiceGender: 'male',    // male | female | auto — ผู้ชายฟังง่ายกว่าสำหรับผู้เรียนไทย
@@ -25,6 +25,7 @@ const DEFAULTS = {
   srs: {},                  // id -> {ease, interval, reps, lapses, due, last}
   srsSentences: {},         // "dlgId:lineIndex" -> เหมือน srs (ทบทวนระดับประโยค)
   dialogues: {},            // dlgId -> {lineIndex, completed, plays, bestScore, lastPlayed}
+  xp: 0,                    // แต้มประสบการณ์รวม
   stats: {},                // id -> {seen, correct, wrong, last}
   favorites: [],            // id[]
   hard: [],                 // id[] คำที่กด "ยังไม่แน่ใจ"
@@ -95,6 +96,7 @@ export function today() {
   if (t.dialogues === undefined) t.dialogues = 0;
   if (t.secondsSpoken === undefined) t.secondsSpoken = 0;
   if (!Array.isArray(t.selfRatings)) t.selfRatings = [];
+  if (t.xp === undefined) t.xp = 0;
   return t;
 }
 export function bumpDaily(field, by = 1) {
@@ -135,6 +137,8 @@ export function markAnswer(id, correct) {
   const t = today();
   t.reviewed += 1;
   if (correct) t.correct += 1;
+  S.xp = (S.xp || 0) + (correct ? 2 : 1);
+  t.xp = (t.xp || 0) + (correct ? 2 : 1);
   save();
 }
 
@@ -248,6 +252,26 @@ export function difficulty(id) {
   return 1 - s.correct / t;
 }
 
+/* ---------------- XP ---------------- */
+
+/** เพิ่มแต้มประสบการณ์ (บันทึกลงรายวันด้วย) */
+export function addXp(n = 1) {
+  const amount = Math.max(0, Math.round(n));
+  if (!amount) return S.xp;
+  S.xp = (S.xp || 0) + amount;
+  const t = today();
+  t.xp = (t.xp || 0) + amount;
+  save();
+  return S.xp;
+}
+
+export function totalXp() { return S.xp || 0; }
+
+/** 29/60/90 วันแบบง่าย: นับวันที่ได้ XP จากตาราง daily */
+export function activeDays() {
+  return Object.values(S.daily || {}).filter((d) => (d.xp || 0) > 0 || (d.reviewed || 0) > 0 || (d.spoken || 0) > 0).length;
+}
+
 export function exportJSON() {
   return JSON.stringify({ exportedAt: new Date().toISOString(), ...S }, null, 2);
 }
@@ -265,18 +289,25 @@ export function bumpSpoken(n = 1) {
 export function bumpDialogue() {
   const t = today();
   t.dialogues = (t.dialogues || 0) + 1;
+  t.xp = (t.xp || 0) + 10;
+  S.xp = (S.xp || 0) + 10;
   save();
 }
 
 export function addSecondsSpoken(sec) {
   const t = today();
-  t.secondsSpoken = (t.secondsSpoken || 0) + Math.max(0, Math.round(sec || 0));
+  const add = Math.max(0, Math.round(sec || 0));
+  t.secondsSpoken = (t.secondsSpoken || 0) + add;
+  const bonus = Math.round(add / 10);       // พูด 60 วิ = +6 XP
+  t.xp = (t.xp || 0) + bonus;
+  S.xp = (S.xp || 0) + bonus;
   save();
 }
 
 export function addSelfRating(rating) {
   const t = today();
   if (!Array.isArray(t.selfRatings)) t.selfRatings = [];
+  if (t.xp === undefined) t.xp = 0;
   t.selfRatings.push(Math.max(1, Math.min(5, Math.round(rating))));
   save();
 }
@@ -317,6 +348,9 @@ export function simulateSentence(key, g) {
 export function gradeSentence(key, g) {
   const card = applyGrade(srsOfSentence(key), g);
   S.srsSentences[key] = card;
+  const t = today();
+  t.xp = (t.xp || 0) + 3;
+  S.xp = (S.xp || 0) + 3;
   save();
   return card;
 }

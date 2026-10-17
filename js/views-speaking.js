@@ -1,4 +1,4 @@
-/**
+﻿/**
  * views-speaking.js — โหมด "ฝึกพูด" (เฟส 1)
  *
  *  หลักการออกแบบ
@@ -23,6 +23,7 @@ import {
   saveRecording, recordingSupported as canRecord,
   listRecordings, deleteRecording, updateRecording,
 } from './recorder.js';
+import { mascot } from './mascot.js';
 
 const S = () => store.settings();
 const say = (text, opts = {}) => sayText(text, { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender, ...opts });
@@ -771,7 +772,7 @@ export function roleplay(root, params = {}) {
     const avg = scores.length ? Math.round(scores.reduce((n, s) => n + s.score, 0) / scores.length) : 0;
     const passed = scores.filter((s) => s.score >= threshold()).length;
     root.appendChild(h('div', { class: 'card center' },
-      h('div', { style: { fontSize: '3rem' }, text: '🎉' }),
+      mascot('celebrate', 104),
       h('div', { class: 'bold', style: { fontSize: '1.15rem' }, text: 'จบสถานการณ์แล้ว!' }),
       h('div', { class: 'small muted', text: d.title }),
       h('div', { class: 'stat-grid', style: { marginTop: '14px' } },

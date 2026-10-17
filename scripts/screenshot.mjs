@@ -89,6 +89,7 @@ async function main() {
   await cdp.eval(HELPERS);
 
   const shots = [
+    { name: '00-วันนี้', hash: '#/today', wait: 1400 },
     { name: '01-การ์ด-เลือกหมวด', hash: '#/learn', before: null, wait: 1200 },
     {
       name: '02-แฟลชการ์ด-ด้านหน้า', hash: '#/learn', wait: 2800,

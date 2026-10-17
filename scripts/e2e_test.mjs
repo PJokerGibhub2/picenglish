@@ -1,4 +1,4 @@
-/**
+﻿/**
  * e2e_test.mjs — ทดสอบการทำงานจริงของแอปผ่าน Chrome DevTools Protocol
  *
  * วิธีใช้:
@@ -180,7 +180,7 @@ const PAGE_TEST = `(async () => {
   location.hash = '#/listen';
   await sleep(900);
   ok('หน้าฟังประโยคแสดงประโยค', $$('.sentence .w').length >= 3, $$('.sentence .w').length + ' คำ');
-  ok('มีปุ่มฟังประโยค', !!findByText('ฟังประโยค'));
+  ok('มีปุ่มฟังประโยค', !!(findByText('ฟังประโยค') || findByText('กำลังอ่าน')), 'ปุ่มเล่นเสียงอยู่');
   ok('มีปุ่มอ่านช้าๆ', !!findByText('ช้าๆ'));
   ok('มีหัวข้อสรุปคำศัพท์สำคัญ', document.body.textContent.includes('คำศัพท์สำคัญในประโยค'));
   ok('มีสวิตช์อ่านต่ออัตโนมัติ', !!$('.switch input'));

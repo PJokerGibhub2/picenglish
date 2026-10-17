@@ -5,6 +5,7 @@
 import { loadAll, db } from './data.js';
 import { views, openSettings } from './views.js';
 import { speakingHub, roleplay, sentenceReview, oneMinute } from './views-speaking.js';
+import { today } from './views-today.js';
 import { h, mount, toast, emptyState } from './ui.js';
 import * as store from './store.js';
 import { loadVoices, loadAudioManifest } from './speech.js';
@@ -12,6 +13,7 @@ import { initLiff, profileChip, liffState } from './liff.js';
 import { loadArtManifest } from './art.js';
 
 const TITLES = {
+  today: 'PicEnglish',
   learn: 'การ์ดคำศัพท์',
   listen: 'ฟังประโยค',
   speaking: 'ฝึกพูด',
@@ -28,6 +30,7 @@ const TITLES = {
 
 // เส้นทางทั้งหมด (เพิ่มโหมดฝึกพูดเข้าไปโดยไม่แตะ views เดิม)
 const ROUTES = {
+  today,
   ...views,
   speaking: speakingHub,
   roleplay,
@@ -38,10 +41,13 @@ const ROUTES = {
 const TABS = ['learn', 'listen', 'speaking', 'review', 'mine'];
 // หน้าที่ถือว่าอยู่ในแท็บ "ฝึกพูด"
 const SPEAKING_PAGES = ['speaking', 'roleplay', 'sentenceReview', 'onemin', 'games', 'quiz', 'match', 'speak'];
+// แท็บที่ควรไฮไลต์เมื่ออยู่หน้าย่อย
+const TAB_OF = { listen: 'learn', games: 'speaking', quiz: 'speaking', match: 'speaking', speak: 'speaking', roleplay: 'speaking', sentenceReview: 'speaking', onemin: 'speaking' };
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('topbar-title');
 const backBtn = document.getElementById('btn-back');
 const streakChip = document.getElementById('streak-chip');
+const xpChip = document.getElementById('xp-chip');
 const dueBadge = document.getElementById('due-badge');
 
 let cleanup = null;
@@ -67,26 +73,29 @@ function updateBadges() {
   const streak = store.streakDays();
   if (streak > 0) { streakChip.querySelector('b').textContent = String(streak); streakChip.classList.remove('hidden'); }
   else streakChip.classList.add('hidden');
+
+  const xp = store.totalXp();
+  if (xp > 0) { xpChip.querySelector('b').textContent = String(xp); xpChip.classList.remove('hidden'); }
+  else xpChip.classList.add('hidden');
 }
 
 /* ---------------- Router ---------------- */
 function parseHash() {
   const raw = location.hash.replace(/^#\/?/, '');
   const [path, query] = raw.split('?');
-  const name = (path || 'learn').trim();
+  const name = (path || 'today').trim();
   const params = Object.fromEntries(new URLSearchParams(query || ''));
   return { name, params };
 }
 
 function route() {
   const { name, params } = parseHash();
-  const render = ROUTES[name] || ROUTES.learn;
+  const render = ROUTES[name] || ROUTES.today;
 
   if (cleanup) { try { cleanup(); } catch (e) { /* ignore */ } cleanup = null; }
   document.querySelectorAll('.tabbar a').forEach((a) => {
     const tab = a.dataset.tab;
-    const active = tab === name
-      || (tab === 'speaking' && SPEAKING_PAGES.includes(name));
+    const active = tab === name || tab === TAB_OF[name];
     if (active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
 
