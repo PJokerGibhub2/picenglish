@@ -157,11 +157,62 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () 
 function registerSW() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') return;
-  navigator.serviceWorker.register(new URL('sw.js', location.href), { scope: './' })
+  navigator.serviceWorker.register(new URL('sw.js', location.href), { scope: './', updateViaCache: 'none' })
     .then(() => console.info('[app] service worker พร้อมใช้งาน — แอปใช้ offline ได้'))
     .catch((err) => console.warn('[app] ลงทะเบียน service worker ไม่สำเร็จ', err));
 }
 
+/* ---------------- อัปเดตเวอร์ชันอัตโนมัติ ---------------- */
+let reloadedForUpdate = false;
+
+/** เมื่อ service worker ใหม่เข้าควบคุม → โหลดหน้าใหม่หนึ่งครั้ง (แก้ปัญหา "ติดเวอร์ชันเก่า") */
+function watchSwUpdate() {
+  if (!('serviceWorker' in navigator)) return;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (reloadedForUpdate) return;
+    reloadedForUpdate = true;
+    location.reload();
+  });
+}
+
+/** เทียบเวอร์ชันที่โหลดอยู่กับเวอร์ชันบนเซิร์ฟเวอร์ → เตือนถ้ามีใหม่ */
+async function checkForUpdate() {
+  try {
+    const res = await fetch('js/version.js?cb=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    const txt = await res.text();
+    const m = txt.match(/VERSION = '([^']+)'/);
+    const server = m && m[1];
+    if (server && server !== APP_VERSION) showUpdateBar(server);
+  } catch (e) { /* ออฟไลน์ — ไม่เป็นไร */ }
+}
+
+function showUpdateBar(serverVer) {
+  if (document.getElementById('update-bar')) return;
+  const bar = document.createElement('div');
+  bar.id = 'update-bar';
+  bar.className = 'update-bar';
+  const msg = document.createElement('span');
+  msg.className = 'update-msg';
+  msg.textContent = 'มีเวอร์ชันใหม่ ' + serverVer + ' — กดอัปเดตเพื่อใช้ของใหม่';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'btn btn-primary btn-sm';
+  btn.textContent = 'อัปเดตเลย';
+  btn.onclick = async () => {
+    btn.disabled = true;
+    btn.textContent = 'กำลังอัปเดต…';
+    try {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map((r) => r.unregister()));
+      const keys = await caches.keys();
+      await Promise.all(keys.map((k) => caches.delete(k)));
+    } catch (e) { /* ignore */ }
+    location.reload();
+  };
+  bar.append(msg, btn);
+  document.body.appendChild(bar);
+}
 /* ---------------- เริ่มต้น ---------------- */
 async function main() {
   applyTheme();
@@ -202,9 +253,12 @@ function renderInAppNotice() {
 renderInAppNotice();
 
   started = true;
+  watchSwUpdate();
   route();
   registerSW();
   updateBadges();
+  setTimeout(checkForUpdate, 1500);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) checkForUpdate(); });
 
   // อัปเดตป้ายเตือนทุกนาที (คำที่ครบกำหนดทบทวนจะเพิ่มขึ้นเรื่อยๆ)
   setInterval(() => { if (started) updateBadges(); }, 60000);

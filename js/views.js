@@ -1,4 +1,4 @@
-﻿/**
+/**
  * views.js — หน้าจอทั้งหมดของแอป PicEnglish
  * ทุกหน้าคืนค่าเป็นฟังก์ชัน cleanup เพื่อให้ router เรียกตอนออกจากหน้า (หยุดเสียงที่ค้างอยู่)
  */
@@ -1202,6 +1202,32 @@ function toggleHardWithToast(w) {
  * 9) หน้าตั้งค่า
  * ================================================================== */
 
+function overlapSheet() {
+  openSheet((close) => {
+    const out = h('div', { class: 'small', style: { fontFamily: 'monospace', fontSize: '.68rem', lineHeight: '1.7', whiteSpace: 'pre-wrap', wordBreak: 'break-word', padding: '10px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)' } });
+    const view = document.getElementById('view');
+    const lines = [];
+    if (view) {
+      const vr = view.getBoundingClientRect();
+      const limit = { top: vr.top, bottom: vr.top + 110, right: 320 };
+      for (const el of view.querySelectorAll('*')) {
+        const r = el.getBoundingClientRect();
+        if (r.width < 1 || r.height < 1) continue;
+        if (r.top < limit.bottom && r.bottom > limit.top && r.left < limit.right) {
+          const txt = (el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 28);
+          if (!txt) continue;
+          const cls = typeof el.className === 'string' ? el.className : '';
+          lines.push(`${el.tagName.toLowerCase()}.${cls.split(' ')[0] || '-'} | ${txt}`);
+        }
+      }
+    }
+    lines.push('--- scrollWidth/clientWidth ---');
+    lines.push('doc ' + document.documentElement.scrollWidth + '/' + document.documentElement.clientWidth);
+    lines.push('body ' + document.body.scrollWidth + '/' + document.body.clientWidth);
+    out.textContent = lines.slice(0, 18).join('\n') || 'ไม่พบองค์ประกอบ';
+    return h('div', {}, sheetHeader('ตรวจองค์ประกอบด้านบน', 'ส่งภาพนี้ให้ผู้พัฒนาเพื่อหาตัวที่เกิน', close), out);
+  }, { id: 'overlap' });
+}
 function micDiagSheet() {
   openSheet((close) => {
     const out = h('div', { class: 'small', style: { lineHeight: '1.9' }, text: 'กำลังตรวจ…' });
@@ -1275,6 +1301,18 @@ export function openSettings(onChange) {
   openSheet((close) => {
     const box = h('div', {});
     box.appendChild(sheetHeader('ตั้งค่า', 'ข้อมูลทั้งหมดเก็บไว้ในเครื่องของคุณเท่านั้น', close));
+  box.appendChild(h('div', { class: 'field' },
+    h('div', {}, h('label', { text: 'แสดงกรอบวินิจฉัย' }),
+      h('div', { class: 'desc', text: 'เปิดเพื่อดูขอบของทุกองค์ประกอบ (ใช้หาจุดที่ล้นจอ) แล้วปิดกลับ' })),
+    h('div', { class: 'row', style: { gap: '6px' } },
+      h('button', {
+        class: 'btn btn-ghost btn-sm', type: 'button',
+        onclick: (e) => {
+          const on = document.documentElement.classList.toggle('debug-outline');
+          e.currentTarget.textContent = on ? 'ปิดกรอบ' : 'เปิดกรอบ';
+        },
+      }, document.documentElement.classList.contains('debug-outline') ? 'ปิดกรอบ' : 'เปิดกรอบ'),
+      h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: overlapSheet }, '🧩 ตรวจหน้าจอ'))));
   // เวอร์ชันแอป (ผู้ใช้ขอดูตรงนี้) + ทางออกเมื่อติดแคชเก่า
   box.appendChild(h('div', { class: 'field' },
     h('div', {}, h('label', { text: 'เวอร์ชันแอป' }),

@@ -121,7 +121,6 @@ body {
     radial-gradient(92% 42% at 50% -8%, color-mix(in srgb, var(--glow-a) 60%, transparent), transparent 70%),
     radial-gradient(70% 34% at 105% 4%, color-mix(in srgb, var(--glow-b) 22%, transparent), transparent 72%),
     linear-gradient(180deg, var(--bg-1), var(--bg-0) 46%);
-  background-attachment: fixed;
 }
 html[data-theme="light"] body {
   background:
@@ -142,8 +141,8 @@ img { max-width: 100%; }
   height: calc(var(--topbar-h) + env(safe-area-inset-top));
   padding: env(safe-area-inset-top) 12px 0 10px;
   display: flex; align-items: center; gap: 8px;
-  background: color-mix(in srgb, var(--bg-1) 78%, transparent);
-  backdrop-filter: saturate(160%) blur(16px);
+  background: color-mix(in srgb, var(--bg-1) 96%, transparent);
+  /* เอา backdrop-filter ออก: หนักมากบน GPU มือถือ Android (ทำให้จอหน่วง) */
   border-bottom: 1px solid var(--border);
 }
 .topbar h1 {
@@ -181,8 +180,7 @@ img { max-width: 100%; }
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
   display: grid; grid-template-columns: repeat(5, 1fr);
   padding-bottom: env(safe-area-inset-bottom);
-  background: color-mix(in srgb, var(--bg-1) 86%, transparent);
-  backdrop-filter: saturate(170%) blur(18px);
+  background: color-mix(in srgb, var(--bg-1) 97%, transparent);
   border-top: 1px solid var(--border);
 }
 .tabbar a {
@@ -213,7 +211,6 @@ img { max-width: 100%; }
   border-radius: var(--r-lg);
   padding: 16px;
   box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(6px);
 }
 .card + .card { margin-top: 12px; }
 .card.hero {
@@ -537,7 +534,7 @@ h1, .h1 { font-size: var(--fs-display); font-weight: 800; letter-spacing: -.02em
 
 .sheet-backdrop {
   position: fixed; inset: 0; z-index: 100;
-  background: rgba(4, 2, 10, .6); backdrop-filter: blur(3px);
+  background: rgba(4, 2, 10, .72);
   display: flex; align-items: flex-end; justify-content: center;
 }
 .sheet {
@@ -660,3 +657,36 @@ html.liff-client .view { padding-bottom: calc(var(--tabbar-h) + env(safe-area-in
 .btn-sm { white-space: normal; }
 .progress, .seg, .tabbar { max-width: 100%; }
 .topbar h1 { min-width: 0; }
+/* ---------- 24. HARDEN: grid/flex ลูกทุกตัวหดได้ + รองรับฟอนต์เครื่องใหญ่ ---------- */
+.cat-grid > *, .stat-grid > *, .match-grid > *, .advance-grid > *, .quest > *,
+.row > *, .list-item > *, .bubble > *, .field > * { min-width: 0; }
+.stat b, .stat span, .ci, .pill, .kv, .word-en { overflow-wrap: anywhere; }
+.tabbar a .tl { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+img, svg { max-width: 100%; }
+
+/* ลดงานหนักบนมือถือรุ่นเล็ก */
+@media (max-width: 480px) {
+  .card, .list-item, .btn { box-shadow: none; }
+  .card { border-color: var(--border); }
+  .mascot { animation: none !important; }
+}
+
+/* ---------- 25. DEBUG: แสดงกรอบทุก element (ใช้หาตัวที่ล้น/เกิน) ---------- */
+html.debug-outline * { outline: 1px solid rgba(255, 70, 70, .45) !important; outline-offset: -1px; }
+html.debug-outline .topbar { outline: 2px solid #22D3EE !important; }
+html.debug-outline .tabbar { outline: 2px solid #FBBF24 !important; }
+html.debug-outline .view { outline: 2px solid #34D399 !important; }
+/* ---------- 26. UPDATE BAR ---------- */
+.update-bar {
+  position: fixed; left: 8px; right: 8px;
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 8px);
+  z-index: 95;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-radius: 16px;
+  background: color-mix(in srgb, var(--gold) 20%, var(--bg-1));
+  border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent);
+  box-shadow: var(--shadow-md);
+  animation: rise var(--dur) var(--ease);
+}
+.update-bar .update-msg { flex: 1; font-size: .78rem; font-weight: 700; line-height: 1.4; }
+.update-bar .btn { min-height: 38px; padding: 0 12px; font-size: .78rem; }
