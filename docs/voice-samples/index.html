@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="th"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ตัวอย่างเสียงสำหรับ PicEnglish</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: "Noto Sans Thai", system-ui, -apple-system, sans-serif;
+         margin: 0; padding: 20px; background: #f4f5fb; color: #101828; line-height: 1.6; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  .lead { color: #667085; font-size: .92rem; margin-bottom: 18px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
+  .card { background: #fff; border: 1px solid #e7e9f2; border-radius: 16px; padding: 14px;
+           box-shadow: 0 1px 3px rgba(16,24,40,.06); }
+  .head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  .name { font-weight: 800; }
+  .src { font-size: .76rem; color: #667085; }
+  .tag { font-size: .68rem; font-weight: 800; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+  .free { background: #e8f8ef; color: #12b76a; }
+  .careful { background: #fef3e2; color: #b54708; }
+  .text { font-family: Inter, system-ui, sans-serif; margin: 10px 0 8px; font-size: 1rem; }
+  audio { width: 100%; height: 36px; }
+  .note { margin-top: 22px; background: #fff; border: 1px solid #e7e9f2; border-radius: 16px; padding: 16px; }
+  .note h2 { font-size: 1rem; margin: 0 0 8px; }
+  ul { margin: 6px 0 0 18px; padding: 0; }
+  code { background: #f4f5fb; padding: 1px 5px; border-radius: 6px; font-size: .85em; }
+</style></head>
+<body>
+  <h1>ตัวอย่างเสียงชาย — เลือกเสียงที่จะใช้ในแอป</h1>
+  <div class="lead">ทุกเสียงพูดประโยคเดียวกัน (ช้ากว่าปกติ 8%) ให้ฟังแล้วเลือกอันที่ “ฟังง่ายที่สุดสำหรับคนไทย”</div>
+  <div class="grid">
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_US-ryan-high</div>
+            <div class="src">Piper · en_US-ryan-high · Ryan High (US) — คุณภาพสูงสุดของ Piper</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="piper-en_US-ryan-high-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_US-ryan-high</div>
+            <div class="src">Piper · en_US-ryan-high · Ryan High (US) — คุณภาพสูงสุดของ Piper</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="piper-en_US-ryan-high-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_US-joe-medium</div>
+            <div class="src">Piper · en_US-joe-medium · Joe Medium (US) — เบา เร็ว ไฟล์เล็ก</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="piper-en_US-joe-medium-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_US-joe-medium</div>
+            <div class="src">Piper · en_US-joe-medium · Joe Medium (US) — เบา เร็ว ไฟล์เล็ก</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="piper-en_US-joe-medium-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_US-hfc_male-medium</div>
+            <div class="src">Piper · en_US-hfc_male-medium · HFC Male Medium (US) — เสียงผู้ชายชัด ๆ</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="piper-en_US-hfc_male-medium-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_US-hfc_male-medium</div>
+            <div class="src">Piper · en_US-hfc_male-medium · HFC Male Medium (US) — เสียงผู้ชายชัด ๆ</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="piper-en_US-hfc_male-medium-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_GB-alan-medium</div>
+            <div class="src">Piper · en_GB-alan-medium · Alan (UK) — สำเนียงอังกฤษ</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="piper-en_GB-alan-medium-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en_GB-alan-medium</div>
+            <div class="src">Piper · en_GB-alan-medium · Alan (UK) — สำเนียงอังกฤษ</div>
+          </div>
+          <span class="tag free">ฟรี 100%</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="piper-en_GB-alan-medium-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-AndrewNeural</div>
+            <div class="src">Edge TTS · en-US-AndrewNeural · Andrew (US) — นุ่ม เป็นมิตร นิยมใช้ในงานบรรยาย</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="edge-en-US-AndrewNeural-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-AndrewNeural</div>
+            <div class="src">Edge TTS · en-US-AndrewNeural · Andrew (US) — นุ่ม เป็นมิตร นิยมใช้ในงานบรรยาย</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="edge-en-US-AndrewNeural-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-BrianNeural</div>
+            <div class="src">Edge TTS · en-US-BrianNeural · Brian (US) — ชัดถ้อยชัดคำ เป็นมิตร เหมาะกับผู้เรียน</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="edge-en-US-BrianNeural-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-BrianNeural</div>
+            <div class="src">Edge TTS · en-US-BrianNeural · Brian (US) — ชัดถ้อยชัดคำ เป็นมิตร เหมาะกับผู้เรียน</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="edge-en-US-BrianNeural-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-GuyNeural</div>
+            <div class="src">Edge TTS · en-US-GuyNeural · Guy (US) — เสียงผู้ประกาศข่าว ชัดเจน</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="edge-en-US-GuyNeural-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-GuyNeural</div>
+            <div class="src">Edge TTS · en-US-GuyNeural · Guy (US) — เสียงผู้ประกาศข่าว ชัดเจน</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="edge-en-US-GuyNeural-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-ChristopherNeural</div>
+            <div class="src">Edge TTS · en-US-ChristopherNeural · Christopher (US) — หนักแน่น น่าเชื่อถือ</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="edge-en-US-ChristopherNeural-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-ChristopherNeural</div>
+            <div class="src">Edge TTS · en-US-ChristopherNeural · Christopher (US) — หนักแน่น น่าเชื่อถือ</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="edge-en-US-ChristopherNeural-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-EricNeural</div>
+            <div class="src">Edge TTS · en-US-EricNeural · Eric (US) — เรียบง่าย ชัด</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="edge-en-US-EricNeural-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-US-EricNeural</div>
+            <div class="src">Edge TTS · en-US-EricNeural · Eric (US) — เรียบง่าย ชัด</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="edge-en-US-EricNeural-sentence.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-GB-RyanNeural</div>
+            <div class="src">Edge TTS · en-GB-RyanNeural · Ryan (UK) — สำเนียงอังกฤษ ฟังง่าย</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Could I get a medium latte, please?”</div>
+        <audio controls preload="none" src="edge-en-GB-RyanNeural-word.mp3"></audio>
+      </div>
+      <div class="card">
+        <div class="head">
+          <div>
+            <div class="name">en-GB-RyanNeural</div>
+            <div class="src">Edge TTS · en-GB-RyanNeural · Ryan (UK) — สำเนียงอังกฤษ ฟังง่าย</div>
+          </div>
+          <span class="tag careful">ทดลองใช้</span>
+        </div>
+        <div class="text">“Their new house has a small garden and a garage.”</div>
+        <audio controls preload="none" src="edge-en-GB-RyanNeural-sentence.mp3"></audio>
+      </div></div>
+
+  <div class="note">
+    <h2>หมายเหตุเรื่องลิขสิทธิ์</h2>
+    <ul>
+      <li><b>Piper</b> — ไลเซนส์ MIT ใช้เชิงพาณิชย์ได้ ทำงานออฟไลน์ได้ ไฟล์เล็ก → <b>ปลอดภัยที่สุดถ้าจะขายจริง</b></li>
+      <li><b>Kokoro</b> — Apache-2.0 ใช้เชิงพาณิชย์ได้ คุณภาพสูงกว่า แต่ช้ากว่า Piper ราว 8–9 เท่าบน CPU</li>
+      <li><b>Edge TTS</b> — ฟรีและคุณภาพสูงสุด แต่เป็นบริการของ Microsoft ผ่านช่องทางที่ไม่ใช่ API ทางการ
+          ควรใช้เพื่อทดลอง/ทำไฟล์ส่วนตัว ถ้าจะใช้เชิงพาณิชย์ให้ตรวจเงื่อนไขก่อน</li>
+      <li><b>Azure Speech (ชั้นฟรี F0)</b> — 500,000 ตัวอักษร/เดือน ฟรี ใช้เชิงพาณิชย์ได้ตามเงื่อนไขบัญชี
+          → เหมาะถ้าอยากได้เสียงระดับ Andrew/Brian แบบถูกต้องตามเงื่อนไข</li>
+    </ul>
+    <p style="margin:10px 0 0;font-size:.86rem;color:#667085">
+      สร้างด้วยสคริปต์ <code>scripts/make_voice_samples.py</code> — ประโยคตัวอย่างหยิบจากเนื้อหาจริงใน <code>data/words.json</code>
+    </p>
+  </div>
+</body></html>

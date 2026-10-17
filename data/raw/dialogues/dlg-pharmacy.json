@@ -1,0 +1,130 @@
+{
+  "id": "dlg-pharmacy",
+  "title": "ที่ร้านขายยา ปรึกษาอาการ",
+  "titleEn": "At the pharmacy",
+  "level": "A2",
+  "emoji": "💊",
+  "category": "health",
+  "commonsCategory": "Pharmacies",
+  "imageQuery": "pharmacy medicine shelves pharmacist",
+  "setting": "คุณไม่สบายจึงเข้าร้านขายยาเพื่อปรึกษาอาการและซื้อยา",
+  "counterpart": { "labelTh": "เภสัชกรร้านขายยา", "emoji": "👩‍⚕️" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Hello. How can I help you today?",
+      "thai": "สวัสดีครับ มีอะไรให้ช่วยไหมครับ",
+      "keyPhrases": [
+        { "en": "How can I help you", "thai": "มีอะไรให้ช่วยไหม" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "I feel ill. I have a headache and a cough.",
+      "thai": "ผมรู้สึกไม่สบาย ปวดหัวกับไอครับ",
+      "keyPhrases": [
+        { "en": "feel ill", "thai": "รู้สึกไม่สบาย" },
+        { "en": "a headache", "thai": "อาการปวดหัว" },
+        { "en": "a cough", "thai": "อาการไอ" }
+      ],
+      "alternative": [
+        { "en": "I'm ill. I have a headache and a cough.", "thai": "ผมไม่สบาย ปวดหัวแล้วก็ไอ" },
+        { "en": "I don't feel well. My head hurts and I have a cough.", "thai": "ผมรู้สึกไม่ดี หัวปวดแล้วก็ไอ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "I see. How long have you had the cough?",
+      "thai": "เข้าใจแล้วครับ ไอมาได้กี่วันแล้วครับ",
+      "keyPhrases": [
+        { "en": "How long", "thai": "นานแค่ไหนแล้ว" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "For three days. I also have a sore throat.",
+      "thai": "สามวันแล้วครับ แล้วก็เจ็บคอด้วย",
+      "keyPhrases": [
+        { "en": "three days", "thai": "สามวัน" },
+        { "en": "a sore throat", "thai": "อาการเจ็บคอ" }
+      ],
+      "alternative": [
+        { "en": "Since Monday. I have a sore throat too.", "thai": "ตั้งแต่วันจันทร์ครับ เจ็บคอด้วย" },
+        { "en": "Three days now, and my throat is sore.", "thai": "สามวันแล้วครับ แล้วคอผมก็เจ็บ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Do you have a fever or a stomachache too?",
+      "thai": "มีไข้หรือปวดท้องด้วยไหมครับ",
+      "keyPhrases": [
+        { "en": "a fever", "thai": "อาการไข้" },
+        { "en": "a stomachache", "thai": "อาการปวดท้อง" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "No fever, but my body hurts and I'm tired.",
+      "thai": "ไม่มีไข้ครับ แต่ตัวผมปวดไปหมดแล้วก็เพลียมาก",
+      "keyPhrases": [
+        { "en": "No fever", "thai": "ไม่มีไข้" },
+        { "en": "my body hurts", "thai": "ตัวปวดเมื่อย" },
+        { "en": "tired", "thai": "เพลีย เหนื่อย" }
+      ],
+      "alternative": [
+        { "en": "No fever. My body hurts and I feel tired.", "thai": "ไม่มีไข้ครับ ตัวปวดแล้วก็รู้สึกเพลีย" },
+        { "en": "I don't have a fever, but I'm tired and everything hurts.", "thai": "ไม่มีไข้ครับ แต่ผมเพลียและปวดไปทั้งตัว" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "This medicine helps with the cough and the pain.",
+      "thai": "ยาตัวนี้ช่วยเรื่องไอและอาการปวดครับ",
+      "keyPhrases": [
+        { "en": "This medicine", "thai": "ยาตัวนี้" },
+        { "en": "the cough", "thai": "อาการไอ" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Okay. Should I see a doctor for this?",
+      "thai": "ครับ แบบนี้ควรไปหาหมอไหมครับ",
+      "keyPhrases": [
+        { "en": "see a doctor", "thai": "ไปหาหมอ" }
+      ],
+      "alternative": [
+        { "en": "I see. Do I need to see a doctor?", "thai": "เข้าใจแล้วครับ ผมต้องไปหาหมอไหม" },
+        { "en": "Okay. Is it better to see a doctor?", "thai": "ครับ ไปหาหมอดีกว่าไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "If you still feel ill on Friday, make an appointment.",
+      "thai": "ถ้าถึงวันศุกร์ยังไม่สบาย ก็โทรนัดหมอได้เลยครับ",
+      "keyPhrases": [
+        { "en": "feel ill", "thai": "รู้สึกไม่สบาย" },
+        { "en": "make an appointment", "thai": "นัดหมาย" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Thanks. I'll take the medicine and get some rest.",
+      "thai": "ขอบคุณครับ เดี๋ยวผมกินยาแล้วพักผ่อนครับ",
+      "keyPhrases": [
+        { "en": "the medicine", "thai": "ยา" },
+        { "en": "get some rest", "thai": "พักผ่อนสักหน่อย" }
+      ],
+      "alternative": [
+        { "en": "Thank you. I'll take the medicine and rest at home.", "thai": "ขอบคุณครับ ผมจะกินยาแล้วพักอยู่บ้าน" },
+        { "en": "Thanks. I'll rest and take this medicine.", "thai": "ขอบคุณครับ ผมจะพักและกินยานี้" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "Do you have a prescription?", "thai": "มีใบสั่งยามาไหมครับ" },
+    { "en": "Take this after meals.", "thai": "กินยาหลังอาหารนะครับ" },
+    { "en": "Drink lots of water and stay healthy.", "thai": "ดื่มน้ำเยอะๆ ดูแลสุขภาพด้วยนะครับ" },
+    { "en": "If it gets worse, see a doctor.", "thai": "ถ้าอาการแย่ลงให้ไปหาหมอครับ" },
+    { "en": "Do you want tablets or syrup?", "thai": "รับเป็นยาเม็ดหรือน้ำเชื่อมครับ" }
+  ]
+}

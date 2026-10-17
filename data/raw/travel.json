@@ -1,0 +1,205 @@
+[
+  {
+    "id": "travel-ticket",
+    "word": "ticket",
+    "pos": "n.",
+    "ipa": "/ˈtɪk.ɪt/",
+    "thai": "ตั๋ว",
+    "emoji": "🎫",
+    "imageQuery": "train ticket",
+    "example": "I bought a round-trip ticket to Chiang Mai yesterday.",
+    "exampleThai": "ฉันซื้อตั๋วไป-กลับเชียงใหม่เมื่อวานนี้",
+    "keyVocab": [
+      { "en": "round-trip", "thai": "ไป-กลับ" },
+      { "en": "bought", "thai": "ซื้อ (อดีตของ buy)" }
+    ],
+    "tip": "ticket ใช้กับตั๋วเครื่องบิน รถไฟ คอนเสิร์ต แต่ตั๋วรถเมล์มักเรียกว่า bus fare"
+  },
+  {
+    "id": "travel-passport",
+    "word": "passport",
+    "pos": "n.",
+    "ipa": "/ˈpæs.pɔːrt/",
+    "thai": "หนังสือเดินทาง",
+    "emoji": "🛂",
+    "imageQuery": "passport travel document",
+    "example": "Don't forget to put your passport in your bag.",
+    "exampleThai": "อย่าลืมเอาหนังสือเดินทางใส่กระเป๋านะ",
+    "keyVocab": [
+      { "en": "forget", "thai": "ลืม" },
+      { "en": "passport", "thai": "หนังสือเดินทาง" },
+      { "en": "bag", "thai": "กระเป๋า" }
+    ],
+    "tip": "passport คือหนังสือเดินทาง อย่าลืมเช็กวันหมดอายุ (expiry date) ก่อนเดินทาง"
+  },
+  {
+    "id": "travel-airport",
+    "word": "airport",
+    "pos": "n.",
+    "ipa": "/ˈer.pɔːrt/",
+    "thai": "สนามบิน",
+    "emoji": "✈️",
+    "imageQuery": "airport departure hall",
+    "example": "We should get to the airport two hours early.",
+    "exampleThai": "เราไปถึงสนามบินก่อนเวลา 2 ชั่วโมงดีกว่า",
+    "keyVocab": [
+      { "en": "get to", "thai": "ไปถึง" },
+      { "en": "airport", "thai": "สนามบิน" },
+      { "en": "early", "thai": "แต่เช้า / ก่อนเวลา" }
+    ],
+    "tip": "airport คือสนามบิน terminal คืออาคารผู้โดยสาร และ gate คือประตูขึ้นเครื่อง"
+  },
+  {
+    "id": "travel-luggage",
+    "word": "luggage",
+    "pos": "n.",
+    "ipa": "/ˈlʌɡ.ɪdʒ/",
+    "thai": "กระเป๋าเดินทาง",
+    "emoji": "🧳",
+    "imageQuery": "travel luggage suitcase",
+    "example": "My luggage is too heavy to carry upstairs.",
+    "exampleThai": "กระเป๋าเดินทางฉันหนักเกินกว่าจะยกขึ้นชั้นบนไหว",
+    "keyVocab": [
+      { "en": "luggage", "thai": "กระเป๋าเดินทาง" },
+      { "en": "heavy", "thai": "หนัก" },
+      { "en": "carry", "thai": "ยก / หิ้ว" }
+    ],
+    "tip": "luggage เป็นคำนับไม่ได้ ห้ามเติม s ใช้ a piece of luggage หรือ two bags แทน"
+  },
+  {
+    "id": "travel-map",
+    "word": "map",
+    "pos": "n.",
+    "ipa": "/mæp/",
+    "thai": "แผนที่",
+    "emoji": "🗺️",
+    "imageQuery": "city street map",
+    "example": "Let me check the map on my phone.",
+    "exampleThai": "ขอฉันดูแผนที่ในมือถือแป๊บนะ",
+    "keyVocab": [
+      { "en": "check", "thai": "ดู / ตรวจสอบ" },
+      { "en": "map", "thai": "แผนที่" },
+      { "en": "phone", "thai": "โทรศัพท์ / มือถือ" }
+    ],
+    "tip": "map อ่านว่า แม็พ ถ้าจะถามว่ามีแผนที่ไหม ใช้ Do you have a map?"
+  },
+  {
+    "id": "travel-bus",
+    "word": "bus",
+    "pos": "n.",
+    "ipa": "/bʌs/",
+    "thai": "รถเมล์",
+    "emoji": "🚌",
+    "imageQuery": "public city bus",
+    "example": "The bus to the city center leaves every ten minutes.",
+    "exampleThai": "รถเมล์ไปกลางเมืองออกทุกสิบนาที",
+    "keyVocab": [
+      { "en": "city center", "thai": "ใจกลางเมือง" },
+      { "en": "leaves", "thai": "ออก (รถออก)" },
+      { "en": "every ten minutes", "thai": "ทุกสิบนาที" }
+    ],
+    "tip": "ขึ้นรถเมล์ใช้ take a bus หรือ get on the bus ลงรถใช้ get off the bus"
+  },
+  {
+    "id": "travel-train",
+    "word": "train",
+    "pos": "n.",
+    "ipa": "/treɪn/",
+    "thai": "รถไฟ",
+    "emoji": "🚆",
+    "imageQuery": "train railway station",
+    "example": "I usually take the train to work in the morning.",
+    "exampleThai": "ปกติฉันนั่งรถไฟไปทำงานตอนเช้า",
+    "keyVocab": [
+      { "en": "take the train", "thai": "นั่งรถไฟ" },
+      { "en": "usually", "thai": "โดยปกติ" },
+      { "en": "in the morning", "thai": "ตอนเช้า" }
+    ],
+    "tip": "นั่งรถไฟใช้ take the train ส่วนสถานีรถไฟเรียกว่า train station"
+  },
+  {
+    "id": "travel-schedule",
+    "word": "schedule",
+    "pos": "n.",
+    "ipa": "/ˈskedʒ.uːl/",
+    "thai": "ตารางเวลา",
+    "emoji": "📅",
+    "imageQuery": "travel schedule calendar",
+    "example": "Please check the train schedule before we leave home.",
+    "exampleThai": "ช่วยเช็กตารางรถไฟก่อนเราออกจากบ้านหน่อยนะ",
+    "keyVocab": [
+      { "en": "schedule", "thai": "ตารางเวลา" },
+      { "en": "check", "thai": "ตรวจสอบ / ดู" },
+      { "en": "before we leave", "thai": "ก่อนที่เราจะออกเดินทาง" }
+    ],
+    "tip": "schedule สำเนียงอเมริกันออกเสียง สเก็ดจูล ไม่ใช่ เช็ดจูล แบบอังกฤษ"
+  },
+  {
+    "id": "travel-destination",
+    "word": "destination",
+    "pos": "n.",
+    "ipa": "/ˌdes.təˈneɪ.ʃən/",
+    "thai": "จุดหมายปลายทาง",
+    "emoji": "📍",
+    "imageQuery": "destination map pin",
+    "example": "Our final destination is a small island in the south.",
+    "exampleThai": "จุดหมายสุดท้ายของเราคือเกาะเล็กๆ ทางภาคใต้",
+    "keyVocab": [
+      { "en": "final destination", "thai": "จุดหมายปลายทางสุดท้าย" },
+      { "en": "island", "thai": "เกาะ" },
+      { "en": "in the south", "thai": "ทางภาคใต้" }
+    ],
+    "tip": "destination คือจุดหมายปลายทาง มักได้ยินคำว่า final destination ในประกาศสนามบิน"
+  },
+  {
+    "id": "travel-gate",
+    "word": "gate",
+    "pos": "n.",
+    "ipa": "/ɡeɪt/",
+    "thai": "ประตูขึ้นเครื่อง",
+    "emoji": "🚪",
+    "imageQuery": "airport boarding gate",
+    "example": "Our flight leaves from gate twelve at nine o'clock.",
+    "exampleThai": "เที่ยวบินเราออกจากประตู 12 ตอนเก้าโมง",
+    "keyVocab": [
+      { "en": "flight", "thai": "เที่ยวบิน" },
+      { "en": "gate", "thai": "ประตูขึ้นเครื่อง" },
+      { "en": "leaves from", "thai": "ออกจาก" }
+    ],
+    "tip": "gate ในสนามบินคือประตูขึ้นเครื่อง ควรถึงก่อนเวลาออกอย่างน้อย 30 นาที"
+  },
+  {
+    "id": "travel-turn-left",
+    "word": "turn left",
+    "pos": "phr.",
+    "ipa": "/ˌtɝːn ˈleft/",
+    "thai": "เลี้ยวซ้าย",
+    "emoji": "⬅️",
+    "imageQuery": "turning left street",
+    "example": "Walk two blocks and then turn left at the bank.",
+    "exampleThai": "เดินไปสองช่วงตึก แล้วเลี้ยวซ้ายตรงธนาคาร",
+    "keyVocab": [
+      { "en": "turn left", "thai": "เลี้ยวซ้าย" },
+      { "en": "blocks", "thai": "ช่วงตึก" },
+      { "en": "bank", "thai": "ธนาคาร" }
+    ],
+    "tip": "turn left = เลี้ยวซ้าย, turn right = เลี้ยวขวา, go straight = ตรงไป"
+  },
+  {
+    "id": "travel-ask-for-directions",
+    "word": "ask for directions",
+    "pos": "phr.",
+    "ipa": "/ˈæsk fər dəˈrek.ʃənz/",
+    "thai": "ถามทาง",
+    "emoji": "🧭",
+    "imageQuery": "asking directions tourist",
+    "example": "If you get lost, ask for directions at the hotel.",
+    "exampleThai": "ถ้าหลงทางก็ถามทางที่โรงแรมได้เลย",
+    "keyVocab": [
+      { "en": "get lost", "thai": "หลงทาง" },
+      { "en": "ask for directions", "thai": "ถามทาง" },
+      { "en": "hotel", "thai": "โรงแรม" }
+    ],
+    "tip": "ask for directions = ถามทาง เริ่มประโยคสุภาพด้วย Excuse me, where is ...?"
+  }
+]

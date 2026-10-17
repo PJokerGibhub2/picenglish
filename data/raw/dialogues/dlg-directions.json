@@ -1,0 +1,130 @@
+{
+  "id": "dlg-directions",
+  "title": "ถามทางและขึ้นรถ",
+  "titleEn": "Asking for directions and taking the bus",
+  "level": "A2",
+  "emoji": "🧭",
+  "category": "travel",
+  "commonsCategory": "Bus stops",
+  "imageQuery": "bus stop city map",
+  "setting": "คุณหลงทางในเมืองใหม่ ต้องถามทางและขึ้นรถเมล์ไปสนามบิน",
+  "counterpart": { "labelTh": "คนท้องถิ่นแถวนั้น", "emoji": "🙋" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Hi, you look lost. Can I help you?",
+      "thai": "สวัสดีครับ ดูเหมือนหลงทาง ให้ช่วยอะไรไหมครับ",
+      "keyPhrases": [
+        { "en": "you look lost", "thai": "ดูเหมือนหลงทาง" },
+        { "en": "Can I help you", "thai": "ให้ช่วยอะไรไหม" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Yes, please. I need to ask for directions to the airport.",
+      "thai": "ครับ ผมอยากถามทางไปสนามบินครับ",
+      "keyPhrases": [
+        { "en": "ask for directions", "thai": "ถามทาง" },
+        { "en": "the airport", "thai": "สนามบิน" }
+      ],
+      "alternative": [
+        { "en": "Yes, please. How do I get to the airport?", "thai": "ครับ ผมไปสนามบินยังไงครับ" },
+        { "en": "Thanks. Could you give me directions to the airport?", "thai": "ขอบคุณครับ ช่วยบอกทางไปสนามบินได้ไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Sure. Take the number seven bus from this stop.",
+      "thai": "ได้ครับ ขึ้นรถเมล์สายเจ็ดที่ป้ายนี้ครับ",
+      "keyPhrases": [
+        { "en": "the number seven bus", "thai": "รถเมล์สายเจ็ด" },
+        { "en": "this stop", "thai": "ป้ายนี้" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Great. Where can I buy a ticket?",
+      "thai": "ดีครับ ซื้อตั๋วได้ที่ไหนครับ",
+      "keyPhrases": [
+        { "en": "buy a ticket", "thai": "ซื้อตั๋ว" }
+      ],
+      "alternative": [
+        { "en": "Thanks. Where do I get a ticket?", "thai": "ขอบคุณครับ ผมซื้อตั๋วที่ไหน" },
+        { "en": "Good. Can I buy a ticket on the bus?", "thai": "ดีครับ ซื้อตั๋วบนรถเมล์ได้ไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "At the machine over there. Cash only, no credit card.",
+      "thai": "ที่ตู้ตรงโน้นครับ รับเงินสดเท่านั้น ไม่รับบัตรเครดิต",
+      "keyPhrases": [
+        { "en": "At the machine over there", "thai": "ที่ตู้ตรงโน้น" },
+        { "en": "Cash only", "thai": "เงินสดเท่านั้น" },
+        { "en": "credit card", "thai": "บัตรเครดิต" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Okay. Do you have a bus schedule I can take?",
+      "thai": "ครับ มีตารางรถเมล์ให้ผมเอาไปดูไหมครับ",
+      "keyPhrases": [
+        { "en": "a bus schedule", "thai": "ตารางรถเมล์" },
+        { "en": "I can take", "thai": "ที่ผมขอเอาไปได้" }
+      ],
+      "alternative": [
+        { "en": "Okay. Could I get a bus schedule?", "thai": "ครับ ขอตารางรถเมล์ได้ไหม" },
+        { "en": "Fine. Is there a schedule for the bus?", "thai": "ครับ มีตารางเวลารถเมล์ไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Yes, here's a small map with the times.",
+      "thai": "มีครับ นี่แผนที่เล็กๆ ที่มีเวลาเดินรถอยู่ครับ",
+      "keyPhrases": [
+        { "en": "a small map", "thai": "แผนที่เล็กๆ" },
+        { "en": "the times", "thai": "เวลาเดินรถ" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Thanks. Which stop is best for the airport?",
+      "thai": "ขอบคุณครับ ลงป้ายไหนดีที่สุดสำหรับสนามบินครับ",
+      "keyPhrases": [
+        { "en": "Which stop is best", "thai": "ป้ายไหนดีที่สุด" }
+      ],
+      "alternative": [
+        { "en": "Thank you. Which stop should I get off at?", "thai": "ขอบคุณครับ ผมควรลงป้ายไหน" },
+        { "en": "Thanks. What's the best stop for the airport?", "thai": "ขอบคุณครับ ป้ายไหนใกล้สนามบินที่สุด" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Get off at Gate Five, then turn left and walk.",
+      "thai": "ลงที่ประตูห้า แล้วเลี้ยวซ้ายเดินต่อครับ",
+      "keyPhrases": [
+        { "en": "Gate Five", "thai": "ประตูห้า" },
+        { "en": "turn left", "thai": "เลี้ยวซ้าย" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Perfect. I don't want to miss my flight.",
+      "thai": "เยี่ยมครับ ผมไม่อยากตกเครื่องบิน",
+      "keyPhrases": [
+        { "en": "don't want to miss", "thai": "ไม่อยากพลาด" },
+        { "en": "my flight", "thai": "เที่ยวบินของผม" }
+      ],
+      "alternative": [
+        { "en": "Great. I don't want to miss the plane.", "thai": "เยี่ยมครับ ผมไม่อยากตกเครื่อง" },
+        { "en": "Perfect. My flight is at four, so thanks.", "thai": "เยี่ยมครับ เที่ยวบินผมสี่โมง ขอบคุณนะครับ" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "The train to the airport leaves every ten minutes.", "thai": "รถไฟไปสนามบินออกทุกสิบนาทีครับ" },
+    { "en": "You can't miss it.", "thai": "หาไม่ยากครับ" },
+    { "en": "It's about ten minutes from here.", "thai": "จากตรงนี้ประมาณสิบนาทีครับ" },
+    { "en": "Ask the driver if you're not sure.", "thai": "ไม่แน่ใจก็ถามคนขับได้ครับ" },
+    { "en": "Tell the driver your destination.", "thai": "บอกคนขับปลายทางที่คุณจะไปด้วยนะครับ" }
+  ]
+}

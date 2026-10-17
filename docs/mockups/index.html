@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PicEnglish — Mockup ทุกหน้าจอ (ฉบับออกแบบ)</title>
+<style>
+  /* ==========================================================
+     DESIGN TOKENS — ใช้ค่าเดียวกันทั้งแอป
+     ========================================================== */
+  :root {
+    --bg-0:#0B0718; --bg-1:#120B2B; --bg-2:#1B1240; --bg-3:#251A52;
+    --glow-1:#7C3AED; --glow-2:#22D3EE;
+    --card:rgba(255,255,255,.055);
+    --stroke:rgba(255,255,255,.10);
+    --stroke-2:rgba(255,255,255,.20);
+    --text:#F7F5FF; --soft:#B9B2D6; --dim:#7A7397;
+    --accent:#3B82F6; --accent-2:#60A5FA;
+    --mint:#34D399; --mint-2:#6EE7B7; --teal:#22D3EE;
+    --coral:#FB7185; --rose:#F472B6;
+    --gold:#FBBF24; --gold-2:#FDE68A;
+    --r-s:14px; --r-m:20px; --r-l:26px; --r-xl:34px;
+    --shadow:0 18px 40px rgba(0,0,0,.45);
+    --font:"Noto Sans Thai","Sarabun",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --font-en:"Inter",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;
+  }
+  * { box-sizing:border-box; -webkit-font-smoothing:antialiased; }
+  body {
+    margin:0; padding:34px 26px 70px;
+    background:
+      radial-gradient(900px 600px at 12% -6%, rgba(124,58,237,.35), transparent 65%),
+      radial-gradient(800px 500px at 92% 8%, rgba(34,211,238,.16), transparent 60%),
+      #07050F;
+    color:var(--text); font-family:var(--font); line-height:1.55;
+  }
+  .page-head { max-width:1560px; margin:0 auto 26px; }
+  .kicker {
+    display:inline-flex; align-items:center; gap:8px; padding:5px 13px; border-radius:999px;
+    background:rgba(52,211,153,.14); color:var(--mint-2); font-size:12px; font-weight:800; letter-spacing:.06em;
+  }
+  h1 { font-size:32px; margin:12px 0 6px; letter-spacing:-.02em; }
+  .sub { color:var(--soft); font-size:15px; max-width:820px; margin:0; }
+  .row-chips { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .chip { padding:6px 12px; border-radius:999px; border:1px solid var(--stroke); background:var(--card); font-size:12.5px; color:var(--soft); }
+  .chip b { color:var(--text); }
+
+  /* ---------- แถบดีไซน์ซิสเต็ม ---------- */
+  .ds { max-width:1560px; margin:0 auto 34px; display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:16px; }
+  .panel { background:var(--card); border:1px solid var(--stroke); border-radius:22px; padding:18px; }
+  .panel h3 { margin:0 0 12px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); }
+  .swatches { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+  .sw { border-radius:12px; overflow:hidden; border:1px solid var(--stroke); }
+  .sw i { display:block; height:38px; }
+  .sw span { display:block; font-size:10px; padding:4px 6px; color:var(--dim); font-family:var(--font-en); }
+  .type-row { display:flex; align-items:baseline; gap:10px; margin-bottom:6px; color:var(--soft); font-size:11px; font-family:var(--font-en); }
+  .type-row b { color:var(--text); font-family:var(--font); }
+  .mascot-sheet { display:flex; gap:10px; align-items:flex-end; justify-content:space-between; }
+  .mascot-slot { text-align:center; }
+  .mascot-slot span { display:block; font-size:10.5px; color:var(--dim); margin-top:4px; }
+  .mascot-slot svg { filter:drop-shadow(0 10px 18px rgba(34,211,238,.22)); }
+
+  /* ---------- แกลเลอรีหน้าจอ ---------- */
+  .gallery { max-width:1560px; margin:0 auto; display:grid; grid-template-columns:repeat(4, 390px); gap:26px 22px; justify-content:center; }
+  .slot { }
+  .slot .cap { display:flex; align-items:center; gap:8px; margin:0 0 8px 6px; }
+  .slot .cap b { font-size:13px; }
+  .slot .cap span { font-size:11px; color:var(--dim); }
+
+  .frame {
+    position:relative; width:390px; height:844px; border-radius:46px; padding:11px;
+    background:linear-gradient(160deg,#241a3f,#0d0820 60%);
+    box-shadow:var(--shadow), inset 0 0 0 1px rgba(255,255,255,.08);
+  }
+  .frame .screen {
+    position:relative; width:100%; height:100%; border-radius:36px; overflow:hidden;
+    display:flex; flex-direction:column;
+    background:
+      radial-gradient(120% 60% at 50% -10%, rgba(124,58,237,.55), transparent 60%),
+      radial-gradient(90% 40% at 100% 100%, rgba(34,211,238,.16), transparent 60%),
+      linear-gradient(180deg,var(--bg-1),var(--bg-0) 72%);
+  }
+  .frame.light { background:linear-gradient(160deg,#eae4ff,#cfc6ee); }
+  .frame .screen { color: var(--text); }
+  .frame.light .screen { color:#1A1130;
+    --text:#1A1130; --soft:#5B5478; --dim:#8C86A6;
+    --card:rgba(255,255,255,.86); --stroke:rgba(36,20,80,.10); --stroke-2:rgba(36,20,80,.18);
+    background:
+      radial-gradient(120% 55% at 50% -10%, rgba(124,58,237,.22), transparent 62%),
+      linear-gradient(180deg,#FBF9FF,#EFEAFF 70%);
+  }
+  .status { height:44px; display:flex; align-items:center; justify-content:space-between; padding:0 26px; font-size:12.5px; font-weight:700; color:var(--text); flex:none; }
+  .status .dots { letter-spacing:2px; color:var(--text); opacity:.85; }
+
+  .screen-body { flex:1; padding:6px 18px 0; overflow:hidden; display:flex; flex-direction:column; }
+  .topbar { display:flex; align-items:center; gap:10px; height:44px; flex:none; }
+  .xbtn { width:34px; height:34px; border-radius:12px; display:grid; place-items:center; background:var(--card); border:1px solid var(--stroke); font-size:15px; color:var(--soft); }
+  .prog { flex:1; height:6px; border-radius:999px; background:rgba(255,255,255,.10); overflow:hidden; }
+  .prog i { display:block; height:100%; width:38%; border-radius:999px; background:linear-gradient(90deg,var(--teal),var(--mint)); box-shadow:0 0 12px rgba(52,211,153,.6); }
+  .counter { font-size:12px; font-weight:800; color:var(--soft); font-family:var(--font-en); }
+  .xp { display:inline-flex; align-items:center; gap:5px; padding:4px 9px; border-radius:999px; background:rgba(251,191,36,.15); color:var(--gold-2); font-size:11.5px; font-weight:800; }
+  .xp svg { width:12px; height:12px; }
+
+  /* ---------- การ์ด/ปุ่มพื้นฐาน ---------- */
+  .card { background:var(--card); border:1px solid var(--stroke); border-radius:var(--r-l); padding:16px; }
+  .btn { display:flex; align-items:center; justify-content:center; gap:8px; height:58px; border-radius:999px; border:0; font:inherit; font-weight:800; font-size:16px; color:#fff; }
+  .btn.primary { background:linear-gradient(180deg,var(--accent-2),var(--accent)); box-shadow:0 10px 24px rgba(59,130,246,.36), inset 0 1px 0 rgba(255,255,255,.35); }
+  .btn.ghost { background:var(--card); border:1px solid var(--stroke-2); color:var(--text); }
+  .btn.mint { background:linear-gradient(180deg,var(--mint-2),var(--mint)); color:#05301F; box-shadow:0 10px 24px rgba(52,211,153,.32); }
+  .btn.sm { height:46px; font-size:14px; }
+  .dock { padding:12px 18px 20px; display:flex; flex-direction:column; gap:10px; flex:none; }
+  .row { display:flex; gap:10px; }
+  .row > * { flex:1; }
+  .row > .streakchip, .row > .xbtn, .row > .xp, .row > .ibtn { flex:0 0 auto; }
+  .row > span { flex:0 0 auto; }
+
+  /* ---------- แท็บล่าง ---------- */
+  .tabbar { flex:none; display:grid; grid-template-columns:repeat(5,1fr); padding:8px 6px 16px; background:linear-gradient(180deg,transparent,rgba(8,4,20,.75)); }
+  .tab { display:flex; flex-direction:column; align-items:center; gap:3px; font-size:9.5px; font-weight:700; color:var(--dim); }
+  .tab .ic { font-size:19px; filter:grayscale(1) opacity(.6); }
+  .tab.on { color:var(--teal); }
+  .tab.on .ic { filter:none; }
+
+  /* ---------- หน้าวันนี้ ---------- */
+  .greet { font-size:14px; color:var(--soft); margin:2px 0 0; }
+  .h1 { font-size:25px; font-weight:800; letter-spacing:-.02em; margin:2px 0 0; line-height:1.28; }
+  .streakchip { display:inline-flex; gap:6px; align-items:center; padding:5px 11px; border-radius:999px; background:rgba(251,191,36,.16); color:var(--gold-2); font-weight:800; font-size:12px; }
+  .mascot-wrap { position:relative; height:186px; display:grid; place-items:center; margin:2px 0 0; }
+  .speech {
+    position:absolute; top:2px; left:14px; max-width:212px; padding:10px 13px; border-radius:16px 16px 16px 4px;
+    background:rgba(255,255,255,.10); border:1px solid var(--stroke-2); font-size:12.5px; line-height:1.45; color:var(--text);
+    backdrop-filter:blur(6px);
+  }
+  .quest { display:flex; flex-direction:column; gap:9px; }
+  .qi { display:flex; align-items:center; gap:11px; padding:12px 13px; border-radius:16px; background:var(--card); border:1px solid var(--stroke); }
+  .qi .box { width:24px; height:24px; border-radius:8px; display:grid; place-items:center; font-size:12px; background:rgba(255,255,255,.08); border:1px solid var(--stroke-2); color:transparent; flex:none; }
+  .qi.done .box { background:var(--mint); border-color:transparent; color:#04301F; }
+  .qi .t { flex:1; font-size:13.5px; font-weight:700; }
+  .qi.done .t { color:var(--soft); text-decoration:line-through; text-decoration-color:rgba(185,178,214,.5); }
+  .qi .n { font-size:11.5px; color:var(--dim); font-family:var(--font-en); }
+  .weekbar { display:flex; align-items:center; gap:10px; padding:12px 14px; border-radius:16px; background:rgba(34,211,238,.10); border:1px solid rgba(34,211,238,.22); }
+  .weekbar b { font-family:var(--font-en); font-size:15px; color:var(--teal); }
+
+  /* ---------- หมวดหมู่ ---------- */
+  .cat-grid { display:grid; grid-template-columns:1fr 1fr; gap:11px; margin-top:12px; }
+  .cat { padding:13px; border-radius:20px; background:var(--card); border:1px solid var(--stroke); position:relative; overflow:hidden; }
+  .cat::after { content:""; position:absolute; inset:auto -30px -40px auto; width:96px; height:96px; border-radius:50%; background:var(--tint,#7C3AED); opacity:.22; filter:blur(6px); }
+  .cat img { width:44px; height:44px; object-fit:contain; filter:drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
+  .cat .nm { font-size:13px; font-weight:800; margin-top:6px; }
+  .cat .en { font-size:9.5px; color:var(--dim); font-family:var(--font-en); }
+  .cat .bar { height:4px; border-radius:999px; background:rgba(255,255,255,.10); margin-top:8px; overflow:hidden; }
+  .cat .bar i { display:block; height:100%; background:var(--mint); border-radius:999px; }
+  .cat .pg { font-size:9.5px; color:var(--dim); margin-top:4px; font-family:var(--font-en); }
+
+  /* ---------- แฟลชการ์ด ---------- */
+  .art-stage { flex:1; display:grid; place-items:center; position:relative; margin:6px 0; }
+  .art-stage::before { content:""; position:absolute; width:250px; height:250px; border-radius:50%; background:radial-gradient(circle,rgba(34,211,238,.30),transparent 68%); filter:blur(10px); }
+  .art-stage img { width:196px; height:196px; object-fit:contain; filter:drop-shadow(0 18px 30px rgba(0,0,0,.5)); }
+  .wordbox { text-align:center; padding:0 0 4px; }
+  .word { font-family:var(--font-en); font-size:36px; font-weight:800; letter-spacing:-.03em; }
+  .ipa { font-family:var(--font-en); font-size:14px; color:var(--dim); margin-top:-2px; }
+  .thai { font-size:19px; font-weight:800; color:var(--teal); margin-top:4px; }
+  .pos { display:inline-block; margin-left:6px; font-size:10.5px; font-weight:800; padding:2px 7px; border-radius:6px; background:rgba(255,255,255,.09); color:var(--soft); vertical-align:middle; }
+  .iconrow { display:flex; gap:9px; justify-content:center; margin-top:8px; }
+  .ibtn { width:46px; height:46px; border-radius:14px; display:grid; place-items:center; background:var(--card); border:1px solid var(--stroke); font-size:18px; }
+
+  /* ---------- ควิซ ---------- */
+  .prompt { font-size:13px; color:var(--soft); text-align:center; margin:8px 0 2px; }
+  .quizword { text-align:center; font-family:var(--font-en); font-size:33px; font-weight:800; letter-spacing:-.02em; }
+  .opts { display:flex; flex-direction:column; gap:10px; margin-top:14px; flex:1; }
+  .opt { display:flex; align-items:center; gap:12px; padding:15px 16px; border-radius:18px; background:var(--card); border:1.5px solid var(--stroke); min-height:64px; }
+  .opt .k { width:26px; height:26px; border-radius:9px; display:grid; place-items:center; font-size:11.5px; font-weight:800; background:rgba(255,255,255,.08); color:var(--soft); flex:none; }
+  .opt .v { font-size:16px; font-weight:700; }
+  .opt .ipa2 { font-size:11px; color:var(--dim); font-family:var(--font-en); margin-top:1px; }
+  .opt.ok { background:rgba(52,211,153,.14); border-color:var(--mint); box-shadow:0 0 0 3px rgba(52,211,153,.14); }
+  .opt.ok .k { background:var(--mint); color:#04301F; }
+  .opt.bad { background:rgba(251,113,133,.13); border-color:var(--coral); }
+  .opt.bad .k { background:var(--coral); color:#3A0010; }
+
+  /* ---------- บทสนทนา ---------- */
+  .bubble { padding:13px 15px; border-radius:18px; border:1px solid var(--stroke); background:var(--card); max-width:88%; }
+  .bubble .who { font-size:10.5px; font-weight:800; color:var(--dim); margin-bottom:3px; }
+  .bubble .en { font-family:var(--font-en); font-size:15.5px; line-height:1.5; }
+  .bubble .th { font-size:11.5px; color:var(--soft); margin-top:2px; }
+  .bubble.mine { margin-left:auto; background:linear-gradient(160deg,rgba(34,211,238,.18),rgba(52,211,153,.12)); border-color:rgba(34,211,238,.32); border-bottom-right-radius:6px; }
+  .bubble.mine .who { color:var(--teal); }
+  .bubble.other { border-bottom-left-radius:6px; }
+  .kvchips { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+  .kv { padding:5px 9px; border-radius:9px; background:rgba(255,255,255,.08); border:1px solid var(--stroke); font-size:11px; font-weight:700; }
+  .kv span { color:var(--dim); font-weight:600; margin-left:4px; }
+  .mic-wrap { display:grid; place-items:center; padding:8px 0 2px; }
+  .mic { width:82px; height:82px; border-radius:50%; display:grid; place-items:center; font-size:30px;
+    background:radial-gradient(circle at 35% 25%, #7DD3FC, #22D3EE 45%, #0891B2);
+    box-shadow:0 0 0 10px rgba(34,211,238,.12), 0 14px 30px rgba(34,211,238,.35); }
+  .michint { text-align:center; font-size:11.5px; color:var(--soft); margin-top:10px; }
+
+  /* ---------- ผลคะแนน ---------- */
+  .ring { display:grid; place-items:center; position:relative; }
+  .ring .num { position:absolute; font-family:var(--font-en); font-size:30px; font-weight:800; }
+  .verdict { text-align:center; font-size:16px; font-weight:800; margin-top:6px; }
+  .verdict small { display:block; font-size:11.5px; font-weight:600; color:var(--soft); margin-top:2px; }
+  .wordtags { display:flex; flex-wrap:wrap; gap:7px; justify-content:center; margin-top:12px; }
+  .wt { padding:7px 11px; border-radius:11px; font-size:12.5px; font-weight:800; font-family:var(--font-en); }
+  .wt.good { background:rgba(52,211,153,.16); color:var(--mint-2); border:1px solid rgba(52,211,153,.35); }
+  .wt.bad { background:rgba(251,113,133,.15); color:#FECDD3; border:1px solid rgba(251,113,133,.4); }
+  .wt i { font-style:normal; font-size:10px; opacity:.8; margin-left:4px; }
+  .ab { display:flex; gap:9px; margin-top:12px; }
+  .ab .btn { height:50px; font-size:13.5px; }
+
+  /* ---------- ฉลอง ---------- */
+  .celebrate { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; }
+  .confetti i { position:absolute; width:7px; height:7px; border-radius:2px; opacity:.9; }
+  .big-title { font-size:24px; font-weight:800; margin-top:6px; letter-spacing:-.01em; }
+  .big-sub { font-size:12.5px; color:var(--soft); }
+  .statrow { display:flex; gap:10px; margin-top:18px; width:100%; }
+  .stat { flex:1; text-align:center; padding:13px 8px; border-radius:18px; background:var(--card); border:1px solid var(--stroke); }
+  .stat b { display:block; font-family:var(--font-en); font-size:21px; font-weight:800; }
+  .stat span { font-size:10.5px; color:var(--dim); font-weight:700; }
+  .weekdots { display:flex; gap:7px; justify-content:center; margin-top:16px; }
+  .wd { width:34px; text-align:center; }
+  .wd i { display:block; width:26px; height:26px; margin:0 auto 4px; border-radius:50%; background:rgba(255,255,255,.09); border:1px solid var(--stroke); display:grid; place-items:center; font-size:12px; color:transparent; }
+  .wd.done i { background:var(--gold); border-color:transparent; color:#3A2500; box-shadow:0 6px 14px rgba(251,191,36,.35); }
+  .wd.today i { background:var(--mint); border-color:transparent; color:#04301F; box-shadow:0 0 0 5px rgba(52,211,153,.16); }
+  .wd.future i { color:var(--dim); }
+  .wd span { font-size:9.5px; color:var(--dim); font-weight:800; font-family:var(--font-en); }
+
+  /* ---------- รายการ/สถิติ ---------- */
+  .stat-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; }
+  .list { display:flex; flex-direction:column; gap:9px; margin-top:12px; }
+  .li { display:flex; align-items:center; gap:11px; padding:13px 14px; border-radius:18px; background:var(--card); border:1px solid var(--stroke); }
+  .li .ic { width:38px; height:38px; border-radius:12px; display:grid; place-items:center; font-size:18px; background:rgba(255,255,255,.08); flex:none; }
+  .li .tx { flex:1; }
+  .li .tx b { font-size:13.5px; display:block; }
+  .li .tx span { font-size:11px; color:var(--dim); }
+  .li .arw { color:var(--dim); font-size:14px; }
+
+  /* ---------- ตั้งค่า ---------- */
+  .seg { display:flex; padding:4px; border-radius:14px; background:rgba(255,255,255,.07); border:1px solid var(--stroke); }
+  .seg b { flex:1; text-align:center; padding:8px 0; border-radius:11px; font-size:12px; color:var(--soft); font-weight:700; }
+  .seg b.on { background:linear-gradient(180deg,var(--accent-2),var(--accent)); color:#fff; box-shadow:0 6px 14px rgba(59,130,246,.35); }
+  .sw-row { display:flex; align-items:center; gap:10px; padding:13px 14px; border-radius:16px; background:var(--card); border:1px solid var(--stroke); }
+  .sw-row .tx { flex:1; }
+  .sw-row .tx b { font-size:13px; display:block; }
+  .sw-row .tx span { font-size:10.5px; color:var(--dim); }
+  .toggle { width:46px; height:27px; border-radius:999px; background:var(--mint); position:relative; flex:none; }
+  .toggle::after { content:""; position:absolute; top:3px; right:3px; width:21px; height:21px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3); }
+
+  .section-label { font-size:11px; font-weight:800; letter-spacing:.06em; color:var(--dim); text-transform:uppercase; margin:4px 0 8px; }
+  .note { max-width:1560px; margin:34px auto 0; padding:18px 20px; border-radius:20px; background:var(--card); border:1px solid var(--stroke); color:var(--soft); font-size:13px; }
+  .note b { color:var(--text); }
+  .note ul { margin:8px 0 0 18px; padding:0; }
+  .note li { margin-bottom:5px; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     หัวเรื่อง
+     ============================================================ -->
+<div class="page-head">
+  <span class="kicker">MOCKUP · ฉบับออกแบบ · ยังไม่ลงโค้ด</span>
+  <h1>PicEnglish — หน้าตาใหม่ทั้งแอป</h1>
+  <p class="sub">
+    ธีมมืดพรีเมียมแบบ ELSA + มาสคอตนกแก้ว “ปิโก” + XP/สตรีค (ไม่มีการลงโทษ)
+    · สลับธีมสว่างได้ · ใช้ภาพกราฟฟิกน่ารักในเครื่อง · 11 หน้าจอหลัก
+  </p>
+  <div class="row-chips">
+    <span class="chip">ธีม <b>มืด / สว่าง</b> สลับได้</span>
+    <span class="chip">มาสคอต <b>ปิโก (นกแก้ว)</b> 4 อารมณ์</span>
+    <span class="chip">เกม <b>XP + สตรีค</b> ไม่มีหัวใจ/ไม่มีคำว่าตก</span>
+    <span class="chip">ปุ่มขั้นต่ำ <b>58–92px</b> กดง่าย</span>
+    <span class="chip">1 หน้า = <b>1 ปุ่มหลัก</b></span>
+  </div>
+</div>
+
+<!-- ============================================================
+     Design system
+     ============================================================ -->
+<div class="ds">
+  <div class="panel">
+    <h3>สี (Dark theme)</h3>
+    <div class="swatches">
+      <div class="sw"><i style="background:#0B0718"></i><span>#0B0718</span></div>
+      <div class="sw"><i style="background:#1B1240"></i><span>#1B1240</span></div>
+      <div class="sw"><i style="background:#7C3AED"></i><span>#7C3AED</span></div>
+      <div class="sw"><i style="background:#22D3EE"></i><span>#22D3EE</span></div>
+      <div class="sw"><i style="background:#34D399"></i><span>#34D399</span></div>
+      <div class="sw"><i style="background:#3B82F6"></i><span>#3B82F6</span></div>
+      <div class="sw"><i style="background:#FB7185"></i><span>#FB7185</span></div>
+      <div class="sw"><i style="background:#FBBF24"></i><span>#FBBF24</span></div>
+    </div>
+    <h3 style="margin-top:16px">ตัวอักษร</h3>
+    <div class="type-row"><b style="font-size:29px;font-weight:800">สวัสดี!</b> display 29 / 800</div>
+    <div class="type-row"><b style="font-size:19px;font-weight:800">ของหวาน</b> h2 19 / 800</div>
+    <div class="type-row"><b style="font-size:15px">ฝึกวันละ 5 นาที</b> body 15 / 400</div>
+    <div class="type-row"><b style="font-size:11px;color:#7A7397">LABEL 11 / 800</b></div>
+  </div>
+
+  <div class="panel">
+    <h3>มาสคอต “ปิโก” (Pico) — นกแก้ว</h3>
+    <div class="mascot-sheet">
+      <div class="mascot-slot"><svg width="86" height="86" viewBox="0 0 200 200" aria-label="ปิโก ปกติ"><use href="#picoBody"/></svg><span>ปกติ</span></div>
+      <div class="mascot-slot"><svg width="86" height="86" viewBox="0 0 200 200" aria-label="ปิโก ดีใจ"><use href="#picoBody"/><path d="M64 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M102 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M92 128q8 11 16 0z" fill="#7C2D12"/></svg><span>ดีใจ</span></div>
+      <div class="mascot-slot"><svg width="86" height="86" viewBox="0 0 200 200" aria-label="ปิโก ผิดหวัง"><use href="#picoBody"/><path d="M64 84q17 9 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M102 84q17 9 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M52 116q7 9 0 14q-7-5 0-14z" fill="#67E8F9"/></svg><span>ผิดหวัง</span></div>
+      <div class="mascot-slot"><svg width="86" height="86" viewBox="0 0 200 200" aria-label="ปิโก ฉลอง"><use href="#picoBody"/><path d="M64 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M102 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M92 128q8 12 16 0z" fill="#7C2D12"/><path d="M34 40l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#FBBF24"/><path d="M170 52l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#FDE68A"/></svg><span>ฉลอง</span></div>
+    </div>
+    <p style="font-size:11.5px;color:var(--dim);margin:10px 0 0">
+      นกแก้ว = สื่อ “การพูด/พูดตาม” ตรงกับแอปฝึกภาษา · ชื่อ <b style="color:var(--text)">ปิโก</b> ออกเสียงง่ายทั้งไทย/อังกฤษ
+    </p>
+  </div>
+
+  <div class="panel">
+    <h3>หลักการที่ใช้</h3>
+    <ul style="margin:0 0 0 16px;padding:0;font-size:12.5px;color:var(--soft);line-height:1.9">
+      <li>1 หน้า = 1 ปุ่มหลัก (ลดการตัดสินใจ)</li>
+      <li>ปุ่ม/การ์ด ≥ 58px · ตัวเลือก ≥ 64px</li>
+      <li>พื้นเข้ม + glow = รู้สึกพรีเมียม</li>
+      <li>ผลเฉลยทันที + ไอพีเอให้เห็นว่าผิดตรงไหน</li>
+      <li>XP + สตรีคให้กำลังใจ — <b style="color:var(--text)">ไม่มีหัวใจ/ไม่มีการลงโทษ</b></li>
+      <li>มาสคอตเป็นคน “ชวนเรียน” ไม่ใช่คนตัดสิน</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================
+     แกลเลอรีหน้าจอ
+     ============================================================ -->
+<div class="gallery">
+
+  <!-- ============ 1. วันนี้ ============ -->
+  <div class="slot" data-shot="01-today">
+    <div class="cap"><b>1. วันนี้</b><span>หน้าแรก · มาสคอตชวนเรียน</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="row" style="align-items:center;margin-top:2px">
+          <div style="flex:1">
+            <div class="greet">สวัสดีตอนเช้า</div>
+            <div class="h1">วันนี้ฝึกกันนะ!</div>
+          </div>
+          <span class="streakchip">🔥 5 วัน</span>
+        </div>
+
+        <div class="mascot-wrap">
+          <div class="speech">เหลืออีก <b>1 ด่าน</b> ก็ครบภารกิจวันนี้แล้ว! ไปกันเลย 🎉</div>
+          <svg width="150" height="150" viewBox="0 0 200 200" style="margin-top:24px;filter:drop-shadow(0 16px 26px rgba(34,211,238,.28))">
+  <circle cx="100" cy="104" r="74" fill="url(#pGlow)"/>
+  <use href="#picoBody"/>
+  <path d="M64 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M102 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M92 128q8 11 16 0z" fill="#7C2D12"/></svg>
+        </div>
+
+        <div class="section-label">ภารกิจวันนี้ · 5 นาที</div>
+        <div class="quest">
+          <div class="qi done"><span class="box">✓</span><span class="t">ทวน 5 ประโยค</span><span class="n">5/5</span></div>
+          <div class="qi done"><span class="box">✓</span><span class="t">สนทนา 1 สถานการณ์</span><span class="n">1/1</span></div>
+          <div class="qi"><span class="box">✓</span><span class="t">พูดคนเดียว 60 วินาที</span><span class="n">0/1</span></div>
+        </div>
+
+        <div class="weekbar" style="margin-top:11px">
+          <span style="font-size:16px">🎯</span>
+          <div style="flex:1;font-size:11.5px;color:var(--soft)">สัปดาห์นี้คุณพูดไปแล้ว</div>
+          <b>12 / 15</b>
+        </div>
+      </div>
+      <div class="dock"><button class="btn primary">เริ่มเลย · 5 นาที</button></div>
+      <div class="tabbar">
+        <span class="tab on"><span class="ic">🎯</span>วันนี้</span>
+        <span class="tab"><span class="ic">📚</span>เรียน</span>
+        <span class="tab"><span class="ic">🗣️</span>พูด</span>
+        <span class="tab"><span class="ic">🔁</span>ทบทวน</span>
+        <span class="tab"><span class="ic">👤</span>ฉัน</span>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 2. เรียน ============ -->
+  <div class="slot" data-shot="02-learn">
+    <div class="cap"><b>2. เรียน</b><span>หมวดหมู่ · ภาพกราฟฟิกจริง</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="h1" style="font-size:24px;margin-top:0">เรียนอะไรดี</div>
+        <div class="greet">เลือกหมวดที่อยากใช้จริงวันนี้</div>
+        <div class="cat-grid">
+          <div class="cat" style="--tint:#FB923C"><img src="../../data/art/food-dessert.svg" alt=""><div class="nm">อาหาร</div><div class="en">Food &amp; Drinks</div><div class="bar"><i style="width:42%"></i></div><div class="pg">5 / 12</div></div>
+          <div class="cat" style="--tint:#FB7185"><img src="../../data/art/restaurant-menu.svg" alt=""><div class="nm">ร้านอาหาร</div><div class="en">Restaurant</div><div class="bar"><i style="width:16%"></i></div><div class="pg">2 / 12</div></div>
+          <div class="cat" style="--tint:#38BDF8"><img src="../../data/art/travel-map.svg" alt=""><div class="nm">เดินทาง</div><div class="en">Travel</div><div class="bar"><i style="width:0%"></i></div><div class="pg">0 / 12</div></div>
+          <div class="cat" style="--tint:#34D399"><img src="../../data/art/home-house.svg" alt=""><div class="nm">ที่พัก</div><div class="en">Home</div><div class="bar"><i style="width:75%"></i></div><div class="pg">9 / 12</div></div>
+          <div class="cat" style="--tint:#A78BFA"><img src="../../data/art/shopping-wallet.svg" alt=""><div class="nm">ช้อปปิ้ง</div><div class="en">Shopping</div><div class="bar"><i style="width:33%"></i></div><div class="pg">4 / 12</div></div>
+          <div class="cat" style="--tint:#2DD4BF"><img src="../../data/art/health-medicine.svg" alt=""><div class="nm">สุขภาพ</div><div class="en">Health</div><div class="bar"><i style="width:58%"></i></div><div class="pg">7 / 12</div></div>
+        </div>
+        <div class="section-label" style="margin-top:14px">เรียนตามสถานการณ์</div>
+        <div class="li" style="margin-top:0"><span class="ic">💬</span><div class="tx"><b>บทสนทนาจำลอง</b><span>8 สถานการณ์ · พูดจริงพร้อมให้คะแนน</span></div><span class="arw">›</span></div>
+      </div>
+      <div class="tabbar">
+        <span class="tab"><span class="ic">🎯</span>วันนี้</span>
+        <span class="tab on"><span class="ic">📚</span>เรียน</span>
+        <span class="tab"><span class="ic">🗣️</span>พูด</span>
+        <span class="tab"><span class="ic">🔁</span>ทบทวน</span>
+        <span class="tab"><span class="ic">👤</span>ฉัน</span>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 3. แฟลชการ์ด ============ -->
+  <div class="slot" data-shot="03-card">
+    <div class="cap"><b>3. แฟลชการ์ด</b><span>ภาพ + คำ + ไอพีเอ + เสียง</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="topbar"><span class="xbtn">✕</span><div class="prog"><i style="width:30%"></i></div><span class="counter">3 / 10</span><span class="xp">✦ 24</span></div>
+        <div class="art-stage"><img src="../../data/art/food-dessert.svg" alt="dessert"></div>
+        <div class="wordbox">
+          <div class="word">dessert</div>
+          <div class="ipa">/dɪˈzɜːt/</div>
+          <div class="thai">ของหวาน <span class="pos">n.</span></div>
+          <div class="iconrow"><span class="ibtn">🔊</span><span class="ibtn" style="color:var(--gold)">★</span></div>
+        </div>
+      </div>
+      <div class="dock">
+        <div class="row">
+          <button class="btn ghost">ยังไม่แน่ใจ</button>
+          <button class="btn mint">รู้แล้ว</button>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 4. ควิซ ============ -->
+  <div class="slot" data-shot="04-quiz">
+    <div class="cap"><b>4. ควิซ</b><span>แบบ ELSA · การ์ดตัวเลือกใหญ่</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="topbar"><span class="xbtn">✕</span><div class="prog"><i style="width:20%"></i></div><span class="counter">2 / 10</span><span class="xp">✦ 13</span></div>
+        <div class="prompt">คำนี้แปลว่าอะไร</div>
+        <div class="quizword">receipt</div>
+        <div style="text-align:center"><span class="ibtn" style="display:inline-grid;margin-top:8px">🔊</span></div>
+        <div class="opts">
+          <div class="opt"><span class="k">A</span><div><div class="v">ใบเสร็จ</div></div></div>
+          <div class="opt"><span class="k">B</span><div><div class="v">ส่วนลด</div></div></div>
+          <div class="opt"><span class="k">C</span><div><div class="v">เงินทอน</div></div></div>
+          <div class="opt"><span class="k">D</span><div><div class="v">กระเป๋าสตางค์</div></div></div>
+        </div>
+      </div>
+      <div class="dock" style="padding-bottom:8px"><div class="michint">เลือกคำตอบที่ถูกต้อง</div></div>
+    </div></div>
+  </div>
+
+  <!-- ============ 5. ผลเฉลย ============ -->
+  <div class="slot" data-shot="05-feedback">
+    <div class="cap"><b>5. ผลเฉลย</b><span>เห็นทันทีว่าผิดตรงไหน + ไอพีเอ</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="topbar"><span class="xbtn">✕</span><div class="prog"><i style="width:20%"></i></div><span class="counter">2 / 10</span><span class="xp">✦ 13</span></div>
+        <div class="prompt">คำนี้แปลว่าอะไร</div>
+        <div class="quizword">receipt</div>
+        <div class="opts" style="margin-top:12px">
+          <div class="opt bad"><span class="k">✕</span><div><div class="v">ส่วนลด</div><div class="ipa2">/rɪˈsiːt/ ≠ discount</div></div></div>
+          <div class="opt ok"><span class="k">✓</span><div><div class="v">ใบเสร็จ</div><div class="ipa2">/rɪˈsiːt/· ไม่ต้องออกเสียง p</div></div></div>
+          <div class="opt"><span class="k">C</span><div><div class="v">เงินทอน</div></div></div>
+          <div class="opt"><span class="k">D</span><div><div class="v">กระเป๋าสตางค์</div></div></div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+          <svg width="46" height="46" viewBox="0 0 200 200"><use href="#picoBody"/><path d="M64 84q17 9 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M102 84q17 9 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M52 116q7 9 0 14q-7-5 0-14z" fill="#67E8F9"/></svg>
+          <div style="font-size:12px;color:var(--soft)">ไม่เป็นไรนะ! จำคำนี้ไว้แล้วกัน — เดี๋ยวจะพากลับมาทวนให้</div>
+        </div>
+      </div>
+      <div class="dock">
+        <button class="btn primary">ดำเนินการต่อ</button>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 6. บทสนทนา ============ -->
+  <div class="slot" data-shot="06-roleplay">
+    <div class="cap"><b>6. บทสนทนาจำลอง</b><span>บับเบิล + ปุ่มไมค์ใหญ่</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="topbar"><span class="xbtn">✕</span><div class="prog"><i style="width:22%"></i></div><span class="counter">2 / 9</span></div>
+        <div class="row" style="align-items:center;margin:4px 0 10px"><span style="font-size:15px">☕</span>
+          <div style="font-size:12.5px;color:var(--soft)">สั่งกาแฟ · คุณเป็นลูกค้า</div><span style="margin-left:auto;font-size:14px;color:var(--dim)">⇄</span></div>
+
+        <div class="bubble other" style="margin-bottom:9px">
+          <div class="who">🧑‍🍳 พนักงานร้านกาแฟ</div>
+          <div class="en">Good morning! What can I get you?</div>
+          <div class="th">อรุณสวัสดิ์ครับ รับอะไรดีครับ</div>
+        </div>
+
+        <div class="bubble mine">
+          <div class="who">🙋 คุณ (บทของคุณ)</div>
+          <div class="en">Could I get a medium latte, please?</div>
+          <div class="th">ขอลาเต้แก้วกลางครับ</div>
+          <div class="kvchips">
+            <span class="kv">Could I get <span>ขอ…</span></span>
+            <span class="kv">a medium latte <span>ลาเต้แก้วกลาง</span></span>
+          </div>
+        </div>
+
+        <div class="mic-wrap" style="margin-top:auto"><div class="mic">🎤</div></div>
+        <div class="michint">กดไมค์แล้วพูดประโยคของคุณ<br><span style="color:var(--dim)">จะบันทึกเสียงไว้ให้ฟังเทียบด้วย</span></div>
+      </div>
+      <div class="dock" style="padding-bottom:14px">
+        <div class="row"><button class="btn ghost sm">🐢 ฟังช้าๆ</button><button class="btn ghost sm">💡 พูดแบบอื่น</button></div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 7. ผลการพูด ============ -->
+  <div class="slot" data-shot="07-speakresult">
+    <div class="cap"><b>7. ผลการพูด</b><span>คะแนน + คำที่ยังไม่ชัด + A/B</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="topbar"><span class="xbtn">✕</span><div class="prog"><i style="width:33%"></i></div><span class="counter">3 / 9</span><span class="xp">✦ 18</span></div>
+        <div class="ring" style="margin:10px 0 2px">
+          <svg width="150" height="150" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="11"/>
+            <circle cx="75" cy="75" r="62" fill="none" stroke="url(#g1)" stroke-width="11" stroke-linecap="round"
+                    stroke-dasharray="389" stroke-dashoffset="70" transform="rotate(-90 75 75)"/>
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#34D399"/></linearGradient></defs>
+          </svg>
+          <div class="num">82%</div>
+        </div>
+        <div class="verdict">สื่อสารได้แล้ว! 🎉<small>อีกนิดเดียวก็เป๊ะ — ฝึก 2 คำที่เหลือไหม?</small></div>
+        <div class="wordtags">
+          <span class="wt good">Could I get</span>
+          <span class="wt good">a medium</span>
+          <span class="wt bad">latte<i>/ˈlɑː.teɪ/</i></span>
+          <span class="wt bad">please<i>/pliːz/</i></span>
+        </div>
+        <div class="ab">
+          <button class="btn ghost">🔊 เสียงของคุณ</button>
+          <button class="btn ghost">🔊 ต้นแบบ</button>
+        </div>
+      </div>
+      <div class="dock">
+        <button class="btn mint">ฝึก 2 คำที่เหลือ</button>
+        <button class="btn ghost sm" style="height:44px">ข้ามไปก่อน (จะกลับมาทวน)</button>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 8. ฉลอง + สตรีค ============ -->
+  <div class="slot" data-shot="08-celebrate">
+    <div class="cap"><b>8. ฉลอง + สตรีค</b><span>แบบ ELSA · เปลวไฟ + 7 วัน</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="celebrate">
+        <div class="confetti">
+          <i style="background:#FBBF24;left:52px;top:96px;transform:rotate(20deg)"></i>
+          <i style="background:#34D399;right:64px;top:120px;transform:rotate(-25deg)"></i>
+          <i style="background:#FB7185;left:96px;top:210px;transform:rotate(45deg)"></i>
+          <i style="background:#22D3EE;right:92px;top:236px;transform:rotate(12deg)"></i>
+          <i style="background:#A78BFA;left:190px;top:70px;transform:rotate(-8deg)"></i>
+        </div>
+        <svg width="152" height="152" viewBox="0 0 200 200" style="filter:drop-shadow(0 18px 30px rgba(251,191,36,.28))">
+          <circle cx="100" cy="104" r="76" fill="url(#pGlow)"/>
+          <use href="#picoBody"/>
+          <path d="M64 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M102 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M92 128q8 12 16 0z" fill="#7C2D12"/>
+          <path d="M32 44l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#FBBF24"/>
+          <path d="M172 58l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#FDE68A"/>
+          <path d="M150 166l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#22D3EE"/>
+        </svg>
+        <div class="big-title">จบบทสนทนาแล้ว!</div>
+        <div class="big-sub">คุณพูดไป 4 ประโยค · ใช้เวลา 2 นาที</div>
+        <div class="statrow">
+          <div class="stat"><b style="color:var(--gold)">+18</b><span>XP</span></div>
+          <div class="stat"><b style="color:var(--mint)">82%</b><span>คะแนนพูด</span></div>
+          <div class="stat"><b style="color:var(--teal)">4</b><span>ประโยค</span></div>
+        </div>
+        <div class="weekdots">
+          <div class="wd done"><i>✓</i><span>S</span></div>
+          <div class="wd done"><i>✓</i><span>M</span></div>
+          <div class="wd done"><i>✓</i><span>T</span></div>
+          <div class="wd today"><i>✓</i><span>W</span></div>
+          <div class="wd future"><i>·</i><span>T</span></div>
+          <div class="wd future"><i>·</i><span>F</span></div>
+          <div class="wd future"><i>?</i><span>S</span></div>
+        </div>
+      </div>
+      <div class="dock">
+        <div class="row"><button class="btn ghost">แชร์</button><button class="btn primary">ดำเนินการต่อ</button></div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 9. ทบทวน ============ -->
+  <div class="slot" data-shot="09-review">
+    <div class="cap"><b>9. ทบทวน (SRS)</b><span>คำ + ประโยคที่ยังไม่แม่น</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="h1" style="font-size:24px;margin-top:0">ทบทวนวันนี้</div>
+        <div class="greet">ทวนวันละนิด จำได้ยาวนาน</div>
+        <div class="stat-grid3" style="margin-top:14px">
+          <div class="stat"><b style="color:var(--gold)">7</b><span>ถึงกำหนด</span></div>
+          <div class="stat"><b style="color:var(--teal)">12</b><span>คำใหม่</span></div>
+          <div class="stat"><b style="color:var(--mint)">46</b><span>แม่นแล้ว</span></div>
+        </div>
+        <div class="card" style="margin-top:16px;text-align:center;padding:22px 16px">
+          <div style="font-size:11px;color:var(--dim);letter-spacing:.06em">คำที่ต้องทวน</div>
+          <div class="word" style="font-size:30px;margin-top:4px">appointment</div>
+          <div class="ipa">/əˈpɔɪnt.mənt/</div>
+          <button class="btn ghost sm" style="margin:12px auto 0;width:150px">ดูเฉลย</button>
+        </div>
+        <div class="section-label" style="margin-top:16px">ประโยคที่พูดไม่ผ่าน · 4</div>
+        <div class="li" style="margin-top:0"><span class="ic">🔁</span><div class="tx"><b>Could I get a medium latte?</b><span>พูดได้ 62% · ทวนอีกครั้ง</span></div><span class="arw">›</span></div>
+      </div>
+      <div class="dock"><button class="btn primary">เริ่มทบทวน · 19 ข้อ</button></div>
+      <div class="tabbar">
+        <span class="tab"><span class="ic">🎯</span>วันนี้</span>
+        <span class="tab"><span class="ic">📚</span>เรียน</span>
+        <span class="tab"><span class="ic">🗣️</span>พูด</span>
+        <span class="tab on"><span class="ic">🔁</span>ทบทวน</span>
+        <span class="tab"><span class="ic">👤</span>ฉัน</span>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 10. ฉัน ============ -->
+  <div class="slot" data-shot="10-me">
+    <div class="cap"><b>10. ฉัน</b><span>สถิติ · ของสะสม · ตั้งค่า</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="row" style="align-items:center;margin-top:2px">
+          <div style="flex:1"><div class="greet">สัปดาห์ที่ 2</div><div class="h1" style="font-size:23px">ความก้าวหน้าของฉัน</div></div>
+          <svg width="56" height="56" viewBox="0 0 200 200"><use href="#picoBody"/><path d="M64 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M102 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M92 128q8 11 16 0z" fill="#7C2D12"/></svg>
+        </div>
+        <div class="stat-grid3" style="margin-top:12px">
+          <div class="stat"><b style="color:var(--gold)">5</b><span>วันติด</span></div>
+          <div class="stat"><b style="color:var(--teal)">127</b><span>ประโยคที่พูด</span></div>
+          <div class="stat"><b style="color:var(--mint)">81%</b><span>ความแม่นยำ</span></div>
+        </div>
+        <div class="card" style="margin-top:12px;padding:14px">
+          <div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--soft)"><span>เป้าสัปดาห์นี้</span><b style="color:var(--teal)">12 / 15 ประโยค</b></div>
+          <div class="prog" style="margin-top:8px"><i style="width:80%"></i></div>
+        </div>
+        <div class="list">
+          <div class="li"><span class="ic" style="color:var(--gold)">★</span><div class="tx"><b>คำโปรด</b><span>8 คำ</span></div><span class="arw">›</span></div>
+          <div class="li"><span class="ic">🎙️</span><div class="tx"><b>เสียงของฉัน</b><span>6 คลิป · 3.2 MB</span></div><span class="arw">›</span></div>
+          <div class="li"><span class="ic">⚙️</span><div class="tx"><b>ตั้งค่า</b><span>ธีม · เสียง · ภาพ</span></div><span class="arw">›</span></div>
+        </div>
+      </div>
+      <div class="tabbar">
+        <span class="tab"><span class="ic">🎯</span>วันนี้</span>
+        <span class="tab"><span class="ic">📚</span>เรียน</span>
+        <span class="tab"><span class="ic">🗣️</span>พูด</span>
+        <span class="tab"><span class="ic">🔁</span>ทบทวน</span>
+        <span class="tab on"><span class="ic">👤</span>ฉัน</span>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 11. ตั้งค่า (ธีม) ============ -->
+  <div class="slot" data-shot="11-settings">
+    <div class="cap"><b>11. ตั้งค่า</b><span>สลับธีมได้ + ภาพ + เสียง</span></div>
+    <div class="frame"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="row" style="align-items:center;margin-top:2px"><span class="xbtn">✕</span><div class="h1" style="font-size:20px;margin-left:10px">ตั้งค่า</div></div>
+        <div class="section-label" style="margin-top:14px">ธีม</div>
+        <div class="seg"><b class="on">มืด</b><b>สว่าง</b><b>ตามระบบ</b></div>
+        <div class="section-label" style="margin-top:14px">ภาพประกอบ</div>
+        <div class="seg"><b class="on">ภาพกราฟฟิก</b><b>ภาพถ่าย</b><b>อีโมจิ</b></div>
+        <div class="section-label" style="margin-top:14px">เสียงและไมค์</div>
+        <div class="list" style="margin-top:0">
+          <div class="sw-row"><span class="ic" style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.08)">🔈</span><div class="tx"><b>อ่านออกเสียงอัตโนมัติ</b><span>เปิดการ์ดแล้วอ่านให้ฟังทันที</span></div><span class="toggle"></span></div>
+          <div class="sw-row"><span class="ic" style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.08)">🎙️</span><div class="tx"><b>บันทึกเสียงของฉัน</b><span>เก็บในเครื่องเท่านั้น</span></div><span class="toggle"></span></div>
+          <div class="sw-row"><span class="ic" style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.08)">🏆</span><div class="tx"><b>โหมดเข้ม: พูดให้ผ่านก่อนไปต่อ</b><span>ข้ามได้หลังลอง 3 ครั้ง</span></div><span class="toggle"></span></div>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ============ 12. ธีมสว่าง ============ -->
+  <div class="slot" data-shot="12-light">
+    <div class="cap"><b>12. ธีมสว่าง</b><span>หน้า “วันนี้” ในโหมดสว่าง</span></div>
+    <div class="frame light"><div class="screen">
+      <div class="status"><span>9:41</span><span class="dots">▮▮ 100%</span></div>
+      <div class="screen-body">
+        <div class="row" style="align-items:center;margin-top:2px">
+          <div style="flex:1"><div class="greet">สวัสดีตอนเช้า</div><div class="h1">วันนี้ฝึกกันนะ!</div></div>
+          <span class="streakchip">🔥 5 วัน</span>
+        </div>
+        <div class="mascot-wrap">
+          <div class="speech" style="background:#fff;border-color:rgba(36,20,80,.12)">เหลืออีก <b>1 ด่าน</b> ก็ครบภารกิจวันนี้แล้ว! ไปกันเลย 🎉</div>
+          <svg width="150" height="150" viewBox="0 0 200 200" style="margin-top:24px;filter:drop-shadow(0 14px 22px rgba(45,212,191,.35))">
+  <circle cx="100" cy="104" r="74" fill="url(#pGlow)"/>
+  <use href="#picoBody"/>
+  <path d="M64 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M102 78q17-10 34 0" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M92 128q8 11 16 0z" fill="#7C2D12"/></svg>
+        </div>
+        <div class="section-label">ภารกิจวันนี้ · 5 นาที</div>
+        <div class="quest">
+          <div class="qi done"><span class="box">✓</span><span class="t">ทวน 5 ประโยค</span><span class="n">5/5</span></div>
+          <div class="qi done"><span class="box">✓</span><span class="t">สนทนา 1 สถานการณ์</span><span class="n">1/1</span></div>
+          <div class="qi"><span class="box">✓</span><span class="t">พูดคนเดียว 60 วินาที</span><span class="n">0/1</span></div>
+        </div>
+        <div class="weekbar" style="margin-top:11px;background:rgba(34,211,238,.14);border-color:rgba(34,211,238,.35)">
+          <span style="font-size:16px">🎯</span><div style="flex:1;font-size:11.5px;color:var(--soft)">สัปดาห์นี้คุณพูดไปแล้ว</div><b style="color:#0891B2">12 / 15</b>
+        </div>
+      </div>
+      <div class="dock"><button class="btn primary">เริ่มเลย · 5 นาที</button></div>
+      <div class="tabbar" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.9))">
+        <span class="tab on" style="color:#0891B2"><span class="ic">🎯</span>วันนี้</span>
+        <span class="tab"><span class="ic">📚</span>เรียน</span>
+        <span class="tab"><span class="ic">🗣️</span>พูด</span>
+        <span class="tab"><span class="ic">🔁</span>ทบทวน</span>
+        <span class="tab"><span class="ic">👤</span>ฉัน</span>
+      </div>
+    </div></div>
+  </div>
+
+</div>
+
+<!-- gradient ที่ใช้ร่วม (ประกาศครั้งเดียวให้ <use> และ svg อื่นเรียกใช้) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="pBody" cx="35%" cy="22%">
+      <stop offset="0" stop-color="#A7F3E8"/><stop offset=".45" stop-color="#2DD4BF"/>
+      <stop offset=".8" stop-color="#14B8A6"/><stop offset="1" stop-color="#0F766E"/>
+    </radialGradient>
+    <linearGradient id="pWing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D9488"/><stop offset="1" stop-color="#134E4A"/>
+    </linearGradient>
+    <linearGradient id="pBeak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDBA74"/><stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <radialGradient id="pGlow">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".42"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <g id="picoBody">
+      <path d="M92 148 L84 184 L100 172 L116 184 L108 148 Z" fill="#0D9488"/>
+      <path d="M84 150 L78 166 M116 150 L122 166" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+      <ellipse cx="100" cy="104" rx="57" ry="58" fill="url(#pBody)"/>
+      <ellipse cx="100" cy="116" rx="35" ry="37" fill="#F0FDFA" opacity=".93"/>
+      <path d="M152 92 c16 20 11 44 -6 54 c-11 -15 -13 -36 -4 -54 z" fill="url(#pWing)"/>
+      <path d="M84 54 c-9 -13 -9 -26 -1 -32 c7 7 8 18 6 28 z" fill="#FB7185"/>
+      <path d="M100 47 c-3 -16 3 -28 11 -31 c3 11 -2 23 -6 31 z" fill="#FBBF24"/>
+      <path d="M116 53 c7 -13 18 -19 26 -16 c-5 10 -14 18 -22 21 z" fill="#22D3EE"/>
+      <ellipse cx="81" cy="94" rx="16.5" ry="17.5" fill="#fff"/>
+      <ellipse cx="119" cy="94" rx="16.5" ry="17.5" fill="#fff"/>
+      <circle cx="83.5" cy="96" r="7.6" fill="#0F172A"/>
+      <circle cx="121.5" cy="96" r="7.6" fill="#0F172A"/>
+      <circle cx="86" cy="92.5" r="2.9" fill="#fff"/>
+      <circle cx="124" cy="92.5" r="2.9" fill="#fff"/>
+      <path d="M100 110 c-9 0 -14 7 -14 14 c0 9 7 15 14 15 c7 0 14 -6 14 -15 c0 -7 -5 -14 -14 -14 z" fill="url(#pBeak)"/>
+      <path d="M88 124 c4 3 8 4 12 4 c4 0 8 -1 12 -4" stroke="#C2410C" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="58" cy="112" rx="9" ry="6" fill="#FB7185" opacity=".42"/>
+      <ellipse cx="142" cy="112" rx="9" ry="6" fill="#FB7185" opacity=".42"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="note">
+  <b>หมายเหตุสำหรับการตัดสินใจ</b>
+  <ul>
+    <li>ทั้งหมดนี้เป็น <b>HTML/CSS จริง</b> ไม่ใช่ Photoshop — ถ้าอนุมัติ ผมนำไปใช้กับแอปได้เกือบทั้งดุ้น (ไม่มี framework ยังคงเป็น vanilla)</li>
+    <li>ภาพประกอบใน mockup ดึงจาก <b>96 ภาพ OpenMoji ที่มีอยู่ในแอปจริง</b> (ไม่ใช่ภาพสมมติ)</li>
+    <li>มาสคอต “ปิโก” เป็น SVG วาดใหม่ (ไม่มีลิขสิทธิ์ของ ELSA) — ปรับสี/ทรงได้ตามชอบ</li>
+    <li>ตัวเลข/ข้อความทั้งหมดเป็นตัวอย่าง (เช่น 12/15 ประโยค, 82%) เพื่อให้เห็นภาพการทำงาน</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+# ---------- ระบบปฏิบัติการ / โปรแกรมแก้ไข ----------
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# ---------- Node ----------
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+package-lock.json
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.tmp.wav
+
+# ---------- ไฟล์ชั่วคราวจากการทดสอบ ----------
+docs/screenshots/_crop*.png
+*.tmp
+*.log
+
+# ---------- ข้อมูลที่สร้างใหม่ได้ (ไม่ต้อง commit) ----------
+# หมายเหตุ: data/audio/ เก็บไฟล์เสียงที่สร้างไว้ล่วงหน้า
+# ถ้าต้องการ deploy แบบมีเสียงติดไปด้วย ให้ลบ 2 บรรทัดล่างออก (ขนาดรวม ~4–5 MB)
+# data/audio/

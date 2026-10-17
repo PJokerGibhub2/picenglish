@@ -1,0 +1,201 @@
+[
+  {
+    "id": "health-fever",
+    "word": "fever",
+    "pos": "n.",
+    "ipa": "/ˈfiːvər/",
+    "thai": "ไข้ / มีไข้",
+    "emoji": "🤒",
+    "imageQuery": "sick person thermometer",
+    "example": "I have a high fever, so I will stay home today.",
+    "exampleThai": "เรามีไข้สูง วันนี้เลยจะพักอยู่บ้าน",
+    "keyVocab": [
+      { "en": "fever", "thai": "ไข้" },
+      { "en": "stay home", "thai": "อยู่บ้าน" }
+    ],
+    "tip": "ใช้ have a fever หรือ have a high fever ไม่ต้องใส่คำอื่นนำหน้า"
+  },
+  {
+    "id": "health-headache",
+    "word": "headache",
+    "pos": "n.",
+    "ipa": "/ˈhedeɪk/",
+    "thai": "อาการปวดหัว",
+    "emoji": "🤕",
+    "imageQuery": "person headache pain",
+    "example": "I have a bad headache, so I need to rest.",
+    "exampleThai": "เราปวดหัวมาก ต้องพักหน่อย",
+    "keyVocab": [
+      { "en": "headache", "thai": "อาการปวดหัว" },
+      { "en": "rest", "thai": "พักผ่อน" }
+    ],
+    "tip": "ภาษาอังกฤษใช้ have a headache ส่วนภาษาไทยพูดว่าปวดหัว"
+  },
+  {
+    "id": "health-cough",
+    "word": "cough",
+    "pos": "v.",
+    "ipa": "/kɔːf/",
+    "thai": "ไอ",
+    "emoji": "😷",
+    "imageQuery": "person coughing tissue",
+    "example": "I cough a lot at night and cannot sleep well.",
+    "exampleThai": "เรากลางคืนไอเยอะมาก นอนไม่ค่อยหลับ",
+    "keyVocab": [
+      { "en": "cough", "thai": "ไอ" },
+      { "en": "at night", "thai": "ตอนกลางคืน" },
+      { "en": "sleep well", "thai": "นอนหลับสบาย" }
+    ],
+    "tip": "cough เป็นได้ทั้งกริยาและคำนาม เช่น have a bad cough = ไอหนัก"
+  },
+  {
+    "id": "health-sore-throat",
+    "word": "sore throat",
+    "pos": "n.",
+    "ipa": "/sɔːr θroʊt/",
+    "thai": "เจ็บคอ",
+    "emoji": "🗣️",
+    "imageQuery": "sore throat pain",
+    "example": "I have a sore throat, so it is hard to talk.",
+    "exampleThai": "เราเจ็บคอ เลยพูดลำบาก",
+    "keyVocab": [
+      { "en": "sore throat", "thai": "เจ็บคอ" },
+      { "en": "hard to talk", "thai": "พูดลำบาก" }
+    ],
+    "tip": "ใช้ have a sore throat และ sore แปลว่าเจ็บแบบตึง ๆ ไม่ใช่บาดแผล"
+  },
+  {
+    "id": "health-stomachache",
+    "word": "stomachache",
+    "pos": "n.",
+    "ipa": "/ˈstʌməkeɪk/",
+    "thai": "อาการปวดท้อง",
+    "emoji": "🤢",
+    "imageQuery": "stomach pain person",
+    "example": "My stomachache started after I ate some spicy food.",
+    "exampleThai": "เราปวดท้องหลังจากกินอาหารรสเผ็ด",
+    "keyVocab": [
+      { "en": "stomachache", "thai": "อาการปวดท้อง" },
+      { "en": "spicy food", "thai": "อาหารรสเผ็ด" }
+    ],
+    "tip": "เขียนติดกันว่า stomachache และใช้ have a stomachache ได้เช่นกัน"
+  },
+  {
+    "id": "health-rest",
+    "word": "rest",
+    "pos": "v.",
+    "ipa": "/rest/",
+    "thai": "พักผ่อน",
+    "emoji": "🛌",
+    "imageQuery": "person resting in bed",
+    "example": "You should rest at home until the fever goes down.",
+    "exampleThai": "คุณควรพักผ่อนอยู่บ้านจนกว่าไข้จะลด",
+    "keyVocab": [
+      { "en": "You should", "thai": "คุณควร" },
+      { "en": "until", "thai": "จนกว่า" }
+    ],
+    "tip": "rest เป็นได้ทั้งกริยา (พักผ่อน) และคำนาม เช่น take a rest = พักสักหน่อย"
+  },
+  {
+    "id": "health-ill",
+    "word": "ill",
+    "pos": "adj.",
+    "ipa": "/ɪl/",
+    "thai": "ป่วย / ไม่สบาย",
+    "emoji": "🤧",
+    "imageQuery": "sick person bed",
+    "example": "She was ill last week, so she missed two lessons.",
+    "exampleThai": "เธอป่วยเมื่อสัปดาห์ที่แล้ว เลยขาดเรียนสองคาบ",
+    "keyVocab": [
+      { "en": "ill", "thai": "ป่วย" },
+      { "en": "last week", "thai": "สัปดาห์ที่แล้ว" },
+      { "en": "missed", "thai": "พลาด / ขาด (เรียน)" }
+    ],
+    "tip": "ill มักตามหลังคำกริยา be เช่น be ill ส่วน sick ใช้ได้กว้างกว่า"
+  },
+  {
+    "id": "health-doctor",
+    "word": "doctor",
+    "pos": "n.",
+    "ipa": "/ˈdɑːktər/",
+    "thai": "หมอ / แพทย์",
+    "emoji": "👨‍⚕️",
+    "imageQuery": "doctor hospital stethoscope",
+    "example": "The doctor said I should drink more water and rest.",
+    "exampleThai": "คุณหมอบอกว่าเราควรดื่มน้ำมากขึ้นและพักผ่อน",
+    "keyVocab": [
+      { "en": "doctor", "thai": "หมอ" },
+      { "en": "drink more water", "thai": "ดื่มน้ำมากขึ้น" },
+      { "en": "rest", "thai": "พักผ่อน" }
+    ],
+    "tip": "go to the doctor = ไปหาหมอ ต้องมี the และมักใช้กับกริยา go"
+  },
+  {
+    "id": "health-appointment",
+    "word": "appointment",
+    "pos": "n.",
+    "ipa": "/əˈpɔɪntmənt/",
+    "thai": "การนัดหมาย",
+    "emoji": "📅",
+    "imageQuery": "calendar appointment schedule",
+    "example": "I have an appointment with the dentist this afternoon.",
+    "exampleThai": "เรามีนัดกับหมอฟันช่วงบ่ายนี้",
+    "keyVocab": [
+      { "en": "appointment", "thai": "การนัดหมาย" },
+      { "en": "dentist", "thai": "หมอฟัน" },
+      { "en": "afternoon", "thai": "ช่วงบ่าย" }
+    ],
+    "tip": "ใช้ have an appointment with + คน เช่น with the dentist ไม่ใช้ to"
+  },
+  {
+    "id": "health-medicine",
+    "word": "medicine",
+    "pos": "n.",
+    "ipa": "/ˈmedɪsɪn/",
+    "thai": "ยา",
+    "emoji": "💊",
+    "imageQuery": "medicine pills bottle",
+    "example": "Please take this medicine twice a day after meals.",
+    "exampleThai": "กรุณากินยานี้วันละสองครั้งหลังอาหาร",
+    "keyVocab": [
+      { "en": "take", "thai": "กิน / รับ (ยา)" },
+      { "en": "medicine", "thai": "ยา" },
+      { "en": "twice a day", "thai": "วันละสองครั้ง" }
+    ],
+    "tip": "ภาษาอังกฤษใช้ take medicine ไม่ใช้ eat medicine และ medicine เป็นคำนามนับไม่ได้"
+  },
+  {
+    "id": "health-hurt",
+    "word": "hurt",
+    "pos": "v.",
+    "ipa": "/hɜːrt/",
+    "thai": "เจ็บ / ทำให้เจ็บ",
+    "emoji": "🤕",
+    "imageQuery": "knee pain injury",
+    "example": "My knee hurts when I walk up the stairs.",
+    "exampleThai": "เข่าของเราเจ็บเวลาเดินขึ้นบันได",
+    "keyVocab": [
+      { "en": "hurts", "thai": "เจ็บ (ประธานเป็นส่วนของร่างกาย)" },
+      { "en": "knee", "thai": "เข่า" },
+      { "en": "stairs", "thai": "บันได" }
+    ],
+    "tip": "พูดว่า My knee hurts ได้เลย ไม่ต้องใส่ it hurts my knee"
+  },
+  {
+    "id": "health-healthy",
+    "word": "healthy",
+    "pos": "adj.",
+    "ipa": "/ˈhelθi/",
+    "thai": "สุขภาพดี / ดีต่อสุขภาพ",
+    "emoji": "🥗",
+    "imageQuery": "healthy food vegetables",
+    "example": "Eating vegetables every day helps you stay healthy.",
+    "exampleThai": "การกินผักทุกวันช่วยให้คุณมีสุขภาพดี",
+    "keyVocab": [
+      { "en": "vegetables", "thai": "ผัก" },
+      { "en": "every day", "thai": "ทุกวัน" },
+      { "en": "healthy", "thai": "สุขภาพดี" }
+    ],
+    "tip": "healthy บอกว่ามีสุขภาพดีหรือดีต่อสุขภาพ ส่วน healthful ใช้กับอาหารเท่านั้น"
+  }
+]

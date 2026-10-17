@@ -1,0 +1,1825 @@
+[
+ {
+  "id": "dlg-cafe",
+  "title": "สั่งกาแฟ",
+  "titleEn": "Ordering coffee",
+  "level": "A2",
+  "emoji": "☕",
+  "category": "restaurant",
+  "commonsCategory": "Coffee shops",
+  "imageQuery": "coffee shop counter barista",
+  "setting": "คุณยืนอยู่หน้าร้านกาแฟตอนเช้า ต้องสั่งเครื่องดื่มและจ่ายเงิน",
+  "counterpart": {
+   "labelTh": "พนักงานร้านกาแฟ",
+   "emoji": "🧑‍🍳"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Good morning! What can I get you for breakfast?",
+    "thai": "อรุณสวัสดิ์ครับ รับอะไรเป็นมื้อเช้าดีครับ",
+    "keyPhrases": [
+     {
+      "en": "What can I get you",
+      "thai": "รับอะไรดีครับ (พนักงานถามลูกค้า)"
+     },
+     {
+      "en": "breakfast",
+      "thai": "มื้อเช้า"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Could I get a medium latte and a snack, please?",
+    "thai": "ขอลาเต้แก้วกลางกับของว่างหนึ่งอย่างครับ",
+    "keyPhrases": [
+     {
+      "en": "Could I get",
+      "thai": "ขอ...ครับ (สุภาพ)"
+     },
+     {
+      "en": "a medium latte",
+      "thai": "ลาเต้แก้วกลาง"
+     },
+     {
+      "en": "a snack",
+      "thai": "ของว่างหนึ่งอย่าง"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "I'd like a latte and a snack, please.",
+      "thai": "ผมขอลาเต้กับของว่างครับ"
+     },
+     {
+      "en": "Can I have a medium latte, please?",
+      "thai": "ขอลาเต้แก้วกลางครับ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Sure. Is that for here or takeaway?",
+    "thai": "ได้ครับ ทานที่ร้านหรือใส่กลับบ้านครับ",
+    "keyPhrases": [
+     {
+      "en": "for here or takeaway",
+      "thai": "ทานที่ร้านหรือกลับบ้าน"
+     },
+     {
+      "en": "Sure",
+      "thai": "ได้ครับ"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Takeaway, please. How much is it?",
+    "thai": "ใส่กลับบ้านครับ เท่าไหร่ครับ",
+    "keyPhrases": [
+     {
+      "en": "Takeaway",
+      "thai": "ใส่กลับบ้าน"
+     },
+     {
+      "en": "How much is it",
+      "thai": "เท่าไหร่ครับ"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "To go, please. What's the price?",
+      "thai": "กลับบ้านครับ ราคาเท่าไหร่"
+     },
+     {
+      "en": "Takeaway, please. How much do I pay?",
+      "thai": "ใส่กลับบ้านครับ ต้องจ่ายเท่าไหร่"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "That's eighty baht. Cash or credit card?",
+    "thai": "แปดสิบบาทครับ จ่ายเงินสดหรือบัตรเครดิตครับ",
+    "keyPhrases": [
+     {
+      "en": "eighty baht",
+      "thai": "แปดสิบบาท"
+     },
+     {
+      "en": "credit card",
+      "thai": "บัตรเครดิต"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Cash. Here's a hundred. Keep the change.",
+    "thai": "เงินสดครับ นี่หนึ่งร้อย ไม่ต้องทอนครับ",
+    "keyPhrases": [
+     {
+      "en": "Cash",
+      "thai": "เงินสด"
+     },
+     {
+      "en": "Keep the change",
+      "thai": "ไม่ต้องทอน (พูดตอนให้เงินสด)"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Cash, please. Here's a hundred baht.",
+      "thai": "เงินสดครับ นี่หนึ่งร้อยบาท"
+     },
+     {
+      "en": "I'll pay cash. Keep the change, please.",
+      "thai": "จ่ายเงินสดครับ ไม่ต้องทอนนะครับ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Thank you. Do you want a receipt?",
+    "thai": "ขอบคุณครับ รับใบเสร็จไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "a receipt",
+      "thai": "ใบเสร็จ"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Yes, please. Can I get a refill later?",
+    "thai": "รับครับ เดี๋ยวขอเติมกาแฟได้ไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "a refill",
+      "thai": "การเติมเครื่องดื่ม"
+     },
+     {
+      "en": "later",
+      "thai": "ทีหลัง"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Yes, please. Could I get a refill later?",
+      "thai": "รับครับ ขอเติมทีหลังได้ไหม"
+     },
+     {
+      "en": "Yes. Is a refill free here?",
+      "thai": "รับครับ ที่นี่เติมฟรีไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Of course. It will be ready in five minutes.",
+    "thai": "ได้เลยครับ อีกห้านาทีก็พร้อมครับ",
+    "keyPhrases": [
+     {
+      "en": "Of course",
+      "thai": "ได้เลยครับ"
+     },
+     {
+      "en": "ready in five minutes",
+      "thai": "พร้อมในอีกห้านาที"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "For here or to go?",
+    "thai": "ทานที่ร้านหรือกลับบ้าน"
+   },
+   {
+    "en": "Anything else?",
+    "thai": "รับอะไรเพิ่มไหมครับ"
+   },
+   {
+    "en": "Your total is eighty baht.",
+    "thai": "รวมทั้งหมดแปดสิบบาทครับ"
+   },
+   {
+    "en": "Would you like a receipt?",
+    "thai": "รับใบเสร็จไหมครับ"
+   },
+   {
+    "en": "Have a nice day!",
+    "thai": "ขอให้เป็นวันที่ดีครับ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-restaurant",
+  "title": "สั่งอาหารในร้าน",
+  "titleEn": "Ordering food at a restaurant",
+  "level": "A2",
+  "emoji": "🍽️",
+  "category": "restaurant",
+  "commonsCategory": "Restaurants",
+  "imageQuery": "restaurant table waiter serving",
+  "setting": "คุณเข้าร้านอาหารตอนเย็นกับเพื่อน และต้องสั่งอาหารเอง",
+  "counterpart": {
+   "labelTh": "พนักงานเสิร์ฟ",
+   "emoji": "🧑‍🍳"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Good evening. Do you have a reservation?",
+    "thai": "สวัสดีตอนเย็นครับ มีจองโต๊ะไว้ไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "Good evening",
+      "thai": "สวัสดีตอนเย็น"
+     },
+     {
+      "en": "a reservation",
+      "thai": "การจองโต๊ะ"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "No, we don't. A table for two, please.",
+    "thai": "ยังไม่ได้จองครับ ขอโต๊ะสองที่ครับ",
+    "keyPhrases": [
+     {
+      "en": "A table for two",
+      "thai": "โต๊ะสำหรับสองคน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Not tonight. Could we have a table for two?",
+      "thai": "คืนนี้ไม่ได้จองครับ ขอโต๊ะสองที่ได้ไหม"
+     },
+     {
+      "en": "No, we don't have one. A table for two, please.",
+      "thai": "ยังไม่ได้จองครับ ขอโต๊ะสองคนครับ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Sure, please follow me. Here's the menu.",
+    "thai": "ได้ครับ เชิญทางนี้ครับ นี่เมนูครับ",
+    "keyPhrases": [
+     {
+      "en": "follow me",
+      "thai": "ตามผมมา"
+     },
+     {
+      "en": "the menu",
+      "thai": "เมนู"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Thanks. What do you recommend? We're ready to order.",
+    "thai": "ขอบคุณครับ แนะนำอะไรดีครับ เราพร้อมสั่งแล้ว",
+    "keyPhrases": [
+     {
+      "en": "do you recommend",
+      "thai": "แนะนำอะไรดี"
+     },
+     {
+      "en": "ready to order",
+      "thai": "พร้อมสั่งอาหาร"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thanks. What's good here? We'd like to order.",
+      "thai": "ขอบคุณครับ ร้านนี้มีอะไรอร่อย เราจะสั่งแล้ว"
+     },
+     {
+      "en": "Thanks. Could you recommend something mild? We can order now.",
+      "thai": "ขอบคุณครับ แนะนำอะไรที่ไม่เผ็ดได้ไหม เราสั่งได้เลย"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Our grilled chicken is popular, but the soup is spicy.",
+    "thai": "ไก่ย่างของเราฮิตมากครับ แต่ซุปเผ็ดนะครับ",
+    "keyPhrases": [
+     {
+      "en": "grilled chicken",
+      "thai": "ไก่ย่าง"
+     },
+     {
+      "en": "the soup is spicy",
+      "thai": "ซุปเผ็ด"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Great, I'll take the soup and the grilled chicken.",
+    "thai": "ดีครับ เอาซุปกับไก่ย่างครับ",
+    "keyPhrases": [
+     {
+      "en": "I'll take",
+      "thai": "ขอ...ครับ (ตอนสั่ง)"
+     },
+     {
+      "en": "the soup",
+      "thai": "ซุป"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Great, I'll order the soup and the grilled chicken.",
+      "thai": "ดีครับ ผมจะสั่งซุปกับไก่ย่าง"
+     },
+     {
+      "en": "Okay, the soup first, then the grilled chicken.",
+      "thai": "เอาซุปก่อน แล้วค่อยไก่ย่างครับ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Good choice. Anything to drink? Free refills today.",
+    "thai": "เลือกดีครับ รับเครื่องดื่มไหมครับ วันนี้เติมฟรี",
+    "keyPhrases": [
+     {
+      "en": "Anything to drink",
+      "thai": "รับเครื่องดื่มไหม"
+     },
+     {
+      "en": "Free refills",
+      "thai": "เติมฟรี"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Just water, thanks. Oh, I have a nut allergy.",
+    "thai": "น้ำเปล่าครับ ขอบคุณ อ้อ ผมแพ้ถั่วครับ",
+    "keyPhrases": [
+     {
+      "en": "Just water",
+      "thai": "น้ำเปล่าอย่างเดียว"
+     },
+     {
+      "en": "a nut allergy",
+      "thai": "การแพ้ถั่ว"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Water for me, please. I also have a nut allergy.",
+      "thai": "ขอน้ำเปล่าครับ ผมแพ้ถั่วด้วย"
+     },
+     {
+      "en": "Just water. Please tell the kitchen about my allergy.",
+      "thai": "น้ำเปล่าครับ รบกวนบอกครัวเรื่องที่ผมแพ้ด้วย"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Thanks for telling me. I'll tell the kitchen.",
+    "thai": "ขอบคุณที่บอกครับ เดี๋ยวบอกครัวให้ครับ",
+    "keyPhrases": [
+     {
+      "en": "Thanks for telling me",
+      "thai": "ขอบคุณที่บอก"
+     },
+     {
+      "en": "the kitchen",
+      "thai": "ครัว"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Could we have the bill, please? Two takeaway boxes too.",
+    "thai": "ขอเช็คบิลหน่อยครับ แล้วขอกล่องกลับบ้านสองใบ",
+    "keyPhrases": [
+     {
+      "en": "the bill",
+      "thai": "บิล ใบเก็บเงิน"
+     },
+     {
+      "en": "takeaway boxes",
+      "thai": "กล่องใส่อาหารกลับบ้าน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Could we get the bill, please? We need takeaway boxes.",
+      "thai": "ขอเช็คบิลครับ เราขอกล่องกลับบ้าน"
+     },
+     {
+      "en": "The bill, please. And two boxes for takeaway.",
+      "thai": "ขอเช็คบิลครับ แล้วก็กล่องกลับบ้านสองใบ"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "Are you ready to order?",
+    "thai": "พร้อมสั่งอาหารหรือยังครับ"
+   },
+   {
+    "en": "Would you like an appetizer first?",
+    "thai": "รับอาหารเรียกน้ำย่อยก่อนไหมครับ"
+   },
+   {
+    "en": "This portion is big, so you can share.",
+    "thai": "จานนี้ปริมาณเยอะ แบ่งกันกินได้ครับ"
+   },
+   {
+    "en": "How is everything?",
+    "thai": "อาหารเป็นอย่างไรบ้างครับ"
+   },
+   {
+    "en": "Would you like to see the dessert menu?",
+    "thai": "ขอดูเมนูของหวานไหมครับ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-reservation",
+  "title": "โทรจองโต๊ะร้านอาหาร",
+  "titleEn": "Booking a table by phone",
+  "level": "A2",
+  "emoji": "📅",
+  "category": "restaurant",
+  "commonsCategory": "Reserved tables",
+  "imageQuery": "phone call restaurant booking",
+  "setting": "คุณโทรจองโต๊ะร้านอาหารสำหรับมื้อเย็นวันศุกร์",
+  "counterpart": {
+   "labelTh": "พนักงานรับจองโต๊ะ",
+   "emoji": "🎧"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Good evening, Riverside Restaurant. How can I help?",
+    "thai": "สวัสดีตอนเย็นครับ ร้านริเวอร์ไซด์ รับสายครับ",
+    "keyPhrases": [
+     {
+      "en": "How can I help",
+      "thai": "มีอะไรให้ช่วยครับ (ทักตอนรับสาย)"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Hi, I'd like to make a reservation for dinner.",
+    "thai": "สวัสดีครับ ขอจองโต๊ะสำหรับมื้อเย็นครับ",
+    "keyPhrases": [
+     {
+      "en": "make a reservation",
+      "thai": "จองโต๊ะ"
+     },
+     {
+      "en": "for dinner",
+      "thai": "สำหรับมื้อเย็น"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Hello, I want to book a table for dinner.",
+      "thai": "สวัสดีครับ ผมอยากจองโต๊ะมื้อเย็น"
+     },
+     {
+      "en": "Hi, could I make a reservation for dinner tonight?",
+      "thai": "สวัสดีครับ ขอจองโต๊ะมื้อเย็นคืนนี้ได้ไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Of course. What day and time?",
+    "thai": "ได้ครับ วันไหนเวลากี่โมงครับ",
+    "keyPhrases": [
+     {
+      "en": "What day and time",
+      "thai": "วันไหนเวลากี่โมง"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Friday at seven, for a table for two, please.",
+    "thai": "วันศุกร์หนึ่งทุ่ม ขอโต๊ะสองที่ครับ",
+    "keyPhrases": [
+     {
+      "en": "Friday at seven",
+      "thai": "วันศุกร์หนึ่งทุ่ม"
+     },
+     {
+      "en": "a table for two",
+      "thai": "โต๊ะสำหรับสองคน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "This Friday at seven. A table for two, please.",
+      "thai": "วันศุกร์นี้หนึ่งทุ่ม โต๊ะสองที่ครับ"
+     },
+     {
+      "en": "Friday, seven o'clock, table for two please.",
+      "thai": "วันศุกร์หนึ่งทุ่ม โต๊ะสองคนครับ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Let me check. Sorry, we're full at seven.",
+    "thai": "ขอเช็คก่อนนะครับ ขอโทษครับ หนึ่งทุ่มเต็มแล้วครับ",
+    "keyPhrases": [
+     {
+      "en": "Let me check",
+      "thai": "ขอเช็คก่อนนะ"
+     },
+     {
+      "en": "we're full",
+      "thai": "เต็มแล้ว"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "That's fine. Could we come at eight instead?",
+    "thai": "ไม่เป็นไรครับ งั้นเราไปแปดโมงได้ไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "at eight instead",
+      "thai": "เปลี่ยนเป็นแปดโมงแทน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "No problem. Can we book eight o'clock instead?",
+      "thai": "ไม่เป็นไรครับ จองแปดโมงแทนได้ไหม"
+     },
+     {
+      "en": "Okay. Is eight o'clock free?",
+      "thai": "ครับ แล้วแปดโมงว่างไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Eight works. Can I have your name and phone?",
+    "thai": "แปดโมงได้ครับ ขอชื่อกับเบอร์โทรด้วยครับ",
+    "keyPhrases": [
+     {
+      "en": "Eight works",
+      "thai": "แปดโมงได้"
+     },
+     {
+      "en": "your name and phone",
+      "thai": "ชื่อกับเบอร์โทรของคุณ"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Yes, Somchai. I can send my number by email.",
+    "thai": "ครับ ผมสมชาย เดี๋ยวส่งเบอร์ทางอีเมลให้ครับ",
+    "keyPhrases": [
+     {
+      "en": "send my number by email",
+      "thai": "ส่งเบอร์ทางอีเมล"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Sure, my name is Somchai. I'll email my number.",
+      "thai": "ครับ ผมชื่อสมชาย เดี๋ยวอีเมลเบอร์ไปให้"
+     },
+     {
+      "en": "Yes, Somchai here. I can email you my phone number.",
+      "thai": "ครับ สมชายพูดครับ ผมอีเมลเบอร์โทรไปได้"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Great. Should I note any allergy for the kitchen?",
+    "thai": "ดีครับ ให้จดเรื่องแพ้อาหารบอกครัวไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "any allergy",
+      "thai": "การแพ้อาหาร"
+     },
+     {
+      "en": "the kitchen",
+      "thai": "ครัว"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Yes, please. I have a peanut allergy.",
+    "thai": "จดให้ด้วยครับ ผมแพ้ถั่วลิสงครับ",
+    "keyPhrases": [
+     {
+      "en": "a peanut allergy",
+      "thai": "การแพ้ถั่วลิสง"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Yes, please. Please note that I have a peanut allergy.",
+      "thai": "ครับ รบกวนจดไว้ว่าผมแพ้ถั่วลิสง"
+     },
+     {
+      "en": "That would help. I have a peanut allergy.",
+      "thai": "จดไว้ก็ดีครับ ผมแพ้ถั่วลิสง"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "May I have your name, please?",
+    "thai": "ขอชื่อด้วยครับ"
+   },
+   {
+    "en": "We're fully booked that night.",
+    "thai": "คืนนั้นเต็มแล้วครับ"
+   },
+   {
+    "en": "We can hold your table for fifteen minutes.",
+    "thai": "เราเก็บโต๊ะไว้ให้สิบห้านาทีครับ"
+   },
+   {
+    "en": "Would you like a table inside or outside?",
+    "thai": "รับโต๊ะในร้านหรือนอกร้านครับ"
+   },
+   {
+    "en": "We look forward to seeing you.",
+    "thai": "แล้วพบกันครับ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-hotel",
+  "title": "เช็คอินโรงแรม",
+  "titleEn": "Hotel check-in",
+  "level": "A2",
+  "emoji": "🛏️",
+  "category": "home",
+  "commonsCategory": "Hotel lobbies",
+  "imageQuery": "hotel lobby reception desk",
+  "setting": "คุณเดินทางถึงโรงแรมและเข้าไปเช็คอินที่เคาน์เตอร์",
+  "counterpart": {
+   "labelTh": "พนักงานต้อนรับโรงแรม",
+   "emoji": "🛎️"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Good afternoon. Welcome to the Sunrise Hotel.",
+    "thai": "สวัสดีตอนบ่ายครับ ยินดีต้อนรับสู่โรงแรมซันไรส์",
+    "keyPhrases": [
+     {
+      "en": "Welcome to",
+      "thai": "ยินดีต้อนรับสู่"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Hi, I have a reservation under the name Malee.",
+    "thai": "สวัสดีครับ ผมจองห้องไว้ในชื่อมาลีครับ",
+    "keyPhrases": [
+     {
+      "en": "a reservation",
+      "thai": "การจองห้อง"
+     },
+     {
+      "en": "under the name",
+      "thai": "ในชื่อของ..."
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Hello, I booked a room. The name is Malee.",
+      "thai": "สวัสดีครับ ผมจองห้องไว้ ชื่อมาลีครับ"
+     },
+     {
+      "en": "Hi, I'm checking in. Reservation for Malee.",
+      "thai": "สวัสดีครับ มาเช็คอินครับ จองชื่อมาลี"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Let me check. May I see your passport, please?",
+    "thai": "ขอเช็คก่อนนะครับ ขอดูพาสปอร์ตหน่อยครับ",
+    "keyPhrases": [
+     {
+      "en": "May I see your passport",
+      "thai": "ขอดูพาสปอร์ตได้ไหม"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Sure, here it is. Is breakfast included?",
+    "thai": "ได้ครับ นี่ครับ ราคานี้รวมอาหารเช้าไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "here it is",
+      "thai": "นี่ครับ (ยื่นให้)"
+     },
+     {
+      "en": "Is breakfast included",
+      "thai": "รวมอาหารเช้าไหม"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Sure, here you go. Does the price include breakfast?",
+      "thai": "ได้ครับ นี่ครับ ราคานี้รวมอาหารเช้าหรือเปล่า"
+     },
+     {
+      "en": "Of course. Is breakfast in the price?",
+      "thai": "ได้ครับ อาหารเช้ารวมในราคาไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Yes, breakfast is on the second floor every day.",
+    "thai": "รวมครับ อาหารเช้าอยู่ชั้นสองทุกวันครับ",
+    "keyPhrases": [
+     {
+      "en": "on the second floor",
+      "thai": "อยู่ชั้นสอง"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Great. Does the room have a balcony and a refrigerator?",
+    "thai": "ดีครับ ห้องมีระเบียงกับตู้เย็นไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "a balcony",
+      "thai": "ระเบียง"
+     },
+     {
+      "en": "a refrigerator",
+      "thai": "ตู้เย็น"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Nice. Is there a balcony and a refrigerator in the room?",
+      "thai": "ดีครับ ในห้องมีระเบียงกับตู้เย็นไหม"
+     },
+     {
+      "en": "Great. Do we get a balcony and a refrigerator?",
+      "thai": "ดีครับ เราได้ห้องที่มีระเบียงกับตู้เย็นไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "It has a balcony, but no refrigerator. We have a shared kitchen.",
+    "thai": "มีระเบียงครับ แต่ไม่มีตู้เย็น เรามีครัวส่วนกลางครับ",
+    "keyPhrases": [
+     {
+      "en": "no refrigerator",
+      "thai": "ไม่มีตู้เย็น"
+     },
+     {
+      "en": "a shared kitchen",
+      "thai": "ครัวส่วนกลาง"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "That's okay. Can I leave my luggage here?",
+    "thai": "ไม่เป็นไรครับ ฝากกระเป๋าไว้ตรงนี้ได้ไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "leave my luggage",
+      "thai": "ฝากกระเป๋า"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "That's fine. Could I leave my luggage here?",
+      "thai": "ไม่เป็นไรครับ ขอฝากกระเป๋าไว้ตรงนี้ได้ไหม"
+     },
+     {
+      "en": "No problem. Where can I keep my luggage?",
+      "thai": "ไม่เป็นไรครับ ฝากกระเป๋าไว้ที่ไหนได้บ้าง"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Of course. Here's your key card. The lift is on the left.",
+    "thai": "ได้ครับ นี่คีย์การ์ดครับ ลิฟต์อยู่ทางซ้ายครับ",
+    "keyPhrases": [
+     {
+      "en": "your key card",
+      "thai": "คีย์การ์ดของคุณ"
+     },
+     {
+      "en": "on the left",
+      "thai": "ทางซ้าย"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Thanks. I'm tired and need some rest.",
+    "thai": "ขอบคุณครับ ผมเหนื่อย อยากพักสักหน่อยครับ",
+    "keyPhrases": [
+     {
+      "en": "tired",
+      "thai": "เหนื่อย"
+     },
+     {
+      "en": "need some rest",
+      "thai": "ต้องพักผ่อนสักหน่อย"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thanks. I'm really tired and want to rest.",
+      "thai": "ขอบคุณครับ ผมเหนื่อยมาก อยากพัก"
+     },
+     {
+      "en": "Thank you. I need some rest now.",
+      "thai": "ขอบคุณครับ ตอนนี้ผมขอพักผ่อนหน่อย"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "Breakfast is from six to ten.",
+    "thai": "อาหารเช้าเริ่มหกโมงถึงสิบโมงครับ"
+   },
+   {
+    "en": "Check-out is at noon.",
+    "thai": "เช็คเอาท์เที่ยงวันครับ"
+   },
+   {
+    "en": "Do you need help with your luggage?",
+    "thai": "ให้ช่วยยกกระเป๋าไหมครับ"
+   },
+   {
+    "en": "The lift is on your right.",
+    "thai": "ลิฟต์อยู่ทางขวาของคุณครับ"
+   },
+   {
+    "en": "Is there anything else you need?",
+    "thai": "มีอะไรให้ช่วยเพิ่มไหมครับ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-directions",
+  "title": "ถามทางและขึ้นรถ",
+  "titleEn": "Asking for directions and taking the bus",
+  "level": "A2",
+  "emoji": "🧭",
+  "category": "travel",
+  "commonsCategory": "Bus stops",
+  "imageQuery": "bus stop city map",
+  "setting": "คุณหลงทางในเมืองใหม่ ต้องถามทางและขึ้นรถเมล์ไปสนามบิน",
+  "counterpart": {
+   "labelTh": "คนท้องถิ่นแถวนั้น",
+   "emoji": "🙋"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Hi, you look lost. Can I help you?",
+    "thai": "สวัสดีครับ ดูเหมือนหลงทาง ให้ช่วยอะไรไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "you look lost",
+      "thai": "ดูเหมือนหลงทาง"
+     },
+     {
+      "en": "Can I help you",
+      "thai": "ให้ช่วยอะไรไหม"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Yes, please. I need to ask for directions to the airport.",
+    "thai": "ครับ ผมอยากถามทางไปสนามบินครับ",
+    "keyPhrases": [
+     {
+      "en": "ask for directions",
+      "thai": "ถามทาง"
+     },
+     {
+      "en": "the airport",
+      "thai": "สนามบิน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Yes, please. How do I get to the airport?",
+      "thai": "ครับ ผมไปสนามบินยังไงครับ"
+     },
+     {
+      "en": "Thanks. Could you give me directions to the airport?",
+      "thai": "ขอบคุณครับ ช่วยบอกทางไปสนามบินได้ไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Sure. Take the number seven bus from this stop.",
+    "thai": "ได้ครับ ขึ้นรถเมล์สายเจ็ดที่ป้ายนี้ครับ",
+    "keyPhrases": [
+     {
+      "en": "the number seven bus",
+      "thai": "รถเมล์สายเจ็ด"
+     },
+     {
+      "en": "this stop",
+      "thai": "ป้ายนี้"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Great. Where can I buy a ticket?",
+    "thai": "ดีครับ ซื้อตั๋วได้ที่ไหนครับ",
+    "keyPhrases": [
+     {
+      "en": "buy a ticket",
+      "thai": "ซื้อตั๋ว"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thanks. Where do I get a ticket?",
+      "thai": "ขอบคุณครับ ผมซื้อตั๋วที่ไหน"
+     },
+     {
+      "en": "Good. Can I buy a ticket on the bus?",
+      "thai": "ดีครับ ซื้อตั๋วบนรถเมล์ได้ไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "At the machine over there. Cash only, no credit card.",
+    "thai": "ที่ตู้ตรงโน้นครับ รับเงินสดเท่านั้น ไม่รับบัตรเครดิต",
+    "keyPhrases": [
+     {
+      "en": "At the machine over there",
+      "thai": "ที่ตู้ตรงโน้น"
+     },
+     {
+      "en": "Cash only",
+      "thai": "เงินสดเท่านั้น"
+     },
+     {
+      "en": "credit card",
+      "thai": "บัตรเครดิต"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Okay. Do you have a bus schedule I can take?",
+    "thai": "ครับ มีตารางรถเมล์ให้ผมเอาไปดูไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "a bus schedule",
+      "thai": "ตารางรถเมล์"
+     },
+     {
+      "en": "I can take",
+      "thai": "ที่ผมขอเอาไปได้"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Okay. Could I get a bus schedule?",
+      "thai": "ครับ ขอตารางรถเมล์ได้ไหม"
+     },
+     {
+      "en": "Fine. Is there a schedule for the bus?",
+      "thai": "ครับ มีตารางเวลารถเมล์ไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Yes, here's a small map with the times.",
+    "thai": "มีครับ นี่แผนที่เล็กๆ ที่มีเวลาเดินรถอยู่ครับ",
+    "keyPhrases": [
+     {
+      "en": "a small map",
+      "thai": "แผนที่เล็กๆ"
+     },
+     {
+      "en": "the times",
+      "thai": "เวลาเดินรถ"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Thanks. Which stop is best for the airport?",
+    "thai": "ขอบคุณครับ ลงป้ายไหนดีที่สุดสำหรับสนามบินครับ",
+    "keyPhrases": [
+     {
+      "en": "Which stop is best",
+      "thai": "ป้ายไหนดีที่สุด"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thank you. Which stop should I get off at?",
+      "thai": "ขอบคุณครับ ผมควรลงป้ายไหน"
+     },
+     {
+      "en": "Thanks. What's the best stop for the airport?",
+      "thai": "ขอบคุณครับ ป้ายไหนใกล้สนามบินที่สุด"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Get off at Gate Five, then turn left and walk.",
+    "thai": "ลงที่ประตูห้า แล้วเลี้ยวซ้ายเดินต่อครับ",
+    "keyPhrases": [
+     {
+      "en": "Gate Five",
+      "thai": "ประตูห้า"
+     },
+     {
+      "en": "turn left",
+      "thai": "เลี้ยวซ้าย"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Perfect. I don't want to miss my flight.",
+    "thai": "เยี่ยมครับ ผมไม่อยากตกเครื่องบิน",
+    "keyPhrases": [
+     {
+      "en": "don't want to miss",
+      "thai": "ไม่อยากพลาด"
+     },
+     {
+      "en": "my flight",
+      "thai": "เที่ยวบินของผม"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Great. I don't want to miss the plane.",
+      "thai": "เยี่ยมครับ ผมไม่อยากตกเครื่อง"
+     },
+     {
+      "en": "Perfect. My flight is at four, so thanks.",
+      "thai": "เยี่ยมครับ เที่ยวบินผมสี่โมง ขอบคุณนะครับ"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The train to the airport leaves every ten minutes.",
+    "thai": "รถไฟไปสนามบินออกทุกสิบนาทีครับ"
+   },
+   {
+    "en": "You can't miss it.",
+    "thai": "หาไม่ยากครับ"
+   },
+   {
+    "en": "It's about ten minutes from here.",
+    "thai": "จากตรงนี้ประมาณสิบนาทีครับ"
+   },
+   {
+    "en": "Ask the driver if you're not sure.",
+    "thai": "ไม่แน่ใจก็ถามคนขับได้ครับ"
+   },
+   {
+    "en": "Do you need a map?",
+    "thai": "ต้องการแผนที่ไหมครับ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-shopping",
+  "title": "ซื้อของและต่อรองราคา",
+  "titleEn": "Shopping and bargaining",
+  "level": "A2",
+  "emoji": "🛍️",
+  "category": "shopping",
+  "commonsCategory": "Bargaining",
+  "imageQuery": "market stall bargaining vendor",
+  "setting": "คุณเดินตลาดซื้อกระเป๋าและลองต่อรองราคากับแม่ค้า",
+  "counterpart": {
+   "labelTh": "แม่ค้าในตลาด",
+   "emoji": "🙋‍♀️"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Hello! What are you looking for today?",
+    "thai": "สวัสดีจ้า กำลังหาอะไรอยู่จ๊ะ",
+    "keyPhrases": [
+     {
+      "en": "What are you looking for",
+      "thai": "กำลังหาอะไรอยู่"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "I like this bag. How much is it?",
+    "thai": "ชอบกระเป๋าใบนี้ครับ ราคาเท่าไหร่",
+    "keyPhrases": [
+     {
+      "en": "this bag",
+      "thai": "กระเป๋าใบนี้"
+     },
+     {
+      "en": "How much is it",
+      "thai": "ราคาเท่าไหร่"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "This bag looks nice. What's the price?",
+      "thai": "กระเป๋าใบนี้สวยดี ราคาเท่าไหร่"
+     },
+     {
+      "en": "I want this bag. How much do I pay?",
+      "thai": "อยากได้กระเป๋าใบนี้ ต้องจ่ายเท่าไหร่"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "For you, nine hundred baht only.",
+    "thai": "สำหรับเธอเก้าร้อยบาทถ้วนจ้ะ",
+    "keyPhrases": [
+     {
+      "en": "nine hundred baht",
+      "thai": "เก้าร้อยบาท"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "That's expensive. Can you give me a discount?",
+    "thai": "แพงจังครับ ลดราคาให้หน่อยได้ไหม",
+    "keyPhrases": [
+     {
+      "en": "expensive",
+      "thai": "แพง"
+     },
+     {
+      "en": "give me a discount",
+      "thai": "ลดราคาให้"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "So expensive. Is there any discount for me?",
+      "thai": "แพงจัง มีส่วนลดให้ไหม"
+     },
+     {
+      "en": "That's a lot. Could you lower the price?",
+      "thai": "ราคาสูงไปหน่อย ลดให้ได้ไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Maybe eight hundred. This bag is good quality.",
+    "thai": "งั้นแปดร้อยก็แล้วกัน ใบนี้คุณภาพดีนะจ๊ะ",
+    "keyPhrases": [
+     {
+      "en": "eight hundred",
+      "thai": "แปดร้อย"
+     },
+     {
+      "en": "good quality",
+      "thai": "คุณภาพดี"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "How about seven hundred? I only have cash.",
+    "thai": "เจ็ดร้อยได้ไหมครับ ผมมีแต่เงินสด",
+    "keyPhrases": [
+     {
+      "en": "How about seven hundred",
+      "thai": "เจ็ดร้อยได้ไหม"
+     },
+     {
+      "en": "cash",
+      "thai": "เงินสด"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Seven hundred, okay? I can pay cash now.",
+      "thai": "เจ็ดร้อยนะครับ ผมจ่ายเงินสดตอนนี้ได้เลย"
+     },
+     {
+      "en": "Can we do seven hundred? I have cash only.",
+      "thai": "เจ็ดร้อยได้ไหมครับ ผมมีแต่เงินสด"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Okay, deal. That's already a bargain.",
+    "thai": "โอเคจ้ะ ตกลง ราคานี้ถูกมากแล้วนะ",
+    "keyPhrases": [
+     {
+      "en": "Okay, deal",
+      "thai": "โอเค ตกลง"
+     },
+     {
+      "en": "a bargain",
+      "thai": "ของถูก ราคาคุ้ม"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Thank you. Could I have a receipt, please?",
+    "thai": "ขอบคุณครับ ขอใบเสร็จด้วยได้ไหม",
+    "keyPhrases": [
+     {
+      "en": "a receipt",
+      "thai": "ใบเสร็จ"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thanks. Can I get a receipt, please?",
+      "thai": "ขอบคุณครับ ขอใบเสร็จหน่อยได้ไหม"
+     },
+     {
+      "en": "Thank you. Please give me a receipt.",
+      "thai": "ขอบคุณครับ ขอใบเสร็จด้วยครับ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Sure. Cash or credit card? I have change too.",
+    "thai": "ได้จ้ะ เงินสดหรือบัตรเครดิต มีเงินทอนให้ด้วย",
+    "keyPhrases": [
+     {
+      "en": "credit card",
+      "thai": "บัตรเครดิต"
+     },
+     {
+      "en": "change",
+      "thai": "เงินทอน"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Cash is fine. I want to save money this month.",
+    "thai": "เงินสดก็ได้ครับ เดือนนี้อยากประหยัดเงิน",
+    "keyPhrases": [
+     {
+      "en": "Cash is fine",
+      "thai": "เงินสดก็ได้"
+     },
+     {
+      "en": "save money",
+      "thai": "ประหยัดเงิน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Cash is better. I'm trying to save money.",
+      "thai": "เงินสดดีกว่าครับ ผมพยายามประหยัดเงิน"
+     },
+     {
+      "en": "I'll pay cash. I need to save money.",
+      "thai": "จ่ายเงินสดครับ ผมต้องประหยัดเงิน"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "Cheap price for you, my friend.",
+    "thai": "ราคาถูกให้เลยเพื่อน"
+   },
+   {
+    "en": "That's already my last price.",
+    "thai": "นี่ราคาสุดท้ายแล้วนะ"
+   },
+   {
+    "en": "Please keep your wallet safe.",
+    "thai": "เก็บกระเป๋าเงินให้ดีนะ"
+   },
+   {
+    "en": "The bank is next door if you need cash.",
+    "thai": "ถ้าต้องการเงินสด ธนาคารอยู่ข้างๆ"
+   },
+   {
+    "en": "Come back again next time.",
+    "thai": "คราวหน้ามาใหม่นะจ๊ะ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-pharmacy",
+  "title": "ที่ร้านขายยา ปรึกษาอาการ",
+  "titleEn": "At the pharmacy",
+  "level": "A2",
+  "emoji": "💊",
+  "category": "health",
+  "commonsCategory": "Pharmacies",
+  "imageQuery": "pharmacy medicine shelves pharmacist",
+  "setting": "คุณไม่สบายจึงเข้าร้านขายยาเพื่อปรึกษาอาการและซื้อยา",
+  "counterpart": {
+   "labelTh": "เภสัชกรร้านขายยา",
+   "emoji": "👩‍⚕️"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Hello. How can I help you today?",
+    "thai": "สวัสดีครับ มีอะไรให้ช่วยไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "How can I help you",
+      "thai": "มีอะไรให้ช่วยไหม"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "I feel ill. I have a headache and a cough.",
+    "thai": "ผมรู้สึกไม่สบาย ปวดหัวกับไอครับ",
+    "keyPhrases": [
+     {
+      "en": "feel ill",
+      "thai": "รู้สึกไม่สบาย"
+     },
+     {
+      "en": "a headache",
+      "thai": "อาการปวดหัว"
+     },
+     {
+      "en": "a cough",
+      "thai": "อาการไอ"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "I'm ill. I have a headache and a cough.",
+      "thai": "ผมไม่สบาย ปวดหัวแล้วก็ไอ"
+     },
+     {
+      "en": "I don't feel well. My head hurts and I have a cough.",
+      "thai": "ผมรู้สึกไม่ดี หัวปวดแล้วก็ไอ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "I see. How long have you had the cough?",
+    "thai": "เข้าใจแล้วครับ ไอมาได้กี่วันแล้วครับ",
+    "keyPhrases": [
+     {
+      "en": "How long",
+      "thai": "นานแค่ไหนแล้ว"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "For three days. I also have a sore throat.",
+    "thai": "สามวันแล้วครับ แล้วก็เจ็บคอด้วย",
+    "keyPhrases": [
+     {
+      "en": "three days",
+      "thai": "สามวัน"
+     },
+     {
+      "en": "a sore throat",
+      "thai": "อาการเจ็บคอ"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Since Monday. I have a sore throat too.",
+      "thai": "ตั้งแต่วันจันทร์ครับ เจ็บคอด้วย"
+     },
+     {
+      "en": "Three days now, and my throat is sore.",
+      "thai": "สามวันแล้วครับ แล้วคอผมก็เจ็บ"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Do you have a fever or a stomachache too?",
+    "thai": "มีไข้หรือปวดท้องด้วยไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "a fever",
+      "thai": "อาการไข้"
+     },
+     {
+      "en": "a stomachache",
+      "thai": "อาการปวดท้อง"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "No fever, but my body hurts and I'm tired.",
+    "thai": "ไม่มีไข้ครับ แต่ตัวผมปวดไปหมดแล้วก็เพลียมาก",
+    "keyPhrases": [
+     {
+      "en": "No fever",
+      "thai": "ไม่มีไข้"
+     },
+     {
+      "en": "my body hurts",
+      "thai": "ตัวปวดเมื่อย"
+     },
+     {
+      "en": "tired",
+      "thai": "เพลีย เหนื่อย"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "No fever. My body hurts and I feel tired.",
+      "thai": "ไม่มีไข้ครับ ตัวปวดแล้วก็รู้สึกเพลีย"
+     },
+     {
+      "en": "I don't have a fever, but I'm tired and everything hurts.",
+      "thai": "ไม่มีไข้ครับ แต่ผมเพลียและปวดไปทั้งตัว"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "This medicine helps with the cough and the pain.",
+    "thai": "ยาตัวนี้ช่วยเรื่องไอและอาการปวดครับ",
+    "keyPhrases": [
+     {
+      "en": "This medicine",
+      "thai": "ยาตัวนี้"
+     },
+     {
+      "en": "the cough",
+      "thai": "อาการไอ"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Okay. Should I see a doctor for this?",
+    "thai": "ครับ แบบนี้ควรไปหาหมอไหมครับ",
+    "keyPhrases": [
+     {
+      "en": "see a doctor",
+      "thai": "ไปหาหมอ"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "I see. Do I need to see a doctor?",
+      "thai": "เข้าใจแล้วครับ ผมต้องไปหาหมอไหม"
+     },
+     {
+      "en": "Okay. Is it better to see a doctor?",
+      "thai": "ครับ ไปหาหมอดีกว่าไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "If you still feel ill on Friday, make an appointment.",
+    "thai": "ถ้าถึงวันศุกร์ยังไม่สบาย ก็โทรนัดหมอได้เลยครับ",
+    "keyPhrases": [
+     {
+      "en": "feel ill",
+      "thai": "รู้สึกไม่สบาย"
+     },
+     {
+      "en": "make an appointment",
+      "thai": "นัดหมาย"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Thanks. I'll take the medicine and get some rest.",
+    "thai": "ขอบคุณครับ เดี๋ยวผมกินยาแล้วพักผ่อนครับ",
+    "keyPhrases": [
+     {
+      "en": "the medicine",
+      "thai": "ยา"
+     },
+     {
+      "en": "get some rest",
+      "thai": "พักผ่อนสักหน่อย"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thank you. I'll take the medicine and rest at home.",
+      "thai": "ขอบคุณครับ ผมจะกินยาแล้วพักอยู่บ้าน"
+     },
+     {
+      "en": "Thanks. I'll rest and take this medicine.",
+      "thai": "ขอบคุณครับ ผมจะพักและกินยานี้"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "Do you have a prescription?",
+    "thai": "มีใบสั่งยามาไหมครับ"
+   },
+   {
+    "en": "Take this after meals.",
+    "thai": "กินยาหลังอาหารนะครับ"
+   },
+   {
+    "en": "Drink lots of water and stay healthy.",
+    "thai": "ดื่มน้ำเยอะๆ ดูแลสุขภาพด้วยนะครับ"
+   },
+   {
+    "en": "If it gets worse, see a doctor.",
+    "thai": "ถ้าอาการแย่ลงให้ไปหาหมอครับ"
+   },
+   {
+    "en": "Do you want tablets or syrup?",
+    "thai": "รับเป็นยาเม็ดหรือน้ำเชื่อมครับ"
+   }
+  ]
+ },
+ {
+  "id": "dlg-office",
+  "title": "คุยกับเพื่อนร่วมงานที่ออฟฟิศ",
+  "titleEn": "Talking with a colleague at the office",
+  "level": "A2",
+  "emoji": "💼",
+  "category": "work",
+  "commonsCategory": "Offices",
+  "imageQuery": "office colleagues talking desk",
+  "setting": "คุณคุยกับเพื่อนร่วมงานที่ออฟฟิศตอนเช้าก่อนเข้าประชุม",
+  "counterpart": {
+   "labelTh": "เพื่อนร่วมงาน",
+   "emoji": "🧑‍💼"
+  },
+  "lines": [
+   {
+    "who": "staff",
+    "en": "Morning! You look tired today. Everything okay?",
+    "thai": "อรุณสวัสดิ์ ดูเหนื่อยๆ นะวันนี้ เป็นอะไรหรือเปล่า",
+    "keyPhrases": [
+     {
+      "en": "look tired",
+      "thai": "ดูเหนื่อย"
+     },
+     {
+      "en": "Everything okay",
+      "thai": "ทุกอย่างโอเคไหม"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Not really. I'm stressed about the report deadline.",
+    "thai": "ก็ไม่ค่อยดีครับ เครียดเรื่องเดดไลน์รายงาน",
+    "keyPhrases": [
+     {
+      "en": "stressed",
+      "thai": "เครียด"
+     },
+     {
+      "en": "the report deadline",
+      "thai": "กำหนดส่งรายงาน"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Not great. The report deadline makes me stressed.",
+      "thai": "ไม่ค่อยดี กำหนดส่งรายงานทำผมเครียด"
+     },
+     {
+      "en": "Actually no. I'm stressed about my report.",
+      "thai": "จริงๆ ไม่ค่อยดีครับ เครียดเรื่องรายงาน"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "The deadline is Friday, right? Our colleague can help.",
+    "thai": "เดดไลน์วันศุกร์ใช่ไหม เพื่อนร่วมงานเราช่วยได้นะ",
+    "keyPhrases": [
+     {
+      "en": "The deadline is Friday",
+      "thai": "กำหนดส่งคือวันศุกร์"
+     },
+     {
+      "en": "colleague",
+      "thai": "เพื่อนร่วมงาน"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Yes, please. Could you check my email later?",
+    "thai": "ช่วยหน่อยครับ เดี๋ยวช่วยเช็คอีเมลผมทีหลังได้ไหม",
+    "keyPhrases": [
+     {
+      "en": "check my email",
+      "thai": "เช็คอีเมลของผม"
+     },
+     {
+      "en": "later",
+      "thai": "ทีหลัง"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Please. Can you look at my email later?",
+      "thai": "ช่วยด้วยครับ ดูลายอีเมลผมทีหลังได้ไหม"
+     },
+     {
+      "en": "Yes, please. Could you read my email after lunch?",
+      "thai": "ช่วยหน่อยครับ อ่านอีเมลผมหลังมื้อกลางวันได้ไหม"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Sure. I'll do it after the meeting with the boss.",
+    "thai": "ได้เลย เดี๋ยวทำให้หลังประชุมกับหัวหน้า",
+    "keyPhrases": [
+     {
+      "en": "the meeting",
+      "thai": "การประชุม"
+     },
+     {
+      "en": "the boss",
+      "thai": "หัวหน้า"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "Thanks. I'm worried about my interview too.",
+    "thai": "ขอบคุณครับ ผมก็กังวลเรื่องสัมภาษณ์งานด้วย",
+    "keyPhrases": [
+     {
+      "en": "worried about",
+      "thai": "กังวลเรื่อง"
+     },
+     {
+      "en": "my interview",
+      "thai": "การสัมภาษณ์ของผม"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "Thank you. I'm nervous about my interview too.",
+      "thai": "ขอบคุณครับ ผมก็ตื่นเต้นเรื่องสัมภาษณ์ด้วย"
+     },
+     {
+      "en": "Thanks. My interview makes me nervous too.",
+      "thai": "ขอบคุณครับ สัมภาษณ์ก็ทำให้ผมตื่นเต้นเหมือนกัน"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "Don't worry. You're always punctual and patient.",
+    "thai": "ไม่ต้องกังวลเลย คุณมาตรงเวลาและใจเย็นเสมอ",
+    "keyPhrases": [
+     {
+      "en": "Don't worry",
+      "thai": "ไม่ต้องกังวล"
+     },
+     {
+      "en": "punctual",
+      "thai": "มาตรงเวลา"
+     },
+     {
+      "en": "patient",
+      "thai": "ใจเย็น อดทน"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "That's kind of you. I want that promotion.",
+    "thai": "พูดดีจังครับ ผมอยากได้เลื่อนตำแหน่งนั้น",
+    "keyPhrases": [
+     {
+      "en": "kind of you",
+      "thai": "ใจดีกับผม"
+     },
+     {
+      "en": "that promotion",
+      "thai": "การเลื่อนตำแหน่งนั้น"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "That's very kind. I really want the promotion.",
+      "thai": "ใจดีมากครับ ผมอยากได้เลื่อนตำแหน่งจริงๆ"
+     },
+     {
+      "en": "Thanks, you're kind. I hope I get the promotion.",
+      "thai": "ขอบคุณครับ ใจดีจัง ผมหวังว่าจะได้เลื่อนตำแหน่ง"
+     }
+    ]
+   },
+   {
+    "who": "staff",
+    "en": "You'll get it. Are you taking sick leave tomorrow?",
+    "thai": "ได้อยู่แล้ว พรุ่งนี้จะลาป่วยไหม",
+    "keyPhrases": [
+     {
+      "en": "sick leave",
+      "thai": "การลาป่วย"
+     }
+    ]
+   },
+   {
+    "who": "me",
+    "en": "No, but I may ask for less overtime.",
+    "thai": "ไม่ครับ แต่ผมอาจขอทำงานล่วงเวลาน้อยลง",
+    "keyPhrases": [
+     {
+      "en": "less overtime",
+      "thai": "ทำงานล่วงเวลาน้อยลง"
+     }
+    ],
+    "alternative": [
+     {
+      "en": "No, but I want less overtime this week.",
+      "thai": "ไม่ครับ แต่สัปดาห์นี้ผมอยากทำโอทีน้อยลง"
+     },
+     {
+      "en": "Not tomorrow. I'll ask for less overtime though.",
+      "thai": "พรุ่งนี้ไม่ครับ แต่ผมจะขอลดโอทีลง"
+     }
+    ]
+   }
+  ],
+  "usefulPhrases": [
+   {
+    "en": "Can we move the meeting to ten?",
+    "thai": "เลื่อนประชุมเป็นสิบโมงได้ไหม"
+   },
+   {
+    "en": "The boss wants the report by Friday.",
+    "thai": "หัวหน้าอยากได้รายงานภายในวันศุกร์"
+   },
+   {
+    "en": "Did you apply for the promotion?",
+    "thai": "สมัครเลื่อนตำแหน่งหรือยัง"
+   },
+   {
+    "en": "The salary review is next month.",
+    "thai": "เดือนหน้าจะทบทวนเงินเดือน"
+   },
+   {
+    "en": "Take a break, you look tired.",
+    "thai": "พักหน่อยเถอะ ดูเหนื่อยๆ นะ"
+   }
+  ]
+ }
+]

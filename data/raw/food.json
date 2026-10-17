@@ -1,0 +1,194 @@
+[
+  {
+    "id": "food-breakfast",
+    "word": "breakfast",
+    "pos": "n.",
+    "ipa": "/ˈbrek.fəst/",
+    "thai": "อาหารเช้า",
+    "emoji": "🍳",
+    "imageQuery": "breakfast table morning",
+    "example": "I usually have breakfast at seven with my wife.",
+    "exampleThai": "ปกติผมกินอาหารเช้ากับภรรยาตอนเจ็ดโมง",
+    "keyVocab": [
+      { "en": "usually have", "thai": "ปกติกิน" },
+      { "en": "at seven", "thai": "ตอนเจ็ดโมง" }
+    ],
+    "tip": "ใช้ have breakfast ไม่ใช่ eat breakfast และไม่ใส่ a เมื่อพูดถึงมื้อเช้าทั่วไป"
+  },
+  {
+    "id": "food-lunch",
+    "word": "lunch",
+    "pos": "n.",
+    "ipa": "/lʌntʃ/",
+    "thai": "อาหารกลางวัน",
+    "emoji": "🥗",
+    "imageQuery": "lunch break office",
+    "example": "Let's grab lunch together after the meeting ends.",
+    "exampleThai": "ไปกินข้าวเที่ยงด้วยกันหลังประชุมเลิกนะ",
+    "keyVocab": [
+      { "en": "grab lunch", "thai": "ไปกินข้าวเที่ยงเร็วๆ" },
+      { "en": "after the meeting", "thai": "หลังประชุม" }
+    ],
+    "tip": "grab lunch เป็นสำนวน แปลว่า กินข้าวเที่ยงเร็วๆ ใช้บ่อยในที่ทำงาน"
+  },
+  {
+    "id": "food-dinner",
+    "word": "dinner",
+    "pos": "n.",
+    "ipa": "/ˈdɪn.ɚ/",
+    "thai": "อาหารเย็น",
+    "emoji": "🍽️",
+    "imageQuery": "family dinner table",
+    "example": "We are having dinner with my parents on Friday night.",
+    "exampleThai": "คืนวันศุกร์นี้เราจะไปกินข้าวเย็นกับพ่อแม่ผม",
+    "keyVocab": [
+      { "en": "having dinner", "thai": "กินข้าวเย็น" },
+      { "en": "on Friday night", "thai": "คืนวันศุกร์" }
+    ],
+    "tip": "dinner คือมื้อเย็น ใช้ have dinner บ่อยกว่า eat dinner"
+  },
+  {
+    "id": "food-snack",
+    "word": "snack",
+    "pos": "n.",
+    "ipa": "/snæk/",
+    "thai": "ของว่าง",
+    "emoji": "🥜",
+    "imageQuery": "healthy snack nuts",
+    "example": "I keep some nuts in my desk for a quick snack.",
+    "exampleThai": "ผมเก็บถั่วไว้ในโต๊ะทำงาน เอาไว้กินเล่นตอนหิว",
+    "keyVocab": [
+      { "en": "keep some nuts", "thai": "เก็บถั่วไว้บ้าง" },
+      { "en": "a quick snack", "thai": "ของว่างกินเร็วๆ" }
+    ],
+    "tip": "snack เป็นได้ทั้งคำนาม (ของว่าง) และคำกริยา (กินเล่น)"
+  },
+  {
+    "id": "food-ingredient",
+    "word": "ingredient",
+    "pos": "n.",
+    "ipa": "/ɪnˈɡriː.di.ənt/",
+    "thai": "วัตถุดิบ / ส่วนผสม",
+    "emoji": "🥕",
+    "imageQuery": "fresh ingredients cooking",
+    "example": "Fresh ingredients make a simple dish taste much better.",
+    "exampleThai": "วัตถุดิบสดๆ ทำให้เมนูง่ายๆ อร่อยขึ้นเยอะ",
+    "keyVocab": [
+      { "en": "Fresh ingredients", "thai": "วัตถุดิบสดๆ" },
+      { "en": "a simple dish", "thai": "เมนูง่ายๆ" }
+    ],
+    "tip": "ใช้พหูพจน์ ingredients เมื่อพูดถึงหลายอย่าง ออกเสียงเน้น -gri-"
+  },
+  {
+    "id": "food-recipe",
+    "word": "recipe",
+    "pos": "n.",
+    "ipa": "/ˈres.ə.pi/",
+    "thai": "สูตรอาหาร",
+    "emoji": "📖",
+    "imageQuery": "cooking recipe book",
+    "example": "My mother gave me her recipe for Thai green curry.",
+    "exampleThai": "แม่ให้สูตรแกงเขียวหวานของท่านกับฉันมา",
+    "keyVocab": [
+      { "en": "gave me", "thai": "ให้ฉัน" },
+      { "en": "Thai green curry", "thai": "แกงเขียวหวาน" }
+    ],
+    "tip": "recipe ออกเสียง เรส-ซะ-พี ไม่ใช่ รี-ไซป์ และใช้ recipe for + อาหาร"
+  },
+  {
+    "id": "food-soup",
+    "word": "soup",
+    "pos": "n.",
+    "ipa": "/suːp/",
+    "thai": "ซุป",
+    "emoji": "🍲",
+    "imageQuery": "hot soup bowl",
+    "example": "This soup is too salty for me, can you fix it?",
+    "exampleThai": "ซุปถ้วยนี้เค็มเกินไปสำหรับฉัน ช่วยแก้ให้หน่อยได้ไหม",
+    "keyVocab": [
+      { "en": "too salty", "thai": "เค็มเกินไป" },
+      { "en": "fix it", "thai": "แก้ให้หน่อย" }
+    ],
+    "tip": "soup เป็นคำนามนับไม่ได้ พูด a bowl of soup ได้ แต่ไม่พูด a soup"
+  },
+  {
+    "id": "food-grill",
+    "word": "grill",
+    "pos": "v.",
+    "ipa": "/ɡrɪl/",
+    "thai": "ย่าง",
+    "emoji": "🔥",
+    "imageQuery": "grilling fish outdoor",
+    "example": "We usually grill fish and vegetables on Sunday evenings.",
+    "exampleThai": "ปกติเราย่างปลากับผักตอนเย็นวันอาทิตย์",
+    "keyVocab": [
+      { "en": "grill fish", "thai": "ย่างปลา" },
+      { "en": "Sunday evenings", "thai": "เย็นวันอาทิตย์" }
+    ],
+    "tip": "grill ย่างบนตะแกรง ต่างจาก roast (อบ) และ barbecue (บาร์บีคิว)"
+  },
+  {
+    "id": "food-spicy",
+    "word": "spicy",
+    "pos": "adj.",
+    "ipa": "/ˈspaɪ.si/",
+    "thai": "เผ็ด",
+    "emoji": "🌶️",
+    "imageQuery": "spicy chili food",
+    "example": "I love spicy food, but my husband can't handle it.",
+    "exampleThai": "ฉันชอบอาหารเผ็ด แต่สามีฉันกินเผ็ดไม่ไหว",
+    "keyVocab": [
+      { "en": "spicy food", "thai": "อาหารเผ็ด" },
+      { "en": "can't handle it", "thai": "กินไม่ไหว / รับไม่ไหว" }
+    ],
+    "tip": "บอกความเผ็ดได้ว่า mildly spicy หรือ Thai spicy ถ้าเอาแบบไทยๆ"
+  },
+  {
+    "id": "food-leftovers",
+    "word": "leftovers",
+    "pos": "n.",
+    "ipa": "/ˈleft.oʊ.vɚz/",
+    "thai": "อาหารที่กินเหลือ",
+    "emoji": "🍱",
+    "imageQuery": "leftover food container",
+    "example": "We ate the leftovers from last night for lunch today.",
+    "exampleThai": "วันนี้เรากินอาหารที่เหลือจากเมื่อคืนเป็นมื้อเที่ยง",
+    "keyVocab": [
+      { "en": "from last night", "thai": "จากเมื่อคืน" },
+      { "en": "for lunch", "thai": "เป็นมื้อเที่ยง" }
+    ],
+    "tip": "leftovers ใช้เป็นพหูพจน์เสมอ หมายถึงอาหารที่กินเหลือแช่ตู้เย็นไว้"
+  },
+  {
+    "id": "food-dessert",
+    "word": "dessert",
+    "pos": "n.",
+    "ipa": "/dɪˈzɝːt/",
+    "thai": "ของหวาน",
+    "emoji": "🍰",
+    "imageQuery": "dessert cake plate",
+    "example": "Would you like some dessert or just coffee?",
+    "exampleThai": "รับของหวานไหมคะ หรือเอาแค่กาแฟ",
+    "keyVocab": [
+      { "en": "Would you like", "thai": "รับ...ไหม" },
+      { "en": "just coffee", "thai": "แค่กาแฟ" }
+    ],
+    "tip": "dessert (ของหวาน) สะกด ss แต่ desert (ทะเลทราย) สะกด s เดียว"
+  },
+  {
+    "id": "food-portion",
+    "word": "portion",
+    "pos": "n.",
+    "ipa": "/ˈpɔːr.ʃən/",
+    "thai": "ปริมาณอาหารต่อจาน",
+    "emoji": "🍛",
+    "imageQuery": "large food portion plate",
+    "example": "The portions here are huge, so let's share one plate.",
+    "exampleThai": "ที่ร้านนี้เสิร์ฟจานใหญ่ งั้นแบ่งกันจานเดียวเถอะ",
+    "keyVocab": [
+      { "en": "are huge", "thai": "ใหญ่โต" },
+      { "en": "share one plate", "thai": "แบ่งกันจานเดียว" }
+    ],
+    "tip": "portion = ปริมาณอาหารต่อจาน พูด portion size หรือ a small portion"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "id": "work-meeting",
+    "word": "meeting",
+    "pos": "n.",
+    "ipa": "/ˈmiː.t̬ɪŋ/",
+    "thai": "การประชุม",
+    "emoji": "📅",
+    "imageQuery": "office team meeting",
+    "example": "We have a team meeting every Monday morning.",
+    "exampleThai": "เราประชุมทีมกันทุกเช้าวันจันทร์",
+    "keyVocab": [
+      { "en": "team meeting", "thai": "ประชุมทีม" },
+      { "en": "every Monday", "thai": "ทุกวันจันทร์" }
+    ],
+    "tip": "meeting เป็นคำนามนับได้ จึงพูดว่า a meeting หรือ two meetings"
+  },
+  {
+    "id": "work-email",
+    "word": "email",
+    "pos": "n.",
+    "ipa": "/ˈiː.meɪl/",
+    "thai": "อีเมล",
+    "emoji": "📧",
+    "imageQuery": "laptop email inbox",
+    "example": "I sent an email to the client this morning.",
+    "exampleThai": "ฉันส่งอีเมลให้ลูกค้าเมื่อเช้านี้",
+    "keyVocab": [
+      { "en": "sent an email", "thai": "ส่งอีเมล" },
+      { "en": "the client", "thai": "ลูกค้า" }
+    ],
+    "tip": "ใช้ send an email to someone (ส่งอีเมลถึงใคร) ไม่ต้องใส่ preposition อื่นเพิ่ม"
+  },
+  {
+    "id": "work-colleague",
+    "word": "colleague",
+    "pos": "n.",
+    "ipa": "/ˈkɑː.liːɡ/",
+    "thai": "เพื่อนร่วมงาน",
+    "emoji": "🤝",
+    "imageQuery": "colleagues talking office",
+    "example": "My colleague helped me finish the report yesterday.",
+    "exampleThai": "เพื่อนร่วมงานช่วยฉันทำรายงานให้เสร็จเมื่อวานนี้",
+    "keyVocab": [
+      { "en": "My colleague", "thai": "เพื่อนร่วมงานของฉัน" },
+      { "en": "helped me", "thai": "ช่วยฉัน" }
+    ],
+    "tip": "colleague ฟังดูเป็นทางการกว่า workmate ใช้กับเพื่อนร่วมงานทั่วไปได้เลย"
+  },
+  {
+    "id": "work-boss",
+    "word": "boss",
+    "pos": "n.",
+    "ipa": "/bɑːs/",
+    "thai": "หัวหน้า",
+    "emoji": "👔",
+    "imageQuery": "manager office desk",
+    "example": "My boss asked me to join the meeting tomorrow.",
+    "exampleThai": "หัวหน้าของฉันขอให้ฉันเข้าประชุมพรุ่งนี้",
+    "keyVocab": [
+      { "en": "My boss", "thai": "หัวหน้าของฉัน" },
+      { "en": "asked me to", "thai": "ขอให้ฉัน" }
+    ],
+    "tip": "boss ใช้พูดกันทั่วไป ส่วน manager หรือ supervisor ฟังดูเป็นทางการกว่า"
+  },
+  {
+    "id": "work-salary",
+    "word": "salary",
+    "pos": "n.",
+    "ipa": "/ˈsæl.ɚ.i/",
+    "thai": "เงินเดือน",
+    "emoji": "💰",
+    "imageQuery": "money salary payment",
+    "example": "The company pays my salary on the last day of the month.",
+    "exampleThai": "บริษัทจ่ายเงินเดือนฉันวันสุดท้ายของเดือน",
+    "keyVocab": [
+      { "en": "pays my salary", "thai": "จ่ายเงินเดือนฉัน" },
+      { "en": "the last day", "thai": "วันสุดท้าย" }
+    ],
+    "tip": "salary คือเงินเดือนรายเดือน ส่วน wage คือค่าจ้างรายวันหรือรายชั่วโมง"
+  },
+  {
+    "id": "work-sick-leave",
+    "word": "sick leave",
+    "pos": "n.",
+    "ipa": "/ˈsɪk ˌliːv/",
+    "thai": "ลาป่วย",
+    "emoji": "🤒",
+    "imageQuery": "sick person bed",
+    "example": "She took three days of sick leave last week.",
+    "exampleThai": "เธอลาป่วยสามวันเมื่อสัปดาห์ที่แล้ว",
+    "keyVocab": [
+      { "en": "three days of sick leave", "thai": "ลาป่วยสามวัน" },
+      { "en": "last week", "thai": "สัปดาห์ที่แล้ว" }
+    ],
+    "tip": "ใช้ take sick leave (ลาป่วย) หรือ ask for sick leave (ขอลาป่วย)"
+  },
+  {
+    "id": "work-apply-for",
+    "word": "apply for",
+    "pos": "phr.",
+    "ipa": "/əˈplaɪ fɚ/",
+    "thai": "สมัคร (งาน)",
+    "emoji": "📝",
+    "imageQuery": "writing job application",
+    "example": "I want to apply for a new job next month.",
+    "exampleThai": "ฉันอยากสมัครงานใหม่เดือนหน้า",
+    "keyVocab": [
+      { "en": "apply for", "thai": "สมัคร" },
+      { "en": "a new job", "thai": "งานใหม่" }
+    ],
+    "tip": "apply for + งานหรือตำแหน่ง เช่น apply for a job ไม่ใช่ apply to a job"
+  },
+  {
+    "id": "work-deadline",
+    "word": "deadline",
+    "pos": "n.",
+    "ipa": "/ˈded.laɪn/",
+    "thai": "กำหนดส่งงาน",
+    "emoji": "⏰",
+    "imageQuery": "office clock time",
+    "example": "Our team has to meet the deadline by Friday afternoon.",
+    "exampleThai": "ทีมของเราต้องส่งงานให้ทันกำหนดบ่ายวันศุกร์",
+    "keyVocab": [
+      { "en": "meet the deadline", "thai": "ทำเสร็จทันกำหนด" },
+      { "en": "by Friday", "thai": "ภายในวันศุกร์" }
+    ],
+    "tip": "ใช้ meet the deadline (ทำทัน) แต่ miss the deadline (ทำไม่ทัน)"
+  },
+  {
+    "id": "work-overtime",
+    "word": "overtime",
+    "pos": "n.",
+    "ipa": "/ˈoʊ.vɚ.taɪm/",
+    "thai": "การทำงานล่วงเวลา",
+    "emoji": "🌙",
+    "imageQuery": "late night office",
+    "example": "He worked overtime every night to finish the project.",
+    "exampleThai": "เขาทำงานล่วงเวลาทุกคืนเพื่อให้โปรเจกต์เสร็จ",
+    "keyVocab": [
+      { "en": "worked overtime", "thai": "ทำงานล่วงเวลา" },
+      { "en": "every night", "thai": "ทุกคืน" }
+    ],
+    "tip": "work overtime แปลว่าทำโอที เป็นคำนามนับไม่ได้ ไม่ใช้ an overtime"
+  },
+  {
+    "id": "work-interview",
+    "word": "interview",
+    "pos": "n.",
+    "ipa": "/ˈɪn.t̬ɚ.vjuː/",
+    "thai": "การสัมภาษณ์งาน",
+    "emoji": "💼",
+    "imageQuery": "job interview handshake",
+    "example": "I answered many questions at my job interview today.",
+    "exampleThai": "ฉันตอบคำถามหลายข้อในการสัมภาษณ์งานวันนี้",
+    "keyVocab": [
+      { "en": "job interview", "thai": "การสัมภาษณ์งาน" },
+      { "en": "many questions", "thai": "คำถามหลายข้อ" }
+    ],
+    "tip": "go for an interview = ไปสัมภาษณ์งาน, have an interview = มีนัดสัมภาษณ์"
+  },
+  {
+    "id": "work-report",
+    "word": "report",
+    "pos": "n.",
+    "ipa": "/rɪˈpɔːrt/",
+    "thai": "รายงาน",
+    "emoji": "📊",
+    "imageQuery": "business report papers",
+    "example": "I have to send the monthly report before noon.",
+    "exampleThai": "ฉันต้องส่งรายงานประจำเดือนก่อนเที่ยง",
+    "keyVocab": [
+      { "en": "the monthly report", "thai": "รายงานประจำเดือน" },
+      { "en": "before noon", "thai": "ก่อนเที่ยง" }
+    ],
+    "tip": "report เป็นได้ทั้งคำนาม (รายงาน) และคำกริยา (รายงานให้ทราบ)"
+  },
+  {
+    "id": "work-promotion",
+    "word": "promotion",
+    "pos": "n.",
+    "ipa": "/prəˈmoʊ.ʃən/",
+    "thai": "การเลื่อนตำแหน่ง",
+    "emoji": "🎉",
+    "imageQuery": "success celebration office",
+    "example": "She got a promotion after two years of hard work.",
+    "exampleThai": "เธอได้เลื่อนตำแหน่งหลังจากทำงานหนักมาสองปี",
+    "keyVocab": [
+      { "en": "got a promotion", "thai": "ได้เลื่อนตำแหน่ง" },
+      { "en": "hard work", "thai": "การทำงานหนัก" }
+    ],
+    "tip": "get a promotion = ได้เลื่อนตำแหน่ง ใช้กับงาน คนละความหมายกับโปรโมชันลดราคา"
+  }
+]

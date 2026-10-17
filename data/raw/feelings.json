@@ -1,0 +1,194 @@
+[
+  {
+    "id": "feelings-stressed",
+    "word": "stressed",
+    "pos": "adj.",
+    "ipa": "/strest/",
+    "thai": "เครียด",
+    "emoji": "😖",
+    "imageQuery": "stressed office worker",
+    "example": "I feel stressed when I have too much work.",
+    "exampleThai": "ฉันรู้สึกเครียดเวลามีงานเยอะเกินไป",
+    "keyVocab": [
+      { "en": "feel stressed", "thai": "รู้สึกเครียด" },
+      { "en": "too much work", "thai": "งานเยอะเกินไป" }
+    ],
+    "tip": "stressed ใช้กับคน (I am stressed) ส่วน stressful ใช้กับงาน เช่น a stressful job"
+  },
+  {
+    "id": "feelings-tired",
+    "word": "tired",
+    "pos": "adj.",
+    "ipa": "/ˈtaɪrd/",
+    "thai": "เหนื่อย",
+    "emoji": "😴",
+    "imageQuery": "tired man yawning",
+    "example": "I am really tired after a long day at work.",
+    "exampleThai": "ฉันเหนื่อยมากจริง ๆ หลังทำงานมาทั้งวัน",
+    "keyVocab": [
+      { "en": "really tired", "thai": "เหนื่อยมาก" },
+      { "en": "after a long day", "thai": "หลังวันที่ยาวนาน" }
+    ],
+    "tip": "tired แปลว่าเหนื่อยหรือง่วงนอน ส่วน bored แปลว่าเบื่อ อย่าสับสนสองคำนี้"
+  },
+  {
+    "id": "feelings-proud",
+    "word": "proud",
+    "pos": "adj.",
+    "ipa": "/praʊd/",
+    "thai": "ภูมิใจ",
+    "emoji": "😌",
+    "imageQuery": "proud person smiling",
+    "example": "I am proud of my team for finishing early.",
+    "exampleThai": "ฉันภูมิใจในทีมที่ทำงานเสร็จเร็ว",
+    "keyVocab": [
+      { "en": "proud of", "thai": "ภูมิใจใน" },
+      { "en": "finishing early", "thai": "ทำเสร็จเร็ว" }
+    ],
+    "tip": "ใช้ proud of + คนหรือสิ่งของ เช่น proud of my son ไม่ใช้ proud with"
+  },
+  {
+    "id": "feelings-kind",
+    "word": "kind",
+    "pos": "adj.",
+    "ipa": "/kaɪnd/",
+    "thai": "ใจดี",
+    "emoji": "🤗",
+    "imageQuery": "kind woman helping",
+    "example": "My new manager is very kind to everyone.",
+    "exampleThai": "ผู้จัดการคนใหม่ของฉันใจดีกับทุกคนมาก",
+    "keyVocab": [
+      { "en": "very kind", "thai": "ใจดีมาก" },
+      { "en": "to everyone", "thai": "กับทุกคน" }
+    ],
+    "tip": "kind to somebody = ใจดีกับใคร ส่วน kind of = ค่อนข้าง หรือแบบหนึ่ง"
+  },
+  {
+    "id": "feelings-punctual",
+    "word": "punctual",
+    "pos": "adj.",
+    "ipa": "/ˈpʌŋk.tʃu.əl/",
+    "thai": "ตรงต่อเวลา",
+    "emoji": "⌚",
+    "imageQuery": "person checking watch",
+    "example": "She is always punctual for every meeting.",
+    "exampleThai": "เธอมาตรงต่อเวลาทุกการประชุมเสมอ",
+    "keyVocab": [
+      { "en": "always punctual", "thai": "ตรงต่อเวลาเสมอ" },
+      { "en": "every meeting", "thai": "ทุกการประชุม" }
+    ],
+    "tip": "punctual เป็นคำคุณศัพท์ ใช้ be punctual = มาและทำตรงเวลา"
+  },
+  {
+    "id": "feelings-shy",
+    "word": "shy",
+    "pos": "adj.",
+    "ipa": "/ʃaɪ/",
+    "thai": "ขี้อาย",
+    "emoji": "😳",
+    "imageQuery": "shy person hiding",
+    "example": "My brother is too shy to speak in meetings.",
+    "exampleThai": "น้องชายของฉันขี้อายเกินกว่าจะพูดในการประชุม",
+    "keyVocab": [
+      { "en": "too shy", "thai": "ขี้อายเกินไป" },
+      { "en": "speak in meetings", "thai": "พูดในการประชุม" }
+    ],
+    "tip": "too shy to + กริยา = ขี้อายเกินกว่าจะทำอะไร ใช้ได้กับทั้งผู้ชายและผู้หญิง"
+  },
+  {
+    "id": "feelings-confident",
+    "word": "confident",
+    "pos": "adj.",
+    "ipa": "/ˈkɑːn.fə.dənt/",
+    "thai": "มั่นใจ",
+    "emoji": "😎",
+    "imageQuery": "confident businessman portrait",
+    "example": "He looks confident when he talks to customers.",
+    "exampleThai": "เขาดูมั่นใจเวลาพูดคุยกับลูกค้า",
+    "keyVocab": [
+      { "en": "looks confident", "thai": "ดูมั่นใจ" },
+      { "en": "talks to customers", "thai": "พูดคุยกับลูกค้า" }
+    ],
+    "tip": "confident = มั่นใจในตัวเอง ส่วน be confident of/about + เรื่อง = มั่นใจในเรื่องนั้น"
+  },
+  {
+    "id": "feelings-nervous",
+    "word": "nervous",
+    "pos": "adj.",
+    "ipa": "/ˈnɝː.vəs/",
+    "thai": "ตื่นเต้นกังวล",
+    "emoji": "😬",
+    "imageQuery": "nervous student exam",
+    "example": "I get nervous before I speak in front of people.",
+    "exampleThai": "ฉันรู้สึกกังวลก่อนพูดต่อหน้าคนเยอะ ๆ",
+    "keyVocab": [
+      { "en": "get nervous", "thai": "รู้สึกกังวล" },
+      { "en": "in front of people", "thai": "ต่อหน้าคน" }
+    ],
+    "tip": "nervous คือวิตกกังวล ส่วน excited คือตื่นเต้นในทางบวก เป็นคนละอารมณ์กัน"
+  },
+  {
+    "id": "feelings-friendly",
+    "word": "friendly",
+    "pos": "adj.",
+    "ipa": "/ˈfrend.li/",
+    "thai": "เป็นมิตร",
+    "emoji": "😊",
+    "imageQuery": "friendly people talking",
+    "example": "Our new coworker is friendly and easy to talk to.",
+    "exampleThai": "เพื่อนร่วมงานคนใหม่ของเราเป็นมิตรและคุยด้วยง่าย",
+    "keyVocab": [
+      { "en": "is friendly", "thai": "เป็นมิตร" },
+      { "en": "easy to talk to", "thai": "คุยด้วยง่าย" }
+    ],
+    "tip": "friendly เป็นคำคุณศัพท์ที่ลงท้ายด้วย -ly ไม่ใช่คำวิเศษณ์ ใช้ a friendly person"
+  },
+  {
+    "id": "feelings-patient",
+    "word": "patient",
+    "pos": "adj.",
+    "ipa": "/ˈpeɪ.ʃənt/",
+    "thai": "อดทน",
+    "emoji": "🧘",
+    "imageQuery": "patient person waiting",
+    "example": "You must be patient when you train new staff.",
+    "exampleThai": "คุณต้องอดทนเวลาสอนพนักงานใหม่",
+    "keyVocab": [
+      { "en": "be patient", "thai": "อดทน" },
+      { "en": "new staff", "thai": "พนักงานใหม่" }
+    ],
+    "tip": "patient (อ่านว่า เพ-เชินท์) แปลว่าอดทน ส่วน patient ที่แปลว่าคนไข้สะกดเหมือนกัน"
+  },
+  {
+    "id": "feelings-cheerful",
+    "word": "cheerful",
+    "pos": "adj.",
+    "ipa": "/ˈtʃɪr.fəl/",
+    "thai": "ร่าเริง",
+    "emoji": "😄",
+    "imageQuery": "happy woman laughing",
+    "example": "She stays cheerful even on very busy days.",
+    "exampleThai": "เธอยังร่าเริงแม้ในวันที่งานยุ่งมาก",
+    "keyVocab": [
+      { "en": "stays cheerful", "thai": "ยังร่าเริง" },
+      { "en": "busy days", "thai": "วันที่งานยุ่ง" }
+    ],
+    "tip": "cheerful = ร่าเริงแจ่มใส ใช้กับคน บรรยากาศ หรือสีสันก็ได้"
+  },
+  {
+    "id": "feelings-worry",
+    "word": "worry",
+    "pos": "v.",
+    "ipa": "/ˈwɝː.i/",
+    "thai": "กังวล",
+    "emoji": "😟",
+    "imageQuery": "worried man thinking",
+    "example": "I always worry about my work before a big meeting.",
+    "exampleThai": "ฉันมักกังวลเรื่องงานก่อนการประชุมใหญ่เสมอ",
+    "keyVocab": [
+      { "en": "worry about", "thai": "กังวลเรื่อง" },
+      { "en": "a big meeting", "thai": "การประชุมใหญ่" }
+    ],
+    "tip": "worry about + เรื่อง เช่น worry about money ไม่ต้องใส่ preposition อื่นเพิ่ม"
+  }
+]

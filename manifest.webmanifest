@@ -1,0 +1,19 @@
+{
+  "name": "PicEnglish — เรียนคำศัพท์อังกฤษด้วยภาพ",
+  "short_name": "PicEnglish",
+  "description": "เรียนคำศัพท์ภาษาอังกฤษด้วยภาพ เสียงอ่าน และประโยคใช้งานจริง สำหรับผู้ใหญ่ไทย",
+  "lang": "th",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8fafc",
+  "theme_color": "#4f46e5",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,202 @@
+[
+ {
+  "label": "en_US-ryan-high",
+  "engine": "Piper",
+  "voice": "en_US-ryan-high",
+  "note": "Ryan High (US) — คุณภาพสูงสุดของ Piper",
+  "text": "Could I get a medium latte, please?",
+  "file": "piper-en_US-ryan-high-word.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_US-ryan-high",
+  "engine": "Piper",
+  "voice": "en_US-ryan-high",
+  "note": "Ryan High (US) — คุณภาพสูงสุดของ Piper",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "piper-en_US-ryan-high-sentence.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_US-joe-medium",
+  "engine": "Piper",
+  "voice": "en_US-joe-medium",
+  "note": "Joe Medium (US) — เบา เร็ว ไฟล์เล็ก",
+  "text": "Could I get a medium latte, please?",
+  "file": "piper-en_US-joe-medium-word.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_US-joe-medium",
+  "engine": "Piper",
+  "voice": "en_US-joe-medium",
+  "note": "Joe Medium (US) — เบา เร็ว ไฟล์เล็ก",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "piper-en_US-joe-medium-sentence.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_US-hfc_male-medium",
+  "engine": "Piper",
+  "voice": "en_US-hfc_male-medium",
+  "note": "HFC Male Medium (US) — เสียงผู้ชายชัด ๆ",
+  "text": "Could I get a medium latte, please?",
+  "file": "piper-en_US-hfc_male-medium-word.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_US-hfc_male-medium",
+  "engine": "Piper",
+  "voice": "en_US-hfc_male-medium",
+  "note": "HFC Male Medium (US) — เสียงผู้ชายชัด ๆ",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "piper-en_US-hfc_male-medium-sentence.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_GB-alan-medium",
+  "engine": "Piper",
+  "voice": "en_GB-alan-medium",
+  "note": "Alan (UK) — สำเนียงอังกฤษ",
+  "text": "Could I get a medium latte, please?",
+  "file": "piper-en_GB-alan-medium-word.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en_GB-alan-medium",
+  "engine": "Piper",
+  "voice": "en_GB-alan-medium",
+  "note": "Alan (UK) — สำเนียงอังกฤษ",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "piper-en_GB-alan-medium-sentence.mp3",
+  "tag": "ฟรี 100%",
+  "tagClass": "free"
+ },
+ {
+  "label": "en-US-AndrewNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-AndrewNeural",
+  "note": "Andrew (US) — นุ่ม เป็นมิตร นิยมใช้ในงานบรรยาย",
+  "text": "Could I get a medium latte, please?",
+  "file": "edge-en-US-AndrewNeural-word.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-AndrewNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-AndrewNeural",
+  "note": "Andrew (US) — นุ่ม เป็นมิตร นิยมใช้ในงานบรรยาย",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "edge-en-US-AndrewNeural-sentence.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-BrianNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-BrianNeural",
+  "note": "Brian (US) — ชัดถ้อยชัดคำ เป็นมิตร เหมาะกับผู้เรียน",
+  "text": "Could I get a medium latte, please?",
+  "file": "edge-en-US-BrianNeural-word.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-BrianNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-BrianNeural",
+  "note": "Brian (US) — ชัดถ้อยชัดคำ เป็นมิตร เหมาะกับผู้เรียน",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "edge-en-US-BrianNeural-sentence.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-GuyNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-GuyNeural",
+  "note": "Guy (US) — เสียงผู้ประกาศข่าว ชัดเจน",
+  "text": "Could I get a medium latte, please?",
+  "file": "edge-en-US-GuyNeural-word.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-GuyNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-GuyNeural",
+  "note": "Guy (US) — เสียงผู้ประกาศข่าว ชัดเจน",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "edge-en-US-GuyNeural-sentence.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-ChristopherNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-ChristopherNeural",
+  "note": "Christopher (US) — หนักแน่น น่าเชื่อถือ",
+  "text": "Could I get a medium latte, please?",
+  "file": "edge-en-US-ChristopherNeural-word.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-ChristopherNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-ChristopherNeural",
+  "note": "Christopher (US) — หนักแน่น น่าเชื่อถือ",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "edge-en-US-ChristopherNeural-sentence.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-EricNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-EricNeural",
+  "note": "Eric (US) — เรียบง่าย ชัด",
+  "text": "Could I get a medium latte, please?",
+  "file": "edge-en-US-EricNeural-word.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-US-EricNeural",
+  "engine": "Edge TTS",
+  "voice": "en-US-EricNeural",
+  "note": "Eric (US) — เรียบง่าย ชัด",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "edge-en-US-EricNeural-sentence.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-GB-RyanNeural",
+  "engine": "Edge TTS",
+  "voice": "en-GB-RyanNeural",
+  "note": "Ryan (UK) — สำเนียงอังกฤษ ฟังง่าย",
+  "text": "Could I get a medium latte, please?",
+  "file": "edge-en-GB-RyanNeural-word.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ },
+ {
+  "label": "en-GB-RyanNeural",
+  "engine": "Edge TTS",
+  "voice": "en-GB-RyanNeural",
+  "note": "Ryan (UK) — สำเนียงอังกฤษ ฟังง่าย",
+  "text": "Their new house has a small garden and a garage.",
+  "file": "edge-en-GB-RyanNeural-sentence.mp3",
+  "tag": "ทดลองใช้",
+  "tagClass": "careful"
+ }
+]

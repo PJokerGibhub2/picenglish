@@ -1,0 +1,126 @@
+{
+  "id": "dlg-reservation",
+  "title": "โทรจองโต๊ะร้านอาหาร",
+  "titleEn": "Booking a table by phone",
+  "level": "A2",
+  "emoji": "📅",
+  "category": "restaurant",
+  "commonsCategory": "Reserved tables",
+  "imageQuery": "phone call restaurant booking",
+  "setting": "คุณโทรจองโต๊ะร้านอาหารสำหรับมื้อเย็นวันศุกร์",
+  "counterpart": { "labelTh": "พนักงานรับจองโต๊ะ", "emoji": "🎧" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Good evening, Riverside Restaurant. How can I help?",
+      "thai": "สวัสดีตอนเย็นครับ ร้านริเวอร์ไซด์ รับสายครับ",
+      "keyPhrases": [
+        { "en": "How can I help", "thai": "มีอะไรให้ช่วยครับ (ทักตอนรับสาย)" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Hi, I'd like to make a reservation for dinner.",
+      "thai": "สวัสดีครับ ขอจองโต๊ะสำหรับมื้อเย็นครับ",
+      "keyPhrases": [
+        { "en": "make a reservation", "thai": "จองโต๊ะ" },
+        { "en": "for dinner", "thai": "สำหรับมื้อเย็น" }
+      ],
+      "alternative": [
+        { "en": "Hello, I want to book a table for dinner.", "thai": "สวัสดีครับ ผมอยากจองโต๊ะมื้อเย็น" },
+        { "en": "Hi, could I make a reservation for dinner tonight?", "thai": "สวัสดีครับ ขอจองโต๊ะมื้อเย็นคืนนี้ได้ไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Of course. What day and time?",
+      "thai": "ได้ครับ วันไหนเวลากี่โมงครับ",
+      "keyPhrases": [
+        { "en": "What day and time", "thai": "วันไหนเวลากี่โมง" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Friday at seven, for a table for two, please.",
+      "thai": "วันศุกร์หนึ่งทุ่ม ขอโต๊ะสองที่ครับ",
+      "keyPhrases": [
+        { "en": "Friday at seven", "thai": "วันศุกร์หนึ่งทุ่ม" },
+        { "en": "a table for two", "thai": "โต๊ะสำหรับสองคน" }
+      ],
+      "alternative": [
+        { "en": "This Friday at seven. A table for two, please.", "thai": "วันศุกร์นี้หนึ่งทุ่ม โต๊ะสองที่ครับ" },
+        { "en": "Friday, seven o'clock, table for two please.", "thai": "วันศุกร์หนึ่งทุ่ม โต๊ะสองคนครับ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Let me check. Sorry, we're full at seven.",
+      "thai": "ขอเช็คก่อนนะครับ ขอโทษครับ หนึ่งทุ่มเต็มแล้วครับ",
+      "keyPhrases": [
+        { "en": "Let me check", "thai": "ขอเช็คก่อนนะ" },
+        { "en": "we're full", "thai": "เต็มแล้ว" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "That's fine. Could we come at eight instead?",
+      "thai": "ไม่เป็นไรครับ งั้นเราไปแปดโมงได้ไหมครับ",
+      "keyPhrases": [
+        { "en": "at eight instead", "thai": "เปลี่ยนเป็นแปดโมงแทน" }
+      ],
+      "alternative": [
+        { "en": "No problem. Can we book eight o'clock instead?", "thai": "ไม่เป็นไรครับ จองแปดโมงแทนได้ไหม" },
+        { "en": "Okay. Is eight o'clock free?", "thai": "ครับ แล้วแปดโมงว่างไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Eight works. Can I have your name and phone?",
+      "thai": "แปดโมงได้ครับ ขอชื่อกับเบอร์โทรด้วยครับ",
+      "keyPhrases": [
+        { "en": "Eight works", "thai": "แปดโมงได้" },
+        { "en": "your name and phone", "thai": "ชื่อกับเบอร์โทรของคุณ" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Yes, Somchai. I can send my number by email.",
+      "thai": "ครับ ผมสมชาย เดี๋ยวส่งเบอร์ทางอีเมลให้ครับ",
+      "keyPhrases": [
+        { "en": "send my number by email", "thai": "ส่งเบอร์ทางอีเมล" }
+      ],
+      "alternative": [
+        { "en": "Sure, my name is Somchai. I'll email my number.", "thai": "ครับ ผมชื่อสมชาย เดี๋ยวอีเมลเบอร์ไปให้" },
+        { "en": "Yes, Somchai here. I can email you my phone number.", "thai": "ครับ สมชายพูดครับ ผมอีเมลเบอร์โทรไปได้" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Great. Should I note any allergy for the kitchen?",
+      "thai": "ดีครับ ให้จดเรื่องแพ้อาหารบอกครัวไหมครับ",
+      "keyPhrases": [
+        { "en": "any allergy", "thai": "การแพ้อาหาร" },
+        { "en": "the kitchen", "thai": "ครัว" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Yes, please. I have a peanut allergy.",
+      "thai": "จดให้ด้วยครับ ผมแพ้ถั่วลิสงครับ",
+      "keyPhrases": [
+        { "en": "a peanut allergy", "thai": "การแพ้ถั่วลิสง" }
+      ],
+      "alternative": [
+        { "en": "Yes, please. Please note that I have a peanut allergy.", "thai": "ครับ รบกวนจดไว้ว่าผมแพ้ถั่วลิสง" },
+        { "en": "That would help. I have a peanut allergy.", "thai": "จดไว้ก็ดีครับ ผมแพ้ถั่วลิสง" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "May I have your name, please?", "thai": "ขอชื่อด้วยครับ" },
+    { "en": "We're fully booked that night.", "thai": "คืนนั้นเต็มแล้วครับ" },
+    { "en": "We can hold your table for fifteen minutes.", "thai": "เราเก็บโต๊ะไว้ให้สิบห้านาทีครับ" },
+    { "en": "We can email you the menu and the times.", "thai": "เราส่งเมนูกับเวลาไปทางอีเมลให้ได้ครับ" },
+    { "en": "We look forward to seeing you.", "thai": "แล้วพบกันครับ" }
+  ]
+}

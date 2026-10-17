@@ -1,0 +1,128 @@
+{
+  "id": "dlg-shopping",
+  "title": "ซื้อของและต่อรองราคา",
+  "titleEn": "Shopping and bargaining",
+  "level": "A2",
+  "emoji": "🛍️",
+  "category": "shopping",
+  "commonsCategory": "Bargaining",
+  "imageQuery": "market stall bargaining vendor",
+  "setting": "คุณเดินตลาดซื้อกระเป๋าและลองต่อรองราคากับแม่ค้า",
+  "counterpart": { "labelTh": "แม่ค้าในตลาด", "emoji": "🙋‍♀️" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Hello! What are you looking for today?",
+      "thai": "สวัสดีจ้า กำลังหาอะไรอยู่จ๊ะ",
+      "keyPhrases": [
+        { "en": "What are you looking for", "thai": "กำลังหาอะไรอยู่" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "I like this bag. How much is it?",
+      "thai": "ชอบกระเป๋าใบนี้ครับ ราคาเท่าไหร่",
+      "keyPhrases": [
+        { "en": "this bag", "thai": "กระเป๋าใบนี้" },
+        { "en": "How much is it", "thai": "ราคาเท่าไหร่" }
+      ],
+      "alternative": [
+        { "en": "This bag looks nice. What's the price?", "thai": "กระเป๋าใบนี้สวยดี ราคาเท่าไหร่" },
+        { "en": "I want this bag. How much do I pay?", "thai": "อยากได้กระเป๋าใบนี้ ต้องจ่ายเท่าไหร่" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "For you, nine hundred baht only.",
+      "thai": "สำหรับเธอเก้าร้อยบาทถ้วนจ้ะ",
+      "keyPhrases": [
+        { "en": "nine hundred baht", "thai": "เก้าร้อยบาท" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "That's expensive. Can you give me a discount?",
+      "thai": "แพงจังครับ ลดราคาให้หน่อยได้ไหม",
+      "keyPhrases": [
+        { "en": "expensive", "thai": "แพง" },
+        { "en": "give me a discount", "thai": "ลดราคาให้" }
+      ],
+      "alternative": [
+        { "en": "So expensive. Is there any discount for me?", "thai": "แพงจัง มีส่วนลดให้ไหม" },
+        { "en": "That's a lot. Could you lower the price?", "thai": "ราคาสูงไปหน่อย ลดให้ได้ไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Maybe eight hundred. This bag is good quality.",
+      "thai": "งั้นแปดร้อยก็แล้วกัน ใบนี้คุณภาพดีนะจ๊ะ",
+      "keyPhrases": [
+        { "en": "eight hundred", "thai": "แปดร้อย" },
+        { "en": "good quality", "thai": "คุณภาพดี" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "How about seven hundred? I only have cash.",
+      "thai": "เจ็ดร้อยได้ไหมครับ ผมมีแต่เงินสด",
+      "keyPhrases": [
+        { "en": "How about seven hundred", "thai": "เจ็ดร้อยได้ไหม" },
+        { "en": "cash", "thai": "เงินสด" }
+      ],
+      "alternative": [
+        { "en": "Seven hundred, okay? I can pay cash now.", "thai": "เจ็ดร้อยนะครับ ผมจ่ายเงินสดตอนนี้ได้เลย" },
+        { "en": "Can we do seven hundred? I have cash only.", "thai": "เจ็ดร้อยได้ไหมครับ ผมมีแต่เงินสด" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Okay, deal. That's already a bargain.",
+      "thai": "โอเคจ้ะ ตกลง ราคานี้ถูกมากแล้วนะ",
+      "keyPhrases": [
+        { "en": "Okay, deal", "thai": "โอเค ตกลง" },
+        { "en": "a bargain", "thai": "ของถูก ราคาคุ้ม" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Thank you. Could I have a receipt, please?",
+      "thai": "ขอบคุณครับ ขอใบเสร็จด้วยได้ไหม",
+      "keyPhrases": [
+        { "en": "a receipt", "thai": "ใบเสร็จ" }
+      ],
+      "alternative": [
+        { "en": "Thanks. Can I get a receipt, please?", "thai": "ขอบคุณครับ ขอใบเสร็จหน่อยได้ไหม" },
+        { "en": "Thank you. Please give me a receipt.", "thai": "ขอบคุณครับ ขอใบเสร็จด้วยครับ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Sure. Cash or credit card? I have change too.",
+      "thai": "ได้จ้ะ เงินสดหรือบัตรเครดิต มีเงินทอนให้ด้วย",
+      "keyPhrases": [
+        { "en": "credit card", "thai": "บัตรเครดิต" },
+        { "en": "change", "thai": "เงินทอน" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Cash is fine. I want to save money this month.",
+      "thai": "เงินสดก็ได้ครับ เดือนนี้อยากประหยัดเงิน",
+      "keyPhrases": [
+        { "en": "Cash is fine", "thai": "เงินสดก็ได้" },
+        { "en": "save money", "thai": "ประหยัดเงิน" }
+      ],
+      "alternative": [
+        { "en": "Cash is better. I'm trying to save money.", "thai": "เงินสดดีกว่าครับ ผมพยายามประหยัดเงิน" },
+        { "en": "I'll pay cash. I need to save money.", "thai": "จ่ายเงินสดครับ ผมต้องประหยัดเงิน" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "Cheap price for you, my friend.", "thai": "ราคาถูกให้เลยเพื่อน" },
+    { "en": "That's already my last price.", "thai": "นี่ราคาสุดท้ายแล้วนะ" },
+    { "en": "Please keep your wallet safe.", "thai": "เก็บกระเป๋าเงินให้ดีนะ" },
+    { "en": "The bank is next door if you need cash.", "thai": "ถ้าต้องการเงินสด ธนาคารอยู่ข้างๆ" },
+    { "en": "Come back again next time.", "thai": "คราวหน้ามาใหม่นะจ๊ะ" }
+  ]
+}

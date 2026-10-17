@@ -1,0 +1,202 @@
+[
+  {
+    "id": "shopping-receipt",
+    "word": "receipt",
+    "pos": "n.",
+    "ipa": "/rɪˈsiːt/",
+    "thai": "ใบเสร็จ",
+    "emoji": "🧾",
+    "imageQuery": "shopping receipt paper",
+    "example": "Could you give me a receipt for this purchase?",
+    "exampleThai": "ขอใบเสร็จสำหรับการซื้อนี้ด้วยได้ไหม",
+    "keyVocab": [
+      { "en": "Could you", "thai": "คุณช่วย...ได้ไหม (สุภาพ)" },
+      { "en": "purchase", "thai": "การซื้อ / สิ่งที่ซื้อ" }
+    ],
+    "tip": "receipt ออกเสียงว่า ri-SEET ตัว p ไม่ต้องออกเสียง และเป็นคำนามนับได้"
+  },
+  {
+    "id": "shopping-price",
+    "word": "price",
+    "pos": "n.",
+    "ipa": "/praɪs/",
+    "thai": "ราคา",
+    "emoji": "🏷️",
+    "imageQuery": "price tag clothes",
+    "example": "The price of this shirt is too high for me.",
+    "exampleThai": "ราคาเสื้อตัวนี้แพงเกินไปสำหรับเรา",
+    "keyVocab": [
+      { "en": "price", "thai": "ราคา" },
+      { "en": "too high", "thai": "แพงเกินไป / สูงเกินไป" }
+    ],
+    "tip": "ถามราคาแบบสุภาพว่า How much is it? ส่วน price มักใช้กับ of + สิ่งของ"
+  },
+  {
+    "id": "shopping-discount",
+    "word": "discount",
+    "pos": "n.",
+    "ipa": "/ˈdɪskaʊnt/",
+    "thai": "ส่วนลด",
+    "emoji": "🔻",
+    "imageQuery": "sale discount sign",
+    "example": "This shop gives a ten percent discount to students.",
+    "exampleThai": "ร้านนี้ให้ส่วนลดสิบเปอร์เซ็นต์กับนักเรียนนักศึกษา",
+    "keyVocab": [
+      { "en": "discount", "thai": "ส่วนลด" },
+      { "en": "ten percent", "thai": "สิบเปอร์เซ็นต์" },
+      { "en": "students", "thai": "นักเรียน / นักศึกษา" }
+    ],
+    "tip": "พูดถึงส่วนลดว่า get / give a discount และใช้ on กับสินค้า เช่น a discount on shoes"
+  },
+  {
+    "id": "shopping-change",
+    "word": "change",
+    "pos": "n.",
+    "ipa": "/tʃeɪndʒ/",
+    "thai": "เงินทอน",
+    "emoji": "🪙",
+    "imageQuery": "coins change hand",
+    "example": "I paid with a hundred baht note and got some change.",
+    "exampleThai": "เราจ่ายด้วยแบงก์ร้อยแล้วได้เงินทอนมา",
+    "keyVocab": [
+      { "en": "paid", "thai": "จ่าย (รูปอดีตของ pay)" },
+      { "en": "note", "thai": "ธนบัตร" },
+      { "en": "change", "thai": "เงินทอน" }
+    ],
+    "tip": "change แปลว่าเงินทอนได้ด้วย นอกจากแปลว่าเปลี่ยนแปลง ดูจากบริบทของประโยค"
+  },
+  {
+    "id": "shopping-credit-card",
+    "word": "credit card",
+    "pos": "n.",
+    "ipa": "/ˈkredɪt kɑːrd/",
+    "thai": "บัตรเครดิต",
+    "emoji": "💳",
+    "imageQuery": "credit card payment",
+    "example": "Can I pay by credit card instead of cash?",
+    "exampleThai": "ขอจ่ายด้วยบัตรเครดิตแทนเงินสดได้ไหม",
+    "keyVocab": [
+      { "en": "pay", "thai": "จ่ายเงิน" },
+      { "en": "credit card", "thai": "บัตรเครดิต" },
+      { "en": "instead of", "thai": "แทนที่ / แทน" }
+    ],
+    "tip": "ใช้ pay by credit card แต่ใช้ pay in cash สังเกตคำบุพบทต่างกัน"
+  },
+  {
+    "id": "shopping-cash",
+    "word": "cash",
+    "pos": "n.",
+    "ipa": "/kæʃ/",
+    "thai": "เงินสด",
+    "emoji": "💵",
+    "imageQuery": "cash banknotes wallet",
+    "example": "I don't have any cash, so I will use my card.",
+    "exampleThai": "เราไม่มีเงินสดเลย เดี๋ยวจะใช้บัตรแทน",
+    "keyVocab": [
+      { "en": "cash", "thai": "เงินสด" },
+      { "en": "card", "thai": "บัตร" }
+    ],
+    "tip": "cash เป็นคำนามนับไม่ได้ จึงพูดว่า some cash หรือ a little cash ไม่ใช้ a cash"
+  },
+  {
+    "id": "shopping-expensive",
+    "word": "expensive",
+    "pos": "adj.",
+    "ipa": "/ɪkˈspensɪv/",
+    "thai": "แพง",
+    "emoji": "💰",
+    "imageQuery": "expensive luxury store",
+    "example": "That bag is very expensive, so I will wait for a sale.",
+    "exampleThai": "กระเป๋าใบนั้นแพงมาก เราเลยจะรอตอนลดราคา",
+    "keyVocab": [
+      { "en": "expensive", "thai": "แพง" },
+      { "en": "sale", "thai": "การลดราคา" }
+    ],
+    "tip": "expensive ใช้กับสิ่งของ อย่าใช้บอกว่าคนแพง ให้ใช้ค่าใช้จ่ายสูงแทน"
+  },
+  {
+    "id": "shopping-cheap",
+    "word": "cheap",
+    "pos": "adj.",
+    "ipa": "/tʃiːp/",
+    "thai": "ถูก (ราคาไม่แพง)",
+    "emoji": "🪙",
+    "imageQuery": "cheap market stall",
+    "example": "This market is cheap, and the food is fresh.",
+    "exampleThai": "ตลาดนี้ของถูก และอาหารก็สดใหม่",
+    "keyVocab": [
+      { "en": "market", "thai": "ตลาด" },
+      { "en": "cheap", "thai": "ถูก (ราคาไม่แพง)" },
+      { "en": "fresh", "thai": "สด / สดใหม่" }
+    ],
+    "tip": "cheap บอกว่าของถูก แต่ถ้าอยากสุภาพขึ้นใช้ไม่แพง good value หรือ affordable"
+  },
+  {
+    "id": "shopping-bargain",
+    "word": "bargain",
+    "pos": "v.",
+    "ipa": "/ˈbɑːrɡən/",
+    "thai": "ต่อรองราคา",
+    "emoji": "🤝",
+    "imageQuery": "market bargaining vendor",
+    "example": "In many markets, you can bargain with the seller.",
+    "exampleThai": "ในตลาดหลายแห่ง คุณต่อรองราคากับแม่ค้าได้",
+    "keyVocab": [
+      { "en": "markets", "thai": "ตลาด (หลายแห่ง)" },
+      { "en": "bargain", "thai": "ต่อรองราคา" },
+      { "en": "seller", "thai": "ผู้ขาย / แม่ค้า" }
+    ],
+    "tip": "bargain ใช้เป็นคำกริยาแปลว่าต่อรอง และเป็นคำนามแปลว่าของถูกได้ด้วย"
+  },
+  {
+    "id": "shopping-bank",
+    "word": "bank",
+    "pos": "n.",
+    "ipa": "/bæŋk/",
+    "thai": "ธนาคาร",
+    "emoji": "🏦",
+    "imageQuery": "bank building entrance",
+    "example": "I need to go to the bank to open a new account.",
+    "exampleThai": "เราต้องไปธนาคารเพื่อเปิดบัญชีใหม่",
+    "keyVocab": [
+      { "en": "bank", "thai": "ธนาคาร" },
+      { "en": "open", "thai": "เปิด (บัญชี)" },
+      { "en": "account", "thai": "บัญชี" }
+    ],
+    "tip": "go to the bank ต้องมี the เพราะหมายถึงธนาคารที่เราจะไปแห่งนั้น"
+  },
+  {
+    "id": "shopping-save",
+    "word": "save",
+    "pos": "v.",
+    "ipa": "/seɪv/",
+    "thai": "ออม / ประหยัด",
+    "emoji": "🐖",
+    "imageQuery": "piggy bank saving money",
+    "example": "I save fifty baht every day for my trip.",
+    "exampleThai": "เราออมเงินวันละห้าสิบบาทเพื่อทริปของเรา",
+    "keyVocab": [
+      { "en": "save", "thai": "ออม / ประหยัด" },
+      { "en": "every day", "thai": "ทุกวัน" },
+      { "en": "trip", "thai": "การเดินทาง / ทริป" }
+    ],
+    "tip": "save money = ออมเงิน ส่วน save time = ประหยัดเวลา ใช้คำตามหลังต่างกัน"
+  },
+  {
+    "id": "shopping-wallet",
+    "word": "wallet",
+    "pos": "n.",
+    "ipa": "/ˈwɑːlɪt/",
+    "thai": "กระเป๋าสตางค์",
+    "emoji": "👛",
+    "imageQuery": "leather wallet money",
+    "example": "My wallet is empty because I bought too many things.",
+    "exampleThai": "กระเป๋าสตางค์เราแบน เพราะซื้อของเยอะเกินไป",
+    "keyVocab": [
+      { "en": "wallet", "thai": "กระเป๋าสตางค์" },
+      { "en": "empty", "thai": "ว่างเปล่า / ไม่มีเงิน" },
+      { "en": "bought", "thai": "ซื้อ (รูปอดีตของ buy)" }
+    ],
+    "tip": "wallet ใช้กับกระเป๋าสตางค์ผู้ชาย ส่วน purse มักใช้กับกระเป๋าผู้หญิง"
+  }
+]

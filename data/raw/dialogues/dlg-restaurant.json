@@ -1,0 +1,131 @@
+{
+  "id": "dlg-restaurant",
+  "title": "สั่งอาหารในร้าน",
+  "titleEn": "Ordering food at a restaurant",
+  "level": "A2",
+  "emoji": "🍽️",
+  "category": "restaurant",
+  "commonsCategory": "Restaurants",
+  "imageQuery": "restaurant table waiter serving",
+  "setting": "คุณเข้าร้านอาหารตอนเย็นกับเพื่อน และต้องสั่งอาหารเอง",
+  "counterpart": { "labelTh": "พนักงานเสิร์ฟ", "emoji": "🧑‍🍳" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Good evening. Do you have a reservation?",
+      "thai": "สวัสดีตอนเย็นครับ มีจองโต๊ะไว้ไหมครับ",
+      "keyPhrases": [
+        { "en": "Good evening", "thai": "สวัสดีตอนเย็น" },
+        { "en": "a reservation", "thai": "การจองโต๊ะ" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "No, we don't. A table for two, please.",
+      "thai": "ยังไม่ได้จองครับ ขอโต๊ะสองที่ครับ",
+      "keyPhrases": [
+        { "en": "A table for two", "thai": "โต๊ะสำหรับสองคน" }
+      ],
+      "alternative": [
+        { "en": "Not tonight. Could we have a table for two?", "thai": "คืนนี้ไม่ได้จองครับ ขอโต๊ะสองที่ได้ไหม" },
+        { "en": "No, we don't have one. A table for two, please.", "thai": "ยังไม่ได้จองครับ ขอโต๊ะสองคนครับ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Sure, please follow me. Here's the menu.",
+      "thai": "ได้ครับ เชิญทางนี้ครับ นี่เมนูครับ",
+      "keyPhrases": [
+        { "en": "follow me", "thai": "ตามผมมา" },
+        { "en": "the menu", "thai": "เมนู" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Thanks. What do you recommend? We're ready to order.",
+      "thai": "ขอบคุณครับ แนะนำอะไรดีครับ เราพร้อมสั่งแล้ว",
+      "keyPhrases": [
+        { "en": "do you recommend", "thai": "แนะนำอะไรดี" },
+        { "en": "ready to order", "thai": "พร้อมสั่งอาหาร" }
+      ],
+      "alternative": [
+        { "en": "Thanks. What's good here? We'd like to order.", "thai": "ขอบคุณครับ ร้านนี้มีอะไรอร่อย เราจะสั่งแล้ว" },
+        { "en": "Thanks. Could you recommend something mild? We can order now.", "thai": "ขอบคุณครับ แนะนำอะไรที่ไม่เผ็ดได้ไหม เราสั่งได้เลย" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "The soup recipe is from my mother, and it's spicy.",
+      "thai": "สูตรซุปมาจากแม่ของผมครับ แล้วก็เผ็ดด้วย",
+      "keyPhrases": [
+        { "en": "soup recipe", "thai": "สูตรซุป" },
+        { "en": "it's spicy", "thai": "เผ็ด" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Great, I'll have the soup, then the grilled chicken main course.",
+      "thai": "ดีครับ ขอซุปก่อน แล้วต่อด้วยไก่ย่างเป็นจานหลักครับ",
+      "keyPhrases": [
+        { "en": "I'll have", "thai": "ขอ...ครับ (ตอนสั่งอาหาร)" },
+        { "en": "the soup", "thai": "ซุป" },
+        { "en": "main course", "thai": "จานหลัก" }
+      ],
+      "alternative": [
+        { "en": "Great, I'll order the soup and the grilled chicken.", "thai": "ดีครับ ผมจะสั่งซุปกับไก่ย่าง" },
+        { "en": "Okay, the soup first, then the grilled chicken.", "thai": "เอาซุปก่อน แล้วค่อยไก่ย่างครับ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Good choice. Anything to drink? Free refills today.",
+      "thai": "เลือกดีครับ รับเครื่องดื่มไหมครับ วันนี้เติมฟรี",
+      "keyPhrases": [
+        { "en": "Anything to drink", "thai": "รับเครื่องดื่มไหม" },
+        { "en": "Free refills", "thai": "เติมฟรี" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Just water, thanks. Oh, I have a nut allergy.",
+      "thai": "น้ำเปล่าครับ ขอบคุณ อ้อ ผมแพ้ถั่วครับ",
+      "keyPhrases": [
+        { "en": "Just water", "thai": "น้ำเปล่าอย่างเดียว" },
+        { "en": "a nut allergy", "thai": "การแพ้ถั่ว" }
+      ],
+      "alternative": [
+        { "en": "Water for me, please. I also have a nut allergy.", "thai": "ขอน้ำเปล่าครับ ผมแพ้ถั่วด้วย" },
+        { "en": "Just water. Please tell the kitchen about my allergy.", "thai": "น้ำเปล่าครับ รบกวนบอกครัวเรื่องที่ผมแพ้ด้วย" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Thanks for telling me. No nuts in the ingredients.",
+      "thai": "ขอบคุณที่บอกครับ ในส่วนผสมไม่มีถั่วแน่นอน",
+      "keyPhrases": [
+        { "en": "Thanks for telling me", "thai": "ขอบคุณที่บอก" },
+        { "en": "the ingredients", "thai": "ส่วนผสม" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Could we have the bill? We have leftovers to take home.",
+      "thai": "ขอเช็คบิลหน่อยครับ เรามีอาหารเหลือจะห่อกลับบ้าน",
+      "keyPhrases": [
+        { "en": "the bill", "thai": "บิล ใบเก็บเงิน" },
+        { "en": "leftovers", "thai": "อาหารที่กินเหลือ" }
+      ],
+      "alternative": [
+        { "en": "Could we get the bill, please? We want to take the leftovers.", "thai": "ขอเช็คบิลครับ เราขอห่ออาหารที่เหลือกลับบ้าน" },
+        { "en": "The bill, please. Can we take the leftovers home?", "thai": "ขอเช็คบิลครับ ขอห่ออาหารที่เหลือกลับบ้านได้ไหม" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "Are you ready to order?", "thai": "พร้อมสั่งอาหารหรือยังครับ" },
+    { "en": "Would you like an appetizer first?", "thai": "รับอาหารเรียกน้ำย่อยก่อนไหมครับ" },
+    { "en": "This portion is big, so you can share.", "thai": "จานนี้ปริมาณเยอะ แบ่งกันกินได้ครับ" },
+    { "en": "The tip is not included, but it's up to you.", "thai": "ราคายังไม่รวมทิป จะให้ก็แล้วแต่ครับ" },
+    { "en": "Would you like to see the dessert menu?", "thai": "ขอดูเมนูของหวานไหมครับ" }
+  ]
+}

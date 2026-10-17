@@ -1,0 +1,194 @@
+[
+  {
+    "id": "restaurant-reservation",
+    "word": "reservation",
+    "pos": "n.",
+    "ipa": "/ˌrez.ɚˈveɪ.ʃən/",
+    "thai": "การจองโต๊ะ",
+    "emoji": "📅",
+    "imageQuery": "restaurant table booking",
+    "example": "I made a reservation for four at seven tonight.",
+    "exampleThai": "ฉันจองโต๊ะไว้สำหรับสี่คนตอนหนึ่งทุ่มคืนนี้",
+    "keyVocab": [
+      { "en": "made a reservation", "thai": "จองโต๊ะไว้" },
+      { "en": "for four", "thai": "สำหรับสี่คน" }
+    ],
+    "tip": "ใช้ make/have a reservation พนักงานมักถามว่า Do you have a reservation?"
+  },
+  {
+    "id": "restaurant-table-for-two",
+    "word": "table for two",
+    "pos": "phr.",
+    "ipa": "/ˈteɪ.bəl fɚ tuː/",
+    "thai": "โต๊ะสำหรับสองคน",
+    "emoji": "👫",
+    "imageQuery": "table for two restaurant",
+    "example": "Good evening, we'd like a table for two, please.",
+    "exampleThai": "สวัสดีตอนเย็นครับ เราขอโต๊ะสองที่ครับ",
+    "keyVocab": [
+      { "en": "Good evening", "thai": "สวัสดีตอนเย็น" },
+      { "en": "we'd like", "thai": "เราขอ" }
+    ],
+    "tip": "บอกจำนวนคนว่า a table for two/three/four แล้วปิดท้ายด้วย please"
+  },
+  {
+    "id": "restaurant-menu",
+    "word": "menu",
+    "pos": "n.",
+    "ipa": "/ˈmen.juː/",
+    "thai": "เมนู",
+    "emoji": "📋",
+    "imageQuery": "restaurant menu card",
+    "example": "Could we see the menu, and do you have Thai options?",
+    "exampleThai": "ขอดูเมนูหน่อยได้ไหม แล้วมีเมนูไทยไหมคะ",
+    "keyVocab": [
+      { "en": "Could we see", "thai": "ขอดู...ได้ไหม" },
+      { "en": "Thai options", "thai": "ตัวเลือกอาหารไทย" }
+    ],
+    "tip": "ขอเมนูอย่างสุภาพใช้ Could we see the menu? หรือ Can I have the menu?"
+  },
+  {
+    "id": "restaurant-order",
+    "word": "order",
+    "pos": "v.",
+    "ipa": "/ˈɔːr.dɚ/",
+    "thai": "สั่งอาหาร",
+    "emoji": "📝",
+    "imageQuery": "waiter taking order",
+    "example": "Are you ready to order, or do you need more time?",
+    "exampleThai": "พร้อมจะสั่งอาหารหรือยังคะ หรือขอเวลาอีกหน่อย",
+    "keyVocab": [
+      { "en": "ready to order", "thai": "พร้อมสั่งอาหาร" },
+      { "en": "more time", "thai": "เวลาอีกหน่อย" }
+    ],
+    "tip": "order เป็นได้ทั้งกริยา (สั่ง) และคำนาม (ออร์เดอร์)"
+  },
+  {
+    "id": "restaurant-recommend",
+    "word": "recommend",
+    "pos": "v.",
+    "ipa": "/ˌrek.əˈmend/",
+    "thai": "แนะนำ",
+    "emoji": "👍",
+    "imageQuery": "waiter suggesting dish",
+    "example": "Could you recommend something mild? I can't eat chili.",
+    "exampleThai": "ช่วยแนะนำอะไรที่ไม่เผ็ดหน่อยได้ไหม ฉันกินพริกไม่ได้",
+    "keyVocab": [
+      { "en": "recommend something", "thai": "แนะนำอะไรสักอย่าง" },
+      { "en": "can't eat chili", "thai": "กินพริกไม่ได้" }
+    ],
+    "tip": "ใช้ recommend + สิ่งของ หรือ recommend that + ประโยค แต่ไม่ใช้ recommend me"
+  },
+  {
+    "id": "restaurant-appetizer",
+    "word": "appetizer",
+    "pos": "n.",
+    "ipa": "/ˈæp.ə.taɪ.zɚ/",
+    "thai": "อาหารเรียกน้ำย่อย",
+    "emoji": "🍤",
+    "imageQuery": "appetizer starter plate",
+    "example": "Let's start with an appetizer and share the main dish.",
+    "exampleThai": "เริ่มด้วยของว่างก่อน แล้วค่อยแบ่งจานหลักกัน",
+    "keyVocab": [
+      { "en": "start with", "thai": "เริ่มด้วย" },
+      { "en": "share the main dish", "thai": "แบ่งจานหลักกัน" }
+    ],
+    "tip": "appetizer ใช้ในอเมริกา ส่วนอังกฤษเรียกว่า starter"
+  },
+  {
+    "id": "restaurant-main-course",
+    "word": "main course",
+    "pos": "n.",
+    "ipa": "/ˈmeɪn kɔːrs/",
+    "thai": "จานหลัก",
+    "emoji": "🥩",
+    "imageQuery": "main course steak dinner",
+    "example": "For my main course, I'll have the grilled salmon.",
+    "exampleThai": "จานหลักของฉันขอเป็นแซลมอนย่าง",
+    "keyVocab": [
+      { "en": "For my main course", "thai": "สำหรับจานหลักของฉัน" },
+      { "en": "grilled salmon", "thai": "แซลมอนย่าง" }
+    ],
+    "tip": "เวลาสั่งใช้ For my main course, I'll have... ดูสุภาพและเป็นธรรมชาติ"
+  },
+  {
+    "id": "restaurant-refill",
+    "word": "refill",
+    "pos": "n.",
+    "ipa": "/ˈriː.fɪl/",
+    "thai": "การเติมเครื่องดื่ม",
+    "emoji": "🥤",
+    "imageQuery": "refill soda glass",
+    "example": "Can I get a refill on my coffee, please?",
+    "exampleThai": "ขอเติมกาแฟหน่อยได้ไหมคะ",
+    "keyVocab": [
+      { "en": "get a refill", "thai": "ขอเติม" },
+      { "en": "on my coffee", "thai": "กาแฟของฉัน" }
+    ],
+    "tip": "ในอเมริกาหลายร้านเติมน้ำอัดลมฟรี เรียกว่า free refills"
+  },
+  {
+    "id": "restaurant-bill",
+    "word": "bill",
+    "pos": "n.",
+    "ipa": "/bɪl/",
+    "thai": "บิล / ใบเก็บเงิน",
+    "emoji": "🧾",
+    "imageQuery": "restaurant bill receipt",
+    "example": "Could we have the bill, please? We need to leave soon.",
+    "exampleThai": "ขอเช็คบิลหน่อยได้ไหมครับ เราต้องรีบไปแล้ว",
+    "keyVocab": [
+      { "en": "have the bill", "thai": "ขอเช็คบิล" },
+      { "en": "leave soon", "thai": "ไปในอีกไม่นาน" }
+    ],
+    "tip": "คนอเมริกันพูด the check มากกว่า the bill ส่วนอังกฤษใช้ the bill"
+  },
+  {
+    "id": "restaurant-tip",
+    "word": "tip",
+    "pos": "n.",
+    "ipa": "/tɪp/",
+    "thai": "ทิป / เงินให้พนักงาน",
+    "emoji": "💵",
+    "imageQuery": "tipping money restaurant",
+    "example": "We left a good tip because the service was great.",
+    "exampleThai": "เราให้ทิปดีๆ เพราะบริการดีมาก",
+    "keyVocab": [
+      { "en": "left a good tip", "thai": "ให้ทิปดีๆ" },
+      { "en": "the service was great", "thai": "บริการดีมาก" }
+    ],
+    "tip": "ในสหรัฐฯ ให้ทิป 15-20% ของบิล ถ้าไม่ให้ถือว่าเสียมารยาท"
+  },
+  {
+    "id": "restaurant-takeaway",
+    "word": "takeaway",
+    "pos": "n.",
+    "ipa": "/ˈteɪk.ə.weɪ/",
+    "thai": "อาหารกลับบ้าน",
+    "emoji": "🥡",
+    "imageQuery": "takeaway food bag",
+    "example": "We were too tired, so we ordered takeaway instead.",
+    "exampleThai": "เราเหนื่อยเกินไป เลยสั่งอาหารกลับบ้านมากินแทน",
+    "keyVocab": [
+      { "en": "too tired", "thai": "เหนื่อยเกินไป" },
+      { "en": "ordered takeaway", "thai": "สั่งอาหารกลับบ้าน" }
+    ],
+    "tip": "อังกฤษใช้ takeaway อเมริกันใช้ takeout พูดสั้นๆ ว่า to go ก็ได้"
+  },
+  {
+    "id": "restaurant-allergy",
+    "word": "allergy",
+    "pos": "n.",
+    "ipa": "/ˈæl.ɚ.dʒi/",
+    "thai": "การแพ้อาหาร",
+    "emoji": "🤧",
+    "imageQuery": "food allergy warning",
+    "example": "I have a peanut allergy, so please check the sauce.",
+    "exampleThai": "ฉันแพ้ถั่วลิสง รบกวนเช็คซอสให้หน่อยนะ",
+    "keyVocab": [
+      { "en": "a peanut allergy", "thai": "การแพ้ถั่วลิสง" },
+      { "en": "check the sauce", "thai": "เช็คซอส" }
+    ],
+    "tip": "บอกพนักงานว่า I'm allergic to... ใช้บ่อยกว่า และถามว่า Does this contain nuts?"
+  }
+]

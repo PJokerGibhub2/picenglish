@@ -1,0 +1,15 @@
+﻿{
+  "name": "picenglish",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PicEnglish — เว็บแอป/PWA เรียนคำศัพท์ภาษาอังกฤษด้วยภาพ เสียงอ่าน และประโยคใช้งานจริง",
+  "scripts": {
+    "start": "npx --yes serve . -l 5173",
+    "serve": "python3 -m http.server 5173 || python -m http.server 5173",
+    "check": "node scripts/check_imports.mjs && node -e \"for (const f of ['sw.js']) new Function(require('fs').readFileSync(f,'utf8'))\"",
+    "build:data": "python scripts/build_data.py",
+    "build:icons": "python scripts/make_icons.py",
+    "fetch:images": "node scripts/fetch-images.mjs"
+  }
+}

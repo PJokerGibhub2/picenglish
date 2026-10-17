@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>PicEnglish — เรียนคำศัพท์อังกฤษด้วยภาพ</title>
+<meta name="description" content="แอปเรียนคำศัพท์ภาษาอังกฤษด้วยภาพ + เสียงอ่าน + ประโยคใช้งานจริง สำหรับผู้ใหญ่ไทย" />
+<meta name="theme-color" content="#4f46e5" />
+<meta name="liff-id" content="YOUR-LIFF-ID" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app">
+  <header class="topbar">
+    <button id="btn-back" class="icon-btn hidden" type="button" aria-label="ย้อนกลับ">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <h1 id="topbar-title">PicEnglish</h1>
+    <div class="topbar-actions">
+      <span id="streak-chip" class="chip-streak hidden" title="จำนวนคำที่ทบทวนวันนี้">🔥 <b>0</b></span>
+      <button id="btn-settings" class="icon-btn" type="button" aria-label="ตั้งค่า">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-2.87 1.2V21a2 2 0 11-4 0v-.09A1.7 1.7 0 006.2 19.7l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.7 1.7 0 003 14.1H3a2 2 0 110-4h.09A1.7 1.7 0 004.3 7.2l-.06-.06A2 2 0 117.07 4.3l.06.06A1.7 1.7 0 009 4.6h.08A1.7 1.7 0 0010.1 3V3a2 2 0 114 0v.09a1.7 1.7 0 001.02 1.56 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06A1.7 1.7 0 0019.4 9v.08a1.7 1.7 0 001.6 1.02H21a2 2 0 110 4h-.09a1.7 1.7 0 00-1.51 1.02z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <nav class="tabbar" id="tabbar">
+    <a href="#/learn" data-tab="learn"><span class="ti">🃏</span><span class="tl">การ์ด</span></a>
+    <a href="#/listen" data-tab="listen"><span class="ti">🎧</span><span class="tl">ฟังประโยค</span></a>
+    <a href="#/speaking" data-tab="speaking"><span class="ti">🗣️</span><span class="tl">ฝึกพูด</span></a>
+    <a href="#/review" data-tab="review"><span class="ti">🔁</span><span class="tl">ทบทวน</span><span class="badge hidden" id="due-badge">0</span></a>
+    <a href="#/mine" data-tab="mine"><span class="ti">⭐</span><span class="tl">คำของฉัน</span></a>
+  </nav>
+</div>
+
+<div id="toast-wrap" class="toast-wrap" aria-live="assertive"></div>
+<div id="sheet" class="sheet-backdrop hidden"><div class="sheet" id="sheet-body"></div></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

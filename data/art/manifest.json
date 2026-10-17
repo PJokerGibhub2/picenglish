@@ -1,0 +1,674 @@
+{
+ "food-breakfast": {
+  "file": "food-breakfast.svg",
+  "emoji": "🍳",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-lunch": {
+  "file": "food-lunch.svg",
+  "emoji": "🥗",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-dinner": {
+  "file": "food-dinner.svg",
+  "emoji": "🍽️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-snack": {
+  "file": "food-snack.svg",
+  "emoji": "🥜",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-ingredient": {
+  "file": "food-ingredient.svg",
+  "emoji": "🥕",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-recipe": {
+  "file": "food-recipe.svg",
+  "emoji": "📖",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-soup": {
+  "file": "food-soup.svg",
+  "emoji": "🍲",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-grill": {
+  "file": "food-grill.svg",
+  "emoji": "🔥",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-spicy": {
+  "file": "food-spicy.svg",
+  "emoji": "🌶️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-leftovers": {
+  "file": "food-leftovers.svg",
+  "emoji": "🍱",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-dessert": {
+  "file": "food-dessert.svg",
+  "emoji": "🍰",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "food-portion": {
+  "file": "food-portion.svg",
+  "emoji": "🍛",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-reservation": {
+  "file": "restaurant-reservation.svg",
+  "emoji": "📅",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-table-for-two": {
+  "file": "restaurant-table-for-two.svg",
+  "emoji": "👫",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-menu": {
+  "file": "restaurant-menu.svg",
+  "emoji": "📋",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-order": {
+  "file": "restaurant-order.svg",
+  "emoji": "📝",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-recommend": {
+  "file": "restaurant-recommend.svg",
+  "emoji": "👍",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-appetizer": {
+  "file": "restaurant-appetizer.svg",
+  "emoji": "🍤",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-main-course": {
+  "file": "restaurant-main-course.svg",
+  "emoji": "🥩",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-refill": {
+  "file": "restaurant-refill.svg",
+  "emoji": "🥤",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-bill": {
+  "file": "restaurant-bill.svg",
+  "emoji": "🧾",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-tip": {
+  "file": "restaurant-tip.svg",
+  "emoji": "💵",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-takeaway": {
+  "file": "restaurant-takeaway.svg",
+  "emoji": "🥡",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "restaurant-allergy": {
+  "file": "restaurant-allergy.svg",
+  "emoji": "🤧",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-ticket": {
+  "file": "travel-ticket.svg",
+  "emoji": "🎫",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-passport": {
+  "file": "travel-passport.svg",
+  "emoji": "🛂",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-airport": {
+  "file": "travel-airport.svg",
+  "emoji": "✈️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-luggage": {
+  "file": "travel-luggage.svg",
+  "emoji": "🧳",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-map": {
+  "file": "travel-map.svg",
+  "emoji": "🗺️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-bus": {
+  "file": "travel-bus.svg",
+  "emoji": "🚌",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-train": {
+  "file": "travel-train.svg",
+  "emoji": "🚆",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-schedule": {
+  "file": "travel-schedule.svg",
+  "emoji": "📅",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-destination": {
+  "file": "travel-destination.svg",
+  "emoji": "📍",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-gate": {
+  "file": "travel-gate.svg",
+  "emoji": "🚪",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-turn-left": {
+  "file": "travel-turn-left.svg",
+  "emoji": "⬅️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "travel-ask-for-directions": {
+  "file": "travel-ask-for-directions.svg",
+  "emoji": "🧭",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-apartment": {
+  "file": "home-apartment.svg",
+  "emoji": "🏢",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-house": {
+  "file": "home-house.svg",
+  "emoji": "🏠",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-bedroom": {
+  "file": "home-bedroom.svg",
+  "emoji": "🛏️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-kitchen": {
+  "file": "home-kitchen.svg",
+  "emoji": "🍳",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-living-room": {
+  "file": "home-living-room.svg",
+  "emoji": "🛋️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-furniture": {
+  "file": "home-furniture.svg",
+  "emoji": "🪑",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-lamp": {
+  "file": "home-lamp.svg",
+  "emoji": "💡",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-refrigerator": {
+  "file": "home-refrigerator.svg",
+  "emoji": "🧊",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-rent": {
+  "file": "home-rent.svg",
+  "emoji": "💰",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-neighbor": {
+  "file": "home-neighbor.svg",
+  "emoji": "🏘️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-key": {
+  "file": "home-key.svg",
+  "emoji": "🔑",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "home-balcony": {
+  "file": "home-balcony.svg",
+  "emoji": "🌇",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-receipt": {
+  "file": "shopping-receipt.svg",
+  "emoji": "🧾",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-price": {
+  "file": "shopping-price.svg",
+  "emoji": "🏷️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-discount": {
+  "file": "shopping-discount.svg",
+  "emoji": "🔻",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-change": {
+  "file": "shopping-change.svg",
+  "emoji": "🪙",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-credit-card": {
+  "file": "shopping-credit-card.svg",
+  "emoji": "💳",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-cash": {
+  "file": "shopping-cash.svg",
+  "emoji": "💵",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-expensive": {
+  "file": "shopping-expensive.svg",
+  "emoji": "💰",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-cheap": {
+  "file": "shopping-cheap.svg",
+  "emoji": "🪙",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-bargain": {
+  "file": "shopping-bargain.svg",
+  "emoji": "🤝",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-bank": {
+  "file": "shopping-bank.svg",
+  "emoji": "🏦",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-save": {
+  "file": "shopping-save.svg",
+  "emoji": "🐖",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "shopping-wallet": {
+  "file": "shopping-wallet.svg",
+  "emoji": "👛",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-fever": {
+  "file": "health-fever.svg",
+  "emoji": "🤒",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-headache": {
+  "file": "health-headache.svg",
+  "emoji": "🤕",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-cough": {
+  "file": "health-cough.svg",
+  "emoji": "😷",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-sore-throat": {
+  "file": "health-sore-throat.svg",
+  "emoji": "🗣️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-stomachache": {
+  "file": "health-stomachache.svg",
+  "emoji": "🤢",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-rest": {
+  "file": "health-rest.svg",
+  "emoji": "🛌",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-ill": {
+  "file": "health-ill.svg",
+  "emoji": "🤧",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-doctor": {
+  "file": "health-doctor.svg",
+  "emoji": "👨‍⚕️",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-appointment": {
+  "file": "health-appointment.svg",
+  "emoji": "📅",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-medicine": {
+  "file": "health-medicine.svg",
+  "emoji": "💊",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-hurt": {
+  "file": "health-hurt.svg",
+  "emoji": "🤕",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "health-healthy": {
+  "file": "health-healthy.svg",
+  "emoji": "🥗",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-meeting": {
+  "file": "work-meeting.svg",
+  "emoji": "📅",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-email": {
+  "file": "work-email.svg",
+  "emoji": "📧",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-colleague": {
+  "file": "work-colleague.svg",
+  "emoji": "🤝",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-boss": {
+  "file": "work-boss.svg",
+  "emoji": "👔",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-salary": {
+  "file": "work-salary.svg",
+  "emoji": "💰",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-sick-leave": {
+  "file": "work-sick-leave.svg",
+  "emoji": "🤒",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-apply-for": {
+  "file": "work-apply-for.svg",
+  "emoji": "📝",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-deadline": {
+  "file": "work-deadline.svg",
+  "emoji": "⏰",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-overtime": {
+  "file": "work-overtime.svg",
+  "emoji": "🌙",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-interview": {
+  "file": "work-interview.svg",
+  "emoji": "💼",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-report": {
+  "file": "work-report.svg",
+  "emoji": "📊",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "work-promotion": {
+  "file": "work-promotion.svg",
+  "emoji": "🎉",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-stressed": {
+  "file": "feelings-stressed.svg",
+  "emoji": "😖",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-tired": {
+  "file": "feelings-tired.svg",
+  "emoji": "😴",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-proud": {
+  "file": "feelings-proud.svg",
+  "emoji": "😌",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-kind": {
+  "file": "feelings-kind.svg",
+  "emoji": "🤗",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-punctual": {
+  "file": "feelings-punctual.svg",
+  "emoji": "⌚",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-shy": {
+  "file": "feelings-shy.svg",
+  "emoji": "😳",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-confident": {
+  "file": "feelings-confident.svg",
+  "emoji": "😎",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-nervous": {
+  "file": "feelings-nervous.svg",
+  "emoji": "😬",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-friendly": {
+  "file": "feelings-friendly.svg",
+  "emoji": "😊",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-patient": {
+  "file": "feelings-patient.svg",
+  "emoji": "🧘",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-cheerful": {
+  "file": "feelings-cheerful.svg",
+  "emoji": "😄",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ },
+ "feelings-worry": {
+  "file": "feelings-worry.svg",
+  "emoji": "😟",
+  "source": "openmoji",
+  "license": "CC BY-SA 4.0",
+  "credit": "OpenMoji (openmoji.org)"
+ }
+}

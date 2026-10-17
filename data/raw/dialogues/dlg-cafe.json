@@ -1,0 +1,118 @@
+{
+  "id": "dlg-cafe",
+  "title": "สั่งกาแฟ",
+  "titleEn": "Ordering coffee",
+  "level": "A2",
+  "emoji": "☕",
+  "category": "restaurant",
+  "commonsCategory": "Coffee shops",
+  "imageQuery": "coffee shop counter barista",
+  "setting": "คุณยืนอยู่หน้าร้านกาแฟตอนเช้า ต้องสั่งเครื่องดื่มและจ่ายเงิน",
+  "counterpart": { "labelTh": "พนักงานร้านกาแฟ", "emoji": "🧑‍🍳" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Good morning! What can I get you for breakfast?",
+      "thai": "อรุณสวัสดิ์ครับ รับอะไรเป็นมื้อเช้าดีครับ",
+      "keyPhrases": [
+        { "en": "What can I get you", "thai": "รับอะไรดีครับ (พนักงานถามลูกค้า)" },
+        { "en": "breakfast", "thai": "มื้อเช้า" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Could I get a medium latte and a snack, please?",
+      "thai": "ขอลาเต้แก้วกลางกับของว่างหนึ่งอย่างครับ",
+      "keyPhrases": [
+        { "en": "Could I get", "thai": "ขอ...ครับ (สุภาพ)" },
+        { "en": "a medium latte", "thai": "ลาเต้แก้วกลาง" },
+        { "en": "a snack", "thai": "ของว่างหนึ่งอย่าง" }
+      ],
+      "alternative": [
+        { "en": "I'd like a latte and a snack, please.", "thai": "ผมขอลาเต้กับของว่างครับ" },
+        { "en": "Can I have a medium latte, please?", "thai": "ขอลาเต้แก้วกลางครับ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Sure. Is that for here or takeaway?",
+      "thai": "ได้ครับ ทานที่ร้านหรือใส่กลับบ้านครับ",
+      "keyPhrases": [
+        { "en": "for here or takeaway", "thai": "ทานที่ร้านหรือกลับบ้าน" },
+        { "en": "Sure", "thai": "ได้ครับ" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Takeaway, please. How much is it?",
+      "thai": "ใส่กลับบ้านครับ เท่าไหร่ครับ",
+      "keyPhrases": [
+        { "en": "Takeaway", "thai": "ใส่กลับบ้าน" },
+        { "en": "How much is it", "thai": "เท่าไหร่ครับ" }
+      ],
+      "alternative": [
+        { "en": "To go, please. What's the price?", "thai": "กลับบ้านครับ ราคาเท่าไหร่" },
+        { "en": "Takeaway, please. How much do I pay?", "thai": "ใส่กลับบ้านครับ ต้องจ่ายเท่าไหร่" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "That's eighty baht. Cash or credit card?",
+      "thai": "แปดสิบบาทครับ จ่ายเงินสดหรือบัตรเครดิตครับ",
+      "keyPhrases": [
+        { "en": "eighty baht", "thai": "แปดสิบบาท" },
+        { "en": "credit card", "thai": "บัตรเครดิต" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Cash. Here's a hundred. Keep the change.",
+      "thai": "เงินสดครับ นี่หนึ่งร้อย ไม่ต้องทอนครับ",
+      "keyPhrases": [
+        { "en": "Cash", "thai": "เงินสด" },
+        { "en": "Keep the change", "thai": "ไม่ต้องทอน (พูดตอนให้เงินสด)" }
+      ],
+      "alternative": [
+        { "en": "Cash, please. Here's a hundred baht.", "thai": "เงินสดครับ นี่หนึ่งร้อยบาท" },
+        { "en": "I'll pay cash. Keep the change, please.", "thai": "จ่ายเงินสดครับ ไม่ต้องทอนนะครับ" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Thank you. Do you want a receipt?",
+      "thai": "ขอบคุณครับ รับใบเสร็จไหมครับ",
+      "keyPhrases": [
+        { "en": "a receipt", "thai": "ใบเสร็จ" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Yes, please. Can I get a refill later?",
+      "thai": "รับครับ เดี๋ยวขอเติมกาแฟได้ไหมครับ",
+      "keyPhrases": [
+        { "en": "a refill", "thai": "การเติมเครื่องดื่ม" },
+        { "en": "later", "thai": "ทีหลัง" }
+      ],
+      "alternative": [
+        { "en": "Yes, please. Could I get a refill later?", "thai": "รับครับ ขอเติมทีหลังได้ไหม" },
+        { "en": "Yes. Is a refill free here?", "thai": "รับครับ ที่นี่เติมฟรีไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Of course. It will be ready in five minutes.",
+      "thai": "ได้เลยครับ อีกห้านาทีก็พร้อมครับ",
+      "keyPhrases": [
+        { "en": "Of course", "thai": "ได้เลยครับ" },
+        { "en": "ready in five minutes", "thai": "พร้อมในอีกห้านาที" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "For here or to go?", "thai": "ทานที่ร้านหรือกลับบ้าน" },
+    { "en": "Anything else?", "thai": "รับอะไรเพิ่มไหมครับ" },
+    { "en": "Your total is eighty baht.", "thai": "รวมทั้งหมดแปดสิบบาทครับ" },
+    { "en": "Would you like a receipt?", "thai": "รับใบเสร็จไหมครับ" },
+    { "en": "Have a nice day!", "thai": "ขอให้เป็นวันที่ดีครับ" }
+  ]
+}

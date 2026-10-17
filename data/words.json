@@ -1,0 +1,2645 @@
+[
+ {
+  "id": "food-breakfast",
+  "word": "breakfast",
+  "pos": "n.",
+  "ipa": "/ˈbrek.fəst/",
+  "thai": "อาหารเช้า",
+  "emoji": "🍳",
+  "imageQuery": "breakfast table morning",
+  "example": "I usually have breakfast at seven with my wife.",
+  "exampleThai": "ปกติผมกินอาหารเช้ากับภรรยาตอนเจ็ดโมง",
+  "keyVocab": [
+   {
+    "en": "usually have",
+    "thai": "ปกติกิน"
+   },
+   {
+    "en": "at seven",
+    "thai": "ตอนเจ็ดโมง"
+   }
+  ],
+  "tip": "ใช้ have breakfast ไม่ใช่ eat breakfast และไม่ใส่ a เมื่อพูดถึงมื้อเช้าทั่วไป",
+  "category": "food",
+  "commonsCategory": "Breakfast",
+  "photo": true,
+  "article": "Breakfast"
+ },
+ {
+  "id": "food-lunch",
+  "word": "lunch",
+  "pos": "n.",
+  "ipa": "/lʌntʃ/",
+  "thai": "อาหารกลางวัน",
+  "emoji": "🥗",
+  "imageQuery": "lunch break office",
+  "example": "Let's grab lunch together after the meeting ends.",
+  "exampleThai": "ไปกินข้าวเที่ยงด้วยกันหลังประชุมเลิกนะ",
+  "keyVocab": [
+   {
+    "en": "grab lunch",
+    "thai": "ไปกินข้าวเที่ยงเร็วๆ"
+   },
+   {
+    "en": "after the meeting",
+    "thai": "หลังประชุม"
+   }
+  ],
+  "tip": "grab lunch เป็นสำนวน แปลว่า กินข้าวเที่ยงเร็วๆ ใช้บ่อยในที่ทำงาน",
+  "category": "food",
+  "commonsCategory": "Lunch",
+  "photo": true,
+  "article": "Lunch"
+ },
+ {
+  "id": "food-dinner",
+  "word": "dinner",
+  "pos": "n.",
+  "ipa": "/ˈdɪn.ɚ/",
+  "thai": "อาหารเย็น",
+  "emoji": "🍽️",
+  "imageQuery": "family dinner table",
+  "example": "We are having dinner with my parents on Friday night.",
+  "exampleThai": "คืนวันศุกร์นี้เราจะไปกินข้าวเย็นกับพ่อแม่ผม",
+  "keyVocab": [
+   {
+    "en": "having dinner",
+    "thai": "กินข้าวเย็น"
+   },
+   {
+    "en": "on Friday night",
+    "thai": "คืนวันศุกร์"
+   }
+  ],
+  "tip": "dinner คือมื้อเย็น ใช้ have dinner บ่อยกว่า eat dinner",
+  "category": "food",
+  "commonsCategory": "Dinners",
+  "photo": true,
+  "article": "Dinner"
+ },
+ {
+  "id": "food-snack",
+  "word": "snack",
+  "pos": "n.",
+  "ipa": "/snæk/",
+  "thai": "ของว่าง",
+  "emoji": "🥜",
+  "imageQuery": "healthy snack nuts",
+  "example": "I keep some nuts in my desk for a quick snack.",
+  "exampleThai": "ผมเก็บถั่วไว้ในโต๊ะทำงาน เอาไว้กินเล่นตอนหิว",
+  "keyVocab": [
+   {
+    "en": "keep some nuts",
+    "thai": "เก็บถั่วไว้บ้าง"
+   },
+   {
+    "en": "a quick snack",
+    "thai": "ของว่างกินเร็วๆ"
+   }
+  ],
+  "tip": "snack เป็นได้ทั้งคำนาม (ของว่าง) และคำกริยา (กินเล่น)",
+  "category": "food",
+  "commonsCategory": "Snack food",
+  "photo": true,
+  "article": "Snack"
+ },
+ {
+  "id": "food-ingredient",
+  "word": "ingredient",
+  "pos": "n.",
+  "ipa": "/ɪnˈɡriː.di.ənt/",
+  "thai": "วัตถุดิบ / ส่วนผสม",
+  "emoji": "🥕",
+  "imageQuery": "fresh ingredients cooking",
+  "example": "Fresh ingredients make a simple dish taste much better.",
+  "exampleThai": "วัตถุดิบสดๆ ทำให้เมนูง่ายๆ อร่อยขึ้นเยอะ",
+  "keyVocab": [
+   {
+    "en": "Fresh ingredients",
+    "thai": "วัตถุดิบสดๆ"
+   },
+   {
+    "en": "a simple dish",
+    "thai": "เมนูง่ายๆ"
+   }
+  ],
+  "tip": "ใช้พหูพจน์ ingredients เมื่อพูดถึงหลายอย่าง ออกเสียงเน้น -gri-",
+  "category": "food",
+  "commonsCategory": "Food ingredients",
+  "photo": true,
+  "article": "Ingredient"
+ },
+ {
+  "id": "food-recipe",
+  "word": "recipe",
+  "pos": "n.",
+  "ipa": "/ˈres.ə.pi/",
+  "thai": "สูตรอาหาร",
+  "emoji": "📖",
+  "imageQuery": "cooking recipe book",
+  "example": "My mother gave me her recipe for Thai green curry.",
+  "exampleThai": "แม่ให้สูตรแกงเขียวหวานของท่านกับฉันมา",
+  "keyVocab": [
+   {
+    "en": "gave me",
+    "thai": "ให้ฉัน"
+   },
+   {
+    "en": "Thai green curry",
+    "thai": "แกงเขียวหวาน"
+   }
+  ],
+  "tip": "recipe ออกเสียง เรส-ซะ-พี ไม่ใช่ รี-ไซป์ และใช้ recipe for + อาหาร",
+  "category": "food",
+  "commonsCategory": "Recipes",
+  "photo": true,
+  "article": "Recipe"
+ },
+ {
+  "id": "food-soup",
+  "word": "soup",
+  "pos": "n.",
+  "ipa": "/suːp/",
+  "thai": "ซุป",
+  "emoji": "🍲",
+  "imageQuery": "hot soup bowl",
+  "example": "This soup is too salty for me, can you fix it?",
+  "exampleThai": "ซุปถ้วยนี้เค็มเกินไปสำหรับฉัน ช่วยแก้ให้หน่อยได้ไหม",
+  "keyVocab": [
+   {
+    "en": "too salty",
+    "thai": "เค็มเกินไป"
+   },
+   {
+    "en": "fix it",
+    "thai": "แก้ให้หน่อย"
+   }
+  ],
+  "tip": "soup เป็นคำนามนับไม่ได้ พูด a bowl of soup ได้ แต่ไม่พูด a soup",
+  "category": "food",
+  "commonsCategory": "Soups",
+  "photo": true,
+  "article": "Soup"
+ },
+ {
+  "id": "food-grill",
+  "word": "grill",
+  "pos": "v.",
+  "ipa": "/ɡrɪl/",
+  "thai": "ย่าง",
+  "emoji": "🔥",
+  "imageQuery": "grilling fish outdoor",
+  "example": "We usually grill fish and vegetables on Sunday evenings.",
+  "exampleThai": "ปกติเราย่างปลากับผักตอนเย็นวันอาทิตย์",
+  "keyVocab": [
+   {
+    "en": "grill fish",
+    "thai": "ย่างปลา"
+   },
+   {
+    "en": "Sunday evenings",
+    "thai": "เย็นวันอาทิตย์"
+   }
+  ],
+  "tip": "grill ย่างบนตะแกรง ต่างจาก roast (อบ) และ barbecue (บาร์บีคิว)",
+  "category": "food",
+  "commonsCategory": "Grilling",
+  "photo": true,
+  "article": "Grilling"
+ },
+ {
+  "id": "food-spicy",
+  "word": "spicy",
+  "pos": "adj.",
+  "ipa": "/ˈspaɪ.si/",
+  "thai": "เผ็ด",
+  "emoji": "🌶️",
+  "imageQuery": "spicy chili food",
+  "example": "I love spicy food, but my husband can't handle it.",
+  "exampleThai": "ฉันชอบอาหารเผ็ด แต่สามีฉันกินเผ็ดไม่ไหว",
+  "keyVocab": [
+   {
+    "en": "spicy food",
+    "thai": "อาหารเผ็ด"
+   },
+   {
+    "en": "can't handle it",
+    "thai": "กินไม่ไหว / รับไม่ไหว"
+   }
+  ],
+  "tip": "บอกความเผ็ดได้ว่า mildly spicy หรือ Thai spicy ถ้าเอาแบบไทยๆ",
+  "category": "food",
+  "commonsCategory": "Chili peppers",
+  "photo": true,
+  "article": "Pungency"
+ },
+ {
+  "id": "food-leftovers",
+  "word": "leftovers",
+  "pos": "n.",
+  "ipa": "/ˈleft.oʊ.vɚz/",
+  "thai": "อาหารที่กินเหลือ",
+  "emoji": "🍱",
+  "imageQuery": "leftover food container",
+  "example": "We ate the leftovers from last night for lunch today.",
+  "exampleThai": "วันนี้เรากินอาหารที่เหลือจากเมื่อคืนเป็นมื้อเที่ยง",
+  "keyVocab": [
+   {
+    "en": "from last night",
+    "thai": "จากเมื่อคืน"
+   },
+   {
+    "en": "for lunch",
+    "thai": "เป็นมื้อเที่ยง"
+   }
+  ],
+  "tip": "leftovers ใช้เป็นพหูพจน์เสมอ หมายถึงอาหารที่กินเหลือแช่ตู้เย็นไว้",
+  "category": "food",
+  "commonsCategory": "Leftovers",
+  "photo": true,
+  "article": "Leftovers"
+ },
+ {
+  "id": "food-dessert",
+  "word": "dessert",
+  "pos": "n.",
+  "ipa": "/dɪˈzɝːt/",
+  "thai": "ของหวาน",
+  "emoji": "🍰",
+  "imageQuery": "dessert cake plate",
+  "example": "Would you like some dessert or just coffee?",
+  "exampleThai": "รับของหวานไหมคะ หรือเอาแค่กาแฟ",
+  "keyVocab": [
+   {
+    "en": "Would you like",
+    "thai": "รับ...ไหม"
+   },
+   {
+    "en": "just coffee",
+    "thai": "แค่กาแฟ"
+   }
+  ],
+  "tip": "dessert (ของหวาน) สะกด ss แต่ desert (ทะเลทราย) สะกด s เดียว",
+  "category": "food",
+  "commonsCategory": "Desserts",
+  "photo": true,
+  "article": "Dessert"
+ },
+ {
+  "id": "food-portion",
+  "word": "portion",
+  "pos": "n.",
+  "ipa": "/ˈpɔːr.ʃən/",
+  "thai": "ปริมาณอาหารต่อจาน",
+  "emoji": "🍛",
+  "imageQuery": "large food portion plate",
+  "example": "The portions here are huge, so let's share one plate.",
+  "exampleThai": "ที่ร้านนี้เสิร์ฟจานใหญ่ งั้นแบ่งกันจานเดียวเถอะ",
+  "keyVocab": [
+   {
+    "en": "are huge",
+    "thai": "ใหญ่โต"
+   },
+   {
+    "en": "share one plate",
+    "thai": "แบ่งกันจานเดียว"
+   }
+  ],
+  "tip": "portion = ปริมาณอาหารต่อจาน พูด portion size หรือ a small portion",
+  "category": "food",
+  "commonsCategory": "Meals",
+  "photo": true,
+  "article": "Serving size"
+ },
+ {
+  "id": "restaurant-reservation",
+  "word": "reservation",
+  "pos": "n.",
+  "ipa": "/ˌrez.ɚˈveɪ.ʃən/",
+  "thai": "การจองโต๊ะ",
+  "emoji": "📅",
+  "imageQuery": "restaurant table booking",
+  "example": "I made a reservation for four at seven tonight.",
+  "exampleThai": "ฉันจองโต๊ะไว้สำหรับสี่คนตอนหนึ่งทุ่มคืนนี้",
+  "keyVocab": [
+   {
+    "en": "made a reservation",
+    "thai": "จองโต๊ะไว้"
+   },
+   {
+    "en": "for four",
+    "thai": "สำหรับสี่คน"
+   }
+  ],
+  "tip": "ใช้ make/have a reservation พนักงานมักถามว่า Do you have a reservation?",
+  "category": "restaurant",
+  "commonsCategory": "Reservations",
+  "photo": true,
+  "article": "Table reservation"
+ },
+ {
+  "id": "restaurant-table-for-two",
+  "word": "table for two",
+  "pos": "phr.",
+  "ipa": "/ˈteɪ.bəl fɚ tuː/",
+  "thai": "โต๊ะสำหรับสองคน",
+  "emoji": "👫",
+  "imageQuery": "table for two restaurant",
+  "example": "Good evening, we'd like a table for two, please.",
+  "exampleThai": "สวัสดีตอนเย็นครับ เราขอโต๊ะสองที่ครับ",
+  "keyVocab": [
+   {
+    "en": "Good evening",
+    "thai": "สวัสดีตอนเย็น"
+   },
+   {
+    "en": "we'd like",
+    "thai": "เราขอ"
+   }
+  ],
+  "tip": "บอกจำนวนคนว่า a table for two/three/four แล้วปิดท้ายด้วย please",
+  "category": "restaurant",
+  "commonsCategory": "Restaurant tables",
+  "photo": true,
+  "article": "Table (furniture)"
+ },
+ {
+  "id": "restaurant-menu",
+  "word": "menu",
+  "pos": "n.",
+  "ipa": "/ˈmen.juː/",
+  "thai": "เมนู",
+  "emoji": "📋",
+  "imageQuery": "restaurant menu card",
+  "example": "Could we see the menu, and do you have Thai options?",
+  "exampleThai": "ขอดูเมนูหน่อยได้ไหม แล้วมีเมนูไทยไหมคะ",
+  "keyVocab": [
+   {
+    "en": "Could we see",
+    "thai": "ขอดู...ได้ไหม"
+   },
+   {
+    "en": "Thai options",
+    "thai": "ตัวเลือกอาหารไทย"
+   }
+  ],
+  "tip": "ขอเมนูอย่างสุภาพใช้ Could we see the menu? หรือ Can I have the menu?",
+  "category": "restaurant",
+  "commonsCategory": "Food menus",
+  "photo": true,
+  "article": "Menu"
+ },
+ {
+  "id": "restaurant-order",
+  "word": "order",
+  "pos": "v.",
+  "ipa": "/ˈɔːr.dɚ/",
+  "thai": "สั่งอาหาร",
+  "emoji": "📝",
+  "imageQuery": "waiter taking order",
+  "example": "Are you ready to order, or do you need more time?",
+  "exampleThai": "พร้อมจะสั่งอาหารหรือยังคะ หรือขอเวลาอีกหน่อย",
+  "keyVocab": [
+   {
+    "en": "ready to order",
+    "thai": "พร้อมสั่งอาหาร"
+   },
+   {
+    "en": "more time",
+    "thai": "เวลาอีกหน่อย"
+   }
+  ],
+  "tip": "order เป็นได้ทั้งกริยา (สั่ง) และคำนาม (ออร์เดอร์)",
+  "category": "restaurant",
+  "commonsCategory": "Waiters",
+  "photo": true
+ },
+ {
+  "id": "restaurant-recommend",
+  "word": "recommend",
+  "pos": "v.",
+  "ipa": "/ˌrek.əˈmend/",
+  "thai": "แนะนำ",
+  "emoji": "👍",
+  "imageQuery": "waiter suggesting dish",
+  "example": "Could you recommend something mild? I can't eat chili.",
+  "exampleThai": "ช่วยแนะนำอะไรที่ไม่เผ็ดหน่อยได้ไหม ฉันกินพริกไม่ได้",
+  "keyVocab": [
+   {
+    "en": "recommend something",
+    "thai": "แนะนำอะไรสักอย่าง"
+   },
+   {
+    "en": "can't eat chili",
+    "thai": "กินพริกไม่ได้"
+   }
+  ],
+  "tip": "ใช้ recommend + สิ่งของ หรือ recommend that + ประโยค แต่ไม่ใช้ recommend me",
+  "category": "restaurant",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Recommendation"
+ },
+ {
+  "id": "restaurant-appetizer",
+  "word": "appetizer",
+  "pos": "n.",
+  "ipa": "/ˈæp.ə.taɪ.zɚ/",
+  "thai": "อาหารเรียกน้ำย่อย",
+  "emoji": "🍤",
+  "imageQuery": "appetizer starter plate",
+  "example": "Let's start with an appetizer and share the main dish.",
+  "exampleThai": "เริ่มด้วยของว่างก่อน แล้วค่อยแบ่งจานหลักกัน",
+  "keyVocab": [
+   {
+    "en": "start with",
+    "thai": "เริ่มด้วย"
+   },
+   {
+    "en": "share the main dish",
+    "thai": "แบ่งจานหลักกัน"
+   }
+  ],
+  "tip": "appetizer ใช้ในอเมริกา ส่วนอังกฤษเรียกว่า starter",
+  "category": "restaurant",
+  "commonsCategory": "Appetizers",
+  "photo": true,
+  "article": "Hors d'oeuvre"
+ },
+ {
+  "id": "restaurant-main-course",
+  "word": "main course",
+  "pos": "n.",
+  "ipa": "/ˈmeɪn kɔːrs/",
+  "thai": "จานหลัก",
+  "emoji": "🥩",
+  "imageQuery": "main course steak dinner",
+  "example": "For my main course, I'll have the grilled salmon.",
+  "exampleThai": "จานหลักของฉันขอเป็นแซลมอนย่าง",
+  "keyVocab": [
+   {
+    "en": "For my main course",
+    "thai": "สำหรับจานหลักของฉัน"
+   },
+   {
+    "en": "grilled salmon",
+    "thai": "แซลมอนย่าง"
+   }
+  ],
+  "tip": "เวลาสั่งใช้ For my main course, I'll have... ดูสุภาพและเป็นธรรมชาติ",
+  "category": "restaurant",
+  "commonsCategory": "Main course",
+  "photo": true,
+  "article": "Main course"
+ },
+ {
+  "id": "restaurant-refill",
+  "word": "refill",
+  "pos": "n.",
+  "ipa": "/ˈriː.fɪl/",
+  "thai": "การเติมเครื่องดื่ม",
+  "emoji": "🥤",
+  "imageQuery": "refill soda glass",
+  "example": "Can I get a refill on my coffee, please?",
+  "exampleThai": "ขอเติมกาแฟหน่อยได้ไหมคะ",
+  "keyVocab": [
+   {
+    "en": "get a refill",
+    "thai": "ขอเติม"
+   },
+   {
+    "en": "on my coffee",
+    "thai": "กาแฟของฉัน"
+   }
+  ],
+  "tip": "ในอเมริกาหลายร้านเติมน้ำอัดลมฟรี เรียกว่า free refills",
+  "category": "restaurant",
+  "commonsCategory": "Pouring",
+  "photo": true,
+  "article": "Free refill"
+ },
+ {
+  "id": "restaurant-bill",
+  "word": "bill",
+  "pos": "n.",
+  "ipa": "/bɪl/",
+  "thai": "บิล / ใบเก็บเงิน",
+  "emoji": "🧾",
+  "imageQuery": "restaurant bill receipt",
+  "example": "Could we have the bill, please? We need to leave soon.",
+  "exampleThai": "ขอเช็คบิลหน่อยได้ไหมครับ เราต้องรีบไปแล้ว",
+  "keyVocab": [
+   {
+    "en": "have the bill",
+    "thai": "ขอเช็คบิล"
+   },
+   {
+    "en": "leave soon",
+    "thai": "ไปในอีกไม่นาน"
+   }
+  ],
+  "tip": "คนอเมริกันพูด the check มากกว่า the bill ส่วนอังกฤษใช้ the bill",
+  "category": "restaurant",
+  "commonsCategory": "Invoices",
+  "photo": true,
+  "article": "Invoice"
+ },
+ {
+  "id": "restaurant-tip",
+  "word": "tip",
+  "pos": "n.",
+  "ipa": "/tɪp/",
+  "thai": "ทิป / เงินให้พนักงาน",
+  "emoji": "💵",
+  "imageQuery": "tipping money restaurant",
+  "example": "We left a good tip because the service was great.",
+  "exampleThai": "เราให้ทิปดีๆ เพราะบริการดีมาก",
+  "keyVocab": [
+   {
+    "en": "left a good tip",
+    "thai": "ให้ทิปดีๆ"
+   },
+   {
+    "en": "the service was great",
+    "thai": "บริการดีมาก"
+   }
+  ],
+  "tip": "ในสหรัฐฯ ให้ทิป 15-20% ของบิล ถ้าไม่ให้ถือว่าเสียมารยาท",
+  "category": "restaurant",
+  "commonsCategory": "Gratuity",
+  "photo": true,
+  "article": "Gratuity"
+ },
+ {
+  "id": "restaurant-takeaway",
+  "word": "takeaway",
+  "pos": "n.",
+  "ipa": "/ˈteɪk.ə.weɪ/",
+  "thai": "อาหารกลับบ้าน",
+  "emoji": "🥡",
+  "imageQuery": "takeaway food bag",
+  "example": "We were too tired, so we ordered takeaway instead.",
+  "exampleThai": "เราเหนื่อยเกินไป เลยสั่งอาหารกลับบ้านมากินแทน",
+  "keyVocab": [
+   {
+    "en": "too tired",
+    "thai": "เหนื่อยเกินไป"
+   },
+   {
+    "en": "ordered takeaway",
+    "thai": "สั่งอาหารกลับบ้าน"
+   }
+  ],
+  "tip": "อังกฤษใช้ takeaway อเมริกันใช้ takeout พูดสั้นๆ ว่า to go ก็ได้",
+  "category": "restaurant",
+  "commonsCategory": "Take-out food",
+  "photo": true,
+  "article": "Take-out"
+ },
+ {
+  "id": "restaurant-allergy",
+  "word": "allergy",
+  "pos": "n.",
+  "ipa": "/ˈæl.ɚ.dʒi/",
+  "thai": "การแพ้อาหาร",
+  "emoji": "🤧",
+  "imageQuery": "food allergy warning",
+  "example": "I have a peanut allergy, so please check the sauce.",
+  "exampleThai": "ฉันแพ้ถั่วลิสง รบกวนเช็คซอสให้หน่อยนะ",
+  "keyVocab": [
+   {
+    "en": "a peanut allergy",
+    "thai": "การแพ้ถั่วลิสง"
+   },
+   {
+    "en": "check the sauce",
+    "thai": "เช็คซอส"
+   }
+  ],
+  "tip": "บอกพนักงานว่า I'm allergic to... ใช้บ่อยกว่า และถามว่า Does this contain nuts?",
+  "category": "restaurant",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Food allergy"
+ },
+ {
+  "id": "travel-ticket",
+  "word": "ticket",
+  "pos": "n.",
+  "ipa": "/ˈtɪk.ɪt/",
+  "thai": "ตั๋ว",
+  "emoji": "🎫",
+  "imageQuery": "train ticket",
+  "example": "I bought a round-trip ticket to Chiang Mai yesterday.",
+  "exampleThai": "ฉันซื้อตั๋วไป-กลับเชียงใหม่เมื่อวานนี้",
+  "keyVocab": [
+   {
+    "en": "round-trip",
+    "thai": "ไป-กลับ"
+   },
+   {
+    "en": "bought",
+    "thai": "ซื้อ (อดีตของ buy)"
+   }
+  ],
+  "tip": "ticket ใช้กับตั๋วเครื่องบิน รถไฟ คอนเสิร์ต แต่ตั๋วรถเมล์มักเรียกว่า bus fare",
+  "category": "travel",
+  "commonsCategory": "Tickets",
+  "photo": true,
+  "article": "Ticket (admission)"
+ },
+ {
+  "id": "travel-passport",
+  "word": "passport",
+  "pos": "n.",
+  "ipa": "/ˈpæs.pɔːrt/",
+  "thai": "หนังสือเดินทาง",
+  "emoji": "🛂",
+  "imageQuery": "passport travel document",
+  "example": "Don't forget to put your passport in your bag.",
+  "exampleThai": "อย่าลืมเอาหนังสือเดินทางใส่กระเป๋านะ",
+  "keyVocab": [
+   {
+    "en": "forget",
+    "thai": "ลืม"
+   },
+   {
+    "en": "passport",
+    "thai": "หนังสือเดินทาง"
+   },
+   {
+    "en": "bag",
+    "thai": "กระเป๋า"
+   }
+  ],
+  "tip": "passport คือหนังสือเดินทาง อย่าลืมเช็กวันหมดอายุ (expiry date) ก่อนเดินทาง",
+  "category": "travel",
+  "commonsCategory": "Passports",
+  "photo": true,
+  "article": "Passport"
+ },
+ {
+  "id": "travel-airport",
+  "word": "airport",
+  "pos": "n.",
+  "ipa": "/ˈer.pɔːrt/",
+  "thai": "สนามบิน",
+  "emoji": "✈️",
+  "imageQuery": "airport departure hall",
+  "example": "We should get to the airport two hours early.",
+  "exampleThai": "เราไปถึงสนามบินก่อนเวลา 2 ชั่วโมงดีกว่า",
+  "keyVocab": [
+   {
+    "en": "get to",
+    "thai": "ไปถึง"
+   },
+   {
+    "en": "airport",
+    "thai": "สนามบิน"
+   },
+   {
+    "en": "early",
+    "thai": "แต่เช้า / ก่อนเวลา"
+   }
+  ],
+  "tip": "airport คือสนามบิน terminal คืออาคารผู้โดยสาร และ gate คือประตูขึ้นเครื่อง",
+  "category": "travel",
+  "commonsCategory": "Airport terminals",
+  "photo": true,
+  "article": "Airport"
+ },
+ {
+  "id": "travel-luggage",
+  "word": "luggage",
+  "pos": "n.",
+  "ipa": "/ˈlʌɡ.ɪdʒ/",
+  "thai": "กระเป๋าเดินทาง",
+  "emoji": "🧳",
+  "imageQuery": "travel luggage suitcase",
+  "example": "My luggage is too heavy to carry upstairs.",
+  "exampleThai": "กระเป๋าเดินทางฉันหนักเกินกว่าจะยกขึ้นชั้นบนไหว",
+  "keyVocab": [
+   {
+    "en": "luggage",
+    "thai": "กระเป๋าเดินทาง"
+   },
+   {
+    "en": "heavy",
+    "thai": "หนัก"
+   },
+   {
+    "en": "carry",
+    "thai": "ยก / หิ้ว"
+   }
+  ],
+  "tip": "luggage เป็นคำนับไม่ได้ ห้ามเติม s ใช้ a piece of luggage หรือ two bags แทน",
+  "category": "travel",
+  "commonsCategory": "Luggage",
+  "photo": true,
+  "article": "Baggage"
+ },
+ {
+  "id": "travel-map",
+  "word": "map",
+  "pos": "n.",
+  "ipa": "/mæp/",
+  "thai": "แผนที่",
+  "emoji": "🗺️",
+  "imageQuery": "city street map",
+  "example": "Let me check the map on my phone.",
+  "exampleThai": "ขอฉันดูแผนที่ในมือถือแป๊บนะ",
+  "keyVocab": [
+   {
+    "en": "check",
+    "thai": "ดู / ตรวจสอบ"
+   },
+   {
+    "en": "map",
+    "thai": "แผนที่"
+   },
+   {
+    "en": "phone",
+    "thai": "โทรศัพท์ / มือถือ"
+   }
+  ],
+  "tip": "map อ่านว่า แม็พ ถ้าจะถามว่ามีแผนที่ไหม ใช้ Do you have a map?",
+  "category": "travel",
+  "commonsCategory": "Road maps",
+  "photo": true,
+  "article": "Map"
+ },
+ {
+  "id": "travel-bus",
+  "word": "bus",
+  "pos": "n.",
+  "ipa": "/bʌs/",
+  "thai": "รถเมล์",
+  "emoji": "🚌",
+  "imageQuery": "public city bus",
+  "example": "The bus to the city center leaves every ten minutes.",
+  "exampleThai": "รถเมล์ไปกลางเมืองออกทุกสิบนาที",
+  "keyVocab": [
+   {
+    "en": "city center",
+    "thai": "ใจกลางเมือง"
+   },
+   {
+    "en": "leaves",
+    "thai": "ออก (รถออก)"
+   },
+   {
+    "en": "every ten minutes",
+    "thai": "ทุกสิบนาที"
+   }
+  ],
+  "tip": "ขึ้นรถเมล์ใช้ take a bus หรือ get on the bus ลงรถใช้ get off the bus",
+  "category": "travel",
+  "commonsCategory": "Buses",
+  "photo": true,
+  "article": "Bus"
+ },
+ {
+  "id": "travel-train",
+  "word": "train",
+  "pos": "n.",
+  "ipa": "/treɪn/",
+  "thai": "รถไฟ",
+  "emoji": "🚆",
+  "imageQuery": "train railway station",
+  "example": "I usually take the train to work in the morning.",
+  "exampleThai": "ปกติฉันนั่งรถไฟไปทำงานตอนเช้า",
+  "keyVocab": [
+   {
+    "en": "take the train",
+    "thai": "นั่งรถไฟ"
+   },
+   {
+    "en": "usually",
+    "thai": "โดยปกติ"
+   },
+   {
+    "en": "in the morning",
+    "thai": "ตอนเช้า"
+   }
+  ],
+  "tip": "นั่งรถไฟใช้ take the train ส่วนสถานีรถไฟเรียกว่า train station",
+  "category": "travel",
+  "commonsCategory": "Passenger trains",
+  "photo": true,
+  "article": "Train"
+ },
+ {
+  "id": "travel-schedule",
+  "word": "schedule",
+  "pos": "n.",
+  "ipa": "/ˈskedʒ.uːl/",
+  "thai": "ตารางเวลา",
+  "emoji": "📅",
+  "imageQuery": "travel schedule calendar",
+  "example": "Please check the train schedule before we leave home.",
+  "exampleThai": "ช่วยเช็กตารางรถไฟก่อนเราออกจากบ้านหน่อยนะ",
+  "keyVocab": [
+   {
+    "en": "schedule",
+    "thai": "ตารางเวลา"
+   },
+   {
+    "en": "check",
+    "thai": "ตรวจสอบ / ดู"
+   },
+   {
+    "en": "before we leave",
+    "thai": "ก่อนที่เราจะออกเดินทาง"
+   }
+  ],
+  "tip": "schedule สำเนียงอเมริกันออกเสียง สเก็ดจูล ไม่ใช่ เช็ดจูล แบบอังกฤษ",
+  "category": "travel",
+  "commonsCategory": "Timetables",
+  "photo": true,
+  "article": "Public transport timetable"
+ },
+ {
+  "id": "travel-destination",
+  "word": "destination",
+  "pos": "n.",
+  "ipa": "/ˌdes.təˈneɪ.ʃən/",
+  "thai": "จุดหมายปลายทาง",
+  "emoji": "📍",
+  "imageQuery": "destination map pin",
+  "example": "Our final destination is a small island in the south.",
+  "exampleThai": "จุดหมายสุดท้ายของเราคือเกาะเล็กๆ ทางภาคใต้",
+  "keyVocab": [
+   {
+    "en": "final destination",
+    "thai": "จุดหมายปลายทางสุดท้าย"
+   },
+   {
+    "en": "island",
+    "thai": "เกาะ"
+   },
+   {
+    "en": "in the south",
+    "thai": "ทางภาคใต้"
+   }
+  ],
+  "tip": "destination คือจุดหมายปลายทาง มักได้ยินคำว่า final destination ในประกาศสนามบิน",
+  "category": "travel",
+  "commonsCategory": "Tourism",
+  "photo": true,
+  "article": "Destination"
+ },
+ {
+  "id": "travel-gate",
+  "word": "gate",
+  "pos": "n.",
+  "ipa": "/ɡeɪt/",
+  "thai": "ประตูขึ้นเครื่อง",
+  "emoji": "🚪",
+  "imageQuery": "airport boarding gate",
+  "example": "Our flight leaves from gate twelve at nine o'clock.",
+  "exampleThai": "เที่ยวบินเราออกจากประตู 12 ตอนเก้าโมง",
+  "keyVocab": [
+   {
+    "en": "flight",
+    "thai": "เที่ยวบิน"
+   },
+   {
+    "en": "gate",
+    "thai": "ประตูขึ้นเครื่อง"
+   },
+   {
+    "en": "leaves from",
+    "thai": "ออกจาก"
+   }
+  ],
+  "tip": "gate ในสนามบินคือประตูขึ้นเครื่อง ควรถึงก่อนเวลาออกอย่างน้อย 30 นาที",
+  "category": "travel",
+  "commonsCategory": "Airport gates",
+  "photo": true,
+  "article": "Gate (airport)"
+ },
+ {
+  "id": "travel-turn-left",
+  "word": "turn left",
+  "pos": "phr.",
+  "ipa": "/ˌtɝːn ˈleft/",
+  "thai": "เลี้ยวซ้าย",
+  "emoji": "⬅️",
+  "imageQuery": "turning left street",
+  "example": "Walk two blocks and then turn left at the bank.",
+  "exampleThai": "เดินไปสองช่วงตึก แล้วเลี้ยวซ้ายตรงธนาคาร",
+  "keyVocab": [
+   {
+    "en": "turn left",
+    "thai": "เลี้ยวซ้าย"
+   },
+   {
+    "en": "blocks",
+    "thai": "ช่วงตึก"
+   },
+   {
+    "en": "bank",
+    "thai": "ธนาคาร"
+   }
+  ],
+  "tip": "turn left = เลี้ยวซ้าย, turn right = เลี้ยวขวา, go straight = ตรงไป",
+  "category": "travel",
+  "commonsCategory": "Turn signs",
+  "photo": true,
+  "article": "Traffic sign"
+ },
+ {
+  "id": "travel-ask-for-directions",
+  "word": "ask for directions",
+  "pos": "phr.",
+  "ipa": "/ˈæsk fər dəˈrek.ʃənz/",
+  "thai": "ถามทาง",
+  "emoji": "🧭",
+  "imageQuery": "asking directions tourist",
+  "example": "If you get lost, ask for directions at the hotel.",
+  "exampleThai": "ถ้าหลงทางก็ถามทางที่โรงแรมได้เลย",
+  "keyVocab": [
+   {
+    "en": "get lost",
+    "thai": "หลงทาง"
+   },
+   {
+    "en": "ask for directions",
+    "thai": "ถามทาง"
+   },
+   {
+    "en": "hotel",
+    "thai": "โรงแรม"
+   }
+  ],
+  "tip": "ask for directions = ถามทาง เริ่มประโยคสุภาพด้วย Excuse me, where is ...?",
+  "category": "travel",
+  "commonsCategory": "People pointing",
+  "photo": true
+ },
+ {
+  "id": "home-apartment",
+  "word": "apartment",
+  "pos": "n.",
+  "ipa": "/əˈpɑːrt.mənt/",
+  "thai": "อพาร์ตเมนต์ / ห้องชุด",
+  "emoji": "🏢",
+  "imageQuery": "modern apartment building",
+  "example": "My apartment is on the fifth floor near the market.",
+  "exampleThai": "อพาร์ตเมนต์ของฉันอยู่ชั้นห้าใกล้ตลาด",
+  "keyVocab": [
+   {
+    "en": "apartment",
+    "thai": "อพาร์ตเมนต์"
+   },
+   {
+    "en": "fifth floor",
+    "thai": "ชั้นห้า"
+   },
+   {
+    "en": "near the market",
+    "thai": "ใกล้ตลาด"
+   }
+  ],
+  "tip": "apartment คือห้องชุดให้เช่า อังกฤษใช้ flat ส่วน condo คือห้องชุดที่ซื้อกรรมสิทธิ์",
+  "category": "home",
+  "commonsCategory": "Apartment buildings",
+  "photo": true,
+  "article": "Apartment"
+ },
+ {
+  "id": "home-house",
+  "word": "house",
+  "pos": "n.",
+  "ipa": "/haʊs/",
+  "thai": "บ้าน",
+  "emoji": "🏠",
+  "imageQuery": "family house exterior",
+  "example": "Their new house has a small garden and a garage.",
+  "exampleThai": "บ้านหลังใหม่ของพวกเขามีสวนเล็กๆ กับโรงรถ",
+  "keyVocab": [
+   {
+    "en": "new house",
+    "thai": "บ้านหลังใหม่"
+   },
+   {
+    "en": "garden",
+    "thai": "สวน"
+   },
+   {
+    "en": "garage",
+    "thai": "โรงรถ"
+   }
+  ],
+  "tip": "house คือตัวบ้าน ส่วน home คือบ้านในความรู้สึก ใช้พูดถึงที่ที่เราอยู่อาศัย",
+  "category": "home",
+  "commonsCategory": "Houses",
+  "photo": true,
+  "article": "House"
+ },
+ {
+  "id": "home-bedroom",
+  "word": "bedroom",
+  "pos": "n.",
+  "ipa": "/ˈbed.ruːm/",
+  "thai": "ห้องนอน",
+  "emoji": "🛏️",
+  "imageQuery": "cozy bedroom interior",
+  "example": "I share a bedroom with my younger brother.",
+  "exampleThai": "ฉันนอนห้องเดียวกับน้องชาย",
+  "keyVocab": [
+   {
+    "en": "share",
+    "thai": "ใช้ร่วมกัน"
+   },
+   {
+    "en": "bedroom",
+    "thai": "ห้องนอน"
+   },
+   {
+    "en": "younger brother",
+    "thai": "น้องชาย"
+   }
+  ],
+  "tip": "bedroom คือห้องนอน bathroom คือห้องน้ำ และ kitchen คือห้องครัว",
+  "category": "home",
+  "commonsCategory": "Bedrooms",
+  "photo": true,
+  "article": "Bedroom"
+ },
+ {
+  "id": "home-kitchen",
+  "word": "kitchen",
+  "pos": "n.",
+  "ipa": "/ˈkɪtʃ.ən/",
+  "thai": "ห้องครัว",
+  "emoji": "🍳",
+  "imageQuery": "home kitchen interior",
+  "example": "My mother is cooking dinner in the kitchen right now.",
+  "exampleThai": "ตอนนี้แม่กำลังทำอาหารเย็นอยู่ในครัว",
+  "keyVocab": [
+   {
+    "en": "cooking dinner",
+    "thai": "ทำอาหารเย็น"
+   },
+   {
+    "en": "kitchen",
+    "thai": "ห้องครัว"
+   },
+   {
+    "en": "right now",
+    "thai": "ตอนนี้"
+   }
+  ],
+  "tip": "kitchen อ่านว่า คิทเช่น ระวังออกเสียงเป็น คิชเช่น ซึ่งไม่ถูกต้อง",
+  "category": "home",
+  "commonsCategory": "Kitchens",
+  "photo": true,
+  "article": "Kitchen"
+ },
+ {
+  "id": "home-living-room",
+  "word": "living room",
+  "pos": "n.",
+  "ipa": "/ˈlɪv.ɪŋ ruːm/",
+  "thai": "ห้องนั่งเล่น",
+  "emoji": "🛋️",
+  "imageQuery": "living room sofa",
+  "example": "We watch TV together in the living room every night.",
+  "exampleThai": "เราดูทีวีด้วยกันที่ห้องนั่งเล่นทุกคืน",
+  "keyVocab": [
+   {
+    "en": "watch TV",
+    "thai": "ดูทีวี"
+   },
+   {
+    "en": "living room",
+    "thai": "ห้องนั่งเล่น"
+   },
+   {
+    "en": "every night",
+    "thai": "ทุกคืน"
+   }
+  ],
+  "tip": "living room คือห้องนั่งเล่น บางคนเรียกว่า lounge หรือ family room",
+  "category": "home",
+  "commonsCategory": "Living rooms",
+  "photo": true,
+  "article": "Living room"
+ },
+ {
+  "id": "home-furniture",
+  "word": "furniture",
+  "pos": "n.",
+  "ipa": "/ˈfɝː.nɪ.tʃɚ/",
+  "thai": "เครื่องเรือน / เฟอร์นิเจอร์",
+  "emoji": "🪑",
+  "imageQuery": "wooden furniture set",
+  "example": "We bought some new furniture for our small living room.",
+  "exampleThai": "เราซื้อเฟอร์นิเจอร์ใหม่เข้าห้องนั่งเล่นเล็กๆ ของเรา",
+  "keyVocab": [
+   {
+    "en": "bought",
+    "thai": "ซื้อ (อดีตของ buy)"
+   },
+   {
+    "en": "furniture",
+    "thai": "เฟอร์นิเจอร์"
+   },
+   {
+    "en": "living room",
+    "thai": "ห้องนั่งเล่น"
+   }
+  ],
+  "tip": "furniture เป็นคำนับไม่ได้ ห้ามเติม s ถ้าจะนับใช้ a piece of furniture",
+  "category": "home",
+  "commonsCategory": "Furniture",
+  "photo": true,
+  "article": "Furniture"
+ },
+ {
+  "id": "home-lamp",
+  "word": "lamp",
+  "pos": "n.",
+  "ipa": "/læmp/",
+  "thai": "โคมไฟ",
+  "emoji": "💡",
+  "imageQuery": "bedside table lamp",
+  "example": "Please turn on the lamp next to my bed.",
+  "exampleThai": "ช่วยเปิดโคมไฟข้างเตียงฉันหน่อย",
+  "keyVocab": [
+   {
+    "en": "turn on",
+    "thai": "เปิด (ไฟ/เครื่องใช้)"
+   },
+   {
+    "en": "lamp",
+    "thai": "โคมไฟ"
+   },
+   {
+    "en": "next to my bed",
+    "thai": "ข้างเตียงของฉัน"
+   }
+  ],
+  "tip": "lamp คือโคมไฟไฟตั้งโต๊ะหรือหัวเตียง ส่วนไฟเพดานเรียกว่า light",
+  "category": "home",
+  "commonsCategory": "Lamps",
+  "photo": true,
+  "article": "Light fixture"
+ },
+ {
+  "id": "home-refrigerator",
+  "word": "refrigerator",
+  "pos": "n.",
+  "ipa": "/rɪˈfrɪdʒ.ə.reɪ.tɚ/",
+  "thai": "ตู้เย็น",
+  "emoji": "🧊",
+  "imageQuery": "open refrigerator kitchen",
+  "example": "There is no milk left in the refrigerator.",
+  "exampleThai": "นมในตู้เย็นไม่เหลือแล้ว",
+  "keyVocab": [
+   {
+    "en": "milk",
+    "thai": "นม"
+   },
+   {
+    "en": "left",
+    "thai": "เหลืออยู่"
+   },
+   {
+    "en": "refrigerator",
+    "thai": "ตู้เย็น"
+   }
+  ],
+  "tip": "refrigerator คือตู้เย็น ในภาษาพูดมักย่อสั้นๆ ว่า fridge",
+  "category": "home",
+  "commonsCategory": "Refrigerators",
+  "photo": true,
+  "article": "Refrigerator"
+ },
+ {
+  "id": "home-rent",
+  "word": "rent",
+  "pos": "n.",
+  "ipa": "/rent/",
+  "thai": "ค่าเช่า",
+  "emoji": "💰",
+  "imageQuery": "rent payment money",
+  "example": "The rent for this room is due on Friday.",
+  "exampleThai": "ค่าเช่าห้องนี้ต้องจ่ายวันศุกร์",
+  "keyVocab": [
+   {
+    "en": "rent",
+    "thai": "ค่าเช่า"
+   },
+   {
+    "en": "due on Friday",
+    "thai": "ครบกำหนดวันศุกร์"
+   },
+   {
+    "en": "room",
+    "thai": "ห้อง"
+   }
+  ],
+  "tip": "rent เป็นได้ทั้งคำนาม (ค่าเช่า) และคำกริยา (เช่า) เช่น I rent a room.",
+  "category": "home",
+  "commonsCategory": "Renting",
+  "photo": true,
+  "article": "Renting"
+ },
+ {
+  "id": "home-neighbor",
+  "word": "neighbor",
+  "pos": "n.",
+  "ipa": "/ˈneɪ.bɚ/",
+  "thai": "เพื่อนบ้าน",
+  "emoji": "🏘️",
+  "imageQuery": "friendly neighbors house",
+  "example": "My neighbor always helps me when I am busy.",
+  "exampleThai": "เพื่อนบ้านฉันช่วยฉันทุกครั้งที่ฉันยุ่ง",
+  "keyVocab": [
+   {
+    "en": "neighbor",
+    "thai": "เพื่อนบ้าน"
+   },
+   {
+    "en": "helps",
+    "thai": "ช่วย"
+   },
+   {
+    "en": "busy",
+    "thai": "ยุ่ง / ไม่ว่าง"
+   }
+  ],
+  "tip": "neighbor สะกดแบบอเมริกัน อังกฤษเขียน neighbour ออกเสียง เนย์เบอร์",
+  "category": "home",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Neighbor"
+ },
+ {
+  "id": "home-key",
+  "word": "key",
+  "pos": "n.",
+  "ipa": "/kiː/",
+  "thai": "กุญแจ",
+  "emoji": "🔑",
+  "imageQuery": "door key lock",
+  "example": "I can't find my house key anywhere.",
+  "exampleThai": "ฉันหากุญแจบ้านไม่เจอเลย",
+  "keyVocab": [
+   {
+    "en": "house key",
+    "thai": "กุญแจบ้าน"
+   },
+   {
+    "en": "anywhere",
+    "thai": "ที่ไหนเลย"
+   },
+   {
+    "en": "find",
+    "thai": "หาเจอ"
+   }
+  ],
+  "tip": "key = กุญแจดอกหนึ่งใช้ a key ส่วนพวงกุญแจเรียกว่า keychain",
+  "category": "home",
+  "commonsCategory": "Keys",
+  "photo": true,
+  "article": "Lock and key"
+ },
+ {
+  "id": "home-balcony",
+  "word": "balcony",
+  "pos": "n.",
+  "ipa": "/ˈbæl.kə.ni/",
+  "thai": "ระเบียง",
+  "emoji": "🌇",
+  "imageQuery": "apartment balcony view",
+  "example": "We drink coffee on the balcony every Sunday morning.",
+  "exampleThai": "เรานั่งดื่มกาแฟที่ระเบียงทุกเช้าวันอาทิตย์",
+  "keyVocab": [
+   {
+    "en": "coffee",
+    "thai": "กาแฟ"
+   },
+   {
+    "en": "balcony",
+    "thai": "ระเบียง"
+   },
+   {
+    "en": "Sunday morning",
+    "thai": "เช้าวันอาทิตย์"
+   }
+  ],
+  "tip": "balcony อ่านว่า แบ็ล-คะ-นี เน้นพยางค์แรก หมายถึงระเบียง",
+  "category": "home",
+  "commonsCategory": "Balconies",
+  "photo": true,
+  "article": "Balcony"
+ },
+ {
+  "id": "shopping-receipt",
+  "word": "receipt",
+  "pos": "n.",
+  "ipa": "/rɪˈsiːt/",
+  "thai": "ใบเสร็จ",
+  "emoji": "🧾",
+  "imageQuery": "shopping receipt paper",
+  "example": "Could you give me a receipt for this purchase?",
+  "exampleThai": "ขอใบเสร็จสำหรับการซื้อนี้ด้วยได้ไหม",
+  "keyVocab": [
+   {
+    "en": "Could you",
+    "thai": "คุณช่วย...ได้ไหม (สุภาพ)"
+   },
+   {
+    "en": "purchase",
+    "thai": "การซื้อ / สิ่งที่ซื้อ"
+   }
+  ],
+  "tip": "receipt ออกเสียงว่า ri-SEET ตัว p ไม่ต้องออกเสียง และเป็นคำนามนับได้",
+  "category": "shopping",
+  "commonsCategory": "Receipts",
+  "photo": true,
+  "article": "Receipt"
+ },
+ {
+  "id": "shopping-price",
+  "word": "price",
+  "pos": "n.",
+  "ipa": "/praɪs/",
+  "thai": "ราคา",
+  "emoji": "🏷️",
+  "imageQuery": "price tag clothes",
+  "example": "The price of this shirt is too high for me.",
+  "exampleThai": "ราคาเสื้อตัวนี้แพงเกินไปสำหรับเรา",
+  "keyVocab": [
+   {
+    "en": "price",
+    "thai": "ราคา"
+   },
+   {
+    "en": "too high",
+    "thai": "แพงเกินไป / สูงเกินไป"
+   }
+  ],
+  "tip": "ถามราคาแบบสุภาพว่า How much is it? ส่วน price มักใช้กับ of + สิ่งของ",
+  "category": "shopping",
+  "commonsCategory": "Price tags",
+  "photo": true,
+  "article": "Price"
+ },
+ {
+  "id": "shopping-discount",
+  "word": "discount",
+  "pos": "n.",
+  "ipa": "/ˈdɪskaʊnt/",
+  "thai": "ส่วนลด",
+  "emoji": "🔻",
+  "imageQuery": "sale discount sign",
+  "example": "This shop gives a ten percent discount to students.",
+  "exampleThai": "ร้านนี้ให้ส่วนลดสิบเปอร์เซ็นต์กับนักเรียนนักศึกษา",
+  "keyVocab": [
+   {
+    "en": "discount",
+    "thai": "ส่วนลด"
+   },
+   {
+    "en": "ten percent",
+    "thai": "สิบเปอร์เซ็นต์"
+   },
+   {
+    "en": "students",
+    "thai": "นักเรียน / นักศึกษา"
+   }
+  ],
+  "tip": "พูดถึงส่วนลดว่า get / give a discount และใช้ on กับสินค้า เช่น a discount on shoes",
+  "category": "shopping",
+  "commonsCategory": "Discounts",
+  "photo": true,
+  "article": "Discounts and allowances"
+ },
+ {
+  "id": "shopping-change",
+  "word": "change",
+  "pos": "n.",
+  "ipa": "/tʃeɪndʒ/",
+  "thai": "เงินทอน",
+  "emoji": "🪙",
+  "imageQuery": "coins change hand",
+  "example": "I paid with a hundred baht note and got some change.",
+  "exampleThai": "เราจ่ายด้วยแบงก์ร้อยแล้วได้เงินทอนมา",
+  "keyVocab": [
+   {
+    "en": "paid",
+    "thai": "จ่าย (รูปอดีตของ pay)"
+   },
+   {
+    "en": "note",
+    "thai": "ธนบัตร"
+   },
+   {
+    "en": "change",
+    "thai": "เงินทอน"
+   }
+  ],
+  "tip": "change แปลว่าเงินทอนได้ด้วย นอกจากแปลว่าเปลี่ยนแปลง ดูจากบริบทของประโยค",
+  "category": "shopping",
+  "commonsCategory": "Coins",
+  "photo": true
+ },
+ {
+  "id": "shopping-credit-card",
+  "word": "credit card",
+  "pos": "n.",
+  "ipa": "/ˈkredɪt kɑːrd/",
+  "thai": "บัตรเครดิต",
+  "emoji": "💳",
+  "imageQuery": "credit card payment",
+  "example": "Can I pay by credit card instead of cash?",
+  "exampleThai": "ขอจ่ายด้วยบัตรเครดิตแทนเงินสดได้ไหม",
+  "keyVocab": [
+   {
+    "en": "pay",
+    "thai": "จ่ายเงิน"
+   },
+   {
+    "en": "credit card",
+    "thai": "บัตรเครดิต"
+   },
+   {
+    "en": "instead of",
+    "thai": "แทนที่ / แทน"
+   }
+  ],
+  "tip": "ใช้ pay by credit card แต่ใช้ pay in cash สังเกตคำบุพบทต่างกัน",
+  "category": "shopping",
+  "commonsCategory": "Credit cards",
+  "photo": true,
+  "article": "Credit card"
+ },
+ {
+  "id": "shopping-cash",
+  "word": "cash",
+  "pos": "n.",
+  "ipa": "/kæʃ/",
+  "thai": "เงินสด",
+  "emoji": "💵",
+  "imageQuery": "cash banknotes wallet",
+  "example": "I don't have any cash, so I will use my card.",
+  "exampleThai": "เราไม่มีเงินสดเลย เดี๋ยวจะใช้บัตรแทน",
+  "keyVocab": [
+   {
+    "en": "cash",
+    "thai": "เงินสด"
+   },
+   {
+    "en": "card",
+    "thai": "บัตร"
+   }
+  ],
+  "tip": "cash เป็นคำนามนับไม่ได้ จึงพูดว่า some cash หรือ a little cash ไม่ใช้ a cash",
+  "category": "shopping",
+  "commonsCategory": "Banknotes",
+  "photo": true,
+  "article": "Cash"
+ },
+ {
+  "id": "shopping-expensive",
+  "word": "expensive",
+  "pos": "adj.",
+  "ipa": "/ɪkˈspensɪv/",
+  "thai": "แพง",
+  "emoji": "💰",
+  "imageQuery": "expensive luxury store",
+  "example": "That bag is very expensive, so I will wait for a sale.",
+  "exampleThai": "กระเป๋าใบนั้นแพงมาก เราเลยจะรอตอนลดราคา",
+  "keyVocab": [
+   {
+    "en": "expensive",
+    "thai": "แพง"
+   },
+   {
+    "en": "sale",
+    "thai": "การลดราคา"
+   }
+  ],
+  "tip": "expensive ใช้กับสิ่งของ อย่าใช้บอกว่าคนแพง ให้ใช้ค่าใช้จ่ายสูงแทน",
+  "category": "shopping",
+  "commonsCategory": "Luxury goods",
+  "photo": true
+ },
+ {
+  "id": "shopping-cheap",
+  "word": "cheap",
+  "pos": "adj.",
+  "ipa": "/tʃiːp/",
+  "thai": "ถูก (ราคาไม่แพง)",
+  "emoji": "🪙",
+  "imageQuery": "cheap market stall",
+  "example": "This market is cheap, and the food is fresh.",
+  "exampleThai": "ตลาดนี้ของถูก และอาหารก็สดใหม่",
+  "keyVocab": [
+   {
+    "en": "market",
+    "thai": "ตลาด"
+   },
+   {
+    "en": "cheap",
+    "thai": "ถูก (ราคาไม่แพง)"
+   },
+   {
+    "en": "fresh",
+    "thai": "สด / สดใหม่"
+   }
+  ],
+  "tip": "cheap บอกว่าของถูก แต่ถ้าอยากสุภาพขึ้นใช้ไม่แพง good value หรือ affordable",
+  "category": "shopping",
+  "commonsCategory": null,
+  "photo": false
+ },
+ {
+  "id": "shopping-bargain",
+  "word": "bargain",
+  "pos": "v.",
+  "ipa": "/ˈbɑːrɡən/",
+  "thai": "ต่อรองราคา",
+  "emoji": "🤝",
+  "imageQuery": "market bargaining vendor",
+  "example": "In many markets, you can bargain with the seller.",
+  "exampleThai": "ในตลาดหลายแห่ง คุณต่อรองราคากับแม่ค้าได้",
+  "keyVocab": [
+   {
+    "en": "markets",
+    "thai": "ตลาด (หลายแห่ง)"
+   },
+   {
+    "en": "bargain",
+    "thai": "ต่อรองราคา"
+   },
+   {
+    "en": "seller",
+    "thai": "ผู้ขาย / แม่ค้า"
+   }
+  ],
+  "tip": "bargain ใช้เป็นคำกริยาแปลว่าต่อรอง และเป็นคำนามแปลว่าของถูกได้ด้วย",
+  "category": "shopping",
+  "commonsCategory": "Bargaining",
+  "photo": true,
+  "article": "Bargaining"
+ },
+ {
+  "id": "shopping-bank",
+  "word": "bank",
+  "pos": "n.",
+  "ipa": "/bæŋk/",
+  "thai": "ธนาคาร",
+  "emoji": "🏦",
+  "imageQuery": "bank building entrance",
+  "example": "I need to go to the bank to open a new account.",
+  "exampleThai": "เราต้องไปธนาคารเพื่อเปิดบัญชีใหม่",
+  "keyVocab": [
+   {
+    "en": "bank",
+    "thai": "ธนาคาร"
+   },
+   {
+    "en": "open",
+    "thai": "เปิด (บัญชี)"
+   },
+   {
+    "en": "account",
+    "thai": "บัญชี"
+   }
+  ],
+  "tip": "go to the bank ต้องมี the เพราะหมายถึงธนาคารที่เราจะไปแห่งนั้น",
+  "category": "shopping",
+  "commonsCategory": "Banks",
+  "photo": true,
+  "article": "Bank"
+ },
+ {
+  "id": "shopping-save",
+  "word": "save",
+  "pos": "v.",
+  "ipa": "/seɪv/",
+  "thai": "ออม / ประหยัด",
+  "emoji": "🐖",
+  "imageQuery": "piggy bank saving money",
+  "example": "I save fifty baht every day for my trip.",
+  "exampleThai": "เราออมเงินวันละห้าสิบบาทเพื่อทริปของเรา",
+  "keyVocab": [
+   {
+    "en": "save",
+    "thai": "ออม / ประหยัด"
+   },
+   {
+    "en": "every day",
+    "thai": "ทุกวัน"
+   },
+   {
+    "en": "trip",
+    "thai": "การเดินทาง / ทริป"
+   }
+  ],
+  "tip": "save money = ออมเงิน ส่วน save time = ประหยัดเวลา ใช้คำตามหลังต่างกัน",
+  "category": "shopping",
+  "commonsCategory": "Money boxes",
+  "photo": true,
+  "article": "Saving"
+ },
+ {
+  "id": "shopping-wallet",
+  "word": "wallet",
+  "pos": "n.",
+  "ipa": "/ˈwɑːlɪt/",
+  "thai": "กระเป๋าสตางค์",
+  "emoji": "👛",
+  "imageQuery": "leather wallet money",
+  "example": "My wallet is empty because I bought too many things.",
+  "exampleThai": "กระเป๋าสตางค์เราแบน เพราะซื้อของเยอะเกินไป",
+  "keyVocab": [
+   {
+    "en": "wallet",
+    "thai": "กระเป๋าสตางค์"
+   },
+   {
+    "en": "empty",
+    "thai": "ว่างเปล่า / ไม่มีเงิน"
+   },
+   {
+    "en": "bought",
+    "thai": "ซื้อ (รูปอดีตของ buy)"
+   }
+  ],
+  "tip": "wallet ใช้กับกระเป๋าสตางค์ผู้ชาย ส่วน purse มักใช้กับกระเป๋าผู้หญิง",
+  "category": "shopping",
+  "commonsCategory": "Wallets",
+  "photo": true,
+  "article": "Wallet"
+ },
+ {
+  "id": "health-fever",
+  "word": "fever",
+  "pos": "n.",
+  "ipa": "/ˈfiːvər/",
+  "thai": "ไข้ / มีไข้",
+  "emoji": "🤒",
+  "imageQuery": "sick person thermometer",
+  "example": "I have a high fever, so I will stay home today.",
+  "exampleThai": "เรามีไข้สูง วันนี้เลยจะพักอยู่บ้าน",
+  "keyVocab": [
+   {
+    "en": "fever",
+    "thai": "ไข้"
+   },
+   {
+    "en": "stay home",
+    "thai": "อยู่บ้าน"
+   }
+  ],
+  "tip": "ใช้ have a fever หรือ have a high fever ไม่ต้องใส่คำอื่นนำหน้า",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Fever"
+ },
+ {
+  "id": "health-headache",
+  "word": "headache",
+  "pos": "n.",
+  "ipa": "/ˈhedeɪk/",
+  "thai": "อาการปวดหัว",
+  "emoji": "🤕",
+  "imageQuery": "person headache pain",
+  "example": "I have a bad headache, so I need to rest.",
+  "exampleThai": "เราปวดหัวมาก ต้องพักหน่อย",
+  "keyVocab": [
+   {
+    "en": "headache",
+    "thai": "อาการปวดหัว"
+   },
+   {
+    "en": "rest",
+    "thai": "พักผ่อน"
+   }
+  ],
+  "tip": "ภาษาอังกฤษใช้ have a headache ส่วนภาษาไทยพูดว่าปวดหัว",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Headache"
+ },
+ {
+  "id": "health-cough",
+  "word": "cough",
+  "pos": "v.",
+  "ipa": "/kɔːf/",
+  "thai": "ไอ",
+  "emoji": "😷",
+  "imageQuery": "person coughing tissue",
+  "example": "I cough a lot at night and cannot sleep well.",
+  "exampleThai": "เรากลางคืนไอเยอะมาก นอนไม่ค่อยหลับ",
+  "keyVocab": [
+   {
+    "en": "cough",
+    "thai": "ไอ"
+   },
+   {
+    "en": "at night",
+    "thai": "ตอนกลางคืน"
+   },
+   {
+    "en": "sleep well",
+    "thai": "นอนหลับสบาย"
+   }
+  ],
+  "tip": "cough เป็นได้ทั้งกริยาและคำนาม เช่น have a bad cough = ไอหนัก",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Cough"
+ },
+ {
+  "id": "health-sore-throat",
+  "word": "sore throat",
+  "pos": "n.",
+  "ipa": "/sɔːr θroʊt/",
+  "thai": "เจ็บคอ",
+  "emoji": "🗣️",
+  "imageQuery": "sore throat pain",
+  "example": "I have a sore throat, so it is hard to talk.",
+  "exampleThai": "เราเจ็บคอ เลยพูดลำบาก",
+  "keyVocab": [
+   {
+    "en": "sore throat",
+    "thai": "เจ็บคอ"
+   },
+   {
+    "en": "hard to talk",
+    "thai": "พูดลำบาก"
+   }
+  ],
+  "tip": "ใช้ have a sore throat และ sore แปลว่าเจ็บแบบตึง ๆ ไม่ใช่บาดแผล",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Sore throat"
+ },
+ {
+  "id": "health-stomachache",
+  "word": "stomachache",
+  "pos": "n.",
+  "ipa": "/ˈstʌməkeɪk/",
+  "thai": "อาการปวดท้อง",
+  "emoji": "🤢",
+  "imageQuery": "stomach pain person",
+  "example": "My stomachache started after I ate some spicy food.",
+  "exampleThai": "เราปวดท้องหลังจากกินอาหารรสเผ็ด",
+  "keyVocab": [
+   {
+    "en": "stomachache",
+    "thai": "อาการปวดท้อง"
+   },
+   {
+    "en": "spicy food",
+    "thai": "อาหารรสเผ็ด"
+   }
+  ],
+  "tip": "เขียนติดกันว่า stomachache และใช้ have a stomachache ได้เช่นกัน",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Abdominal pain"
+ },
+ {
+  "id": "health-rest",
+  "word": "rest",
+  "pos": "v.",
+  "ipa": "/rest/",
+  "thai": "พักผ่อน",
+  "emoji": "🛌",
+  "imageQuery": "person resting in bed",
+  "example": "You should rest at home until the fever goes down.",
+  "exampleThai": "คุณควรพักผ่อนอยู่บ้านจนกว่าไข้จะลด",
+  "keyVocab": [
+   {
+    "en": "You should",
+    "thai": "คุณควร"
+   },
+   {
+    "en": "until",
+    "thai": "จนกว่า"
+   }
+  ],
+  "tip": "rest เป็นได้ทั้งกริยา (พักผ่อน) และคำนาม เช่น take a rest = พักสักหน่อย",
+  "category": "health",
+  "commonsCategory": "Resting",
+  "photo": true,
+  "article": "Rest"
+ },
+ {
+  "id": "health-ill",
+  "word": "ill",
+  "pos": "adj.",
+  "ipa": "/ɪl/",
+  "thai": "ป่วย / ไม่สบาย",
+  "emoji": "🤧",
+  "imageQuery": "sick person bed",
+  "example": "She was ill last week, so she missed two lessons.",
+  "exampleThai": "เธอป่วยเมื่อสัปดาห์ที่แล้ว เลยขาดเรียนสองคาบ",
+  "keyVocab": [
+   {
+    "en": "ill",
+    "thai": "ป่วย"
+   },
+   {
+    "en": "last week",
+    "thai": "สัปดาห์ที่แล้ว"
+   },
+   {
+    "en": "missed",
+    "thai": "พลาด / ขาด (เรียน)"
+   }
+  ],
+  "tip": "ill มักตามหลังคำกริยา be เช่น be ill ส่วน sick ใช้ได้กว้างกว่า",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Disease"
+ },
+ {
+  "id": "health-doctor",
+  "word": "doctor",
+  "pos": "n.",
+  "ipa": "/ˈdɑːktər/",
+  "thai": "หมอ / แพทย์",
+  "emoji": "👨‍⚕️",
+  "imageQuery": "doctor hospital stethoscope",
+  "example": "The doctor said I should drink more water and rest.",
+  "exampleThai": "คุณหมอบอกว่าเราควรดื่มน้ำมากขึ้นและพักผ่อน",
+  "keyVocab": [
+   {
+    "en": "doctor",
+    "thai": "หมอ"
+   },
+   {
+    "en": "drink more water",
+    "thai": "ดื่มน้ำมากขึ้น"
+   },
+   {
+    "en": "rest",
+    "thai": "พักผ่อน"
+   }
+  ],
+  "tip": "go to the doctor = ไปหาหมอ ต้องมี the และมักใช้กับกริยา go",
+  "category": "health",
+  "commonsCategory": "Physicians",
+  "photo": true,
+  "article": "Medical doctor"
+ },
+ {
+  "id": "health-appointment",
+  "word": "appointment",
+  "pos": "n.",
+  "ipa": "/əˈpɔɪntmənt/",
+  "thai": "การนัดหมาย",
+  "emoji": "📅",
+  "imageQuery": "calendar appointment schedule",
+  "example": "I have an appointment with the dentist this afternoon.",
+  "exampleThai": "เรามีนัดกับหมอฟันช่วงบ่ายนี้",
+  "keyVocab": [
+   {
+    "en": "appointment",
+    "thai": "การนัดหมาย"
+   },
+   {
+    "en": "dentist",
+    "thai": "หมอฟัน"
+   },
+   {
+    "en": "afternoon",
+    "thai": "ช่วงบ่าย"
+   }
+  ],
+  "tip": "ใช้ have an appointment with + คน เช่น with the dentist ไม่ใช้ to",
+  "category": "health",
+  "commonsCategory": "Calendars",
+  "photo": true,
+  "article": "Appointment"
+ },
+ {
+  "id": "health-medicine",
+  "word": "medicine",
+  "pos": "n.",
+  "ipa": "/ˈmedɪsɪn/",
+  "thai": "ยา",
+  "emoji": "💊",
+  "imageQuery": "medicine pills bottle",
+  "example": "Please take this medicine twice a day after meals.",
+  "exampleThai": "กรุณากินยานี้วันละสองครั้งหลังอาหาร",
+  "keyVocab": [
+   {
+    "en": "take",
+    "thai": "กิน / รับ (ยา)"
+   },
+   {
+    "en": "medicine",
+    "thai": "ยา"
+   },
+   {
+    "en": "twice a day",
+    "thai": "วันละสองครั้ง"
+   }
+  ],
+  "tip": "ภาษาอังกฤษใช้ take medicine ไม่ใช้ eat medicine และ medicine เป็นคำนามนับไม่ได้",
+  "category": "health",
+  "commonsCategory": "Pharmaceutical drugs",
+  "photo": true,
+  "article": "Medication"
+ },
+ {
+  "id": "health-hurt",
+  "word": "hurt",
+  "pos": "v.",
+  "ipa": "/hɜːrt/",
+  "thai": "เจ็บ / ทำให้เจ็บ",
+  "emoji": "🤕",
+  "imageQuery": "knee pain injury",
+  "example": "My knee hurts when I walk up the stairs.",
+  "exampleThai": "เข่าของเราเจ็บเวลาเดินขึ้นบันได",
+  "keyVocab": [
+   {
+    "en": "hurts",
+    "thai": "เจ็บ (ประธานเป็นส่วนของร่างกาย)"
+   },
+   {
+    "en": "knee",
+    "thai": "เข่า"
+   },
+   {
+    "en": "stairs",
+    "thai": "บันได"
+   }
+  ],
+  "tip": "พูดว่า My knee hurts ได้เลย ไม่ต้องใส่ it hurts my knee",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Pain"
+ },
+ {
+  "id": "health-healthy",
+  "word": "healthy",
+  "pos": "adj.",
+  "ipa": "/ˈhelθi/",
+  "thai": "สุขภาพดี / ดีต่อสุขภาพ",
+  "emoji": "🥗",
+  "imageQuery": "healthy food vegetables",
+  "example": "Eating vegetables every day helps you stay healthy.",
+  "exampleThai": "การกินผักทุกวันช่วยให้คุณมีสุขภาพดี",
+  "keyVocab": [
+   {
+    "en": "vegetables",
+    "thai": "ผัก"
+   },
+   {
+    "en": "every day",
+    "thai": "ทุกวัน"
+   },
+   {
+    "en": "healthy",
+    "thai": "สุขภาพดี"
+   }
+  ],
+  "tip": "healthy บอกว่ามีสุขภาพดีหรือดีต่อสุขภาพ ส่วน healthful ใช้กับอาหารเท่านั้น",
+  "category": "health",
+  "commonsCategory": "Physical exercise",
+  "photo": true,
+  "article": "Health"
+ },
+ {
+  "id": "work-meeting",
+  "word": "meeting",
+  "pos": "n.",
+  "ipa": "/ˈmiː.t̬ɪŋ/",
+  "thai": "การประชุม",
+  "emoji": "📅",
+  "imageQuery": "office team meeting",
+  "example": "We have a team meeting every Monday morning.",
+  "exampleThai": "เราประชุมทีมกันทุกเช้าวันจันทร์",
+  "keyVocab": [
+   {
+    "en": "team meeting",
+    "thai": "ประชุมทีม"
+   },
+   {
+    "en": "every Monday",
+    "thai": "ทุกวันจันทร์"
+   }
+  ],
+  "tip": "meeting เป็นคำนามนับได้ จึงพูดว่า a meeting หรือ two meetings",
+  "category": "work",
+  "commonsCategory": "Meetings",
+  "photo": true,
+  "article": "Meeting"
+ },
+ {
+  "id": "work-email",
+  "word": "email",
+  "pos": "n.",
+  "ipa": "/ˈiː.meɪl/",
+  "thai": "อีเมล",
+  "emoji": "📧",
+  "imageQuery": "laptop email inbox",
+  "example": "I sent an email to the client this morning.",
+  "exampleThai": "ฉันส่งอีเมลให้ลูกค้าเมื่อเช้านี้",
+  "keyVocab": [
+   {
+    "en": "sent an email",
+    "thai": "ส่งอีเมล"
+   },
+   {
+    "en": "the client",
+    "thai": "ลูกค้า"
+   }
+  ],
+  "tip": "ใช้ send an email to someone (ส่งอีเมลถึงใคร) ไม่ต้องใส่ preposition อื่นเพิ่ม",
+  "category": "work",
+  "commonsCategory": "E-mail",
+  "photo": true,
+  "article": "Email"
+ },
+ {
+  "id": "work-colleague",
+  "word": "colleague",
+  "pos": "n.",
+  "ipa": "/ˈkɑː.liːɡ/",
+  "thai": "เพื่อนร่วมงาน",
+  "emoji": "🤝",
+  "imageQuery": "colleagues talking office",
+  "example": "My colleague helped me finish the report yesterday.",
+  "exampleThai": "เพื่อนร่วมงานช่วยฉันทำรายงานให้เสร็จเมื่อวานนี้",
+  "keyVocab": [
+   {
+    "en": "My colleague",
+    "thai": "เพื่อนร่วมงานของฉัน"
+   },
+   {
+    "en": "helped me",
+    "thai": "ช่วยฉัน"
+   }
+  ],
+  "tip": "colleague ฟังดูเป็นทางการกว่า workmate ใช้กับเพื่อนร่วมงานทั่วไปได้เลย",
+  "category": "work",
+  "commonsCategory": "Office workers",
+  "photo": true,
+  "article": "Co-worker"
+ },
+ {
+  "id": "work-boss",
+  "word": "boss",
+  "pos": "n.",
+  "ipa": "/bɑːs/",
+  "thai": "หัวหน้า",
+  "emoji": "👔",
+  "imageQuery": "manager office desk",
+  "example": "My boss asked me to join the meeting tomorrow.",
+  "exampleThai": "หัวหน้าของฉันขอให้ฉันเข้าประชุมพรุ่งนี้",
+  "keyVocab": [
+   {
+    "en": "My boss",
+    "thai": "หัวหน้าของฉัน"
+   },
+   {
+    "en": "asked me to",
+    "thai": "ขอให้ฉัน"
+   }
+  ],
+  "tip": "boss ใช้พูดกันทั่วไป ส่วน manager หรือ supervisor ฟังดูเป็นทางการกว่า",
+  "category": "work",
+  "commonsCategory": "Businesspeople",
+  "photo": true,
+  "article": "Supervisor"
+ },
+ {
+  "id": "work-salary",
+  "word": "salary",
+  "pos": "n.",
+  "ipa": "/ˈsæl.ɚ.i/",
+  "thai": "เงินเดือน",
+  "emoji": "💰",
+  "imageQuery": "money salary payment",
+  "example": "The company pays my salary on the last day of the month.",
+  "exampleThai": "บริษัทจ่ายเงินเดือนฉันวันสุดท้ายของเดือน",
+  "keyVocab": [
+   {
+    "en": "pays my salary",
+    "thai": "จ่ายเงินเดือนฉัน"
+   },
+   {
+    "en": "the last day",
+    "thai": "วันสุดท้าย"
+   }
+  ],
+  "tip": "salary คือเงินเดือนรายเดือน ส่วน wage คือค่าจ้างรายวันหรือรายชั่วโมง",
+  "category": "work",
+  "commonsCategory": "Wages",
+  "photo": true,
+  "article": "Salary"
+ },
+ {
+  "id": "work-sick-leave",
+  "word": "sick leave",
+  "pos": "n.",
+  "ipa": "/ˈsɪk ˌliːv/",
+  "thai": "ลาป่วย",
+  "emoji": "🤒",
+  "imageQuery": "sick person bed",
+  "example": "She took three days of sick leave last week.",
+  "exampleThai": "เธอลาป่วยสามวันเมื่อสัปดาห์ที่แล้ว",
+  "keyVocab": [
+   {
+    "en": "three days of sick leave",
+    "thai": "ลาป่วยสามวัน"
+   },
+   {
+    "en": "last week",
+    "thai": "สัปดาห์ที่แล้ว"
+   }
+  ],
+  "tip": "ใช้ take sick leave (ลาป่วย) หรือ ask for sick leave (ขอลาป่วย)",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Sick leave"
+ },
+ {
+  "id": "work-apply-for",
+  "word": "apply for",
+  "pos": "phr.",
+  "ipa": "/əˈplaɪ fɚ/",
+  "thai": "สมัคร (งาน)",
+  "emoji": "📝",
+  "imageQuery": "writing job application",
+  "example": "I want to apply for a new job next month.",
+  "exampleThai": "ฉันอยากสมัครงานใหม่เดือนหน้า",
+  "keyVocab": [
+   {
+    "en": "apply for",
+    "thai": "สมัคร"
+   },
+   {
+    "en": "a new job",
+    "thai": "งานใหม่"
+   }
+  ],
+  "tip": "apply for + งานหรือตำแหน่ง เช่น apply for a job ไม่ใช่ apply to a job",
+  "category": "work",
+  "commonsCategory": "Recruitment",
+  "photo": true,
+  "article": "Application for employment"
+ },
+ {
+  "id": "work-deadline",
+  "word": "deadline",
+  "pos": "n.",
+  "ipa": "/ˈded.laɪn/",
+  "thai": "กำหนดส่งงาน",
+  "emoji": "⏰",
+  "imageQuery": "office clock time",
+  "example": "Our team has to meet the deadline by Friday afternoon.",
+  "exampleThai": "ทีมของเราต้องส่งงานให้ทันกำหนดบ่ายวันศุกร์",
+  "keyVocab": [
+   {
+    "en": "meet the deadline",
+    "thai": "ทำเสร็จทันกำหนด"
+   },
+   {
+    "en": "by Friday",
+    "thai": "ภายในวันศุกร์"
+   }
+  ],
+  "tip": "ใช้ meet the deadline (ทำทัน) แต่ miss the deadline (ทำไม่ทัน)",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Time limit"
+ },
+ {
+  "id": "work-overtime",
+  "word": "overtime",
+  "pos": "n.",
+  "ipa": "/ˈoʊ.vɚ.taɪm/",
+  "thai": "การทำงานล่วงเวลา",
+  "emoji": "🌙",
+  "imageQuery": "late night office",
+  "example": "He worked overtime every night to finish the project.",
+  "exampleThai": "เขาทำงานล่วงเวลาทุกคืนเพื่อให้โปรเจกต์เสร็จ",
+  "keyVocab": [
+   {
+    "en": "worked overtime",
+    "thai": "ทำงานล่วงเวลา"
+   },
+   {
+    "en": "every night",
+    "thai": "ทุกคืน"
+   }
+  ],
+  "tip": "work overtime แปลว่าทำโอที เป็นคำนามนับไม่ได้ ไม่ใช้ an overtime",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Overtime"
+ },
+ {
+  "id": "work-interview",
+  "word": "interview",
+  "pos": "n.",
+  "ipa": "/ˈɪn.t̬ɚ.vjuː/",
+  "thai": "การสัมภาษณ์งาน",
+  "emoji": "💼",
+  "imageQuery": "job interview handshake",
+  "example": "I answered many questions at my job interview today.",
+  "exampleThai": "ฉันตอบคำถามหลายข้อในการสัมภาษณ์งานวันนี้",
+  "keyVocab": [
+   {
+    "en": "job interview",
+    "thai": "การสัมภาษณ์งาน"
+   },
+   {
+    "en": "many questions",
+    "thai": "คำถามหลายข้อ"
+   }
+  ],
+  "tip": "go for an interview = ไปสัมภาษณ์งาน, have an interview = มีนัดสัมภาษณ์",
+  "category": "work",
+  "commonsCategory": "Job interviews",
+  "photo": true,
+  "article": "Job interview"
+ },
+ {
+  "id": "work-report",
+  "word": "report",
+  "pos": "n.",
+  "ipa": "/rɪˈpɔːrt/",
+  "thai": "รายงาน",
+  "emoji": "📊",
+  "imageQuery": "business report papers",
+  "example": "I have to send the monthly report before noon.",
+  "exampleThai": "ฉันต้องส่งรายงานประจำเดือนก่อนเที่ยง",
+  "keyVocab": [
+   {
+    "en": "the monthly report",
+    "thai": "รายงานประจำเดือน"
+   },
+   {
+    "en": "before noon",
+    "thai": "ก่อนเที่ยง"
+   }
+  ],
+  "tip": "report เป็นได้ทั้งคำนาม (รายงาน) และคำกริยา (รายงานให้ทราบ)",
+  "category": "work",
+  "commonsCategory": "Reports",
+  "photo": true,
+  "article": "Report"
+ },
+ {
+  "id": "work-promotion",
+  "word": "promotion",
+  "pos": "n.",
+  "ipa": "/prəˈmoʊ.ʃən/",
+  "thai": "การเลื่อนตำแหน่ง",
+  "emoji": "🎉",
+  "imageQuery": "success celebration office",
+  "example": "She got a promotion after two years of hard work.",
+  "exampleThai": "เธอได้เลื่อนตำแหน่งหลังจากทำงานหนักมาสองปี",
+  "keyVocab": [
+   {
+    "en": "got a promotion",
+    "thai": "ได้เลื่อนตำแหน่ง"
+   },
+   {
+    "en": "hard work",
+    "thai": "การทำงานหนัก"
+   }
+  ],
+  "tip": "get a promotion = ได้เลื่อนตำแหน่ง ใช้กับงาน คนละความหมายกับโปรโมชันลดราคา",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Promotion (rank)"
+ },
+ {
+  "id": "feelings-stressed",
+  "word": "stressed",
+  "pos": "adj.",
+  "ipa": "/strest/",
+  "thai": "เครียด",
+  "emoji": "😖",
+  "imageQuery": "stressed office worker",
+  "example": "I feel stressed when I have too much work.",
+  "exampleThai": "ฉันรู้สึกเครียดเวลามีงานเยอะเกินไป",
+  "keyVocab": [
+   {
+    "en": "feel stressed",
+    "thai": "รู้สึกเครียด"
+   },
+   {
+    "en": "too much work",
+    "thai": "งานเยอะเกินไป"
+   }
+  ],
+  "tip": "stressed ใช้กับคน (I am stressed) ส่วน stressful ใช้กับงาน เช่น a stressful job",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Psychological stress"
+ },
+ {
+  "id": "feelings-tired",
+  "word": "tired",
+  "pos": "adj.",
+  "ipa": "/ˈtaɪrd/",
+  "thai": "เหนื่อย",
+  "emoji": "😴",
+  "imageQuery": "tired man yawning",
+  "example": "I am really tired after a long day at work.",
+  "exampleThai": "ฉันเหนื่อยมากจริง ๆ หลังทำงานมาทั้งวัน",
+  "keyVocab": [
+   {
+    "en": "really tired",
+    "thai": "เหนื่อยมาก"
+   },
+   {
+    "en": "after a long day",
+    "thai": "หลังวันที่ยาวนาน"
+   }
+  ],
+  "tip": "tired แปลว่าเหนื่อยหรือง่วงนอน ส่วน bored แปลว่าเบื่อ อย่าสับสนสองคำนี้",
+  "category": "feelings",
+  "commonsCategory": "Yawning",
+  "photo": true,
+  "article": "Fatigue"
+ },
+ {
+  "id": "feelings-proud",
+  "word": "proud",
+  "pos": "adj.",
+  "ipa": "/praʊd/",
+  "thai": "ภูมิใจ",
+  "emoji": "😌",
+  "imageQuery": "proud person smiling",
+  "example": "I am proud of my team for finishing early.",
+  "exampleThai": "ฉันภูมิใจในทีมที่ทำงานเสร็จเร็ว",
+  "keyVocab": [
+   {
+    "en": "proud of",
+    "thai": "ภูมิใจใน"
+   },
+   {
+    "en": "finishing early",
+    "thai": "ทำเสร็จเร็ว"
+   }
+  ],
+  "tip": "ใช้ proud of + คนหรือสิ่งของ เช่น proud of my son ไม่ใช้ proud with",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Pride"
+ },
+ {
+  "id": "feelings-kind",
+  "word": "kind",
+  "pos": "adj.",
+  "ipa": "/kaɪnd/",
+  "thai": "ใจดี",
+  "emoji": "🤗",
+  "imageQuery": "kind woman helping",
+  "example": "My new manager is very kind to everyone.",
+  "exampleThai": "ผู้จัดการคนใหม่ของฉันใจดีกับทุกคนมาก",
+  "keyVocab": [
+   {
+    "en": "very kind",
+    "thai": "ใจดีมาก"
+   },
+   {
+    "en": "to everyone",
+    "thai": "กับทุกคน"
+   }
+  ],
+  "tip": "kind to somebody = ใจดีกับใคร ส่วน kind of = ค่อนข้าง หรือแบบหนึ่ง",
+  "category": "feelings",
+  "commonsCategory": "Helping",
+  "photo": true,
+  "article": "Kindness"
+ },
+ {
+  "id": "feelings-punctual",
+  "word": "punctual",
+  "pos": "adj.",
+  "ipa": "/ˈpʌŋk.tʃu.əl/",
+  "thai": "ตรงต่อเวลา",
+  "emoji": "⌚",
+  "imageQuery": "person checking watch",
+  "example": "She is always punctual for every meeting.",
+  "exampleThai": "เธอมาตรงต่อเวลาทุกการประชุมเสมอ",
+  "keyVocab": [
+   {
+    "en": "always punctual",
+    "thai": "ตรงต่อเวลาเสมอ"
+   },
+   {
+    "en": "every meeting",
+    "thai": "ทุกการประชุม"
+   }
+  ],
+  "tip": "punctual เป็นคำคุณศัพท์ ใช้ be punctual = มาและทำตรงเวลา",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Punctuality"
+ },
+ {
+  "id": "feelings-shy",
+  "word": "shy",
+  "pos": "adj.",
+  "ipa": "/ʃaɪ/",
+  "thai": "ขี้อาย",
+  "emoji": "😳",
+  "imageQuery": "shy person hiding",
+  "example": "My brother is too shy to speak in meetings.",
+  "exampleThai": "น้องชายของฉันขี้อายเกินกว่าจะพูดในการประชุม",
+  "keyVocab": [
+   {
+    "en": "too shy",
+    "thai": "ขี้อายเกินไป"
+   },
+   {
+    "en": "speak in meetings",
+    "thai": "พูดในการประชุม"
+   }
+  ],
+  "tip": "too shy to + กริยา = ขี้อายเกินกว่าจะทำอะไร ใช้ได้กับทั้งผู้ชายและผู้หญิง",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Shyness"
+ },
+ {
+  "id": "feelings-confident",
+  "word": "confident",
+  "pos": "adj.",
+  "ipa": "/ˈkɑːn.fə.dənt/",
+  "thai": "มั่นใจ",
+  "emoji": "😎",
+  "imageQuery": "confident businessman portrait",
+  "example": "He looks confident when he talks to customers.",
+  "exampleThai": "เขาดูมั่นใจเวลาพูดคุยกับลูกค้า",
+  "keyVocab": [
+   {
+    "en": "looks confident",
+    "thai": "ดูมั่นใจ"
+   },
+   {
+    "en": "talks to customers",
+    "thai": "พูดคุยกับลูกค้า"
+   }
+  ],
+  "tip": "confident = มั่นใจในตัวเอง ส่วน be confident of/about + เรื่อง = มั่นใจในเรื่องนั้น",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Confidence"
+ },
+ {
+  "id": "feelings-nervous",
+  "word": "nervous",
+  "pos": "adj.",
+  "ipa": "/ˈnɝː.vəs/",
+  "thai": "ตื่นเต้นกังวล",
+  "emoji": "😬",
+  "imageQuery": "nervous student exam",
+  "example": "I get nervous before I speak in front of people.",
+  "exampleThai": "ฉันรู้สึกกังวลก่อนพูดต่อหน้าคนเยอะ ๆ",
+  "keyVocab": [
+   {
+    "en": "get nervous",
+    "thai": "รู้สึกกังวล"
+   },
+   {
+    "en": "in front of people",
+    "thai": "ต่อหน้าคน"
+   }
+  ],
+  "tip": "nervous คือวิตกกังวล ส่วน excited คือตื่นเต้นในทางบวก เป็นคนละอารมณ์กัน",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Anxiety"
+ },
+ {
+  "id": "feelings-friendly",
+  "word": "friendly",
+  "pos": "adj.",
+  "ipa": "/ˈfrend.li/",
+  "thai": "เป็นมิตร",
+  "emoji": "😊",
+  "imageQuery": "friendly people talking",
+  "example": "Our new coworker is friendly and easy to talk to.",
+  "exampleThai": "เพื่อนร่วมงานคนใหม่ของเราเป็นมิตรและคุยด้วยง่าย",
+  "keyVocab": [
+   {
+    "en": "is friendly",
+    "thai": "เป็นมิตร"
+   },
+   {
+    "en": "easy to talk to",
+    "thai": "คุยด้วยง่าย"
+   }
+  ],
+  "tip": "friendly เป็นคำคุณศัพท์ที่ลงท้ายด้วย -ly ไม่ใช่คำวิเศษณ์ ใช้ a friendly person",
+  "category": "feelings",
+  "commonsCategory": "Friendship",
+  "photo": true,
+  "article": "Friendship"
+ },
+ {
+  "id": "feelings-patient",
+  "word": "patient",
+  "pos": "adj.",
+  "ipa": "/ˈpeɪ.ʃənt/",
+  "thai": "อดทน",
+  "emoji": "🧘",
+  "imageQuery": "patient person waiting",
+  "example": "You must be patient when you train new staff.",
+  "exampleThai": "คุณต้องอดทนเวลาสอนพนักงานใหม่",
+  "keyVocab": [
+   {
+    "en": "be patient",
+    "thai": "อดทน"
+   },
+   {
+    "en": "new staff",
+    "thai": "พนักงานใหม่"
+   }
+  ],
+  "tip": "patient (อ่านว่า เพ-เชินท์) แปลว่าอดทน ส่วน patient ที่แปลว่าคนไข้สะกดเหมือนกัน",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Patience"
+ },
+ {
+  "id": "feelings-cheerful",
+  "word": "cheerful",
+  "pos": "adj.",
+  "ipa": "/ˈtʃɪr.fəl/",
+  "thai": "ร่าเริง",
+  "emoji": "😄",
+  "imageQuery": "happy woman laughing",
+  "example": "She stays cheerful even on very busy days.",
+  "exampleThai": "เธอยังร่าเริงแม้ในวันที่งานยุ่งมาก",
+  "keyVocab": [
+   {
+    "en": "stays cheerful",
+    "thai": "ยังร่าเริง"
+   },
+   {
+    "en": "busy days",
+    "thai": "วันที่งานยุ่ง"
+   }
+  ],
+  "tip": "cheerful = ร่าเริงแจ่มใส ใช้กับคน บรรยากาศ หรือสีสันก็ได้",
+  "category": "feelings",
+  "commonsCategory": "People smiling",
+  "photo": true,
+  "article": "Happiness"
+ },
+ {
+  "id": "feelings-worry",
+  "word": "worry",
+  "pos": "v.",
+  "ipa": "/ˈwɝː.i/",
+  "thai": "กังวล",
+  "emoji": "😟",
+  "imageQuery": "worried man thinking",
+  "example": "I always worry about my work before a big meeting.",
+  "exampleThai": "ฉันมักกังวลเรื่องงานก่อนการประชุมใหญ่เสมอ",
+  "keyVocab": [
+   {
+    "en": "worry about",
+    "thai": "กังวลเรื่อง"
+   },
+   {
+    "en": "a big meeting",
+    "thai": "การประชุมใหญ่"
+   }
+  ],
+  "tip": "worry about + เรื่อง เช่น worry about money ไม่ต้องใส่ preposition อื่นเพิ่ม",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Worry"
+ }
+]

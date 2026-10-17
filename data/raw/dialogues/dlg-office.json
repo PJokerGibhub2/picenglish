@@ -1,0 +1,131 @@
+{
+  "id": "dlg-office",
+  "title": "คุยกับเพื่อนร่วมงานที่ออฟฟิศ",
+  "titleEn": "Talking with a colleague at the office",
+  "level": "A2",
+  "emoji": "💼",
+  "category": "work",
+  "commonsCategory": "Offices",
+  "imageQuery": "office colleagues talking desk",
+  "setting": "คุณคุยกับเพื่อนร่วมงานที่ออฟฟิศตอนเช้าก่อนเข้าประชุม",
+  "counterpart": { "labelTh": "เพื่อนร่วมงาน", "emoji": "🧑‍💼" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Morning! You look tired today. Everything okay?",
+      "thai": "อรุณสวัสดิ์ ดูเหนื่อยๆ นะวันนี้ เป็นอะไรหรือเปล่า",
+      "keyPhrases": [
+        { "en": "look tired", "thai": "ดูเหนื่อย" },
+        { "en": "Everything okay", "thai": "ทุกอย่างโอเคไหม" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Not really. I'm stressed about the report deadline.",
+      "thai": "ก็ไม่ค่อยดีครับ เครียดเรื่องเดดไลน์รายงาน",
+      "keyPhrases": [
+        { "en": "stressed", "thai": "เครียด" },
+        { "en": "the report deadline", "thai": "กำหนดส่งรายงาน" }
+      ],
+      "alternative": [
+        { "en": "Not great. The report deadline makes me stressed.", "thai": "ไม่ค่อยดี กำหนดส่งรายงานทำผมเครียด" },
+        { "en": "Actually no. I'm stressed about my report.", "thai": "จริงๆ ไม่ค่อยดีครับ เครียดเรื่องรายงาน" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "The deadline is Friday, right? Our colleague can help.",
+      "thai": "เดดไลน์วันศุกร์ใช่ไหม เพื่อนร่วมงานเราช่วยได้นะ",
+      "keyPhrases": [
+        { "en": "The deadline is Friday", "thai": "กำหนดส่งคือวันศุกร์" },
+        { "en": "colleague", "thai": "เพื่อนร่วมงาน" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Yes, please. Could you check my email later?",
+      "thai": "ช่วยหน่อยครับ เดี๋ยวช่วยเช็คอีเมลผมทีหลังได้ไหม",
+      "keyPhrases": [
+        { "en": "check my email", "thai": "เช็คอีเมลของผม" },
+        { "en": "later", "thai": "ทีหลัง" }
+      ],
+      "alternative": [
+        { "en": "Please. Can you look at my email later?", "thai": "ช่วยด้วยครับ ดูลายอีเมลผมทีหลังได้ไหม" },
+        { "en": "Yes, please. Could you read my email after lunch?", "thai": "ช่วยหน่อยครับ อ่านอีเมลผมหลังมื้อกลางวันได้ไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Sure. I'll do it after the meeting with the boss.",
+      "thai": "ได้เลย เดี๋ยวทำให้หลังประชุมกับหัวหน้า",
+      "keyPhrases": [
+        { "en": "the meeting", "thai": "การประชุม" },
+        { "en": "the boss", "thai": "หัวหน้า" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Thanks. I'm worried about my interview too.",
+      "thai": "ขอบคุณครับ ผมก็กังวลเรื่องสัมภาษณ์งานด้วย",
+      "keyPhrases": [
+        { "en": "worried about", "thai": "กังวลเรื่อง" },
+        { "en": "my interview", "thai": "การสัมภาษณ์ของผม" }
+      ],
+      "alternative": [
+        { "en": "Thank you. I'm nervous about my interview too.", "thai": "ขอบคุณครับ ผมก็ตื่นเต้นเรื่องสัมภาษณ์ด้วย" },
+        { "en": "Thanks. My interview makes me nervous too.", "thai": "ขอบคุณครับ สัมภาษณ์ก็ทำให้ผมตื่นเต้นเหมือนกัน" },
+        { "en": "Thanks. I'm a bit shy, so interviews are hard.", "thai": "ขอบคุณครับ ผมขี้อายนิดหน่อย สัมภาษณ์เลยยาก" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Don't worry. You're punctual, patient and friendly.",
+      "thai": "ไม่ต้องกังวลเลย คุณมาตรงเวลา ใจเย็นและเป็นมิตรเสมอ",
+      "keyPhrases": [
+        { "en": "Don't worry", "thai": "ไม่ต้องกังวล" },
+        { "en": "punctual", "thai": "มาตรงเวลา" },
+        { "en": "friendly", "thai": "เป็นมิตร" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "That's kind of you. I want that promotion.",
+      "thai": "พูดดีจังครับ ผมอยากได้เลื่อนตำแหน่งนั้น",
+      "keyPhrases": [
+        { "en": "kind of you", "thai": "ใจดีกับผม" },
+        { "en": "that promotion", "thai": "การเลื่อนตำแหน่งนั้น" }
+      ],
+      "alternative": [
+        { "en": "That's very kind. I really want the promotion.", "thai": "ใจดีมากครับ ผมอยากได้เลื่อนตำแหน่งจริงๆ" },
+        { "en": "Thanks, you're kind. I hope I get the promotion.", "thai": "ขอบคุณครับ ใจดีจัง ผมหวังว่าจะได้เลื่อนตำแหน่ง" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "You'll get it. Are you taking sick leave tomorrow?",
+      "thai": "ได้อยู่แล้ว พรุ่งนี้จะลาป่วยไหม",
+      "keyPhrases": [
+        { "en": "sick leave", "thai": "การลาป่วย" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "No, but I may ask for less overtime.",
+      "thai": "ไม่ครับ แต่ผมอาจขอทำงานล่วงเวลาน้อยลง",
+      "keyPhrases": [
+        { "en": "less overtime", "thai": "ทำงานล่วงเวลาน้อยลง" }
+      ],
+      "alternative": [
+        { "en": "No, but I want less overtime this week.", "thai": "ไม่ครับ แต่สัปดาห์นี้ผมอยากทำโอทีน้อยลง" },
+        { "en": "Not tomorrow. I'll ask for less overtime though.", "thai": "พรุ่งนี้ไม่ครับ แต่ผมจะขอลดโอทีลง" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "Can we move the meeting to ten?", "thai": "เลื่อนประชุมเป็นสิบโมงได้ไหม" },
+    { "en": "The boss wants the report by Friday.", "thai": "หัวหน้าอยากได้รายงานภายในวันศุกร์" },
+    { "en": "Did you apply for the promotion?", "thai": "สมัครเลื่อนตำแหน่งหรือยัง" },
+    { "en": "The salary review is next month.", "thai": "เดือนหน้าจะทบทวนเงินเดือน" },
+    { "en": "You look cheerful and confident today.", "thai": "วันนี้ดูร่าเริงและมั่นใจนะ" }
+  ]
+}

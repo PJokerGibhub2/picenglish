@@ -1,0 +1,127 @@
+{
+  "id": "dlg-hotel",
+  "title": "เช็คอินโรงแรม",
+  "titleEn": "Hotel check-in",
+  "level": "A2",
+  "emoji": "🛏️",
+  "category": "home",
+  "commonsCategory": "Hotel lobbies",
+  "imageQuery": "hotel lobby reception desk",
+  "setting": "คุณเดินทางถึงโรงแรมและเข้าไปเช็คอินที่เคาน์เตอร์",
+  "counterpart": { "labelTh": "พนักงานต้อนรับโรงแรม", "emoji": "🛎️" },
+  "lines": [
+    {
+      "who": "staff",
+      "en": "Good afternoon. Welcome to the Sunrise Hotel.",
+      "thai": "สวัสดีตอนบ่ายครับ ยินดีต้อนรับสู่โรงแรมซันไรส์",
+      "keyPhrases": [
+        { "en": "Welcome to", "thai": "ยินดีต้อนรับสู่" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Hi, I have a reservation under the name Malee.",
+      "thai": "สวัสดีครับ ผมจองห้องไว้ในชื่อมาลีครับ",
+      "keyPhrases": [
+        { "en": "a reservation", "thai": "การจองห้อง" },
+        { "en": "under the name", "thai": "ในชื่อของ..." }
+      ],
+      "alternative": [
+        { "en": "Hello, I booked a room. The name is Malee.", "thai": "สวัสดีครับ ผมจองห้องไว้ ชื่อมาลีครับ" },
+        { "en": "Hi, I'm checking in. Reservation for Malee.", "thai": "สวัสดีครับ มาเช็คอินครับ จองชื่อมาลี" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Let me check. May I see your passport, please?",
+      "thai": "ขอเช็คก่อนนะครับ ขอดูพาสปอร์ตหน่อยครับ",
+      "keyPhrases": [
+        { "en": "May I see your passport", "thai": "ขอดูพาสปอร์ตได้ไหม" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Sure, here it is. Is breakfast included?",
+      "thai": "ได้ครับ นี่ครับ ราคานี้รวมอาหารเช้าไหมครับ",
+      "keyPhrases": [
+        { "en": "here it is", "thai": "นี่ครับ (ยื่นให้)" },
+        { "en": "Is breakfast included", "thai": "รวมอาหารเช้าไหม" }
+      ],
+      "alternative": [
+        { "en": "Sure, here you go. Does the price include breakfast?", "thai": "ได้ครับ นี่ครับ ราคานี้รวมอาหารเช้าหรือเปล่า" },
+        { "en": "Of course. Is breakfast in the price?", "thai": "ได้ครับ อาหารเช้ารวมในราคาไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Yes, breakfast is on the second floor every day.",
+      "thai": "รวมครับ อาหารเช้าอยู่ชั้นสองทุกวันครับ",
+      "keyPhrases": [
+        { "en": "on the second floor", "thai": "อยู่ชั้นสอง" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Great. Does the room have a balcony and a refrigerator?",
+      "thai": "ดีครับ ห้องมีระเบียงกับตู้เย็นไหมครับ",
+      "keyPhrases": [
+        { "en": "a balcony", "thai": "ระเบียง" },
+        { "en": "a refrigerator", "thai": "ตู้เย็น" }
+      ],
+      "alternative": [
+        { "en": "Nice. Is there a balcony and a refrigerator in the room?", "thai": "ดีครับ ในห้องมีระเบียงกับตู้เย็นไหม" },
+        { "en": "Great. Do we get a balcony and a refrigerator?", "thai": "ดีครับ เราได้ห้องที่มีระเบียงกับตู้เย็นไหม" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "It has a balcony, but no refrigerator. We have a shared kitchen.",
+      "thai": "มีระเบียงครับ แต่ไม่มีตู้เย็น เรามีครัวส่วนกลางครับ",
+      "keyPhrases": [
+        { "en": "no refrigerator", "thai": "ไม่มีตู้เย็น" },
+        { "en": "a shared kitchen", "thai": "ครัวส่วนกลาง" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "That's okay. Can I leave my luggage here?",
+      "thai": "ไม่เป็นไรครับ ฝากกระเป๋าไว้ตรงนี้ได้ไหมครับ",
+      "keyPhrases": [
+        { "en": "leave my luggage", "thai": "ฝากกระเป๋า" }
+      ],
+      "alternative": [
+        { "en": "That's fine. Could I leave my luggage here?", "thai": "ไม่เป็นไรครับ ขอฝากกระเป๋าไว้ตรงนี้ได้ไหม" },
+        { "en": "No problem. Where can I keep my luggage?", "thai": "ไม่เป็นไรครับ ฝากกระเป๋าไว้ที่ไหนได้บ้าง" }
+      ]
+    },
+    {
+      "who": "staff",
+      "en": "Of course. Here's your key card. The lift is on the left.",
+      "thai": "ได้ครับ นี่คีย์การ์ดครับ ลิฟต์อยู่ทางซ้ายครับ",
+      "keyPhrases": [
+        { "en": "your key card", "thai": "คีย์การ์ดของคุณ" },
+        { "en": "on the left", "thai": "ทางซ้าย" }
+      ]
+    },
+    {
+      "who": "me",
+      "en": "Thanks. I'm tired and need some rest.",
+      "thai": "ขอบคุณครับ ผมเหนื่อย อยากพักสักหน่อยครับ",
+      "keyPhrases": [
+        { "en": "tired", "thai": "เหนื่อย" },
+        { "en": "need some rest", "thai": "ต้องพักผ่อนสักหน่อย" }
+      ],
+      "alternative": [
+        { "en": "Thanks. I'm really tired and want to rest.", "thai": "ขอบคุณครับ ผมเหนื่อยมาก อยากพัก" },
+        { "en": "Thank you. I need some rest now.", "thai": "ขอบคุณครับ ตอนนี้ผมขอพักผ่อนหน่อย" }
+      ]
+    }
+  ],
+  "usefulPhrases": [
+    { "en": "Check-out is at noon.", "thai": "เช็คเอาท์เที่ยงวันครับ" },
+    { "en": "Do you need help with your luggage?", "thai": "ให้ช่วยยกกระเป๋าไหมครับ" },
+    { "en": "Every room has a lamp and new furniture.", "thai": "ทุกห้องมีโคมไฟกับเฟอร์นิเจอร์ใหม่ครับ" },
+    { "en": "We also have apartments with a living room.", "thai": "เรามีอพาร์ตเมนต์ที่มีห้องนั่งเล่นด้วยครับ" },
+    { "en": "Is there anything else you need?", "thai": "มีอะไรให้ช่วยเพิ่มไหมครับ" }
+  ]
+}

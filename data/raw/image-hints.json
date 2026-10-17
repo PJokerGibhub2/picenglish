@@ -1,0 +1,770 @@
+[
+  {
+    "id": "food-breakfast",
+    "word": "breakfast",
+    "commonsCategory": "Breakfast",
+    "article": "Breakfast",
+    "photo": true,
+    "note": "หมวด Breakfast มีภาพอาหารเช้าหลากหลาย 938 ไฟล์"
+  },
+  {
+    "id": "food-lunch",
+    "word": "lunch",
+    "commonsCategory": "Lunch",
+    "article": "Lunch",
+    "photo": true,
+    "note": "หมวด Lunch มีภาพมื้อกลางวัน 344 ไฟล์"
+  },
+  {
+    "id": "food-dinner",
+    "word": "dinner",
+    "commonsCategory": "Dinners",
+    "article": "Dinner",
+    "photo": true,
+    "note": "หมวด Dinners มีภาพมื้อเย็น 181 ไฟล์ (ชื่อ Dinner ว่างเปล่า)"
+  },
+  {
+    "id": "food-snack",
+    "word": "snack",
+    "commonsCategory": "Snack food",
+    "article": "Snack",
+    "photo": true,
+    "note": "หมวด Snack food มีภาพของว่าง 725 ไฟล์ (Snacks ว่างเปล่า)"
+  },
+  {
+    "id": "food-ingredient",
+    "word": "ingredient",
+    "commonsCategory": "Food ingredients",
+    "article": "Ingredient",
+    "photo": true,
+    "note": "หมวด Food ingredients มีภาพวัตถุดิบ 165 ไฟล์"
+  },
+  {
+    "id": "food-recipe",
+    "word": "recipe",
+    "commonsCategory": "Recipes",
+    "article": "Recipe",
+    "photo": true,
+    "note": "หมวด Recipes มีภาพสูตรอาหารและใบสูตร 95 ไฟล์"
+  },
+  {
+    "id": "food-soup",
+    "word": "soup",
+    "commonsCategory": "Soups",
+    "article": "Soup",
+    "photo": true,
+    "note": "หมวด Soups มีภาพซุปหลายชนิด 357 ไฟล์"
+  },
+  {
+    "id": "food-grill",
+    "word": "grill",
+    "commonsCategory": "Grilling",
+    "article": "Grilling",
+    "photo": true,
+    "note": "หมวด Grilling มีภาพการย่างบนเตา 232 ไฟล์"
+  },
+  {
+    "id": "food-spicy",
+    "word": "spicy",
+    "commonsCategory": "Chili peppers",
+    "article": "Pungency",
+    "photo": true,
+    "note": "หมวด Chili peppers มีภาพพริก 442 ไฟล์ (Spicy food ว่าง)"
+  },
+  {
+    "id": "food-leftovers",
+    "word": "leftovers",
+    "commonsCategory": "Leftovers",
+    "article": "Leftovers",
+    "photo": true,
+    "note": "หมวด Leftovers มีภาพอาหารเหลือ 33 ไฟล์"
+  },
+  {
+    "id": "food-dessert",
+    "word": "dessert",
+    "commonsCategory": "Desserts",
+    "article": "Dessert",
+    "photo": true,
+    "note": "หมวด Desserts มีภาพของหวาน 1353 ไฟล์"
+  },
+  {
+    "id": "food-portion",
+    "word": "portion",
+    "commonsCategory": "Meals",
+    "article": "Serving size",
+    "photo": true,
+    "note": "หมวด Meals มีภาพอาหารหนึ่งมื้อ 349 ไฟล์ (หมวด Serving sizes ไม่มี)"
+  },
+  {
+    "id": "restaurant-reservation",
+    "word": "reservation",
+    "commonsCategory": "Reservations",
+    "article": "Table reservation",
+    "photo": true,
+    "note": "หมวด Reservations มีภาพการจองโต๊ะ 11 ไฟล์"
+  },
+  {
+    "id": "restaurant-table-for-two",
+    "word": "table for two",
+    "commonsCategory": "Restaurant tables",
+    "article": "Table (furniture)",
+    "photo": true,
+    "note": "หมวด Restaurant tables มีภาพโต๊ะในร้านอาหาร 103 ไฟล์"
+  },
+  {
+    "id": "restaurant-menu",
+    "word": "menu",
+    "commonsCategory": "Food menus",
+    "article": "Menu",
+    "photo": true,
+    "note": "หมวด Food menus มีภาพเมนูร้านอาหาร 454 ไฟล์ (Menus มีแค่ 3)"
+  },
+  {
+    "id": "restaurant-order",
+    "word": "order",
+    "commonsCategory": "Waiters",
+    "article": null,
+    "photo": true,
+    "note": "หมวด Waiters มีภาพพนักงานรับออร์เดอร์ 29 ไฟล์"
+  },
+  {
+    "id": "restaurant-recommend",
+    "word": "recommend",
+    "commonsCategory": null,
+    "article": "Recommendation",
+    "photo": false,
+    "note": "เป็นคำนามธรรม ไม่มีหมวดภาพที่ตรง ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "restaurant-appetizer",
+    "word": "appetizer",
+    "commonsCategory": "Appetizers",
+    "article": "Hors d'oeuvre",
+    "photo": true,
+    "note": "หมวด Appetizers มีภาพอาหารเรียกน้ำย่อย 333 ไฟล์"
+  },
+  {
+    "id": "restaurant-main-course",
+    "word": "main course",
+    "commonsCategory": "Main course",
+    "article": "Main course",
+    "photo": true,
+    "note": "หมวด Main course มีภาพจานหลัก 116 ไฟล์"
+  },
+  {
+    "id": "restaurant-refill",
+    "word": "refill",
+    "commonsCategory": "Pouring",
+    "article": "Free refill",
+    "photo": true,
+    "note": "หมวด Pouring มีภาพเทเครื่องดื่มเติมแก้ว 75 ไฟล์"
+  },
+  {
+    "id": "restaurant-bill",
+    "word": "bill",
+    "commonsCategory": "Invoices",
+    "article": "Invoice",
+    "photo": true,
+    "note": "หมวด Invoices มีภาพใบเก็บเงิน 18 ไฟล์"
+  },
+  {
+    "id": "restaurant-tip",
+    "word": "tip",
+    "commonsCategory": "Gratuity",
+    "article": "Gratuity",
+    "photo": true,
+    "note": "หมวด Gratuity มีภาพการให้ทิป 16 ไฟล์"
+  },
+  {
+    "id": "restaurant-takeaway",
+    "word": "takeaway",
+    "commonsCategory": "Take-out food",
+    "article": "Take-out",
+    "photo": true,
+    "note": "หมวด Take-out food มีภาพอาหารใส่กล่องกลับบ้าน 16 ไฟล์"
+  },
+  {
+    "id": "restaurant-allergy",
+    "word": "allergy",
+    "commonsCategory": null,
+    "article": "Food allergy",
+    "photo": false,
+    "note": "หมวด Allergies เป็นภาพทางการแพทย์ (ผื่น/ทดสอบผิว) ไม่เหมาะกับเด็ก"
+  },
+  {
+    "id": "travel-ticket",
+    "word": "ticket",
+    "commonsCategory": "Tickets",
+    "article": "Ticket (admission)",
+    "photo": true,
+    "note": "หมวด Tickets มีภาพตั๋ว 168 ไฟล์"
+  },
+  {
+    "id": "travel-passport",
+    "word": "passport",
+    "commonsCategory": "Passports",
+    "article": "Passport",
+    "photo": true,
+    "note": "หมวด Passports มีภาพหนังสือเดินทาง 70 ไฟล์"
+  },
+  {
+    "id": "travel-airport",
+    "word": "airport",
+    "commonsCategory": "Airport terminals",
+    "article": "Airport",
+    "photo": true,
+    "note": "หมวด Airport terminals มีภาพอาคารสนามบิน 220 ไฟล์ (Airports ไม่มีไฟล์)"
+  },
+  {
+    "id": "travel-luggage",
+    "word": "luggage",
+    "commonsCategory": "Luggage",
+    "article": "Baggage",
+    "photo": true,
+    "note": "หมวด Luggage มีภาพกระเป๋าเดินทาง 227 ไฟล์"
+  },
+  {
+    "id": "travel-map",
+    "word": "map",
+    "commonsCategory": "Road maps",
+    "article": "Map",
+    "photo": true,
+    "note": "หมวด Road maps มีภาพแผนที่ถนน 218 ไฟล์ (Maps ไม่มีไฟล์)"
+  },
+  {
+    "id": "travel-bus",
+    "word": "bus",
+    "commonsCategory": "Buses",
+    "article": "Bus",
+    "photo": true,
+    "note": "หมวด Buses มีภาพรถเมล์ 858 ไฟล์"
+  },
+  {
+    "id": "travel-train",
+    "word": "train",
+    "commonsCategory": "Passenger trains",
+    "article": "Train",
+    "photo": true,
+    "note": "หมวด Passenger trains มีภาพรถไฟโดยสาร 80 ไฟล์ (Trains มี 1 ไฟล์)"
+  },
+  {
+    "id": "travel-schedule",
+    "word": "schedule",
+    "commonsCategory": "Timetables",
+    "article": "Public transport timetable",
+    "photo": true,
+    "note": "หมวด Timetables มีภาพตารางเวลาเดินรถ 86 ไฟล์"
+  },
+  {
+    "id": "travel-destination",
+    "word": "destination",
+    "commonsCategory": "Tourism",
+    "article": "Destination",
+    "photo": true,
+    "note": "หมวด Tourism มีภาพจุดหมายท่องเที่ยว 143 ไฟล์"
+  },
+  {
+    "id": "travel-gate",
+    "word": "gate",
+    "commonsCategory": "Airport gates",
+    "article": "Gate (airport)",
+    "photo": true,
+    "note": "หมวด Airport gates มีภาพประตูขึ้นเครื่อง 76 ไฟล์"
+  },
+  {
+    "id": "travel-turn-left",
+    "word": "turn left",
+    "commonsCategory": "Turn signs",
+    "article": "Traffic sign",
+    "photo": true,
+    "note": "หมวด Turn signs มีภาพป้ายเลี้ยวซ้าย 19 ไฟล์"
+  },
+  {
+    "id": "travel-ask-for-directions",
+    "word": "ask for directions",
+    "commonsCategory": "People pointing",
+    "article": null,
+    "photo": true,
+    "note": "หมวด People pointing มีภาพคนชี้บอกทาง 102 ไฟล์"
+  },
+  {
+    "id": "home-apartment",
+    "word": "apartment",
+    "commonsCategory": "Apartment buildings",
+    "article": "Apartment",
+    "photo": true,
+    "note": "หมวด Apartment buildings มีภาพอาคารอพาร์ตเมนต์ 698 ไฟล์"
+  },
+  {
+    "id": "home-house",
+    "word": "house",
+    "commonsCategory": "Houses",
+    "article": "House",
+    "photo": true,
+    "note": "หมวด Houses มีภาพบ้าน 1233 ไฟล์"
+  },
+  {
+    "id": "home-bedroom",
+    "word": "bedroom",
+    "commonsCategory": "Bedrooms",
+    "article": "Bedroom",
+    "photo": true,
+    "note": "หมวด Bedrooms มีภาพห้องนอน 293 ไฟล์"
+  },
+  {
+    "id": "home-kitchen",
+    "word": "kitchen",
+    "commonsCategory": "Kitchens",
+    "article": "Kitchen",
+    "photo": true,
+    "note": "หมวด Kitchens มีภาพห้องครัว 323 ไฟล์"
+  },
+  {
+    "id": "home-living-room",
+    "word": "living room",
+    "commonsCategory": "Living rooms",
+    "article": "Living room",
+    "photo": true,
+    "note": "หมวด Living rooms มีภาพห้องนั่งเล่น 344 ไฟล์"
+  },
+  {
+    "id": "home-furniture",
+    "word": "furniture",
+    "commonsCategory": "Furniture",
+    "article": "Furniture",
+    "photo": true,
+    "note": "หมวด Furniture มีภาพเฟอร์นิเจอร์ 795 ไฟล์"
+  },
+  {
+    "id": "home-lamp",
+    "word": "lamp",
+    "commonsCategory": "Lamps",
+    "article": "Light fixture",
+    "photo": true,
+    "note": "หมวด Lamps มีภาพโคมไฟ 54 ไฟล์"
+  },
+  {
+    "id": "home-refrigerator",
+    "word": "refrigerator",
+    "commonsCategory": "Refrigerators",
+    "article": "Refrigerator",
+    "photo": true,
+    "note": "หมวด Refrigerators มีภาพตู้เย็น 134 ไฟล์"
+  },
+  {
+    "id": "home-rent",
+    "word": "rent",
+    "commonsCategory": "Renting",
+    "article": "Renting",
+    "photo": true,
+    "note": "หมวด Renting มีภาพการเช่าที่พัก 91 ไฟล์"
+  },
+  {
+    "id": "home-neighbor",
+    "word": "neighbor",
+    "commonsCategory": null,
+    "article": "Neighbor",
+    "photo": false,
+    "note": "หมวด Neighbors มีแค่ 3 ไฟล์ ไม่พอใช้ ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "home-key",
+    "word": "key",
+    "commonsCategory": "Keys",
+    "article": "Lock and key",
+    "photo": true,
+    "note": "หมวด Keys มีภาพกุญแจ 204 ไฟล์"
+  },
+  {
+    "id": "home-balcony",
+    "word": "balcony",
+    "commonsCategory": "Balconies",
+    "article": "Balcony",
+    "photo": true,
+    "note": "หมวด Balconies มีภาพระเบียง 178 ไฟล์"
+  },
+  {
+    "id": "shopping-receipt",
+    "word": "receipt",
+    "commonsCategory": "Receipts",
+    "article": "Receipt",
+    "photo": true,
+    "note": "หมวด Receipts มีภาพใบเสร็จสมัยใหม่ 175 ไฟล์"
+  },
+  {
+    "id": "shopping-price",
+    "word": "price",
+    "commonsCategory": "Price tags",
+    "article": "Price",
+    "photo": true,
+    "note": "หมวด Price tags มีภาพป้ายราคา 40 ไฟล์"
+  },
+  {
+    "id": "shopping-discount",
+    "word": "discount",
+    "commonsCategory": "Discounts",
+    "article": "Discounts and allowances",
+    "photo": true,
+    "note": "หมวด Discounts มีภาพป้ายลดราคา 41 ไฟล์"
+  },
+  {
+    "id": "shopping-change",
+    "word": "change",
+    "commonsCategory": "Coins",
+    "article": null,
+    "photo": true,
+    "note": "หมวด Coins มีภาพเหรียญเงินทอน 170 ไฟล์"
+  },
+  {
+    "id": "shopping-credit-card",
+    "word": "credit card",
+    "commonsCategory": "Credit cards",
+    "article": "Credit card",
+    "photo": true,
+    "note": "หมวด Credit cards มีภาพบัตรเครดิต 157 ไฟล์"
+  },
+  {
+    "id": "shopping-cash",
+    "word": "cash",
+    "commonsCategory": "Banknotes",
+    "article": "Cash",
+    "photo": true,
+    "note": "หมวด Banknotes มีภาพธนบัตร 30 ไฟล์ (Cash ว่างเปล่า)"
+  },
+  {
+    "id": "shopping-expensive",
+    "word": "expensive",
+    "commonsCategory": "Luxury goods",
+    "article": null,
+    "photo": true,
+    "note": "หมวด Luxury goods มีภาพของราคาแพง 53 ไฟล์"
+  },
+  {
+    "id": "shopping-cheap",
+    "word": "cheap",
+    "commonsCategory": null,
+    "article": null,
+    "photo": false,
+    "note": "เป็นคำคุณศัพท์นามธรรม ไม่มีหมวดภาพที่ตรง ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "shopping-bargain",
+    "word": "bargain",
+    "commonsCategory": "Bargaining",
+    "article": "Bargaining",
+    "photo": true,
+    "note": "หมวด Bargaining มีภาพการต่อรองราคา 8 ไฟล์"
+  },
+  {
+    "id": "shopping-bank",
+    "word": "bank",
+    "commonsCategory": "Banks",
+    "article": "Bank",
+    "photo": true,
+    "note": "หมวด Banks มีภาพธนาคาร 471 ไฟล์"
+  },
+  {
+    "id": "shopping-save",
+    "word": "save",
+    "commonsCategory": "Money boxes",
+    "article": "Saving",
+    "photo": true,
+    "note": "หมวด Money boxes มีภาพกระปุกออมสิน 193 ไฟล์"
+  },
+  {
+    "id": "shopping-wallet",
+    "word": "wallet",
+    "commonsCategory": "Wallets",
+    "article": "Wallet",
+    "photo": true,
+    "note": "หมวด Wallets มีภาพกระเป๋าสตางค์ 203 ไฟล์"
+  },
+  {
+    "id": "health-fever",
+    "word": "fever",
+    "commonsCategory": null,
+    "article": "Fever",
+    "photo": false,
+    "note": "หมวด Fever เป็นภาพทางการแพทย์ ใช้ภาพอีโมจิแทนเพื่อความเหมาะสม"
+  },
+  {
+    "id": "health-headache",
+    "word": "headache",
+    "commonsCategory": null,
+    "article": "Headache",
+    "photo": false,
+    "note": "หมวด Headaches เป็นภาพทางการแพทย์ ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "health-cough",
+    "word": "cough",
+    "commonsCategory": null,
+    "article": "Cough",
+    "photo": false,
+    "note": "ไม่มีหมวด Cough บน Commons และเป็นอาการป่วย ใช้ภาพอีโมจิ"
+  },
+  {
+    "id": "health-sore-throat",
+    "word": "sore throat",
+    "commonsCategory": null,
+    "article": "Sore throat",
+    "photo": false,
+    "note": "ไม่มีหมวด Sore throat และเป็นอาการป่วย ใช้ภาพอีโมจิ"
+  },
+  {
+    "id": "health-stomachache",
+    "word": "stomachache",
+    "commonsCategory": null,
+    "article": "Abdominal pain",
+    "photo": false,
+    "note": "หมวด Abdominal pain มีไฟล์เดียวและเป็นภาพการแพทย์ ใช้อีโมจิ"
+  },
+  {
+    "id": "health-rest",
+    "word": "rest",
+    "commonsCategory": "Resting",
+    "article": "Rest",
+    "photo": true,
+    "note": "หมวด Resting มีภาพคนพักผ่อน 170 ไฟล์"
+  },
+  {
+    "id": "health-ill",
+    "word": "ill",
+    "commonsCategory": null,
+    "article": "Disease",
+    "photo": false,
+    "note": "ไม่มีหมวด Disease และเป็นคำบอกอาการป่วย ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "health-doctor",
+    "word": "doctor",
+    "commonsCategory": "Physicians",
+    "article": "Medical doctor",
+    "photo": true,
+    "note": "หมวด Physicians มีภาพแพทย์ 329 ไฟล์"
+  },
+  {
+    "id": "health-appointment",
+    "word": "appointment",
+    "commonsCategory": "Calendars",
+    "article": "Appointment",
+    "photo": true,
+    "note": "หมวด Calendars มีภาพปฏิทินจดนัดหมาย 595 ไฟล์"
+  },
+  {
+    "id": "health-medicine",
+    "word": "medicine",
+    "commonsCategory": "Pharmaceutical drugs",
+    "article": "Medication",
+    "photo": true,
+    "note": "หมวด Pharmaceutical drugs มีภาพยาและซองยา 165 ไฟล์"
+  },
+  {
+    "id": "health-hurt",
+    "word": "hurt",
+    "commonsCategory": null,
+    "article": "Pain",
+    "photo": false,
+    "note": "เป็นอาการนามธรรม ภาพในหมวด Pain เป็นการแพทย์ ใช้อีโมจิ"
+  },
+  {
+    "id": "health-healthy",
+    "word": "healthy",
+    "commonsCategory": "Physical exercise",
+    "article": "Health",
+    "photo": true,
+    "note": "หมวด Physical exercise มีภาพคนออกกำลังกาย 177 ไฟล์"
+  },
+  {
+    "id": "work-meeting",
+    "word": "meeting",
+    "commonsCategory": "Meetings",
+    "article": "Meeting",
+    "photo": true,
+    "note": "หมวด Meetings มีภาพการประชุม 1113 ไฟล์"
+  },
+  {
+    "id": "work-email",
+    "word": "email",
+    "commonsCategory": "E-mail",
+    "article": "Email",
+    "photo": true,
+    "note": "หมวด E-mail มีภาพอีเมลและหน้าจอ 196 ไฟล์ (Email ว่าง)"
+  },
+  {
+    "id": "work-colleague",
+    "word": "colleague",
+    "commonsCategory": "Office workers",
+    "article": "Co-worker",
+    "photo": true,
+    "note": "หมวด Office workers มีภาพพนักงานออฟฟิศ 167 ไฟล์"
+  },
+  {
+    "id": "work-boss",
+    "word": "boss",
+    "commonsCategory": "Businesspeople",
+    "article": "Supervisor",
+    "photo": true,
+    "note": "หมวด Businesspeople มีภาพผู้บริหาร/หัวหน้า 221 ไฟล์"
+  },
+  {
+    "id": "work-salary",
+    "word": "salary",
+    "commonsCategory": "Wages",
+    "article": "Salary",
+    "photo": true,
+    "note": "หมวด Wages มีภาพค่าจ้างเงินเดือน 41 ไฟล์ (Salaries ว่าง)"
+  },
+  {
+    "id": "work-sick-leave",
+    "word": "sick leave",
+    "commonsCategory": null,
+    "article": "Sick leave",
+    "photo": false,
+    "note": "ไม่มีหมวดภาพที่ตรงและเป็นเรื่องนามธรรม ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "work-apply-for",
+    "word": "apply for",
+    "commonsCategory": "Recruitment",
+    "article": "Application for employment",
+    "photo": true,
+    "note": "หมวด Recruitment มีภาพการรับสมัครงาน 71 ไฟล์"
+  },
+  {
+    "id": "work-deadline",
+    "word": "deadline",
+    "commonsCategory": null,
+    "article": "Time limit",
+    "photo": false,
+    "note": "เป็นคำนามธรรม ไม่มีหมวดภาพที่ตรง ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "work-overtime",
+    "word": "overtime",
+    "commonsCategory": null,
+    "article": "Overtime",
+    "photo": false,
+    "note": "ไม่มีหมวด Overtime บน Commons ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "work-interview",
+    "word": "interview",
+    "commonsCategory": "Job interviews",
+    "article": "Job interview",
+    "photo": true,
+    "note": "หมวด Job interviews มีภาพการสัมภาษณ์งาน 26 ไฟล์"
+  },
+  {
+    "id": "work-report",
+    "word": "report",
+    "commonsCategory": "Reports",
+    "article": "Report",
+    "photo": true,
+    "note": "หมวด Reports มีภาพรายงานและเอกสาร 74 ไฟล์"
+  },
+  {
+    "id": "work-promotion",
+    "word": "promotion",
+    "commonsCategory": null,
+    "article": "Promotion (rank)",
+    "photo": false,
+    "note": "ไม่มีหมวด Promotion (rank) บน Commons ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "feelings-stressed",
+    "word": "stressed",
+    "commonsCategory": null,
+    "article": "Psychological stress",
+    "photo": false,
+    "note": "หมวด Psychological stress เป็นภาพเชิงการแพทย์ ใช้อีโมจิแทน"
+  },
+  {
+    "id": "feelings-tired",
+    "word": "tired",
+    "commonsCategory": "Yawning",
+    "article": "Fatigue",
+    "photo": true,
+    "note": "หมวด Yawning มีภาพคนหาวเพราะเหนื่อย 19 ไฟล์"
+  },
+  {
+    "id": "feelings-proud",
+    "word": "proud",
+    "commonsCategory": null,
+    "article": "Pride",
+    "photo": false,
+    "note": "หมวด Pride เป็นภาพขบวนพาเหรด ไม่ตรงความหมาย ใช้อีโมจิ"
+  },
+  {
+    "id": "feelings-kind",
+    "word": "kind",
+    "commonsCategory": "Helping",
+    "article": "Kindness",
+    "photo": true,
+    "note": "หมวด Helping มีภาพคนช่วยเหลือกัน 103 ไฟล์"
+  },
+  {
+    "id": "feelings-punctual",
+    "word": "punctual",
+    "commonsCategory": null,
+    "article": "Punctuality",
+    "photo": false,
+    "note": "หมวด Punctuality มีแค่ 3 ไฟล์ ไม่พอใช้ ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "feelings-shy",
+    "word": "shy",
+    "commonsCategory": null,
+    "article": "Shyness",
+    "photo": false,
+    "note": "หมวด Shyness มีภาพไม่เหมาะสม/ไม่ตรงหลายภาพ ใช้อีโมจิแทน"
+  },
+  {
+    "id": "feelings-confident",
+    "word": "confident",
+    "commonsCategory": null,
+    "article": "Confidence",
+    "photo": false,
+    "note": "ไม่มีหมวด Confidence (emotion) บน Commons ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "feelings-nervous",
+    "word": "nervous",
+    "commonsCategory": null,
+    "article": "Anxiety",
+    "photo": false,
+    "note": "หมวด Anxiety เป็นภาพเชิงการแพทย์/จิตวิทยา ใช้อีโมจิแทน"
+  },
+  {
+    "id": "feelings-friendly",
+    "word": "friendly",
+    "commonsCategory": "Friendship",
+    "article": "Friendship",
+    "photo": true,
+    "note": "หมวด Friendship มีภาพมิตรภาพและการทักทาย 225 ไฟล์"
+  },
+  {
+    "id": "feelings-patient",
+    "word": "patient",
+    "commonsCategory": null,
+    "article": "Patience",
+    "photo": false,
+    "note": "หมวด Patience มีภาพปะปนไม่ตรงความหมาย ใช้ภาพอีโมจิแทน"
+  },
+  {
+    "id": "feelings-cheerful",
+    "word": "cheerful",
+    "commonsCategory": "People smiling",
+    "article": "Happiness",
+    "photo": true,
+    "note": "หมวด People smiling มีภาพคนยิ้มร่าเริง 775 ไฟล์"
+  },
+  {
+    "id": "feelings-worry",
+    "word": "worry",
+    "commonsCategory": null,
+    "article": "Worry",
+    "photo": false,
+    "note": "หมวด Worry มีภาพปะปนและบางภาพไม่เหมาะกับเด็ก ใช้อีโมจิ"
+  }
+]

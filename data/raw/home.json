@@ -1,0 +1,206 @@
+[
+  {
+    "id": "home-apartment",
+    "word": "apartment",
+    "pos": "n.",
+    "ipa": "/əˈpɑːrt.mənt/",
+    "thai": "อพาร์ตเมนต์ / ห้องชุด",
+    "emoji": "🏢",
+    "imageQuery": "modern apartment building",
+    "example": "My apartment is on the fifth floor near the market.",
+    "exampleThai": "อพาร์ตเมนต์ของฉันอยู่ชั้นห้าใกล้ตลาด",
+    "keyVocab": [
+      { "en": "apartment", "thai": "อพาร์ตเมนต์" },
+      { "en": "fifth floor", "thai": "ชั้นห้า" },
+      { "en": "near the market", "thai": "ใกล้ตลาด" }
+    ],
+    "tip": "apartment คือห้องชุดให้เช่า อังกฤษใช้ flat ส่วน condo คือห้องชุดที่ซื้อกรรมสิทธิ์"
+  },
+  {
+    "id": "home-house",
+    "word": "house",
+    "pos": "n.",
+    "ipa": "/haʊs/",
+    "thai": "บ้าน",
+    "emoji": "🏠",
+    "imageQuery": "family house exterior",
+    "example": "Their new house has a small garden and a garage.",
+    "exampleThai": "บ้านหลังใหม่ของพวกเขามีสวนเล็กๆ กับโรงรถ",
+    "keyVocab": [
+      { "en": "new house", "thai": "บ้านหลังใหม่" },
+      { "en": "garden", "thai": "สวน" },
+      { "en": "garage", "thai": "โรงรถ" }
+    ],
+    "tip": "house คือตัวบ้าน ส่วน home คือบ้านในความรู้สึก ใช้พูดถึงที่ที่เราอยู่อาศัย"
+  },
+  {
+    "id": "home-bedroom",
+    "word": "bedroom",
+    "pos": "n.",
+    "ipa": "/ˈbed.ruːm/",
+    "thai": "ห้องนอน",
+    "emoji": "🛏️",
+    "imageQuery": "cozy bedroom interior",
+    "example": "I share a bedroom with my younger brother.",
+    "exampleThai": "ฉันนอนห้องเดียวกับน้องชาย",
+    "keyVocab": [
+      { "en": "share", "thai": "ใช้ร่วมกัน" },
+      { "en": "bedroom", "thai": "ห้องนอน" },
+      { "en": "younger brother", "thai": "น้องชาย" }
+    ],
+    "tip": "bedroom คือห้องนอน bathroom คือห้องน้ำ และ kitchen คือห้องครัว"
+  },
+  {
+    "id": "home-kitchen",
+    "word": "kitchen",
+    "pos": "n.",
+    "ipa": "/ˈkɪtʃ.ən/",
+    "thai": "ห้องครัว",
+    "emoji": "🍳",
+    "imageQuery": "home kitchen interior",
+    "example": "My mother is cooking dinner in the kitchen right now.",
+    "exampleThai": "ตอนนี้แม่กำลังทำอาหารเย็นอยู่ในครัว",
+    "keyVocab": [
+      { "en": "cooking dinner", "thai": "ทำอาหารเย็น" },
+      { "en": "kitchen", "thai": "ห้องครัว" },
+      { "en": "right now", "thai": "ตอนนี้" }
+    ],
+    "tip": "kitchen อ่านว่า คิทเช่น ระวังออกเสียงเป็น คิชเช่น ซึ่งไม่ถูกต้อง"
+  },
+  {
+    "id": "home-living-room",
+    "word": "living room",
+    "pos": "n.",
+    "ipa": "/ˈlɪv.ɪŋ ruːm/",
+    "thai": "ห้องนั่งเล่น",
+    "emoji": "🛋️",
+    "imageQuery": "living room sofa",
+    "example": "We watch TV together in the living room every night.",
+    "exampleThai": "เราดูทีวีด้วยกันที่ห้องนั่งเล่นทุกคืน",
+    "keyVocab": [
+      { "en": "watch TV", "thai": "ดูทีวี" },
+      { "en": "living room", "thai": "ห้องนั่งเล่น" },
+      { "en": "every night", "thai": "ทุกคืน" }
+    ],
+    "tip": "living room คือห้องนั่งเล่น บางคนเรียกว่า lounge หรือ family room"
+  },
+  {
+    "id": "home-furniture",
+    "word": "furniture",
+    "pos": "n.",
+    "ipa": "/ˈfɝː.nɪ.tʃɚ/",
+    "thai": "เครื่องเรือน / เฟอร์นิเจอร์",
+    "emoji": "🪑",
+    "imageQuery": "wooden furniture set",
+    "example": "We bought some new furniture for our small living room.",
+    "exampleThai": "เราซื้อเฟอร์นิเจอร์ใหม่เข้าห้องนั่งเล่นเล็กๆ ของเรา",
+    "keyVocab": [
+      { "en": "bought", "thai": "ซื้อ (อดีตของ buy)" },
+      { "en": "furniture", "thai": "เฟอร์นิเจอร์" },
+      { "en": "living room", "thai": "ห้องนั่งเล่น" }
+    ],
+    "tip": "furniture เป็นคำนับไม่ได้ ห้ามเติม s ถ้าจะนับใช้ a piece of furniture"
+  },
+  {
+    "id": "home-lamp",
+    "word": "lamp",
+    "pos": "n.",
+    "ipa": "/læmp/",
+    "thai": "โคมไฟ",
+    "emoji": "💡",
+    "imageQuery": "bedside table lamp",
+    "example": "Please turn on the lamp next to my bed.",
+    "exampleThai": "ช่วยเปิดโคมไฟข้างเตียงฉันหน่อย",
+    "keyVocab": [
+      { "en": "turn on", "thai": "เปิด (ไฟ/เครื่องใช้)" },
+      { "en": "lamp", "thai": "โคมไฟ" },
+      { "en": "next to my bed", "thai": "ข้างเตียงของฉัน" }
+    ],
+    "tip": "lamp คือโคมไฟไฟตั้งโต๊ะหรือหัวเตียง ส่วนไฟเพดานเรียกว่า light"
+  },
+  {
+    "id": "home-refrigerator",
+    "word": "refrigerator",
+    "pos": "n.",
+    "ipa": "/rɪˈfrɪdʒ.ə.reɪ.tɚ/",
+    "thai": "ตู้เย็น",
+    "emoji": "🧊",
+    "imageQuery": "open refrigerator kitchen",
+    "example": "There is no milk left in the refrigerator.",
+    "exampleThai": "นมในตู้เย็นไม่เหลือแล้ว",
+    "keyVocab": [
+      { "en": "milk", "thai": "นม" },
+      { "en": "left", "thai": "เหลืออยู่" },
+      { "en": "refrigerator", "thai": "ตู้เย็น" }
+    ],
+    "tip": "refrigerator คือตู้เย็น ในภาษาพูดมักย่อสั้นๆ ว่า fridge"
+  },
+  {
+    "id": "home-rent",
+    "word": "rent",
+    "pos": "n.",
+    "ipa": "/rent/",
+    "thai": "ค่าเช่า",
+    "emoji": "💰",
+    "imageQuery": "rent payment money",
+    "example": "The rent for this room is due on Friday.",
+    "exampleThai": "ค่าเช่าห้องนี้ต้องจ่ายวันศุกร์",
+    "keyVocab": [
+      { "en": "rent", "thai": "ค่าเช่า" },
+      { "en": "due on Friday", "thai": "ครบกำหนดวันศุกร์" },
+      { "en": "room", "thai": "ห้อง" }
+    ],
+    "tip": "rent เป็นได้ทั้งคำนาม (ค่าเช่า) และคำกริยา (เช่า) เช่น I rent a room."
+  },
+  {
+    "id": "home-neighbor",
+    "word": "neighbor",
+    "pos": "n.",
+    "ipa": "/ˈneɪ.bɚ/",
+    "thai": "เพื่อนบ้าน",
+    "emoji": "🏘️",
+    "imageQuery": "friendly neighbors house",
+    "example": "My neighbor always helps me when I am busy.",
+    "exampleThai": "เพื่อนบ้านฉันช่วยฉันทุกครั้งที่ฉันยุ่ง",
+    "keyVocab": [
+      { "en": "neighbor", "thai": "เพื่อนบ้าน" },
+      { "en": "helps", "thai": "ช่วย" },
+      { "en": "busy", "thai": "ยุ่ง / ไม่ว่าง" }
+    ],
+    "tip": "neighbor สะกดแบบอเมริกัน อังกฤษเขียน neighbour ออกเสียง เนย์เบอร์"
+  },
+  {
+    "id": "home-key",
+    "word": "key",
+    "pos": "n.",
+    "ipa": "/kiː/",
+    "thai": "กุญแจ",
+    "emoji": "🔑",
+    "imageQuery": "door key lock",
+    "example": "I can't find my house key anywhere.",
+    "exampleThai": "ฉันหากุญแจบ้านไม่เจอเลย",
+    "keyVocab": [
+      { "en": "house key", "thai": "กุญแจบ้าน" },
+      { "en": "anywhere", "thai": "ที่ไหนเลย" },
+      { "en": "find", "thai": "หาเจอ" }
+    ],
+    "tip": "key = กุญแจดอกหนึ่งใช้ a key ส่วนพวงกุญแจเรียกว่า keychain"
+  },
+  {
+    "id": "home-balcony",
+    "word": "balcony",
+    "pos": "n.",
+    "ipa": "/ˈbæl.kə.ni/",
+    "thai": "ระเบียง",
+    "emoji": "🌇",
+    "imageQuery": "apartment balcony view",
+    "example": "We drink coffee on the balcony every Sunday morning.",
+    "exampleThai": "เรานั่งดื่มกาแฟที่ระเบียงทุกเช้าวันอาทิตย์",
+    "keyVocab": [
+      { "en": "coffee", "thai": "กาแฟ" },
+      { "en": "balcony", "thai": "ระเบียง" },
+      { "en": "Sunday morning", "thai": "เช้าวันอาทิตย์" }
+    ],
+    "tip": "balcony อ่านว่า แบ็ล-คะ-นี เน้นพยางค์แรก หมายถึงระเบียง"
+  }
+]
