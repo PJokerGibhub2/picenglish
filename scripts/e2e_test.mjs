@@ -589,6 +589,14 @@ const PAGE_TEST = `(async () => {
   ok('สร้างข้อความวินิจฉัยให้คัดลอกส่งได้', typeof rep === 'string' && rep.includes('permission'), rep.slice(0, 60));
   const obm = await import('/js/openinbrowser.js');
   ok('มีฟังก์ชันแชร์ลิงก์ผ่านระบบมือถือ', typeof obm.shareUrl === 'function');
+  /* ---------- 10.97) เลขเวอร์ชันท้ายแอป + ทดสอบระบบฟังเสียง ---------- */
+  const verTag = document.getElementById('app-version');
+  ok('มีเลขเวอร์ชันแสดงท้ายแอป', !!verTag && /v[0-9]+/.test(verTag.textContent || ''), verTag ? verTag.textContent : 'ไม่พบ');
+  const verMod = await import('/js/version.js');
+  ok('เลขเวอร์ชันตรงกับไฟล์ version.js', !!verTag && verTag.textContent.includes(verMod.VERSION), verMod.VERSION);
+  ok('มีฟังก์ชันทวดระบบฟังเสียง', typeof spMod.sttSelfTest === 'function');
+  const selfTest = await spMod.sttSelfTest(2500);
+  ok('ทวดระบบฟังเสียงแล้วได้คำตอบ (ไม่ค้าง)', !!selfTest && typeof selfTest.ok === 'boolean', JSON.stringify(selfTest));
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');
   const probe = words.find((w) => w.word === 'receipt') || words[0];

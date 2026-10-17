@@ -450,3 +450,30 @@ export function inAppBrowser(uaOverride) {
     return /\bwv\b/.test(ua) ? 'WebView' : '';
   } catch (e) { return ''; }
 }
+/**
+ * ทดสอบระบบฟังเสียงจริง 4 วินาที → คืนรหัส error ที่แท้จริง
+ * ใช้แยกว่า "ไม่มี Permission" กับ "เครื่องไม่มีบริการถอดเสียง (network)"
+ */
+export function sttSelfTest(timeoutMs = 6000) {
+  return new Promise((resolve) => {
+    if (!sttSupported()) { resolve({ ok: false, err: 'unsupported' }); return; }
+    let done = false;
+    const finish = (res) => { if (done) return; done = true; try { rec && rec.abort && rec.abort(); } catch (e) { /* ignore */ } resolve(res); };
+    let rec = null;
+    try {
+      rec = createRecognizer({
+        lang: 'en-US',
+        interim: false,
+        onResult: ({ final }) => finish({ ok: true, err: '', text: final || '' }),
+        onError: (err) => finish({ ok: false, err }),
+        onEnd: () => finish({ ok: false, err: 'no-speech' }),
+      });
+      if (!rec) { resolve({ ok: false, err: 'unsupported' }); return; }
+      rec.start();
+    } catch (e) {
+      finish({ ok: false, err: 'start-failed' });
+      return;
+    }
+    setTimeout(() => finish({ ok: false, err: 'timeout' }), timeoutMs);
+  });
+}

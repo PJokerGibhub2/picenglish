@@ -11,7 +11,7 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, speakSentence, renderSentence, clearHighlight, loadVoices,
-  englishVoices, sttSupported, sttSupport, sttErrorReason, inAppBrowser, createRecognizer, alignWords,
+  englishVoices, sttSupported, sttSupport, sttErrorReason, sttSelfTest, inAppBrowser, createRecognizer, alignWords,
 } from './speech.js';
 import { micPanel } from './micfallback.js';
 import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
@@ -1204,16 +1204,24 @@ function toggleHardWithToast(w) {
 function micDiagSheet() {
   openSheet((close) => {
     const out = h('div', { class: 'small', style: { lineHeight: '1.9' }, text: 'กำลังตรวจ…' });
-    micDiagnosticsReport().then((rep) => {
+    micDiagnosticsReport().then(async (rep) => {
+      out.textContent = 'กำลังทดสอบระบบฟังเสียง…';
+      const stt = await sttSelfTest(5000);
+      const sttLine = 'stt=' + (stt.ok ? 'ok' : (stt.err || 'unknown'));
+      const full = rep + ' | ' + sttLine;
+      const sttText = stt.ok
+        ? '✅ ระบบฟังเสียงทำงาน (ถอดคำได้)'
+        : '❌ ระบบฟังเสียงไม่ทำงาน: ' + (stt.err || 'unknown') + ' — ' + sttErrorReason(stt.err);
       mount(out,
-        h('div', { class: 'small', style: { fontFamily: 'monospace', fontSize: '.72rem', lineHeight: '1.7', wordBreak: 'break-word', padding: '10px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)' }, text: rep }),
+        h('div', { class: 'bold', style: { color: stt.ok ? 'var(--success)' : 'var(--danger)', fontSize: '.9rem' }, text: sttText }),
+        h('div', { class: 'small', style: { fontFamily: 'monospace', fontSize: '.7rem', lineHeight: '1.7', wordBreak: 'break-word', padding: '10px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)', marginTop: '8px' }, text: full }),
         h('div', { class: 'tiny muted', style: { marginTop: '8px' }, text: 'คัดลอกข้อความนี้ส่งให้ผู้พัฒนา เพื่อรู้สาเหตุที่แน่นอนบนเครื่องคุณ' }),
         h('div', { class: 'row', style: { gap: '8px', marginTop: '10px' } },
           h('button', {
             class: 'btn btn-primary btn-block btn-sm', type: 'button',
             onclick: async () => {
               try {
-                await navigator.clipboard.writeText(rep);
+                await navigator.clipboard.writeText(full);
                 toast('คัดลอกข้อมูลแล้ว — ส่งมาให้ผู้พัฒนาได้เลย', 'ok');
               } catch (e) {
                 toast('คัดลอกไม่สำเร็จ — จด/แคปหน้าจอแทน', 'err');

@@ -7,6 +7,7 @@ import { views, openSettings } from './views.js';
 import { speakingHub, roleplay, sentenceReview, oneMinute } from './views-speaking.js';
 import { today } from './views-today.js';
 import { inAppBanner } from './openinbrowser.js';
+import { VERSION as APP_VERSION, BUILD_DATE } from './version.js';
 import { h, mount, toast, emptyState } from './ui.js';
 import * as store from './store.js';
 import { loadVoices, loadAudioManifest } from './speech.js';
@@ -89,6 +90,20 @@ function parseHash() {
   return { name, params };
 }
 
+/** แสดงเลขเวอร์ชันท้ายแอป เพื่อให้รู้ว่ากำลังใช้รุ่นไหน */
+function renderVersionTag() {
+  const slot = document.getElementById('app-version-slot');
+  if (!slot) return;
+  const d = new Date(BUILD_DATE + 'T00:00:00');
+  const thai = d.toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: 'numeric' });
+  slot.innerHTML = '';
+  const tag = document.createElement('div');
+  tag.id = 'app-version';
+  tag.className = 'app-version';
+  tag.textContent = 'PicEnglish ' + APP_VERSION + ' · ' + thai;
+  tag.title = 'เวอร์ชันแอป: ' + APP_VERSION + ' (build ' + BUILD_DATE + ')';
+  slot.appendChild(tag);
+}
 function route() {
   const { name, params } = parseHash();
   const render = ROUTES[name] || ROUTES.today;
@@ -112,6 +127,7 @@ function route() {
     mount(viewEl, emptyState('😵', 'เกิดข้อผิดพลาดในการแสดงผล', String(err && err.message || err)));
   }
   updateBadges();
+  renderVersionTag();
 }
 
 backBtn.addEventListener('click', () => {
@@ -186,7 +202,6 @@ function renderInAppNotice() {
 }
 renderInAppNotice();
 
-window.addEventListener('hashchange', route);
   started = true;
   route();
   registerSW();
@@ -198,4 +213,5 @@ window.addEventListener('hashchange', route);
   document.addEventListener('visibilitychange', () => { if (!document.hidden && started) updateBadges(); });
 }
 
+window.addEventListener('hashchange', route);
 main();

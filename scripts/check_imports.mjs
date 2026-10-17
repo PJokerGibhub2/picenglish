@@ -1,4 +1,4 @@
-/**
+﻿/**
  * check_imports.mjs — ตรวจว่า named import ทุกตัวมีอยู่จริงในไฟล์ต้นทาง
  * จับ typo ที่ตัว checker ปกติของเบราว์เซอร์จะฟ้องตอนรันเท่านั้น
  *
@@ -89,3 +89,17 @@ if (problems) {
   process.exit(1);
 }
 console.log('ไม่พบปัญหา');
+/* ---------------- ตรวจเลขเวอร์ชันให้ตรงกันระหว่าง js/version.js กับ sw.js ---------------- */
+try {
+  const ver = readFileSync('js/version.js', 'utf8');
+  const sw = readFileSync('sw.js', 'utf8');
+  const v1 = (ver.match(/export const VERSION = '([^']+)'/) || [])[1];
+  const v2 = (sw.match(/const VERSION = '([^']+)'/) || [])[1];
+  if (v1 && v2 && v1 !== v2) {
+    console.error(`✗ เลขเวอร์ชันไม่ตรงกัน: js/version.js=${v1} sw.js=${v2}`);
+    process.exit(1);
+  }
+  console.log(`เวอร์ชัน: ${v1} (ตรงกับ sw.js)`);
+} catch (e) {
+  console.warn('ตรวจเวอร์ชันไม่ได้:', e.message);
+}

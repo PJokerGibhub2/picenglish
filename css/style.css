@@ -636,3 +636,18 @@ html.liff-client .view { padding-bottom: calc(var(--tabbar-h) + env(safe-area-in
   background: color-mix(in srgb, var(--gold) 12%, var(--surface));
   box-shadow: 0 8px 22px color-mix(in srgb, var(--gold) 18%, transparent);
 }
+/* ---------- 22. VERSION TAG ---------- */
+.app-version-slot {
+  position: fixed; left: 0; right: 0;
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 2px);
+  z-index: 35; text-align: center; pointer-events: none;
+}
+.app-version {
+  margin: 0;
+  text-align: center;
+  font-size: .62rem;
+  letter-spacing: .04em;
+  color: var(--text-dim);
+  opacity: .6;
+  font-family: var(--font-en);
+}
