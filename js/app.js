@@ -4,7 +4,7 @@
 
 import { loadAll, db } from './data.js';
 import { views, openSettings } from './views.js';
-import { speakingHub, roleplay, sentenceReview } from './views-speaking.js';
+import { speakingHub, roleplay, sentenceReview, oneMinute } from './views-speaking.js';
 import { h, mount, toast, emptyState } from './ui.js';
 import * as store from './store.js';
 import { loadVoices, loadAudioManifest } from './speech.js';
@@ -17,6 +17,7 @@ const TITLES = {
   speaking: 'ฝึกพูด',
   roleplay: 'บทสนทนาจำลอง',
   sentenceReview: 'ทบทวนประโยค',
+  onemin: 'พูดคนเดียว 60 วินาที',
   games: 'เกม',
   quiz: 'ควิซปรนัย',
   match: 'จับคู่ภาพ-คำ',
@@ -31,11 +32,12 @@ const ROUTES = {
   speaking: speakingHub,
   roleplay,
   sentenceReview,
+  onemin: oneMinute,
 };
 
 const TABS = ['learn', 'listen', 'speaking', 'review', 'mine'];
 // หน้าที่ถือว่าอยู่ในแท็บ "ฝึกพูด"
-const SPEAKING_PAGES = ['speaking', 'roleplay', 'sentenceReview', 'games', 'quiz', 'match', 'speak'];
+const SPEAKING_PAGES = ['speaking', 'roleplay', 'sentenceReview', 'onemin', 'games', 'quiz', 'match', 'speak'];
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('topbar-title');
 const backBtn = document.getElementById('btn-back');
@@ -89,7 +91,7 @@ function route() {
   });
 
   titleEl.textContent = TITLES[name] || 'PicEnglish';
-  backBtn.classList.toggle('hidden', !['quiz', 'match', 'speak', 'roleplay', 'sentenceReview'].includes(name));
+  backBtn.classList.toggle('hidden', !['quiz', 'match', 'speak', 'roleplay', 'sentenceReview', 'onemin'].includes(name));
   viewEl.scrollTop = 0;
   window.scrollTo(0, 0);
 

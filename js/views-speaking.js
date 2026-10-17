@@ -8,7 +8,7 @@
  *   - ประโยคที่พูดไม่ได้ เข้าคิวทบทวน SRS ระดับประโยค
  */
 
-import { db, getDialogue, categoryOf } from './data.js';
+import { db, getDialogue, categoryOf, shuffle, sample } from './data.js';
 import * as store from './store.js';
 import {
   h, mount, clear, toast, openSheet, closeSheet, sheetHeader, photoBox, emptyState,
@@ -21,6 +21,7 @@ import {
 import {
   recordingSupported, startRecording, playBlob, stopPlayback,
   saveRecording, recordingSupported as canRecord,
+  listRecordings, deleteRecording, updateRecording,
 } from './recorder.js';
 
 const S = () => store.settings();
@@ -113,9 +114,18 @@ export function speakingHub(root) {
     h('div', { text: ready ? `มี ${db.dialogues.length} สถานการณ์ · แอปอ่านบทคู่สนทนา คุณพูดบทของคุณ แล้วสลับบท` : 'กำลังเตรียมเนื้อหา' })),
   h('span', { class: 'pill', text: ready ? 'พร้อมใช้' : 'เร็วๆ นี้' })));
 
+  // โหมดพูดคนเดียว 60 วินาที (ใช้งานได้แล้ว)
+  root.appendChild(h('a', {
+    href: '#/onemin', class: 'list-item', style: { padding: '14px' },
+  },
+  h('div', { class: 'thumb', style: { fontSize: '1.9rem' }, text: '⏱️' }),
+  h('div', { class: 'lt' },
+    h('b', { style: { fontFamily: 'var(--font)', fontSize: '1rem' }, text: 'พูดคนเดียว 60 วินาที' }),
+    h('div', { text: 'หัวข้อจากคำที่คุณยังไม่แม่น · อัดเสียงเก็บไว้ฟังย้อนหลัง' })),
+  h('span', { class: 'pill', text: 'พร้อมใช้' })));
+
   const soon = [
     { emoji: '🔊', title: 'พูดตามเงา (Shadowing)', desc: 'พูดตามเสียงต้นแบบ ฝึกจังหวะและความคล่อง' },
-    { emoji: '⏱️', title: 'พูดคนเดียว 60 วินาที', desc: 'อัดเสียงตัวเองเก็บไว้ฟังย้อนหลัง เห็นพัฒนาการ' },
     { emoji: '⌨️', title: 'เขียนจากเสียง (Dictation)', desc: 'ฟังแล้วพิมพ์ ฝึกทักษะเขียนที่ใช้จริง' },
     { emoji: '🧱', title: 'เรียงประโยค', desc: 'ประกอบประโยคจากคำที่ให้ โดยไม่ต้องท่องไวยากรณ์' },
   ];
@@ -888,4 +898,301 @@ export function sentenceReview(root) {
   }
 
   return home();
+}
+
+/* ================================================================== *
+ * พูดคนเดียว 60 วินาที (One-minute monologue)
+ *
+ * ทำไมโหมดนี้สำคัญ: เป็นการ "ผลิตภาษาเอง" โดยไม่มีบทให้อ่าน
+ * หัวข้อสร้างจากคำที่ผู้ใช้ยังไม่แม่น (SRS) จึงเป็นการฝึกเฉพาะบุคคลโดยไม่ต้องใช้ AI
+ * ผู้ใช้ได้ฟังเสียงตัวเองย้อนหลัง → เห็นพัฒนาการของตัวเอง (แรงจูงใจที่แรงที่สุด)
+ * ================================================================== */
+
+const ONEMIN_SECONDS = 60;
+
+const ONEMIN_PROMPTS = {
+  food: ['เล่าเรื่องมื้ออาหารที่คุณชอบที่สุด', 'อธิบายเมนูที่คุณทำเองได้', 'เล่าร้านอาหารที่คุณไปครั้งล่าสุด'],
+  restaurant: ['เล่าการสั่งอาหารครั้งล่าสุดของคุณ', 'อธิบายร้านอาหารที่คุณอยากลอง'],
+  travel: ['เล่าการเดินทางที่คุณชอบที่สุด', 'อธิบายวิธีเดินทางไปสถานที่หนึ่งให้เพื่อนฟัง'],
+  home: ['เล่าบ้านหรือห้องที่คุณอยู่ทุกวัน', 'อธิบายบ้านในฝันของคุณ'],
+  shopping: ['เล่าการซื้อของที่คุณประทับใจ', 'อธิบายวิธีที่คุณเลือกซื้อของ'],
+  health: ['เล่าครั้งล่าสุดที่คุณรู้สึกไม่สบาย', 'อธิบายวิธีดูแลสุขภาพของคุณ'],
+  work: ['เล่างานหรือสิ่งที่คุณทำทุกวัน', 'อธิบายวันทำงานปกติของคุณ'],
+  feelings: ['เล่าวันที่คุณรู้สึกภูมิใจ', 'อธิบายนิสัยของเพื่อนสนิทของคุณ'],
+};
+
+/** เลือกคำที่ผู้ใช้ "ยังไม่แม่น" (ไม่เคยทบทวน / ease ต่ำ / ตอบผิดบ่อย) */
+function pickFocusWords(n = 3) {
+  const scored = db.words.map((w) => {
+    const s = store.srsOf(w.id);
+    const st = store.statOf(w.id);
+    let score = 0;
+    if (s.reps === 0) score += 90;           // ยังไม่เคยทบทวน
+    if (!st.seen) score += 50;               // ไม่เคยเห็น
+    score += Math.round((2.6 - (s.ease || 2.5)) * 80);
+    score += (s.lapses || 0) * 30;
+    score += (st.wrong || 0) * 15;
+    return { w, score };
+  }).sort((a, b) => b.score - a.score);
+  const picked = shuffle(scored.slice(0, 14)).slice(0, n).map((x) => x.w);
+  if (picked.length < n) picked.push(...sample(db.words, n - picked.length));
+  return picked;
+}
+
+function newTopic() {
+  const words = pickFocusWords(3);
+  const catId = words[0] ? words[0].category : 'food';
+  const list = ONEMIN_PROMPTS[catId] || ONEMIN_PROMPTS.food;
+  return {
+    words,
+    category: catId,
+    prompt: list[Math.floor(Math.random() * list.length)],
+  };
+}
+
+const RING_R = 62;
+const RING_C = Math.round(2 * Math.PI * RING_R);
+
+export function oneMinute(root) {
+  let phase = 'idle';         // idle | recording | review
+  let handle = null;
+  let timerId = null;
+  let remaining = ONEMIN_SECONDS;
+  let startedAt = 0;
+  let current = newTopic();
+  let lastBlob = null;
+  let lastId = null;
+  let lastSeconds = 0;
+  let lastRating = 0;
+  let ringEl = null;
+  let clockEl = null;
+  let historyEl = null;
+  let alive = true;
+
+  function destroy() {
+    alive = false;
+    clearInterval(timerId); timerId = null;
+    if (handle) { try { handle.stop(); } catch (e) { /* ignore */ } handle = null; }
+    stopPlayback();
+  }
+
+  /* ---------- ตัวจับเวลา ---------- */
+  function tick() {
+    if (!alive) return;
+    remaining = Math.max(0, ONEMIN_SECONDS - (Date.now() - startedAt) / 1000);
+    patchTimer();
+    if (remaining <= 0) stopRecording();
+  }
+
+  function patchTimer() {
+    if (clockEl) clockEl.textContent = remaining >= 59.5 ? '60' : String(Math.ceil(remaining));
+    if (ringEl) {
+      const pct = 1 - remaining / ONEMIN_SECONDS;
+      ringEl.setAttribute('stroke-dashoffset', String(Math.round(RING_C * (1 - pct))));
+    }
+  }
+
+  async function startRecordingNow() {
+    if (!recordingSupported()) { toast('เบราว์เซอร์นี้บันทึกเสียงไม่ได้', 'err'); return; }
+    ensureMicPermission(async () => {
+      phase = 'recording';
+      remaining = ONEMIN_SECONDS;
+      render();
+      handle = await startRecording();
+      if (!handle) { phase = 'idle'; render(); toast('เริ่มอัดไม่สำเร็จ — ตรวจสิทธิ์ไมโครโฟน', 'err'); return; }
+      startedAt = Date.now();
+      timerId = setInterval(tick, 200);
+      tick();
+    });
+  }
+
+  async function stopRecording() {
+    clearInterval(timerId); timerId = null;
+    if (!handle) return;
+    const secs = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
+    const blob = await handle.stop();
+    handle = null;
+    if (!blob) { phase = 'idle'; render(); toast('ไม่ได้ยินเสียง ลองอีกครั้ง', 'err'); return; }
+    lastBlob = blob;
+    lastSeconds = secs;
+    lastRating = 0;
+    store.addSecondsSpoken(secs);
+    store.bumpSpoken(1);
+    lastId = await saveRecording({
+      kind: 'onemin',
+      refId: current.category,
+      label: current.prompt,
+      blob,
+      seconds: secs,
+      selfRating: 0,
+    });
+    phase = 'review';
+    render();
+    loadHistory();
+    toast('บันทึกเสียงแล้ว ' + secs + ' วินาที', 'ok');
+  }
+
+  async function rate(n) {
+    lastRating = n;
+    store.addSelfRating(n);
+    if (lastId) await updateRecording(lastId, { selfRating: n });
+    render();
+    loadHistory();
+    if (n >= 4) toast('เยี่ยม! ครั้งหน้าลองเพิ่มรายละเอียดอีกนิด', 'ok');
+  }
+
+  async function loadHistory() {
+    if (!historyEl || !alive) return;
+    const list = (await listRecordings('onemin')).slice(0, 8);
+    if (!alive) return;
+    clear(historyEl);
+    if (!list.length) {
+      historyEl.appendChild(h('div', { class: 'tiny muted center', style: { padding: '10px 0' },
+        text: 'ยังไม่มีคลิป — อัดคลิปแรกได้เลย!' }));
+      return;
+    }
+    for (const r of list) {
+      const d = new Date(r.createdAt);
+      const dateStr = d.toLocaleDateString('th-TH', { day: 'numeric', month: 'short' });
+      const stars = r.selfRating ? '★'.repeat(r.selfRating) + '☆'.repeat(5 - r.selfRating) : '☆☆☆☆☆';
+      historyEl.appendChild(h('div', { class: 'list-item', style: { padding: '10px 12px' } },
+        h('button', {
+          class: 'btn btn-ghost btn-sm', type: 'button', style: { width: '44px', minHeight: '40px', padding: 0 },
+          onclick: () => playBlob(r.blob, 1),
+        }, '🔊'),
+        h('div', { class: 'lt' },
+          h('b', { style: { fontSize: '.86rem', fontFamily: 'var(--font)' }, text: dateStr + ' · ' + r.seconds + ' วิ' }),
+          h('div', { text: (r.label || '').slice(0, 34) })),
+        h('span', { class: 'tiny', style: { color: 'var(--warn)', whiteSpace: 'nowrap' }, text: stars }),
+        h('button', {
+          class: 'icon-btn', type: 'button', 'aria-label': 'ลบคลิป',
+          onclick: async () => { await deleteRecording(r.id); loadHistory(); toast('ลบคลิปแล้ว'); },
+        }, icon('close', 16))));
+    }
+  }
+
+  /* ---------- หน้าจอ ---------- */
+  function render() {
+    mount(root);
+
+    root.appendChild(h('div', { class: 'row', style: { alignItems: 'center', marginBottom: '10px' } },
+      h('button', {
+        class: 'btn btn-ghost btn-sm', type: 'button',
+        onclick: () => { location.hash = '#/speaking'; },
+      }, '← ออก'),
+      h('div', { class: 'spacer' }),
+      h('span', { class: 'pill', text: ONEMIN_SECONDS + ' วินาที' })));
+
+    // หัวข้อ
+    root.appendChild(h('div', {
+      class: 'card',
+      style: {
+        background: 'linear-gradient(150deg, color-mix(in srgb, var(--primary) 88%, #000 4%), color-mix(in srgb, var(--primary) 45%, #ec4899))',
+        color: '#fff', border: '0',
+      },
+    },
+    h('div', { class: 'tiny', style: { opacity: '.85', letterSpacing: '.06em' }, text: 'หัวข้อวันนี้' }),
+    h('div', { class: 'bold', style: { fontSize: '1.18rem', marginTop: '2px' }, text: current.prompt }),
+    h('div', { class: 'tiny', style: { opacity: '.85', marginTop: '8px' }, text: 'ลองใช้คำเหล่านี้ (แตะเพื่อฟัง)' }),
+    (() => {
+      const wrap = h('div', { class: 'keyvocab', style: { marginTop: '6px' } });
+      for (const w of current.words) {
+        wrap.appendChild(h('button', {
+          class: 'kv', type: 'button',
+          style: { background: 'rgba(255,255,255,.18)', border: '1px solid rgba(255,255,255,.28)', color: '#fff' },
+          onclick: () => say(w.word, { audioKey: 'word:' + w.id }),
+        }, h('b', { text: w.word }), h('span', { style: { color: 'rgba(255,255,255,.8)' }, text: w.thai })));
+      }
+      return wrap;
+    })()));
+
+    if (phase === 'recording') {
+      const card = h('div', { class: 'card center', style: { marginTop: '12px' } });
+      const svgNS = 'http://www.w3.org/2000/svg';
+      const svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('viewBox', '0 0 150 150');
+      svg.setAttribute('width', '170');
+      svg.setAttribute('height', '170');
+      const bg = document.createElementNS(svgNS, 'circle');
+      bg.setAttribute('cx', '75'); bg.setAttribute('cy', '75'); bg.setAttribute('r', String(RING_R));
+      bg.setAttribute('fill', 'none'); bg.setAttribute('stroke', 'var(--border)'); bg.setAttribute('stroke-width', '10');
+      const fg = document.createElementNS(svgNS, 'circle');
+      fg.setAttribute('cx', '75'); fg.setAttribute('cy', '75'); fg.setAttribute('r', String(RING_R));
+      fg.setAttribute('fill', 'none'); fg.setAttribute('stroke', 'var(--primary)');
+      fg.setAttribute('stroke-width', '10'); fg.setAttribute('stroke-linecap', 'round');
+      fg.setAttribute('stroke-dasharray', String(RING_C));
+      fg.setAttribute('stroke-dashoffset', '0');
+      fg.setAttribute('transform', 'rotate(-90 75 75)');
+      svg.appendChild(bg); svg.appendChild(fg);
+      ringEl = fg;
+      clockEl = h('div', {
+        style: {
+          position: 'absolute', fontFamily: 'var(--font-en)', fontSize: '2.2rem', fontWeight: '800',
+        },
+        text: '60',
+      });
+      card.appendChild(h('div', { style: { position: 'relative', display: 'grid', placeItems: 'center' } }, svg, clockEl));
+      card.appendChild(h('div', { class: 'small muted', style: { marginTop: '-6px' }, text: 'กำลังอัดเสียง — พูดต่อเนื่องได้เลย' }));
+      root.appendChild(card);
+
+      root.appendChild(h('div', { style: { marginTop: '12px' } },
+        h('button', { class: 'btn btn-danger btn-block', type: 'button', onclick: () => stopRecording() },
+          '⏹ หยุด & ฟังเสียงตัวเอง')));
+      root.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '8px' },
+        text: 'ไม่ต้องกลัวผิด — ไม่มีใครฟังนอกจากตัวคุณ' }));
+    } else if (phase === 'review') {
+      const card = h('div', { class: 'card', style: { marginTop: '12px' } });
+      card.appendChild(h('div', { class: 'center' },
+        h('div', { style: { fontSize: '1.6rem' }, text: '🎙️' }),
+        h('div', { class: 'bold', text: 'อัดเสร็จแล้ว · ' + lastSeconds + ' วินาที' }),
+        h('div', { class: 'tiny muted', text: 'ฟังย้อนหลังแล้วให้คะแนนตัวเอง' })));
+      card.appendChild(h('div', { class: 'row', style: { gap: '8px', marginTop: '10px' } },
+        h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => lastBlob && playBlob(lastBlob, 1) }, '🔊 ฟังเสียงฉัน')));
+      const stars = h('div', { class: 'row', style: { gap: '6px', justifyContent: 'center', marginTop: '10px' } });
+      for (let n = 1; n <= 5; n++) {
+        stars.appendChild(h('button', {
+          class: 'icon-btn', type: 'button', 'aria-label': 'ให้ ' + n + ' ดาว',
+          style: { fontSize: '1.5rem', color: n <= lastRating ? 'var(--warn)' : 'var(--text-soft)' },
+          onclick: () => rate(n),
+        }, n <= lastRating ? '★' : '☆'));
+      }
+      card.appendChild(stars);
+      card.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '4px' },
+        text: 'ความคล่องเป็นเรื่องของ "การฝึกซ้ำ" ไม่ใช่ "ความสามารถ"' }));
+      root.appendChild(card);
+
+      root.appendChild(h('div', { class: 'row', style: { gap: '8px', marginTop: '12px' } },
+        h('button', {
+          class: 'btn btn-ghost btn-block', type: 'button',
+          onclick: () => { phase = 'idle'; current = newTopic(); render(); loadHistory(); },
+        }, 'หัวข้อใหม่'),
+        h('button', {
+          class: 'btn btn-primary btn-block', type: 'button',
+          onclick: () => { phase = 'idle'; render(); },
+        }, 'อัดอีกรอบ')));
+    } else {
+      root.appendChild(h('div', { class: 'card center', style: { marginTop: '12px' } },
+        h('div', { style: { fontSize: '2.6rem' }, text: '🎤' }),
+        h('div', { class: 'bold', style: { fontSize: '1.05rem' }, text: 'พูดต่อเนื่อง 60 วินาที' }),
+        h('div', { class: 'small muted', style: { marginTop: '4px' },
+          text: 'พูดเรื่องในหัวข้อข้างบนให้ได้ 1 นาที ไม่ต้องเป๊ะ ไม่ต้องกลัวผิด — เป้าหมายคือ "พูดได้โดยไม่หยุด"' })));
+      root.appendChild(h('div', { style: { marginTop: '12px' } },
+        h('button', { class: 'btn btn-primary btn-block', type: 'button', onclick: () => startRecordingNow() },
+          '🎤 เริ่มอัด 60 วินาที')));
+      if (!recordingSupported()) {
+        root.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '8px' },
+          text: '⚠️ เบราว์เซอร์นี้บันทึกเสียงไม่ได้ — ลอง Chrome/Safari รุ่นใหม่' }));
+      }
+    }
+
+    root.appendChild(h('div', { class: 'section-title', text: 'เสียงของฉัน' }));
+    historyEl = h('div', {});
+    root.appendChild(historyEl);
+    loadHistory();
+
+    return () => {};
+  }
+
+  render();
+  return destroy;
 }

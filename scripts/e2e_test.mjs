@@ -474,6 +474,35 @@ const PAGE_TEST = `(async () => {
   await sleep(800);
   ok('หน้าทบทวนประโยคเปิดได้', document.body.textContent.includes('ประโยค'));
 
+  /* ---------- 10.5) พูดคนเดียว 60 วินาที ---------- */
+  location.hash = '#/onemin';
+  await sleep(1100);
+  ok('เปิดโหมดพูดคนเดียว 60 วินาทีได้', document.body.textContent.includes('พูดต่อเนื่อง 60 วินาที'));
+  ok('มีหัวข้อให้พูด', document.body.textContent.includes('หัวข้อวันนี้'));
+  ok('แนะนำคำศัพท์จากจุดอ่อน (แตะฟังได้)', $$('.card .kv').length >= 1, $$('.card .kv').length + ' คำ');
+  ok('มีปุ่มเริ่มอัด 60 วินาที', !!findByText('เริ่มอัด 60 วินาที'));
+
+  click('เริ่มอัด 60 วินาที');
+  await sleep(400);
+  const gate2 = findByText('เข้าใจแล้ว');
+  if (gate2) { gate2.click(); await sleep(700); }
+  await sleep(2200);
+  ok('กำลังอัดและมีตัวจับเวลา', document.body.textContent.includes('กำลังอัดเสียง'));
+  const stopBtn = findByText('หยุด & ฟังเสียงตัวเอง');
+  ok('มีปุ่มหยุดอัด', !!stopBtn);
+  if (stopBtn) { stopBtn.click(); await sleep(1900); }
+  ok('หยุดแล้วเห็นผลและฟังเสียงตัวเองได้',
+     document.body.textContent.includes('อัดเสร็จแล้ว') && !!findByText('ฟังเสียงฉัน'));
+  const selfStars = $$('button[aria-label^="ให้ "]');
+  ok('มีดาวให้คะแนนตัวเอง 5 ดวง', selfStars.length === 5, selfStars.length + ' ดวง');
+  if (selfStars.length === 5) { selfStars[4].click(); await sleep(900); }
+  const st2 = store();
+  ok('บันทึกคะแนนตัวเองลงสถิติ', Object.values(st2.daily || {}).some((d) => (d.selfRatings || []).length >= 1));
+  ok('นับวินาทีที่พูดได้', Object.values(st2.daily || {}).some((d) => (d.secondsSpoken || 0) >= 1),
+     JSON.stringify(Object.values(st2.daily || {}).map((d) => d.secondsSpoken)));
+  ok('คลิปเข้าประวัติ "เสียงของฉัน"', document.body.textContent.includes('เสียงของฉัน')
+     && (document.body.textContent.includes('★') || document.body.textContent.includes('☆')));
+
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');
   const probe = words.find((w) => w.word === 'receipt') || words[0];

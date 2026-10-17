@@ -1,4 +1,4 @@
-/**
+﻿/**
  * recorder.js — บันทึกเสียงผู้ใช้ + เล่นย้อนหลัง + เก็บไว้ในเครื่อง (IndexedDB)
  *
  * ใช้ทำ 3 อย่าง
@@ -238,6 +238,27 @@ export async function recordingsUsage() {
 }
 
 /** ลบคลิปเก่าสุดเมื่อเกินโควตา (ค่าเริ่มต้น 30 คลิป / 20 MB) */
+/** อัปเดตข้อมูลคลิปที่มีอยู่แล้ว (เช่น เพิ่มคะแนนตัวเองภายหลัง) */
+export async function updateRecording(id, patch = {}) {
+  try {
+    const db = await openDb();
+    const item = await new Promise((res, rej) => {
+      const req = db.transaction(STORE, 'readonly').objectStore(STORE).get(id);
+      req.onsuccess = () => res(req.result);
+      req.onerror = () => rej(req.error);
+    });
+    if (!item) { db.close(); return false; }
+    if (patch.selfRating !== undefined) item.selfRating = patch.selfRating;
+    if (patch.seconds !== undefined) item.seconds = patch.seconds;
+    if (patch.label !== undefined) item.label = patch.label;
+    await tx(db, 'readwrite', (s) => s.put(item));
+    db.close();
+    return true;
+  } catch (err) {
+    console.warn('[recorder] อัปเดตคลิปไม่สำเร็จ', err);
+    return false;
+  }
+}
 export async function enforceQuota(quota = QUOTA) {
   try {
     const list = await listRecordings();          // เรียงใหม่ → เก่า
