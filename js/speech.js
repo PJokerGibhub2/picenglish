@@ -442,9 +442,9 @@ export function sttErrorReason(err) {
 }
 
 /** ตรวจว่าเปิดอยู่ในเบราว์เซอร์ของแอป (LINE/FB/IG/TikTok) ซึ่งมักบล็อกไมค์ */
-export function inAppBrowser() {
+export function inAppBrowser(uaOverride) {
   try {
-    const ua = navigator.userAgent || '';
+    const ua = uaOverride || navigator.userAgent || '';
     const m = ua.match(/\b(Line|FBAN|FBAV|Instagram|TikTok|MicroMessenger|KAKAOTALK|NAVER)\b/i);
     if (m) return m[1];
     return /\bwv\b/.test(ua) ? 'WebView' : '';

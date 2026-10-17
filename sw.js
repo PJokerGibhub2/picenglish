@@ -1,5 +1,5 @@
 ﻿/* PicEnglish service worker — offline-first สำหรับตัวแอป + cache ภาพถ่ายจากคลังฟรี */
-const VERSION = 'v9';
+const VERSION = 'v10';
 const SHELL_CACHE = `picenglish-shell-${VERSION}`;
 const PHOTO_CACHE = `picenglish-photos-${VERSION}`;
 
@@ -22,6 +22,7 @@ const SHELL_ASSETS = [
   './js/art.js',
   './js/mascot.js',
   './js/micfallback.js',
+  './js/openinbrowser.js',
   './js/views-today.js',
   './data/words.json',
   './data/categories.json',

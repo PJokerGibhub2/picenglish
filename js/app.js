@@ -6,6 +6,7 @@ import { loadAll, db } from './data.js';
 import { views, openSettings } from './views.js';
 import { speakingHub, roleplay, sentenceReview, oneMinute } from './views-speaking.js';
 import { today } from './views-today.js';
+import { inAppBanner } from './openinbrowser.js';
 import { h, mount, toast, emptyState } from './ui.js';
 import * as store from './store.js';
 import { loadVoices, loadAudioManifest } from './speech.js';
@@ -174,7 +175,18 @@ async function main() {
     else if (st.error) console.info('[liff]', st.error);
   }).catch(() => {});
 
-  window.addEventListener('hashchange', route);
+  // แจ้งเตือนเมื่อเปิดจาก LINE/Facebook (ไมค์จะถูกบล็อก) — ต้องพาออกไปเบราว์เซอร์จริง
+function renderInAppNotice() {
+  const box = document.getElementById('inapp-warning');
+  if (!box) return;
+  const banner = inAppBanner({ compact: true });
+  if (!banner) { box.classList.add('hidden'); return; }
+  box.classList.remove('hidden');
+  box.replaceChildren(banner);
+}
+renderInAppNotice();
+
+window.addEventListener('hashchange', route);
   started = true;
   route();
   registerSW();

@@ -566,6 +566,18 @@ const PAGE_TEST = `(async () => {
     await sleep(1000);
     ok('สลับแล้วเห็นแผงอัดเสียงจริง', !!$('button[aria-label="อัดเสียง"]'));
   }
+  /* ---------- 10.95) ตรวจจับ LINE in-app + ทางออกไปเบราว์เซอร์จริง ---------- */
+  const obMod = await import('/js/openinbrowser.js');
+  const spMod = await import('/js/speech.js');
+  ok('ตรวจ LINE in-app browser ได้',
+     /Line/.test(spMod.inAppBrowser('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) Line/13.6.0')), 
+     spMod.inAppBrowser('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) Line/13.6.0'));
+  ok('เบราว์เซอร์ปกติไม่ถูกมองว่า in-app',
+     spMod.inAppBrowser('Mozilla/5.0 (Linux; Android 14) Chrome/120.0') === '');
+  ok('มีฟังก์ชันพาผู้ใช้ไปเปิดในเบราว์เซอร์จริง',
+     typeof obMod.openInBrowser === 'function' && typeof obMod.copyText === 'function');
+  const iw = document.getElementById('inapp-warning');
+  ok('แถบเตือน in-app ซ่อนอยู่เมื่อเปิดในเบราว์เซอร์ปกติ', !!iw && iw.classList.contains('hidden'));
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');
   const probe = words.find((w) => w.word === 'receipt') || words[0];

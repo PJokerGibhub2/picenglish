@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    PicEnglish — Design System v2 (มืดพรีเมียม + สลับธีมสว่างได้)
    ธีมมืด = ค่าเริ่มต้น · ธีมสว่าง = html[data-theme="light"]
    ชื่อคลาสเดิมทั้งหมดคงไว้ เพื่อไม่ให้โค้ดหน้าจอต้องแก้
@@ -628,4 +628,11 @@ html.liff-client .view { padding-bottom: calc(var(--tabbar-h) + env(safe-area-in
 
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+/* ---------- 21. IN-APP BROWSER WARNING (LINE/FB) ---------- */
+.inapp-warning { width: 100%; max-width: 720px; margin: 0 auto; padding: 10px 16px 0; }
+.inapp-warning .card.inapp {
+  border: 1px solid color-mix(in srgb, var(--gold) 42%, transparent);
+  background: color-mix(in srgb, var(--gold) 12%, var(--surface));
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--gold) 18%, transparent);
 }
