@@ -11,11 +11,12 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, speakSentence, renderSentence, clearHighlight, loadVoices,
-  englishVoices, sttSupported, createRecognizer, alignWords,
+  englishVoices, sttSupported, sttSupport, createRecognizer, alignWords,
 } from './speech.js';
+import { micPanel } from './micfallback.js';
 import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
 import { artFor, artCredits } from './art.js';
-import { recordingsUsage, clearRecordings, QUOTA } from './recorder.js';
+import { recordingsUsage, clearRecordings, QUOTA, testMicrophone } from './recorder.js';
 import { shareToLine, liffState } from './liff.js';
 
 const S = () => store.settings();
@@ -792,11 +793,6 @@ export function speakView(root) {
 
   function render() {
     mount(root);
-    if (!sttSupported()) {
-      root.appendChild(h('div', { class: 'card' },
-        h('div', { class: 'bold', text: '⚠️ เบราว์เซอร์นี้ยังไม่รองรับการฟังเสียง' }),
-        h('div', { class: 'small muted', style: { marginTop: '6px' }, text: 'โหมดฝึกออกเสียงต้องใช้ Web Speech Recognition ซึ่งทำงานใน Chrome, Edge และ Safari บน macOS/iOS (ต้องเปิดผ่าน https หรือ localhost เท่านั้น) — ส่วนฟีเจอร์อื่นทั้งหมดยังใช้ได้ตามปกติ' })));
-    }
 
     root.appendChild(h('div', { class: 'row row-wrap', style: { gap: '8px', marginBottom: '12px' } },
       h('button', { class: `pill ${mode === 'sentence' ? 'on' : ''}`, type: 'button', onclick: () => go(() => { mode = 'sentence'; render(); }) }, '📝 ฝึกทั้งประโยค'),
@@ -837,6 +833,24 @@ export function speakView(root) {
     }, '🎤');
 
     const status = h('div', { class: 'small muted center', style: { marginTop: '8px' }, text: sttSupported() ? 'กดไมค์แล้วพูดตามประโยคด้านบน' : 'เบราว์เซอร์ไม่รองรับ' });
+    // ไม่มี SpeechRecognition (iPhone/iPad/Safari) → อัดเสียง + ฟังเทียบ + ประเมินตัวเอง
+    if (!sttSupported()) {
+      mic.classList.add('hidden');
+      transcript.classList.add('hidden');
+      status.classList.add('hidden');
+      const wds = mode === 'word'
+        ? [current.word]
+        : target.split(/\s+/).map((w) => w.replace(/[^A-Za-z']/g, '')).filter((w) => w.length > 3).slice(0, 6);
+      root.appendChild(micPanel({
+        banner: '⚠️ ' + sttSupport().note,
+        audioText: target,
+        speak: () => say(target, { rate: S().rate }),
+        flagWords: wds,
+        nextLabel: mode === 'word' ? 'คำถัดไป →' : 'ประโยคถัดไป →',
+        onNext: () => go(() => render()),
+      }));
+      return;
+    }
 
     mic.onclick = () => {
       if (recording) { try { rec.stop(); } catch (e) { /* ignore */ } return; }
@@ -1156,6 +1170,43 @@ function toggleHardWithToast(w) {
  * 9) หน้าตั้งค่า
  * ================================================================== */
 
+function micTestSheet() {
+  openSheet((close) => {
+    const out = h('div', {});
+    const bar = h('i', { style: { width: '0%' } });
+    const body = h('div', {},
+      h('div', { class: 'small muted', text: 'กดปุ่มด้านล่างแล้วพูดอะไรก็ได้ 3 วินาที — ใช้ตรวจว่าไมค์ทำงานบนเครื่องนี้จริง' }),
+      h('div', { class: 'row', style: { gap: '8px', marginTop: '10px', alignItems: 'center' } },
+        h('span', { class: 'pill', text: '🔈 ระดับเสียง' }),
+        h('div', { class: 'progress', style: { flex: '1' } }, bar)),
+      h('div', { style: { marginTop: '12px' } },
+        h('button', {
+          class: 'btn btn-primary btn-block', type: 'button',
+          onclick: async (e) => {
+            const btn = e.currentTarget;
+            btn.disabled = true;
+            btn.textContent = 'กำลังทดสอบ… พูดเลย!';
+            const info = await testMicrophone(3000, (lv) => { bar.style.width = Math.round(lv * 100) + '%'; });
+            btn.disabled = false;
+            btn.textContent = 'ทดสอบอีกครั้ง';
+            const ok = info.ok;
+            mount(out,
+              h('div', { style: { marginTop: '12px', padding: '12px', borderRadius: '16px', background: 'var(--surface-2)', border: '1px solid var(--border)' } },
+                h('div', { class: 'bold', style: { color: ok ? 'var(--success)' : 'var(--danger)' },
+                  text: ok ? '✅ ไมโครโฟนทำงาน' : '❌ ไม่ได้เสียง (' + info.error + ')' }),
+                h('div', { class: 'small muted', style: { marginTop: '6px', lineHeight: '1.8' } },
+                  'ได้เสียง ' + Math.round(info.bytes / 1024) + ' KB · นาน ' + (info.durationMs / 1000).toFixed(1) + ' วินาที',
+                  h('br'), 'ระดับเสียงสูงสุด ' + Math.round(info.peak * 100) + '%',
+                  h('br'), 'รูปแบบไฟล์: ' + (info.mime || 'ไม่ระบุ'),
+                  h('br'), 'ฟังเสียงอัตโนมัติ: ' + (sttSupport().ok ? 'รองรับ ✓' : 'ไม่รองรับ — ใช้โหมดอัดเสียงเทียบแทน')),
+                !ok ? h('div', { class: 'tiny', style: { marginTop: '8px', color: 'var(--warn)', lineHeight: '1.6' },
+                  text: 'ถ้าขึ้น ❌ ให้ตรวจ: (1) อนุญาตไมค์ในเบราว์เซอร์ (2) เปิดผ่าน https (3) ไม่มีแอปอื่นใช้ไมค์อยู่' }) : null));
+          },
+        }, '🎤 เริ่มทดสอบ 3 วินาที')),
+      out);
+    return h('div', {}, sheetHeader('ตรวจสอบไมโครโฟน', sttSupport().ok ? 'เครื่องนี้ให้คะแนนอัตโนมัติได้' : 'เครื่องนี้ใช้โหมดอัดเสียงเทียบเสียง', close), body);
+  }, { id: 'micTest' });
+}
 export function openSettings(onChange) {
   openSheet((close) => {
     const box = h('div', {});
@@ -1263,6 +1314,12 @@ export function openSettings(onChange) {
 
     /* ---------- การฝึกพูด ---------- */
     box.appendChild(h('div', { class: 'section-title', text: 'การฝึกพูด' }));
+    box.appendChild(h('div', { class: 'field' },
+      h('div', {}, h('label', { text: 'ตรวจสอบไมโครโฟน' }),
+        h('div', { class: 'desc', text: sttSupport().ok
+          ? 'เบราว์เซอร์นี้ให้คะแนนอัตโนมัติได้ — กดทดสอบเพื่อเช็กไมค์'
+          : 'เครื่องนี้ให้คะแนนอัตโนมัติไม่ได้ แต่ยังอัดเสียงเพื่อฟังเทียบได้' })),
+      h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: micTestSheet }, '🎤 ทดสอบ')));
     box.appendChild(h('div', { class: 'field' },
       h('div', {}, h('label', { text: 'ต้องพูดให้ผ่านก่อนไปต่อ' }),
         h('div', { class: 'desc', text: 'โหมดเข้ม: ประโยคเดิมจะวนจนกว่าจะออกเสียงชัด (ข้ามได้หลังลอง 3 ครั้ง)' })),

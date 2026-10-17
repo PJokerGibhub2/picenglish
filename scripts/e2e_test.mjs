@@ -1,4 +1,4 @@
-﻿/**
+/**
  * e2e_test.mjs — ทดสอบการทำงานจริงของแอปผ่าน Chrome DevTools Protocol
  *
  * วิธีใช้:
@@ -502,6 +502,57 @@ const PAGE_TEST = `(async () => {
      JSON.stringify(Object.values(st2.daily || {}).map((d) => d.secondsSpoken)));
   ok('คลิปเข้าประวัติ "เสียงของฉัน"', document.body.textContent.includes('เสียงของฉัน')
      && (document.body.textContent.includes('★') || document.body.textContent.includes('☆')));
+
+  /* ---------- 10.7) โหมดไม่มี SpeechRecognition (iPhone / Firefox) ---------- */
+  const SR = window.SpeechRecognition;
+  const WSR = window.webkitSpeechRecognition;
+  try {
+    delete window.SpeechRecognition;
+    delete window.webkitSpeechRecognition;
+    location.hash = '#/learn';
+    await sleep(400);
+    location.hash = '#/speak';
+    await sleep(1200);
+    const recBtn = $('button[aria-label="อัดเสียง"]');
+    ok('เบราว์เซอร์ไม่มี STT → แสดงแผงอัดเสียงแทน (ไม่ใช่ปุ่มตาย)', !!recBtn);
+    ok('มีคำอธิบายเหตุผลให้ผู้ใช้เข้าใจ', /ไม่รองรับ|ยังไม่เปิด|iPhone/.test(document.body.textContent));
+    if (recBtn) {
+      recBtn.click();
+      await sleep(1500);
+      ok('กดแล้วเริ่มอัดจริงและมีมิเตอร์เสียง', document.body.textContent.includes('กำลังอัด'));
+      recBtn.click();
+      await sleep(1700);
+      ok('หยุดแล้วเห็นเวลา/ขนาดไฟล์ + ฟังเสียงตัวเองได้',
+        document.body.textContent.includes('อัดได้') && !!findByText('เสียงของคุณ'));
+      ok('มีดาวให้คะแนนตัวเองในโหมดนี้', $$('button').some((b) => /^★+$/.test(b.textContent.trim())));
+    }
+  } finally {
+    if (SR) window.SpeechRecognition = SR;
+    if (WSR) window.webkitSpeechRecognition = WSR;
+  }
+
+  /* ---------- 10.8) ตรวจสอบไมโครโฟนในหน้าตั้งค่า ---------- */
+  const setBtn = document.getElementById('btn-settings');
+  if (setBtn) setBtn.click();
+  await sleep(800);
+  const miTest = findByText('🎤 ทดสอบ');
+  ok('มีปุ่มตรวจสอบไมโครโฟนในหน้าตั้งค่า', !!miTest);
+  if (miTest) {
+    miTest.click();
+    await sleep(900);
+    const runBtn = findByText('เริ่มทดสอบ 3 วินาที');
+    ok('เปิดแผงทดสอบไมค์ได้', !!runBtn);
+    if (runBtn) {
+      runBtn.click();
+      await sleep(4500);
+      ok('ทดสอบไมค์แล้วรายงานผลจริง',
+        /ไมโครโฟนทำงาน|ไม่ได้เสียง/.test(document.body.textContent),
+        findByText('ทดสอบอีกครั้ง') ? 'รันเสร็จ' : 'ยังไม่เสร็จ');
+    }
+    const closeBtn = findByText('ปิด');
+    if (closeBtn) closeBtn.click();
+    await sleep(400);
+  }
 
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');

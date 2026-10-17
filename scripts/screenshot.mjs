@@ -126,6 +126,8 @@ async function main() {
     },
     { name: '14-ทบทวนประโยค', hash: '#/sentenceReview', wait: 1200 },
     { name: '16-พูดคนเดียว-60วินาที', hash: '#/onemin', wait: 2000 },
+    { name: '18-โหมดอัดเสียง-iPhone', hash: '#/learn', before: () => {}, wait: 400 },
+    { name: '18b-แผงอัดเสียงเทียบเสียง', hash: '#/speak', before: () => { delete window.SpeechRecognition; delete window.webkitSpeechRecognition; }, wait: 1600 },
     {
       name: '15-สอนออกเสียงคำที่พูดไม่ชัด', hash: '#/roleplay?dlg=dlg-cafe', wait: 1600, full: true,
       after: `(async () => {

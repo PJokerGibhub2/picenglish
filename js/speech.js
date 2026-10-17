@@ -1,4 +1,4 @@
-/**
+﻿/**
  * speech.js — เสียงอ่านออกเสียง (Web Speech API) + ไฮไลท์คำแบบคาราโอเกะ + ฝึกออกเสียง
  * ทำงานในเบราว์เซอร์ล้วน ไม่เรียกบริการภายนอก ไม่มีค่าใช้จ่าย
  */
@@ -284,7 +284,28 @@ export function speakSentence(el, text, opts = {}) {
  * ------------------------------------------------------------------ */
 
 export function sttSupported() {
-  return typeof window !== 'undefined' && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+  return sttSupport().ok;
+}
+
+/**
+ * ตรวจความสามารถในการ "ฟังเสียง" พร้อมบอกเหตุผลเป็นภาษาไทย
+ * iOS/iPadOS = ไม่มี API นี้เลย (Apple เปิดให้เฉพาะแอป native) — ต้องบอกผู้ใช้ตรง ๆ
+ */
+export function sttSupport() {
+  if (typeof window === 'undefined') return { ok: false, reason: 'unknown', note: 'ตรวจสอบสภาพแวดล้อมไม่ได้' };
+  if (window.SpeechRecognition || window.webkitSpeechRecognition) return { ok: true, reason: 'ok', note: '' };
+  const ua = navigator.userAgent || '';
+  const iOS = /iPad|iPhone|iPod/.test(ua)
+    || (navigator.platform === 'MacIntel' && (navigator.maxTouchPoints || 0) > 1);
+  if (iOS) {
+    return {
+      ok: false, reason: 'ios',
+      note: 'iPhone/iPad ยังไม่เปิดให้เว็บแอปใช้ระบบฟังเสียง (Apple เปิดเฉพาะแอปที่ติดตั้งจาก App Store) — เครื่อง iPhone จึงให้คะแนนอัตโนมัติไม่ได้',
+    };
+  }
+  const safari = /Safari/.test(ua) && !/Chrome|CriOS|Edg|Firefox|FxiOS|OPR/.test(ua);
+  if (safari) return { ok: false, reason: 'safari', note: 'Safari เวอร์ชันนี้ยังไม่รองรับการฟังเสียงของเว็บ — ลองใช้ Chrome หรือ Edge' };
+  return { ok: false, reason: 'browser', note: 'เบราว์เซอร์นี้ไม่รองรับการฟังเสียง (ลอง Chrome/Edge รุ่นใหม่)' };
 }
 
 export function createRecognizer({ lang = 'en-US', interim = true, onResult, onEnd, onError } = {}) {

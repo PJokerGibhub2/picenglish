@@ -16,7 +16,7 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, renderSentence, clearHighlight, speakSentence,
-  sttSupported, createRecognizer, alignWords, sentenceSimilarity,
+  sttSupported, sttSupport, createRecognizer, alignWords, sentenceSimilarity,
 } from './speech.js';
 import {
   recordingSupported, startRecording, playBlob, stopPlayback,
@@ -360,7 +360,7 @@ export function roleplay(root, params = {}) {
       const stopBtn = h('button', { class: 'btn btn-primary btn-block hidden', type: 'button' }, '⏹ หยุด & ฟังเสียงตัวเอง');
       const out = h('div', {});
       actionBox.appendChild(h('div', { class: 'small', style: { marginBottom: '8px' },
-        text: 'เบราว์เซอร์นี้ไม่รองรับการให้คะแนนจากเสียง — แต่ยังอัดเสียงตัวเองไว้ฟังเทียบได้' }));
+        text: '⚠️ ' + sttSupport().note + ' — โหมดนี้จะอัดเสียงคุณไว้ฟังเทียบกับต้นแบบ แล้วให้คุณประเมินเอง' }));
       startBtn.onclick = () => ensureMicPermission(async () => {
         handle = await startRecording();
         if (!handle) { toast('บันทึกเสียงไม่สำเร็จ (อาจไม่ได้รับสิทธิ์ไมค์)', 'err'); return; }

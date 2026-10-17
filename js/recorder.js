@@ -26,23 +26,48 @@ export function recordingSupported() {
     && typeof window !== 'undefined' && !!window.MediaRecorder;
 }
 
+let lastMime = '';
+
+/**
+ * เลือก mimeType ที่เบราว์เซอร์รองรับจริง
+ * iOS/Safari = audio/mp4 (AAC) เท่านั้น · Chrome/Android = webm/opus
+ * ถ้าไม่มี isTypeSupported ให้เดา mp4 (iOS รุ่นเก่า)
+ */
 function pickMime() {
-  if (typeof MediaRecorder === 'undefined' || !MediaRecorder.isTypeSupported) return '';
+  if (typeof MediaRecorder === 'undefined') return '';
   const list = [
     'audio/webm;codecs=opus',
     'audio/webm',
-    'audio/mp4',            // Safari
+    'audio/mp4;codecs=mp4a.40.2',
+    'audio/mp4',
+    'audio/aac',
     'audio/ogg;codecs=opus',
   ];
+  if (!MediaRecorder.isTypeSupported) return 'audio/mp4';
   for (const m of list) if (MediaRecorder.isTypeSupported(m)) return m;
   return '';
+}
+
+/** สร้าง MediaRecorder แบบทนทาน: ลดตัวเลือกทีละชั้นจนกว่าจะได้ (iOS ชอบปฏิเสธ bitrate) */
+function createRecorder(stream, mime) {
+  const attempts = mime
+    ? [{ mimeType: mime, audioBitsPerSecond: 32000 }, { mimeType: mime }, undefined]
+    : [undefined, { mimeType: 'audio/mp4' }];
+  let lastErr = null;
+  for (const opts of attempts) {
+    try {
+      return opts ? new MediaRecorder(stream, opts) : new MediaRecorder(stream);
+    } catch (err) { lastErr = err; }
+  }
+  if (lastErr) throw lastErr;
+  return new MediaRecorder(stream);
 }
 
 /**
  * เริ่มบันทึกเสียง
  * @returns {Promise<{stop: () => Promise<Blob|null>}|null>} null = เริ่มไม่ได้ (ไม่มีสิทธิ์/ไม่รองรับ)
  */
-export async function startRecording() {
+export async function startRecording(opts = {}) {
   if (!recordingSupported()) return null;
   if (currentRec && currentRec.state === 'recording') return null;
   try {
@@ -50,11 +75,13 @@ export async function startRecording() {
       audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
     });
     const mime = pickMime();
-    const rec = new MediaRecorder(stream, mime ? { mimeType: mime, audioBitsPerSecond: 32000 } : undefined);
+    const rec = createRecorder(stream, mime);
+    lastMime = rec.mimeType || mime || 'audio/mp4';
     currentChunks = [];
     rec.ondataavailable = (e) => { if (e.data && e.data.size) currentChunks.push(e.data); };
     const finished = new Promise((resolve) => {
       rec.onstop = () => {
+        if (stopLevelMeter) { try { stopLevelMeter(); } catch (e) { /* ignore */ } stopLevelMeter = null; }
         try { stream.getTracks().forEach((t) => t.stop()); } catch (e) { /* ignore */ }
         currentRec = null;
         currentStream = null;
@@ -67,6 +94,7 @@ export async function startRecording() {
     rec.start(250);
     currentRec = rec;
     currentStream = stream;
+    stopLevelMeter = attachLevelMeter(stream, opts.onLevel);
     return {
       stop: () => {
         // ต้องกันกรณี recorder ไม่อยู่ในสถานะ recording (ไม่งั้น onstop ไม่ยิง แล้ว await จะค้างตลอด)
@@ -88,6 +116,64 @@ export async function startRecording() {
     console.warn('[recorder] เริ่มบันทึกไม่สำเร็จ', err);
     return null;
   }
+}
+
+let stopLevelMeter = null;
+
+/** วัดระดับเสียงสด (0..1) เพื่อให้ผู้ใช้เห็นว่าแอป "ได้ยิน" จริง */
+function attachLevelMeter(stream, onLevel) {
+  if (!onLevel) return null;
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if (!AC) return null;
+  try {
+    const ctx = new AC();
+    const src = ctx.createMediaStreamSource(stream);
+    const an = ctx.createAnalyser();
+    an.fftSize = 1024;
+    an.smoothingTimeConstant = 0.72;
+    src.connect(an);
+    const buf = new Uint8Array(an.fftSize);
+    let raf = 0;
+    const tick = () => {
+      an.getByteTimeDomainData(buf);
+      let sum = 0;
+      for (let i = 0; i < buf.length; i++) { const v = (buf[i] - 128) / 128; sum += v * v; }
+      const rms = Math.sqrt(sum / buf.length);
+      try { onLevel(Math.min(1, rms * 3.2)); } catch (e) { /* ignore */ }
+      raf = requestAnimationFrame(tick);
+    };
+    tick();
+    return () => { cancelAnimationFrame(raf); try { ctx.close(); } catch (e) { /* ignore */ } };
+  } catch (err) {
+    console.warn('[recorder] วัดระดับเสียงไม่ได้', err);
+    return null;
+  }
+}
+
+/** ข้อมูลของคลิปล่าสุด (ใช้แสดงผล/วินิจฉัย) */
+export function lastRecordingInfo() { return { mime: lastMime }; }
+
+/**
+ * ทดสอบไมโครโฟน: อัด N มิลลิวินาที แล้วรายงานว่าได้เสียงจริงหรือไม่
+ * ใช้ในหน้าตั้งค่า เพื่อวินิจฉัยบนเครื่องจริง (เช่น iPhone)
+ */
+export async function testMicrophone(ms = 3000, onLevel = null) {
+  const info = { ok: false, mime: '', bytes: 0, durationMs: 0, peak: 0, error: '' };
+  if (!recordingSupported()) { info.error = 'unsupported'; return info; }
+  let peak = 0;
+  const handle = await startRecording({
+    onLevel: (l) => { peak = Math.max(peak, l); if (onLevel) onLevel(l); },
+  });
+  if (!handle) { info.error = 'permission'; return info; }
+  info.mime = lastMime;
+  const t0 = Date.now();
+  await new Promise((r) => setTimeout(r, ms));
+  const blob = await handle.stop();
+  info.durationMs = Date.now() - t0;
+  info.peak = peak;
+  if (blob && blob.size > 0) { info.ok = true; info.bytes = blob.size; info.mime = blob.type || lastMime; }
+  else info.error = 'no-audio';
+  return info;
 }
 
 export function isRecording() {
