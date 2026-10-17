@@ -606,10 +606,40 @@ export function roleplay(root, params = {}) {
         text: 'ฟังสลับไปมาเพื่อเทียบจังหวะและเสียง — หูของคุณคือครูที่ดีที่สุด' }));
     } else if (recordEnabled()) {
       const android = /Android/i.test(navigator.userAgent || '');
-      actionBox.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '8px' },
+      const msg = h('div', { class: 'tiny muted center', style: { marginTop: '8px' },
         text: android
-          ? 'โหมด Android: ให้คะแนนจากเสียงพูดโดยตรง (ไม่ได้เก็บไฟล์เสียงไว้ฟังเทียบ)'
-          : 'ครั้งนี้บันทึกเสียงไม่สำเร็จ (ไมค์อาจถูกแอปอื่นใช้อยู่) — ลองใหม่ได้' }));
+          ? 'Android: คะแนนมาจากเสียงพูดโดยตรง — กดปุ่มล่างเพื่ออัดเสียงเก็บไว้ฟังเทียบกับต้นแบบ'
+          : 'ครั้งนี้บันทึกเสียงไม่สำเร็จ (ไมค์อาจถูกแอปอื่นใช้อยู่) — ลองใหม่ได้' });
+      actionBox.appendChild(msg);
+
+      // อัดเสียงรอบสอง (ตอนนี้ไมค์ว่างแล้ว เพราะตัวรู้จำหยุดไปแล้ว)
+      let rh = null;
+      const recBtn = h('button', { class: 'btn btn-ghost btn-block btn-sm', type: 'button', style: { marginTop: '8px' } },
+        '🎙️ อัดเสียงอีกรอบเพื่อฟังเทียบ');
+      recBtn.onclick = async () => {
+        if (!rh) {
+          rh = await startRecording();
+          if (!rh) { toast('เริ่มอัดไม่ได้ — ตรวจสิทธิ์ไมค์', 'err'); return; }
+          recBtn.textContent = '⏹ หยุด & ฟังเทียบ';
+          recBtn.classList.add('btn-primary');
+          return;
+        }
+        const b = await rh.stop();
+        rh = null;
+        recBtn.textContent = '🎙️ อัดใหม่';
+        recBtn.classList.remove('btn-primary');
+        if (!b) { toast('ไม่ได้ยินเสียง ลองใหม่', 'err'); return; }
+        lineBlobs.set(key, b);
+        saveRecording({ kind: 'dialogue', refId: key, label: line.en, blob: b, seconds: 0, selfRating: 0 });
+        mount(msg, h('div', { class: 'row', style: { gap: '8px' } },
+          h('button', { class: 'btn btn-ghost btn-block btn-sm', type: 'button', onclick: () => playBlob(b, 1) }, '🔊 เสียงของคุณ'),
+          h('button', {
+            class: 'btn btn-ghost btn-block btn-sm', type: 'button',
+            onclick: () => sayText(line.en, { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender, audioKey: `${d.id}:${i}` }),
+          }, '🔊 เสียงต้นแบบ')));
+        toast('บันทึกเสียงแล้ว — กดฟังเทียบได้เลย', 'ok');
+      };
+      actionBox.appendChild(recBtn);
     }
 
     // ---- สอนออกเสียงคำที่ยังไม่ชัด ----

@@ -14,6 +14,7 @@ import {
   englishVoices, sttSupported, sttSupport, sttErrorReason, sttSelfTest, inAppBrowser, createRecognizer, alignWords,
 } from './speech.js';
 import { micPanel } from './micfallback.js';
+import { VERSION, BUILD_DATE } from './version.js';
 import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
 import { artFor, artCredits } from './art.js';
 import { recordingsUsage, clearRecordings, QUOTA, testMicrophone, micDiagnosticsReport } from './recorder.js';
@@ -1274,6 +1275,28 @@ export function openSettings(onChange) {
   openSheet((close) => {
     const box = h('div', {});
     box.appendChild(sheetHeader('ตั้งค่า', 'ข้อมูลทั้งหมดเก็บไว้ในเครื่องของคุณเท่านั้น', close));
+  // เวอร์ชันแอป (ผู้ใช้ขอดูตรงนี้) + ทางออกเมื่อติดแคชเก่า
+  box.appendChild(h('div', { class: 'field' },
+    h('div', {}, h('label', { text: 'เวอร์ชันแอป' }),
+      h('div', { class: 'desc', text: 'PicEnglish ' + VERSION + ' · ' + (() => {
+        const d = new Date(BUILD_DATE + 'T00:00:00');
+        return d.toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: 'numeric' });
+      })() })),
+    h('button', {
+      class: 'btn btn-ghost btn-sm', type: 'button',
+      onclick: async () => {
+        try {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(regs.map((r) => r.unregister()));
+          const keys = await caches.keys();
+          await Promise.all(keys.map((k) => caches.delete(k)));
+          toast('ล้างแคชแล้ว กำลังโหลดใหม่…', 'ok');
+          setTimeout(() => location.reload(true), 700);
+        } catch (e) {
+          toast('ล้างแคชไม่สำเร็จ — ปิดแท็บแล้วเปิดใหม่', 'err');
+        }
+      },
+    }, '↻ ล้างแคช')));
 
     const voiceSelect = h('select', {});
     const fillVoices = () => {

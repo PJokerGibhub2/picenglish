@@ -127,7 +127,6 @@ function route() {
     mount(viewEl, emptyState('😵', 'เกิดข้อผิดพลาดในการแสดงผล', String(err && err.message || err)));
   }
   updateBadges();
-  renderVersionTag();
 }
 
 backBtn.addEventListener('click', () => {

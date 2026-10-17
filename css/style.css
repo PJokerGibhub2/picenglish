@@ -106,6 +106,8 @@ html[data-theme="light"] {
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body {
   margin: 0; padding: 0; min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background: var(--bg-0);
   color: var(--text);
   font-family: var(--font);
@@ -170,7 +172,7 @@ img { max-width: 100%; }
 .xp-chip { background: color-mix(in srgb, var(--teal) 16%, transparent); color: var(--teal); border-color: color-mix(in srgb, var(--teal) 28%, transparent); }
 
 .view {
-  flex: 1; width: 100%; max-width: 720px; margin: 0 auto;
+  flex: 1; width: 100%; max-width: 720px; margin: 0 auto; min-width: 0; overflow-x: clip;
   padding: 14px 16px calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 24px);
 }
 
@@ -240,6 +242,7 @@ h1, .h1 { font-size: var(--fs-display); font-weight: 800; letter-spacing: -.02em
 /* ---------- 6. BUTTONS ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-width: 0; white-space: normal; text-align: center; line-height: 1.25;
   min-height: var(--tap); padding: 0 18px;
   border: 1px solid transparent; border-radius: var(--r-pill);
   background: var(--surface-2); color: var(--text);
@@ -259,8 +262,8 @@ h1, .h1 { font-size: var(--fs-display); font-weight: 800; letter-spacing: -.02em
 .btn-block { width: 100%; }
 .btn-sm { min-height: 42px; padding: 0 13px; font-size: .84rem; }
 
-.row { display: flex; gap: 10px; align-items: center; }
-.row > * { flex: 1; }
+.row { display: flex; gap: 10px; align-items: center; min-width: 0; }
+.row > * { flex: 1; min-width: 0; }
 .row > .spacer, .row > .chip-streak, .row > .xp-chip, .row > .icon-btn, .row > .pill, .row > span, .row > .btn-sm { flex: 0 0 auto; }
 .row-wrap { flex-wrap: wrap; }
 .spacer { flex: 1; }
@@ -651,3 +654,9 @@ html.liff-client .view { padding-bottom: calc(var(--tabbar-h) + env(safe-area-in
   opacity: .6;
   font-family: var(--font-en);
 }
+/* ---------- 23. GUARD: กันเนื้อหาล้นแนวนอนบนจอแคบ ---------- */
+.card, .list-item, .bubble, .sentence, .transcript, .stat, .quest-item, .weekbar { min-width: 0; }
+.bubble .bubble-en, .sentence { overflow-wrap: anywhere; word-break: break-word; }
+.btn-sm { white-space: normal; }
+.progress, .seg, .tabbar { max-width: 100%; }
+.topbar h1 { min-width: 0; }

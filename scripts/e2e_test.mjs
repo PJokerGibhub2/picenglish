@@ -590,10 +590,16 @@ const PAGE_TEST = `(async () => {
   const obm = await import('/js/openinbrowser.js');
   ok('มีฟังก์ชันแชร์ลิงก์ผ่านระบบมือถือ', typeof obm.shareUrl === 'function');
   /* ---------- 10.97) เลขเวอร์ชันท้ายแอป + ทดสอบระบบฟังเสียง ---------- */
-  const verTag = document.getElementById('app-version');
-  ok('มีเลขเวอร์ชันแสดงท้ายแอป', !!verTag && /v[0-9]+/.test(verTag.textContent || ''), verTag ? verTag.textContent : 'ไม่พบ');
   const verMod = await import('/js/version.js');
-  ok('เลขเวอร์ชันตรงกับไฟล์ version.js', !!verTag && verTag.textContent.includes(verMod.VERSION), verMod.VERSION);
+  const setBtn3 = document.getElementById('btn-settings');
+  if (setBtn3) setBtn3.click();
+  await sleep(800);
+  ok('แสดงเลขเวอร์ชันในหน้าตั้งค่า', document.body.textContent.includes(verMod.VERSION), verMod.VERSION);
+  ok('มีปุ่มล้างแคชสำหรับกรณีติดเวอร์ชันเก่า', !!findByText('↻ ล้างแคช'));
+  const closeV = findByText('ปิด');
+  if (closeV) closeV.click();
+  await sleep(300);
+  ok('ไม่เหลือเลขเวอร์ชันลอยทับเนื้อหาด้านล่าง', !document.querySelector('.app-version-slot'));
   ok('มีฟังก์ชันทวดระบบฟังเสียง', typeof spMod.sttSelfTest === 'function');
   const selfTest = await spMod.sttSelfTest(2500);
   ok('ทวดระบบฟังเสียงแล้วได้คำตอบ (ไม่ค้าง)', !!selfTest && typeof selfTest.ok === 'boolean', JSON.stringify(selfTest));
