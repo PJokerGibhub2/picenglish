@@ -115,6 +115,8 @@ html, body {
   line-height: 1.55;
   overscroll-behavior-y: none;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 body {
   background:
@@ -690,3 +692,13 @@ html.debug-outline .view { outline: 2px solid #34D399 !important; }
 }
 .update-bar .update-msg { flex: 1; font-size: .78rem; font-weight: 700; line-height: 1.4; }
 .update-bar .btn { min-height: 38px; padding: 0 12px; font-size: .78rem; }
+/* ---------- 27. VERSION BADGE (topbar) ---------- */
+.topbar-ver {
+  font-family: var(--font-en);
+  font-size: .62rem; font-weight: 800; letter-spacing: .04em;
+  color: var(--text-dim);
+  padding: 2px 6px; border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  opacity: .85;
+}

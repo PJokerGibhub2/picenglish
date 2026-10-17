@@ -67,6 +67,11 @@ function applyTheme() {
 }
 
 /* ---------------- ตัวเลขบนหน้าจอ ---------------- */
+function paintVersionBadge() {
+  const el = document.getElementById('topbar-ver');
+  if (el) el.textContent = APP_VERSION;
+}
+
 function updateBadges() {
   const due = store.dueCount();
   if (due > 0) { dueBadge.textContent = String(due); dueBadge.classList.remove('hidden'); }
@@ -127,6 +132,7 @@ function route() {
     mount(viewEl, emptyState('😵', 'เกิดข้อผิดพลาดในการแสดงผล', String(err && err.message || err)));
   }
   updateBadges();
+  paintVersionBadge();
 }
 
 backBtn.addEventListener('click', () => {
