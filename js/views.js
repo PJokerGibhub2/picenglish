@@ -16,7 +16,7 @@ import {
 import { micPanel } from './micfallback.js';
 import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
 import { artFor, artCredits } from './art.js';
-import { recordingsUsage, clearRecordings, QUOTA, testMicrophone } from './recorder.js';
+import { recordingsUsage, clearRecordings, QUOTA, testMicrophone, micDiagnosticsReport } from './recorder.js';
 import { shareToLine, liffState } from './liff.js';
 
 const S = () => store.settings();
@@ -1201,6 +1201,30 @@ function toggleHardWithToast(w) {
  * 9) หน้าตั้งค่า
  * ================================================================== */
 
+function micDiagSheet() {
+  openSheet((close) => {
+    const out = h('div', { class: 'small', style: { lineHeight: '1.9' }, text: 'กำลังตรวจ…' });
+    micDiagnosticsReport().then((rep) => {
+      mount(out,
+        h('div', { class: 'small', style: { fontFamily: 'monospace', fontSize: '.72rem', lineHeight: '1.7', wordBreak: 'break-word', padding: '10px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)' }, text: rep }),
+        h('div', { class: 'tiny muted', style: { marginTop: '8px' }, text: 'คัดลอกข้อความนี้ส่งให้ผู้พัฒนา เพื่อรู้สาเหตุที่แน่นอนบนเครื่องคุณ' }),
+        h('div', { class: 'row', style: { gap: '8px', marginTop: '10px' } },
+          h('button', {
+            class: 'btn btn-primary btn-block btn-sm', type: 'button',
+            onclick: async () => {
+              try {
+                await navigator.clipboard.writeText(rep);
+                toast('คัดลอกข้อมูลแล้ว — ส่งมาให้ผู้พัฒนาได้เลย', 'ok');
+              } catch (e) {
+                toast('คัดลอกไม่สำเร็จ — จด/แคปหน้าจอแทน', 'err');
+              }
+            },
+          }, '📋 คัดลอกข้อมูล')),
+      );
+    });
+    return h('div', {}, sheetHeader('ข้อมูลวินิจฉัยไมโครโฟน', 'ใช้เมื่อไมค์ไม่ทำงาน', close), out);
+  }, { id: 'micDiag' });
+}
 function micTestSheet() {
   openSheet((close) => {
     const out = h('div', {});
@@ -1350,7 +1374,9 @@ export function openSettings(onChange) {
         h('div', { class: 'desc', text: sttSupport().ok
           ? 'เบราว์เซอร์นี้ให้คะแนนอัตโนมัติได้ — กดทดสอบเพื่อเช็กไมค์'
           : 'เครื่องนี้ให้คะแนนอัตโนมัติไม่ได้ แต่ยังอัดเสียงเพื่อฟังเทียบได้' })),
-      h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: micTestSheet }, '🎤 ทดสอบ')));
+      h('div', { class: 'row', style: { gap: '6px' } },
+        h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: micTestSheet }, '🎤 ทดสอบ'),
+        h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: micDiagSheet, 'aria-label': 'ข้อมูลวินิจฉัยไมโครโฟน' }, '🔍 วินิจฉัย'))));
     box.appendChild(h('div', { class: 'field' },
       h('div', {}, h('label', { text: 'ต้องพูดให้ผ่านก่อนไปต่อ' }),
         h('div', { class: 'desc', text: 'โหมดเข้ม: ประโยคเดิมจะวนจนกว่าจะออกเสียงชัด (ข้ามได้หลังลอง 3 ครั้ง)' })),

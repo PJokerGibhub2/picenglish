@@ -362,3 +362,46 @@ export async function enforceQuota(quota = QUOTA) {
     return null;
   }
 }
+/**
+ * เก็บข้อมูลวินิจฉัยไมโครโฟนของเครื่องจริง
+ * ใช้เพื่อรู้ว่าปัญหาคือ "ไม่ปลอดภัย / ไม่มี API / ไม่ได้อนุญาต / ไม่มีอุปกรณ์"
+ */
+export async function micDiagnostics() {
+  const out = {
+    secure: false, hasMediaDevices: false, hasRecorder: false,
+    permission: 'unknown', inputs: 0, mime: '', platform: '',
+  };
+  try {
+    out.secure = !!window.isSecureContext;
+    out.hasMediaDevices = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+    out.hasRecorder = typeof MediaRecorder !== 'undefined';
+    out.platform = (navigator.userAgent || '').slice(0, 120);
+    try {
+      if (navigator.permissions && navigator.permissions.query) {
+        const p = await navigator.permissions.query({ name: 'microphone' });
+        out.permission = p.state;
+      }
+    } catch (e) { out.permission = 'unsupported'; }
+    try {
+      const devs = await navigator.mediaDevices.enumerateDevices();
+      out.inputs = devs.filter((d) => d.kind === 'audioinput').length;
+    } catch (e) { /* ignore */ }
+    out.mime = pickMime();
+  } catch (e) { /* ignore */ }
+  return out;
+}
+
+/** สรุปเป็นข้อความสั้น ๆ ให้ผู้ใช้คัดลอกส่งให้ผู้พัฒนาได้ */
+export async function micDiagnosticsReport() {
+  const d = await micDiagnostics();
+  return [
+    'PicEnglish mic check',
+    'secure=' + d.secure,
+    'mediaDevices=' + d.hasMediaDevices,
+    'MediaRecorder=' + d.hasRecorder,
+    'permission=' + d.permission,
+    'audioInputs=' + d.inputs,
+    'mime=' + (d.mime || 'none'),
+    'ua=' + d.platform,
+  ].join(' | ');
+}

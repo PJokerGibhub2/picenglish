@@ -578,6 +578,17 @@ const PAGE_TEST = `(async () => {
      typeof obMod.openInBrowser === 'function' && typeof obMod.copyText === 'function');
   const iw = document.getElementById('inapp-warning');
   ok('แถบเตือน in-app ซ่อนอยู่เมื่อเปิดในเบราว์เซอร์ปกติ', !!iw && iw.classList.contains('hidden'));
+  /* ---------- 10.96) ข้อมูลวินิจฉัยไมโครโฟน (สำหรับแก้ปัญหาบนเครื่องจริง) ---------- */
+  const recMod = await import('/js/recorder.js');
+  ok('มีชุดวินิจฉัยไมโครโฟน', typeof recMod.micDiagnostics === 'function' && typeof recMod.micDiagnosticsReport === 'function');
+  const diag = await recMod.micDiagnostics();
+  ok('วินิจฉัยบอกสถานะความปลอดภัย/สิทธิ์/จำนวนไมค์ได้',
+     typeof diag.secure === 'boolean' && typeof diag.permission === 'string' && typeof diag.inputs === 'number',
+     'secure=' + diag.secure + ' perm=' + diag.permission + ' inputs=' + diag.inputs + ' mime=' + diag.mime);
+  const rep = await recMod.micDiagnosticsReport();
+  ok('สร้างข้อความวินิจฉัยให้คัดลอกส่งได้', typeof rep === 'string' && rep.includes('permission'), rep.slice(0, 60));
+  const obm = await import('/js/openinbrowser.js');
+  ok('มีฟังก์ชันแชร์ลิงก์ผ่านระบบมือถือ', typeof obm.shareUrl === 'function');
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');
   const probe = words.find((w) => w.word === 'receipt') || words[0];

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * openinbrowser.js — พาผู้ใช้ออกจากเบราว์เซอร์ในแอป (LINE / Facebook / IG)
  *
  * ทำไมต้องมี: LINE บล็อกไมโครโฟนใน in-app browser ทั้ง iOS และ Android
@@ -82,6 +82,19 @@ export function openInBrowser(url = location.href) {
   return 'copy';
 }
 
+/** แชร์ลิงก์ผ่านระบบของมือถือ → ผู้ใช้เลือกเองว่าจะเปิดด้วยแอปหรือเบราว์เซอร์ใด */
+export async function shareUrl(url = location.href, title = 'PicEnglish') {
+  try {
+    if (navigator.share) {
+      await navigator.share({ title, url });
+      return 'share';
+    }
+  } catch (e) {
+    if (e && e.name === 'AbortError') return 'abort';
+  }
+  const ok = await copyText(url);
+  return ok ? 'copy' : 'fail';
+}
 /** แถบเตือน + ปุ่มพาออกไปเปิดในเบราว์เซอร์ (คืนค่า null ถ้าไม่ได้อยู่ใน in-app) */
 export function inAppBanner(opts = {}) {
   const app = inAppBrowser();
@@ -112,9 +125,18 @@ export function inAppBanner(opts = {}) {
     },
   }, '📋 คัดลอกลิงก์');
 
+  const shareBtn = h('button', {
+    class: 'btn btn-ghost btn-sm', type: 'button',
+    onclick: async () => {
+      const how = await shareUrl();
+      if (how === 'copy') toast('คัดลอกลิงก์แล้ว — เปิดเบราว์เซอร์แล้ววาง', 'ok');
+      else if (how === 'fail') toast('คัดลอกไม่สำเร็จ — กดจุดสามจุดแล้วเลือก เปิดในเบราว์เซอร์', 'err');
+    },
+  }, '📤 แชร์ไปเปิดเอง');
+
   return h('div', { class: 'card inapp', role: 'alert', style: compact ? { padding: '12px 14px' } : {} },
     h('div', { class: 'bold', style: { fontSize: '.92rem' }, text: '⚠️ คุณเปิดจาก ' + app + ' — ไมโครโฟนจะถูกบล็อก' }),
     h('div', { class: 'tiny', style: { marginTop: '4px', color: 'var(--text-soft)', lineHeight: '1.55' },
       text: 'LINE ไม่ให้เว็บในแอปใช้ไมค์ (ทั้ง iPhone และ Android) — กดปุ่มล่างเพื่อเปิดในเบราว์เซอร์จริง แล้วค่อยกดไมค์' }),
-    h('div', { class: 'row', style: { gap: '8px', marginTop: '10px' } }, openBtn, copyBtn));
+    h('div', { class: 'row row-wrap', style: { gap: '8px', marginTop: '10px' } }, shareBtn, copyBtn, openBtn));
 }

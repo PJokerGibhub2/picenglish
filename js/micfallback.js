@@ -78,9 +78,16 @@ export function micPanel(opts = {}) {
     handle = await startRecording({ onLevel: setLevel });
     if (!handle) {
       const app = inAppBrowser();
-      const why = app ? ('เบราว์เซอร์ในแอป ' + app + ' มักบล็อกไมค์ — เปิดลิงก์ใน Chrome/Safari') : 'ไปที่ตั้งค่าเบราว์เซอร์แล้วอนุญาตไมค์';
+      const why = app
+        ? ('เบราว์เซอร์ในแอป ' + app + ' มักบล็อกไมค์ — เปิดลิงก์ในเบราว์เซอร์จริง')
+        : 'ตรวจสิทธิ์ไมโครโฟนของเว็บนี้ (ไอคอนกุญแจ/ไมค์บนแถบที่อยู่)';
       toast('เริ่มอัดไม่ได้', 'err');
       statusEl.textContent = 'เริ่มอัดไม่ได้ — ' + why;
+      // ทางออก: ฝึกต่อได้แม้ไมค์ใช้ไม่ได้ (ให้คะแนนตัวเอง)
+      mount(resultBox, h('button', {
+        class: 'btn btn-ghost btn-block btn-sm', type: 'button', style: { marginTop: '10px' },
+        onclick: () => { if (onNext) onNext(); },
+      }, 'ฝึกต่อโดยไม่ใช้ไมค์ →'));
       return;
     }
     recording = true;
