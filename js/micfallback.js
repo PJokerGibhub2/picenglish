@@ -11,6 +11,7 @@
 
 import { h, mount, clear, toast } from './ui.js';
 import { inAppBrowser } from './speech.js';
+import { sfxTap, sfxMicStart, sfxMicStop, sfxSuccess } from './sfx.js';
 import { startRecording, playBlob, abortRecording, micDiagnosticsReport } from './recorder.js';
 import * as store from './store.js';
 
@@ -73,6 +74,7 @@ export function micPanel(opts = {}) {
 
   async function start() {
     if (recording) return;
+    try { sfxMicStart(); } catch (e) { /* ignore */ }
     clear(resultBox);
     peak = 0;
     handle = await startRecording({ onLevel: setLevel });
@@ -116,6 +118,7 @@ export function micPanel(opts = {}) {
 
   async function stop() {
     if (!recording) return;
+    try { sfxMicStop(); } catch (e) { /* ignore */ }
     recording = false;
     clearInterval(timerId); timerId = null;
     micBtn.classList.remove('rec');

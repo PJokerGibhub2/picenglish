@@ -263,7 +263,8 @@ h1, .h1 { font-size: var(--fs-display); font-weight: 800; letter-spacing: -.02em
 
 .row { display: flex; gap: 10px; align-items: center; min-width: 0; }
 .row > * { flex: 1; min-width: 0; }
-.row > .spacer, .row > .chip-streak, .row > .xp-chip, .row > .icon-btn, .row > .pill, .row > span, .row > .btn-sm { flex: 0 0 auto; }
+.row > .spacer, .row > .chip-streak, .row > .xp-chip, .row > .icon-btn, .row > .pill, .row > span { flex: 0 0 auto; }
+/* ปุ่มแบบ block ที่อยู่คู่กันต้องหดได้ ไม่งั้นดันจอล้น (บั๊กที่เจอ) */.n.row > .btn-block { width: auto; flex: 1 1 0; min-width: 0; }
 .row-wrap { flex-wrap: wrap; }
 .spacer { flex: 1; }
 .stack > * + * { margin-top: 10px; }

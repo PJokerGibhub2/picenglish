@@ -24,6 +24,7 @@ import {
   listRecordings, deleteRecording, updateRecording,
 } from './recorder.js';
 import { mascot } from './mascot.js';
+import { sfxTap, sfxMicStart, sfxMicStop, sfxSuccess, sfxSoft } from './sfx.js';
 
 const S = () => store.settings();
 const say = (text, opts = {}) => sayText(text, { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender, ...opts });
@@ -257,12 +258,7 @@ export function roleplay(root, params = {}) {
 
     // บริบท + ภาพ
     const ctx = h('div', { class: 'card', style: { marginTop: '12px', padding: '12px' } });
-    ctx.appendChild(photoBox(d, {
-      color: categoryOf(d.category).color,
-      showPhotos: S().showPhotos,
-      allowCycle: true,
-      class: 'dlg-photo',
-    }));
+
     ctx.appendChild(h('div', { class: 'row' },
       h('div', { style: { flex: '1' } },
         h('div', { class: 'bold', text: `${d.emoji || '💬'} ${d.title}` }),
@@ -294,7 +290,18 @@ export function roleplay(root, params = {}) {
       class: `bubble ${mine ? 'me' : 'other'} ${isCurrent ? 'current' : ''}`,
       dataset: { line: String(i) },
     });
-    card.appendChild(h('div', { class: 'who', text: mine ? '🙋 คุณ (บทของคุณ)' : `${d.counterpart?.emoji || '🧑'} ${d.counterpart?.labelTh || 'คู่สนทนา'}` }));
+    const whoRow = h('div', { class: 'row', style: { gap: '6px', marginBottom: '4px' } },
+      h('div', { class: 'who', style: { margin: '0', flex: '1' }, text: mine ? '🙋 คุณ (บทของคุณ)' : `${d.counterpart?.emoji || '🧑'} ${d.counterpart?.labelTh || 'คู่สนทนา'}` }),
+      h('button', {
+        class: 'icon-btn', type: 'button', 'aria-label': 'ฟังเสียงประโยคนี้',
+        style: { width: '34px', height: '30px' },
+        onclick: (e) => {
+          e.stopPropagation();
+          sfxTap();
+          sayText(line.en, { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender, audioKey: `${d.id}:${i}` });
+        },
+      }, icon('sound', 16)));
+    card.appendChild(whoRow);
     const sent = h('div', { class: 'bubble-en' });
     renderSentence(sent, line.en);
     sent.addEventListener('click', (e) => {
@@ -406,6 +413,20 @@ export function roleplay(root, params = {}) {
       return;
     }
 
+    // ปุ่มฟังประโยคคำตอบก่อนพูด (ผู้ใช้ขอ: ให้รู้ว่าต้องพูดว่าอะไร)
+    actionBox.appendChild(h('div', { class: 'row', style: { gap: '8px', marginBottom: '5px' } },
+      h('button', {
+        class: 'btn btn-ghost btn-block btn-sm', type: 'button',
+        onclick: (e) => {
+          try { sfxTap(); } catch (err) { /* ignore */ }
+          sayText(line.en, { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender, audioKey: `${d.id}:${i}` });
+        },
+      }, icon('sound', 16), 'ฟังประโยคนี้ก่อนพูด'),
+      h('button', {
+        class: 'btn btn-ghost btn-sm', type: 'button', 'aria-label': 'ฟังช้าๆ',
+        onclick: () => sayText(line.en, { rate: Math.max(0.55, S().rate - 0.3), voiceURI: S().voiceURI, gender: S().voiceGender }),
+      }, '🐢')));
+
     const mic = h('button', { class: 'mic-btn', type: 'button', 'aria-label': 'กดเพื่อพูด', style: { width: '78px', height: '78px', fontSize: '1.7rem' } }, '🎤');
     const hint = h('div', { class: 'small muted center', style: { marginTop: '6px' }, text: 'กดไมค์แล้วพูดประโยคของคุณ' });
 
@@ -507,12 +528,14 @@ export function roleplay(root, params = {}) {
       hint.textContent = recordEnabled() ? 'กำลังฟัง… พูดได้เลย (บันทึกเสียงไว้ให้ฟังย้อนหลังด้วย)' : 'กำลังฟัง… พูดได้เลย';
       statusEl.textContent = '…';
       recording = true;
+      try { sfxMicStart(); } catch (e) { /* ignore */ }
       // เพดานเวลากันตาย: ต่อให้ไมค์/ตัวบันทึกเสียงค้าง UI ก็ต้องไม่ค้างตาม
       const { said, blob, err } = await Promise.race([
         listenOnce({ onInterim: (txt) => { statusEl.textContent = txt || '…'; } }),
         new Promise((resolve) => setTimeout(() => resolve({ said: '', blob: null, err: 'timeout' }), 12000)),
       ]);
       recording = false;
+      try { sfxMicStop(); } catch (e) { /* ignore */ }
       mic.classList.remove('rec');
       if (err === 'timeout') {
         hint.textContent = 'หมดเวลา — กดไมค์แล้วลองพูดอีกครั้ง';
@@ -546,6 +569,7 @@ export function roleplay(root, params = {}) {
       b.appendChild(badge);
     }
     const ok = score >= threshold();
+    try { if (ok) sfxSuccess(); else sfxSoft(); } catch (e) { /* ignore */ }
     badge.style.color = ok ? 'var(--success)' : 'var(--warn)';
     badge.textContent = ok ? `✓ พูดผ่าน ${score}%` : `พูดได้ ${score}% — ยังต้องฝึกอีกนิด`;
   }
@@ -569,6 +593,7 @@ export function roleplay(root, params = {}) {
     updateBubbleScore(i, score);
 
     const ok = score >= threshold();
+    try { if (ok) sfxSuccess(); else sfxSoft(); } catch (e) { /* ignore */ }
     store.gradeSentence(key, ok ? (score >= 92 ? 3 : 2) : 1);
     if (ok && blob) saveRecording({
       kind: 'dialogue', refId: key, label: line.en, blob,
@@ -1043,6 +1068,7 @@ export function oneMinute(root) {
       handle = await startRecording();
       if (!handle) { phase = 'idle'; render(); toast('เริ่มอัดไม่สำเร็จ — ตรวจสิทธิ์ไมโครโฟน', 'err'); return; }
       startedAt = Date.now();
+      try { sfxMicStart(); } catch (e) { /* ignore */ }
       timerId = setInterval(tick, 200);
       tick();
     });
@@ -1054,6 +1080,7 @@ export function oneMinute(root) {
     const secs = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
     const blob = await handle.stop();
     handle = null;
+    try { sfxMicStop(); } catch (e) { /* ignore */ }
     if (!blob) { phase = 'idle'; render(); toast('ไม่ได้ยินเสียง ลองอีกครั้ง', 'err'); return; }
     lastBlob = blob;
     lastSeconds = secs;

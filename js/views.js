@@ -1,4 +1,4 @@
-/**
+﻿/**
  * views.js — หน้าจอทั้งหมดของแอป PicEnglish
  * ทุกหน้าคืนค่าเป็นฟังก์ชัน cleanup เพื่อให้ router เรียกตอนออกจากหน้า (หยุดเสียงที่ค้างอยู่)
  */
@@ -14,6 +14,7 @@ import {
   englishVoices, sttSupported, sttSupport, sttErrorReason, sttSelfTest, inAppBrowser, createRecognizer, alignWords,
 } from './speech.js';
 import { micPanel } from './micfallback.js';
+import { sfxTap } from './sfx.js';
 import { VERSION, BUILD_DATE } from './version.js';
 import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
 import { artFor, artCredits } from './art.js';
@@ -876,6 +877,7 @@ export function speakView(root) {
     }
 
     mic.onclick = () => {
+      try { sfxTap(); } catch (e) { /* ignore */ }
       if (recording) { try { rec.stop(); } catch (e) { /* ignore */ } return; }
       stopSpeaking();
       clear(result);
@@ -1462,6 +1464,9 @@ export function openSettings(onChange) {
         return sel;
       })()));
     box.appendChild(h('div', { class: 'field' },
+      h('div', {}, h('label', { text: 'เสียงเอฟเฟกต์' }),
+        h('div', { class: 'desc', text: 'เสียงตอนกดไมค์ / ตอนผ่านบทเรียน (สังเคราะห์ในเครื่อง ไม่ต้องโหลด)' })),
+      switchEl('sfx')));    box.appendChild(h('div', { class: 'field' },
       h('div', {}, h('label', { text: 'บันทึกเสียงของฉัน' }),
         h('div', { class: 'desc', text: 'เก็บไว้ในเครื่องเท่านั้น เพื่อฟังเทียบกับเสียงต้นแบบ' })),
       switchEl('recordVoice')));

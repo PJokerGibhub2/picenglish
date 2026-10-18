@@ -474,6 +474,18 @@ const PAGE_TEST = `(async () => {
   await sleep(800);
   ok('หน้าทบทวนประโยคเปิดได้', document.body.textContent.includes('ประโยค'));
 
+  /* ---------- 10.4) เอฟเฟกต์เสียง + ปุ่มฟังบทสนทนา + ไม่มีรูปในโหมดสนทนา ---------- */
+  const sfxMod = await import('/js/sfx.js');
+  ok('มีโมดูลเสียงเอฟเฟกต์ (สังเคราะห์ในเครื่อง)', typeof sfxMod.sfxMicStart === 'function' && typeof sfxMod.sfxSuccess === 'function');
+  ok('ตั้งค่าเสียงเอฟเฟกต์เปิดเป็นค่าเริ่มต้น', store().settings.sfx !== false, String(store().settings.sfx));
+  location.hash = '#/learn';
+  await sleep(400);
+  location.hash = '#/roleplay?dlg=dlg-cafe';
+  await sleep(1600);
+  ok('เข้าห้องสนทนาได้', !!$('.bubble'), $$('.bubble').length + ' บับเบิล');
+  ok('โหมดสนทนาไม่มีรูปภาพประกอบแล้ว', !$('.dlg-photo'), $('.dlg-photo') ? 'ยังมีรูป' : 'ไม่มีรูป');
+  ok('บับเบิลมีปุ่มฟังเสียงประโยค', $$('button[aria-label="ฟังเสียงประโยคนี้"]').length >= 1,
+     $$('button[aria-label="ฟังเสียงประโยคนี้"]').length + ' ปุ่ม');
   /* ---------- 10.5) พูดคนเดียว 60 วินาที ---------- */
   location.hash = '#/onemin';
   await sleep(1100);
