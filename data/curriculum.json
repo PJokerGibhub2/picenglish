@@ -29,6 +29,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -69,6 +73,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -115,6 +123,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -155,6 +167,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -200,6 +216,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -240,6 +260,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -295,6 +319,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -335,6 +363,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -381,6 +413,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -421,6 +457,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -467,6 +507,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -506,6 +550,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -561,6 +609,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -601,6 +653,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -647,6 +703,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -688,6 +748,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -733,6 +797,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -772,6 +840,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -827,6 +899,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -867,6 +943,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -914,6 +994,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -954,6 +1038,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -999,6 +1087,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1038,6 +1130,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1093,6 +1189,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1134,6 +1234,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1180,6 +1284,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1220,6 +1328,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1265,6 +1377,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [
@@ -1304,6 +1420,10 @@
                                                                            {
                                                                                "items":  2,
                                                                                "mode":  "speak"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "shadow"
                                                                            }
                                                                        ],
                                                              "canDo":  [

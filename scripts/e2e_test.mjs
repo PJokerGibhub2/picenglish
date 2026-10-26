@@ -719,6 +719,39 @@ const PAGE_TEST = `(async () => {
      document.body.textContent.indexOf('ฟังได้') >= 0 && document.body.textContent.indexOf('%') >= 0);
   await sleep(500);
 
+  /* ---------- 14) พูดตามเงา ---------- */
+  location.hash = '#/shadow';
+  await sleep(600);
+  const shadowItems = $$('#view .list-item');
+  ok('shadow มีรายการอย่างน้อย 10 บท', shadowItems.length >= 10, shadowItems.length + ' บท');
+  if (shadowItems[0]) { shadowItems[0].click(); await sleep(500); }
+  const firstShadowLine = $('.bubble-en.en') ? $('.bubble-en.en').textContent : '';
+  ok('เข้า shadow แล้วเห็นบรรทัดแรกและปุ่มฟัง', !!firstShadowLine && !!findByText('ฟังต้นแบบ'));
+  const playShadow = findByText('ฟังต้นแบบ');
+  if (playShadow) { playShadow.click(); await sleep(120); }
+  ok('กดฟังต้นแบบแล้วมีสถานะเล่นหรือปุ่มหยุด', !!findByText('⏹ หยุด') || document.body.textContent.includes('กำลังอ่าน'));
+  const lessonId = new URLSearchParams(location.hash.split('?')[1] || '').get('id');
+  let shadowGuard = 0;
+  while ($('.bubble-en.en') && shadowGuard < 12) {
+    const targetLine = $('.bubble-en.en').textContent;
+    window.__fakeSpeech = targetLine;
+    const mic = $('button.mic-btn');
+    if (!mic) break;
+    mic.click();
+    await waitFor(() => document.body.textContent.indexOf('%') >= 0 && !!findByText('บรรทัดถัดไป'), 4000);
+    if (shadowGuard === 0) ok('ไมค์ fake speech ให้ % และปุ่มไปต่อ', document.body.textContent.indexOf('%') >= 0 && !!findByText('บรรทัดถัดไป'));
+    const nextShadowLine = findByText('บรรทัดถัดไป');
+    if (!nextShadowLine) break;
+    nextShadowLine.click();
+    await sleep(180);
+    shadowGuard++;
+  }
+  ok('เดินจบบท shadow แล้วเห็นสรุป % และปุ่มกลับรายการ', document.body.textContent.includes('จบแล้ว') && document.body.textContent.indexOf('%') >= 0 && !!findByText('กลับรายการ'));
+  const shadowSaved = store().shadow && store().shadow[lessonId];
+  const backShadowList = findByText('กลับรายการ');
+  if (backShadowList) { backShadowList.click(); await sleep(300); }
+  ok('ความคืบหน้า shadow บันทึกและแสดงผ่านแล้วในรายการ', !!shadowSaved && Array.isArray(shadowSaved.passed) && shadowSaved.passed.length > 0 && document.body.textContent.includes('ผ่านแล้ว'));
+
   return { results: R, storage: store(), swControlled: !!navigator.serviceWorker.controller };
 })()`;
 

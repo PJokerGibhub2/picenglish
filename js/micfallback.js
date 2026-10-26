@@ -22,6 +22,7 @@ import * as store from './store.js';
  * @param {Function} [opts.speak]     ฟังก์ชันอ่านต้นแบบ
  * @param {string[]} [opts.flagWords] คำให้ผู้ใช้ชี้ว่ายังไม่ชัด
  * @param {Function} [opts.onFlag]    เรียกเมื่อผู้ใช้ชี้คำ (word) => void
+ * @param {Function} [opts.onRate]    เรียกเมื่อให้ดาวตัวเอง (stars) => void
  * @param {Function} [opts.onNext]    เรียกเมื่อกด "ต่อไป"
  * @param {string} [opts.nextLabel]
  * @param {string} [opts.key]         คีย์ประโยคสำหรับ SRS
@@ -33,6 +34,7 @@ export function micPanel(opts = {}) {
     speak = null,
     flagWords = [],
     onFlag = null,
+    onRate = null,
     onNext = null,
     nextLabel = 'พูดแล้ว ต่อไป →',
     key = null,
@@ -144,6 +146,7 @@ export function micPanel(opts = {}) {
         class: 'pill', type: 'button',
         onclick: (e) => {
           rated = n;
+          if (onRate) onRate(n);
           store.addSelfRating(n);
           [...stars.children].forEach((b, idx) => b.classList.toggle('on', idx < n));
           toast('บันทึกคะแนนตัวเอง ' + n + '/5');

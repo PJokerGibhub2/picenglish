@@ -27,6 +27,7 @@ const DEFAULTS = {
   srsSentences: {},         // "dlgId:lineIndex" -> เหมือน srs (ทบทวนระดับประโยค)
   dialogues: {},            // dlgId -> {lineIndex, completed, plays, bestScore, lastPlayed}
   listening: {},            // lessonId -> { completed, bestPercent, lastPlayed }
+  shadow: {},               // lessonId -> { best: { lineIdx: pct }, passed: [lineIdx] }
   placement: null,          // ผลวัดระดับล่าสุด เก็บในเครื่อง
   xp: 0,                    // แต้มประสบการณ์รวม
   stats: {},                // id -> {seen, correct, wrong, last}
@@ -118,6 +119,35 @@ export function bumpListening(lessonId, percent = 0) {
   bumpDaily('listening', 1);
   saveNow();
   return rec;
+}
+
+/** คืนความคืบหน้า shadowing โดยกรองข้อมูลเก่าหรือข้อมูลที่เสีย */
+export function shadowProgress(lessonId) {
+  const raw = S.shadow && S.shadow[lessonId];
+  if (!raw || typeof raw !== 'object') return { passed: [], best: {} };
+  const best = {};
+  if (raw.best && typeof raw.best === 'object' && !Array.isArray(raw.best)) {
+    for (const [idx, pct] of Object.entries(raw.best)) {
+      const n = Number(idx), score = Number(pct);
+      if (Number.isInteger(n) && n >= 0 && Number.isFinite(score)) best[n] = Math.max(0, Math.min(100, score));
+    }
+  }
+  const passed = Array.isArray(raw.passed)
+    ? [...new Set(raw.passed.map(Number).filter((n) => Number.isInteger(n) && n >= 0))]
+    : [];
+  return { passed, best };
+}
+
+export function saveShadowLine(lessonId, lineIdx, pct) {
+  if (!S.shadow || typeof S.shadow !== 'object' || Array.isArray(S.shadow)) S.shadow = {};
+  const idx = Number(lineIdx), score = Math.max(0, Math.min(100, Number(pct) || 0));
+  if (!Number.isInteger(idx) || idx < 0) return shadowProgress(lessonId);
+  const progress = shadowProgress(lessonId);
+  progress.best[idx] = Math.max(progress.best[idx] || 0, score);
+  if (score >= (Number(settings().passThreshold) || 70) && !progress.passed.includes(idx)) progress.passed.push(idx);
+  S.shadow[lessonId] = { ...progress, updatedAt: Date.now() };
+  saveNow();
+  return shadowProgress(lessonId);
 }
 export function bumpDaily(field, by = 1) {
   const t = today();

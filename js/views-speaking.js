@@ -16,7 +16,7 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, renderSentence, clearHighlight, speakSentence,
-  sttSupported, sttSupport, sttErrorReason, createRecognizer, alignWords, sentenceSimilarity,
+  sttSupported, sttSupport, sttErrorReason, alignWords, sentenceSimilarity,
 } from './speech.js';
 import {
   recordingSupported, startRecording, playBlob, stopPlayback,
@@ -25,6 +25,7 @@ import {
 } from './recorder.js';
 import { mascot } from './mascot.js';
 import { sfxTap, sfxMicStart, sfxMicStop, sfxSuccess, sfxSoft } from './sfx.js';
+import { listenOnce as listenSpeechOnce, stopListeningOnce } from './listen-once.js';
 
 const S = () => store.settings();
 const say = (text, opts = {}) => sayText(text, { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender, ...opts });
@@ -201,7 +202,6 @@ export function roleplay(root, params = {}) {
   let bubbleBox = null;
   let actionBox = null;
   let statusEl = null;
-  let currentRecognizer = null;
   const lineBlobs = new Map();   // lineKey -> Blob (เสียงที่ผู้ใช้พูดล่าสุด)
   const attempts = new Map();    // lineKey -> จำนวนครั้งที่ลอง
   const lastScore = new Map();   // lineKey -> คะแนนล่าสุด
@@ -468,56 +468,11 @@ export function roleplay(root, params = {}) {
    * คืนค่า { said, blob, err }
    */
   function listenOnce(hooks = {}) {
-    return new Promise((resolve) => {
-      stopSpeaking();
-      let recHandle = null;
-      let settled = false;
-      const done = async (said, err) => {
-        if (settled) return;
-        settled = true;
-        currentRecognizer = null;
-        let blob = null;
-        if (recHandle) {
-          // รอเก็บเสียงช่วงท้ายประโยคเล็กน้อย ก่อนหยุดบันทึก
-          await new Promise((r) => setTimeout(r, 180));
-          try { blob = await recHandle.stop(); } catch (e) { /* ignore */ }
-          recHandle = null;
-        }
-        resolve({ said: said || '', blob: blob && blob.size > 200 ? blob : null, err: err || null });
-      };
-      (async () => {
-        // ⚠️ Android: การถือสตรีมไมค์ไว้พร้อม SpeechRecognition ทำให้ตัวรู้จำแย่งไมค์
-        // แล้วจบด้วย error audio-capture (อาการ "ไม่ได้ยินเสียง") → บน Android ไม่อัดพร้อมกัน
-        const safeConcurrent = !/Android/i.test(navigator.userAgent || '');
-        if (recordEnabled() && safeConcurrent) {
-          try { recHandle = await startRecording(); } catch (e) { recHandle = null; }
-        }
-        const r = createRecognizer({
-          lang: 'en-US',
-          interim: true,
-          onResult: ({ final, interim, done: finished }) => {
-            hooks.onInterim && hooks.onInterim(final || interim || '');
-            if (finished) done(final || interim, null);
-          },
-          onError: (err) => done('', err),
-          onEnd: () => { /* ปิดงานผ่าน onResult(done) */ },
-        });
-        if (!r) return done('', 'unsupported');
-        currentRecognizer = r;
-        try {
-          r.start();
-          hooks.onStart && hooks.onStart();
-        } catch (err) {
-          done('', 'start-failed');
-        }
-      })();
-    });
+    return listenSpeechOnce(hooks);
   }
 
   function stopListening() {
-    if (currentRecognizer) {
-      try { currentRecognizer.stop(); } catch (e) { /* ignore */ }
-    }
+    stopListeningOnce();
   }
 
   /** เริ่มหนึ่งความพยายาม: อัดเสียง + ฟัง + ให้คะแนน */
@@ -534,6 +489,7 @@ export function roleplay(root, params = {}) {
         listenOnce({ onInterim: (txt) => { statusEl.textContent = txt || '…'; } }),
         new Promise((resolve) => setTimeout(() => resolve({ said: '', blob: null, err: 'timeout' }), 12000)),
       ]);
+      if (err === 'timeout') stopListeningOnce();
       recording = false;
       try { sfxMicStop(); } catch (e) { /* ignore */ }
       mic.classList.remove('rec');

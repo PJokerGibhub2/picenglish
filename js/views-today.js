@@ -169,7 +169,14 @@ export function today(root) {
       },
       h('div', { class: 'emoji', text: '⏱️' }),
       h('div', { class: 'cth', text: 'พูด 60 วินาที' }),
-      h('div', { class: 'cen', text: 'หัวข้อจากจุดอ่อน' }))));
+      h('div', { class: 'cen', text: 'หัวข้อจากจุดอ่อน' })),
+      h('button', {
+        class: 'cat-card', type: 'button', style: { '--cat': 'var(--primary)' },
+        onclick: () => { location.hash = '#/shadow'; },
+      },
+      h('div', { class: 'emoji', text: '🗣️' }),
+      h('div', { class: 'cth', text: 'พูดตามเงา' }),
+      h('div', { class: 'cen', text: `${db.listening.length} บท` }))));
 
     // ---------- XP ----------
     root.appendChild(h('div', { class: 'small muted center', style: { marginTop: '16px' },

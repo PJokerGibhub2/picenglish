@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LEVELS = ['A0', 'A1.1', 'A1.2', 'A2.1', 'A2.2']
-TASKS = {'listen', 'flashcard', 'quiz', 'match', 'speak', 'roleplay', 'onemin', 'review'}
+TASKS = {'listen', 'flashcard', 'quiz', 'match', 'speak', 'roleplay', 'onemin', 'review', 'shadow'}
 SKILLS = {'vocab', 'listening', 'phrase'}
 errors = []
 

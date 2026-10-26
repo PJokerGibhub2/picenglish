@@ -15,6 +15,7 @@ import { initLiff, profileChip, liffState } from './liff.js';
 import { loadArtManifest } from './art.js';
 import { placement } from './views-placement.js';
 import { listening } from './views-listening.js';
+import { shadow } from './views-shadow.js';
 
 const TITLES = {
   today: 'PicEnglish',
@@ -22,6 +23,7 @@ const TITLES = {
   learn: 'การ์ดคำศัพท์',
   listen: 'ฟังประโยค',
   listening: 'ฝึกฟัง',
+  shadow: 'พูดตามเงา',
   speaking: 'ฝึกพูด',
   roleplay: 'บทสนทนาจำลอง',
   sentenceReview: 'ทบทวนประโยค',
@@ -44,13 +46,14 @@ const ROUTES = {
   sentenceReview,
   onemin: oneMinute,
   listening,
+  shadow,
 };
 
 const TABS = ['learn', 'listen', 'speaking', 'review', 'mine'];
 // หน้าที่ถือว่าอยู่ในแท็บ "ฝึกพูด"
-const SPEAKING_PAGES = ['speaking', 'roleplay', 'sentenceReview', 'onemin', 'games', 'quiz', 'match', 'speak'];
+const SPEAKING_PAGES = ['speaking', 'roleplay', 'sentenceReview', 'onemin', 'games', 'quiz', 'match', 'speak', 'shadow'];
 // แท็บที่ควรไฮไลต์เมื่ออยู่หน้าย่อย
-const TAB_OF = { listen: 'learn', games: 'speaking', quiz: 'speaking', match: 'speaking', speak: 'speaking', roleplay: 'speaking', sentenceReview: 'speaking', onemin: 'speaking' };
+const TAB_OF = { listen: 'learn', games: 'speaking', quiz: 'speaking', match: 'speaking', speak: 'speaking', roleplay: 'speaking', sentenceReview: 'speaking', onemin: 'speaking', shadow: 'speaking' };
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('topbar-title');
 const backBtn = document.getElementById('btn-back');
