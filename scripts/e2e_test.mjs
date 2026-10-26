@@ -801,6 +801,26 @@ const PAGE_TEST = `(async () => {
   await sleep(350);
   ok('รายการ shadow แสดงสถานะความคืบหน้าที่บันทึกไว้', document.body.textContent.includes('กำลังเรียน') || document.body.textContent.includes('✓ ผ่าน') || document.body.textContent.includes('↻ ควรทบทวน'));
 
+  /* ---------- 14) ประโยคสำเร็จรูป ---------- */
+  location.hash = '#/chunks';
+  await sleep(700);
+  ok('หน้า chunks แสดงประโยคอย่างน้อย 20 ใบ', $$('#view article[id^="chunk-"]').length >= 20, $$('#view article[id^="chunk-"]').length + ' ใบ');
+  const chunkAllCount = $$('#view article[id^="chunk-"]').length;
+  const cafeFilter = findByText('คาเฟ่', $('#view'));
+  if (cafeFilter) cafeFilter.click();
+  await sleep(100);
+  ok('กรอง chunks ตามสถานการณ์ได้', !!cafeFilter && $$('#view article[id^="chunk-"]').length < chunkAllCount, $$('#view article[id^="chunk-"]').length + '/' + chunkAllCount);
+  const firstChunk = $$('#view article[id^="chunk-"]')[0];
+  const audioButton = firstChunk && firstChunk.querySelector('button[aria-label^="🔊"]');
+  if (audioButton) audioButton.click();
+  await sleep(250);
+  ok('กดฟัง chunks แล้วมีสถานะโดยไม่เกิดข้อผิดพลาด', !!audioButton && !!firstChunk.querySelector('.small').textContent);
+  const doneButton = firstChunk && Array.from(firstChunk.querySelectorAll('button')).find((b) => b.textContent.includes('ใช้ได้แล้ว'));
+  if (doneButton) doneButton.click();
+  await sleep(100);
+  ok('ทำเครื่องหมาย chunks แล้วแสดง ✓ และความคืบหน้า', document.body.textContent.includes('✓ ใช้ได้แล้ว') && document.body.textContent.includes('ใช้ได้แล้ว 1/150'));
+  ok('เมื่อมีความคืบหน้าแสดงการ์ดเรียนต่อ', !!findByText('▶ เรียนต่อ', $('#view')));
+
   return { results: R, storage: store(), swControlled: !!navigator.serviceWorker.controller };
 })()`;
 

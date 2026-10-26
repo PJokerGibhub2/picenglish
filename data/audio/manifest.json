@@ -2790,5 +2790,605 @@
 "lis:lis-story-09:4": {
 "f": "f/lis_lis-story-09_4.mp3",
 "m": "m/lis_lis-story-09_4.mp3"
+},
+"chunk:ch-cafe-01": {
+"f": "f/chunk_ch-cafe-01.mp3",
+"m": "m/chunk_ch-cafe-01.mp3"
+},
+"chunk:ch-cafe-02": {
+"f": "f/chunk_ch-cafe-02.mp3",
+"m": "m/chunk_ch-cafe-02.mp3"
+},
+"chunk:ch-cafe-03": {
+"f": "f/chunk_ch-cafe-03.mp3",
+"m": "m/chunk_ch-cafe-03.mp3"
+},
+"chunk:ch-cafe-04": {
+"f": "f/chunk_ch-cafe-04.mp3",
+"m": "m/chunk_ch-cafe-04.mp3"
+},
+"chunk:ch-cafe-05": {
+"f": "f/chunk_ch-cafe-05.mp3",
+"m": "m/chunk_ch-cafe-05.mp3"
+},
+"chunk:ch-cafe-06": {
+"f": "f/chunk_ch-cafe-06.mp3",
+"m": "m/chunk_ch-cafe-06.mp3"
+},
+"chunk:ch-cafe-07": {
+"f": "f/chunk_ch-cafe-07.mp3",
+"m": "m/chunk_ch-cafe-07.mp3"
+},
+"chunk:ch-cafe-08": {
+"f": "f/chunk_ch-cafe-08.mp3",
+"m": "m/chunk_ch-cafe-08.mp3"
+},
+"chunk:ch-cafe-09": {
+"f": "f/chunk_ch-cafe-09.mp3",
+"m": "m/chunk_ch-cafe-09.mp3"
+},
+"chunk:ch-cafe-10": {
+"f": "f/chunk_ch-cafe-10.mp3",
+"m": "m/chunk_ch-cafe-10.mp3"
+},
+"chunk:ch-cafe-11": {
+"f": "f/chunk_ch-cafe-11.mp3",
+"m": "m/chunk_ch-cafe-11.mp3"
+},
+"chunk:ch-cafe-12": {
+"f": "f/chunk_ch-cafe-12.mp3",
+"m": "m/chunk_ch-cafe-12.mp3"
+},
+"chunk:ch-cafe-13": {
+"f": "f/chunk_ch-cafe-13.mp3",
+"m": "m/chunk_ch-cafe-13.mp3"
+},
+"chunk:ch-cafe-14": {
+"f": "f/chunk_ch-cafe-14.mp3",
+"m": "m/chunk_ch-cafe-14.mp3"
+},
+"chunk:ch-cafe-15": {
+"f": "f/chunk_ch-cafe-15.mp3",
+"m": "m/chunk_ch-cafe-15.mp3"
+},
+"chunk:ch-cafe-16": {
+"f": "f/chunk_ch-cafe-16.mp3",
+"m": "m/chunk_ch-cafe-16.mp3"
+},
+"chunk:ch-cafe-17": {
+"f": "f/chunk_ch-cafe-17.mp3",
+"m": "m/chunk_ch-cafe-17.mp3"
+},
+"chunk:ch-cafe-18": {
+"f": "f/chunk_ch-cafe-18.mp3",
+"m": "m/chunk_ch-cafe-18.mp3"
+},
+"chunk:ch-cafe-19": {
+"f": "f/chunk_ch-cafe-19.mp3",
+"m": "m/chunk_ch-cafe-19.mp3"
+},
+"chunk:ch-rest-01": {
+"f": "f/chunk_ch-rest-01.mp3",
+"m": "m/chunk_ch-rest-01.mp3"
+},
+"chunk:ch-rest-02": {
+"f": "f/chunk_ch-rest-02.mp3",
+"m": "m/chunk_ch-rest-02.mp3"
+},
+"chunk:ch-rest-03": {
+"f": "f/chunk_ch-rest-03.mp3",
+"m": "m/chunk_ch-rest-03.mp3"
+},
+"chunk:ch-rest-04": {
+"f": "f/chunk_ch-rest-04.mp3",
+"m": "m/chunk_ch-rest-04.mp3"
+},
+"chunk:ch-rest-05": {
+"f": "f/chunk_ch-rest-05.mp3",
+"m": "m/chunk_ch-rest-05.mp3"
+},
+"chunk:ch-rest-06": {
+"f": "f/chunk_ch-rest-06.mp3",
+"m": "m/chunk_ch-rest-06.mp3"
+},
+"chunk:ch-rest-07": {
+"f": "f/chunk_ch-rest-07.mp3",
+"m": "m/chunk_ch-rest-07.mp3"
+},
+"chunk:ch-rest-08": {
+"f": "f/chunk_ch-rest-08.mp3",
+"m": "m/chunk_ch-rest-08.mp3"
+},
+"chunk:ch-rest-09": {
+"f": "f/chunk_ch-rest-09.mp3",
+"m": "m/chunk_ch-rest-09.mp3"
+},
+"chunk:ch-rest-10": {
+"f": "f/chunk_ch-rest-10.mp3",
+"m": "m/chunk_ch-rest-10.mp3"
+},
+"chunk:ch-rest-11": {
+"f": "f/chunk_ch-rest-11.mp3",
+"m": "m/chunk_ch-rest-11.mp3"
+},
+"chunk:ch-rest-12": {
+"f": "f/chunk_ch-rest-12.mp3",
+"m": "m/chunk_ch-rest-12.mp3"
+},
+"chunk:ch-rest-13": {
+"f": "f/chunk_ch-rest-13.mp3",
+"m": "m/chunk_ch-rest-13.mp3"
+},
+"chunk:ch-rest-14": {
+"f": "f/chunk_ch-rest-14.mp3",
+"m": "m/chunk_ch-rest-14.mp3"
+},
+"chunk:ch-rest-15": {
+"f": "f/chunk_ch-rest-15.mp3",
+"m": "m/chunk_ch-rest-15.mp3"
+},
+"chunk:ch-rest-16": {
+"f": "f/chunk_ch-rest-16.mp3",
+"m": "m/chunk_ch-rest-16.mp3"
+},
+"chunk:ch-rest-17": {
+"f": "f/chunk_ch-rest-17.mp3",
+"m": "m/chunk_ch-rest-17.mp3"
+},
+"chunk:ch-rest-18": {
+"f": "f/chunk_ch-rest-18.mp3",
+"m": "m/chunk_ch-rest-18.mp3"
+},
+"chunk:ch-rest-19": {
+"f": "f/chunk_ch-rest-19.mp3",
+"m": "m/chunk_ch-rest-19.mp3"
+},
+"chunk:ch-shop-01": {
+"f": "f/chunk_ch-shop-01.mp3",
+"m": "m/chunk_ch-shop-01.mp3"
+},
+"chunk:ch-shop-02": {
+"f": "f/chunk_ch-shop-02.mp3",
+"m": "m/chunk_ch-shop-02.mp3"
+},
+"chunk:ch-shop-03": {
+"f": "f/chunk_ch-shop-03.mp3",
+"m": "m/chunk_ch-shop-03.mp3"
+},
+"chunk:ch-shop-04": {
+"f": "f/chunk_ch-shop-04.mp3",
+"m": "m/chunk_ch-shop-04.mp3"
+},
+"chunk:ch-shop-05": {
+"f": "f/chunk_ch-shop-05.mp3",
+"m": "m/chunk_ch-shop-05.mp3"
+},
+"chunk:ch-shop-06": {
+"f": "f/chunk_ch-shop-06.mp3",
+"m": "m/chunk_ch-shop-06.mp3"
+},
+"chunk:ch-shop-07": {
+"f": "f/chunk_ch-shop-07.mp3",
+"m": "m/chunk_ch-shop-07.mp3"
+},
+"chunk:ch-shop-08": {
+"f": "f/chunk_ch-shop-08.mp3",
+"m": "m/chunk_ch-shop-08.mp3"
+},
+"chunk:ch-shop-09": {
+"f": "f/chunk_ch-shop-09.mp3",
+"m": "m/chunk_ch-shop-09.mp3"
+},
+"chunk:ch-shop-10": {
+"f": "f/chunk_ch-shop-10.mp3",
+"m": "m/chunk_ch-shop-10.mp3"
+},
+"chunk:ch-shop-11": {
+"f": "f/chunk_ch-shop-11.mp3",
+"m": "m/chunk_ch-shop-11.mp3"
+},
+"chunk:ch-shop-12": {
+"f": "f/chunk_ch-shop-12.mp3",
+"m": "m/chunk_ch-shop-12.mp3"
+},
+"chunk:ch-shop-13": {
+"f": "f/chunk_ch-shop-13.mp3",
+"m": "m/chunk_ch-shop-13.mp3"
+},
+"chunk:ch-shop-14": {
+"f": "f/chunk_ch-shop-14.mp3",
+"m": "m/chunk_ch-shop-14.mp3"
+},
+"chunk:ch-shop-15": {
+"f": "f/chunk_ch-shop-15.mp3",
+"m": "m/chunk_ch-shop-15.mp3"
+},
+"chunk:ch-shop-16": {
+"f": "f/chunk_ch-shop-16.mp3",
+"m": "m/chunk_ch-shop-16.mp3"
+},
+"chunk:ch-shop-17": {
+"f": "f/chunk_ch-shop-17.mp3",
+"m": "m/chunk_ch-shop-17.mp3"
+},
+"chunk:ch-shop-18": {
+"f": "f/chunk_ch-shop-18.mp3",
+"m": "m/chunk_ch-shop-18.mp3"
+},
+"chunk:ch-shop-19": {
+"f": "f/chunk_ch-shop-19.mp3",
+"m": "m/chunk_ch-shop-19.mp3"
+},
+"chunk:ch-trav-01": {
+"f": "f/chunk_ch-trav-01.mp3",
+"m": "m/chunk_ch-trav-01.mp3"
+},
+"chunk:ch-trav-02": {
+"f": "f/chunk_ch-trav-02.mp3",
+"m": "m/chunk_ch-trav-02.mp3"
+},
+"chunk:ch-trav-03": {
+"f": "f/chunk_ch-trav-03.mp3",
+"m": "m/chunk_ch-trav-03.mp3"
+},
+"chunk:ch-trav-04": {
+"f": "f/chunk_ch-trav-04.mp3",
+"m": "m/chunk_ch-trav-04.mp3"
+},
+"chunk:ch-trav-05": {
+"f": "f/chunk_ch-trav-05.mp3",
+"m": "m/chunk_ch-trav-05.mp3"
+},
+"chunk:ch-trav-06": {
+"f": "f/chunk_ch-trav-06.mp3",
+"m": "m/chunk_ch-trav-06.mp3"
+},
+"chunk:ch-trav-07": {
+"f": "f/chunk_ch-trav-07.mp3",
+"m": "m/chunk_ch-trav-07.mp3"
+},
+"chunk:ch-trav-08": {
+"f": "f/chunk_ch-trav-08.mp3",
+"m": "m/chunk_ch-trav-08.mp3"
+},
+"chunk:ch-trav-09": {
+"f": "f/chunk_ch-trav-09.mp3",
+"m": "m/chunk_ch-trav-09.mp3"
+},
+"chunk:ch-trav-10": {
+"f": "f/chunk_ch-trav-10.mp3",
+"m": "m/chunk_ch-trav-10.mp3"
+},
+"chunk:ch-trav-11": {
+"f": "f/chunk_ch-trav-11.mp3",
+"m": "m/chunk_ch-trav-11.mp3"
+},
+"chunk:ch-trav-12": {
+"f": "f/chunk_ch-trav-12.mp3",
+"m": "m/chunk_ch-trav-12.mp3"
+},
+"chunk:ch-trav-13": {
+"f": "f/chunk_ch-trav-13.mp3",
+"m": "m/chunk_ch-trav-13.mp3"
+},
+"chunk:ch-trav-14": {
+"f": "f/chunk_ch-trav-14.mp3",
+"m": "m/chunk_ch-trav-14.mp3"
+},
+"chunk:ch-trav-15": {
+"f": "f/chunk_ch-trav-15.mp3",
+"m": "m/chunk_ch-trav-15.mp3"
+},
+"chunk:ch-trav-16": {
+"f": "f/chunk_ch-trav-16.mp3",
+"m": "m/chunk_ch-trav-16.mp3"
+},
+"chunk:ch-trav-17": {
+"f": "f/chunk_ch-trav-17.mp3",
+"m": "m/chunk_ch-trav-17.mp3"
+},
+"chunk:ch-trav-18": {
+"f": "f/chunk_ch-trav-18.mp3",
+"m": "m/chunk_ch-trav-18.mp3"
+},
+"chunk:ch-trav-19": {
+"f": "f/chunk_ch-trav-19.mp3",
+"m": "m/chunk_ch-trav-19.mp3"
+},
+"chunk:ch-hote-01": {
+"f": "f/chunk_ch-hote-01.mp3",
+"m": "m/chunk_ch-hote-01.mp3"
+},
+"chunk:ch-hote-02": {
+"f": "f/chunk_ch-hote-02.mp3",
+"m": "m/chunk_ch-hote-02.mp3"
+},
+"chunk:ch-hote-03": {
+"f": "f/chunk_ch-hote-03.mp3",
+"m": "m/chunk_ch-hote-03.mp3"
+},
+"chunk:ch-hote-04": {
+"f": "f/chunk_ch-hote-04.mp3",
+"m": "m/chunk_ch-hote-04.mp3"
+},
+"chunk:ch-hote-05": {
+"f": "f/chunk_ch-hote-05.mp3",
+"m": "m/chunk_ch-hote-05.mp3"
+},
+"chunk:ch-hote-06": {
+"f": "f/chunk_ch-hote-06.mp3",
+"m": "m/chunk_ch-hote-06.mp3"
+},
+"chunk:ch-hote-07": {
+"f": "f/chunk_ch-hote-07.mp3",
+"m": "m/chunk_ch-hote-07.mp3"
+},
+"chunk:ch-hote-08": {
+"f": "f/chunk_ch-hote-08.mp3",
+"m": "m/chunk_ch-hote-08.mp3"
+},
+"chunk:ch-hote-09": {
+"f": "f/chunk_ch-hote-09.mp3",
+"m": "m/chunk_ch-hote-09.mp3"
+},
+"chunk:ch-hote-10": {
+"f": "f/chunk_ch-hote-10.mp3",
+"m": "m/chunk_ch-hote-10.mp3"
+},
+"chunk:ch-hote-11": {
+"f": "f/chunk_ch-hote-11.mp3",
+"m": "m/chunk_ch-hote-11.mp3"
+},
+"chunk:ch-hote-12": {
+"f": "f/chunk_ch-hote-12.mp3",
+"m": "m/chunk_ch-hote-12.mp3"
+},
+"chunk:ch-hote-13": {
+"f": "f/chunk_ch-hote-13.mp3",
+"m": "m/chunk_ch-hote-13.mp3"
+},
+"chunk:ch-hote-14": {
+"f": "f/chunk_ch-hote-14.mp3",
+"m": "m/chunk_ch-hote-14.mp3"
+},
+"chunk:ch-hote-15": {
+"f": "f/chunk_ch-hote-15.mp3",
+"m": "m/chunk_ch-hote-15.mp3"
+},
+"chunk:ch-hote-16": {
+"f": "f/chunk_ch-hote-16.mp3",
+"m": "m/chunk_ch-hote-16.mp3"
+},
+"chunk:ch-hote-17": {
+"f": "f/chunk_ch-hote-17.mp3",
+"m": "m/chunk_ch-hote-17.mp3"
+},
+"chunk:ch-hote-18": {
+"f": "f/chunk_ch-hote-18.mp3",
+"m": "m/chunk_ch-hote-18.mp3"
+},
+"chunk:ch-hote-19": {
+"f": "f/chunk_ch-hote-19.mp3",
+"m": "m/chunk_ch-hote-19.mp3"
+},
+"chunk:ch-heal-01": {
+"f": "f/chunk_ch-heal-01.mp3",
+"m": "m/chunk_ch-heal-01.mp3"
+},
+"chunk:ch-heal-02": {
+"f": "f/chunk_ch-heal-02.mp3",
+"m": "m/chunk_ch-heal-02.mp3"
+},
+"chunk:ch-heal-03": {
+"f": "f/chunk_ch-heal-03.mp3",
+"m": "m/chunk_ch-heal-03.mp3"
+},
+"chunk:ch-heal-04": {
+"f": "f/chunk_ch-heal-04.mp3",
+"m": "m/chunk_ch-heal-04.mp3"
+},
+"chunk:ch-heal-05": {
+"f": "f/chunk_ch-heal-05.mp3",
+"m": "m/chunk_ch-heal-05.mp3"
+},
+"chunk:ch-heal-06": {
+"f": "f/chunk_ch-heal-06.mp3",
+"m": "m/chunk_ch-heal-06.mp3"
+},
+"chunk:ch-heal-07": {
+"f": "f/chunk_ch-heal-07.mp3",
+"m": "m/chunk_ch-heal-07.mp3"
+},
+"chunk:ch-heal-08": {
+"f": "f/chunk_ch-heal-08.mp3",
+"m": "m/chunk_ch-heal-08.mp3"
+},
+"chunk:ch-heal-09": {
+"f": "f/chunk_ch-heal-09.mp3",
+"m": "m/chunk_ch-heal-09.mp3"
+},
+"chunk:ch-heal-10": {
+"f": "f/chunk_ch-heal-10.mp3",
+"m": "m/chunk_ch-heal-10.mp3"
+},
+"chunk:ch-heal-11": {
+"f": "f/chunk_ch-heal-11.mp3",
+"m": "m/chunk_ch-heal-11.mp3"
+},
+"chunk:ch-heal-12": {
+"f": "f/chunk_ch-heal-12.mp3",
+"m": "m/chunk_ch-heal-12.mp3"
+},
+"chunk:ch-heal-13": {
+"f": "f/chunk_ch-heal-13.mp3",
+"m": "m/chunk_ch-heal-13.mp3"
+},
+"chunk:ch-heal-14": {
+"f": "f/chunk_ch-heal-14.mp3",
+"m": "m/chunk_ch-heal-14.mp3"
+},
+"chunk:ch-heal-15": {
+"f": "f/chunk_ch-heal-15.mp3",
+"m": "m/chunk_ch-heal-15.mp3"
+},
+"chunk:ch-heal-16": {
+"f": "f/chunk_ch-heal-16.mp3",
+"m": "m/chunk_ch-heal-16.mp3"
+},
+"chunk:ch-heal-17": {
+"f": "f/chunk_ch-heal-17.mp3",
+"m": "m/chunk_ch-heal-17.mp3"
+},
+"chunk:ch-heal-18": {
+"f": "f/chunk_ch-heal-18.mp3",
+"m": "m/chunk_ch-heal-18.mp3"
+},
+"chunk:ch-heal-19": {
+"f": "f/chunk_ch-heal-19.mp3",
+"m": "m/chunk_ch-heal-19.mp3"
+},
+"chunk:ch-work-01": {
+"f": "f/chunk_ch-work-01.mp3",
+"m": "m/chunk_ch-work-01.mp3"
+},
+"chunk:ch-work-02": {
+"f": "f/chunk_ch-work-02.mp3",
+"m": "m/chunk_ch-work-02.mp3"
+},
+"chunk:ch-work-03": {
+"f": "f/chunk_ch-work-03.mp3",
+"m": "m/chunk_ch-work-03.mp3"
+},
+"chunk:ch-work-04": {
+"f": "f/chunk_ch-work-04.mp3",
+"m": "m/chunk_ch-work-04.mp3"
+},
+"chunk:ch-work-05": {
+"f": "f/chunk_ch-work-05.mp3",
+"m": "m/chunk_ch-work-05.mp3"
+},
+"chunk:ch-work-06": {
+"f": "f/chunk_ch-work-06.mp3",
+"m": "m/chunk_ch-work-06.mp3"
+},
+"chunk:ch-work-07": {
+"f": "f/chunk_ch-work-07.mp3",
+"m": "m/chunk_ch-work-07.mp3"
+},
+"chunk:ch-work-08": {
+"f": "f/chunk_ch-work-08.mp3",
+"m": "m/chunk_ch-work-08.mp3"
+},
+"chunk:ch-work-09": {
+"f": "f/chunk_ch-work-09.mp3",
+"m": "m/chunk_ch-work-09.mp3"
+},
+"chunk:ch-work-10": {
+"f": "f/chunk_ch-work-10.mp3",
+"m": "m/chunk_ch-work-10.mp3"
+},
+"chunk:ch-work-11": {
+"f": "f/chunk_ch-work-11.mp3",
+"m": "m/chunk_ch-work-11.mp3"
+},
+"chunk:ch-work-12": {
+"f": "f/chunk_ch-work-12.mp3",
+"m": "m/chunk_ch-work-12.mp3"
+},
+"chunk:ch-work-13": {
+"f": "f/chunk_ch-work-13.mp3",
+"m": "m/chunk_ch-work-13.mp3"
+},
+"chunk:ch-work-14": {
+"f": "f/chunk_ch-work-14.mp3",
+"m": "m/chunk_ch-work-14.mp3"
+},
+"chunk:ch-work-15": {
+"f": "f/chunk_ch-work-15.mp3",
+"m": "m/chunk_ch-work-15.mp3"
+},
+"chunk:ch-work-16": {
+"f": "f/chunk_ch-work-16.mp3",
+"m": "m/chunk_ch-work-16.mp3"
+},
+"chunk:ch-work-17": {
+"f": "f/chunk_ch-work-17.mp3",
+"m": "m/chunk_ch-work-17.mp3"
+},
+"chunk:ch-work-18": {
+"f": "f/chunk_ch-work-18.mp3",
+"m": "m/chunk_ch-work-18.mp3"
+},
+"chunk:ch-smal-01": {
+"f": "f/chunk_ch-smal-01.mp3",
+"m": "m/chunk_ch-smal-01.mp3"
+},
+"chunk:ch-smal-02": {
+"f": "f/chunk_ch-smal-02.mp3",
+"m": "m/chunk_ch-smal-02.mp3"
+},
+"chunk:ch-smal-03": {
+"f": "f/chunk_ch-smal-03.mp3",
+"m": "m/chunk_ch-smal-03.mp3"
+},
+"chunk:ch-smal-04": {
+"f": "f/chunk_ch-smal-04.mp3",
+"m": "m/chunk_ch-smal-04.mp3"
+},
+"chunk:ch-smal-05": {
+"f": "f/chunk_ch-smal-05.mp3",
+"m": "m/chunk_ch-smal-05.mp3"
+},
+"chunk:ch-smal-06": {
+"f": "f/chunk_ch-smal-06.mp3",
+"m": "m/chunk_ch-smal-06.mp3"
+},
+"chunk:ch-smal-07": {
+"f": "f/chunk_ch-smal-07.mp3",
+"m": "m/chunk_ch-smal-07.mp3"
+},
+"chunk:ch-smal-08": {
+"f": "f/chunk_ch-smal-08.mp3",
+"m": "m/chunk_ch-smal-08.mp3"
+},
+"chunk:ch-smal-09": {
+"f": "f/chunk_ch-smal-09.mp3",
+"m": "m/chunk_ch-smal-09.mp3"
+},
+"chunk:ch-smal-10": {
+"f": "f/chunk_ch-smal-10.mp3",
+"m": "m/chunk_ch-smal-10.mp3"
+},
+"chunk:ch-smal-11": {
+"f": "f/chunk_ch-smal-11.mp3",
+"m": "m/chunk_ch-smal-11.mp3"
+},
+"chunk:ch-smal-12": {
+"f": "f/chunk_ch-smal-12.mp3",
+"m": "m/chunk_ch-smal-12.mp3"
+},
+"chunk:ch-smal-13": {
+"f": "f/chunk_ch-smal-13.mp3",
+"m": "m/chunk_ch-smal-13.mp3"
+},
+"chunk:ch-smal-14": {
+"f": "f/chunk_ch-smal-14.mp3",
+"m": "m/chunk_ch-smal-14.mp3"
+},
+"chunk:ch-smal-15": {
+"f": "f/chunk_ch-smal-15.mp3",
+"m": "m/chunk_ch-smal-15.mp3"
+},
+"chunk:ch-smal-16": {
+"f": "f/chunk_ch-smal-16.mp3",
+"m": "m/chunk_ch-smal-16.mp3"
+},
+"chunk:ch-smal-17": {
+"f": "f/chunk_ch-smal-17.mp3",
+"m": "m/chunk_ch-smal-17.mp3"
+},
+"chunk:ch-smal-18": {
+"f": "f/chunk_ch-smal-18.mp3",
+"m": "m/chunk_ch-smal-18.mp3"
 }
 }

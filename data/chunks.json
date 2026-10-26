@@ -1,0 +1,1955 @@
+{
+    "version":  1,
+    "chunks":  [
+                   {
+                       "id":  "ch-cafe-01",
+                       "en":  "a hot tea with lemon, please.",
+                       "th":  "ขอชาร้อนใส่มะนาวได้ไหม",
+                       "situation":  "cafe",
+                       "level":  "A0",
+                       "keyPhrase":  "a hot",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-02",
+                       "en":  "one espresso with oat milk, please.",
+                       "th":  "ขอเอสเปรสโซใส่นมโอ๊ตหนึ่งแก้ว",
+                       "situation":  "cafe",
+                       "level":  "A0",
+                       "keyPhrase":  "one espresso",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-03",
+                       "en":  "a small iced cocoa, please.",
+                       "th":  "ขอโกโก้เย็นแก้วเล็ก",
+                       "situation":  "cafe",
+                       "level":  "A0",
+                       "keyPhrase":  "a small",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-04",
+                       "en":  "my coffee without sugar, please.",
+                       "th":  "ขอกาแฟไม่ใส่น้ำตาล",
+                       "situation":  "cafe",
+                       "level":  "A0",
+                       "keyPhrase":  "my coffee",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-05",
+                       "en":  "Could I get a glass of warm water, please?",
+                       "th":  "ขอน้ำอุ่นหนึ่งแก้ว",
+                       "situation":  "cafe",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-06",
+                       "en":  "May I have another dessert spoon?",
+                       "th":  "ขอช้อนของหวานเพิ่มอีกคัน",
+                       "situation":  "cafe",
+                       "level":  "A1.1",
+                       "keyPhrase":  "May I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-07",
+                       "en":  "Can you prepare a decaf coffee this afternoon?",
+                       "th":  "ขอกาแฟไม่มีคาเฟอีนช่วงบ่ายนี้",
+                       "situation":  "cafe",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Can you",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-08",
+                       "en":  "Please bring a fresh muffin to go.",
+                       "th":  "ขอมัฟฟินสดนำกลับบ้าน",
+                       "situation":  "cafe",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Please bring",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-09",
+                       "en":  "Could I get a seat near the window, please?",
+                       "th":  "ขอที่นั่งใกล้หน้าต่าง",
+                       "situation":  "cafe",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-10",
+                       "en":  "May I have the drink with extra foam?",
+                       "th":  "ขอเครื่องดื่มที่เพิ่มฟองนม",
+                       "situation":  "cafe",
+                       "level":  "A1.1",
+                       "keyPhrase":  "May I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-11",
+                       "en":  "Can you prepare my order in a reusable cup?",
+                       "th":  "ช่วยใส่ออร์เดอร์ของฉันในแก้วใช้ซ้ำได้ไหม",
+                       "situation":  "cafe",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Can you",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-12",
+                       "en":  "Could you leave a little room for more milk?",
+                       "th":  "ช่วยเว้นที่ไว้เติมนมอีกหน่อยได้ไหม",
+                       "situation":  "cafe",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-13",
+                       "en":  "Could I get two drinks on one receipt, please?",
+                       "th":  "ขอเครื่องดื่มสองแก้วในใบเสร็จเดียว",
+                       "situation":  "cafe",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-14",
+                       "en":  "May I have the pastry warmed up?",
+                       "th":  "ขอขนมอบอุ่นร้อนหน่อยได้ไหม",
+                       "situation":  "cafe",
+                       "level":  "A1.2",
+                       "keyPhrase":  "May I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-15",
+                       "en":  "Can you prepare a takeaway lid for this cup?",
+                       "th":  "ขอฝาสำหรับแก้วนี้กลับบ้าน",
+                       "situation":  "cafe",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Can you",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-16",
+                       "en":  "Could we get a table for three this morning?",
+                       "th":  "ขอโต๊ะสำหรับสามคนช่วงเช้านี้ได้ไหม",
+                       "situation":  "cafe",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-17",
+                       "en":  "Could I get the seasonal drink with less ice, please?",
+                       "th":  "ขอเครื่องดื่มประจำฤดูใส่น้ำแข็งน้อย",
+                       "situation":  "cafe",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-18",
+                       "en":  "May I have a clean cup for my tea?",
+                       "th":  "ขอแก้วสะอาดสำหรับชา",
+                       "situation":  "cafe",
+                       "level":  "A2.2",
+                       "keyPhrase":  "May I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-cafe-19",
+                       "en":  "Could I have the bill when you have time?",
+                       "th":  "ขอบิลเมื่อคุณสะดวกได้ไหม",
+                       "situation":  "cafe",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ please เมื่อต้องการสั่งอย่างสุภาพ",
+                       "tags":  [
+                                    "สั่งเครื่องดื่ม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-01",
+                       "en":  "Can we have the menu before we order?",
+                       "th":  "ขอดูเมนูก่อนสั่งได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A0",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-02",
+                       "en":  "Can we have soup without seafood?",
+                       "th":  "ขอซุปที่ไม่มีอาหารทะเลได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A0",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-03",
+                       "en":  "Can we have grilled chicken with vegetables?",
+                       "th":  "ขอไก่ย่างกับผักได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A0",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-04",
+                       "en":  "Can we have a little more steamed rice?",
+                       "th":  "ขอข้าวสวยเพิ่มอีกหน่อยได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A0",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-05",
+                       "en":  "Could we have the sauce on the side, please?",
+                       "th":  "ขอซอสแยกไว้ได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-06",
+                       "en":  "I would like two plates for sharing, please.",
+                       "th":  "ขอจานสองใบไว้แบ่งกันได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.1",
+                       "keyPhrase":  "I would",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-07",
+                       "en":  "Could we have some water for our table?",
+                       "th":  "ขอน้ำสำหรับโต๊ะเราได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-08",
+                       "en":  "Can we order the check after our meal?",
+                       "th":  "ขอบิลหลังทานเสร็จได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-09",
+                       "en":  "Could we have a table away from the kitchen, please?",
+                       "th":  "ขอโต๊ะที่ห่างจากห้องครัวได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-10",
+                       "en":  "I would like noodles with mild seasoning, please.",
+                       "th":  "ขอก๋วยเตี๋ยวปรุงรสอ่อนได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.1",
+                       "keyPhrase":  "I would",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-11",
+                       "en":  "Please bring a fresh fork for my friend.",
+                       "th":  "ช่วยนำส้อมสะอาดมาให้เพื่อนได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Please bring",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-12",
+                       "en":  "Could you pack the rest of this meal?",
+                       "th":  "ช่วยห่ออาหารที่เหลือนี้กลับบ้านได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-13",
+                       "en":  "Could we have a vegetarian dish without egg, please?",
+                       "th":  "ขออาหารมังสวิรัติที่ไม่มีไข่ได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-14",
+                       "en":  "I would like time to look at the menu, please.",
+                       "th":  "ขอดูเมนูสักครู่ได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A1.2",
+                       "keyPhrase":  "I would",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-15",
+                       "en":  "Could you cook the fish a bit longer?",
+                       "th":  "ช่วยปรุงปลาให้นานขึ้นอีกหน่อยได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-16",
+                       "en":  "Can we order a smaller portion for the child?",
+                       "th":  "ขออาหารสำหรับเด็กในปริมาณน้อยได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-17",
+                       "en":  "Could we have the bill split between four people, please?",
+                       "th":  "ช่วยแยกบิลสำหรับสี่คนได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-18",
+                       "en":  "I would like a seat for our friend arriving soon, please.",
+                       "th":  "ขอที่นั่งสำหรับเพื่อนที่กำลังมาได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A2.2",
+                       "keyPhrase":  "I would",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-rest-19",
+                       "en":  "Could we have the lunch special today without peanuts?",
+                       "th":  "ขอเมนูมื้อกลางวันวันนี้ที่ไม่มีถั่วลิสงได้ไหม",
+                       "situation":  "restaurant",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ please เพื่อให้คำขอฟังนุ่มนวล",
+                       "tags":  [
+                                    "สั่งอาหาร",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-01",
+                       "en":  "Do you have this shirt in a smaller size?",
+                       "th":  "มีเสื้อตัวนี้ไซซ์เล็กกว่านี้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A0",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-02",
+                       "en":  "Do you have these shoes in dark blue?",
+                       "th":  "มีรองเท้าคู่นี้สีน้ำเงินเข้มไหม",
+                       "situation":  "shopping",
+                       "level":  "A0",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-03",
+                       "en":  "Do you have a lighter jacket for the trip?",
+                       "th":  "มีแจ็กเก็ตที่เบากว่านี้สำหรับเดินทางไหม",
+                       "situation":  "shopping",
+                       "level":  "A0",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-04",
+                       "en":  "Do you have a phone charger for this model?",
+                       "th":  "มีที่ชาร์จโทรศัพท์สำหรับรุ่นนี้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A0",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-05",
+                       "en":  "Do you have a gift under twenty dollars?",
+                       "th":  "มีของขวัญราคาต่ำกว่ายี่สิบดอลลาร์ไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-06",
+                       "en":  "Could I get a paper bag for these items?",
+                       "th":  "ขอถุงกระดาษใส่ของพวกนี้ได้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-07",
+                       "en":  "Can I get this bag in another color?",
+                       "th":  "ขอกระเป๋าใบนี้สีอื่นได้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-08",
+                       "en":  "Is there a fitting room near this floor?",
+                       "th":  "มีห้องลองเสื้อใกล้ชั้นนี้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Is there",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-09",
+                       "en":  "Can you send a receipt by email?",
+                       "th":  "ส่งใบเสร็จทางอีเมลได้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Can you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-10",
+                       "en":  "Could I try a travel adapter with two ports?",
+                       "th":  "มีหัวแปลงเดินทางที่มีสองช่องไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-11",
+                       "en":  "Can I get a raincoat for a small child?",
+                       "th":  "มีเสื้อกันฝนสำหรับเด็กเล็กไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-12",
+                       "en":  "Is this item in stock today?",
+                       "th":  "สินค้าชิ้นนี้มีของไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Is this",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-13",
+                       "en":  "Do you have a larger bottle of sunscreen?",
+                       "th":  "มีครีมกันแดดขวดใหญ่กว่านี้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-14",
+                       "en":  "Could I try a case that fits my tablet?",
+                       "th":  "มีเคสที่พอดีกับแท็บเล็ตของฉันไหม",
+                       "situation":  "shopping",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-15",
+                       "en":  "Can I get a reusable bottle for hot drinks?",
+                       "th":  "มีขวดใช้ซ้ำสำหรับเครื่องดื่มร้อนไหม",
+                       "situation":  "shopping",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-16",
+                       "en":  "Is this style available with shorter sleeves?",
+                       "th":  "มีแบบนี้ที่แขนสั้นกว่านี้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Is this",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-17",
+                       "en":  "Do you have a cheaper option with the same features?",
+                       "th":  "มีตัวเลือกที่ถูกกว่าแต่คุณสมบัติเหมือนกันไหม",
+                       "situation":  "shopping",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Do you",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-18",
+                       "en":  "Could I get a gift box for this small item?",
+                       "th":  "ขอกล่องของขวัญสำหรับของชิ้นเล็กนี้ได้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-shop-19",
+                       "en":  "Can I get a card for contactless payment?",
+                       "th":  "มีบัตรที่จ่ายแบบแตะได้ไหม",
+                       "situation":  "shopping",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้ถามหาสินค้าหรือรูปแบบที่ต้องการ",
+                       "tags":  [
+                                    "ซื้อของ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-01",
+                       "en":  "Where is the nearest train station?",
+                       "th":  "สถานีรถไฟที่ใกล้ที่สุดอยู่ที่ไหน",
+                       "situation":  "travel",
+                       "level":  "A0",
+                       "keyPhrase":  "Where is",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-02",
+                       "en":  "Where is the airport bus stop?",
+                       "th":  "ป้ายรถบัสไปสนามบินอยู่ที่ไหน",
+                       "situation":  "travel",
+                       "level":  "A0",
+                       "keyPhrase":  "Where is",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-03",
+                       "en":  "Where is the old town from here?",
+                       "th":  "จากที่นี่ไปย่านเมืองเก่าอย่างไร",
+                       "situation":  "travel",
+                       "level":  "A0",
+                       "keyPhrase":  "Where is",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-04",
+                       "en":  "Where is platform number six?",
+                       "th":  "ชานชาลาหมายเลขหกอยู่ที่ไหน",
+                       "situation":  "travel",
+                       "level":  "A0",
+                       "keyPhrase":  "Where is",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-05",
+                       "en":  "Could you tell me how to get to the taxi pickup area?",
+                       "th":  "ช่วยบอกทางไปจุดขึ้นแท็กซี่ได้ไหม",
+                       "situation":  "travel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-06",
+                       "en":  "Where can I find a pharmacy open tonight?",
+                       "th":  "คืนนี้มีร้านขายยาเปิดที่ไหนบ้าง",
+                       "situation":  "travel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Where can",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-07",
+                       "en":  "Which way is the river ferry terminal?",
+                       "th":  "ท่าเรือข้ามฟากอยู่ทางไหน",
+                       "situation":  "travel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Which way",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-08",
+                       "en":  "Where is the museum entrance?",
+                       "th":  "ทางเข้าพิพิธภัณฑ์อยู่ที่ไหน",
+                       "situation":  "travel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Where is",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-09",
+                       "en":  "Could you tell me how to get to a restroom near this station?",
+                       "th":  "ช่วยบอกทางไปห้องน้ำใกล้สถานีนี้ได้ไหม",
+                       "situation":  "travel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-10",
+                       "en":  "How do I get to the hotel on foot?",
+                       "th":  "เดินไปโรงแรมทางไหนได้บ้าง",
+                       "situation":  "travel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "How do",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-11",
+                       "en":  "Which way is the correct exit for downtown?",
+                       "th":  "ทางออกไปใจกลางเมืองอยู่ทางไหน",
+                       "situation":  "travel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Which way",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-12",
+                       "en":  "Is there a bus ticket machine nearby?",
+                       "th":  "มีเครื่องขายตั๋วรถบัสใกล้ ๆ ไหม",
+                       "situation":  "travel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Is there",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-13",
+                       "en":  "Could you tell me how to get to the next stop on this line?",
+                       "th":  "ช่วยบอกทางไปป้ายถัดไปของสายนี้ได้ไหม",
+                       "situation":  "travel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-14",
+                       "en":  "Where can I find a quiet place to wait?",
+                       "th":  "มีที่เงียบ ๆ สำหรับนั่งรอที่ไหนบ้าง",
+                       "situation":  "travel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Where can",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-15",
+                       "en":  "Which way is the baggage claim area?",
+                       "th":  "จุดรับกระเป๋าอยู่ทางไหน",
+                       "situation":  "travel",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Which way",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-16",
+                       "en":  "Is there a ferry ticket counter nearby?",
+                       "th":  "มีเคาน์เตอร์ขายตั๋วเรือใกล้ ๆ ไหม",
+                       "situation":  "travel",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Is there",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-17",
+                       "en":  "Could you tell me how to get to the city center after midnight?",
+                       "th":  "ช่วยบอกทางไปใจกลางเมืองหลังเที่ยงคืนได้ไหม",
+                       "situation":  "travel",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-18",
+                       "en":  "Where can I find a taxi stand outside?",
+                       "th":  "มีจุดจอดแท็กซี่ด้านนอกไหม",
+                       "situation":  "travel",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Where can",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-trav-19",
+                       "en":  "Which way is the local market from the station?",
+                       "th":  "ตลาดท้องถิ่นอยู่ทางไหนจากสถานี",
+                       "situation":  "travel",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Which way",
+                       "note":  "ใช้ could you เพื่อขอความช่วยเหลืออย่างสุภาพ",
+                       "tags":  [
+                                    "ถามทาง",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-01",
+                       "en":  "Can I have an extra towel for room 204?",
+                       "th":  "ขอผ้าเช็ดตัวเพิ่มสำหรับห้อง 204 ได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A0",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-02",
+                       "en":  "Can I have a quiet room away from the elevator?",
+                       "th":  "ขอห้องที่เงียบและห่างจากลิฟต์ได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A0",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-03",
+                       "en":  "Can I have a wake up call at six tomorrow?",
+                       "th":  "ช่วยโทรปลุกพรุ่งนี้ตอนหกโมงได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A0",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-04",
+                       "en":  "Can I have the Wi-Fi password for my room?",
+                       "th":  "ขอรหัสไวไฟสำหรับห้องของฉันได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A0",
+                       "keyPhrase":  "Can I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-05",
+                       "en":  "Could I have a late checkout on Sunday?",
+                       "th":  "ขอเช็กเอาต์สายวันอาทิตย์ได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-06",
+                       "en":  "Could you help me with my heavy suitcase?",
+                       "th":  "ช่วยยกกระเป๋าเดินทางที่หนักให้หน่อยได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-07",
+                       "en":  "Could you book a taxi to the airport for five?",
+                       "th":  "ช่วยจองแท็กซี่ไปสนามบินตอนตีห้าได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-08",
+                       "en":  "Could you arrange another key card for my partner?",
+                       "th":  "ขอคีย์การ์ดอีกใบสำหรับคู่เดินทางได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-09",
+                       "en":  "Could I have the breakfast menu for tomorrow?",
+                       "th":  "ขอเมนูอาหารเช้าสำหรับพรุ่งนี้ได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-10",
+                       "en":  "Would you send a blanket because the room is cold?",
+                       "th":  "ขอผ้าห่มเพิ่มเพราะห้องหนาวได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Would you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-11",
+                       "en":  "Could you clean my room after lunch?",
+                       "th":  "ช่วยทำความสะอาดห้องหลังมื้อกลางวันได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-12",
+                       "en":  "Could you arrange a map of nearby restaurants?",
+                       "th":  "ขอแผนที่ร้านอาหารใกล้ ๆ ได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-13",
+                       "en":  "Could I have a receipt for my company?",
+                       "th":  "ขอใบเสร็จสำหรับบริษัทได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-14",
+                       "en":  "Could I get a room with two separate beds?",
+                       "th":  "ขอห้องที่มีเตียงแยกกันสองเตียงได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-15",
+                       "en":  "Could someone check the air conditioner today?",
+                       "th":  "ช่วยตรวจเครื่องปรับอากาศวันนี้ได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could someone",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-16",
+                       "en":  "Could you arrange a safe place for my passport?",
+                       "th":  "ขอที่เก็บหนังสือเดินทางให้ปลอดภัยได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-17",
+                       "en":  "Could I have help carrying our bags upstairs?",
+                       "th":  "ช่วยยกกระเป๋าของเราขึ้นชั้นบนได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-18",
+                       "en":  "Could I have the front desk number for emergencies?",
+                       "th":  "ขอเบอร์แผนกต้อนรับกรณีฉุกเฉินได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-hote-19",
+                       "en":  "Could I have a glass of water before bedtime?",
+                       "th":  "ขอน้ำหนึ่งแก้วก่อนนอนได้ไหม",
+                       "situation":  "hotel",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้คำขอสั้น ๆ กับพนักงานโรงแรมได้",
+                       "tags":  [
+                                    "โรงแรม",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-01",
+                       "en":  "I have a sore throat that started yesterday.",
+                       "th":  "ฉันเจ็บคอมาตั้งแต่เมื่อวาน",
+                       "situation":  "health",
+                       "level":  "A0",
+                       "keyPhrase":  "I have",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-02",
+                       "en":  "I have a headache after the long flight.",
+                       "th":  "ฉันปวดหัวหลังจากเที่ยวบินที่ยาวนาน",
+                       "situation":  "health",
+                       "level":  "A0",
+                       "keyPhrase":  "I have",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-03",
+                       "en":  "I have a mild fever and a dry cough.",
+                       "th":  "ฉันมีไข้เล็กน้อยและไอแห้ง",
+                       "situation":  "health",
+                       "level":  "A0",
+                       "keyPhrase":  "I have",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-04",
+                       "en":  "Could I get a refill of my allergy medicine?",
+                       "th":  "ขอเติมยาภูมิแพ้ของฉันได้ไหม",
+                       "situation":  "health",
+                       "level":  "A0",
+                       "keyPhrase":  "Could I",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-05",
+                       "en":  "I need help with a small cut on my left hand.",
+                       "th":  "ฉันมีแผลเล็ก ๆ ที่มือซ้าย",
+                       "situation":  "health",
+                       "level":  "A1.1",
+                       "keyPhrase":  "I need",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-06",
+                       "en":  "Where can I find information about this medicine?",
+                       "th":  "ขอข้อมูลเกี่ยวกับยานี้ได้ไหม",
+                       "situation":  "health",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Where can",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-07",
+                       "en":  "Could I see a doctor who speaks slowly?",
+                       "th":  "ขอพบแพทย์ที่พูดช้า ๆ ได้ไหม",
+                       "situation":  "health",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-08",
+                       "en":  "Is there a clinic open this evening?",
+                       "th":  "เย็นนี้มีคลินิกที่เปิดอยู่ไหม",
+                       "situation":  "health",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Is there",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-09",
+                       "en":  "I need help with the pain in my lower back.",
+                       "th":  "ฉันปวดหลังส่วนล่าง",
+                       "situation":  "health",
+                       "level":  "A1.1",
+                       "keyPhrase":  "I need",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-10",
+                       "en":  "I have a rash that appeared this morning.",
+                       "th":  "ฉันมีผื่นขึ้นเมื่อเช้านี้",
+                       "situation":  "health",
+                       "level":  "A1.2",
+                       "keyPhrase":  "I have",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-11",
+                       "en":  "Could I speak to someone about an appointment for next Tuesday?",
+                       "th":  "ขอนัดหมายสำหรับวันอังคารหน้าได้ไหม",
+                       "situation":  "health",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could I",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-12",
+                       "en":  "Is there a pharmacy near my hotel?",
+                       "th":  "มีร้านขายยาใกล้โรงแรมไหม",
+                       "situation":  "health",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Is there",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-13",
+                       "en":  "I need help with a bandage for my right ankle.",
+                       "th":  "ฉันต้องการผ้าพันแผลสำหรับข้อเท้าขวา",
+                       "situation":  "health",
+                       "level":  "A1.2",
+                       "keyPhrase":  "I need",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-14",
+                       "en":  "My child has an upset stomach.",
+                       "th":  "ลูกของฉันปวดท้อง",
+                       "situation":  "health",
+                       "level":  "A1.2",
+                       "keyPhrase":  "My child",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-15",
+                       "en":  "Could I speak to someone about a checkup before my trip?",
+                       "th":  "ขอตรวจสุขภาพก่อนเดินทางได้ไหม",
+                       "situation":  "health",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-16",
+                       "en":  "I am looking for help with the label on this prescription.",
+                       "th":  "ฉลากบนใบสั่งยานี้เขียนว่าอะไร",
+                       "situation":  "health",
+                       "level":  "A2.1",
+                       "keyPhrase":  "I am",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-17",
+                       "en":  "I need help with a place to sit while I wait.",
+                       "th":  "ขอที่นั่งระหว่างรอได้ไหม",
+                       "situation":  "health",
+                       "level":  "A2.1",
+                       "keyPhrase":  "I need",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-18",
+                       "en":  "Where can I find a nurse to explain these results?",
+                       "th":  "ขอพยาบาลช่วยอธิบายผลตรวจได้ไหม",
+                       "situation":  "health",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Where can",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-heal-19",
+                       "en":  "I feel dizzy; could I have some water?",
+                       "th":  "ฉันเวียนหัว ขอน้ำสักหน่อยได้ไหม",
+                       "situation":  "health",
+                       "level":  "A2.2",
+                       "keyPhrase":  "I feel",
+                       "note":  "บอกอาการตรง ๆ เพื่อให้เจ้าหน้าที่ช่วยได้เร็ว",
+                       "tags":  [
+                                    "สุขภาพ",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-01",
+                       "en":  "Please help me with the slides for tomorrow\u0027s meeting.",
+                       "th":  "ช่วยดูสไลด์สำหรับประชุมพรุ่งนี้ได้ไหม",
+                       "situation":  "work",
+                       "level":  "A0",
+                       "keyPhrase":  "Please help",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-02",
+                       "en":  "Please help me with a quick review of this email.",
+                       "th":  "ช่วยตรวจอีเมลฉบับนี้อย่างเร็วได้ไหม",
+                       "situation":  "work",
+                       "level":  "A0",
+                       "keyPhrase":  "Please help",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-03",
+                       "en":  "Please help me with the latest sales figures.",
+                       "th":  "ขอตัวเลขยอดขายล่าสุดได้ไหม",
+                       "situation":  "work",
+                       "level":  "A0",
+                       "keyPhrase":  "Please help",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-04",
+                       "en":  "Could we use a quiet room for our call?",
+                       "th":  "ขอใช้ห้องเงียบสำหรับโทรได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-05",
+                       "en":  "Could you help me with the schedule for next week?",
+                       "th":  "ช่วยส่งตารางงานสัปดาห์หน้าได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-06",
+                       "en":  "Can we review a copy of the client notes?",
+                       "th":  "ขอสำเนาบันทึกของลูกค้าได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-07",
+                       "en":  "Would you share the delivery update from this morning?",
+                       "th":  "ขออัปเดตการส่งของเมื่อเช้านี้ได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Would you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-08",
+                       "en":  "Could we discuss a short summary before lunch?",
+                       "th":  "ช่วยสรุปสั้น ๆ ก่อนมื้อกลางวันได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-09",
+                       "en":  "Could you help me with the new printer near reception?",
+                       "th":  "เครื่องพิมพ์ใหม่ใกล้แผนกต้อนรับอยู่ที่ไหน",
+                       "situation":  "work",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-10",
+                       "en":  "Could you introduce us to our new teammate?",
+                       "th":  "ช่วยแนะนำเพื่อนร่วมทีมคนใหม่ให้เรารู้จักได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-11",
+                       "en":  "Would you share the budget for this project?",
+                       "th":  "ขอดูงบประมาณของโครงการนี้ได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Would you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-12",
+                       "en":  "Could we find a good time to review the draft?",
+                       "th":  "หาเวลาที่เหมาะเพื่อทบทวนร่างงานได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could we",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-13",
+                       "en":  "Could you help me with the file I sent you yesterday?",
+                       "th":  "ช่วยเปิดไฟล์ที่ฉันส่งให้เมื่อวานได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-14",
+                       "en":  "Could you give me a hand with these boxes?",
+                       "th":  "ช่วยยกกล่องพวกนี้ให้หน่อยได้ไหม",
+                       "situation":  "work",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-15",
+                       "en":  "Would you share the notes from our last call?",
+                       "th":  "ขอบันทึกจากการโทรครั้งก่อนของเราได้ไหม",
+                       "situation":  "work",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Would you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-16",
+                       "en":  "Could I get an update before the client arrives?",
+                       "th":  "ขออัปเดตก่อนลูกค้ามาถึงได้ไหม",
+                       "situation":  "work",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could I",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-17",
+                       "en":  "Could you help me with a place to store these documents?",
+                       "th":  "มีที่เก็บเอกสารเหล่านี้ตรงไหนไหม",
+                       "situation":  "work",
+                       "level":  "A2.1",
+                       "keyPhrase":  "Could you",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-work-18",
+                       "en":  "Can we review the meeting link for our team?",
+                       "th":  "ขอลิงก์ประชุมของทีมเราได้ไหม",
+                       "situation":  "work",
+                       "level":  "A2.2",
+                       "keyPhrase":  "Can we",
+                       "note":  "ใช้ could you เมื่อต้องการขอแรงเพื่อนร่วมงาน",
+                       "tags":  [
+                                    "ที่ทำงาน",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-01",
+                       "en":  "What do you like to do on a free afternoon?",
+                       "th":  "ปกติคุณชอบทำอะไรในช่วงบ่ายที่ว่าง",
+                       "situation":  "smalltalk",
+                       "level":  "A0",
+                       "keyPhrase":  "What do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-02",
+                       "en":  "What do you do when the weather gets hot?",
+                       "th":  "คุณทำอะไรเวลาอากาศร้อน",
+                       "situation":  "smalltalk",
+                       "level":  "A0",
+                       "keyPhrase":  "What do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-03",
+                       "en":  "Have you found a favorite place in this city?",
+                       "th":  "คุณเจอสถานที่โปรดในเมืองนี้หรือยัง",
+                       "situation":  "smalltalk",
+                       "level":  "A0",
+                       "keyPhrase":  "Have you",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-04",
+                       "en":  "How do you usually relax after work?",
+                       "th":  "ปกติคุณพักผ่อนหลังเลิกงานอย่างไร",
+                       "situation":  "smalltalk",
+                       "level":  "A1.1",
+                       "keyPhrase":  "How do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-05",
+                       "en":  "What do your friends like to do together?",
+                       "th":  "เพื่อน ๆ ของคุณชอบทำอะไรร่วมกัน",
+                       "situation":  "smalltalk",
+                       "level":  "A1.1",
+                       "keyPhrase":  "What do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-06",
+                       "en":  "Have you tried any good restaurants lately?",
+                       "th":  "ช่วงนี้คุณได้ลองร้านอาหารดี ๆ บ้างไหม",
+                       "situation":  "smalltalk",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Have you",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-07",
+                       "en":  "Do you have plans for the long weekend?",
+                       "th":  "คุณมีแผนอะไรช่วงวันหยุดยาวไหม",
+                       "situation":  "smalltalk",
+                       "level":  "A1.1",
+                       "keyPhrase":  "Do you",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-08",
+                       "en":  "How do you stay active during the week?",
+                       "th":  "คุณทำอย่างไรให้ได้ออกกำลังกายในแต่ละสัปดาห์",
+                       "situation":  "smalltalk",
+                       "level":  "A1.1",
+                       "keyPhrase":  "How do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-09",
+                       "en":  "What is something new you would like to learn?",
+                       "th":  "มีอะไรใหม่ ๆ ที่คุณอยากเรียนรู้ไหม",
+                       "situation":  "smalltalk",
+                       "level":  "A1.1",
+                       "keyPhrase":  "What is",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-10",
+                       "en":  "How do you like to spend time with family?",
+                       "th":  "คุณชอบใช้เวลากับครอบครัวอย่างไร",
+                       "situation":  "smalltalk",
+                       "level":  "A1.2",
+                       "keyPhrase":  "How do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-11",
+                       "en":  "What do you enjoy about having a day off?",
+                       "th":  "คุณชอบอะไรเกี่ยวกับวันหยุดของคุณ",
+                       "situation":  "smalltalk",
+                       "level":  "A1.2",
+                       "keyPhrase":  "What do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-12",
+                       "en":  "What kind of music do you listen to?",
+                       "th":  "คุณฟังเพลงแนวไหน",
+                       "situation":  "smalltalk",
+                       "level":  "A1.2",
+                       "keyPhrase":  "What kind",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-13",
+                       "en":  "What is your favorite way to travel?",
+                       "th":  "วิธีเดินทางแบบไหนที่คุณชอบที่สุด",
+                       "situation":  "smalltalk",
+                       "level":  "A1.2",
+                       "keyPhrase":  "What is",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-14",
+                       "en":  "Do you know a quiet place nearby?",
+                       "th":  "คุณรู้จักที่เงียบ ๆ แถวนี้ไหม",
+                       "situation":  "smalltalk",
+                       "level":  "A1.2",
+                       "keyPhrase":  "Do you",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-15",
+                       "en":  "How do you usually meet new people?",
+                       "th":  "ปกติคุณทำความรู้จักเพื่อนใหม่อย่างไร",
+                       "situation":  "smalltalk",
+                       "level":  "A2.1",
+                       "keyPhrase":  "How do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-16",
+                       "en":  "What do you like to explore when you travel?",
+                       "th":  "เวลาเดินทางคุณชอบไปสำรวจอะไร",
+                       "situation":  "smalltalk",
+                       "level":  "A2.1",
+                       "keyPhrase":  "What do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-17",
+                       "en":  "How do you celebrate special occasions?",
+                       "th":  "คุณฉลองวันพิเศษอย่างไร",
+                       "situation":  "smalltalk",
+                       "level":  "A2.1",
+                       "keyPhrase":  "How do",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   },
+                   {
+                       "id":  "ch-smal-18",
+                       "en":  "What local food would you recommend?",
+                       "th":  "คุณแนะนำอาหารท้องถิ่นอะไรบ้าง",
+                       "situation":  "smalltalk",
+                       "level":  "A2.2",
+                       "keyPhrase":  "What local",
+                       "note":  "ชวนคุยต่อด้วยหัวข้อที่ตอบได้จากประสบการณ์",
+                       "tags":  [
+                                    "ชวนคุย",
+                                    "สุภาพ"
+                                ]
+                   }
+               ]
+}

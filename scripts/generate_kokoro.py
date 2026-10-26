@@ -79,6 +79,15 @@ def load_tasks():
                 en = (seg.get('en') or '').strip()
                 if en:
                     tasks.append((f"lis:{les['id']}:{i}", en))
+    cpath = os.path.join(ROOT, 'data', 'chunks.json')
+    if os.path.exists(cpath):
+        with open(cpath, encoding='utf-8') as fh:
+            cdata = json.load(fh)
+        chunks = cdata.get('chunks', []) if isinstance(cdata, dict) else cdata
+        for c in chunks:
+            en = (c.get('en') or '').strip()
+            if en:
+                tasks.append((f"chunk:{c['id']}", en))
     return tasks
 
 

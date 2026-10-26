@@ -3,8 +3,8 @@
 import { db } from './data.js';
 import * as store from './store.js';
 
-const MODES = ['listening', 'shadow', 'dialogue'];
-const lessonsFor = (mode) => mode === 'dialogue' ? db.dialogues : db.listening;
+const MODES = ['listening', 'shadow', 'dialogue', 'chunks'];
+const lessonsFor = (mode) => mode === 'dialogue' ? db.dialogues : mode === 'chunks' ? db.chunks : db.listening;
 const recordFor = (mode) => {
   if (!MODES.includes(mode)) return {};
   if (!store.S.progress || typeof store.S.progress !== 'object') store.S.progress = {};
@@ -25,7 +25,11 @@ export function lessonState(mode, id) {
   let completed = false;
   let lastLine = Number.isInteger(Number(saved.line)) ? Number(saved.line) : 0;
 
-  if (mode === 'listening') {
+  if (mode === 'chunks') {
+    const chunk = store.chunkState(id);
+    bestPercent = Math.max(bestPercent, Number(chunk.bestPct) || 0);
+    completed = !!chunk.done;
+  } else if (mode === 'listening') {
     bestPercent = Math.max(bestPercent, Number(legacy.bestPercent) || 0);
     completed = (Number(legacy.completed) || 0) > 0;
   } else if (mode === 'shadow') {
@@ -40,7 +44,7 @@ export function lessonState(mode, id) {
     lastLine = Number(store.dialogueProgress(id).lineIndex) || lastLine;
   }
 
-  const hasProgress = !!(saved.updatedAt || saved.started || (mode === 'listening' && legacy.lastPlayed) || (mode === 'shadow' && store.S.shadow[id]));
+  const hasProgress = !!(saved.updatedAt || saved.started || (mode === 'listening' && legacy.lastPlayed) || (mode === 'shadow' && store.S.shadow[id]) || (mode === 'chunks' && store.chunkState(id).updatedAt));
   let status = 'new';
   if (completed) status = mode === 'listening' && bestPercent < 60 ? 'redo' : 'done';
   else if (hasProgress || (mode === 'listening' && Number(legacy.completed) > 0) || (mode === 'shadow' && store.shadowProgress(id).passed.length)) status = 'doing';
@@ -68,7 +72,8 @@ export function markComplete(mode, id, score) {
   const state = lessonState(mode, id);
   const bestPercent = Math.max(state.bestPercent, Math.max(0, Math.min(100, Number(score) || 0)));
   let passed = false;
-  if (mode === 'listening') passed = bestPercent >= 60;
+  if (mode === 'chunks') passed = !!store.chunkState(id).done;
+  else if (mode === 'listening') passed = bestPercent >= 60;
   else if (mode === 'shadow') passed = state.status === 'done';
   else if (mode === 'dialogue') passed = !!(store.S.dialogues[id] && store.S.dialogues[id].completed);
   data[id] = { ...old, bestPercent, status: passed ? 'done' : 'redo', updatedAt: Date.now() };

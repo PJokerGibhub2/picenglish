@@ -28,6 +28,7 @@ const DEFAULTS = {
   srsSentences: {},         // "dlgId:lineIndex" -> เหมือน srs (ทบทวนระดับประโยค)
   dialogues: {},            // dlgId -> {lineIndex, completed, plays, bestScore, lastPlayed}
   listening: {},            // lessonId -> { completed, bestPercent, lastPlayed }
+  chunks: {},               // chunkId -> { done, bestPct, updatedAt }
   shadow: {},               // lessonId -> { best: { lineIdx: pct }, passed: [lineIdx] }
   progress: {},             // mode -> lessonId -> { line, bestPercent, updatedAt }
   placement: null,          // ผลวัดระดับล่าสุด เก็บในเครื่อง
@@ -121,6 +122,23 @@ export function bumpListening(lessonId, percent = 0) {
   bumpDaily('listening', 1);
   saveNow();
   return rec;
+}
+
+export function chunkState(id) {
+  const item = S.chunks && S.chunks[id];
+  return item && typeof item === 'object' ? item : { done: false, bestPct: 0, updatedAt: 0 };
+}
+
+export function markChunk(id, pct) {
+  if (!S.chunks || typeof S.chunks !== 'object' || Array.isArray(S.chunks)) S.chunks = {};
+  const old = chunkState(id);
+  S.chunks[id] = {
+    done: true,
+    bestPct: Math.max(Number(old.bestPct) || 0, Math.max(0, Math.min(100, Number(pct) || 0))),
+    updatedAt: Date.now(),
+  };
+  saveNow();
+  return S.chunks[id];
 }
 
 /** คืนความคืบหน้า shadowing โดยกรองข้อมูลเก่าหรือข้อมูลที่เสีย */

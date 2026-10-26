@@ -7,6 +7,7 @@ const wordsUrl = new URL('../data/words.json', import.meta.url);
 const catsUrl = new URL('../data/categories.json', import.meta.url);
 const dialoguesUrl = new URL('../data/dialogues.json', import.meta.url);
 const listeningUrl = new URL('../data/listening.json', import.meta.url);
+const chunksUrl = new URL('../data/chunks.json', import.meta.url);
 
 export const db = {
   ready: false,
@@ -14,6 +15,7 @@ export const db = {
   categories: [],
   dialogues: [],
   listening: [],
+  chunks: [],
   byId: new Map(),
   byCategory: new Map(),
   dialogueById: new Map(),
@@ -56,6 +58,14 @@ export async function loadAll() {
     db.listening = Array.isArray(listeningJson) ? listeningJson : (listeningJson.lessons || []);
   } catch (err) {
     db.listening = [];
+  }
+
+  try {
+    const chunksRes = await fetch(chunksUrl);
+    const chunksJson = chunksRes.ok ? await chunksRes.json() : {};
+    db.chunks = Array.isArray(chunksJson) ? chunksJson : (chunksJson.chunks || []);
+  } catch (err) {
+    db.chunks = [];
   }
 
   db.ready = true;
