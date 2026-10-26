@@ -1,0 +1,427 @@
+[
+    {
+        "id":  "bank-account",
+        "word":  "account",
+        "pos":  "n.",
+        "ipa":  "/account/",
+        "thai":  "บัญชี",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the account at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องบัญชีก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "บัญชี",
+                             "en":  "account"
+                         }
+                     ],
+        "tip":  "account ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-atm",
+        "word":  "ATM",
+        "pos":  "n.",
+        "ipa":  "/atm/",
+        "thai":  "ตู้เอทีเอ็ม",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the ATM at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องตู้เอทีเอ็มก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ตู้เอทีเอ็ม",
+                             "en":  "ATM"
+                         }
+                     ],
+        "tip":  "ATM ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-withdrawal",
+        "word":  "withdrawal",
+        "pos":  "n.",
+        "ipa":  "/withdrawal/",
+        "thai":  "การถอนเงิน",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the withdrawal at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการถอนเงินก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การถอนเงิน",
+                             "en":  "withdrawal"
+                         }
+                     ],
+        "tip":  "withdrawal ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-balance",
+        "word":  "balance",
+        "pos":  "n.",
+        "ipa":  "/balance/",
+        "thai":  "ยอดเงินคงเหลือ",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the balance at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องยอดเงินคงเหลือก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ยอดเงินคงเหลือ",
+                             "en":  "balance"
+                         }
+                     ],
+        "tip":  "balance ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-bank-transfer",
+        "word":  "bank transfer",
+        "pos":  "n.",
+        "ipa":  "/bank transfer/",
+        "thai":  "การโอนเงินผ่านธนาคาร",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the bank transfer at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการโอนเงินผ่านธนาคารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การโอนเงินผ่านธนาคาร",
+                             "en":  "bank transfer"
+                         }
+                     ],
+        "tip":  "bank transfer ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-bank-fee",
+        "word":  "bank fee",
+        "pos":  "n.",
+        "ipa":  "/bank fee/",
+        "thai":  "ค่าธรรมเนียมธนาคาร",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the bank fee at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องค่าธรรมเนียมธนาคารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ค่าธรรมเนียมธนาคาร",
+                             "en":  "bank fee"
+                         }
+                     ],
+        "tip":  "bank fee ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-exchange-rate",
+        "word":  "exchange rate",
+        "pos":  "n.",
+        "ipa":  "/exchange rate/",
+        "thai":  "อัตราแลกเปลี่ยน",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the exchange rate at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องอัตราแลกเปลี่ยนก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "อัตราแลกเปลี่ยน",
+                             "en":  "exchange rate"
+                         }
+                     ],
+        "tip":  "exchange rate ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-loan",
+        "word":  "loan",
+        "pos":  "n.",
+        "ipa":  "/loan/",
+        "thai":  "เงินกู้",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the loan at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเงินกู้ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เงินกู้",
+                             "en":  "loan"
+                         }
+                     ],
+        "tip":  "loan ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-interest",
+        "word":  "interest",
+        "pos":  "n.",
+        "ipa":  "/interest/",
+        "thai":  "ดอกเบี้ย",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the interest at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องดอกเบี้ยก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ดอกเบี้ย",
+                             "en":  "interest"
+                         }
+                     ],
+        "tip":  "interest ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-statement",
+        "word":  "statement",
+        "pos":  "n.",
+        "ipa":  "/statement/",
+        "thai":  "รายการเดินบัญชี",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the statement at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรายการเดินบัญชีก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รายการเดินบัญชี",
+                             "en":  "statement"
+                         }
+                     ],
+        "tip":  "statement ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-pin",
+        "word":  "PIN",
+        "pos":  "n.",
+        "ipa":  "/pin/",
+        "thai":  "รหัส PIN",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the PIN at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรหัส PINก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รหัส PIN",
+                             "en":  "PIN"
+                         }
+                     ],
+        "tip":  "PIN ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-branch",
+        "word":  "branch",
+        "pos":  "n.",
+        "ipa":  "/branch/",
+        "thai":  "สาขาธนาคาร",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the branch at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสาขาธนาคารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สาขาธนาคาร",
+                             "en":  "branch"
+                         }
+                     ],
+        "tip":  "branch ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-teller",
+        "word":  "teller",
+        "pos":  "n.",
+        "ipa":  "/teller/",
+        "thai":  "พนักงานธนาคาร",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the teller at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องพนักงานธนาคารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "พนักงานธนาคาร",
+                             "en":  "teller"
+                         }
+                     ],
+        "tip":  "teller ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-check",
+        "word":  "check",
+        "pos":  "n.",
+        "ipa":  "/check/",
+        "thai":  "เช็ค",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the check at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเช็คก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เช็ค",
+                             "en":  "check"
+                         }
+                     ],
+        "tip":  "check ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-savings-account",
+        "word":  "savings account",
+        "pos":  "n.",
+        "ipa":  "/savings account/",
+        "thai":  "บัญชีออมทรัพย์",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the savings account at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องบัญชีออมทรัพย์ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "บัญชีออมทรัพย์",
+                             "en":  "savings account"
+                         }
+                     ],
+        "tip":  "savings account ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-current-account",
+        "word":  "current account",
+        "pos":  "n.",
+        "ipa":  "/current account/",
+        "thai":  "บัญชีกระแสรายวัน",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the current account at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องบัญชีกระแสรายวันก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "บัญชีกระแสรายวัน",
+                             "en":  "current account"
+                         }
+                     ],
+        "tip":  "current account ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-mortgage",
+        "word":  "mortgage",
+        "pos":  "n.",
+        "ipa":  "/mortgage/",
+        "thai":  "สินเชื่อบ้าน",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the mortgage at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสินเชื่อบ้านก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สินเชื่อบ้าน",
+                             "en":  "mortgage"
+                         }
+                     ],
+        "tip":  "mortgage ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-currency",
+        "word":  "currency",
+        "pos":  "n.",
+        "ipa":  "/currency/",
+        "thai":  "สกุลเงิน",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the currency at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสกุลเงินก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สกุลเงิน",
+                             "en":  "currency"
+                         }
+                     ],
+        "tip":  "currency ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-coin",
+        "word":  "coin",
+        "pos":  "n.",
+        "ipa":  "/coin/",
+        "thai":  "เหรียญ",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the coin at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเหรียญก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เหรียญ",
+                             "en":  "coin"
+                         }
+                     ],
+        "tip":  "coin ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-banknote",
+        "word":  "banknote",
+        "pos":  "n.",
+        "ipa":  "/banknote/",
+        "thai":  "ธนบัตร",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the banknote at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องธนบัตรก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ธนบัตร",
+                             "en":  "banknote"
+                         }
+                     ],
+        "tip":  "banknote ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-online-banking",
+        "word":  "online banking",
+        "pos":  "n.",
+        "ipa":  "/online banking/",
+        "thai":  "ธนาคารออนไลน์",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the online banking at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องธนาคารออนไลน์ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ธนาคารออนไลน์",
+                             "en":  "online banking"
+                         }
+                     ],
+        "tip":  "online banking ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-transaction",
+        "word":  "transaction",
+        "pos":  "n.",
+        "ipa":  "/transaction/",
+        "thai":  "ธุรกรรม",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the transaction at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องธุรกรรมก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ธุรกรรม",
+                             "en":  "transaction"
+                         }
+                     ],
+        "tip":  "transaction ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-transfer-limit",
+        "word":  "transfer limit",
+        "pos":  "n.",
+        "ipa":  "/transfer limit/",
+        "thai":  "วงเงินโอน",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the transfer limit at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องวงเงินโอนก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "วงเงินโอน",
+                             "en":  "transfer limit"
+                         }
+                     ],
+        "tip":  "transfer limit ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-cash-withdrawal",
+        "word":  "cash withdrawal",
+        "pos":  "n.",
+        "ipa":  "/cash withdrawal/",
+        "thai":  "การถอนเงินสด",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the cash withdrawal at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการถอนเงินสดก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การถอนเงินสด",
+                             "en":  "cash withdrawal"
+                         }
+                     ],
+        "tip":  "cash withdrawal ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    },
+    {
+        "id":  "bank-account-holder",
+        "word":  "account holder",
+        "pos":  "n.",
+        "ipa":  "/account holder/",
+        "thai":  "เจ้าของบัญชี",
+        "emoji":  "🏦",
+        "example":  "I would like to ask about the account holder at the bank.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเจ้าของบัญชีก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เจ้าของบัญชี",
+                             "en":  "account holder"
+                         }
+                     ],
+        "tip":  "account holder ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม"
+    }
+]

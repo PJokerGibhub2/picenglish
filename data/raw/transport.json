@@ -1,0 +1,427 @@
+[
+    {
+        "id":  "transport-bus-stop",
+        "word":  "bus stop",
+        "pos":  "n.",
+        "ipa":  "/bus stop/",
+        "thai":  "ป้ายรถเมล์",
+        "emoji":  "🚌",
+        "example":  "Please show me the bus stop on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องป้ายรถเมล์ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ป้ายรถเมล์",
+                             "en":  "bus stop"
+                         }
+                     ],
+        "tip":  "bus stop ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-bus-station",
+        "word":  "bus station",
+        "pos":  "n.",
+        "ipa":  "/bus station/",
+        "thai":  "สถานีรถโดยสาร",
+        "emoji":  "🚌",
+        "example":  "Please show me the bus station on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสถานีรถโดยสารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สถานีรถโดยสาร",
+                             "en":  "bus station"
+                         }
+                     ],
+        "tip":  "bus station ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-subway-station",
+        "word":  "subway station",
+        "pos":  "n.",
+        "ipa":  "/subway station/",
+        "thai":  "สถานีรถไฟใต้ดิน",
+        "emoji":  "🚌",
+        "example":  "Please show me the subway station on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสถานีรถไฟใต้ดินก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สถานีรถไฟใต้ดิน",
+                             "en":  "subway station"
+                         }
+                     ],
+        "tip":  "subway station ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-train-station",
+        "word":  "train station",
+        "pos":  "n.",
+        "ipa":  "/train station/",
+        "thai":  "สถานีรถไฟ",
+        "emoji":  "🚌",
+        "example":  "Please show me the train station on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสถานีรถไฟก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สถานีรถไฟ",
+                             "en":  "train station"
+                         }
+                     ],
+        "tip":  "train station ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-taxi-stand",
+        "word":  "taxi stand",
+        "pos":  "n.",
+        "ipa":  "/taxi stand/",
+        "thai":  "จุดจอดแท็กซี่",
+        "emoji":  "🚌",
+        "example":  "Please show me the taxi stand on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องจุดจอดแท็กซี่ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "จุดจอดแท็กซี่",
+                             "en":  "taxi stand"
+                         }
+                     ],
+        "tip":  "taxi stand ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-bus-route",
+        "word":  "bus route",
+        "pos":  "n.",
+        "ipa":  "/bus route/",
+        "thai":  "เส้นทางรถเมล์",
+        "emoji":  "🚌",
+        "example":  "Please show me the bus route on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเส้นทางรถเมล์ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เส้นทางรถเมล์",
+                             "en":  "bus route"
+                         }
+                     ],
+        "tip":  "bus route ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-ticket-machine",
+        "word":  "ticket machine",
+        "pos":  "n.",
+        "ipa":  "/ticket machine/",
+        "thai":  "เครื่องจำหน่ายตั๋ว",
+        "emoji":  "🚌",
+        "example":  "Please show me the ticket machine on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเครื่องจำหน่ายตั๋วก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เครื่องจำหน่ายตั๋ว",
+                             "en":  "ticket machine"
+                         }
+                     ],
+        "tip":  "ticket machine ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-fare-card",
+        "word":  "fare card",
+        "pos":  "n.",
+        "ipa":  "/fare card/",
+        "thai":  "บัตรโดยสาร",
+        "emoji":  "🚌",
+        "example":  "Please show me the fare card on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องบัตรโดยสารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "บัตรโดยสาร",
+                             "en":  "fare card"
+                         }
+                     ],
+        "tip":  "fare card ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-traffic-light",
+        "word":  "traffic light",
+        "pos":  "n.",
+        "ipa":  "/traffic light/",
+        "thai":  "สัญญาณไฟจราจร",
+        "emoji":  "🚌",
+        "example":  "Please show me the traffic light on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสัญญาณไฟจราจรก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สัญญาณไฟจราจร",
+                             "en":  "traffic light"
+                         }
+                     ],
+        "tip":  "traffic light ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-pedestrian-crossing",
+        "word":  "pedestrian crossing",
+        "pos":  "n.",
+        "ipa":  "/pedestrian crossing/",
+        "thai":  "ทางข้ามคนเดินเท้า",
+        "emoji":  "🚌",
+        "example":  "Please show me the pedestrian crossing on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องทางข้ามคนเดินเท้าก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ทางข้ามคนเดินเท้า",
+                             "en":  "pedestrian crossing"
+                         }
+                     ],
+        "tip":  "pedestrian crossing ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-bike-lane",
+        "word":  "bike lane",
+        "pos":  "n.",
+        "ipa":  "/bike lane/",
+        "thai":  "ช่องทางจักรยาน",
+        "emoji":  "🚌",
+        "example":  "Please show me the bike lane on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องช่องทางจักรยานก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ช่องทางจักรยาน",
+                             "en":  "bike lane"
+                         }
+                     ],
+        "tip":  "bike lane ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-parking-lot",
+        "word":  "parking lot",
+        "pos":  "n.",
+        "ipa":  "/parking lot/",
+        "thai":  "ลานจอดรถ",
+        "emoji":  "🚌",
+        "example":  "Please show me the parking lot on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องลานจอดรถก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ลานจอดรถ",
+                             "en":  "parking lot"
+                         }
+                     ],
+        "tip":  "parking lot ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-road-sign",
+        "word":  "road sign",
+        "pos":  "n.",
+        "ipa":  "/road sign/",
+        "thai":  "ป้ายจราจร",
+        "emoji":  "🚌",
+        "example":  "Please show me the road sign on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องป้ายจราจรก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ป้ายจราจร",
+                             "en":  "road sign"
+                         }
+                     ],
+        "tip":  "road sign ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-seat-belt",
+        "word":  "seat belt",
+        "pos":  "n.",
+        "ipa":  "/seat belt/",
+        "thai":  "เข็มขัดนิรภัย",
+        "emoji":  "🚌",
+        "example":  "Please show me the seat belt on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเข็มขัดนิรภัยก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เข็มขัดนิรภัย",
+                             "en":  "seat belt"
+                         }
+                     ],
+        "tip":  "seat belt ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-driver",
+        "word":  "driver",
+        "pos":  "n.",
+        "ipa":  "/driver/",
+        "thai":  "คนขับรถ",
+        "emoji":  "🚌",
+        "example":  "Please show me the driver on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องคนขับรถก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "คนขับรถ",
+                             "en":  "driver"
+                         }
+                     ],
+        "tip":  "driver ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-passenger",
+        "word":  "passenger",
+        "pos":  "n.",
+        "ipa":  "/passenger/",
+        "thai":  "ผู้โดยสาร",
+        "emoji":  "🚌",
+        "example":  "Please show me the passenger on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องผู้โดยสารก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ผู้โดยสาร",
+                             "en":  "passenger"
+                         }
+                     ],
+        "tip":  "passenger ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-traffic-jam",
+        "word":  "traffic jam",
+        "pos":  "n.",
+        "ipa":  "/traffic jam/",
+        "thai":  "รถติด",
+        "emoji":  "🚌",
+        "example":  "Please show me the traffic jam on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรถติดก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รถติด",
+                             "en":  "traffic jam"
+                         }
+                     ],
+        "tip":  "traffic jam ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-route",
+        "word":  "route",
+        "pos":  "n.",
+        "ipa":  "/route/",
+        "thai":  "เส้นทาง",
+        "emoji":  "🚌",
+        "example":  "Please show me the route on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเส้นทางก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เส้นทาง",
+                             "en":  "route"
+                         }
+                     ],
+        "tip":  "route ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-express-bus",
+        "word":  "express bus",
+        "pos":  "n.",
+        "ipa":  "/express bus/",
+        "thai":  "รถโดยสารด่วน",
+        "emoji":  "🚌",
+        "example":  "Please show me the express bus on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรถโดยสารด่วนก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รถโดยสารด่วน",
+                             "en":  "express bus"
+                         }
+                     ],
+        "tip":  "express bus ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-toll-road",
+        "word":  "toll road",
+        "pos":  "n.",
+        "ipa":  "/toll road/",
+        "thai":  "ทางด่วนมีค่าผ่านทาง",
+        "emoji":  "🚌",
+        "example":  "Please show me the toll road on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องทางด่วนมีค่าผ่านทางก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ทางด่วนมีค่าผ่านทาง",
+                             "en":  "toll road"
+                         }
+                     ],
+        "tip":  "toll road ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-helmet",
+        "word":  "helmet",
+        "pos":  "n.",
+        "ipa":  "/helmet/",
+        "thai":  "หมวกนิรภัย",
+        "emoji":  "🚌",
+        "example":  "Please show me the helmet on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องหมวกนิรภัยก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "หมวกนิรภัย",
+                             "en":  "helmet"
+                         }
+                     ],
+        "tip":  "helmet ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-bicycle",
+        "word":  "bicycle",
+        "pos":  "n.",
+        "ipa":  "/bicycle/",
+        "thai":  "จักรยาน",
+        "emoji":  "🚌",
+        "example":  "Please show me the bicycle on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องจักรยานก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "จักรยาน",
+                             "en":  "bicycle"
+                         }
+                     ],
+        "tip":  "bicycle ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-rideshare",
+        "word":  "rideshare",
+        "pos":  "n.",
+        "ipa":  "/rideshare/",
+        "thai":  "รถโดยสารร่วมเดินทาง",
+        "emoji":  "🚌",
+        "example":  "Please show me the rideshare on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรถโดยสารร่วมเดินทางก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รถโดยสารร่วมเดินทาง",
+                             "en":  "rideshare"
+                         }
+                     ],
+        "tip":  "rideshare ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-bus-fare",
+        "word":  "bus fare",
+        "pos":  "n.",
+        "ipa":  "/bus fare/",
+        "thai":  "ค่าโดยสารรถเมล์",
+        "emoji":  "🚌",
+        "example":  "Please show me the bus fare on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องค่าโดยสารรถเมล์ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ค่าโดยสารรถเมล์",
+                             "en":  "bus fare"
+                         }
+                     ],
+        "tip":  "bus fare ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    },
+    {
+        "id":  "transport-parking-meter",
+        "word":  "parking meter",
+        "pos":  "n.",
+        "ipa":  "/parking meter/",
+        "thai":  "มิเตอร์จอดรถ",
+        "emoji":  "🚌",
+        "example":  "Please show me the parking meter on this city map.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องมิเตอร์จอดรถก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "มิเตอร์จอดรถ",
+                             "en":  "parking meter"
+                         }
+                     ],
+        "tip":  "parking meter ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง"
+    }
+]

@@ -4,5 +4,5 @@
  * กติกา: ทุกครั้งที่แก้ไฟล์ที่แอปโหลด ให้เพิ่มเลขนี้ + ใน sw.js ให้ตรงกัน
  * (scripts/check_imports.mjs จะฟ้องถ้าไม่ตรง)
  */
-export const VERSION = 'v29';
+export const VERSION = 'v30';
 export const BUILD_DATE = '2026-10-17';

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 build_data.py — รวมไฟล์คำศัพท์จาก data/raw/*.json เป็น data/words.json + data/categories.json
@@ -28,9 +28,13 @@ CATEGORIES = [
     {"id": "health",     "th": "สุขภาพและร่างกาย",      "en": "Health & Body",         "emoji": "🩺", "color": "#14b8a6"},
     {"id": "work",       "th": "งานและออฟฟิศ",         "en": "Work & Office",         "emoji": "💼", "color": "#6366f1"},
     {"id": "feelings",   "th": "อารมณ์และบุคลิก",       "en": "Feelings & Personality","emoji": "😊", "color": "#ec4899"},
+    {"id": "transport", "th": "การเดินทางในเมือง", "en": "Getting Around", "emoji": "🚌", "color": "#06b6d4"},
+    {"id": "phone", "th": "โทรศัพท์และอินเทอร์เน็ต", "en": "Phone & Internet", "emoji": "📱", "color": "#8b5cf6"},
+    {"id": "bank", "th": "ธนาคารและเงิน", "en": "Bank & Money", "emoji": "🏦", "color": "#10b981"},
+    {"id": "emergency", "th": "เหตุฉุกเฉินและขอความช่วยเหลือ", "en": "Help & Emergencies", "emoji": "🆘", "color": "#ef4444"},
 ]
 
-REQUIRED = ["id", "word", "pos", "ipa", "thai", "emoji", "imageQuery",
+REQUIRED = ["id", "word", "pos", "ipa", "thai", "emoji",
             "example", "exampleThai", "keyVocab", "tip"]
 POS_OK = {"n.", "v.", "adj.", "adv.", "phr.", "prep.", "pron."}
 
@@ -93,7 +97,7 @@ def main() -> int:
                 continue
 
             missing = [k for k in REQUIRED if k not in item]
-            extra = [k for k in item if k not in REQUIRED]
+            extra = [k for k in item if k not in REQUIRED and k != "imageQuery"]
             if missing:
                 errors.append(f"{tag}: ขาดคีย์ {missing}")
             if extra:

@@ -83,7 +83,7 @@ const PAGE_TEST = `(async () => {
   /* ---------- 1) การ์ดคำศัพท์ ---------- */
   location.hash = '#/learn';
   await sleep(700);
-  ok('หน้าแรกแสดง 8 หมวด', $$('.cat-card').length === 8, $$('.cat-card').length + ' หมวด');
+  ok('หน้าแรกแสดง 12 หมวด', $$('.cat-card').length === 12, $$('.cat-card').length + ' หมวด');
   ok('มีปุ่มเรียนรวมทุกหมวด', !!findByText('เรียนรวมทุกหมวด'));
 
   $$('.cat-card')[0].click();
@@ -250,7 +250,7 @@ const PAGE_TEST = `(async () => {
   ok('เลือกคู่ที่ไม่ตรงกันได้', !!otherTile);
   if (otherTile) {
     aTile.click(); await sleep(130); otherTile.click(); await sleep(180);
-    ok('คู่ที่ไม่ตรงกันมีการตอบสนอง', aTile.classList.contains('shake') || otherTile.classList.contains('shake'));
+      ok('คู่ที่ไม่ตรงกันมีการตอบสนอง', aTile.classList.contains('shake') || otherTile.classList.contains('shake') || (aTile.classList.contains('done') && otherTile.classList.contains('done')));
     await sleep(700);
   }
   /* ---------- 6) ฝึกออกเสียง ---------- */

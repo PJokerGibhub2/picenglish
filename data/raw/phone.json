@@ -1,0 +1,427 @@
+[
+    {
+        "id":  "phone-smartphone",
+        "word":  "smartphone",
+        "pos":  "n.",
+        "ipa":  "/smartphone/",
+        "thai":  "สมาร์ตโฟน",
+        "emoji":  "📱",
+        "example":  "I need help with the smartphone on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสมาร์ตโฟนก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สมาร์ตโฟน",
+                             "en":  "smartphone"
+                         }
+                     ],
+        "tip":  "smartphone ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-charger",
+        "word":  "charger",
+        "pos":  "n.",
+        "ipa":  "/charger/",
+        "thai":  "ที่ชาร์จ",
+        "emoji":  "📱",
+        "example":  "I need help with the charger on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องที่ชาร์จก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ที่ชาร์จ",
+                             "en":  "charger"
+                         }
+                     ],
+        "tip":  "charger ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-battery",
+        "word":  "battery",
+        "pos":  "n.",
+        "ipa":  "/battery/",
+        "thai":  "แบตเตอรี่",
+        "emoji":  "📱",
+        "example":  "I need help with the battery on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องแบตเตอรี่ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "แบตเตอรี่",
+                             "en":  "battery"
+                         }
+                     ],
+        "tip":  "battery ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-screen",
+        "word":  "screen",
+        "pos":  "n.",
+        "ipa":  "/screen/",
+        "thai":  "หน้าจอ",
+        "emoji":  "📱",
+        "example":  "I need help with the screen on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องหน้าจอก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "หน้าจอ",
+                             "en":  "screen"
+                         }
+                     ],
+        "tip":  "screen ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-password",
+        "word":  "password",
+        "pos":  "n.",
+        "ipa":  "/password/",
+        "thai":  "รหัสผ่าน",
+        "emoji":  "📱",
+        "example":  "I need help with the password on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรหัสผ่านก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รหัสผ่าน",
+                             "en":  "password"
+                         }
+                     ],
+        "tip":  "password ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-wi-fi",
+        "word":  "Wi-Fi",
+        "pos":  "n.",
+        "ipa":  "/wi-fi/",
+        "thai":  "ไวไฟ",
+        "emoji":  "📱",
+        "example":  "I need help with the Wi-Fi on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องไวไฟก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ไวไฟ",
+                             "en":  "Wi-Fi"
+                         }
+                     ],
+        "tip":  "Wi-Fi ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-hotspot",
+        "word":  "hotspot",
+        "pos":  "n.",
+        "ipa":  "/hotspot/",
+        "thai":  "จุดกระจายสัญญาณ",
+        "emoji":  "📱",
+        "example":  "I need help with the hotspot on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องจุดกระจายสัญญาณก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "จุดกระจายสัญญาณ",
+                             "en":  "hotspot"
+                         }
+                     ],
+        "tip":  "hotspot ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-signal",
+        "word":  "signal",
+        "pos":  "n.",
+        "ipa":  "/signal/",
+        "thai":  "สัญญาณ",
+        "emoji":  "📱",
+        "example":  "I need help with the signal on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสัญญาณก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สัญญาณ",
+                             "en":  "signal"
+                         }
+                     ],
+        "tip":  "signal ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-app",
+        "word":  "app",
+        "pos":  "n.",
+        "ipa":  "/app/",
+        "thai":  "แอป",
+        "emoji":  "📱",
+        "example":  "I need help with the app on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องแอปก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "แอป",
+                             "en":  "app"
+                         }
+                     ],
+        "tip":  "app ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-browser",
+        "word":  "browser",
+        "pos":  "n.",
+        "ipa":  "/browser/",
+        "thai":  "เบราว์เซอร์",
+        "emoji":  "📱",
+        "example":  "I need help with the browser on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเบราว์เซอร์ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เบราว์เซอร์",
+                             "en":  "browser"
+                         }
+                     ],
+        "tip":  "browser ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-download",
+        "word":  "download",
+        "pos":  "n.",
+        "ipa":  "/download/",
+        "thai":  "การดาวน์โหลด",
+        "emoji":  "📱",
+        "example":  "I need help with the download on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการดาวน์โหลดก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การดาวน์โหลด",
+                             "en":  "download"
+                         }
+                     ],
+        "tip":  "download ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-upload",
+        "word":  "upload",
+        "pos":  "n.",
+        "ipa":  "/upload/",
+        "thai":  "การอัปโหลด",
+        "emoji":  "📱",
+        "example":  "I need help with the upload on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการอัปโหลดก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การอัปโหลด",
+                             "en":  "upload"
+                         }
+                     ],
+        "tip":  "upload ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-data-plan",
+        "word":  "data plan",
+        "pos":  "n.",
+        "ipa":  "/data plan/",
+        "thai":  "แพ็กเกจอินเทอร์เน็ต",
+        "emoji":  "📱",
+        "example":  "I need help with the data plan on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องแพ็กเกจอินเทอร์เน็ตก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "แพ็กเกจอินเทอร์เน็ต",
+                             "en":  "data plan"
+                         }
+                     ],
+        "tip":  "data plan ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-mobile-data",
+        "word":  "mobile data",
+        "pos":  "n.",
+        "ipa":  "/mobile data/",
+        "thai":  "อินเทอร์เน็ตมือถือ",
+        "emoji":  "📱",
+        "example":  "I need help with the mobile data on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องอินเทอร์เน็ตมือถือก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "อินเทอร์เน็ตมือถือ",
+                             "en":  "mobile data"
+                         }
+                     ],
+        "tip":  "mobile data ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-sim-card",
+        "word":  "SIM card",
+        "pos":  "n.",
+        "ipa":  "/sim card/",
+        "thai":  "ซิมการ์ด",
+        "emoji":  "📱",
+        "example":  "I need help with the SIM card on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องซิมการ์ดก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ซิมการ์ด",
+                             "en":  "SIM card"
+                         }
+                     ],
+        "tip":  "SIM card ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-voicemail",
+        "word":  "voicemail",
+        "pos":  "n.",
+        "ipa":  "/voicemail/",
+        "thai":  "ข้อความเสียง",
+        "emoji":  "📱",
+        "example":  "I need help with the voicemail on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องข้อความเสียงก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ข้อความเสียง",
+                             "en":  "voicemail"
+                         }
+                     ],
+        "tip":  "voicemail ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-text-message",
+        "word":  "text message",
+        "pos":  "n.",
+        "ipa":  "/text message/",
+        "thai":  "ข้อความตัวอักษร",
+        "emoji":  "📱",
+        "example":  "I need help with the text message on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องข้อความตัวอักษรก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ข้อความตัวอักษร",
+                             "en":  "text message"
+                         }
+                     ],
+        "tip":  "text message ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-missed-call",
+        "word":  "missed call",
+        "pos":  "n.",
+        "ipa":  "/missed call/",
+        "thai":  "สายที่ไม่ได้รับ",
+        "emoji":  "📱",
+        "example":  "I need help with the missed call on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสายที่ไม่ได้รับก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สายที่ไม่ได้รับ",
+                             "en":  "missed call"
+                         }
+                     ],
+        "tip":  "missed call ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-contact",
+        "word":  "contact",
+        "pos":  "n.",
+        "ipa":  "/contact/",
+        "thai":  "รายชื่อผู้ติดต่อ",
+        "emoji":  "📱",
+        "example":  "I need help with the contact on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรายชื่อผู้ติดต่อก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รายชื่อผู้ติดต่อ",
+                             "en":  "contact"
+                         }
+                     ],
+        "tip":  "contact ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-ringtone",
+        "word":  "ringtone",
+        "pos":  "n.",
+        "ipa":  "/ringtone/",
+        "thai":  "เสียงเรียกเข้า",
+        "emoji":  "📱",
+        "example":  "I need help with the ringtone on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเสียงเรียกเข้าก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เสียงเรียกเข้า",
+                             "en":  "ringtone"
+                         }
+                     ],
+        "tip":  "ringtone ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-settings",
+        "word":  "settings",
+        "pos":  "n.",
+        "ipa":  "/settings/",
+        "thai":  "การตั้งค่า",
+        "emoji":  "📱",
+        "example":  "I need help with the settings on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการตั้งค่าก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การตั้งค่า",
+                             "en":  "settings"
+                         }
+                     ],
+        "tip":  "settings ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-username",
+        "word":  "username",
+        "pos":  "n.",
+        "ipa":  "/username/",
+        "thai":  "ชื่อผู้ใช้",
+        "emoji":  "📱",
+        "example":  "I need help with the username on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องชื่อผู้ใช้ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ชื่อผู้ใช้",
+                             "en":  "username"
+                         }
+                     ],
+        "tip":  "username ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-microphone",
+        "word":  "microphone",
+        "pos":  "n.",
+        "ipa":  "/microphone/",
+        "thai":  "ไมโครโฟน",
+        "emoji":  "📱",
+        "example":  "I need help with the microphone on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องไมโครโฟนก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ไมโครโฟน",
+                             "en":  "microphone"
+                         }
+                     ],
+        "tip":  "microphone ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-headphones",
+        "word":  "headphones",
+        "pos":  "n.",
+        "ipa":  "/headphones/",
+        "thai":  "หูฟัง",
+        "emoji":  "📱",
+        "example":  "I need help with the headphones on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องหูฟังก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "หูฟัง",
+                             "en":  "headphones"
+                         }
+                     ],
+        "tip":  "headphones ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    },
+    {
+        "id":  "phone-video-call",
+        "word":  "video call",
+        "pos":  "n.",
+        "ipa":  "/video call/",
+        "thai":  "วิดีโอคอล",
+        "emoji":  "📱",
+        "example":  "I need help with the video call on my phone today.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องวิดีโอคอลก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "วิดีโอคอล",
+                             "en":  "video call"
+                         }
+                     ],
+        "tip":  "video call ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ"
+    }
+]

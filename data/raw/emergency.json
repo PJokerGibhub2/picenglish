@@ -1,0 +1,427 @@
+[
+    {
+        "id":  "emergency-emergency",
+        "word":  "emergency",
+        "pos":  "n.",
+        "ipa":  "/emergency/",
+        "thai":  "เหตุฉุกเฉิน",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the emergency right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเหตุฉุกเฉินก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เหตุฉุกเฉิน",
+                             "en":  "emergency"
+                         }
+                     ],
+        "tip":  "emergency ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-ambulance",
+        "word":  "ambulance",
+        "pos":  "n.",
+        "ipa":  "/ambulance/",
+        "thai":  "รถพยาบาล",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the ambulance right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องรถพยาบาลก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "รถพยาบาล",
+                             "en":  "ambulance"
+                         }
+                     ],
+        "tip":  "ambulance ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-firefighter",
+        "word":  "firefighter",
+        "pos":  "n.",
+        "ipa":  "/firefighter/",
+        "thai":  "นักดับเพลิง",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the firefighter right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องนักดับเพลิงก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "นักดับเพลิง",
+                             "en":  "firefighter"
+                         }
+                     ],
+        "tip":  "firefighter ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-police-officer",
+        "word":  "police officer",
+        "pos":  "n.",
+        "ipa":  "/police officer/",
+        "thai":  "เจ้าหน้าที่ตำรวจ",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the police officer right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องเจ้าหน้าที่ตำรวจก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "เจ้าหน้าที่ตำรวจ",
+                             "en":  "police officer"
+                         }
+                     ],
+        "tip":  "police officer ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-fire-extinguisher",
+        "word":  "fire extinguisher",
+        "pos":  "n.",
+        "ipa":  "/fire extinguisher/",
+        "thai":  "ถังดับเพลิง",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the fire extinguisher right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องถังดับเพลิงก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ถังดับเพลิง",
+                             "en":  "fire extinguisher"
+                         }
+                     ],
+        "tip":  "fire extinguisher ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-first-aid",
+        "word":  "first aid",
+        "pos":  "n.",
+        "ipa":  "/first aid/",
+        "thai":  "การปฐมพยาบาล",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the first aid right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการปฐมพยาบาลก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การปฐมพยาบาล",
+                             "en":  "first aid"
+                         }
+                     ],
+        "tip":  "first aid ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-help-line",
+        "word":  "help line",
+        "pos":  "n.",
+        "ipa":  "/help line/",
+        "thai":  "สายด่วนขอความช่วยเหลือ",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the help line right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสายด่วนขอความช่วยเหลือก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สายด่วนขอความช่วยเหลือ",
+                             "en":  "help line"
+                         }
+                     ],
+        "tip":  "help line ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-danger",
+        "word":  "danger",
+        "pos":  "n.",
+        "ipa":  "/danger/",
+        "thai":  "อันตราย",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the danger right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องอันตรายก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "อันตราย",
+                             "en":  "danger"
+                         }
+                     ],
+        "tip":  "danger ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-missing-person",
+        "word":  "missing person",
+        "pos":  "n.",
+        "ipa":  "/missing person/",
+        "thai":  "บุคคลสูญหาย",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the missing person right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องบุคคลสูญหายก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "บุคคลสูญหาย",
+                             "en":  "missing person"
+                         }
+                     ],
+        "tip":  "missing person ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-accident",
+        "word":  "accident",
+        "pos":  "n.",
+        "ipa":  "/accident/",
+        "thai":  "อุบัติเหตุ",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the accident right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องอุบัติเหตุก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "อุบัติเหตุ",
+                             "en":  "accident"
+                         }
+                     ],
+        "tip":  "accident ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-fire",
+        "word":  "fire",
+        "pos":  "n.",
+        "ipa":  "/fire/",
+        "thai":  "ไฟไหม้",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the fire right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องไฟไหม้ก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ไฟไหม้",
+                             "en":  "fire"
+                         }
+                     ],
+        "tip":  "fire ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-flood",
+        "word":  "flood",
+        "pos":  "n.",
+        "ipa":  "/flood/",
+        "thai":  "น้ำท่วม",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the flood right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องน้ำท่วมก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "น้ำท่วม",
+                             "en":  "flood"
+                         }
+                     ],
+        "tip":  "flood ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-earthquake",
+        "word":  "earthquake",
+        "pos":  "n.",
+        "ipa":  "/earthquake/",
+        "thai":  "แผ่นดินไหว",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the earthquake right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องแผ่นดินไหวก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "แผ่นดินไหว",
+                             "en":  "earthquake"
+                         }
+                     ],
+        "tip":  "earthquake ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-storm",
+        "word":  "storm",
+        "pos":  "n.",
+        "ipa":  "/storm/",
+        "thai":  "พายุ",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the storm right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องพายุก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "พายุ",
+                             "en":  "storm"
+                         }
+                     ],
+        "tip":  "storm ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-shelter",
+        "word":  "shelter",
+        "pos":  "n.",
+        "ipa":  "/shelter/",
+        "thai":  "ที่หลบภัย",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the shelter right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องที่หลบภัยก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ที่หลบภัย",
+                             "en":  "shelter"
+                         }
+                     ],
+        "tip":  "shelter ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-rescue",
+        "word":  "rescue",
+        "pos":  "n.",
+        "ipa":  "/rescue/",
+        "thai":  "การช่วยชีวิต",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the rescue right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการช่วยชีวิตก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การช่วยชีวิต",
+                             "en":  "rescue"
+                         }
+                     ],
+        "tip":  "rescue ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-emergency-exit",
+        "word":  "emergency exit",
+        "pos":  "n.",
+        "ipa":  "/emergency exit/",
+        "thai":  "ทางออกฉุกเฉิน",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the emergency exit right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องทางออกฉุกเฉินก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ทางออกฉุกเฉิน",
+                             "en":  "emergency exit"
+                         }
+                     ],
+        "tip":  "emergency exit ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-hotline",
+        "word":  "hotline",
+        "pos":  "n.",
+        "ipa":  "/hotline/",
+        "thai":  "สายด่วน",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the hotline right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสายด่วนก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สายด่วน",
+                             "en":  "hotline"
+                         }
+                     ],
+        "tip":  "hotline ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-location",
+        "word":  "location",
+        "pos":  "n.",
+        "ipa":  "/location/",
+        "thai":  "ตำแหน่งที่ตั้ง",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the location right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องตำแหน่งที่ตั้งก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ตำแหน่งที่ตั้ง",
+                             "en":  "location"
+                         }
+                     ],
+        "tip":  "location ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-safety",
+        "word":  "safety",
+        "pos":  "n.",
+        "ipa":  "/safety/",
+        "thai":  "ความปลอดภัย",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the safety right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องความปลอดภัยก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ความปลอดภัย",
+                             "en":  "safety"
+                         }
+                     ],
+        "tip":  "safety ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-injured-person",
+        "word":  "injured person",
+        "pos":  "n.",
+        "ipa":  "/injured person/",
+        "thai":  "ผู้บาดเจ็บ",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the injured person right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องผู้บาดเจ็บก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ผู้บาดเจ็บ",
+                             "en":  "injured person"
+                         }
+                     ],
+        "tip":  "injured person ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-theft",
+        "word":  "theft",
+        "pos":  "n.",
+        "ipa":  "/theft/",
+        "thai":  "การโจรกรรม",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the theft right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องการโจรกรรมก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "การโจรกรรม",
+                             "en":  "theft"
+                         }
+                     ],
+        "tip":  "theft ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-smoke-alarm",
+        "word":  "smoke alarm",
+        "pos":  "n.",
+        "ipa":  "/smoke alarm/",
+        "thai":  "สัญญาณเตือนควัน",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the smoke alarm right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องสัญญาณเตือนควันก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "สัญญาณเตือนควัน",
+                             "en":  "smoke alarm"
+                         }
+                     ],
+        "tip":  "smoke alarm ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-power-outage",
+        "word":  "power outage",
+        "pos":  "n.",
+        "ipa":  "/power outage/",
+        "thai":  "ไฟฟ้าดับ",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the power outage right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องไฟฟ้าดับก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ไฟฟ้าดับ",
+                             "en":  "power outage"
+                         }
+                     ],
+        "tip":  "power outage ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    },
+    {
+        "id":  "emergency-rescue-team",
+        "word":  "rescue team",
+        "pos":  "n.",
+        "ipa":  "/rescue team/",
+        "thai":  "ทีมกู้ภัย",
+        "emoji":  "🆘",
+        "example":  "Please tell the operator about the rescue team right away.",
+        "exampleThai":  "ฉันอยากสอบถามเรื่องทีมกู้ภัยก่อนตัดสินใจ",
+        "keyVocab":  [
+                         {
+                             "thai":  "ทีมกู้ภัย",
+                             "en":  "rescue team"
+                         }
+                     ],
+        "tip":  "rescue team ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว"
+    }
+]

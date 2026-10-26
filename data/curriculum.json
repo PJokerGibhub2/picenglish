@@ -1,4 +1,4 @@
-﻿{
+{
     "version":  1,
     "levels":  [
                    {
@@ -576,6 +576,192 @@
                                                          }
                                                      ],
                                          "id":  "A1.1-U3"
+                                     },
+                                     {
+                                         "id":  "A1.1-U4",
+                                         "title":  "คำใช้จริง ชุด 4",
+                                         "lessons":  [
+                                                         {
+                                                             "id":  "A1.1-U4-L1",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "food-porridge",
+                                                                                           "food-rice",
+                                                                                           "food-bread",
+                                                                                           "food-egg",
+                                                                                           "food-vegetables",
+                                                                                           "food-fruit",
+                                                                                           "food-chicken",
+                                                                                           "food-fish",
+                                                                                           "food-beef"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 1"
+                                                         },
+                                                         {
+                                                             "id":  "A1.1-U4-L2",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "food-water",
+                                                                                           "food-milk",
+                                                                                           "food-coffee",
+                                                                                           "food-tea",
+                                                                                           "restaurant-waiter",
+                                                                                           "restaurant-customer",
+                                                                                           "restaurant-plate",
+                                                                                           "restaurant-spoon",
+                                                                                           "restaurant-fork"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 2"
+                                                         },
+                                                         {
+                                                             "id":  "A1.1-U4-L3",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "restaurant-knife",
+                                                                                           "restaurant-glass",
+                                                                                           "restaurant-bottle",
+                                                                                           "restaurant-drinks-menu",
+                                                                                           "restaurant-today-s-special",
+                                                                                           "restaurant-savory",
+                                                                                           "restaurant-without",
+                                                                                           "restaurant-pay-separately",
+                                                                                           "travel-hotel"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 3"
+                                                         },
+                                                         {
+                                                             "id":  "A1.1-U4-L4",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "travel-room",
+                                                                                           "travel-suitcase",
+                                                                                           "travel-flight",
+                                                                                           "travel-platform",
+                                                                                           "travel-delayed",
+                                                                                           "travel-go-straight",
+                                                                                           "travel-turn-right",
+                                                                                           "travel-near",
+                                                                                           "travel-far"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 4"
+                                                         }
+                                                     ]
                                      }
                                  ],
                        "id":  "A1.1",
@@ -866,6 +1052,192 @@
                                                          }
                                                      ],
                                          "id":  "A1.2-U3"
+                                     },
+                                     {
+                                         "id":  "A1.2-U4",
+                                         "title":  "คำใช้จริง ชุด 4",
+                                         "lessons":  [
+                                                         {
+                                                             "id":  "A1.2-U4-L1",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "travel-reception",
+                                                                                           "travel-check-in",
+                                                                                           "travel-check-out",
+                                                                                           "home-bathroom",
+                                                                                           "home-sofa",
+                                                                                           "home-table",
+                                                                                           "home-chair",
+                                                                                           "home-window",
+                                                                                           "home-door"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 1"
+                                                         },
+                                                         {
+                                                             "id":  "A1.2-U4-L2",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "home-house-key",
+                                                                                           "home-shelf",
+                                                                                           "home-towel",
+                                                                                           "home-blanket",
+                                                                                           "home-light",
+                                                                                           "home-noise",
+                                                                                           "home-fix",
+                                                                                           "shopping-shop",
+                                                                                           "shopping-size"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 2"
+                                                         },
+                                                         {
+                                                             "id":  "A1.2-U4-L3",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "shopping-color",
+                                                                                           "shopping-try-on",
+                                                                                           "shopping-fits-well",
+                                                                                           "shopping-debit-card",
+                                                                                           "shopping-return",
+                                                                                           "shopping-exchange",
+                                                                                           "shopping-grocery-store",
+                                                                                           "shopping-bag",
+                                                                                           "shopping-on-sale"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 3"
+                                                         },
+                                                         {
+                                                             "id":  "A1.2-U4-L4",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "shopping-reasonable",
+                                                                                           "shopping-gift",
+                                                                                           "health-clinic",
+                                                                                           "health-nurse",
+                                                                                           "health-tablet",
+                                                                                           "health-symptoms",
+                                                                                           "health-backache",
+                                                                                           "health-pharmacy",
+                                                                                           "health-allergic"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 4"
+                                                         }
+                                                     ]
                                      }
                                  ],
                        "id":  "A1.2",
@@ -1156,6 +1528,192 @@
                                                          }
                                                      ],
                                          "id":  "A2.1-U3"
+                                     },
+                                     {
+                                         "id":  "A2.1-U4",
+                                         "title":  "คำใช้จริง ชุด 4",
+                                         "lessons":  [
+                                                         {
+                                                             "id":  "A2.1-U4-L1",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "health-nauseous",
+                                                                                           "health-dizzy",
+                                                                                           "health-temperature",
+                                                                                           "health-wound",
+                                                                                           "health-bandage",
+                                                                                           "health-recover",
+                                                                                           "work-office",
+                                                                                           "work-teammate",
+                                                                                           "work-manager"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 1"
+                                                         },
+                                                         {
+                                                             "id":  "A2.1-U4-L2",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "work-work-schedule",
+                                                                                           "work-take-a-break",
+                                                                                           "work-work",
+                                                                                           "work-new-job",
+                                                                                           "work-start-work",
+                                                                                           "work-finish",
+                                                                                           "work-help-me",
+                                                                                           "work-phone-call",
+                                                                                           "work-client"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 2"
+                                                         },
+                                                         {
+                                                             "id":  "A2.1-U4-L3",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "work-day-off",
+                                                                                           "feelings-happy",
+                                                                                           "feelings-sad",
+                                                                                           "feelings-angry",
+                                                                                           "feelings-calm",
+                                                                                           "feelings-excited",
+                                                                                           "feelings-sleepy",
+                                                                                           "feelings-surprised",
+                                                                                           "feelings-worried"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 3"
+                                                         },
+                                                         {
+                                                             "id":  "A2.1-U4-L4",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "feelings-grateful",
+                                                                                           "feelings-curious",
+                                                                                           "feelings-relaxed",
+                                                                                           "feelings-uncomfortable",
+                                                                                           "feelings-awake",
+                                                                                           "bank-account",
+                                                                                           "bank-atm",
+                                                                                           "bank-withdrawal",
+                                                                                           "bank-balance"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 4"
+                                                         }
+                                                     ]
                                      }
                                  ],
                        "id":  "A2.1",
@@ -1447,6 +2005,552 @@
                                                          }
                                                      ],
                                          "id":  "A2.2-U3"
+                                     },
+                                     {
+                                         "id":  "A2.2-U4",
+                                         "title":  "คำใช้จริง ชุด 4",
+                                         "lessons":  [
+                                                         {
+                                                             "id":  "A2.2-U4-L1",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "bank-bank-transfer",
+                                                                                           "bank-bank-fee",
+                                                                                           "bank-exchange-rate",
+                                                                                           "bank-loan",
+                                                                                           "bank-interest",
+                                                                                           "bank-statement",
+                                                                                           "bank-pin",
+                                                                                           "bank-branch"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 1"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U4-L2",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "bank-teller",
+                                                                                           "bank-check",
+                                                                                           "bank-savings-account",
+                                                                                           "bank-current-account",
+                                                                                           "bank-mortgage",
+                                                                                           "bank-currency",
+                                                                                           "bank-coin",
+                                                                                           "bank-banknote"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 2"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U4-L3",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "bank-online-banking",
+                                                                                           "bank-transaction",
+                                                                                           "bank-transfer-limit",
+                                                                                           "bank-cash-withdrawal",
+                                                                                           "bank-account-holder",
+                                                                                           "emergency-emergency",
+                                                                                           "emergency-ambulance",
+                                                                                           "emergency-firefighter"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 3"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U4-L4",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "emergency-police-officer",
+                                                                                           "emergency-fire-extinguisher",
+                                                                                           "emergency-first-aid",
+                                                                                           "emergency-help-line",
+                                                                                           "emergency-danger",
+                                                                                           "emergency-missing-person",
+                                                                                           "emergency-accident",
+                                                                                           "emergency-fire"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 4 ตอนที่ 4"
+                                                         }
+                                                     ]
+                                     },
+                                     {
+                                         "id":  "A2.2-U5",
+                                         "title":  "คำใช้จริง ชุด 5",
+                                         "lessons":  [
+                                                         {
+                                                             "id":  "A2.2-U5-L1",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "emergency-flood",
+                                                                                           "emergency-earthquake",
+                                                                                           "emergency-storm",
+                                                                                           "emergency-shelter",
+                                                                                           "emergency-rescue",
+                                                                                           "emergency-emergency-exit",
+                                                                                           "emergency-hotline",
+                                                                                           "emergency-location"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 5 ตอนที่ 1"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U5-L2",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "emergency-safety",
+                                                                                           "emergency-injured-person",
+                                                                                           "emergency-theft",
+                                                                                           "emergency-smoke-alarm",
+                                                                                           "emergency-power-outage",
+                                                                                           "emergency-rescue-team",
+                                                                                           "phone-smartphone",
+                                                                                           "phone-charger"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 5 ตอนที่ 2"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U5-L3",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "phone-battery",
+                                                                                           "phone-screen",
+                                                                                           "phone-password",
+                                                                                           "phone-wi-fi",
+                                                                                           "phone-hotspot",
+                                                                                           "phone-signal",
+                                                                                           "phone-app",
+                                                                                           "phone-browser"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 5 ตอนที่ 3"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U5-L4",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "phone-download",
+                                                                                           "phone-upload",
+                                                                                           "phone-data-plan",
+                                                                                           "phone-mobile-data",
+                                                                                           "phone-sim-card",
+                                                                                           "phone-voicemail",
+                                                                                           "phone-text-message",
+                                                                                           "phone-missed-call"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 5 ตอนที่ 4"
+                                                         }
+                                                     ]
+                                     },
+                                     {
+                                         "id":  "A2.2-U6",
+                                         "title":  "คำใช้จริง ชุด 6",
+                                         "lessons":  [
+                                                         {
+                                                             "id":  "A2.2-U6-L1",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "phone-contact",
+                                                                                           "phone-ringtone",
+                                                                                           "phone-settings",
+                                                                                           "phone-username",
+                                                                                           "phone-microphone",
+                                                                                           "phone-headphones",
+                                                                                           "phone-video-call",
+                                                                                           "transport-bus-stop"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 6 ตอนที่ 1"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U6-L2",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "transport-bus-station",
+                                                                                           "transport-subway-station",
+                                                                                           "transport-train-station",
+                                                                                           "transport-taxi-stand",
+                                                                                           "transport-bus-route",
+                                                                                           "transport-ticket-machine",
+                                                                                           "transport-fare-card",
+                                                                                           "transport-traffic-light"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 6 ตอนที่ 2"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U6-L3",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "transport-pedestrian-crossing",
+                                                                                           "transport-bike-lane",
+                                                                                           "transport-parking-lot",
+                                                                                           "transport-road-sign",
+                                                                                           "transport-seat-belt",
+                                                                                           "transport-driver",
+                                                                                           "transport-passenger",
+                                                                                           "transport-traffic-jam"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 6 ตอนที่ 3"
+                                                         },
+                                                         {
+                                                             "id":  "A2.2-U6-L4",
+                                                             "estMinutes":  5,
+                                                             "tasks":  [
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "listen"
+                                                                           },
+                                                                           {
+                                                                               "items":  4,
+                                                                               "mode":  "flashcard"
+                                                                           },
+                                                                           {
+                                                                               "items":  3,
+                                                                               "mode":  "quiz"
+                                                                           },
+                                                                           {
+                                                                               "items":  2,
+                                                                               "mode":  "speak"
+                                                                           }
+                                                                       ],
+                                                             "canDo":  [
+                                                                           "ใช้คำสำคัญในสถานการณ์ประจำวันได้"
+                                                                       ],
+                                                             "content":  {
+                                                                             "listening":  [
+
+                                                                                           ],
+                                                                             "dialogues":  [
+
+                                                                                           ],
+                                                                             "words":  [
+                                                                                           "transport-route",
+                                                                                           "transport-express-bus",
+                                                                                           "transport-toll-road",
+                                                                                           "transport-helmet",
+                                                                                           "transport-bicycle",
+                                                                                           "transport-rideshare",
+                                                                                           "transport-bus-fare",
+                                                                                           "transport-parking-meter"
+                                                                                       ]
+                                                                         },
+                                                             "title":  "ฝึกคำสื่อสาร ชุด 6 ตอนที่ 4"
+                                                         }
+                                                     ]
                                      }
                                  ],
                        "id":  "A2.2",

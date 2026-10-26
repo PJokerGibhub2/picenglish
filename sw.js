@@ -1,5 +1,5 @@
 ﻿/* PicEnglish service worker — offline-first app shell */
-const VERSION = 'v29';
+const VERSION = 'v30';
 const SHELL_CACHE = `picenglish-shell-${VERSION}`;
 
 // ไฟล์โครงแอป (ใช้ relative path ทั้งหมดเพื่อรองรับ deploy ใต้ subpath เช่น GitHub Pages)

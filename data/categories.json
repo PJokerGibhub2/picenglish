@@ -55,6 +55,34 @@
    "en": "Feelings & Personality",
    "emoji": "😊",
    "color": "#ec4899"
+  },
+  {
+   "id": "transport",
+   "th": "การเดินทางในเมือง",
+   "en": "Getting Around",
+   "emoji": "🚌",
+   "color": "#06b6d4"
+  },
+  {
+   "id": "phone",
+   "th": "โทรศัพท์และอินเทอร์เน็ต",
+   "en": "Phone & Internet",
+   "emoji": "📱",
+   "color": "#8b5cf6"
+  },
+  {
+   "id": "bank",
+   "th": "ธนาคารและเงิน",
+   "en": "Bank & Money",
+   "emoji": "🏦",
+   "color": "#10b981"
+  },
+  {
+   "id": "emergency",
+   "th": "เหตุฉุกเฉินและขอความช่วยเหลือ",
+   "en": "Help & Emergencies",
+   "emoji": "🆘",
+   "color": "#ef4444"
   }
  ]
 }

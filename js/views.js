@@ -149,8 +149,8 @@ export function learn(root, params = {}) {
       h('div', { class: 'row' },
         h('div', { style: { flex: '1' } },
           h('div', { class: 'bold', style: { fontSize: '1.05rem' }, text: 'เรียนคำศัพท์จากคำและเสียง' }),
-          h('div', { class: 'small', style: { opacity: '.9' }, text: `${db.words.length} คำ · 8 หมวด · มีเสียงอ่านและประโยคใช้งาน` })),
-        h('div', { style: { fontSize: '2rem' }, text: '📸' }))));
+          h('div', { class: 'small', style: { opacity: '.9' }, text: db.words.length + ' คำ · ' + db.categories.length + ' หมวด · มีเสียงอ่านและประโยคใช้งาน' })),
+        h('div', { style: { fontSize: '2rem' }, text: '🔤' }))));
 
     root.appendChild(h('a', { href: '#/listening', class: 'list-item', style: { marginTop: '10px' } },
       h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '🎧' }),

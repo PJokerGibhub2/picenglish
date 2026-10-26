@@ -3390,5 +3390,1637 @@
 "chunk:ch-smal-18": {
 "f": "f/chunk_ch-smal-18.mp3",
 "m": "m/chunk_ch-smal-18.mp3"
+},
+"word:food-porridge": {
+"f": "f/word_food-porridge.mp3",
+"m": "m/word_food-porridge.mp3"
+},
+"sent:food-porridge": {
+"f": "f/sent_food-porridge.mp3",
+"m": "m/sent_food-porridge.mp3"
+},
+"word:food-rice": {
+"f": "f/word_food-rice.mp3",
+"m": "m/word_food-rice.mp3"
+},
+"sent:food-rice": {
+"f": "f/sent_food-rice.mp3",
+"m": "m/sent_food-rice.mp3"
+},
+"word:food-bread": {
+"f": "f/word_food-bread.mp3",
+"m": "m/word_food-bread.mp3"
+},
+"sent:food-bread": {
+"f": "f/sent_food-bread.mp3",
+"m": "m/sent_food-bread.mp3"
+},
+"word:food-egg": {
+"f": "f/word_food-egg.mp3",
+"m": "m/word_food-egg.mp3"
+},
+"sent:food-egg": {
+"f": "f/sent_food-egg.mp3",
+"m": "m/sent_food-egg.mp3"
+},
+"word:food-vegetables": {
+"f": "f/word_food-vegetables.mp3",
+"m": "m/word_food-vegetables.mp3"
+},
+"sent:food-vegetables": {
+"f": "f/sent_food-vegetables.mp3",
+"m": "m/sent_food-vegetables.mp3"
+},
+"word:food-fruit": {
+"f": "f/word_food-fruit.mp3",
+"m": "m/word_food-fruit.mp3"
+},
+"sent:food-fruit": {
+"f": "f/sent_food-fruit.mp3",
+"m": "m/sent_food-fruit.mp3"
+},
+"word:food-chicken": {
+"f": "f/word_food-chicken.mp3",
+"m": "m/word_food-chicken.mp3"
+},
+"sent:food-chicken": {
+"f": "f/sent_food-chicken.mp3",
+"m": "m/sent_food-chicken.mp3"
+},
+"word:food-fish": {
+"f": "f/word_food-fish.mp3",
+"m": "m/word_food-fish.mp3"
+},
+"sent:food-fish": {
+"f": "f/sent_food-fish.mp3",
+"m": "m/sent_food-fish.mp3"
+},
+"word:food-beef": {
+"f": "f/word_food-beef.mp3",
+"m": "m/word_food-beef.mp3"
+},
+"sent:food-beef": {
+"f": "f/sent_food-beef.mp3",
+"m": "m/sent_food-beef.mp3"
+},
+"word:food-water": {
+"f": "f/word_food-water.mp3",
+"m": "m/word_food-water.mp3"
+},
+"sent:food-water": {
+"f": "f/sent_food-water.mp3",
+"m": "m/sent_food-water.mp3"
+},
+"word:food-milk": {
+"f": "f/word_food-milk.mp3",
+"m": "m/word_food-milk.mp3"
+},
+"sent:food-milk": {
+"f": "f/sent_food-milk.mp3",
+"m": "m/sent_food-milk.mp3"
+},
+"word:food-coffee": {
+"f": "f/word_food-coffee.mp3",
+"m": "m/word_food-coffee.mp3"
+},
+"sent:food-coffee": {
+"f": "f/sent_food-coffee.mp3",
+"m": "m/sent_food-coffee.mp3"
+},
+"word:food-tea": {
+"f": "f/word_food-tea.mp3",
+"m": "m/word_food-tea.mp3"
+},
+"sent:food-tea": {
+"f": "f/sent_food-tea.mp3",
+"m": "m/sent_food-tea.mp3"
+},
+"word:restaurant-waiter": {
+"f": "f/word_restaurant-waiter.mp3",
+"m": "m/word_restaurant-waiter.mp3"
+},
+"sent:restaurant-waiter": {
+"f": "f/sent_restaurant-waiter.mp3",
+"m": "m/sent_restaurant-waiter.mp3"
+},
+"word:restaurant-customer": {
+"f": "f/word_restaurant-customer.mp3",
+"m": "m/word_restaurant-customer.mp3"
+},
+"sent:restaurant-customer": {
+"f": "f/sent_restaurant-customer.mp3",
+"m": "m/sent_restaurant-customer.mp3"
+},
+"word:restaurant-plate": {
+"f": "f/word_restaurant-plate.mp3",
+"m": "m/word_restaurant-plate.mp3"
+},
+"sent:restaurant-plate": {
+"f": "f/sent_restaurant-plate.mp3",
+"m": "m/sent_restaurant-plate.mp3"
+},
+"word:restaurant-spoon": {
+"f": "f/word_restaurant-spoon.mp3",
+"m": "m/word_restaurant-spoon.mp3"
+},
+"sent:restaurant-spoon": {
+"f": "f/sent_restaurant-spoon.mp3",
+"m": "m/sent_restaurant-spoon.mp3"
+},
+"word:restaurant-fork": {
+"f": "f/word_restaurant-fork.mp3",
+"m": "m/word_restaurant-fork.mp3"
+},
+"sent:restaurant-fork": {
+"f": "f/sent_restaurant-fork.mp3",
+"m": "m/sent_restaurant-fork.mp3"
+},
+"word:restaurant-knife": {
+"f": "f/word_restaurant-knife.mp3",
+"m": "m/word_restaurant-knife.mp3"
+},
+"sent:restaurant-knife": {
+"f": "f/sent_restaurant-knife.mp3",
+"m": "m/sent_restaurant-knife.mp3"
+},
+"word:restaurant-glass": {
+"f": "f/word_restaurant-glass.mp3",
+"m": "m/word_restaurant-glass.mp3"
+},
+"sent:restaurant-glass": {
+"f": "f/sent_restaurant-glass.mp3",
+"m": "m/sent_restaurant-glass.mp3"
+},
+"word:restaurant-bottle": {
+"f": "f/word_restaurant-bottle.mp3",
+"m": "m/word_restaurant-bottle.mp3"
+},
+"sent:restaurant-bottle": {
+"f": "f/sent_restaurant-bottle.mp3",
+"m": "m/sent_restaurant-bottle.mp3"
+},
+"word:restaurant-drinks-menu": {
+"f": "f/word_restaurant-drinks-menu.mp3",
+"m": "m/word_restaurant-drinks-menu.mp3"
+},
+"sent:restaurant-drinks-menu": {
+"f": "f/sent_restaurant-drinks-menu.mp3",
+"m": "m/sent_restaurant-drinks-menu.mp3"
+},
+"word:restaurant-today-s-special": {
+"f": "f/word_restaurant-today-s-special.mp3",
+"m": "m/word_restaurant-today-s-special.mp3"
+},
+"sent:restaurant-today-s-special": {
+"f": "f/sent_restaurant-today-s-special.mp3",
+"m": "m/sent_restaurant-today-s-special.mp3"
+},
+"word:restaurant-savory": {
+"f": "f/word_restaurant-savory.mp3",
+"m": "m/word_restaurant-savory.mp3"
+},
+"sent:restaurant-savory": {
+"f": "f/sent_restaurant-savory.mp3",
+"m": "m/sent_restaurant-savory.mp3"
+},
+"word:restaurant-without": {
+"f": "f/word_restaurant-without.mp3",
+"m": "m/word_restaurant-without.mp3"
+},
+"sent:restaurant-without": {
+"f": "f/sent_restaurant-without.mp3",
+"m": "m/sent_restaurant-without.mp3"
+},
+"word:restaurant-pay-separately": {
+"f": "f/word_restaurant-pay-separately.mp3",
+"m": "m/word_restaurant-pay-separately.mp3"
+},
+"sent:restaurant-pay-separately": {
+"f": "f/sent_restaurant-pay-separately.mp3",
+"m": "m/sent_restaurant-pay-separately.mp3"
+},
+"word:travel-hotel": {
+"f": "f/word_travel-hotel.mp3",
+"m": "m/word_travel-hotel.mp3"
+},
+"sent:travel-hotel": {
+"f": "f/sent_travel-hotel.mp3",
+"m": "m/sent_travel-hotel.mp3"
+},
+"word:travel-room": {
+"f": "f/word_travel-room.mp3",
+"m": "m/word_travel-room.mp3"
+},
+"sent:travel-room": {
+"f": "f/sent_travel-room.mp3",
+"m": "m/sent_travel-room.mp3"
+},
+"word:travel-suitcase": {
+"f": "f/word_travel-suitcase.mp3",
+"m": "m/word_travel-suitcase.mp3"
+},
+"sent:travel-suitcase": {
+"f": "f/sent_travel-suitcase.mp3",
+"m": "m/sent_travel-suitcase.mp3"
+},
+"word:travel-flight": {
+"f": "f/word_travel-flight.mp3",
+"m": "m/word_travel-flight.mp3"
+},
+"sent:travel-flight": {
+"f": "f/sent_travel-flight.mp3",
+"m": "m/sent_travel-flight.mp3"
+},
+"word:travel-platform": {
+"f": "f/word_travel-platform.mp3",
+"m": "m/word_travel-platform.mp3"
+},
+"sent:travel-platform": {
+"f": "f/sent_travel-platform.mp3",
+"m": "m/sent_travel-platform.mp3"
+},
+"word:travel-delayed": {
+"f": "f/word_travel-delayed.mp3",
+"m": "m/word_travel-delayed.mp3"
+},
+"sent:travel-delayed": {
+"f": "f/sent_travel-delayed.mp3",
+"m": "m/sent_travel-delayed.mp3"
+},
+"word:travel-go-straight": {
+"f": "f/word_travel-go-straight.mp3",
+"m": "m/word_travel-go-straight.mp3"
+},
+"sent:travel-go-straight": {
+"f": "f/sent_travel-go-straight.mp3",
+"m": "m/sent_travel-go-straight.mp3"
+},
+"word:travel-turn-right": {
+"f": "f/word_travel-turn-right.mp3",
+"m": "m/word_travel-turn-right.mp3"
+},
+"sent:travel-turn-right": {
+"f": "f/sent_travel-turn-right.mp3",
+"m": "m/sent_travel-turn-right.mp3"
+},
+"word:travel-near": {
+"f": "f/word_travel-near.mp3",
+"m": "m/word_travel-near.mp3"
+},
+"sent:travel-near": {
+"f": "f/sent_travel-near.mp3",
+"m": "m/sent_travel-near.mp3"
+},
+"word:travel-far": {
+"f": "f/word_travel-far.mp3",
+"m": "m/word_travel-far.mp3"
+},
+"sent:travel-far": {
+"f": "f/sent_travel-far.mp3",
+"m": "m/sent_travel-far.mp3"
+},
+"word:travel-reception": {
+"f": "f/word_travel-reception.mp3",
+"m": "m/word_travel-reception.mp3"
+},
+"sent:travel-reception": {
+"f": "f/sent_travel-reception.mp3",
+"m": "m/sent_travel-reception.mp3"
+},
+"word:travel-check-in": {
+"f": "f/word_travel-check-in.mp3",
+"m": "m/word_travel-check-in.mp3"
+},
+"sent:travel-check-in": {
+"f": "f/sent_travel-check-in.mp3",
+"m": "m/sent_travel-check-in.mp3"
+},
+"word:travel-check-out": {
+"f": "f/word_travel-check-out.mp3",
+"m": "m/word_travel-check-out.mp3"
+},
+"sent:travel-check-out": {
+"f": "f/sent_travel-check-out.mp3",
+"m": "m/sent_travel-check-out.mp3"
+},
+"word:home-bathroom": {
+"f": "f/word_home-bathroom.mp3",
+"m": "m/word_home-bathroom.mp3"
+},
+"sent:home-bathroom": {
+"f": "f/sent_home-bathroom.mp3",
+"m": "m/sent_home-bathroom.mp3"
+},
+"word:home-sofa": {
+"f": "f/word_home-sofa.mp3",
+"m": "m/word_home-sofa.mp3"
+},
+"sent:home-sofa": {
+"f": "f/sent_home-sofa.mp3",
+"m": "m/sent_home-sofa.mp3"
+},
+"word:home-table": {
+"f": "f/word_home-table.mp3",
+"m": "m/word_home-table.mp3"
+},
+"sent:home-table": {
+"f": "f/sent_home-table.mp3",
+"m": "m/sent_home-table.mp3"
+},
+"word:home-chair": {
+"f": "f/word_home-chair.mp3",
+"m": "m/word_home-chair.mp3"
+},
+"sent:home-chair": {
+"f": "f/sent_home-chair.mp3",
+"m": "m/sent_home-chair.mp3"
+},
+"word:home-window": {
+"f": "f/word_home-window.mp3",
+"m": "m/word_home-window.mp3"
+},
+"sent:home-window": {
+"f": "f/sent_home-window.mp3",
+"m": "m/sent_home-window.mp3"
+},
+"word:home-door": {
+"f": "f/word_home-door.mp3",
+"m": "m/word_home-door.mp3"
+},
+"sent:home-door": {
+"f": "f/sent_home-door.mp3",
+"m": "m/sent_home-door.mp3"
+},
+"word:home-house-key": {
+"f": "f/word_home-house-key.mp3",
+"m": "m/word_home-house-key.mp3"
+},
+"sent:home-house-key": {
+"f": "f/sent_home-house-key.mp3",
+"m": "m/sent_home-house-key.mp3"
+},
+"word:home-shelf": {
+"f": "f/word_home-shelf.mp3",
+"m": "m/word_home-shelf.mp3"
+},
+"sent:home-shelf": {
+"f": "f/sent_home-shelf.mp3",
+"m": "m/sent_home-shelf.mp3"
+},
+"word:home-towel": {
+"f": "f/word_home-towel.mp3",
+"m": "m/word_home-towel.mp3"
+},
+"sent:home-towel": {
+"f": "f/sent_home-towel.mp3",
+"m": "m/sent_home-towel.mp3"
+},
+"word:home-blanket": {
+"f": "f/word_home-blanket.mp3",
+"m": "m/word_home-blanket.mp3"
+},
+"sent:home-blanket": {
+"f": "f/sent_home-blanket.mp3",
+"m": "m/sent_home-blanket.mp3"
+},
+"word:home-light": {
+"f": "f/word_home-light.mp3",
+"m": "m/word_home-light.mp3"
+},
+"sent:home-light": {
+"f": "f/sent_home-light.mp3",
+"m": "m/sent_home-light.mp3"
+},
+"word:home-noise": {
+"f": "f/word_home-noise.mp3",
+"m": "m/word_home-noise.mp3"
+},
+"sent:home-noise": {
+"f": "f/sent_home-noise.mp3",
+"m": "m/sent_home-noise.mp3"
+},
+"word:home-fix": {
+"f": "f/word_home-fix.mp3",
+"m": "m/word_home-fix.mp3"
+},
+"sent:home-fix": {
+"f": "f/sent_home-fix.mp3",
+"m": "m/sent_home-fix.mp3"
+},
+"word:shopping-shop": {
+"f": "f/word_shopping-shop.mp3",
+"m": "m/word_shopping-shop.mp3"
+},
+"sent:shopping-shop": {
+"f": "f/sent_shopping-shop.mp3",
+"m": "m/sent_shopping-shop.mp3"
+},
+"word:shopping-size": {
+"f": "f/word_shopping-size.mp3",
+"m": "m/word_shopping-size.mp3"
+},
+"sent:shopping-size": {
+"f": "f/sent_shopping-size.mp3",
+"m": "m/sent_shopping-size.mp3"
+},
+"word:shopping-color": {
+"f": "f/word_shopping-color.mp3",
+"m": "m/word_shopping-color.mp3"
+},
+"sent:shopping-color": {
+"f": "f/sent_shopping-color.mp3",
+"m": "m/sent_shopping-color.mp3"
+},
+"word:shopping-try-on": {
+"f": "f/word_shopping-try-on.mp3",
+"m": "m/word_shopping-try-on.mp3"
+},
+"sent:shopping-try-on": {
+"f": "f/sent_shopping-try-on.mp3",
+"m": "m/sent_shopping-try-on.mp3"
+},
+"word:shopping-fits-well": {
+"f": "f/word_shopping-fits-well.mp3",
+"m": "m/word_shopping-fits-well.mp3"
+},
+"sent:shopping-fits-well": {
+"f": "f/sent_shopping-fits-well.mp3",
+"m": "m/sent_shopping-fits-well.mp3"
+},
+"word:shopping-debit-card": {
+"f": "f/word_shopping-debit-card.mp3",
+"m": "m/word_shopping-debit-card.mp3"
+},
+"sent:shopping-debit-card": {
+"f": "f/sent_shopping-debit-card.mp3",
+"m": "m/sent_shopping-debit-card.mp3"
+},
+"word:shopping-return": {
+"f": "f/word_shopping-return.mp3",
+"m": "m/word_shopping-return.mp3"
+},
+"sent:shopping-return": {
+"f": "f/sent_shopping-return.mp3",
+"m": "m/sent_shopping-return.mp3"
+},
+"word:shopping-exchange": {
+"f": "f/word_shopping-exchange.mp3",
+"m": "m/word_shopping-exchange.mp3"
+},
+"sent:shopping-exchange": {
+"f": "f/sent_shopping-exchange.mp3",
+"m": "m/sent_shopping-exchange.mp3"
+},
+"word:shopping-grocery-store": {
+"f": "f/word_shopping-grocery-store.mp3",
+"m": "m/word_shopping-grocery-store.mp3"
+},
+"sent:shopping-grocery-store": {
+"f": "f/sent_shopping-grocery-store.mp3",
+"m": "m/sent_shopping-grocery-store.mp3"
+},
+"word:shopping-bag": {
+"f": "f/word_shopping-bag.mp3",
+"m": "m/word_shopping-bag.mp3"
+},
+"sent:shopping-bag": {
+"f": "f/sent_shopping-bag.mp3",
+"m": "m/sent_shopping-bag.mp3"
+},
+"word:shopping-on-sale": {
+"f": "f/word_shopping-on-sale.mp3",
+"m": "m/word_shopping-on-sale.mp3"
+},
+"sent:shopping-on-sale": {
+"f": "f/sent_shopping-on-sale.mp3",
+"m": "m/sent_shopping-on-sale.mp3"
+},
+"word:shopping-reasonable": {
+"f": "f/word_shopping-reasonable.mp3",
+"m": "m/word_shopping-reasonable.mp3"
+},
+"sent:shopping-reasonable": {
+"f": "f/sent_shopping-reasonable.mp3",
+"m": "m/sent_shopping-reasonable.mp3"
+},
+"word:shopping-gift": {
+"f": "f/word_shopping-gift.mp3",
+"m": "m/word_shopping-gift.mp3"
+},
+"sent:shopping-gift": {
+"f": "f/sent_shopping-gift.mp3",
+"m": "m/sent_shopping-gift.mp3"
+},
+"word:health-clinic": {
+"f": "f/word_health-clinic.mp3",
+"m": "m/word_health-clinic.mp3"
+},
+"sent:health-clinic": {
+"f": "f/sent_health-clinic.mp3",
+"m": "m/sent_health-clinic.mp3"
+},
+"word:health-nurse": {
+"f": "f/word_health-nurse.mp3",
+"m": "m/word_health-nurse.mp3"
+},
+"sent:health-nurse": {
+"f": "f/sent_health-nurse.mp3",
+"m": "m/sent_health-nurse.mp3"
+},
+"word:health-tablet": {
+"f": "f/word_health-tablet.mp3",
+"m": "m/word_health-tablet.mp3"
+},
+"sent:health-tablet": {
+"f": "f/sent_health-tablet.mp3",
+"m": "m/sent_health-tablet.mp3"
+},
+"word:health-symptoms": {
+"f": "f/word_health-symptoms.mp3",
+"m": "m/word_health-symptoms.mp3"
+},
+"sent:health-symptoms": {
+"f": "f/sent_health-symptoms.mp3",
+"m": "m/sent_health-symptoms.mp3"
+},
+"word:health-backache": {
+"f": "f/word_health-backache.mp3",
+"m": "m/word_health-backache.mp3"
+},
+"sent:health-backache": {
+"f": "f/sent_health-backache.mp3",
+"m": "m/sent_health-backache.mp3"
+},
+"word:health-pharmacy": {
+"f": "f/word_health-pharmacy.mp3",
+"m": "m/word_health-pharmacy.mp3"
+},
+"sent:health-pharmacy": {
+"f": "f/sent_health-pharmacy.mp3",
+"m": "m/sent_health-pharmacy.mp3"
+},
+"word:health-allergic": {
+"f": "f/word_health-allergic.mp3",
+"m": "m/word_health-allergic.mp3"
+},
+"sent:health-allergic": {
+"f": "f/sent_health-allergic.mp3",
+"m": "m/sent_health-allergic.mp3"
+},
+"word:health-nauseous": {
+"f": "f/word_health-nauseous.mp3",
+"m": "m/word_health-nauseous.mp3"
+},
+"sent:health-nauseous": {
+"f": "f/sent_health-nauseous.mp3",
+"m": "m/sent_health-nauseous.mp3"
+},
+"word:health-dizzy": {
+"f": "f/word_health-dizzy.mp3",
+"m": "m/word_health-dizzy.mp3"
+},
+"sent:health-dizzy": {
+"f": "f/sent_health-dizzy.mp3",
+"m": "m/sent_health-dizzy.mp3"
+},
+"word:health-temperature": {
+"f": "f/word_health-temperature.mp3",
+"m": "m/word_health-temperature.mp3"
+},
+"sent:health-temperature": {
+"f": "f/sent_health-temperature.mp3",
+"m": "m/sent_health-temperature.mp3"
+},
+"word:health-wound": {
+"f": "f/word_health-wound.mp3",
+"m": "m/word_health-wound.mp3"
+},
+"sent:health-wound": {
+"f": "f/sent_health-wound.mp3",
+"m": "m/sent_health-wound.mp3"
+},
+"word:health-bandage": {
+"f": "f/word_health-bandage.mp3",
+"m": "m/word_health-bandage.mp3"
+},
+"sent:health-bandage": {
+"f": "f/sent_health-bandage.mp3",
+"m": "m/sent_health-bandage.mp3"
+},
+"word:health-recover": {
+"f": "f/word_health-recover.mp3",
+"m": "m/word_health-recover.mp3"
+},
+"sent:health-recover": {
+"f": "f/sent_health-recover.mp3",
+"m": "m/sent_health-recover.mp3"
+},
+"word:work-office": {
+"f": "f/word_work-office.mp3",
+"m": "m/word_work-office.mp3"
+},
+"sent:work-office": {
+"f": "f/sent_work-office.mp3",
+"m": "m/sent_work-office.mp3"
+},
+"word:work-teammate": {
+"f": "f/word_work-teammate.mp3",
+"m": "m/word_work-teammate.mp3"
+},
+"sent:work-teammate": {
+"f": "f/sent_work-teammate.mp3",
+"m": "m/sent_work-teammate.mp3"
+},
+"word:work-manager": {
+"f": "f/word_work-manager.mp3",
+"m": "m/word_work-manager.mp3"
+},
+"sent:work-manager": {
+"f": "f/sent_work-manager.mp3",
+"m": "m/sent_work-manager.mp3"
+},
+"word:work-work-schedule": {
+"f": "f/word_work-work-schedule.mp3",
+"m": "m/word_work-work-schedule.mp3"
+},
+"sent:work-work-schedule": {
+"f": "f/sent_work-work-schedule.mp3",
+"m": "m/sent_work-work-schedule.mp3"
+},
+"word:work-take-a-break": {
+"f": "f/word_work-take-a-break.mp3",
+"m": "m/word_work-take-a-break.mp3"
+},
+"sent:work-take-a-break": {
+"f": "f/sent_work-take-a-break.mp3",
+"m": "m/sent_work-take-a-break.mp3"
+},
+"word:work-work": {
+"f": "f/word_work-work.mp3",
+"m": "m/word_work-work.mp3"
+},
+"sent:work-work": {
+"f": "f/sent_work-work.mp3",
+"m": "m/sent_work-work.mp3"
+},
+"word:work-new-job": {
+"f": "f/word_work-new-job.mp3",
+"m": "m/word_work-new-job.mp3"
+},
+"sent:work-new-job": {
+"f": "f/sent_work-new-job.mp3",
+"m": "m/sent_work-new-job.mp3"
+},
+"word:work-start-work": {
+"f": "f/word_work-start-work.mp3",
+"m": "m/word_work-start-work.mp3"
+},
+"sent:work-start-work": {
+"f": "f/sent_work-start-work.mp3",
+"m": "m/sent_work-start-work.mp3"
+},
+"word:work-finish": {
+"f": "f/word_work-finish.mp3",
+"m": "m/word_work-finish.mp3"
+},
+"sent:work-finish": {
+"f": "f/sent_work-finish.mp3",
+"m": "m/sent_work-finish.mp3"
+},
+"word:work-help-me": {
+"f": "f/word_work-help-me.mp3",
+"m": "m/word_work-help-me.mp3"
+},
+"sent:work-help-me": {
+"f": "f/sent_work-help-me.mp3",
+"m": "m/sent_work-help-me.mp3"
+},
+"word:work-phone-call": {
+"f": "f/word_work-phone-call.mp3",
+"m": "m/word_work-phone-call.mp3"
+},
+"sent:work-phone-call": {
+"f": "f/sent_work-phone-call.mp3",
+"m": "m/sent_work-phone-call.mp3"
+},
+"word:work-client": {
+"f": "f/word_work-client.mp3",
+"m": "m/word_work-client.mp3"
+},
+"sent:work-client": {
+"f": "f/sent_work-client.mp3",
+"m": "m/sent_work-client.mp3"
+},
+"word:work-day-off": {
+"f": "f/word_work-day-off.mp3",
+"m": "m/word_work-day-off.mp3"
+},
+"sent:work-day-off": {
+"f": "f/sent_work-day-off.mp3",
+"m": "m/sent_work-day-off.mp3"
+},
+"word:feelings-happy": {
+"f": "f/word_feelings-happy.mp3",
+"m": "m/word_feelings-happy.mp3"
+},
+"sent:feelings-happy": {
+"f": "f/sent_feelings-happy.mp3",
+"m": "m/sent_feelings-happy.mp3"
+},
+"word:feelings-sad": {
+"f": "f/word_feelings-sad.mp3",
+"m": "m/word_feelings-sad.mp3"
+},
+"sent:feelings-sad": {
+"f": "f/sent_feelings-sad.mp3",
+"m": "m/sent_feelings-sad.mp3"
+},
+"word:feelings-angry": {
+"f": "f/word_feelings-angry.mp3",
+"m": "m/word_feelings-angry.mp3"
+},
+"sent:feelings-angry": {
+"f": "f/sent_feelings-angry.mp3",
+"m": "m/sent_feelings-angry.mp3"
+},
+"word:feelings-calm": {
+"f": "f/word_feelings-calm.mp3",
+"m": "m/word_feelings-calm.mp3"
+},
+"sent:feelings-calm": {
+"f": "f/sent_feelings-calm.mp3",
+"m": "m/sent_feelings-calm.mp3"
+},
+"word:feelings-excited": {
+"f": "f/word_feelings-excited.mp3",
+"m": "m/word_feelings-excited.mp3"
+},
+"sent:feelings-excited": {
+"f": "f/sent_feelings-excited.mp3",
+"m": "m/sent_feelings-excited.mp3"
+},
+"word:feelings-sleepy": {
+"f": "f/word_feelings-sleepy.mp3",
+"m": "m/word_feelings-sleepy.mp3"
+},
+"sent:feelings-sleepy": {
+"f": "f/sent_feelings-sleepy.mp3",
+"m": "m/sent_feelings-sleepy.mp3"
+},
+"word:feelings-surprised": {
+"f": "f/word_feelings-surprised.mp3",
+"m": "m/word_feelings-surprised.mp3"
+},
+"sent:feelings-surprised": {
+"f": "f/sent_feelings-surprised.mp3",
+"m": "m/sent_feelings-surprised.mp3"
+},
+"word:feelings-worried": {
+"f": "f/word_feelings-worried.mp3",
+"m": "m/word_feelings-worried.mp3"
+},
+"sent:feelings-worried": {
+"f": "f/sent_feelings-worried.mp3",
+"m": "m/sent_feelings-worried.mp3"
+},
+"word:feelings-grateful": {
+"f": "f/word_feelings-grateful.mp3",
+"m": "m/word_feelings-grateful.mp3"
+},
+"sent:feelings-grateful": {
+"f": "f/sent_feelings-grateful.mp3",
+"m": "m/sent_feelings-grateful.mp3"
+},
+"word:feelings-curious": {
+"f": "f/word_feelings-curious.mp3",
+"m": "m/word_feelings-curious.mp3"
+},
+"sent:feelings-curious": {
+"f": "f/sent_feelings-curious.mp3",
+"m": "m/sent_feelings-curious.mp3"
+},
+"word:feelings-relaxed": {
+"f": "f/word_feelings-relaxed.mp3",
+"m": "m/word_feelings-relaxed.mp3"
+},
+"sent:feelings-relaxed": {
+"f": "f/sent_feelings-relaxed.mp3",
+"m": "m/sent_feelings-relaxed.mp3"
+},
+"word:feelings-uncomfortable": {
+"f": "f/word_feelings-uncomfortable.mp3",
+"m": "m/word_feelings-uncomfortable.mp3"
+},
+"sent:feelings-uncomfortable": {
+"f": "f/sent_feelings-uncomfortable.mp3",
+"m": "m/sent_feelings-uncomfortable.mp3"
+},
+"word:feelings-awake": {
+"f": "f/word_feelings-awake.mp3",
+"m": "m/word_feelings-awake.mp3"
+},
+"sent:feelings-awake": {
+"f": "f/sent_feelings-awake.mp3",
+"m": "m/sent_feelings-awake.mp3"
+},
+"word:transport-bus-stop": {
+"f": "f/word_transport-bus-stop.mp3",
+"m": "m/word_transport-bus-stop.mp3"
+},
+"sent:transport-bus-stop": {
+"f": "f/sent_transport-bus-stop.mp3",
+"m": "m/sent_transport-bus-stop.mp3"
+},
+"word:transport-bus-station": {
+"f": "f/word_transport-bus-station.mp3",
+"m": "m/word_transport-bus-station.mp3"
+},
+"sent:transport-bus-station": {
+"f": "f/sent_transport-bus-station.mp3",
+"m": "m/sent_transport-bus-station.mp3"
+},
+"word:transport-subway-station": {
+"f": "f/word_transport-subway-station.mp3",
+"m": "m/word_transport-subway-station.mp3"
+},
+"sent:transport-subway-station": {
+"f": "f/sent_transport-subway-station.mp3",
+"m": "m/sent_transport-subway-station.mp3"
+},
+"word:transport-train-station": {
+"f": "f/word_transport-train-station.mp3",
+"m": "m/word_transport-train-station.mp3"
+},
+"sent:transport-train-station": {
+"f": "f/sent_transport-train-station.mp3",
+"m": "m/sent_transport-train-station.mp3"
+},
+"word:transport-taxi-stand": {
+"f": "f/word_transport-taxi-stand.mp3",
+"m": "m/word_transport-taxi-stand.mp3"
+},
+"sent:transport-taxi-stand": {
+"f": "f/sent_transport-taxi-stand.mp3",
+"m": "m/sent_transport-taxi-stand.mp3"
+},
+"word:transport-bus-route": {
+"f": "f/word_transport-bus-route.mp3",
+"m": "m/word_transport-bus-route.mp3"
+},
+"sent:transport-bus-route": {
+"f": "f/sent_transport-bus-route.mp3",
+"m": "m/sent_transport-bus-route.mp3"
+},
+"word:transport-ticket-machine": {
+"f": "f/word_transport-ticket-machine.mp3",
+"m": "m/word_transport-ticket-machine.mp3"
+},
+"sent:transport-ticket-machine": {
+"f": "f/sent_transport-ticket-machine.mp3",
+"m": "m/sent_transport-ticket-machine.mp3"
+},
+"word:transport-fare-card": {
+"f": "f/word_transport-fare-card.mp3",
+"m": "m/word_transport-fare-card.mp3"
+},
+"sent:transport-fare-card": {
+"f": "f/sent_transport-fare-card.mp3",
+"m": "m/sent_transport-fare-card.mp3"
+},
+"word:transport-traffic-light": {
+"f": "f/word_transport-traffic-light.mp3",
+"m": "m/word_transport-traffic-light.mp3"
+},
+"sent:transport-traffic-light": {
+"f": "f/sent_transport-traffic-light.mp3",
+"m": "m/sent_transport-traffic-light.mp3"
+},
+"word:transport-pedestrian-crossing": {
+"f": "f/word_transport-pedestrian-crossing.mp3",
+"m": "m/word_transport-pedestrian-crossing.mp3"
+},
+"sent:transport-pedestrian-crossing": {
+"f": "f/sent_transport-pedestrian-crossing.mp3",
+"m": "m/sent_transport-pedestrian-crossing.mp3"
+},
+"word:transport-bike-lane": {
+"f": "f/word_transport-bike-lane.mp3",
+"m": "m/word_transport-bike-lane.mp3"
+},
+"sent:transport-bike-lane": {
+"f": "f/sent_transport-bike-lane.mp3",
+"m": "m/sent_transport-bike-lane.mp3"
+},
+"word:transport-parking-lot": {
+"f": "f/word_transport-parking-lot.mp3",
+"m": "m/word_transport-parking-lot.mp3"
+},
+"sent:transport-parking-lot": {
+"f": "f/sent_transport-parking-lot.mp3",
+"m": "m/sent_transport-parking-lot.mp3"
+},
+"word:transport-road-sign": {
+"f": "f/word_transport-road-sign.mp3",
+"m": "m/word_transport-road-sign.mp3"
+},
+"sent:transport-road-sign": {
+"f": "f/sent_transport-road-sign.mp3",
+"m": "m/sent_transport-road-sign.mp3"
+},
+"word:transport-seat-belt": {
+"f": "f/word_transport-seat-belt.mp3",
+"m": "m/word_transport-seat-belt.mp3"
+},
+"sent:transport-seat-belt": {
+"f": "f/sent_transport-seat-belt.mp3",
+"m": "m/sent_transport-seat-belt.mp3"
+},
+"word:transport-driver": {
+"f": "f/word_transport-driver.mp3",
+"m": "m/word_transport-driver.mp3"
+},
+"sent:transport-driver": {
+"f": "f/sent_transport-driver.mp3",
+"m": "m/sent_transport-driver.mp3"
+},
+"word:transport-passenger": {
+"f": "f/word_transport-passenger.mp3",
+"m": "m/word_transport-passenger.mp3"
+},
+"sent:transport-passenger": {
+"f": "f/sent_transport-passenger.mp3",
+"m": "m/sent_transport-passenger.mp3"
+},
+"word:transport-traffic-jam": {
+"f": "f/word_transport-traffic-jam.mp3",
+"m": "m/word_transport-traffic-jam.mp3"
+},
+"sent:transport-traffic-jam": {
+"f": "f/sent_transport-traffic-jam.mp3",
+"m": "m/sent_transport-traffic-jam.mp3"
+},
+"word:transport-route": {
+"f": "f/word_transport-route.mp3",
+"m": "m/word_transport-route.mp3"
+},
+"sent:transport-route": {
+"f": "f/sent_transport-route.mp3",
+"m": "m/sent_transport-route.mp3"
+},
+"word:transport-express-bus": {
+"f": "f/word_transport-express-bus.mp3",
+"m": "m/word_transport-express-bus.mp3"
+},
+"sent:transport-express-bus": {
+"f": "f/sent_transport-express-bus.mp3",
+"m": "m/sent_transport-express-bus.mp3"
+},
+"word:transport-toll-road": {
+"f": "f/word_transport-toll-road.mp3",
+"m": "m/word_transport-toll-road.mp3"
+},
+"sent:transport-toll-road": {
+"f": "f/sent_transport-toll-road.mp3",
+"m": "m/sent_transport-toll-road.mp3"
+},
+"word:transport-helmet": {
+"f": "f/word_transport-helmet.mp3",
+"m": "m/word_transport-helmet.mp3"
+},
+"sent:transport-helmet": {
+"f": "f/sent_transport-helmet.mp3",
+"m": "m/sent_transport-helmet.mp3"
+},
+"word:transport-bicycle": {
+"f": "f/word_transport-bicycle.mp3",
+"m": "m/word_transport-bicycle.mp3"
+},
+"sent:transport-bicycle": {
+"f": "f/sent_transport-bicycle.mp3",
+"m": "m/sent_transport-bicycle.mp3"
+},
+"word:transport-rideshare": {
+"f": "f/word_transport-rideshare.mp3",
+"m": "m/word_transport-rideshare.mp3"
+},
+"sent:transport-rideshare": {
+"f": "f/sent_transport-rideshare.mp3",
+"m": "m/sent_transport-rideshare.mp3"
+},
+"word:transport-bus-fare": {
+"f": "f/word_transport-bus-fare.mp3",
+"m": "m/word_transport-bus-fare.mp3"
+},
+"sent:transport-bus-fare": {
+"f": "f/sent_transport-bus-fare.mp3",
+"m": "m/sent_transport-bus-fare.mp3"
+},
+"word:transport-parking-meter": {
+"f": "f/word_transport-parking-meter.mp3",
+"m": "m/word_transport-parking-meter.mp3"
+},
+"sent:transport-parking-meter": {
+"f": "f/sent_transport-parking-meter.mp3",
+"m": "m/sent_transport-parking-meter.mp3"
+},
+"word:phone-smartphone": {
+"f": "f/word_phone-smartphone.mp3",
+"m": "m/word_phone-smartphone.mp3"
+},
+"sent:phone-smartphone": {
+"f": "f/sent_phone-smartphone.mp3",
+"m": "m/sent_phone-smartphone.mp3"
+},
+"word:phone-charger": {
+"f": "f/word_phone-charger.mp3",
+"m": "m/word_phone-charger.mp3"
+},
+"sent:phone-charger": {
+"f": "f/sent_phone-charger.mp3",
+"m": "m/sent_phone-charger.mp3"
+},
+"word:phone-battery": {
+"f": "f/word_phone-battery.mp3",
+"m": "m/word_phone-battery.mp3"
+},
+"sent:phone-battery": {
+"f": "f/sent_phone-battery.mp3",
+"m": "m/sent_phone-battery.mp3"
+},
+"word:phone-screen": {
+"f": "f/word_phone-screen.mp3",
+"m": "m/word_phone-screen.mp3"
+},
+"sent:phone-screen": {
+"f": "f/sent_phone-screen.mp3",
+"m": "m/sent_phone-screen.mp3"
+},
+"word:phone-password": {
+"f": "f/word_phone-password.mp3",
+"m": "m/word_phone-password.mp3"
+},
+"sent:phone-password": {
+"f": "f/sent_phone-password.mp3",
+"m": "m/sent_phone-password.mp3"
+},
+"word:phone-wi-fi": {
+"f": "f/word_phone-wi-fi.mp3",
+"m": "m/word_phone-wi-fi.mp3"
+},
+"sent:phone-wi-fi": {
+"f": "f/sent_phone-wi-fi.mp3",
+"m": "m/sent_phone-wi-fi.mp3"
+},
+"word:phone-hotspot": {
+"f": "f/word_phone-hotspot.mp3",
+"m": "m/word_phone-hotspot.mp3"
+},
+"sent:phone-hotspot": {
+"f": "f/sent_phone-hotspot.mp3",
+"m": "m/sent_phone-hotspot.mp3"
+},
+"word:phone-signal": {
+"f": "f/word_phone-signal.mp3",
+"m": "m/word_phone-signal.mp3"
+},
+"sent:phone-signal": {
+"f": "f/sent_phone-signal.mp3",
+"m": "m/sent_phone-signal.mp3"
+},
+"word:phone-app": {
+"f": "f/word_phone-app.mp3",
+"m": "m/word_phone-app.mp3"
+},
+"sent:phone-app": {
+"f": "f/sent_phone-app.mp3",
+"m": "m/sent_phone-app.mp3"
+},
+"word:phone-browser": {
+"f": "f/word_phone-browser.mp3",
+"m": "m/word_phone-browser.mp3"
+},
+"sent:phone-browser": {
+"f": "f/sent_phone-browser.mp3",
+"m": "m/sent_phone-browser.mp3"
+},
+"word:phone-download": {
+"f": "f/word_phone-download.mp3",
+"m": "m/word_phone-download.mp3"
+},
+"sent:phone-download": {
+"f": "f/sent_phone-download.mp3",
+"m": "m/sent_phone-download.mp3"
+},
+"word:phone-upload": {
+"f": "f/word_phone-upload.mp3",
+"m": "m/word_phone-upload.mp3"
+},
+"sent:phone-upload": {
+"f": "f/sent_phone-upload.mp3",
+"m": "m/sent_phone-upload.mp3"
+},
+"word:phone-data-plan": {
+"f": "f/word_phone-data-plan.mp3",
+"m": "m/word_phone-data-plan.mp3"
+},
+"sent:phone-data-plan": {
+"f": "f/sent_phone-data-plan.mp3",
+"m": "m/sent_phone-data-plan.mp3"
+},
+"word:phone-mobile-data": {
+"f": "f/word_phone-mobile-data.mp3",
+"m": "m/word_phone-mobile-data.mp3"
+},
+"sent:phone-mobile-data": {
+"f": "f/sent_phone-mobile-data.mp3",
+"m": "m/sent_phone-mobile-data.mp3"
+},
+"word:phone-sim-card": {
+"f": "f/word_phone-sim-card.mp3",
+"m": "m/word_phone-sim-card.mp3"
+},
+"sent:phone-sim-card": {
+"f": "f/sent_phone-sim-card.mp3",
+"m": "m/sent_phone-sim-card.mp3"
+},
+"word:phone-voicemail": {
+"f": "f/word_phone-voicemail.mp3",
+"m": "m/word_phone-voicemail.mp3"
+},
+"sent:phone-voicemail": {
+"f": "f/sent_phone-voicemail.mp3",
+"m": "m/sent_phone-voicemail.mp3"
+},
+"word:phone-text-message": {
+"f": "f/word_phone-text-message.mp3",
+"m": "m/word_phone-text-message.mp3"
+},
+"sent:phone-text-message": {
+"f": "f/sent_phone-text-message.mp3",
+"m": "m/sent_phone-text-message.mp3"
+},
+"word:phone-missed-call": {
+"f": "f/word_phone-missed-call.mp3",
+"m": "m/word_phone-missed-call.mp3"
+},
+"sent:phone-missed-call": {
+"f": "f/sent_phone-missed-call.mp3",
+"m": "m/sent_phone-missed-call.mp3"
+},
+"word:phone-contact": {
+"f": "f/word_phone-contact.mp3",
+"m": "m/word_phone-contact.mp3"
+},
+"sent:phone-contact": {
+"f": "f/sent_phone-contact.mp3",
+"m": "m/sent_phone-contact.mp3"
+},
+"word:phone-ringtone": {
+"f": "f/word_phone-ringtone.mp3",
+"m": "m/word_phone-ringtone.mp3"
+},
+"sent:phone-ringtone": {
+"f": "f/sent_phone-ringtone.mp3",
+"m": "m/sent_phone-ringtone.mp3"
+},
+"word:phone-settings": {
+"f": "f/word_phone-settings.mp3",
+"m": "m/word_phone-settings.mp3"
+},
+"sent:phone-settings": {
+"f": "f/sent_phone-settings.mp3",
+"m": "m/sent_phone-settings.mp3"
+},
+"word:phone-username": {
+"f": "f/word_phone-username.mp3",
+"m": "m/word_phone-username.mp3"
+},
+"sent:phone-username": {
+"f": "f/sent_phone-username.mp3",
+"m": "m/sent_phone-username.mp3"
+},
+"word:phone-microphone": {
+"f": "f/word_phone-microphone.mp3",
+"m": "m/word_phone-microphone.mp3"
+},
+"sent:phone-microphone": {
+"f": "f/sent_phone-microphone.mp3",
+"m": "m/sent_phone-microphone.mp3"
+},
+"word:phone-headphones": {
+"f": "f/word_phone-headphones.mp3",
+"m": "m/word_phone-headphones.mp3"
+},
+"sent:phone-headphones": {
+"f": "f/sent_phone-headphones.mp3",
+"m": "m/sent_phone-headphones.mp3"
+},
+"word:phone-video-call": {
+"f": "f/word_phone-video-call.mp3",
+"m": "m/word_phone-video-call.mp3"
+},
+"sent:phone-video-call": {
+"f": "f/sent_phone-video-call.mp3",
+"m": "m/sent_phone-video-call.mp3"
+},
+"word:bank-account": {
+"f": "f/word_bank-account.mp3",
+"m": "m/word_bank-account.mp3"
+},
+"sent:bank-account": {
+"f": "f/sent_bank-account.mp3",
+"m": "m/sent_bank-account.mp3"
+},
+"word:bank-atm": {
+"f": "f/word_bank-atm.mp3",
+"m": "m/word_bank-atm.mp3"
+},
+"sent:bank-atm": {
+"f": "f/sent_bank-atm.mp3",
+"m": "m/sent_bank-atm.mp3"
+},
+"word:bank-withdrawal": {
+"f": "f/word_bank-withdrawal.mp3",
+"m": "m/word_bank-withdrawal.mp3"
+},
+"sent:bank-withdrawal": {
+"f": "f/sent_bank-withdrawal.mp3",
+"m": "m/sent_bank-withdrawal.mp3"
+},
+"word:bank-balance": {
+"f": "f/word_bank-balance.mp3",
+"m": "m/word_bank-balance.mp3"
+},
+"sent:bank-balance": {
+"f": "f/sent_bank-balance.mp3",
+"m": "m/sent_bank-balance.mp3"
+},
+"word:bank-bank-transfer": {
+"f": "f/word_bank-bank-transfer.mp3",
+"m": "m/word_bank-bank-transfer.mp3"
+},
+"sent:bank-bank-transfer": {
+"f": "f/sent_bank-bank-transfer.mp3",
+"m": "m/sent_bank-bank-transfer.mp3"
+},
+"word:bank-bank-fee": {
+"f": "f/word_bank-bank-fee.mp3",
+"m": "m/word_bank-bank-fee.mp3"
+},
+"sent:bank-bank-fee": {
+"f": "f/sent_bank-bank-fee.mp3",
+"m": "m/sent_bank-bank-fee.mp3"
+},
+"word:bank-exchange-rate": {
+"f": "f/word_bank-exchange-rate.mp3",
+"m": "m/word_bank-exchange-rate.mp3"
+},
+"sent:bank-exchange-rate": {
+"f": "f/sent_bank-exchange-rate.mp3",
+"m": "m/sent_bank-exchange-rate.mp3"
+},
+"word:bank-loan": {
+"f": "f/word_bank-loan.mp3",
+"m": "m/word_bank-loan.mp3"
+},
+"sent:bank-loan": {
+"f": "f/sent_bank-loan.mp3",
+"m": "m/sent_bank-loan.mp3"
+},
+"word:bank-interest": {
+"f": "f/word_bank-interest.mp3",
+"m": "m/word_bank-interest.mp3"
+},
+"sent:bank-interest": {
+"f": "f/sent_bank-interest.mp3",
+"m": "m/sent_bank-interest.mp3"
+},
+"word:bank-statement": {
+"f": "f/word_bank-statement.mp3",
+"m": "m/word_bank-statement.mp3"
+},
+"sent:bank-statement": {
+"f": "f/sent_bank-statement.mp3",
+"m": "m/sent_bank-statement.mp3"
+},
+"word:bank-pin": {
+"f": "f/word_bank-pin.mp3",
+"m": "m/word_bank-pin.mp3"
+},
+"sent:bank-pin": {
+"f": "f/sent_bank-pin.mp3",
+"m": "m/sent_bank-pin.mp3"
+},
+"word:bank-branch": {
+"f": "f/word_bank-branch.mp3",
+"m": "m/word_bank-branch.mp3"
+},
+"sent:bank-branch": {
+"f": "f/sent_bank-branch.mp3",
+"m": "m/sent_bank-branch.mp3"
+},
+"word:bank-teller": {
+"f": "f/word_bank-teller.mp3",
+"m": "m/word_bank-teller.mp3"
+},
+"sent:bank-teller": {
+"f": "f/sent_bank-teller.mp3",
+"m": "m/sent_bank-teller.mp3"
+},
+"word:bank-check": {
+"f": "f/word_bank-check.mp3",
+"m": "m/word_bank-check.mp3"
+},
+"sent:bank-check": {
+"f": "f/sent_bank-check.mp3",
+"m": "m/sent_bank-check.mp3"
+},
+"word:bank-savings-account": {
+"f": "f/word_bank-savings-account.mp3",
+"m": "m/word_bank-savings-account.mp3"
+},
+"sent:bank-savings-account": {
+"f": "f/sent_bank-savings-account.mp3",
+"m": "m/sent_bank-savings-account.mp3"
+},
+"word:bank-current-account": {
+"f": "f/word_bank-current-account.mp3",
+"m": "m/word_bank-current-account.mp3"
+},
+"sent:bank-current-account": {
+"f": "f/sent_bank-current-account.mp3",
+"m": "m/sent_bank-current-account.mp3"
+},
+"word:bank-mortgage": {
+"f": "f/word_bank-mortgage.mp3",
+"m": "m/word_bank-mortgage.mp3"
+},
+"sent:bank-mortgage": {
+"f": "f/sent_bank-mortgage.mp3",
+"m": "m/sent_bank-mortgage.mp3"
+},
+"word:bank-currency": {
+"f": "f/word_bank-currency.mp3",
+"m": "m/word_bank-currency.mp3"
+},
+"sent:bank-currency": {
+"f": "f/sent_bank-currency.mp3",
+"m": "m/sent_bank-currency.mp3"
+},
+"word:bank-coin": {
+"f": "f/word_bank-coin.mp3",
+"m": "m/word_bank-coin.mp3"
+},
+"sent:bank-coin": {
+"f": "f/sent_bank-coin.mp3",
+"m": "m/sent_bank-coin.mp3"
+},
+"word:bank-banknote": {
+"f": "f/word_bank-banknote.mp3",
+"m": "m/word_bank-banknote.mp3"
+},
+"sent:bank-banknote": {
+"f": "f/sent_bank-banknote.mp3",
+"m": "m/sent_bank-banknote.mp3"
+},
+"word:bank-online-banking": {
+"f": "f/word_bank-online-banking.mp3",
+"m": "m/word_bank-online-banking.mp3"
+},
+"sent:bank-online-banking": {
+"f": "f/sent_bank-online-banking.mp3",
+"m": "m/sent_bank-online-banking.mp3"
+},
+"word:bank-transaction": {
+"f": "f/word_bank-transaction.mp3",
+"m": "m/word_bank-transaction.mp3"
+},
+"sent:bank-transaction": {
+"f": "f/sent_bank-transaction.mp3",
+"m": "m/sent_bank-transaction.mp3"
+},
+"word:bank-transfer-limit": {
+"f": "f/word_bank-transfer-limit.mp3",
+"m": "m/word_bank-transfer-limit.mp3"
+},
+"sent:bank-transfer-limit": {
+"f": "f/sent_bank-transfer-limit.mp3",
+"m": "m/sent_bank-transfer-limit.mp3"
+},
+"word:bank-cash-withdrawal": {
+"f": "f/word_bank-cash-withdrawal.mp3",
+"m": "m/word_bank-cash-withdrawal.mp3"
+},
+"sent:bank-cash-withdrawal": {
+"f": "f/sent_bank-cash-withdrawal.mp3",
+"m": "m/sent_bank-cash-withdrawal.mp3"
+},
+"word:bank-account-holder": {
+"f": "f/word_bank-account-holder.mp3",
+"m": "m/word_bank-account-holder.mp3"
+},
+"sent:bank-account-holder": {
+"f": "f/sent_bank-account-holder.mp3",
+"m": "m/sent_bank-account-holder.mp3"
+},
+"word:emergency-emergency": {
+"f": "f/word_emergency-emergency.mp3",
+"m": "m/word_emergency-emergency.mp3"
+},
+"sent:emergency-emergency": {
+"f": "f/sent_emergency-emergency.mp3",
+"m": "m/sent_emergency-emergency.mp3"
+},
+"word:emergency-ambulance": {
+"f": "f/word_emergency-ambulance.mp3",
+"m": "m/word_emergency-ambulance.mp3"
+},
+"sent:emergency-ambulance": {
+"f": "f/sent_emergency-ambulance.mp3",
+"m": "m/sent_emergency-ambulance.mp3"
+},
+"word:emergency-firefighter": {
+"f": "f/word_emergency-firefighter.mp3",
+"m": "m/word_emergency-firefighter.mp3"
+},
+"sent:emergency-firefighter": {
+"f": "f/sent_emergency-firefighter.mp3",
+"m": "m/sent_emergency-firefighter.mp3"
+},
+"word:emergency-police-officer": {
+"f": "f/word_emergency-police-officer.mp3",
+"m": "m/word_emergency-police-officer.mp3"
+},
+"sent:emergency-police-officer": {
+"f": "f/sent_emergency-police-officer.mp3",
+"m": "m/sent_emergency-police-officer.mp3"
+},
+"word:emergency-fire-extinguisher": {
+"f": "f/word_emergency-fire-extinguisher.mp3",
+"m": "m/word_emergency-fire-extinguisher.mp3"
+},
+"sent:emergency-fire-extinguisher": {
+"f": "f/sent_emergency-fire-extinguisher.mp3",
+"m": "m/sent_emergency-fire-extinguisher.mp3"
+},
+"word:emergency-first-aid": {
+"f": "f/word_emergency-first-aid.mp3",
+"m": "m/word_emergency-first-aid.mp3"
+},
+"sent:emergency-first-aid": {
+"f": "f/sent_emergency-first-aid.mp3",
+"m": "m/sent_emergency-first-aid.mp3"
+},
+"word:emergency-help-line": {
+"f": "f/word_emergency-help-line.mp3",
+"m": "m/word_emergency-help-line.mp3"
+},
+"sent:emergency-help-line": {
+"f": "f/sent_emergency-help-line.mp3",
+"m": "m/sent_emergency-help-line.mp3"
+},
+"word:emergency-danger": {
+"f": "f/word_emergency-danger.mp3",
+"m": "m/word_emergency-danger.mp3"
+},
+"sent:emergency-danger": {
+"f": "f/sent_emergency-danger.mp3",
+"m": "m/sent_emergency-danger.mp3"
+},
+"word:emergency-missing-person": {
+"f": "f/word_emergency-missing-person.mp3",
+"m": "m/word_emergency-missing-person.mp3"
+},
+"sent:emergency-missing-person": {
+"f": "f/sent_emergency-missing-person.mp3",
+"m": "m/sent_emergency-missing-person.mp3"
+},
+"word:emergency-accident": {
+"f": "f/word_emergency-accident.mp3",
+"m": "m/word_emergency-accident.mp3"
+},
+"sent:emergency-accident": {
+"f": "f/sent_emergency-accident.mp3",
+"m": "m/sent_emergency-accident.mp3"
+},
+"word:emergency-fire": {
+"f": "f/word_emergency-fire.mp3",
+"m": "m/word_emergency-fire.mp3"
+},
+"sent:emergency-fire": {
+"f": "f/sent_emergency-fire.mp3",
+"m": "m/sent_emergency-fire.mp3"
+},
+"word:emergency-flood": {
+"f": "f/word_emergency-flood.mp3",
+"m": "m/word_emergency-flood.mp3"
+},
+"sent:emergency-flood": {
+"f": "f/sent_emergency-flood.mp3",
+"m": "m/sent_emergency-flood.mp3"
+},
+"word:emergency-earthquake": {
+"f": "f/word_emergency-earthquake.mp3",
+"m": "m/word_emergency-earthquake.mp3"
+},
+"sent:emergency-earthquake": {
+"f": "f/sent_emergency-earthquake.mp3",
+"m": "m/sent_emergency-earthquake.mp3"
+},
+"word:emergency-storm": {
+"f": "f/word_emergency-storm.mp3",
+"m": "m/word_emergency-storm.mp3"
+},
+"sent:emergency-storm": {
+"f": "f/sent_emergency-storm.mp3",
+"m": "m/sent_emergency-storm.mp3"
+},
+"word:emergency-shelter": {
+"f": "f/word_emergency-shelter.mp3",
+"m": "m/word_emergency-shelter.mp3"
+},
+"sent:emergency-shelter": {
+"f": "f/sent_emergency-shelter.mp3",
+"m": "m/sent_emergency-shelter.mp3"
+},
+"word:emergency-rescue": {
+"f": "f/word_emergency-rescue.mp3",
+"m": "m/word_emergency-rescue.mp3"
+},
+"sent:emergency-rescue": {
+"f": "f/sent_emergency-rescue.mp3",
+"m": "m/sent_emergency-rescue.mp3"
+},
+"word:emergency-emergency-exit": {
+"f": "f/word_emergency-emergency-exit.mp3",
+"m": "m/word_emergency-emergency-exit.mp3"
+},
+"sent:emergency-emergency-exit": {
+"f": "f/sent_emergency-emergency-exit.mp3",
+"m": "m/sent_emergency-emergency-exit.mp3"
+},
+"word:emergency-hotline": {
+"f": "f/word_emergency-hotline.mp3",
+"m": "m/word_emergency-hotline.mp3"
+},
+"sent:emergency-hotline": {
+"f": "f/sent_emergency-hotline.mp3",
+"m": "m/sent_emergency-hotline.mp3"
+},
+"word:emergency-location": {
+"f": "f/word_emergency-location.mp3",
+"m": "m/word_emergency-location.mp3"
+},
+"sent:emergency-location": {
+"f": "f/sent_emergency-location.mp3",
+"m": "m/sent_emergency-location.mp3"
+},
+"word:emergency-safety": {
+"f": "f/word_emergency-safety.mp3",
+"m": "m/word_emergency-safety.mp3"
+},
+"sent:emergency-safety": {
+"f": "f/sent_emergency-safety.mp3",
+"m": "m/sent_emergency-safety.mp3"
+},
+"word:emergency-injured-person": {
+"f": "f/word_emergency-injured-person.mp3",
+"m": "m/word_emergency-injured-person.mp3"
+},
+"sent:emergency-injured-person": {
+"f": "f/sent_emergency-injured-person.mp3",
+"m": "m/sent_emergency-injured-person.mp3"
+},
+"word:emergency-theft": {
+"f": "f/word_emergency-theft.mp3",
+"m": "m/word_emergency-theft.mp3"
+},
+"sent:emergency-theft": {
+"f": "f/sent_emergency-theft.mp3",
+"m": "m/sent_emergency-theft.mp3"
+},
+"word:emergency-smoke-alarm": {
+"f": "f/word_emergency-smoke-alarm.mp3",
+"m": "m/word_emergency-smoke-alarm.mp3"
+},
+"sent:emergency-smoke-alarm": {
+"f": "f/sent_emergency-smoke-alarm.mp3",
+"m": "m/sent_emergency-smoke-alarm.mp3"
+},
+"word:emergency-power-outage": {
+"f": "f/word_emergency-power-outage.mp3",
+"m": "m/word_emergency-power-outage.mp3"
+},
+"sent:emergency-power-outage": {
+"f": "f/sent_emergency-power-outage.mp3",
+"m": "m/sent_emergency-power-outage.mp3"
+},
+"word:emergency-rescue-team": {
+"f": "f/word_emergency-rescue-team.mp3",
+"m": "m/word_emergency-rescue-team.mp3"
+},
+"sent:emergency-rescue-team": {
+"f": "f/sent_emergency-rescue-team.mp3",
+"m": "m/sent_emergency-rescue-team.mp3"
 }
 }
