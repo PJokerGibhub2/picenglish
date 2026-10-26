@@ -28,6 +28,7 @@ const DEFAULTS = {
   dialogues: {},            // dlgId -> {lineIndex, completed, plays, bestScore, lastPlayed}
   listening: {},            // lessonId -> { completed, bestPercent, lastPlayed }
   shadow: {},               // lessonId -> { best: { lineIdx: pct }, passed: [lineIdx] }
+  progress: {},             // mode -> lessonId -> { line, bestPercent, updatedAt }
   placement: null,          // ผลวัดระดับล่าสุด เก็บในเครื่อง
   xp: 0,                    // แต้มประสบการณ์รวม
   stats: {},                // id -> {seen, correct, wrong, last}

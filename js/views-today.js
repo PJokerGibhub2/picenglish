@@ -1,4 +1,4 @@
-/**
+﻿/**
  * views-today.js — หน้าแรก "วันนี้"
  *
  * หลักคิด: เปิดแอปมาแล้วต้องรู้ทันทีว่า "วันนี้ทำอะไร 5 นาที"
@@ -9,6 +9,7 @@ import { db } from './data.js';
 import * as store from './store.js';
 import { h, mount } from './ui.js';
 import { mascot, MASCOT_NAME } from './mascot.js';
+import { continuePoint } from './progress.js';
 
 const WEEK_GOAL = 15;   // เป้าประโยคที่พูดต่อสัปดาห์
 
@@ -97,6 +98,20 @@ export function today(root) {
     root.appendChild(h('div', { class: 'today-hero' },
       mascot(allDone ? 'celebrate' : doneCount > 0 ? 'happy' : 'idle', 116),
       h('div', { class: 'speech', text: speech })));
+
+    const resume = ['listening', 'shadow']
+      .map((mode) => ({ mode, point: continuePoint(mode) }))
+      .filter(({ point }) => point && point.state.status !== 'done')
+      .sort((a, b) => (b.point.state.updatedAt || 0) - (a.point.state.updatedAt || 0))[0];
+    if (resume) {
+      const lesson = db.listening.find((item) => item.id === resume.point.id);
+      if (lesson) root.appendChild(h('button', {
+        class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginTop: '10px' },
+        onclick: () => { location.hash = `#/${resume.mode}?id=${encodeURIComponent(lesson.id)}&line=${resume.point.line}`; },
+      }, h('div', { class: 'thumb', text: '▶' }), h('div', { class: 'lt' },
+        h('b', { text: `▶ เรียนต่อ: ${lesson.title}` }),
+        h('div', { class: 'small muted', text: `บรรทัด ${resume.point.line + 1}/${lesson.transcript.length}` }))));
+    }
 
     if (!store.placement()) root.appendChild(h('button', {
       class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginTop: '10px' },

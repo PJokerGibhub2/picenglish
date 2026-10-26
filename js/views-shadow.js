@@ -8,6 +8,7 @@ import { listenOnce, stopListeningOnce } from './listen-once.js';
 import { micPanel } from './micfallback.js';
 import { playBlob, stopPlayback } from './recorder.js';
 import { sfxMicStart, sfxMicStop, sfxSuccess, sfxSoft } from './sfx.js';
+import { modeOrder, lessonState, savePosition, markComplete, nextLessonId, continuePoint, modeSummary } from './progress.js';
 
 const LEVELS = ['ทั้งหมด', 'A0', 'A1.1', 'A1.2', 'A2.1', 'A2.2'];
 
@@ -25,6 +26,8 @@ export function shadow(root, params = {}) {
   const gradedFailures = new Set();
   let playing = false;
   let alive = true;
+  let advanceTimer = null;
+  if (lesson && params.line !== undefined) lineIdx = Math.max(0, Math.min(lesson.transcript.length - 1, Number(params.line) || 0));
 
   function stopAudio() {
     if (activeAudio) {
@@ -37,6 +40,7 @@ export function shadow(root, params = {}) {
 
   function destroy() {
     alive = false;
+    clearTimeout(advanceTimer);
     stopAudio();
     stopListeningOnce();
     stopPlayback();
@@ -82,31 +86,46 @@ export function shadow(root, params = {}) {
 
   function listing() {
     mount(root);
+    const summary = modeSummary('shadow');
+    const point = continuePoint('shadow');
     root.appendChild(h('div', { class: 'card', style: { marginBottom: '12px' } },
       h('div', { class: 'bold', text: 'พูดตามเจ้าของภาษา ทีละประโยค' }),
       h('div', { class: 'small muted', text: 'ฟังจังหวะประโยค แล้วลองพูดตามในแบบของคุณ' })));
     root.appendChild(h('a', { class: 'btn btn-ghost btn-sm', href: '#/learn', style: { marginBottom: '10px' } }, '← กลับไปหน้าเรียน'));
+    root.appendChild(h('div', { class: 'card', style: { margin: '8px 0 12px' } },
+      h('b', { text: `ผ่านแล้ว ${summary.done}/${summary.total} บท (${summary.percent}%)` }),
+      h('div', { class: 'progress', style: { marginTop: '8px' } }, h('i', { style: { width: `${summary.percent}%` } }))));
+    if (point) {
+      const resumeLesson = db.listening.find((item) => item.id === point.id);
+      if (resumeLesson) root.appendChild(h('button', { class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginBottom: '10px' },
+        onclick: () => { location.hash = `#/shadow?id=${encodeURIComponent(point.id)}&line=${point.line}`; },
+      }, h('div', { class: 'thumb', text: '▶' }), h('div', { class: 'lt' }, h('b', { text: `▶ เรียนต่อ: ${resumeLesson.title}` }),
+        h('div', { class: 'small muted', text: `บรรทัด ${point.line + 1}/${resumeLesson.transcript.length}` }))));
+    }
     const chips = h('div', { class: 'row row-wrap', style: { gap: '6px', margin: '8px 0 14px' } });
     for (const level of LEVELS) chips.appendChild(h('button', {
       class: `pill ${filter === level ? 'on' : ''}`, type: 'button', onclick: () => { filter = level; listing(); },
     }, level));
     root.appendChild(chips);
     const list = h('div', { class: 'list' });
-    db.listening.filter((item) => filter === 'ทั้งหมด' || item.level === filter).forEach((item) => {
+    modeOrder('shadow').map((id) => db.listening.find((item) => item.id === id)).filter((item) => item && (filter === 'ทั้งหมด' || item.level === filter)).forEach((item) => {
       const p = store.shadowProgress(item.id);
+      const state = lessonState('shadow', item.id);
+      const label = state.status === 'done' ? '✓ ผ่าน' : state.status === 'redo' ? '↻ ควรทบทวน' : state.status === 'doing' ? `กำลังเรียน (บรรทัด ${state.lastLine + 1})` : 'ยังไม่เริ่ม';
       list.appendChild(h('button', {
         class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginBottom: '8px' },
-        onclick: () => { location.hash = `#/shadow?id=${encodeURIComponent(item.id)}`; },
+        onclick: () => { location.hash = `#/shadow?id=${encodeURIComponent(item.id)}&line=${state.lastLine}`; },
       }, h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: item.scene || '🗣️' }),
       h('div', { class: 'lt' }, h('b', { text: item.title }),
         h('div', { class: 'small muted', text: `${item.level} · ${item.transcript.length} บรรทัด` }),
-        h('div', { class: 'tiny muted', text: `ผ่านแล้ว ${p.passed.length}/${item.transcript.length}` }))));
+        h('div', { class: 'tiny muted', text: `ผ่านแล้ว ${p.passed.length}/${item.transcript.length} · ${label}` }))));
     });
     root.appendChild(list);
   }
 
   function resetLine(index) {
     lineIdx = Math.max(0, Math.min(index, lesson.transcript.length - 1));
+    savePosition('shadow', lesson.id, lineIdx, currentScore || 0);
     attempts = 0;
     currentScore = null;
     missed = [];
@@ -144,6 +163,7 @@ export function shadow(root, params = {}) {
     currentScore = evaluated.score;
     missed = evaluated.missed;
     store.saveShadowLine(lesson.id, lineIdx, currentScore);
+    savePosition('shadow', lesson.id, lineIdx, currentScore);
     if (currentScore >= (Number(store.settings().passThreshold) || 70)) {
       try { sfxSuccess(); } catch (e) { /* ignore */ }
     } else {
@@ -163,6 +183,10 @@ export function shadow(root, params = {}) {
     const scores = lesson.transcript.map((_, idx) => saved.best[idx]).filter((score) => Number.isFinite(score));
     const average = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
     const passed = saved.passed.length;
+    const isPassed = passed / lesson.transcript.length >= 0.7;
+    markComplete('shadow', lesson.id, average);
+    const nextId = nextLessonId('shadow', lesson.id);
+    const next = nextId && db.listening.find((item) => item.id === nextId);
     const notPassed = lesson.transcript.map((line, idx) => ({ line, idx })).filter(({ idx }) => !saved.passed.includes(idx));
     mount(root);
     root.appendChild(h('div', { class: 'card center' },
@@ -177,11 +201,18 @@ export function shadow(root, params = {}) {
         onclick: () => resetLine(idx),
       }, h('div', { class: 'lt' }, h('b', { class: 'en', text: line.en }), h('div', { class: 'small muted', text: line.th }))));
     }
-    const sameLevel = db.listening.filter((item) => item.level === lesson.level);
-    const next = sameLevel[(sameLevel.findIndex((item) => item.id === lesson.id) + 1) % sameLevel.length];
-    root.appendChild(h('div', { class: 'row', style: { gap: '8px', marginTop: '12px' } },
-      h('button', { class: 'btn btn-primary btn-block', type: 'button', onclick: () => { location.hash = `#/shadow?id=${encodeURIComponent(next.id)}`; } }, 'บทถัดไป'),
-      h('a', { class: 'btn btn-ghost btn-block', href: '#/shadow' }, 'กลับรายการ')));
+    root.appendChild(h('div', { class: 'card center', style: { marginTop: '10px' }, text: isPassed ? 'ผ่านเกณฑ์แล้ว' : '↻ ควรทบทวน · ลองอีกครั้งหรือไปบทถัดไปได้' }));
+    if (isPassed && next) {
+      root.appendChild(h('div', { class: 'small muted center', text: 'กำลังไปบทถัดไป… 2' }));
+      root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { clearTimeout(advanceTimer); advanceTimer = null; } }, 'ยกเลิก / อยู่หน้านี้'));
+      advanceTimer = setTimeout(() => { advanceTimer = null; if (alive) location.hash = `#/shadow?id=${encodeURIComponent(next.id)}`; }, 2000);
+      root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { clearTimeout(advanceTimer); location.hash = `#/shadow?id=${encodeURIComponent(next.id)}`; } }, 'บทถัดไป'));
+    } else if (isPassed && !next) root.appendChild(h('div', { class: 'card center', text: 'จบโหมดแล้ว 🎉' }));
+    else {
+      root.appendChild(h('button', { class: 'btn btn-primary btn-block', type: 'button', onclick: () => { clearTimeout(advanceTimer); location.hash = `#/shadow?id=${encodeURIComponent(lesson.id)}&line=0`; } }, 'ลองอีกครั้ง'));
+      if (next) root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { clearTimeout(advanceTimer); location.hash = `#/shadow?id=${encodeURIComponent(next.id)}`; } }, 'ไปบทถัดไปอยู่ดี'));
+    }
+    root.appendChild(h('a', { class: 'btn btn-ghost btn-block', href: '#/shadow' }, 'กลับรายการ'));
   }
 
   function render() {
@@ -238,6 +269,7 @@ export function shadow(root, params = {}) {
           const threshold = Number(store.settings().passThreshold) || 70;
           const pct = fallbackRated >= 3 ? Math.max(threshold, fallbackRated * 20) : fallbackRated * 20;
           store.saveShadowLine(lesson.id, lineIdx, pct);
+          savePosition('shadow', lesson.id, lineIdx, pct);
           advance();
         },
         nextLabel: 'พูดแล้ว ต่อไป →',
@@ -247,6 +279,6 @@ export function shadow(root, params = {}) {
     root.appendChild(h('div', { class: 'tiny muted center', style: { marginTop: '12px' }, text: 'ฟังและลองใหม่ได้เรื่อย ๆ · ไม่มีการหักคะแนน' }));
   }
 
-  if (lesson) render(); else listing();
+  if (lesson) { savePosition('shadow', lesson.id, lineIdx, 0); render(); } else listing();
   return destroy;
 }

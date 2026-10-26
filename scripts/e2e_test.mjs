@@ -752,6 +752,55 @@ const PAGE_TEST = `(async () => {
   if (backShadowList) { backShadowList.click(); await sleep(300); }
   ok('ความคืบหน้า shadow บันทึกและแสดงผ่านแล้วในรายการ', !!shadowSaved && Array.isArray(shadowSaved.passed) && shadowSaved.passed.length > 0 && document.body.textContent.includes('ผ่านแล้ว'));
 
+  /* ---------- 15) เรียนต่อ + เรียนต่อเนื่อง ---------- */
+  location.hash = '#/listening';
+  await sleep(400);
+  ok('รายการ listening มีการ์ดเรียนต่อ', Array.from(document.querySelectorAll('#view button')).some((b) => b.textContent.includes('เรียนต่อ:')));
+  const lessonData = await (await fetch('/data/listening.json')).json();
+  const lessonRows = Array.isArray(lessonData) ? lessonData : lessonData.lessons;
+  const resumeLesson = lessonRows[0];
+    location.hash = '#/listening?id=' + encodeURIComponent(resumeLesson.id) + '&line=1&fast=1';
+  await sleep(350);
+    ok('เปิด listening ด้วย line=1 แล้วแสดงบรรทัด 2/', document.body.textContent.includes('บรรทัด 2/' + resumeLesson.transcript.length));
+
+  const autoLesson = lessonRows[Math.min(2, lessonRows.length - 1)];
+    location.hash = '#/listening?id=' + encodeURIComponent(autoLesson.id) + '&fast=1';
+  await sleep(350);
+  const autoStart = findByText('เริ่มฟัง');
+  if (autoStart) autoStart.click();
+  await sleep(80);
+  const autoQuestions = findByText('ไปตอบคำถาม');
+  if (autoQuestions) autoQuestions.click();
+  await sleep(80);
+  for (const q of autoLesson.questions) {
+    const optionButtons = Array.from(document.querySelectorAll('#view button')).filter((button) => /^[A-D]\\. /.test(button.textContent.trim()));
+    if (optionButtons[q.answer]) optionButtons[q.answer].click();
+    await sleep(40);
+    const nextQuestion = findByText('ข้อต่อไป') || findByText('ดูถอดความ');
+    if (nextQuestion) nextQuestion.click();
+    await sleep(50);
+  }
+  const collectWords = findByText('ไปเก็บคำ');
+  if (collectWords) collectWords.click();
+  await sleep(60);
+  const showListeningSummary = findByText('ดูสรุป');
+  if (showListeningSummary) showListeningSummary.click();
+  await sleep(100);
+  ok('ผ่าน listening แล้วแสดงสรุปและทางไปบทถัดไป', document.body.textContent.includes('ฟังได้') && (document.body.textContent.includes('บทถัดไป') || document.body.textContent.includes('กำลังไปบทถัดไป')));
+  const beforeAutoId = new URLSearchParams(location.hash.split('?')[1] || '').get('id');
+  await sleep(2500);
+  const afterAutoId = new URLSearchParams(location.hash.split('?')[1] || '').get('id');
+    ok('ระบบพาไปบทถัดไปโดยอัตโนมัติ', beforeAutoId === autoLesson.id && !!afterAutoId && afterAutoId !== beforeAutoId, beforeAutoId + ' → ' + afterAutoId);
+  location.hash = '#/listening';
+  await sleep(350);
+  ok('รายการแสดงสถานะผ่านและเปอร์เซ็นต์โหมด', document.body.textContent.includes('✓ ผ่าน') && document.body.textContent.includes('%'));
+  location.hash = '#/today';
+  await sleep(350);
+  ok('หน้าวันนี้มีการ์ดเรียนต่อเมื่อมีตำแหน่งค้าง', Array.from(document.querySelectorAll('#view button')).some((b) => b.textContent.includes('เรียนต่อ:')));
+  location.hash = '#/shadow';
+  await sleep(350);
+  ok('รายการ shadow แสดงสถานะความคืบหน้าที่บันทึกไว้', document.body.textContent.includes('กำลังเรียน') || document.body.textContent.includes('✓ ผ่าน') || document.body.textContent.includes('↻ ควรทบทวน'));
+
   return { results: R, storage: store(), swControlled: !!navigator.serviceWorker.controller };
 })()`;
 

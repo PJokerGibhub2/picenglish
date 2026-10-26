@@ -1,5 +1,5 @@
 ﻿/* PicEnglish service worker — offline-first สำหรับตัวแอป + cache ภาพถ่ายจากคลังฟรี */
-const VERSION = 'v23';
+const VERSION = 'v24';
 const SHELL_CACHE = `picenglish-shell-${VERSION}`;
 const PHOTO_CACHE = `picenglish-photos-${VERSION}`;
 

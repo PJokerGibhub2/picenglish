@@ -5,6 +5,7 @@ import * as store from './store.js';
 import { h, mount, progressBar, toast } from './ui.js';
 import { audioUrl, sayText, stopSpeaking } from './speech.js';
 import { sfxSuccess, sfxSoft } from './sfx.js';
+import { modeOrder, lessonState, savePosition, markComplete, nextLessonId, continuePoint, modeSummary } from './progress.js';
 
 const LEVELS = ['ทั้งหมด', 'A0', 'A1.1', 'A1.2', 'A2.1', 'A2.2'];
 const LEVEL_RATE = { A0: 0.75, 'A1.1': 0.85, 'A1.2': 0.85, 'A2.1': 1, 'A2.2': 1 };
@@ -15,6 +16,7 @@ export function listening(root, params = {}) {
   let filter = 'ทั้งหมด';
   let activeAudio = null;
   let playToken = 0;
+  let advanceTimer = null;
 
   function stopPlayback() {
     playToken += 1;
@@ -53,36 +55,52 @@ export function listening(root, params = {}) {
 
   function listing() {
     mount(root);
+    const summary = modeSummary('listening');
+    const point = continuePoint('listening');
     const placement = store.placement();
     if (placement) root.appendChild(h('div', { class: 'card', style: { marginBottom: '12px' } },
       h('b', { text: `ระดับของคุณ: ${placement.level}` }),
       h('div', { class: 'small muted', text: 'เลือกบทที่เหมาะกับระดับและฝึกได้ตามจังหวะของคุณ' })));
     root.appendChild(h('a', { class: 'btn btn-ghost btn-sm', href: '#/learn', style: { marginBottom: '10px' } }, '← กลับไปหน้าเรียน'));
+    root.appendChild(h('div', { class: 'card', style: { margin: '8px 0 12px' } },
+      h('b', { text: `ผ่านแล้ว ${summary.done}/${summary.total} บท (${summary.percent}%)` }),
+      h('div', { class: 'progress', style: { marginTop: '8px' } }, h('i', { style: { width: `${summary.percent}%` } }))));
+    if (point) {
+      const lesson = db.listening.find((item) => item.id === point.id);
+      if (lesson) root.appendChild(h('button', { class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginBottom: '10px' },
+        onclick: () => { location.hash = `#/listening?id=${encodeURIComponent(point.id)}&line=${point.line}`; },
+      }, h('div', { class: 'thumb', text: '▶' }), h('div', { class: 'lt' },
+        h('b', { text: `▶ เรียนต่อ: ${lesson.title}` }),
+        h('div', { class: 'small muted', text: `บรรทัด ${point.line + 1}/${lesson.transcript.length}` }))));
+    }
     const chips = h('div', { class: 'row row-wrap', style: { gap: '6px', margin: '8px 0 14px' } });
     LEVELS.forEach((level) => chips.appendChild(h('button', {
       class: `pill ${filter === level ? 'on' : ''}`, type: 'button',
       onclick: () => { filter = level; listing(); },
     }, level)));
     root.appendChild(chips);
-    const lessons = db.listening.filter((lesson) => filter === 'ทั้งหมด' || lesson.level === filter);
+    const lessons = modeOrder('listening').map((id) => db.listening.find((lesson) => lesson.id === id)).filter((lesson) => lesson && (filter === 'ทั้งหมด' || lesson.level === filter));
     const list = h('div', { class: 'list' });
     lessons.forEach((lesson) => {
-      const record = store.S.listening[lesson.id];
+      const state = lessonState('listening', lesson.id);
+      const status = state.status === 'done' ? '✓ ผ่าน' : state.status === 'doing' ? `กำลังเรียน (บรรทัด ${state.lastLine + 1})` : state.status === 'redo' ? '↻ ควรทบทวน' : 'ยังไม่เริ่ม';
       list.appendChild(h('button', {
         class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginBottom: '8px' },
-        onclick: () => { location.hash = `#/listening?id=${encodeURIComponent(lesson.id)}`; },
+        onclick: () => { location.hash = `#/listening?id=${encodeURIComponent(lesson.id)}&line=${state.lastLine}`; },
       },
       h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: lesson.scene || '🎧' }),
       h('div', { class: 'lt' },
         h('b', { text: lesson.title }),
         h('div', { class: 'small muted', text: lesson.contextTh }),
-        h('div', { class: 'tiny muted', text: `${lesson.level} · ${lesson.seconds} วินาที · ${lesson.questions.length} คำถาม · ${record && record.completed ? 'จบแล้ว' : 'ยังไม่ทำ'}` }))));
+        h('div', { class: 'tiny muted', text: `${lesson.level} · ${lesson.seconds} วินาที · ${lesson.questions.length} คำถาม · ${status}` }))));
     });
     root.appendChild(list);
   }
 
   function session(lesson) {
-    let step = 0;
+    const requestedLine = params.line === undefined ? null : Math.max(0, Math.min(lesson.transcript.length - 1, Number(params.line) || 0));
+    let step = requestedLine === null || requestedLine === 0 ? 0 : 3;
+    let lineIndex = requestedLine === null ? 0 : requestedLine;
     let questionIndex = 0;
     let answers = [];
     let rate = LEVEL_RATE[lesson.level] || 0.85;
@@ -98,6 +116,8 @@ export function listening(root, params = {}) {
       const earned = lesson.questions.reduce((sum, q, i) => sum + (answers[i] ? (WEIGHT[q.type] || 1) : 0), 0);
       return total ? Math.round(earned / total * 100) : 0;
     }
+
+    savePosition('listening', lesson.id, lineIndex, weightedPercent());
 
     async function playAll() {
       stopPlayback();
@@ -138,6 +158,7 @@ export function listening(root, params = {}) {
 
     function advance() {
       step += 1;
+      savePosition('listening', lesson.id, lineIndex, weightedPercent());
       render();
     }
 
@@ -145,7 +166,7 @@ export function listening(root, params = {}) {
       root.appendChild(h('div', { class: 'row', style: { marginBottom: '8px' } },
         h('a', { class: 'btn btn-ghost btn-sm', href: '#/listening' }, '← รายการ'),
         h('div', { class: 'spacer' }),
-        h('span', { class: 'small muted', text: `ขั้น ${Math.min(step + 1, 6)}/6` })));
+        h('span', { class: 'small muted', text: step === 3 ? `บรรทัด ${lineIndex + 1}/${lesson.transcript.length}` : `ขั้น ${Math.min(step + 1, 6)}/6` })));
       root.appendChild(progressBar(step, 6));
       root.appendChild(h('div', { class: 'section-title', text: lesson.title }));
     }
@@ -197,6 +218,8 @@ export function listening(root, params = {}) {
             style: { marginTop: '8px', textAlign: 'left', ...(chosen !== undefined && correct ? { borderColor: 'var(--teal)', color: 'var(--teal)' } : {}) },
             onclick: () => {
               answers[questionIndex] = index === q.answer;
+              lineIndex = Math.max(0, Math.min(lesson.transcript.length - 1, Number(q.line) || 0));
+              savePosition('listening', lesson.id, lineIndex, weightedPercent());
               if (!answers[questionIndex]) wrongLines.add(q.line || 0);
               if (answers[questionIndex]) sfxSuccess(); else sfxSoft();
               render();
@@ -223,12 +246,13 @@ export function listening(root, params = {}) {
           const el = h('button', {
             class: `card list-item listening-line ${highlighted === index ? 'listening-active' : ''}`, type: 'button',
             style: { width: '100%', textAlign: 'left', marginTop: '8px' },
-            onclick: () => playSingle(index, 0.85),
+            onclick: () => { lineIndex = index; savePosition('listening', lesson.id, lineIndex, weightedPercent()); playSingle(index, 0.85); },
           }, h('div', { class: 'lt' }, h('b', { class: 'en', text: line.en }), h('div', { class: 'small muted', text: line.th })));
           transcript.appendChild(el);
           return el;
         });
         root.appendChild(transcript);
+        if (requestedLine !== null && requestedLine > 0 && transcriptLines[lineIndex]) transcriptLines[lineIndex].scrollIntoView({ block: 'center' });
         root.appendChild(h('button', { class: 'btn btn-primary btn-block', type: 'button', disabled: playing, style: { marginTop: '12px' }, onclick: advance }, 'ไปเก็บคำ'));
       } else if (step === 4) {
         const missed = Array.from(wrongLines).map((line) => ({ key: `listening:${lesson.id}:${line}`, label: lesson.transcript[line] ? lesson.transcript[line].en : '' }));
@@ -250,29 +274,38 @@ export function listening(root, params = {}) {
         root.appendChild(h('button', { class: 'btn btn-primary btn-block', type: 'button', style: { marginTop: '12px' }, onclick: advance }, 'ดูสรุป'));
       } else {
         const percent = weightedPercent();
-        if (!saved) { saved = true; store.bumpListening(lesson.id, percent); }
+        if (!saved) { saved = true; store.bumpListening(lesson.id, percent); markComplete('listening', lesson.id, percent); }
+        const passed = percent >= 60;
         root.appendChild(h('div', { class: 'card center', style: { padding: '22px' } },
           h('div', { class: 'small muted', text: 'ฟังได้' }),
           h('div', { class: 'word-en', text: `${percent}%` }),
           h('div', { class: 'bold', text: `${answers.filter(Boolean).length}/${lesson.questions.length} ข้อที่ตอบถูก` }),
-          h('div', { class: 'small muted', text: percent >= 80 ? 'จับใจความได้ดีมาก ลองฟังซ้ำเพื่อเก็บรายละเอียดอีกนิด' : 'ฝึกฟังซ้ำได้เสมอ ทุกครั้งจะจับคำได้เพิ่มขึ้น' })));
+          h('div', { class: 'small muted', text: passed ? 'ผ่านเงื่อนไขแล้ว เก่งมาก!' : 'ยังไม่ถึงเกณฑ์ 60% ลองทบทวนได้เสมอ' })));
         const reviewWords = Array.from(toReview).map((id) => getWord(id)).filter(Boolean).map((w) => w.word);
         root.appendChild(h('div', { class: 'card', style: { marginTop: '10px' } },
           h('b', { text: 'คำที่ควรทวน' }), h('div', { class: 'small', text: reviewWords.join(' · ') || 'ไม่มีคำค้างทวน' })));
-        const nextLesson = db.listening[db.listening.findIndex((item) => item.id === lesson.id) + 1];
+        const nextId = nextLessonId('listening', lesson.id);
+        const nextLesson = nextId && db.listening.find((item) => item.id === nextId);
         root.appendChild(h('button', { class: 'btn btn-primary btn-block', type: 'button', style: { marginTop: '12px' }, onclick: () => {
           stopPlayback(); location.hash = `#/listening?id=${encodeURIComponent(lesson.id)}&fast=${params.fast === '1' ? '1' : '0'}&run=${Date.now()}`;
         } }, 'ฟังอีกครั้ง'));
-        if (nextLesson) root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { stopPlayback(); location.hash = `#/listening?id=${encodeURIComponent(nextLesson.id)}${params.fast === '1' ? '&fast=1' : ''}`; } }, 'บทถัดไป'));
+        if (passed && nextLesson) {
+          root.appendChild(h('div', { class: 'small muted center', text: 'กำลังไปบทถัดไป… 2' }));
+          root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { clearTimeout(advanceTimer); advanceTimer = null; } }, 'ยกเลิก / อยู่หน้านี้'));
+          advanceTimer = setTimeout(() => { advanceTimer = null; if (nextLesson) location.hash = `#/listening?id=${encodeURIComponent(nextLesson.id)}${params.fast === '1' ? '&fast=1' : ''}`; }, 2000);
+          root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { clearTimeout(advanceTimer); location.hash = `#/listening?id=${encodeURIComponent(nextLesson.id)}${params.fast === '1' ? '&fast=1' : ''}`; } }, 'ไปบทถัดไป'));
+        } else if (passed && !nextLesson) root.appendChild(h('div', { class: 'card center', text: 'จบโหมดแล้ว 🎉' }));
+        else if (nextLesson) root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => { stopPlayback(); location.hash = `#/listening?id=${encodeURIComponent(nextLesson.id)}${params.fast === '1' ? '&fast=1' : ''}`; } }, 'ไปบทถัดไปอยู่ดี'));
+        if (!passed) root.appendChild(h('button', { class: 'btn btn-primary btn-block', type: 'button', onclick: () => { stopPlayback(); location.hash = `#/listening?id=${encodeURIComponent(lesson.id)}&fast=${params.fast === '1' ? '1' : '0'}&run=${Date.now()}`; } }, 'ลองอีกครั้ง'));
         root.appendChild(h('a', { class: 'btn btn-ghost btn-block', href: '#/listening', style: { marginTop: '8px' } }, 'กลับรายการ'));
       }
     }
     render();
-    return () => stopPlayback();
+    return () => { clearTimeout(advanceTimer); stopPlayback(); };
   }
 
   const lesson = params.id && db.listening.find((item) => item.id === params.id);
   if (lesson) return session(lesson);
   listing();
-  return () => stopPlayback();
+  return () => { clearTimeout(advanceTimer); stopPlayback(); };
 }
