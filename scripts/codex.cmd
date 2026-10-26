@@ -13,7 +13,11 @@ setlocal enabledelayedexpansion
 set "ROOT=%~dp0.."
 set "TASK=%~1"
 set "MODEL=%~2"
-if "%MODEL%"=="" set "MODEL=gpt-6.1-sol"
+if "%MODEL%"=="" set "MODEL=gpt-6-luna"
+if /I not "%MODEL%"=="gpt-6-luna" (
+  echo [codex] model override refused: only gpt-6-luna is authorized - using gpt-6-luna
+  set "MODEL=gpt-6-luna"
+)
 if "%TASK%"=="" (
   echo usage: scripts\codex.cmd tasks\TASKFILE.md [model]
   exit /b 2
@@ -38,7 +42,7 @@ if not exist "%CODEX%" set "CODEX=%LOCALAPPDATA%\OpenAI\Codex\bin\2993767bd1dfb0
 echo [codex] task=%NAME% model=%MODEL%
 echo [codex] brief=%TASKFILE%
 "%CODEX%" exec -C "%ROOT%" --approve-for-me --skip-git-repo-check ^
-  -m "%MODEL%" --color never -o "%OUT%" - < "%TASKFILE%" > "%LOG%" 2>&1
+  -m "%MODEL%" -c model_reasoning_effort=high --color never -o "%OUT%" - < "%TASKFILE%" > "%LOG%" 2>&1
 set "RC=%ERRORLEVEL%"
 echo [codex] exit=%RC%
 if exist "%OUT%" echo [codex] result=%OUT%

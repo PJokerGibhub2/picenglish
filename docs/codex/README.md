@@ -1,4 +1,4 @@
-# Codex ↔ ผู้ช่วย (DSH) — ช่องทางส่งงานกัน
+﻿# Codex ↔ ผู้ช่วย (DSH) — ช่องทางส่งงานกัน
 
 โปรเจกต์นี้ให้ **Codex CLI** (ในเครื่องนี้) ทำงานหนักแทนผู้ช่วย แล้วผู้ช่วยตรวจ/ทดสอบ/ปล่อยเวอร์ชันเอง
 
@@ -17,9 +17,13 @@ Codex ทำงานในโฟลเดอร์โปรเจกต์เ�
 ## คำสั่งส่งงาน
 
 ```bat
-scripts\codex.cmd docs\codex\tasks\T1-audio-download.md            :: โมเดลเริ่มต้น gpt-6.1-sol
-scripts\codex.cmd docs\codex\tasks\T2-sentences.md gpt-6-sol       :: ระบุโมเดลเอง
+scripts\codex.cmd docs\codex\tasks\T1-audio-download.md
 ```
+
+### 🔒 นโยบายโมเดล (ห้ามเปลี่ยน)
+เจ้าของโปรเจกต์อนุญาตให้ใช้ **`gpt-6-luna` + `model_reasoning_effort=high` ("Luna High") เท่านั้น**
+`scripts\codex.cmd` ล็อกไว้แล้ว: ถ้าส่งชื่อโมเดลอื่นมาจะถูกปฏิเสธและใช้ `gpt-6-luna` แทน
+ห้ามแก้บรรทัด `-m` / `model_reasoning_effort` ในสคริปต์นี้โดยไม่ได้รับอนุญาตจากเจ้าของโปรเจกต์
 
 - `codex.cmd` จะรัน `codex exec -C <root> --approve-for-me --skip-git-repo-check -m <model> -o <out> -`
 - **เล่นเสียงแจ้งเตือนเมื่อจบ** (สำเร็จ = chime, ล้มเหลว = stop sound)
@@ -46,4 +50,5 @@ scripts\codex.cmd docs\codex\tasks\T2-sentences.md gpt-6-sol       :: ระบ�
 - ล็อกอินผ่าน **ChatGPT account** → โมเดล `gpt-5*` / `codex-mini` ใช้ไม่ได้ (model_not_found)
   ใช้ slug จาก `~\.codex\models_cache.json` เช่น **`gpt-6.1-sol`**, `gpt-6-sol`, `gpt-5.6-sol`, `gpt-6-luna`
 - `-s workspace-write` ใช้ร่วมกับ `--approve-for-me` ไม่ได้ (argument conflict)
+- **โมเดลที่ใช้: gpt-6-luna + effort high เท่านั้น (คำสั่งเจ้าของโปรเจกต์)**
 - โฟลเดอร์โปรเจกต์ถูกเพิ่มใน `~\.codex\config.toml` เป็น `trust_level = "trusted"` แล้ว (สำรองไว้ที่ `config.toml.bak-brandcodex`)

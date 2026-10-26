@@ -214,3 +214,15 @@ falls back to Web Speech, so adding content never breaks audio.
 
 Always re-run the generator after editing `data/words.json` or `data/dialogues.json`,
 and bump `sw.js` VERSION so devices pick the new manifest up.
+## 12. Delegating heavy work to Codex (local CLI)
+
+Heavy tasks may be delegated to the Codex CLI on this machine via
+`scripts\codex.cmd docs\codex\tasks\<id>.md` (briefs in `docs\codex\tasks\`,
+results in `docs\codex\results\`, delivery reports in `docs\codex\inbox\`).
+
+**Model policy — locked by the project owner:** only **`gpt-6-luna`** with
+`model_reasoning_effort=high` ("Luna High") is authorized. The runner enforces this and
+refuses other model names. Never change it without an explicit instruction from the owner.
+
+After Codex delivers: review `git diff`, run `check_imports.mjs` + `e2e_test.mjs`,
+bump `js/version.js` + `sw.js`, then commit/push yourself (Codex must not commit).
