@@ -3,8 +3,8 @@
 import { db } from './data.js';
 import * as store from './store.js';
 
-const MODES = ['listening', 'shadow', 'dialogue', 'chunks'];
-const lessonsFor = (mode) => mode === 'dialogue' ? db.dialogues : mode === 'chunks' ? db.chunks : db.listening;
+const MODES = ['listening', 'shadow', 'dialogue', 'chunks', 'dictation', 'builder'];
+const lessonsFor = (mode) => ['chunks', 'dictation', 'builder'].includes(mode) ? db.chunks : mode === 'dialogue' ? db.dialogues : db.listening;
 const recordFor = (mode) => {
   if (!MODES.includes(mode)) return {};
   if (!store.S.progress || typeof store.S.progress !== 'object') store.S.progress = {};
@@ -19,7 +19,7 @@ export function lessonState(mode, id) {
   const saved = recordFor(mode)[id] || {};
   const legacy = mode === 'listening' ? store.S.listening[id] || {}
     : mode === 'shadow' ? store.S.shadow[id] || {}
-      : store.S.dialogues[id] || {};
+      : mode === 'dialogue' ? store.S.dialogues[id] || {} : {};
   const lineCount = item && (item.transcript || item.lines || []).length || 1;
   let bestPercent = Number(saved.bestPercent) || 0;
   let completed = false;
@@ -42,6 +42,8 @@ export function lessonState(mode, id) {
   } else if (mode === 'dialogue') {
     completed = !!(store.S.dialogues[id] && store.S.dialogues[id].completed);
     lastLine = Number(store.dialogueProgress(id).lineIndex) || lastLine;
+  } else if (mode === 'dictation' || mode === 'builder') {
+    completed = bestPercent >= (Number(store.settings().passThreshold) || 70);
   }
 
   const hasProgress = !!(saved.updatedAt || saved.started || (mode === 'listening' && legacy.lastPlayed) || (mode === 'shadow' && store.S.shadow[id]) || (mode === 'chunks' && store.chunkState(id).updatedAt));
@@ -53,7 +55,7 @@ export function lessonState(mode, id) {
   return { status, lastLine: Math.max(0, Math.min(lineCount - 1, lastLine)), bestPercent, updatedAt: Number(saved.updatedAt || legacy.lastPlayed || 0) };
 }
 
-export function savePosition(mode, id, lineIdx, pct = 0) {
+export function savePosition(mode, id, lineIdx, pct = 0, extra = {}) {
   const data = recordFor(mode);
   const old = data[id] || {};
   data[id] = {
@@ -61,6 +63,7 @@ export function savePosition(mode, id, lineIdx, pct = 0) {
     line: Math.max(0, Math.floor(Number(lineIdx) || 0)),
     bestPercent: Math.max(Number(old.bestPercent) || 0, Math.max(0, Math.min(100, Number(pct) || 0))),
     updatedAt: Date.now(),
+    ...extra,
   };
   store.saveNow();
   return lessonState(mode, id);
@@ -76,6 +79,7 @@ export function markComplete(mode, id, score) {
   else if (mode === 'listening') passed = bestPercent >= 60;
   else if (mode === 'shadow') passed = state.status === 'done';
   else if (mode === 'dialogue') passed = !!(store.S.dialogues[id] && store.S.dialogues[id].completed);
+  else if (mode === 'dictation' || mode === 'builder') passed = bestPercent >= (Number(store.settings().passThreshold) || 70);
   data[id] = { ...old, bestPercent, status: passed ? 'done' : 'redo', updatedAt: Date.now() };
   store.saveNow();
   return lessonState(mode, id);

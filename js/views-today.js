@@ -191,7 +191,14 @@ export function today(root) {
       },
       h('div', { class: 'emoji', text: '🗣️' }),
       h('div', { class: 'cth', text: 'พูดตามเงา' }),
-      h('div', { class: 'cen', text: `${db.listening.length} บท` }))));
+      h('div', { class: 'cen', text: `${db.listening.length} บท` })),
+      h('button', {
+        class: 'cat-card', type: 'button', style: { '--cat': 'var(--teal)' },
+        onclick: () => { location.hash = '#/dictation'; },
+      },
+      h('div', { class: 'emoji', text: '⌨️' }),
+      h('div', { class: 'cth', text: 'ฟังแล้วพิมพ์' }),
+      h('div', { class: 'cen', text: `${db.chunks.length} ประโยค` }))));
 
     // ---------- XP ----------
     root.appendChild(h('div', { class: 'small muted center', style: { marginTop: '16px' },

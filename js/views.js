@@ -159,10 +159,19 @@ export function learn(root, params = {}) {
       h('div', { class: 'lt' }, h('b', { text: 'ฝึกฟัง' }),
         h('div', { class: 'small muted', text: 'บทฟังพร้อมคำถามและถอดความ' })),
       h('span', { class: 'pill', text: `${db.listening.length} บท` })));
+    root.appendChild(h('div', { class: 'section-title', text: 'ฝึกใช้จริง' }));
     root.appendChild(h('a', { href: '#/chunks', class: 'list-item', style: { marginTop: '8px' } },
       h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '💬' }),
       h('div', { class: 'lt' }, h('b', { text: 'ประโยคสำเร็จรูป' }),
         h('div', { class: 'small muted', text: 'เลือกสถานการณ์ ฟังเสียง แล้วฝึกพูดตาม' })),
+      h('span', { class: 'pill', text: `${db.chunks.length} ประโยค` })));
+    root.appendChild(h('a', { href: '#/dictation', class: 'list-item' },
+      h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '⌨️' }),
+      h('div', { class: 'lt' }, h('b', { text: 'ฟังแล้วพิมพ์' }), h('div', { class: 'small muted', text: 'ฟังประโยคแล้วพิมพ์ตามทีละคำ' })),
+      h('span', { class: 'pill', text: `${db.chunks.length} ประโยค` })));
+    root.appendChild(h('a', { href: '#/builder', class: 'list-item', style: { marginTop: '8px' } },
+      h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '🧩' }),
+      h('div', { class: 'lt' }, h('b', { text: 'เรียงประโยค' }), h('div', { class: 'small muted', text: 'เรียงชิปคำให้เป็นประโยคที่ใช้ได้จริง' })),
       h('span', { class: 'pill', text: `${db.chunks.length} ประโยค` })));
     root.appendChild(h('a', { href: '#/shadow', class: 'list-item', style: { marginTop: '8px' } },
       h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '🗣️' }),

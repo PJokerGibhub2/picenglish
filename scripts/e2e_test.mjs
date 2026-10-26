@@ -821,6 +821,73 @@ const PAGE_TEST = `(async () => {
   ok('ทำเครื่องหมาย chunks แล้วแสดง ✓ และความคืบหน้า', document.body.textContent.includes('✓ ใช้ได้แล้ว') && document.body.textContent.includes('ใช้ได้แล้ว 1/150'));
   ok('เมื่อมีความคืบหน้าแสดงการ์ดเรียนต่อ', !!findByText('▶ เรียนต่อ', $('#view')));
 
+  /* ---------- T7) ฟังแล้วพิมพ์ + เรียงประโยค ---------- */
+  const practiceData = await (await fetch('/data/chunks.json')).json();
+  const dictChunk = practiceData.chunks[0];
+  location.hash = '#/dictation';
+  await sleep(350);
+  ok('หน้า dictation แสดงรายการประโยค', $$('#view [data-testid="practice-row"]').length > 0);
+  ok('หน้า dictation มีการ์ดเรียนต่อ', !!findByText('▶ เรียนต่อ', $('#view')));
+  const dictRow = $('#view [data-testid="practice-row"]');
+  if (dictRow) dictRow.click();
+  await sleep(350);
+  ok('ข้อ dictation มีช่องพิมพ์และปุ่มฟัง', !!$('#view [data-testid="dictation-input"]') && !!findByText('▶ ฟัง', $('#view')));
+  const dictInput = $('#view [data-testid="dictation-input"]');
+  if (dictInput) { dictInput.value = 'completely incorrect'; dictInput.dispatchEvent(new Event('input', { bubbles: true })); }
+  const dictCheck = findByText('ตรวจคำตอบ', $('#view'));
+  if (dictCheck) dictCheck.click();
+  await sleep(100);
+  ok('คำตอบ dictation แสดงผลรายคำและคะแนนเปอร์เซ็นต์', $$('#view [data-testid="dictation-result"] .word-result').length > 0 && $('#view [data-testid="dictation-result"]').textContent.includes('%'));
+  ok('คำตอบไม่ผ่านมีปุ่มดูเฉลย', !!findByText('ดูเฉลย', $('#view')));
+  const reveal = findByText('ดูเฉลย', $('#view'));
+  if (reveal) reveal.click();
+  await sleep(80);
+  ok('ดูเฉลยแล้วเห็นประโยคและคำแปลเต็ม', document.body.textContent.includes(dictChunk.en) && document.body.textContent.includes(dictChunk.th));
+  if (dictInput) { dictInput.value = dictChunk.en; dictInput.dispatchEvent(new Event('input', { bubbles: true })); }
+  const checkPass = findByText('ตรวจคำตอบ', $('#view'));
+  if (checkPass) checkPass.click();
+  await sleep(100);
+  const nextPractice = findByText('ข้อถัดไป', $('#view'));
+  ok('คำตอบถึงเกณฑ์มีปุ่มไปข้อถัดไป', !!nextPractice);
+  if (nextPractice) nextPractice.click();
+  await sleep(2300);
+  ok('กดข้อถัดไปแล้วเปิดโจทย์ถัดไปได้', new URLSearchParams(location.hash.split('?')[1] || '').get('id') === practiceData.chunks[1].id);
+  location.hash = '#/dictation';
+  await sleep(350);
+  ok('สถานะ dictation ที่ผ่านถูกบันทึกในรายการ', document.body.textContent.includes('ผ่าน 100%'));
+
+  location.hash = '#/builder';
+  await sleep(350);
+  const builderRow = $('#view [data-testid="practice-row"]');
+  if (builderRow) builderRow.click();
+  await sleep(350);
+  ok('หน้า builder แสดงโจทย์ไทยและชิปคำ', document.body.textContent.includes(dictChunk.th) && $$('#view [data-testid="builder-chip"]').length > 0);
+  const firstChip = $('#view [data-testid="builder-chip"]');
+  if (firstChip) firstChip.click();
+  await sleep(60);
+  ok('แตะชิปแล้วย้ายไปพื้นที่ประกอบประโยค', $$('#view [data-testid="builder-answer"] .pill').length === 1);
+  const checkBuilder = findByText('ตรวจ', $('#view'));
+  if (checkBuilder) checkBuilder.click();
+  await sleep(80);
+  ok('ตรวจ builder ที่ยังเรียงไม่ครบแล้วชี้ตำแหน่งแรก', document.body.textContent.includes('คำที่') && !document.body.textContent.includes(dictChunk.en));
+  const movedChip = $('#view [data-testid="builder-answer"] .pill');
+  if (movedChip) movedChip.click();
+  const expectedBuilderWords = dictChunk.en.trim().split(' ').filter(Boolean);
+  for (const expectedWord of expectedBuilderWords) {
+    const candidate = Array.from(document.querySelectorAll('#view [data-testid="builder-chip"]')).find((button) => button.textContent.toLowerCase().replace(/[.,!?"']/g, '') === expectedWord.toLowerCase().replace(/[.,!?"']/g, ''));
+    if (candidate) candidate.click();
+  }
+  const checkBuilderAgain = findByText('ตรวจ', $('#view'));
+  if (checkBuilderAgain) checkBuilderAgain.click();
+  await sleep(100);
+  ok('ตรวจ builder ที่เรียงครบแล้วแสดงผลถูกต้อง', document.body.textContent.includes('✓ เรียงได้ถูกต้อง'));
+  const builderNext = findByText('ข้อถัดไป', $('#view'));
+  if (builderNext) builderNext.click();
+  await sleep(350);
+  location.hash = '#/builder';
+  await sleep(350);
+  ok('สถานะ builder ที่ผ่านถูกบันทึกในรายการ', document.body.textContent.includes('ผ่าน 100%'));
+
   return { results: R, storage: store(), swControlled: !!navigator.serviceWorker.controller };
 })()`;
 

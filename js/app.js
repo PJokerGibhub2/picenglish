@@ -18,6 +18,8 @@ import { placement } from './views-placement.js';
 import { listening } from './views-listening.js';
 import { shadow } from './views-shadow.js';
 import { chunks } from './views-chunks.js';
+import { dictation } from './views-dictation.js';
+import { builder } from './views-builder.js';
 
 const TITLES = {
   today: 'PicEnglish',
@@ -37,6 +39,8 @@ const TITLES = {
   review: 'ทบทวน (SRS)',
   mine: 'คำของฉัน',
   chunks: 'ประโยคสำเร็จรูป',
+  dictation: 'ฟังแล้วพิมพ์',
+  builder: 'เรียงประโยค',
 };
 
 // เส้นทางทั้งหมด (เพิ่มโหมดฝึกพูดเข้าไปโดยไม่แตะ views เดิม)
@@ -51,13 +55,15 @@ const ROUTES = {
   listening,
   shadow,
   chunks,
+  dictation,
+  builder,
 };
 
 const TABS = ['learn', 'listen', 'speaking', 'review', 'mine'];
 // หน้าที่ถือว่าอยู่ในแท็บ "ฝึกพูด"
 const SPEAKING_PAGES = ['speaking', 'roleplay', 'sentenceReview', 'onemin', 'games', 'quiz', 'match', 'speak', 'shadow', 'chunks'];
 // แท็บที่ควรไฮไลต์เมื่ออยู่หน้าย่อย
-const TAB_OF = { listen: 'learn', games: 'speaking', quiz: 'speaking', match: 'speaking', speak: 'speaking', roleplay: 'speaking', sentenceReview: 'speaking', onemin: 'speaking', shadow: 'speaking', chunks: 'learn' };
+const TAB_OF = { listen: 'learn', games: 'speaking', quiz: 'speaking', match: 'speaking', speak: 'speaking', roleplay: 'speaking', sentenceReview: 'speaking', onemin: 'speaking', shadow: 'speaking', chunks: 'learn', dictation: 'learn', builder: 'learn' };
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('topbar-title');
 const backBtn = document.getElementById('btn-back');
