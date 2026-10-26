@@ -332,6 +332,7 @@ const PAGE_TEST = `(async () => {
   ok('เปิดหน้าตั้งค่าได้', sheetText.includes('ตั้งค่า'));
   ok('มีตัวเลือกเสียงอ่าน', !!$('#sheet-body select'));
   ok('มีปุ่มดาวน์โหลดภาพออฟไลน์', sheetText.includes('ดาวน์โหลดภาพทั้งหมด'));
+  ok('มีแถวดาวน์โหลดเสียงออฟไลน์', !!$('[data-audio-download] button') && sheetText.includes('ดาวน์โหลดเสียงทั้งหมด'));
   ok('มีปุ่มส่งออก/นำเข้า/ล้างข้อมูล', sheetText.includes('ส่งออกข้อมูล') && sheetText.includes('นำเข้าข้อมูล') && sheetText.includes('ล้างความคืบหน้า'));
   const themeSel = $$('#sheet-body select').find((s) => Array.from(s.options).some((o) => o.value === 'dark'));
   if (themeSel) {

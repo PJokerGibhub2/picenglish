@@ -1299,6 +1299,95 @@ function micTestSheet() {
     return h('div', {}, sheetHeader('ตรวจสอบไมโครโฟน', sttSupport().ok ? 'เครื่องนี้ให้คะแนนอัตโนมัติได้' : 'เครื่องนี้ใช้โหมดอัดเสียงเทียบเสียง', close), body);
   }, { id: 'micTest' });
 }
+// เก็บงานเดียวไว้ แม้ปิดแล้วเปิดตั้งค่าใหม่ระหว่างดาวน์โหลด
+let audioDownloadRunning = false;
+let audioDownloadStatus = '';
+let audioDownloadedGender = null;
+let refreshAudioDownload = () => {};
+
+function audioDownloadRow() {
+  const manifestUrl = new URL('../data/audio/manifest.json', import.meta.url);
+  const description = h('div', { class: 'desc', text: 'กำลังอ่านรายการเสียง…' });
+  const status = h('div', { class: 'desc', role: 'status', 'aria-live': 'polite' });
+  const button = h('button', { class: 'btn btn-ghost btn-sm', type: 'button' }, '⬇ ดาวน์โหลด');
+  const row = h('div', { class: 'field', dataset: { audioDownload: '' } },
+    h('div', {}, h('label', { text: 'ดาวน์โหลดเสียงทั้งหมด' }), description, status), button);
+  const readManifest = async () => {
+    const res = await fetch(manifestUrl, { cache: 'default' });
+    if (!res.ok) throw new Error('manifest');
+    const manifest = await res.json();
+    if (!manifest || Array.isArray(manifest) || typeof manifest !== 'object') throw new Error('manifest');
+    const entries = Object.values(manifest);
+    description.textContent = `${entries.length} คลิป · ประมาณ 3.6 MB — ใช้ฟังได้ตอนไม่มีเน็ต`;
+    return entries;
+  };
+  refreshAudioDownload = () => {
+    button.disabled = audioDownloadRunning;
+    status.textContent = audioDownloadStatus;
+    const gender = S().voiceGender === 'male' ? 'm' : 'f';
+    button.textContent = !audioDownloadRunning && audioDownloadedGender === gender
+      ? '✅ ดาวน์โหลดครบแล้ว' : '⬇ ดาวน์โหลด';
+  };
+  refreshAudioDownload();
+  readManifest().catch(() => { description.textContent = 'ยังอ่านรายการเสียงไม่ได้ — เชื่อมต่ออินเทอร์เน็ตแล้วลองใหม่ได้'; });
+  button.addEventListener('click', async () => {
+    if (audioDownloadRunning) return;
+    audioDownloadRunning = true;
+    audioDownloadedGender = null;
+    audioDownloadStatus = 'กำลังอ่านรายการเสียง…';
+    button.textContent = '⬇ ดาวน์โหลด';
+    refreshAudioDownload();
+    let done = 0;
+    let failed = 0;
+    try {
+      if (!('caches' in window) || !navigator.serviceWorker?.controller) {
+        throw new Error('offline cache unavailable');
+      }
+      // ทดสอบสิทธิ์เก็บแคชก่อนเริ่ม เพื่อไม่รายงานสำเร็จเมื่อเบราว์เซอร์ปิดสิทธิ์ไว้
+      await caches.keys();
+      const gender = S().voiceGender === 'male' ? 'm' : 'f';
+      const entries = await readManifest();
+      if (!entries.length) throw new Error('empty manifest');
+      audioDownloadStatus = `กำลังโหลด 0/${entries.length}…`;
+      refreshAudioDownload();
+      for (const [i, entry] of entries.entries()) {
+        try {
+          const path = typeof entry === 'string' ? entry : entry?.[gender] || entry?.f;
+          if (!path) throw new Error('missing voice');
+          const res = await fetch(new URL(path, manifestUrl), { cache: 'default' });
+          // service worker อาจคืนหน้า HTML สำรองเมื่อเสียงยังไม่อยู่ในแคช
+          if (!res.ok || !/^(audio\/|application\/octet-stream)/i.test(res.headers.get('content-type') || '')) {
+            throw new Error('audio response');
+          }
+          const body = await res.arrayBuffer();
+          if (!body.byteLength) throw new Error('empty audio');
+          done++;
+        } catch (err) { failed++; }
+        audioDownloadStatus = `กำลังโหลด ${i + 1}/${entries.length}…`;
+        refreshAudioDownload();
+        if ((i + 1) % 10 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
+      }
+      if (!done) throw new Error('all downloads failed');
+      if (failed) {
+        audioDownloadStatus = `พลาด ${failed} ไฟล์ — ลองใหม่ได้`;
+        toast(audioDownloadStatus);
+      } else {
+        audioDownloadStatus = `บันทึกเสียงไว้ใช้ออฟไลน์แล้ว ${done} คลิป`;
+        audioDownloadedGender = gender;
+        toast(audioDownloadStatus, 'ok');
+      }
+    } catch (err) {
+      audioDownloadStatus = 'ยังดาวน์โหลดเสียงไม่ได้ — กรุณาเชื่อมต่ออินเทอร์เน็ต เปิดแอปใหม่ แล้วลองอีกครั้ง';
+      if (failed) audioDownloadStatus += ` (พลาด ${failed} ไฟล์ — ลองใหม่ได้)`;
+      toast(audioDownloadStatus);
+    } finally {
+      audioDownloadRunning = false;
+      refreshAudioDownload();
+    }
+  });
+  return row;
+}
+
 export function openSettings(onChange) {
   openSheet((close) => {
     const box = h('div', {});
@@ -1382,6 +1471,9 @@ export function openSettings(onChange) {
           sel.value = S().voiceGender || 'male';
           sel.onchange = () => {
             store.setSetting('voiceGender', sel.value);
+            audioDownloadedGender = null;
+            if (!audioDownloadRunning) audioDownloadStatus = '';
+            refreshAudioDownload();
             store.setSetting('voiceURI', '');
             fillVoices();
             say('Hi, I will be your English voice. Let us practice together.', { rate: S().rate, gender: sel.value, voiceURI: '' });
@@ -1389,6 +1481,7 @@ export function openSettings(onChange) {
           };
           return sel;
         })()),
+      audioDownloadRow(),
       h('div', { class: 'field' },
         h('div', {}, h('label', { text: 'เสียงอ่านภาษาอังกฤษ' }), h('div', { class: 'desc', text: 'ถ้าเสียงไม่ถูกต้อง ให้ติดตั้งเสียงใหม่ในระบบปฏิบัติการ' })),
         h('div', { class: 'row', style: { gap: '6px' } },
