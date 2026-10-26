@@ -7,6 +7,7 @@ import { views, openSettings } from './views.js';
 import { speakingHub, roleplay, sentenceReview, oneMinute } from './views-speaking.js';
 import { today } from './views-today.js';
 import { inAppBanner } from './openinbrowser.js';
+import { setPlaybackVolume } from './speech.js';
 import { VERSION as APP_VERSION, BUILD_DATE } from './version.js';
 import { h, mount, toast, emptyState } from './ui.js';
 import * as store from './store.js';
@@ -66,6 +67,10 @@ let pendingRefresh = false;
 let started = false;
 
 /* ---------------- ธีม ---------------- */
+function applyVolume() {
+  try { setPlaybackVolume(store.settings().volume); } catch (e) { /* ignore */ }
+}
+
 function applyTheme() {
   const mode = store.settings().theme;
   const dark = mode === 'dark'
@@ -160,6 +165,7 @@ document.addEventListener('sheet:closed', (e) => {
   if (id === 'settings' && pendingRefresh) {
     pendingRefresh = false;
     applyTheme();
+    applyVolume();
     route();
   }
 });
@@ -231,6 +237,7 @@ function showUpdateBar(serverVer) {
 /* ---------------- เริ่มต้น ---------------- */
 async function main() {
   applyTheme();
+  applyVolume();
   try {
     await loadAll();
   } catch (err) {

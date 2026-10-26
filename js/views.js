@@ -11,7 +11,7 @@ import {
 } from './ui.js';
 import {
   speak, stopSpeaking, sayText, speakSentence, renderSentence, clearHighlight, loadVoices,
-  englishVoices, sttSupported, sttSupport, sttErrorReason, sttSelfTest, inAppBrowser, createRecognizer, alignWords,
+  englishVoices, sttSupported, sttSupport, sttErrorReason, sttSelfTest, inAppBrowser, createRecognizer, alignWords, setPlaybackVolume,
 } from './speech.js';
 import { micPanel } from './micfallback.js';
 import { sfxTap } from './sfx.js';
@@ -1486,6 +1486,24 @@ export function openSettings(onChange) {
             onChange && onChange();
           };
           return sel;
+        })()),
+      h('div', { class: 'field' },
+        h('div', {}, h('label', { text: 'ระดับเสียง' }),
+          h('div', { class: 'desc', text: 'ถ้าเสียงเบา ให้เลื่อนไปทางขวา (ดังสุด 2.5 เท่า)' })),
+        (() => {
+          const cur = Number(S().volume) || 1.8;
+          const r = h('input', { type: 'range', min: '1', max: '2.5', step: '0.1', value: String(cur) });
+          const out2 = h('span', { class: 'small muted', text: cur.toFixed(1) });
+          r.oninput = () => {
+            out2.textContent = Number(r.value).toFixed(1);
+            store.setSetting('volume', Number(r.value));
+            setPlaybackVolume(Number(r.value));
+          };
+          r.onchange = () => {
+            sayText('Could I get a medium latte, please?', { rate: S().rate, gender: S().voiceGender, audioKey: 'sent:food-coffee' });
+            onChange && onChange();
+          };
+          return h('div', { class: 'row', style: { gap: '8px' } }, r, out2);
         })()),
       audioDownloadRow(),
 

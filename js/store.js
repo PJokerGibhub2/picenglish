@@ -21,7 +21,8 @@ const DEFAULTS = {
     strictSpeak: true,      // ต้องพูดให้ผ่านก่อนจึงจะไปประโยคถัดไป (โหมดเข้ม)
     passThreshold: 70,      // เกณฑ์ผ่านการออกเสียง (%)
     recordVoice: true,
-    sfx: true,              // เสียงเอฟเฟกต์ (Web Audio)      // บันทึกเสียงผู้ใช้ไว้ฟังย้อนหลัง (เก็บในเครื่องเท่านั้น)
+    sfx: true,              // เสียงเอฟเฟกต์ (Web Audio)
+    volume: 1.8,            // ระดับเสียงไฟล์เสียง (1.0 = ปกติ, 2.0 = ดังขึ้นเท่าตัว)      // บันทึกเสียงผู้ใช้ไว้ฟังย้อนหลัง (เก็บในเครื่องเท่านั้น)
   },
   srs: {},                  // id -> {ease, interval, reps, lapses, due, last}
   srsSentences: {},         // "dlgId:lineIndex" -> เหมือน srs (ทบทวนระดับประโยค)

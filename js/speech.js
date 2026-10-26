@@ -147,6 +147,53 @@ export function stopAudio() {
   }
 }
 
+/* ---------------------------------------------------------------- *
+ * ระดับเสียง: ไฟล์ Kokoro มาจาก TTS ที่ peak ต่ำ (ฟังเบาบนมือถือ)
+ * → ต่อทุกไฟล์ผ่าน GainNode + limiter เพื่อเพิ่มความดังโดยไม่แตก
+ * ---------------------------------------------------------------- */
+let audioCtx = null;
+let masterGain = null;
+let limiter = null;
+let currentSource = null;
+let volumeLevel = 1.8;
+
+function ensureChain() {
+  if (audioCtx) return true;
+  try {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return false;
+    audioCtx = new AC();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = volumeLevel;
+    limiter = audioCtx.createDynamicsCompressor();
+    limiter.threshold.value = -6;
+    limiter.knee.value = 6;
+    limiter.ratio.value = 12;
+    limiter.attack.value = 0.003;
+    limiter.release.value = 0.18;
+    masterGain.connect(limiter);
+    limiter.connect(audioCtx.destination);
+    return true;
+  } catch (e) {
+    audioCtx = null;
+    return false;
+  }
+}
+
+/** ตั้งระดับเสียง (1.0 = ปกติ, 2.0 = ดังขึ้นเท่าตัว) */
+export function setPlaybackVolume(level) {
+  volumeLevel = clamp(Number(level) || 1.8, 0.5, 3);
+  if (ensureChain()) {
+    try {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      masterGain.gain.value = volumeLevel;
+    } catch (e) { /* ignore */ }
+  }
+  return volumeLevel;
+}
+
+export function getPlaybackVolume() { return volumeLevel; }
+
 export function playFile(url, rate = 1) {
   return new Promise((resolve) => {
     stopAudio();
@@ -154,10 +201,21 @@ export function playFile(url, rate = 1) {
     try { a = new Audio(url); } catch (e) { return resolve(); }
     a.playbackRate = clamp(rate, 0.5, 2);
     a.preservesPitch = true;
+    a.volume = 1;
     currentAudio = a;
-    a.addEventListener('ended', () => { currentAudio = null; resolve(); });
-    a.addEventListener('error', () => { currentAudio = null; resolve(); });
-    a.play().catch(() => { currentAudio = null; resolve(); });
+    if (ensureChain()) {
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        currentSource = audioCtx.createMediaElementSource(a);
+        currentSource.connect(masterGain);
+      } catch (e) {
+        currentSource = null;
+      }
+    }
+    const done = () => { currentAudio = null; currentSource = null; resolve(); };
+    a.addEventListener('ended', done);
+    a.addEventListener('error', done);
+    a.play().catch(done);
   });
 }
 
