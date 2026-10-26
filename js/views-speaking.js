@@ -329,7 +329,7 @@ export function roleplay(root, params = {}) {
       for (const p of line.keyPhrases) {
         kv.appendChild(h('button', {
           class: 'kv', type: 'button',
-          onclick: () => say(p.en, { rate: Math.min(1, S().rate) }),
+          onclick: () => sayText(p.en, { rate: Math.min(1, S().rate), gender: S().voiceGender, audioKey: 'kp:' + d.id + ':' + i + ':' + line.keyPhrases.indexOf(p) }),
         }, h('b', { text: p.en }), h('span', { text: p.thai })));
       }
       card.appendChild(h('div', { class: 'tiny muted', style: { marginTop: '8px' }, text: 'วลีสำคัญในประโยคนี้ (แตะเพื่อฟัง)' }));
@@ -453,7 +453,7 @@ export function roleplay(root, params = {}) {
       const box = h('div', {});
       box.appendChild(sheetHeader('พูดแบบอื่นก็ได้', 'ทุกประโยคต่อไปนี้ใช้แทนกันได้', close));
       for (const a of line.alternative || []) {
-        box.appendChild(h('div', { class: 'list-item', onclick: () => { close(); say(a.en, { rate: S().rate }); } },
+        box.appendChild(h('div', { class: 'list-item', onclick: () => { close(); sayText(a.en, { rate: S().rate, gender: S().voiceGender, audioKey: 'alt:' + d.id + ':' + i + ':' + (line.alternative || []).indexOf(a) }); } },
           h('div', { class: 'lt' }, h('b', { class: 'en', text: a.en }), h('div', { text: a.thai })),
           icon('sound', 18)));
       }

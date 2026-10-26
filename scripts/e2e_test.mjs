@@ -615,6 +615,28 @@ const PAGE_TEST = `(async () => {
   ok('มีฟังก์ชันทวดระบบฟังเสียง', typeof spMod.sttSelfTest === 'function');
   const selfTest = await spMod.sttSelfTest(2500);
   ok('ทวดระบบฟังเสียงแล้วได้คำตอบ (ไม่ค้าง)', !!selfTest && typeof selfTest.ok === 'boolean', JSON.stringify(selfTest));
+  /* ---------- 12.6) Kokoro TTS (เสียงหลักของแอป) ---------- */
+  const audioMod = await import('/js/speech.js');
+  await audioMod.loadAudioManifest();
+  const mres = await fetch('/data/audio/manifest.json').catch(() => null);
+  const kman = mres && mres.ok ? await mres.json() : {};
+  const keyCount = Object.keys(kman).length;
+  ok('มีไฟล์เสียง Kokoro พร้อมใช้ (อย่างน้อย 250 คีย์)', keyCount >= 250, keyCount + ' คีย์');
+  const fUrl = audioMod.audioUrl('word:food-breakfast', 'female');
+  const mUrl = audioMod.audioUrl('word:food-breakfast', 'male');
+  ok('เสียงผู้หญิง (af_heart) ถูกเลือกเป็นค่าเริ่มต้น', !!fUrl && fUrl.indexOf('/f/') >= 0, fUrl || 'ไม่มี');
+  ok('เสียงผู้ชาย (am_adam) ใช้ได้เมื่อเลือก', !!mUrl && mUrl.indexOf('/m/') >= 0, mUrl || 'ไม่มี');
+  const dUrl = audioMod.audioUrl('word:food-breakfast');
+  ok('ไม่ระบุเพศ = เสียงผู้หญิง (af_heart)', !!dUrl && dUrl.indexOf('/f/') >= 0);
+  if (fUrl) {
+    const r = await fetch(fUrl);
+    const buf = r.ok ? await r.arrayBuffer() : null;
+    ok('ไฟล์เสียง Kokoro โหลดได้จริง', !!buf && buf.byteLength > 1000, buf ? buf.byteLength + ' bytes' : 'โหลดไม่ได้');
+  }
+  const kmeta = await (await fetch('/data/audio/meta.json')).json();
+  ok('meta ระบุ Kokoro af_heart / am_adam', kmeta.engine === 'kokoro-onnx'
+     && kmeta.voices.f === 'af_heart' && kmeta.voices.m === 'am_adam',
+     kmeta.engine + ' · ' + kmeta.voices.f + ' / ' + kmeta.voices.m);
   /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
   const imgMod = await import('/js/images.js');
   const probe = words.find((w) => w.word === 'receipt') || words[0];

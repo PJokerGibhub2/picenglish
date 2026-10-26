@@ -1,0 +1,12 @@
+{
+  "engine": "kokoro-onnx",
+  "voices": {
+    "f": "af_heart",
+    "m": "am_adam"
+  },
+  "sampleRate": 24000,
+  "bitrate": 32,
+  "format": "mp3",
+  "count": 491,
+  "generatedAt": "2026-10-26T08:58:34"
+}

@@ -1373,11 +1373,11 @@ export function openSettings(onChange) {
           return h('div', { class: 'row', style: { gap: '8px' } }, r, out);
         })()),
       h('div', { class: 'field' },
-        h('div', {}, h('label', { text: 'เสียงที่ต้องการ' }), h('div', { class: 'desc', text: 'เสียงผู้ชายมักฟังเข้าใจง่ายกว่าสำหรับผู้เรียนไทย' })),
+        h('div', {}, h('label', { text: 'เสียงที่ต้องการ' }), h('div', { class: 'desc', text: 'ไฟล์เสียงสร้างจาก Kokoro TTS — af_heart (หญิง, เสียงหลัก) / am_adam (ชาย)' })),
         (() => {
           const sel = h('select', {},
-            h('option', { value: 'male', text: 'เสียงผู้ชาย (แนะนำ)' }),
-            h('option', { value: 'female', text: 'เสียงผู้หญิง' }),
+            h('option', { value: 'male', text: 'เสียงผู้ชาย (Kokoro am_adam)' }),
+            h('option', { value: 'female', text: 'เสียงผู้หญิง (Kokoro af_heart)' }),
             h('option', { value: 'auto', text: 'ดีที่สุดที่มีในเครื่อง' }));
           sel.value = S().voiceGender || 'male';
           sel.onchange = () => {

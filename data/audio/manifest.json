@@ -1,0 +1,1966 @@
+{
+"word:food-breakfast": {
+"f": "f/word_food-breakfast.mp3",
+"m": "m/word_food-breakfast.mp3"
+},
+"sent:food-breakfast": {
+"f": "f/sent_food-breakfast.mp3",
+"m": "m/sent_food-breakfast.mp3"
+},
+"word:food-lunch": {
+"f": "f/word_food-lunch.mp3",
+"m": "m/word_food-lunch.mp3"
+},
+"sent:food-lunch": {
+"f": "f/sent_food-lunch.mp3",
+"m": "m/sent_food-lunch.mp3"
+},
+"word:food-dinner": {
+"f": "f/word_food-dinner.mp3",
+"m": "m/word_food-dinner.mp3"
+},
+"sent:food-dinner": {
+"f": "f/sent_food-dinner.mp3",
+"m": "m/sent_food-dinner.mp3"
+},
+"word:food-snack": {
+"f": "f/word_food-snack.mp3",
+"m": "m/word_food-snack.mp3"
+},
+"sent:food-snack": {
+"f": "f/sent_food-snack.mp3",
+"m": "m/sent_food-snack.mp3"
+},
+"word:food-ingredient": {
+"f": "f/word_food-ingredient.mp3",
+"m": "m/word_food-ingredient.mp3"
+},
+"sent:food-ingredient": {
+"f": "f/sent_food-ingredient.mp3",
+"m": "m/sent_food-ingredient.mp3"
+},
+"word:food-recipe": {
+"f": "f/word_food-recipe.mp3",
+"m": "m/word_food-recipe.mp3"
+},
+"sent:food-recipe": {
+"f": "f/sent_food-recipe.mp3",
+"m": "m/sent_food-recipe.mp3"
+},
+"word:food-soup": {
+"f": "f/word_food-soup.mp3",
+"m": "m/word_food-soup.mp3"
+},
+"sent:food-soup": {
+"f": "f/sent_food-soup.mp3",
+"m": "m/sent_food-soup.mp3"
+},
+"word:food-grill": {
+"f": "f/word_food-grill.mp3",
+"m": "m/word_food-grill.mp3"
+},
+"sent:food-grill": {
+"f": "f/sent_food-grill.mp3",
+"m": "m/sent_food-grill.mp3"
+},
+"word:food-spicy": {
+"f": "f/word_food-spicy.mp3",
+"m": "m/word_food-spicy.mp3"
+},
+"sent:food-spicy": {
+"f": "f/sent_food-spicy.mp3",
+"m": "m/sent_food-spicy.mp3"
+},
+"word:food-leftovers": {
+"f": "f/word_food-leftovers.mp3",
+"m": "m/word_food-leftovers.mp3"
+},
+"sent:food-leftovers": {
+"f": "f/sent_food-leftovers.mp3",
+"m": "m/sent_food-leftovers.mp3"
+},
+"word:food-dessert": {
+"f": "f/word_food-dessert.mp3",
+"m": "m/word_food-dessert.mp3"
+},
+"sent:food-dessert": {
+"f": "f/sent_food-dessert.mp3",
+"m": "m/sent_food-dessert.mp3"
+},
+"word:food-portion": {
+"f": "f/word_food-portion.mp3",
+"m": "m/word_food-portion.mp3"
+},
+"sent:food-portion": {
+"f": "f/sent_food-portion.mp3",
+"m": "m/sent_food-portion.mp3"
+},
+"word:restaurant-reservation": {
+"f": "f/word_restaurant-reservation.mp3",
+"m": "m/word_restaurant-reservation.mp3"
+},
+"sent:restaurant-reservation": {
+"f": "f/sent_restaurant-reservation.mp3",
+"m": "m/sent_restaurant-reservation.mp3"
+},
+"word:restaurant-table-for-two": {
+"f": "f/word_restaurant-table-for-two.mp3",
+"m": "m/word_restaurant-table-for-two.mp3"
+},
+"sent:restaurant-table-for-two": {
+"f": "f/sent_restaurant-table-for-two.mp3",
+"m": "m/sent_restaurant-table-for-two.mp3"
+},
+"word:restaurant-menu": {
+"f": "f/word_restaurant-menu.mp3",
+"m": "m/word_restaurant-menu.mp3"
+},
+"sent:restaurant-menu": {
+"f": "f/sent_restaurant-menu.mp3",
+"m": "m/sent_restaurant-menu.mp3"
+},
+"word:restaurant-order": {
+"f": "f/word_restaurant-order.mp3",
+"m": "m/word_restaurant-order.mp3"
+},
+"sent:restaurant-order": {
+"f": "f/sent_restaurant-order.mp3",
+"m": "m/sent_restaurant-order.mp3"
+},
+"word:restaurant-recommend": {
+"f": "f/word_restaurant-recommend.mp3",
+"m": "m/word_restaurant-recommend.mp3"
+},
+"sent:restaurant-recommend": {
+"f": "f/sent_restaurant-recommend.mp3",
+"m": "m/sent_restaurant-recommend.mp3"
+},
+"word:restaurant-appetizer": {
+"f": "f/word_restaurant-appetizer.mp3",
+"m": "m/word_restaurant-appetizer.mp3"
+},
+"sent:restaurant-appetizer": {
+"f": "f/sent_restaurant-appetizer.mp3",
+"m": "m/sent_restaurant-appetizer.mp3"
+},
+"word:restaurant-main-course": {
+"f": "f/word_restaurant-main-course.mp3",
+"m": "m/word_restaurant-main-course.mp3"
+},
+"sent:restaurant-main-course": {
+"f": "f/sent_restaurant-main-course.mp3",
+"m": "m/sent_restaurant-main-course.mp3"
+},
+"word:restaurant-refill": {
+"f": "f/word_restaurant-refill.mp3",
+"m": "m/word_restaurant-refill.mp3"
+},
+"sent:restaurant-refill": {
+"f": "f/sent_restaurant-refill.mp3",
+"m": "m/sent_restaurant-refill.mp3"
+},
+"word:restaurant-bill": {
+"f": "f/word_restaurant-bill.mp3",
+"m": "m/word_restaurant-bill.mp3"
+},
+"sent:restaurant-bill": {
+"f": "f/sent_restaurant-bill.mp3",
+"m": "m/sent_restaurant-bill.mp3"
+},
+"word:restaurant-tip": {
+"f": "f/word_restaurant-tip.mp3",
+"m": "m/word_restaurant-tip.mp3"
+},
+"sent:restaurant-tip": {
+"f": "f/sent_restaurant-tip.mp3",
+"m": "m/sent_restaurant-tip.mp3"
+},
+"word:restaurant-takeaway": {
+"f": "f/word_restaurant-takeaway.mp3",
+"m": "m/word_restaurant-takeaway.mp3"
+},
+"sent:restaurant-takeaway": {
+"f": "f/sent_restaurant-takeaway.mp3",
+"m": "m/sent_restaurant-takeaway.mp3"
+},
+"word:restaurant-allergy": {
+"f": "f/word_restaurant-allergy.mp3",
+"m": "m/word_restaurant-allergy.mp3"
+},
+"sent:restaurant-allergy": {
+"f": "f/sent_restaurant-allergy.mp3",
+"m": "m/sent_restaurant-allergy.mp3"
+},
+"word:travel-ticket": {
+"f": "f/word_travel-ticket.mp3",
+"m": "m/word_travel-ticket.mp3"
+},
+"sent:travel-ticket": {
+"f": "f/sent_travel-ticket.mp3",
+"m": "m/sent_travel-ticket.mp3"
+},
+"word:travel-passport": {
+"f": "f/word_travel-passport.mp3",
+"m": "m/word_travel-passport.mp3"
+},
+"sent:travel-passport": {
+"f": "f/sent_travel-passport.mp3",
+"m": "m/sent_travel-passport.mp3"
+},
+"word:travel-airport": {
+"f": "f/word_travel-airport.mp3",
+"m": "m/word_travel-airport.mp3"
+},
+"sent:travel-airport": {
+"f": "f/sent_travel-airport.mp3",
+"m": "m/sent_travel-airport.mp3"
+},
+"word:travel-luggage": {
+"f": "f/word_travel-luggage.mp3",
+"m": "m/word_travel-luggage.mp3"
+},
+"sent:travel-luggage": {
+"f": "f/sent_travel-luggage.mp3",
+"m": "m/sent_travel-luggage.mp3"
+},
+"word:travel-map": {
+"f": "f/word_travel-map.mp3",
+"m": "m/word_travel-map.mp3"
+},
+"sent:travel-map": {
+"f": "f/sent_travel-map.mp3",
+"m": "m/sent_travel-map.mp3"
+},
+"word:travel-bus": {
+"f": "f/word_travel-bus.mp3",
+"m": "m/word_travel-bus.mp3"
+},
+"sent:travel-bus": {
+"f": "f/sent_travel-bus.mp3",
+"m": "m/sent_travel-bus.mp3"
+},
+"word:travel-train": {
+"f": "f/word_travel-train.mp3",
+"m": "m/word_travel-train.mp3"
+},
+"sent:travel-train": {
+"f": "f/sent_travel-train.mp3",
+"m": "m/sent_travel-train.mp3"
+},
+"word:travel-schedule": {
+"f": "f/word_travel-schedule.mp3",
+"m": "m/word_travel-schedule.mp3"
+},
+"sent:travel-schedule": {
+"f": "f/sent_travel-schedule.mp3",
+"m": "m/sent_travel-schedule.mp3"
+},
+"word:travel-destination": {
+"f": "f/word_travel-destination.mp3",
+"m": "m/word_travel-destination.mp3"
+},
+"sent:travel-destination": {
+"f": "f/sent_travel-destination.mp3",
+"m": "m/sent_travel-destination.mp3"
+},
+"word:travel-gate": {
+"f": "f/word_travel-gate.mp3",
+"m": "m/word_travel-gate.mp3"
+},
+"sent:travel-gate": {
+"f": "f/sent_travel-gate.mp3",
+"m": "m/sent_travel-gate.mp3"
+},
+"word:travel-turn-left": {
+"f": "f/word_travel-turn-left.mp3",
+"m": "m/word_travel-turn-left.mp3"
+},
+"sent:travel-turn-left": {
+"f": "f/sent_travel-turn-left.mp3",
+"m": "m/sent_travel-turn-left.mp3"
+},
+"word:travel-ask-for-directions": {
+"f": "f/word_travel-ask-for-directions.mp3",
+"m": "m/word_travel-ask-for-directions.mp3"
+},
+"sent:travel-ask-for-directions": {
+"f": "f/sent_travel-ask-for-directions.mp3",
+"m": "m/sent_travel-ask-for-directions.mp3"
+},
+"word:home-apartment": {
+"f": "f/word_home-apartment.mp3",
+"m": "m/word_home-apartment.mp3"
+},
+"sent:home-apartment": {
+"f": "f/sent_home-apartment.mp3",
+"m": "m/sent_home-apartment.mp3"
+},
+"word:home-house": {
+"f": "f/word_home-house.mp3",
+"m": "m/word_home-house.mp3"
+},
+"sent:home-house": {
+"f": "f/sent_home-house.mp3",
+"m": "m/sent_home-house.mp3"
+},
+"word:home-bedroom": {
+"f": "f/word_home-bedroom.mp3",
+"m": "m/word_home-bedroom.mp3"
+},
+"sent:home-bedroom": {
+"f": "f/sent_home-bedroom.mp3",
+"m": "m/sent_home-bedroom.mp3"
+},
+"word:home-kitchen": {
+"f": "f/word_home-kitchen.mp3",
+"m": "m/word_home-kitchen.mp3"
+},
+"sent:home-kitchen": {
+"f": "f/sent_home-kitchen.mp3",
+"m": "m/sent_home-kitchen.mp3"
+},
+"word:home-living-room": {
+"f": "f/word_home-living-room.mp3",
+"m": "m/word_home-living-room.mp3"
+},
+"sent:home-living-room": {
+"f": "f/sent_home-living-room.mp3",
+"m": "m/sent_home-living-room.mp3"
+},
+"word:home-furniture": {
+"f": "f/word_home-furniture.mp3",
+"m": "m/word_home-furniture.mp3"
+},
+"sent:home-furniture": {
+"f": "f/sent_home-furniture.mp3",
+"m": "m/sent_home-furniture.mp3"
+},
+"word:home-lamp": {
+"f": "f/word_home-lamp.mp3",
+"m": "m/word_home-lamp.mp3"
+},
+"sent:home-lamp": {
+"f": "f/sent_home-lamp.mp3",
+"m": "m/sent_home-lamp.mp3"
+},
+"word:home-refrigerator": {
+"f": "f/word_home-refrigerator.mp3",
+"m": "m/word_home-refrigerator.mp3"
+},
+"sent:home-refrigerator": {
+"f": "f/sent_home-refrigerator.mp3",
+"m": "m/sent_home-refrigerator.mp3"
+},
+"word:home-rent": {
+"f": "f/word_home-rent.mp3",
+"m": "m/word_home-rent.mp3"
+},
+"sent:home-rent": {
+"f": "f/sent_home-rent.mp3",
+"m": "m/sent_home-rent.mp3"
+},
+"word:home-neighbor": {
+"f": "f/word_home-neighbor.mp3",
+"m": "m/word_home-neighbor.mp3"
+},
+"sent:home-neighbor": {
+"f": "f/sent_home-neighbor.mp3",
+"m": "m/sent_home-neighbor.mp3"
+},
+"word:home-key": {
+"f": "f/word_home-key.mp3",
+"m": "m/word_home-key.mp3"
+},
+"sent:home-key": {
+"f": "f/sent_home-key.mp3",
+"m": "m/sent_home-key.mp3"
+},
+"word:home-balcony": {
+"f": "f/word_home-balcony.mp3",
+"m": "m/word_home-balcony.mp3"
+},
+"sent:home-balcony": {
+"f": "f/sent_home-balcony.mp3",
+"m": "m/sent_home-balcony.mp3"
+},
+"word:shopping-receipt": {
+"f": "f/word_shopping-receipt.mp3",
+"m": "m/word_shopping-receipt.mp3"
+},
+"sent:shopping-receipt": {
+"f": "f/sent_shopping-receipt.mp3",
+"m": "m/sent_shopping-receipt.mp3"
+},
+"word:shopping-price": {
+"f": "f/word_shopping-price.mp3",
+"m": "m/word_shopping-price.mp3"
+},
+"sent:shopping-price": {
+"f": "f/sent_shopping-price.mp3",
+"m": "m/sent_shopping-price.mp3"
+},
+"word:shopping-discount": {
+"f": "f/word_shopping-discount.mp3",
+"m": "m/word_shopping-discount.mp3"
+},
+"sent:shopping-discount": {
+"f": "f/sent_shopping-discount.mp3",
+"m": "m/sent_shopping-discount.mp3"
+},
+"word:shopping-change": {
+"f": "f/word_shopping-change.mp3",
+"m": "m/word_shopping-change.mp3"
+},
+"sent:shopping-change": {
+"f": "f/sent_shopping-change.mp3",
+"m": "m/sent_shopping-change.mp3"
+},
+"word:shopping-credit-card": {
+"f": "f/word_shopping-credit-card.mp3",
+"m": "m/word_shopping-credit-card.mp3"
+},
+"sent:shopping-credit-card": {
+"f": "f/sent_shopping-credit-card.mp3",
+"m": "m/sent_shopping-credit-card.mp3"
+},
+"word:shopping-cash": {
+"f": "f/word_shopping-cash.mp3",
+"m": "m/word_shopping-cash.mp3"
+},
+"sent:shopping-cash": {
+"f": "f/sent_shopping-cash.mp3",
+"m": "m/sent_shopping-cash.mp3"
+},
+"word:shopping-expensive": {
+"f": "f/word_shopping-expensive.mp3",
+"m": "m/word_shopping-expensive.mp3"
+},
+"sent:shopping-expensive": {
+"f": "f/sent_shopping-expensive.mp3",
+"m": "m/sent_shopping-expensive.mp3"
+},
+"word:shopping-cheap": {
+"f": "f/word_shopping-cheap.mp3",
+"m": "m/word_shopping-cheap.mp3"
+},
+"sent:shopping-cheap": {
+"f": "f/sent_shopping-cheap.mp3",
+"m": "m/sent_shopping-cheap.mp3"
+},
+"word:shopping-bargain": {
+"f": "f/word_shopping-bargain.mp3",
+"m": "m/word_shopping-bargain.mp3"
+},
+"sent:shopping-bargain": {
+"f": "f/sent_shopping-bargain.mp3",
+"m": "m/sent_shopping-bargain.mp3"
+},
+"word:shopping-bank": {
+"f": "f/word_shopping-bank.mp3",
+"m": "m/word_shopping-bank.mp3"
+},
+"sent:shopping-bank": {
+"f": "f/sent_shopping-bank.mp3",
+"m": "m/sent_shopping-bank.mp3"
+},
+"word:shopping-save": {
+"f": "f/word_shopping-save.mp3",
+"m": "m/word_shopping-save.mp3"
+},
+"sent:shopping-save": {
+"f": "f/sent_shopping-save.mp3",
+"m": "m/sent_shopping-save.mp3"
+},
+"word:shopping-wallet": {
+"f": "f/word_shopping-wallet.mp3",
+"m": "m/word_shopping-wallet.mp3"
+},
+"sent:shopping-wallet": {
+"f": "f/sent_shopping-wallet.mp3",
+"m": "m/sent_shopping-wallet.mp3"
+},
+"word:health-fever": {
+"f": "f/word_health-fever.mp3",
+"m": "m/word_health-fever.mp3"
+},
+"sent:health-fever": {
+"f": "f/sent_health-fever.mp3",
+"m": "m/sent_health-fever.mp3"
+},
+"word:health-headache": {
+"f": "f/word_health-headache.mp3",
+"m": "m/word_health-headache.mp3"
+},
+"sent:health-headache": {
+"f": "f/sent_health-headache.mp3",
+"m": "m/sent_health-headache.mp3"
+},
+"word:health-cough": {
+"f": "f/word_health-cough.mp3",
+"m": "m/word_health-cough.mp3"
+},
+"sent:health-cough": {
+"f": "f/sent_health-cough.mp3",
+"m": "m/sent_health-cough.mp3"
+},
+"word:health-sore-throat": {
+"f": "f/word_health-sore-throat.mp3",
+"m": "m/word_health-sore-throat.mp3"
+},
+"sent:health-sore-throat": {
+"f": "f/sent_health-sore-throat.mp3",
+"m": "m/sent_health-sore-throat.mp3"
+},
+"word:health-stomachache": {
+"f": "f/word_health-stomachache.mp3",
+"m": "m/word_health-stomachache.mp3"
+},
+"sent:health-stomachache": {
+"f": "f/sent_health-stomachache.mp3",
+"m": "m/sent_health-stomachache.mp3"
+},
+"word:health-rest": {
+"f": "f/word_health-rest.mp3",
+"m": "m/word_health-rest.mp3"
+},
+"sent:health-rest": {
+"f": "f/sent_health-rest.mp3",
+"m": "m/sent_health-rest.mp3"
+},
+"word:health-ill": {
+"f": "f/word_health-ill.mp3",
+"m": "m/word_health-ill.mp3"
+},
+"sent:health-ill": {
+"f": "f/sent_health-ill.mp3",
+"m": "m/sent_health-ill.mp3"
+},
+"word:health-doctor": {
+"f": "f/word_health-doctor.mp3",
+"m": "m/word_health-doctor.mp3"
+},
+"sent:health-doctor": {
+"f": "f/sent_health-doctor.mp3",
+"m": "m/sent_health-doctor.mp3"
+},
+"word:health-appointment": {
+"f": "f/word_health-appointment.mp3",
+"m": "m/word_health-appointment.mp3"
+},
+"sent:health-appointment": {
+"f": "f/sent_health-appointment.mp3",
+"m": "m/sent_health-appointment.mp3"
+},
+"word:health-medicine": {
+"f": "f/word_health-medicine.mp3",
+"m": "m/word_health-medicine.mp3"
+},
+"sent:health-medicine": {
+"f": "f/sent_health-medicine.mp3",
+"m": "m/sent_health-medicine.mp3"
+},
+"word:health-hurt": {
+"f": "f/word_health-hurt.mp3",
+"m": "m/word_health-hurt.mp3"
+},
+"sent:health-hurt": {
+"f": "f/sent_health-hurt.mp3",
+"m": "m/sent_health-hurt.mp3"
+},
+"word:health-healthy": {
+"f": "f/word_health-healthy.mp3",
+"m": "m/word_health-healthy.mp3"
+},
+"sent:health-healthy": {
+"f": "f/sent_health-healthy.mp3",
+"m": "m/sent_health-healthy.mp3"
+},
+"word:work-meeting": {
+"f": "f/word_work-meeting.mp3",
+"m": "m/word_work-meeting.mp3"
+},
+"sent:work-meeting": {
+"f": "f/sent_work-meeting.mp3",
+"m": "m/sent_work-meeting.mp3"
+},
+"word:work-email": {
+"f": "f/word_work-email.mp3",
+"m": "m/word_work-email.mp3"
+},
+"sent:work-email": {
+"f": "f/sent_work-email.mp3",
+"m": "m/sent_work-email.mp3"
+},
+"word:work-colleague": {
+"f": "f/word_work-colleague.mp3",
+"m": "m/word_work-colleague.mp3"
+},
+"sent:work-colleague": {
+"f": "f/sent_work-colleague.mp3",
+"m": "m/sent_work-colleague.mp3"
+},
+"word:work-boss": {
+"f": "f/word_work-boss.mp3",
+"m": "m/word_work-boss.mp3"
+},
+"sent:work-boss": {
+"f": "f/sent_work-boss.mp3",
+"m": "m/sent_work-boss.mp3"
+},
+"word:work-salary": {
+"f": "f/word_work-salary.mp3",
+"m": "m/word_work-salary.mp3"
+},
+"sent:work-salary": {
+"f": "f/sent_work-salary.mp3",
+"m": "m/sent_work-salary.mp3"
+},
+"word:work-sick-leave": {
+"f": "f/word_work-sick-leave.mp3",
+"m": "m/word_work-sick-leave.mp3"
+},
+"sent:work-sick-leave": {
+"f": "f/sent_work-sick-leave.mp3",
+"m": "m/sent_work-sick-leave.mp3"
+},
+"word:work-apply-for": {
+"f": "f/word_work-apply-for.mp3",
+"m": "m/word_work-apply-for.mp3"
+},
+"sent:work-apply-for": {
+"f": "f/sent_work-apply-for.mp3",
+"m": "m/sent_work-apply-for.mp3"
+},
+"word:work-deadline": {
+"f": "f/word_work-deadline.mp3",
+"m": "m/word_work-deadline.mp3"
+},
+"sent:work-deadline": {
+"f": "f/sent_work-deadline.mp3",
+"m": "m/sent_work-deadline.mp3"
+},
+"word:work-overtime": {
+"f": "f/word_work-overtime.mp3",
+"m": "m/word_work-overtime.mp3"
+},
+"sent:work-overtime": {
+"f": "f/sent_work-overtime.mp3",
+"m": "m/sent_work-overtime.mp3"
+},
+"word:work-interview": {
+"f": "f/word_work-interview.mp3",
+"m": "m/word_work-interview.mp3"
+},
+"sent:work-interview": {
+"f": "f/sent_work-interview.mp3",
+"m": "m/sent_work-interview.mp3"
+},
+"word:work-report": {
+"f": "f/word_work-report.mp3",
+"m": "m/word_work-report.mp3"
+},
+"sent:work-report": {
+"f": "f/sent_work-report.mp3",
+"m": "m/sent_work-report.mp3"
+},
+"word:work-promotion": {
+"f": "f/word_work-promotion.mp3",
+"m": "m/word_work-promotion.mp3"
+},
+"sent:work-promotion": {
+"f": "f/sent_work-promotion.mp3",
+"m": "m/sent_work-promotion.mp3"
+},
+"word:feelings-stressed": {
+"f": "f/word_feelings-stressed.mp3",
+"m": "m/word_feelings-stressed.mp3"
+},
+"sent:feelings-stressed": {
+"f": "f/sent_feelings-stressed.mp3",
+"m": "m/sent_feelings-stressed.mp3"
+},
+"word:feelings-tired": {
+"f": "f/word_feelings-tired.mp3",
+"m": "m/word_feelings-tired.mp3"
+},
+"sent:feelings-tired": {
+"f": "f/sent_feelings-tired.mp3",
+"m": "m/sent_feelings-tired.mp3"
+},
+"word:feelings-proud": {
+"f": "f/word_feelings-proud.mp3",
+"m": "m/word_feelings-proud.mp3"
+},
+"sent:feelings-proud": {
+"f": "f/sent_feelings-proud.mp3",
+"m": "m/sent_feelings-proud.mp3"
+},
+"word:feelings-kind": {
+"f": "f/word_feelings-kind.mp3",
+"m": "m/word_feelings-kind.mp3"
+},
+"sent:feelings-kind": {
+"f": "f/sent_feelings-kind.mp3",
+"m": "m/sent_feelings-kind.mp3"
+},
+"word:feelings-punctual": {
+"f": "f/word_feelings-punctual.mp3",
+"m": "m/word_feelings-punctual.mp3"
+},
+"sent:feelings-punctual": {
+"f": "f/sent_feelings-punctual.mp3",
+"m": "m/sent_feelings-punctual.mp3"
+},
+"word:feelings-shy": {
+"f": "f/word_feelings-shy.mp3",
+"m": "m/word_feelings-shy.mp3"
+},
+"sent:feelings-shy": {
+"f": "f/sent_feelings-shy.mp3",
+"m": "m/sent_feelings-shy.mp3"
+},
+"word:feelings-confident": {
+"f": "f/word_feelings-confident.mp3",
+"m": "m/word_feelings-confident.mp3"
+},
+"sent:feelings-confident": {
+"f": "f/sent_feelings-confident.mp3",
+"m": "m/sent_feelings-confident.mp3"
+},
+"word:feelings-nervous": {
+"f": "f/word_feelings-nervous.mp3",
+"m": "m/word_feelings-nervous.mp3"
+},
+"sent:feelings-nervous": {
+"f": "f/sent_feelings-nervous.mp3",
+"m": "m/sent_feelings-nervous.mp3"
+},
+"word:feelings-friendly": {
+"f": "f/word_feelings-friendly.mp3",
+"m": "m/word_feelings-friendly.mp3"
+},
+"sent:feelings-friendly": {
+"f": "f/sent_feelings-friendly.mp3",
+"m": "m/sent_feelings-friendly.mp3"
+},
+"word:feelings-patient": {
+"f": "f/word_feelings-patient.mp3",
+"m": "m/word_feelings-patient.mp3"
+},
+"sent:feelings-patient": {
+"f": "f/sent_feelings-patient.mp3",
+"m": "m/sent_feelings-patient.mp3"
+},
+"word:feelings-cheerful": {
+"f": "f/word_feelings-cheerful.mp3",
+"m": "m/word_feelings-cheerful.mp3"
+},
+"sent:feelings-cheerful": {
+"f": "f/sent_feelings-cheerful.mp3",
+"m": "m/sent_feelings-cheerful.mp3"
+},
+"word:feelings-worry": {
+"f": "f/word_feelings-worry.mp3",
+"m": "m/word_feelings-worry.mp3"
+},
+"sent:feelings-worry": {
+"f": "f/sent_feelings-worry.mp3",
+"m": "m/sent_feelings-worry.mp3"
+},
+"dlg-cafe:0": {
+"f": "f/dlg-cafe_0.mp3",
+"m": "m/dlg-cafe_0.mp3"
+},
+"dlg-cafe:1": {
+"f": "f/dlg-cafe_1.mp3",
+"m": "m/dlg-cafe_1.mp3"
+},
+"dlg-cafe:2": {
+"f": "f/dlg-cafe_2.mp3",
+"m": "m/dlg-cafe_2.mp3"
+},
+"dlg-cafe:3": {
+"f": "f/dlg-cafe_3.mp3",
+"m": "m/dlg-cafe_3.mp3"
+},
+"dlg-cafe:4": {
+"f": "f/dlg-cafe_4.mp3",
+"m": "m/dlg-cafe_4.mp3"
+},
+"dlg-cafe:5": {
+"f": "f/dlg-cafe_5.mp3",
+"m": "m/dlg-cafe_5.mp3"
+},
+"dlg-cafe:6": {
+"f": "f/dlg-cafe_6.mp3",
+"m": "m/dlg-cafe_6.mp3"
+},
+"dlg-cafe:7": {
+"f": "f/dlg-cafe_7.mp3",
+"m": "m/dlg-cafe_7.mp3"
+},
+"dlg-cafe:8": {
+"f": "f/dlg-cafe_8.mp3",
+"m": "m/dlg-cafe_8.mp3"
+},
+"dlg-restaurant:0": {
+"f": "f/dlg-restaurant_0.mp3",
+"m": "m/dlg-restaurant_0.mp3"
+},
+"dlg-restaurant:1": {
+"f": "f/dlg-restaurant_1.mp3",
+"m": "m/dlg-restaurant_1.mp3"
+},
+"dlg-restaurant:2": {
+"f": "f/dlg-restaurant_2.mp3",
+"m": "m/dlg-restaurant_2.mp3"
+},
+"dlg-restaurant:3": {
+"f": "f/dlg-restaurant_3.mp3",
+"m": "m/dlg-restaurant_3.mp3"
+},
+"dlg-restaurant:4": {
+"f": "f/dlg-restaurant_4.mp3",
+"m": "m/dlg-restaurant_4.mp3"
+},
+"dlg-restaurant:5": {
+"f": "f/dlg-restaurant_5.mp3",
+"m": "m/dlg-restaurant_5.mp3"
+},
+"dlg-restaurant:6": {
+"f": "f/dlg-restaurant_6.mp3",
+"m": "m/dlg-restaurant_6.mp3"
+},
+"dlg-restaurant:7": {
+"f": "f/dlg-restaurant_7.mp3",
+"m": "m/dlg-restaurant_7.mp3"
+},
+"dlg-restaurant:8": {
+"f": "f/dlg-restaurant_8.mp3",
+"m": "m/dlg-restaurant_8.mp3"
+},
+"dlg-restaurant:9": {
+"f": "f/dlg-restaurant_9.mp3",
+"m": "m/dlg-restaurant_9.mp3"
+},
+"dlg-reservation:0": {
+"f": "f/dlg-reservation_0.mp3",
+"m": "m/dlg-reservation_0.mp3"
+},
+"dlg-reservation:1": {
+"f": "f/dlg-reservation_1.mp3",
+"m": "m/dlg-reservation_1.mp3"
+},
+"dlg-reservation:2": {
+"f": "f/dlg-reservation_2.mp3",
+"m": "m/dlg-reservation_2.mp3"
+},
+"dlg-reservation:3": {
+"f": "f/dlg-reservation_3.mp3",
+"m": "m/dlg-reservation_3.mp3"
+},
+"dlg-reservation:4": {
+"f": "f/dlg-reservation_4.mp3",
+"m": "m/dlg-reservation_4.mp3"
+},
+"dlg-reservation:5": {
+"f": "f/dlg-reservation_5.mp3",
+"m": "m/dlg-reservation_5.mp3"
+},
+"dlg-reservation:6": {
+"f": "f/dlg-reservation_6.mp3",
+"m": "m/dlg-reservation_6.mp3"
+},
+"dlg-reservation:7": {
+"f": "f/dlg-reservation_7.mp3",
+"m": "m/dlg-reservation_7.mp3"
+},
+"dlg-reservation:8": {
+"f": "f/dlg-reservation_8.mp3",
+"m": "m/dlg-reservation_8.mp3"
+},
+"dlg-reservation:9": {
+"f": "f/dlg-reservation_9.mp3",
+"m": "m/dlg-reservation_9.mp3"
+},
+"dlg-hotel:0": {
+"f": "f/dlg-hotel_0.mp3",
+"m": "m/dlg-hotel_0.mp3"
+},
+"dlg-hotel:1": {
+"f": "f/dlg-hotel_1.mp3",
+"m": "m/dlg-hotel_1.mp3"
+},
+"dlg-hotel:2": {
+"f": "f/dlg-hotel_2.mp3",
+"m": "m/dlg-hotel_2.mp3"
+},
+"dlg-hotel:3": {
+"f": "f/dlg-hotel_3.mp3",
+"m": "m/dlg-hotel_3.mp3"
+},
+"dlg-hotel:4": {
+"f": "f/dlg-hotel_4.mp3",
+"m": "m/dlg-hotel_4.mp3"
+},
+"dlg-hotel:5": {
+"f": "f/dlg-hotel_5.mp3",
+"m": "m/dlg-hotel_5.mp3"
+},
+"dlg-hotel:6": {
+"f": "f/dlg-hotel_6.mp3",
+"m": "m/dlg-hotel_6.mp3"
+},
+"dlg-hotel:7": {
+"f": "f/dlg-hotel_7.mp3",
+"m": "m/dlg-hotel_7.mp3"
+},
+"dlg-hotel:8": {
+"f": "f/dlg-hotel_8.mp3",
+"m": "m/dlg-hotel_8.mp3"
+},
+"dlg-hotel:9": {
+"f": "f/dlg-hotel_9.mp3",
+"m": "m/dlg-hotel_9.mp3"
+},
+"dlg-directions:0": {
+"f": "f/dlg-directions_0.mp3",
+"m": "m/dlg-directions_0.mp3"
+},
+"dlg-directions:1": {
+"f": "f/dlg-directions_1.mp3",
+"m": "m/dlg-directions_1.mp3"
+},
+"dlg-directions:2": {
+"f": "f/dlg-directions_2.mp3",
+"m": "m/dlg-directions_2.mp3"
+},
+"dlg-directions:3": {
+"f": "f/dlg-directions_3.mp3",
+"m": "m/dlg-directions_3.mp3"
+},
+"dlg-directions:4": {
+"f": "f/dlg-directions_4.mp3",
+"m": "m/dlg-directions_4.mp3"
+},
+"dlg-directions:5": {
+"f": "f/dlg-directions_5.mp3",
+"m": "m/dlg-directions_5.mp3"
+},
+"dlg-directions:6": {
+"f": "f/dlg-directions_6.mp3",
+"m": "m/dlg-directions_6.mp3"
+},
+"dlg-directions:7": {
+"f": "f/dlg-directions_7.mp3",
+"m": "m/dlg-directions_7.mp3"
+},
+"dlg-directions:8": {
+"f": "f/dlg-directions_8.mp3",
+"m": "m/dlg-directions_8.mp3"
+},
+"dlg-directions:9": {
+"f": "f/dlg-directions_9.mp3",
+"m": "m/dlg-directions_9.mp3"
+},
+"dlg-shopping:0": {
+"f": "f/dlg-shopping_0.mp3",
+"m": "m/dlg-shopping_0.mp3"
+},
+"dlg-shopping:1": {
+"f": "f/dlg-shopping_1.mp3",
+"m": "m/dlg-shopping_1.mp3"
+},
+"dlg-shopping:2": {
+"f": "f/dlg-shopping_2.mp3",
+"m": "m/dlg-shopping_2.mp3"
+},
+"dlg-shopping:3": {
+"f": "f/dlg-shopping_3.mp3",
+"m": "m/dlg-shopping_3.mp3"
+},
+"dlg-shopping:4": {
+"f": "f/dlg-shopping_4.mp3",
+"m": "m/dlg-shopping_4.mp3"
+},
+"dlg-shopping:5": {
+"f": "f/dlg-shopping_5.mp3",
+"m": "m/dlg-shopping_5.mp3"
+},
+"dlg-shopping:6": {
+"f": "f/dlg-shopping_6.mp3",
+"m": "m/dlg-shopping_6.mp3"
+},
+"dlg-shopping:7": {
+"f": "f/dlg-shopping_7.mp3",
+"m": "m/dlg-shopping_7.mp3"
+},
+"dlg-shopping:8": {
+"f": "f/dlg-shopping_8.mp3",
+"m": "m/dlg-shopping_8.mp3"
+},
+"dlg-shopping:9": {
+"f": "f/dlg-shopping_9.mp3",
+"m": "m/dlg-shopping_9.mp3"
+},
+"dlg-pharmacy:0": {
+"f": "f/dlg-pharmacy_0.mp3",
+"m": "m/dlg-pharmacy_0.mp3"
+},
+"dlg-pharmacy:1": {
+"f": "f/dlg-pharmacy_1.mp3",
+"m": "m/dlg-pharmacy_1.mp3"
+},
+"dlg-pharmacy:2": {
+"f": "f/dlg-pharmacy_2.mp3",
+"m": "m/dlg-pharmacy_2.mp3"
+},
+"dlg-pharmacy:3": {
+"f": "f/dlg-pharmacy_3.mp3",
+"m": "m/dlg-pharmacy_3.mp3"
+},
+"dlg-pharmacy:4": {
+"f": "f/dlg-pharmacy_4.mp3",
+"m": "m/dlg-pharmacy_4.mp3"
+},
+"dlg-pharmacy:5": {
+"f": "f/dlg-pharmacy_5.mp3",
+"m": "m/dlg-pharmacy_5.mp3"
+},
+"dlg-pharmacy:6": {
+"f": "f/dlg-pharmacy_6.mp3",
+"m": "m/dlg-pharmacy_6.mp3"
+},
+"dlg-pharmacy:7": {
+"f": "f/dlg-pharmacy_7.mp3",
+"m": "m/dlg-pharmacy_7.mp3"
+},
+"dlg-pharmacy:8": {
+"f": "f/dlg-pharmacy_8.mp3",
+"m": "m/dlg-pharmacy_8.mp3"
+},
+"dlg-pharmacy:9": {
+"f": "f/dlg-pharmacy_9.mp3",
+"m": "m/dlg-pharmacy_9.mp3"
+},
+"dlg-office:0": {
+"f": "f/dlg-office_0.mp3",
+"m": "m/dlg-office_0.mp3"
+},
+"dlg-office:1": {
+"f": "f/dlg-office_1.mp3",
+"m": "m/dlg-office_1.mp3"
+},
+"dlg-office:2": {
+"f": "f/dlg-office_2.mp3",
+"m": "m/dlg-office_2.mp3"
+},
+"dlg-office:3": {
+"f": "f/dlg-office_3.mp3",
+"m": "m/dlg-office_3.mp3"
+},
+"dlg-office:4": {
+"f": "f/dlg-office_4.mp3",
+"m": "m/dlg-office_4.mp3"
+},
+"dlg-office:5": {
+"f": "f/dlg-office_5.mp3",
+"m": "m/dlg-office_5.mp3"
+},
+"dlg-office:6": {
+"f": "f/dlg-office_6.mp3",
+"m": "m/dlg-office_6.mp3"
+},
+"dlg-office:7": {
+"f": "f/dlg-office_7.mp3",
+"m": "m/dlg-office_7.mp3"
+},
+"dlg-office:8": {
+"f": "f/dlg-office_8.mp3",
+"m": "m/dlg-office_8.mp3"
+},
+"dlg-office:9": {
+"f": "f/dlg-office_9.mp3",
+"m": "m/dlg-office_9.mp3"
+},
+"kp:dlg-cafe:0:0": {
+"f": "f/kp_dlg-cafe_0_0.mp3",
+"m": "m/kp_dlg-cafe_0_0.mp3"
+},
+"kp:dlg-cafe:0:1": {
+"f": "f/kp_dlg-cafe_0_1.mp3",
+"m": "m/kp_dlg-cafe_0_1.mp3"
+},
+"kp:dlg-cafe:1:0": {
+"f": "f/kp_dlg-cafe_1_0.mp3",
+"m": "m/kp_dlg-cafe_1_0.mp3"
+},
+"kp:dlg-cafe:1:1": {
+"f": "f/kp_dlg-cafe_1_1.mp3",
+"m": "m/kp_dlg-cafe_1_1.mp3"
+},
+"kp:dlg-cafe:1:2": {
+"f": "f/kp_dlg-cafe_1_2.mp3",
+"m": "m/kp_dlg-cafe_1_2.mp3"
+},
+"alt:dlg-cafe:1:0": {
+"f": "f/alt_dlg-cafe_1_0.mp3",
+"m": "m/alt_dlg-cafe_1_0.mp3"
+},
+"alt:dlg-cafe:1:1": {
+"f": "f/alt_dlg-cafe_1_1.mp3",
+"m": "m/alt_dlg-cafe_1_1.mp3"
+},
+"kp:dlg-cafe:2:0": {
+"f": "f/kp_dlg-cafe_2_0.mp3",
+"m": "m/kp_dlg-cafe_2_0.mp3"
+},
+"kp:dlg-cafe:2:1": {
+"f": "f/kp_dlg-cafe_2_1.mp3",
+"m": "m/kp_dlg-cafe_2_1.mp3"
+},
+"kp:dlg-cafe:3:0": {
+"f": "f/kp_dlg-cafe_3_0.mp3",
+"m": "m/kp_dlg-cafe_3_0.mp3"
+},
+"kp:dlg-cafe:3:1": {
+"f": "f/kp_dlg-cafe_3_1.mp3",
+"m": "m/kp_dlg-cafe_3_1.mp3"
+},
+"alt:dlg-cafe:3:0": {
+"f": "f/alt_dlg-cafe_3_0.mp3",
+"m": "m/alt_dlg-cafe_3_0.mp3"
+},
+"alt:dlg-cafe:3:1": {
+"f": "f/alt_dlg-cafe_3_1.mp3",
+"m": "m/alt_dlg-cafe_3_1.mp3"
+},
+"kp:dlg-cafe:4:0": {
+"f": "f/kp_dlg-cafe_4_0.mp3",
+"m": "m/kp_dlg-cafe_4_0.mp3"
+},
+"kp:dlg-cafe:4:1": {
+"f": "f/kp_dlg-cafe_4_1.mp3",
+"m": "m/kp_dlg-cafe_4_1.mp3"
+},
+"kp:dlg-cafe:5:0": {
+"f": "f/kp_dlg-cafe_5_0.mp3",
+"m": "m/kp_dlg-cafe_5_0.mp3"
+},
+"kp:dlg-cafe:5:1": {
+"f": "f/kp_dlg-cafe_5_1.mp3",
+"m": "m/kp_dlg-cafe_5_1.mp3"
+},
+"alt:dlg-cafe:5:0": {
+"f": "f/alt_dlg-cafe_5_0.mp3",
+"m": "m/alt_dlg-cafe_5_0.mp3"
+},
+"alt:dlg-cafe:5:1": {
+"f": "f/alt_dlg-cafe_5_1.mp3",
+"m": "m/alt_dlg-cafe_5_1.mp3"
+},
+"kp:dlg-cafe:6:0": {
+"f": "f/kp_dlg-cafe_6_0.mp3",
+"m": "m/kp_dlg-cafe_6_0.mp3"
+},
+"kp:dlg-cafe:7:0": {
+"f": "f/kp_dlg-cafe_7_0.mp3",
+"m": "m/kp_dlg-cafe_7_0.mp3"
+},
+"kp:dlg-cafe:7:1": {
+"f": "f/kp_dlg-cafe_7_1.mp3",
+"m": "m/kp_dlg-cafe_7_1.mp3"
+},
+"alt:dlg-cafe:7:0": {
+"f": "f/alt_dlg-cafe_7_0.mp3",
+"m": "m/alt_dlg-cafe_7_0.mp3"
+},
+"alt:dlg-cafe:7:1": {
+"f": "f/alt_dlg-cafe_7_1.mp3",
+"m": "m/alt_dlg-cafe_7_1.mp3"
+},
+"kp:dlg-cafe:8:0": {
+"f": "f/kp_dlg-cafe_8_0.mp3",
+"m": "m/kp_dlg-cafe_8_0.mp3"
+},
+"kp:dlg-cafe:8:1": {
+"f": "f/kp_dlg-cafe_8_1.mp3",
+"m": "m/kp_dlg-cafe_8_1.mp3"
+},
+"kp:dlg-restaurant:0:0": {
+"f": "f/kp_dlg-restaurant_0_0.mp3",
+"m": "m/kp_dlg-restaurant_0_0.mp3"
+},
+"kp:dlg-restaurant:0:1": {
+"f": "f/kp_dlg-restaurant_0_1.mp3",
+"m": "m/kp_dlg-restaurant_0_1.mp3"
+},
+"kp:dlg-restaurant:1:0": {
+"f": "f/kp_dlg-restaurant_1_0.mp3",
+"m": "m/kp_dlg-restaurant_1_0.mp3"
+},
+"alt:dlg-restaurant:1:0": {
+"f": "f/alt_dlg-restaurant_1_0.mp3",
+"m": "m/alt_dlg-restaurant_1_0.mp3"
+},
+"alt:dlg-restaurant:1:1": {
+"f": "f/alt_dlg-restaurant_1_1.mp3",
+"m": "m/alt_dlg-restaurant_1_1.mp3"
+},
+"kp:dlg-restaurant:2:0": {
+"f": "f/kp_dlg-restaurant_2_0.mp3",
+"m": "m/kp_dlg-restaurant_2_0.mp3"
+},
+"kp:dlg-restaurant:2:1": {
+"f": "f/kp_dlg-restaurant_2_1.mp3",
+"m": "m/kp_dlg-restaurant_2_1.mp3"
+},
+"kp:dlg-restaurant:3:0": {
+"f": "f/kp_dlg-restaurant_3_0.mp3",
+"m": "m/kp_dlg-restaurant_3_0.mp3"
+},
+"kp:dlg-restaurant:3:1": {
+"f": "f/kp_dlg-restaurant_3_1.mp3",
+"m": "m/kp_dlg-restaurant_3_1.mp3"
+},
+"alt:dlg-restaurant:3:0": {
+"f": "f/alt_dlg-restaurant_3_0.mp3",
+"m": "m/alt_dlg-restaurant_3_0.mp3"
+},
+"alt:dlg-restaurant:3:1": {
+"f": "f/alt_dlg-restaurant_3_1.mp3",
+"m": "m/alt_dlg-restaurant_3_1.mp3"
+},
+"kp:dlg-restaurant:4:0": {
+"f": "f/kp_dlg-restaurant_4_0.mp3",
+"m": "m/kp_dlg-restaurant_4_0.mp3"
+},
+"kp:dlg-restaurant:4:1": {
+"f": "f/kp_dlg-restaurant_4_1.mp3",
+"m": "m/kp_dlg-restaurant_4_1.mp3"
+},
+"kp:dlg-restaurant:5:0": {
+"f": "f/kp_dlg-restaurant_5_0.mp3",
+"m": "m/kp_dlg-restaurant_5_0.mp3"
+},
+"kp:dlg-restaurant:5:1": {
+"f": "f/kp_dlg-restaurant_5_1.mp3",
+"m": "m/kp_dlg-restaurant_5_1.mp3"
+},
+"alt:dlg-restaurant:5:0": {
+"f": "f/alt_dlg-restaurant_5_0.mp3",
+"m": "m/alt_dlg-restaurant_5_0.mp3"
+},
+"alt:dlg-restaurant:5:1": {
+"f": "f/alt_dlg-restaurant_5_1.mp3",
+"m": "m/alt_dlg-restaurant_5_1.mp3"
+},
+"kp:dlg-restaurant:6:0": {
+"f": "f/kp_dlg-restaurant_6_0.mp3",
+"m": "m/kp_dlg-restaurant_6_0.mp3"
+},
+"kp:dlg-restaurant:6:1": {
+"f": "f/kp_dlg-restaurant_6_1.mp3",
+"m": "m/kp_dlg-restaurant_6_1.mp3"
+},
+"kp:dlg-restaurant:7:0": {
+"f": "f/kp_dlg-restaurant_7_0.mp3",
+"m": "m/kp_dlg-restaurant_7_0.mp3"
+},
+"kp:dlg-restaurant:7:1": {
+"f": "f/kp_dlg-restaurant_7_1.mp3",
+"m": "m/kp_dlg-restaurant_7_1.mp3"
+},
+"alt:dlg-restaurant:7:0": {
+"f": "f/alt_dlg-restaurant_7_0.mp3",
+"m": "m/alt_dlg-restaurant_7_0.mp3"
+},
+"alt:dlg-restaurant:7:1": {
+"f": "f/alt_dlg-restaurant_7_1.mp3",
+"m": "m/alt_dlg-restaurant_7_1.mp3"
+},
+"kp:dlg-restaurant:8:0": {
+"f": "f/kp_dlg-restaurant_8_0.mp3",
+"m": "m/kp_dlg-restaurant_8_0.mp3"
+},
+"kp:dlg-restaurant:8:1": {
+"f": "f/kp_dlg-restaurant_8_1.mp3",
+"m": "m/kp_dlg-restaurant_8_1.mp3"
+},
+"kp:dlg-restaurant:9:0": {
+"f": "f/kp_dlg-restaurant_9_0.mp3",
+"m": "m/kp_dlg-restaurant_9_0.mp3"
+},
+"kp:dlg-restaurant:9:1": {
+"f": "f/kp_dlg-restaurant_9_1.mp3",
+"m": "m/kp_dlg-restaurant_9_1.mp3"
+},
+"alt:dlg-restaurant:9:0": {
+"f": "f/alt_dlg-restaurant_9_0.mp3",
+"m": "m/alt_dlg-restaurant_9_0.mp3"
+},
+"alt:dlg-restaurant:9:1": {
+"f": "f/alt_dlg-restaurant_9_1.mp3",
+"m": "m/alt_dlg-restaurant_9_1.mp3"
+},
+"kp:dlg-reservation:0:0": {
+"f": "f/kp_dlg-reservation_0_0.mp3",
+"m": "m/kp_dlg-reservation_0_0.mp3"
+},
+"kp:dlg-reservation:1:0": {
+"f": "f/kp_dlg-reservation_1_0.mp3",
+"m": "m/kp_dlg-reservation_1_0.mp3"
+},
+"kp:dlg-reservation:1:1": {
+"f": "f/kp_dlg-reservation_1_1.mp3",
+"m": "m/kp_dlg-reservation_1_1.mp3"
+},
+"alt:dlg-reservation:1:0": {
+"f": "f/alt_dlg-reservation_1_0.mp3",
+"m": "m/alt_dlg-reservation_1_0.mp3"
+},
+"alt:dlg-reservation:1:1": {
+"f": "f/alt_dlg-reservation_1_1.mp3",
+"m": "m/alt_dlg-reservation_1_1.mp3"
+},
+"kp:dlg-reservation:2:0": {
+"f": "f/kp_dlg-reservation_2_0.mp3",
+"m": "m/kp_dlg-reservation_2_0.mp3"
+},
+"kp:dlg-reservation:3:0": {
+"f": "f/kp_dlg-reservation_3_0.mp3",
+"m": "m/kp_dlg-reservation_3_0.mp3"
+},
+"kp:dlg-reservation:3:1": {
+"f": "f/kp_dlg-reservation_3_1.mp3",
+"m": "m/kp_dlg-reservation_3_1.mp3"
+},
+"alt:dlg-reservation:3:0": {
+"f": "f/alt_dlg-reservation_3_0.mp3",
+"m": "m/alt_dlg-reservation_3_0.mp3"
+},
+"alt:dlg-reservation:3:1": {
+"f": "f/alt_dlg-reservation_3_1.mp3",
+"m": "m/alt_dlg-reservation_3_1.mp3"
+},
+"kp:dlg-reservation:4:0": {
+"f": "f/kp_dlg-reservation_4_0.mp3",
+"m": "m/kp_dlg-reservation_4_0.mp3"
+},
+"kp:dlg-reservation:4:1": {
+"f": "f/kp_dlg-reservation_4_1.mp3",
+"m": "m/kp_dlg-reservation_4_1.mp3"
+},
+"kp:dlg-reservation:5:0": {
+"f": "f/kp_dlg-reservation_5_0.mp3",
+"m": "m/kp_dlg-reservation_5_0.mp3"
+},
+"alt:dlg-reservation:5:0": {
+"f": "f/alt_dlg-reservation_5_0.mp3",
+"m": "m/alt_dlg-reservation_5_0.mp3"
+},
+"alt:dlg-reservation:5:1": {
+"f": "f/alt_dlg-reservation_5_1.mp3",
+"m": "m/alt_dlg-reservation_5_1.mp3"
+},
+"kp:dlg-reservation:6:0": {
+"f": "f/kp_dlg-reservation_6_0.mp3",
+"m": "m/kp_dlg-reservation_6_0.mp3"
+},
+"kp:dlg-reservation:6:1": {
+"f": "f/kp_dlg-reservation_6_1.mp3",
+"m": "m/kp_dlg-reservation_6_1.mp3"
+},
+"kp:dlg-reservation:7:0": {
+"f": "f/kp_dlg-reservation_7_0.mp3",
+"m": "m/kp_dlg-reservation_7_0.mp3"
+},
+"alt:dlg-reservation:7:0": {
+"f": "f/alt_dlg-reservation_7_0.mp3",
+"m": "m/alt_dlg-reservation_7_0.mp3"
+},
+"alt:dlg-reservation:7:1": {
+"f": "f/alt_dlg-reservation_7_1.mp3",
+"m": "m/alt_dlg-reservation_7_1.mp3"
+},
+"kp:dlg-reservation:8:0": {
+"f": "f/kp_dlg-reservation_8_0.mp3",
+"m": "m/kp_dlg-reservation_8_0.mp3"
+},
+"kp:dlg-reservation:8:1": {
+"f": "f/kp_dlg-reservation_8_1.mp3",
+"m": "m/kp_dlg-reservation_8_1.mp3"
+},
+"kp:dlg-reservation:9:0": {
+"f": "f/kp_dlg-reservation_9_0.mp3",
+"m": "m/kp_dlg-reservation_9_0.mp3"
+},
+"alt:dlg-reservation:9:0": {
+"f": "f/alt_dlg-reservation_9_0.mp3",
+"m": "m/alt_dlg-reservation_9_0.mp3"
+},
+"alt:dlg-reservation:9:1": {
+"f": "f/alt_dlg-reservation_9_1.mp3",
+"m": "m/alt_dlg-reservation_9_1.mp3"
+},
+"kp:dlg-hotel:0:0": {
+"f": "f/kp_dlg-hotel_0_0.mp3",
+"m": "m/kp_dlg-hotel_0_0.mp3"
+},
+"kp:dlg-hotel:1:0": {
+"f": "f/kp_dlg-hotel_1_0.mp3",
+"m": "m/kp_dlg-hotel_1_0.mp3"
+},
+"kp:dlg-hotel:1:1": {
+"f": "f/kp_dlg-hotel_1_1.mp3",
+"m": "m/kp_dlg-hotel_1_1.mp3"
+},
+"alt:dlg-hotel:1:0": {
+"f": "f/alt_dlg-hotel_1_0.mp3",
+"m": "m/alt_dlg-hotel_1_0.mp3"
+},
+"alt:dlg-hotel:1:1": {
+"f": "f/alt_dlg-hotel_1_1.mp3",
+"m": "m/alt_dlg-hotel_1_1.mp3"
+},
+"kp:dlg-hotel:2:0": {
+"f": "f/kp_dlg-hotel_2_0.mp3",
+"m": "m/kp_dlg-hotel_2_0.mp3"
+},
+"kp:dlg-hotel:3:0": {
+"f": "f/kp_dlg-hotel_3_0.mp3",
+"m": "m/kp_dlg-hotel_3_0.mp3"
+},
+"kp:dlg-hotel:3:1": {
+"f": "f/kp_dlg-hotel_3_1.mp3",
+"m": "m/kp_dlg-hotel_3_1.mp3"
+},
+"alt:dlg-hotel:3:0": {
+"f": "f/alt_dlg-hotel_3_0.mp3",
+"m": "m/alt_dlg-hotel_3_0.mp3"
+},
+"alt:dlg-hotel:3:1": {
+"f": "f/alt_dlg-hotel_3_1.mp3",
+"m": "m/alt_dlg-hotel_3_1.mp3"
+},
+"kp:dlg-hotel:4:0": {
+"f": "f/kp_dlg-hotel_4_0.mp3",
+"m": "m/kp_dlg-hotel_4_0.mp3"
+},
+"kp:dlg-hotel:5:0": {
+"f": "f/kp_dlg-hotel_5_0.mp3",
+"m": "m/kp_dlg-hotel_5_0.mp3"
+},
+"kp:dlg-hotel:5:1": {
+"f": "f/kp_dlg-hotel_5_1.mp3",
+"m": "m/kp_dlg-hotel_5_1.mp3"
+},
+"alt:dlg-hotel:5:0": {
+"f": "f/alt_dlg-hotel_5_0.mp3",
+"m": "m/alt_dlg-hotel_5_0.mp3"
+},
+"alt:dlg-hotel:5:1": {
+"f": "f/alt_dlg-hotel_5_1.mp3",
+"m": "m/alt_dlg-hotel_5_1.mp3"
+},
+"kp:dlg-hotel:6:0": {
+"f": "f/kp_dlg-hotel_6_0.mp3",
+"m": "m/kp_dlg-hotel_6_0.mp3"
+},
+"kp:dlg-hotel:6:1": {
+"f": "f/kp_dlg-hotel_6_1.mp3",
+"m": "m/kp_dlg-hotel_6_1.mp3"
+},
+"kp:dlg-hotel:7:0": {
+"f": "f/kp_dlg-hotel_7_0.mp3",
+"m": "m/kp_dlg-hotel_7_0.mp3"
+},
+"alt:dlg-hotel:7:0": {
+"f": "f/alt_dlg-hotel_7_0.mp3",
+"m": "m/alt_dlg-hotel_7_0.mp3"
+},
+"alt:dlg-hotel:7:1": {
+"f": "f/alt_dlg-hotel_7_1.mp3",
+"m": "m/alt_dlg-hotel_7_1.mp3"
+},
+"kp:dlg-hotel:8:0": {
+"f": "f/kp_dlg-hotel_8_0.mp3",
+"m": "m/kp_dlg-hotel_8_0.mp3"
+},
+"kp:dlg-hotel:8:1": {
+"f": "f/kp_dlg-hotel_8_1.mp3",
+"m": "m/kp_dlg-hotel_8_1.mp3"
+},
+"kp:dlg-hotel:9:0": {
+"f": "f/kp_dlg-hotel_9_0.mp3",
+"m": "m/kp_dlg-hotel_9_0.mp3"
+},
+"kp:dlg-hotel:9:1": {
+"f": "f/kp_dlg-hotel_9_1.mp3",
+"m": "m/kp_dlg-hotel_9_1.mp3"
+},
+"alt:dlg-hotel:9:0": {
+"f": "f/alt_dlg-hotel_9_0.mp3",
+"m": "m/alt_dlg-hotel_9_0.mp3"
+},
+"alt:dlg-hotel:9:1": {
+"f": "f/alt_dlg-hotel_9_1.mp3",
+"m": "m/alt_dlg-hotel_9_1.mp3"
+},
+"kp:dlg-directions:0:0": {
+"f": "f/kp_dlg-directions_0_0.mp3",
+"m": "m/kp_dlg-directions_0_0.mp3"
+},
+"kp:dlg-directions:0:1": {
+"f": "f/kp_dlg-directions_0_1.mp3",
+"m": "m/kp_dlg-directions_0_1.mp3"
+},
+"kp:dlg-directions:1:0": {
+"f": "f/kp_dlg-directions_1_0.mp3",
+"m": "m/kp_dlg-directions_1_0.mp3"
+},
+"kp:dlg-directions:1:1": {
+"f": "f/kp_dlg-directions_1_1.mp3",
+"m": "m/kp_dlg-directions_1_1.mp3"
+},
+"alt:dlg-directions:1:0": {
+"f": "f/alt_dlg-directions_1_0.mp3",
+"m": "m/alt_dlg-directions_1_0.mp3"
+},
+"alt:dlg-directions:1:1": {
+"f": "f/alt_dlg-directions_1_1.mp3",
+"m": "m/alt_dlg-directions_1_1.mp3"
+},
+"kp:dlg-directions:2:0": {
+"f": "f/kp_dlg-directions_2_0.mp3",
+"m": "m/kp_dlg-directions_2_0.mp3"
+},
+"kp:dlg-directions:2:1": {
+"f": "f/kp_dlg-directions_2_1.mp3",
+"m": "m/kp_dlg-directions_2_1.mp3"
+},
+"kp:dlg-directions:3:0": {
+"f": "f/kp_dlg-directions_3_0.mp3",
+"m": "m/kp_dlg-directions_3_0.mp3"
+},
+"alt:dlg-directions:3:0": {
+"f": "f/alt_dlg-directions_3_0.mp3",
+"m": "m/alt_dlg-directions_3_0.mp3"
+},
+"alt:dlg-directions:3:1": {
+"f": "f/alt_dlg-directions_3_1.mp3",
+"m": "m/alt_dlg-directions_3_1.mp3"
+},
+"kp:dlg-directions:4:0": {
+"f": "f/kp_dlg-directions_4_0.mp3",
+"m": "m/kp_dlg-directions_4_0.mp3"
+},
+"kp:dlg-directions:4:1": {
+"f": "f/kp_dlg-directions_4_1.mp3",
+"m": "m/kp_dlg-directions_4_1.mp3"
+},
+"kp:dlg-directions:4:2": {
+"f": "f/kp_dlg-directions_4_2.mp3",
+"m": "m/kp_dlg-directions_4_2.mp3"
+},
+"kp:dlg-directions:5:0": {
+"f": "f/kp_dlg-directions_5_0.mp3",
+"m": "m/kp_dlg-directions_5_0.mp3"
+},
+"kp:dlg-directions:5:1": {
+"f": "f/kp_dlg-directions_5_1.mp3",
+"m": "m/kp_dlg-directions_5_1.mp3"
+},
+"alt:dlg-directions:5:0": {
+"f": "f/alt_dlg-directions_5_0.mp3",
+"m": "m/alt_dlg-directions_5_0.mp3"
+},
+"alt:dlg-directions:5:1": {
+"f": "f/alt_dlg-directions_5_1.mp3",
+"m": "m/alt_dlg-directions_5_1.mp3"
+},
+"kp:dlg-directions:6:0": {
+"f": "f/kp_dlg-directions_6_0.mp3",
+"m": "m/kp_dlg-directions_6_0.mp3"
+},
+"kp:dlg-directions:6:1": {
+"f": "f/kp_dlg-directions_6_1.mp3",
+"m": "m/kp_dlg-directions_6_1.mp3"
+},
+"kp:dlg-directions:7:0": {
+"f": "f/kp_dlg-directions_7_0.mp3",
+"m": "m/kp_dlg-directions_7_0.mp3"
+},
+"alt:dlg-directions:7:0": {
+"f": "f/alt_dlg-directions_7_0.mp3",
+"m": "m/alt_dlg-directions_7_0.mp3"
+},
+"alt:dlg-directions:7:1": {
+"f": "f/alt_dlg-directions_7_1.mp3",
+"m": "m/alt_dlg-directions_7_1.mp3"
+},
+"kp:dlg-directions:8:0": {
+"f": "f/kp_dlg-directions_8_0.mp3",
+"m": "m/kp_dlg-directions_8_0.mp3"
+},
+"kp:dlg-directions:8:1": {
+"f": "f/kp_dlg-directions_8_1.mp3",
+"m": "m/kp_dlg-directions_8_1.mp3"
+},
+"kp:dlg-directions:9:0": {
+"f": "f/kp_dlg-directions_9_0.mp3",
+"m": "m/kp_dlg-directions_9_0.mp3"
+},
+"kp:dlg-directions:9:1": {
+"f": "f/kp_dlg-directions_9_1.mp3",
+"m": "m/kp_dlg-directions_9_1.mp3"
+},
+"alt:dlg-directions:9:0": {
+"f": "f/alt_dlg-directions_9_0.mp3",
+"m": "m/alt_dlg-directions_9_0.mp3"
+},
+"alt:dlg-directions:9:1": {
+"f": "f/alt_dlg-directions_9_1.mp3",
+"m": "m/alt_dlg-directions_9_1.mp3"
+},
+"kp:dlg-shopping:0:0": {
+"f": "f/kp_dlg-shopping_0_0.mp3",
+"m": "m/kp_dlg-shopping_0_0.mp3"
+},
+"kp:dlg-shopping:1:0": {
+"f": "f/kp_dlg-shopping_1_0.mp3",
+"m": "m/kp_dlg-shopping_1_0.mp3"
+},
+"kp:dlg-shopping:1:1": {
+"f": "f/kp_dlg-shopping_1_1.mp3",
+"m": "m/kp_dlg-shopping_1_1.mp3"
+},
+"alt:dlg-shopping:1:0": {
+"f": "f/alt_dlg-shopping_1_0.mp3",
+"m": "m/alt_dlg-shopping_1_0.mp3"
+},
+"alt:dlg-shopping:1:1": {
+"f": "f/alt_dlg-shopping_1_1.mp3",
+"m": "m/alt_dlg-shopping_1_1.mp3"
+},
+"kp:dlg-shopping:2:0": {
+"f": "f/kp_dlg-shopping_2_0.mp3",
+"m": "m/kp_dlg-shopping_2_0.mp3"
+},
+"kp:dlg-shopping:3:0": {
+"f": "f/kp_dlg-shopping_3_0.mp3",
+"m": "m/kp_dlg-shopping_3_0.mp3"
+},
+"kp:dlg-shopping:3:1": {
+"f": "f/kp_dlg-shopping_3_1.mp3",
+"m": "m/kp_dlg-shopping_3_1.mp3"
+},
+"alt:dlg-shopping:3:0": {
+"f": "f/alt_dlg-shopping_3_0.mp3",
+"m": "m/alt_dlg-shopping_3_0.mp3"
+},
+"alt:dlg-shopping:3:1": {
+"f": "f/alt_dlg-shopping_3_1.mp3",
+"m": "m/alt_dlg-shopping_3_1.mp3"
+},
+"kp:dlg-shopping:4:0": {
+"f": "f/kp_dlg-shopping_4_0.mp3",
+"m": "m/kp_dlg-shopping_4_0.mp3"
+},
+"kp:dlg-shopping:4:1": {
+"f": "f/kp_dlg-shopping_4_1.mp3",
+"m": "m/kp_dlg-shopping_4_1.mp3"
+},
+"kp:dlg-shopping:5:0": {
+"f": "f/kp_dlg-shopping_5_0.mp3",
+"m": "m/kp_dlg-shopping_5_0.mp3"
+},
+"kp:dlg-shopping:5:1": {
+"f": "f/kp_dlg-shopping_5_1.mp3",
+"m": "m/kp_dlg-shopping_5_1.mp3"
+},
+"alt:dlg-shopping:5:0": {
+"f": "f/alt_dlg-shopping_5_0.mp3",
+"m": "m/alt_dlg-shopping_5_0.mp3"
+},
+"alt:dlg-shopping:5:1": {
+"f": "f/alt_dlg-shopping_5_1.mp3",
+"m": "m/alt_dlg-shopping_5_1.mp3"
+},
+"kp:dlg-shopping:6:0": {
+"f": "f/kp_dlg-shopping_6_0.mp3",
+"m": "m/kp_dlg-shopping_6_0.mp3"
+},
+"kp:dlg-shopping:6:1": {
+"f": "f/kp_dlg-shopping_6_1.mp3",
+"m": "m/kp_dlg-shopping_6_1.mp3"
+},
+"kp:dlg-shopping:7:0": {
+"f": "f/kp_dlg-shopping_7_0.mp3",
+"m": "m/kp_dlg-shopping_7_0.mp3"
+},
+"alt:dlg-shopping:7:0": {
+"f": "f/alt_dlg-shopping_7_0.mp3",
+"m": "m/alt_dlg-shopping_7_0.mp3"
+},
+"alt:dlg-shopping:7:1": {
+"f": "f/alt_dlg-shopping_7_1.mp3",
+"m": "m/alt_dlg-shopping_7_1.mp3"
+},
+"kp:dlg-shopping:8:0": {
+"f": "f/kp_dlg-shopping_8_0.mp3",
+"m": "m/kp_dlg-shopping_8_0.mp3"
+},
+"kp:dlg-shopping:8:1": {
+"f": "f/kp_dlg-shopping_8_1.mp3",
+"m": "m/kp_dlg-shopping_8_1.mp3"
+},
+"kp:dlg-shopping:9:0": {
+"f": "f/kp_dlg-shopping_9_0.mp3",
+"m": "m/kp_dlg-shopping_9_0.mp3"
+},
+"kp:dlg-shopping:9:1": {
+"f": "f/kp_dlg-shopping_9_1.mp3",
+"m": "m/kp_dlg-shopping_9_1.mp3"
+},
+"alt:dlg-shopping:9:0": {
+"f": "f/alt_dlg-shopping_9_0.mp3",
+"m": "m/alt_dlg-shopping_9_0.mp3"
+},
+"alt:dlg-shopping:9:1": {
+"f": "f/alt_dlg-shopping_9_1.mp3",
+"m": "m/alt_dlg-shopping_9_1.mp3"
+},
+"kp:dlg-pharmacy:0:0": {
+"f": "f/kp_dlg-pharmacy_0_0.mp3",
+"m": "m/kp_dlg-pharmacy_0_0.mp3"
+},
+"kp:dlg-pharmacy:1:0": {
+"f": "f/kp_dlg-pharmacy_1_0.mp3",
+"m": "m/kp_dlg-pharmacy_1_0.mp3"
+},
+"kp:dlg-pharmacy:1:1": {
+"f": "f/kp_dlg-pharmacy_1_1.mp3",
+"m": "m/kp_dlg-pharmacy_1_1.mp3"
+},
+"kp:dlg-pharmacy:1:2": {
+"f": "f/kp_dlg-pharmacy_1_2.mp3",
+"m": "m/kp_dlg-pharmacy_1_2.mp3"
+},
+"alt:dlg-pharmacy:1:0": {
+"f": "f/alt_dlg-pharmacy_1_0.mp3",
+"m": "m/alt_dlg-pharmacy_1_0.mp3"
+},
+"alt:dlg-pharmacy:1:1": {
+"f": "f/alt_dlg-pharmacy_1_1.mp3",
+"m": "m/alt_dlg-pharmacy_1_1.mp3"
+},
+"kp:dlg-pharmacy:2:0": {
+"f": "f/kp_dlg-pharmacy_2_0.mp3",
+"m": "m/kp_dlg-pharmacy_2_0.mp3"
+},
+"kp:dlg-pharmacy:3:0": {
+"f": "f/kp_dlg-pharmacy_3_0.mp3",
+"m": "m/kp_dlg-pharmacy_3_0.mp3"
+},
+"kp:dlg-pharmacy:3:1": {
+"f": "f/kp_dlg-pharmacy_3_1.mp3",
+"m": "m/kp_dlg-pharmacy_3_1.mp3"
+},
+"alt:dlg-pharmacy:3:0": {
+"f": "f/alt_dlg-pharmacy_3_0.mp3",
+"m": "m/alt_dlg-pharmacy_3_0.mp3"
+},
+"alt:dlg-pharmacy:3:1": {
+"f": "f/alt_dlg-pharmacy_3_1.mp3",
+"m": "m/alt_dlg-pharmacy_3_1.mp3"
+},
+"kp:dlg-pharmacy:4:0": {
+"f": "f/kp_dlg-pharmacy_4_0.mp3",
+"m": "m/kp_dlg-pharmacy_4_0.mp3"
+},
+"kp:dlg-pharmacy:4:1": {
+"f": "f/kp_dlg-pharmacy_4_1.mp3",
+"m": "m/kp_dlg-pharmacy_4_1.mp3"
+},
+"kp:dlg-pharmacy:5:0": {
+"f": "f/kp_dlg-pharmacy_5_0.mp3",
+"m": "m/kp_dlg-pharmacy_5_0.mp3"
+},
+"kp:dlg-pharmacy:5:1": {
+"f": "f/kp_dlg-pharmacy_5_1.mp3",
+"m": "m/kp_dlg-pharmacy_5_1.mp3"
+},
+"kp:dlg-pharmacy:5:2": {
+"f": "f/kp_dlg-pharmacy_5_2.mp3",
+"m": "m/kp_dlg-pharmacy_5_2.mp3"
+},
+"alt:dlg-pharmacy:5:0": {
+"f": "f/alt_dlg-pharmacy_5_0.mp3",
+"m": "m/alt_dlg-pharmacy_5_0.mp3"
+},
+"alt:dlg-pharmacy:5:1": {
+"f": "f/alt_dlg-pharmacy_5_1.mp3",
+"m": "m/alt_dlg-pharmacy_5_1.mp3"
+},
+"kp:dlg-pharmacy:6:0": {
+"f": "f/kp_dlg-pharmacy_6_0.mp3",
+"m": "m/kp_dlg-pharmacy_6_0.mp3"
+},
+"kp:dlg-pharmacy:6:1": {
+"f": "f/kp_dlg-pharmacy_6_1.mp3",
+"m": "m/kp_dlg-pharmacy_6_1.mp3"
+},
+"kp:dlg-pharmacy:7:0": {
+"f": "f/kp_dlg-pharmacy_7_0.mp3",
+"m": "m/kp_dlg-pharmacy_7_0.mp3"
+},
+"alt:dlg-pharmacy:7:0": {
+"f": "f/alt_dlg-pharmacy_7_0.mp3",
+"m": "m/alt_dlg-pharmacy_7_0.mp3"
+},
+"alt:dlg-pharmacy:7:1": {
+"f": "f/alt_dlg-pharmacy_7_1.mp3",
+"m": "m/alt_dlg-pharmacy_7_1.mp3"
+},
+"kp:dlg-pharmacy:8:0": {
+"f": "f/kp_dlg-pharmacy_8_0.mp3",
+"m": "m/kp_dlg-pharmacy_8_0.mp3"
+},
+"kp:dlg-pharmacy:8:1": {
+"f": "f/kp_dlg-pharmacy_8_1.mp3",
+"m": "m/kp_dlg-pharmacy_8_1.mp3"
+},
+"kp:dlg-pharmacy:9:0": {
+"f": "f/kp_dlg-pharmacy_9_0.mp3",
+"m": "m/kp_dlg-pharmacy_9_0.mp3"
+},
+"kp:dlg-pharmacy:9:1": {
+"f": "f/kp_dlg-pharmacy_9_1.mp3",
+"m": "m/kp_dlg-pharmacy_9_1.mp3"
+},
+"alt:dlg-pharmacy:9:0": {
+"f": "f/alt_dlg-pharmacy_9_0.mp3",
+"m": "m/alt_dlg-pharmacy_9_0.mp3"
+},
+"alt:dlg-pharmacy:9:1": {
+"f": "f/alt_dlg-pharmacy_9_1.mp3",
+"m": "m/alt_dlg-pharmacy_9_1.mp3"
+},
+"kp:dlg-office:0:0": {
+"f": "f/kp_dlg-office_0_0.mp3",
+"m": "m/kp_dlg-office_0_0.mp3"
+},
+"kp:dlg-office:0:1": {
+"f": "f/kp_dlg-office_0_1.mp3",
+"m": "m/kp_dlg-office_0_1.mp3"
+},
+"kp:dlg-office:1:0": {
+"f": "f/kp_dlg-office_1_0.mp3",
+"m": "m/kp_dlg-office_1_0.mp3"
+},
+"kp:dlg-office:1:1": {
+"f": "f/kp_dlg-office_1_1.mp3",
+"m": "m/kp_dlg-office_1_1.mp3"
+},
+"alt:dlg-office:1:0": {
+"f": "f/alt_dlg-office_1_0.mp3",
+"m": "m/alt_dlg-office_1_0.mp3"
+},
+"alt:dlg-office:1:1": {
+"f": "f/alt_dlg-office_1_1.mp3",
+"m": "m/alt_dlg-office_1_1.mp3"
+},
+"kp:dlg-office:2:0": {
+"f": "f/kp_dlg-office_2_0.mp3",
+"m": "m/kp_dlg-office_2_0.mp3"
+},
+"kp:dlg-office:2:1": {
+"f": "f/kp_dlg-office_2_1.mp3",
+"m": "m/kp_dlg-office_2_1.mp3"
+},
+"kp:dlg-office:3:0": {
+"f": "f/kp_dlg-office_3_0.mp3",
+"m": "m/kp_dlg-office_3_0.mp3"
+},
+"kp:dlg-office:3:1": {
+"f": "f/kp_dlg-office_3_1.mp3",
+"m": "m/kp_dlg-office_3_1.mp3"
+},
+"alt:dlg-office:3:0": {
+"f": "f/alt_dlg-office_3_0.mp3",
+"m": "m/alt_dlg-office_3_0.mp3"
+},
+"alt:dlg-office:3:1": {
+"f": "f/alt_dlg-office_3_1.mp3",
+"m": "m/alt_dlg-office_3_1.mp3"
+},
+"kp:dlg-office:4:0": {
+"f": "f/kp_dlg-office_4_0.mp3",
+"m": "m/kp_dlg-office_4_0.mp3"
+},
+"kp:dlg-office:4:1": {
+"f": "f/kp_dlg-office_4_1.mp3",
+"m": "m/kp_dlg-office_4_1.mp3"
+},
+"kp:dlg-office:5:0": {
+"f": "f/kp_dlg-office_5_0.mp3",
+"m": "m/kp_dlg-office_5_0.mp3"
+},
+"kp:dlg-office:5:1": {
+"f": "f/kp_dlg-office_5_1.mp3",
+"m": "m/kp_dlg-office_5_1.mp3"
+},
+"alt:dlg-office:5:0": {
+"f": "f/alt_dlg-office_5_0.mp3",
+"m": "m/alt_dlg-office_5_0.mp3"
+},
+"alt:dlg-office:5:1": {
+"f": "f/alt_dlg-office_5_1.mp3",
+"m": "m/alt_dlg-office_5_1.mp3"
+},
+"kp:dlg-office:6:0": {
+"f": "f/kp_dlg-office_6_0.mp3",
+"m": "m/kp_dlg-office_6_0.mp3"
+},
+"kp:dlg-office:6:1": {
+"f": "f/kp_dlg-office_6_1.mp3",
+"m": "m/kp_dlg-office_6_1.mp3"
+},
+"kp:dlg-office:6:2": {
+"f": "f/kp_dlg-office_6_2.mp3",
+"m": "m/kp_dlg-office_6_2.mp3"
+},
+"kp:dlg-office:7:0": {
+"f": "f/kp_dlg-office_7_0.mp3",
+"m": "m/kp_dlg-office_7_0.mp3"
+},
+"kp:dlg-office:7:1": {
+"f": "f/kp_dlg-office_7_1.mp3",
+"m": "m/kp_dlg-office_7_1.mp3"
+},
+"alt:dlg-office:7:0": {
+"f": "f/alt_dlg-office_7_0.mp3",
+"m": "m/alt_dlg-office_7_0.mp3"
+},
+"alt:dlg-office:7:1": {
+"f": "f/alt_dlg-office_7_1.mp3",
+"m": "m/alt_dlg-office_7_1.mp3"
+},
+"kp:dlg-office:8:0": {
+"f": "f/kp_dlg-office_8_0.mp3",
+"m": "m/kp_dlg-office_8_0.mp3"
+},
+"kp:dlg-office:9:0": {
+"f": "f/kp_dlg-office_9_0.mp3",
+"m": "m/kp_dlg-office_9_0.mp3"
+},
+"alt:dlg-office:9:0": {
+"f": "f/alt_dlg-office_9_0.mp3",
+"m": "m/alt_dlg-office_9_0.mp3"
+},
+"alt:dlg-office:9:1": {
+"f": "f/alt_dlg-office_9_1.mp3",
+"m": "m/alt_dlg-office_9_1.mp3"
+}
+}

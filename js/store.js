@@ -10,7 +10,7 @@ const DEFAULTS = {
     theme: 'dark',          // dark = ค่าเริ่มต้น (พรีเมียม) | light | auto
     rate: 0.92,             // ความเร็วเสียงอ่าน
     voiceURI: '',           // เลือกเสียงอ่าน (ว่าง = อัตโนมัติ)
-    voiceGender: 'male',    // male | female | auto — ผู้ชายฟังง่ายกว่าสำหรับผู้เรียนไทย
+    voiceGender: 'female',   // เสียงหลัก = Kokoro af_heart (ผู้หญิง)    // male | female | auto — ผู้ชายฟังง่ายกว่าสำหรับผู้เรียนไทย
     autoPlay: true,         // อ่านออกเสียงอัตโนมัติเมื่อเปิดการ์ด
     imageMode: 'art',       // art = ภาพกราฟฟิกน่ารัก | photo = ภาพถ่ายจริง | emoji = อีโมจิเท่านั้น
     showPhotos: true,       // (เลิกใช้ — คงไว้เพื่อความเข้ากันได้กับข้อมูลเก่า)

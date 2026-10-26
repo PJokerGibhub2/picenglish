@@ -123,9 +123,20 @@ export async function loadAudioManifest() {
 }
 
 /** คืน URL ของไฟล์เสียงที่เตรียมไว้ ถ้ามี */
-export function audioUrl(key) {
+/**
+ * คืน URL ของไฟล์เสียงที่เตรียมไว้ (Kokoro TTS)
+ * manifest รองรับ 2 แบบ: "path.mp3" (เก่า) หรือ { f: "f/x.mp3", m: "m/x.mp3" }
+ * @param {string} key
+ * @param {'female'|'male'|'f'|'m'} [gender] ค่าเริ่มต้น = ผู้หญิง (af_heart)
+ */
+export function audioUrl(key, gender) {
   if (!key || !audioManifest) return null;
-  const rel = audioManifest[key];
+  const entry = audioManifest[key];
+  if (!entry) return null;
+  const g = (gender === 'male' || gender === 'm') ? 'm' : 'f';
+  let rel = null;
+  if (typeof entry === 'string') rel = entry;
+  else rel = entry[g] || entry.f || entry.m || null;
   return rel ? new URL(rel, AUDIO_MANIFEST_URL).href : null;
 }
 
@@ -156,7 +167,7 @@ export function playFile(url, rate = 1) {
  * @param {object} opts { audioKey, rate, voiceURI, gender, onEnd }
  */
 export function sayText(text, opts = {}) {
-  const url = opts.audioKey ? audioUrl(opts.audioKey) : null;
+  const url = opts.audioKey ? audioUrl(opts.audioKey, opts.gender) : null;
   if (url) {
     return playFile(url, opts.rate ?? 1).then(() => { opts.onEnd && opts.onEnd(); });
   }
@@ -251,7 +262,7 @@ export function speakSentence(el, text, opts = {}) {
 
   // ถ้ามีไฟล์เสียงที่เตรียมไว้ ใช้ไฟล์นั้น (เสียงผู้ชายคุณภาพสูงเหมือนกันทุกเครื่อง)
   // ไฟล์เสียงไม่มีเหตุการณ์ boundary จึงใช้การประมาณเวลาไฮไลท์ทั้งประโยค
-  const fileUrl = opts.audioKey ? audioUrl(opts.audioKey) : null;
+  const fileUrl = opts.audioKey ? audioUrl(opts.audioKey, opts.gender) : null;
   if (fileUrl) {
     clearTimeout(guard);
     clearHighlight(el);
