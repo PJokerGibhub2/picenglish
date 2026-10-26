@@ -1,4 +1,4 @@
-# AGENTS.md — คู่มือสั่งงาน AI (Codex / Cursor / Claude Code / อื่น ๆ)
+﻿# AGENTS.md — คู่มือสั่งงาน AI (Codex / Cursor / Claude Code / อื่น ๆ)
 
 > **สำหรับมนุษย์**: ไฟล์นี้คือ "ใบสั่งงาน" ของโปรเจกต์นี้ ถ้าจะย้ายไปทำต่อในเครื่องอื่น (เช่น MacBook)
 > ให้วางโฟลเดอร์นี้ทั้งโฟลเดอร์แล้วเปิด AI ที่นั่น — AI จะอ่าน `AGENTS.md` และเข้าใจงานได้ทันที
@@ -177,3 +177,40 @@ Remaining from `docs/spec-phase1-speaking.md` (in the user's chosen order):
 - Every view returns a cleanup function (the router calls it on navigation).
 - New settings go in `store.js` `DEFAULTS.settings` + a row in `openSettings()`.
 - Prefer extending `data/*.json` + a build script over hardcoding content in JS.
+## 11. Voice: Kokoro TTS (the app voice)
+
+The app's spoken English is **pre-generated with Kokoro TTS** and shipped as MP3 files.
+No API key, no backend, no cost per play; the browser voice is only a fallback.
+
+| Role | Kokoro voice |
+|---|---|
+| primary (default) | **af_heart** (female) → `data/audio/f/*.mp3` |
+| secondary | **am_adam** (male) → `data/audio/m/*.mp3` |
+
+```bash
+# one-time: model files (≈340 MB, git-ignored)
+python -m pip install kokoro-onnx soundfile
+# download kokoro-v1.0.onnx + voices-v1.0.bin into scripts/models/
+#   https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
+
+python scripts/generate_kokoro.py            # all keys, both voices (≈20 min CPU)
+python scripts/generate_kokoro.py --limit 3  # smoke test
+python scripts/generate_kokoro.py --voice f  # female only
+```
+
+Key formats the app requests (`audioUrl(key, gender)` in `js/speech.js`):
+
+| key | content |
+|---|---|
+| `word:<id>` | vocabulary word |
+| `sent:<id>` | example sentence |
+| `<dlgId>:<lineIndex>` | dialogue line |
+| `kp:<dlg>:<line>:<n>` | key phrase of a line |
+| `alt:<dlg>:<line>:<n>` | alternative sentence of a line |
+
+`data/audio/manifest.json` maps each key to `{ f: "f/x.mp3", m: "m/x.mp3" }`;
+`data/audio/meta.json` records engine/voices/bitrate. When a file is missing the app
+falls back to Web Speech, so adding content never breaks audio.
+
+Always re-run the generator after editing `data/words.json` or `data/dialogues.json`,
+and bump `sw.js` VERSION so devices pick the new manifest up.
