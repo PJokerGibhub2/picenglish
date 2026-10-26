@@ -185,6 +185,7 @@ export function shadow(root, params = {}) {
     const passed = saved.passed.length;
     const isPassed = passed / lesson.transcript.length >= 0.7;
     markComplete('shadow', lesson.id, average);
+    if (isPassed) store.bumpShadow();
     const nextId = nextLessonId('shadow', lesson.id);
     const next = nextId && db.listening.find((item) => item.id === nextId);
     const notPassed = lesson.transcript.map((line, idx) => ({ line, idx })).filter(({ idx }) => !saved.passed.includes(idx));

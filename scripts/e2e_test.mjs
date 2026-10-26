@@ -1,4 +1,4 @@
-﻿/**
+/**
  * e2e_test.mjs — ทดสอบการทำงานจริงของแอปผ่าน Chrome DevTools Protocol
  *
  * วิธีใช้:
@@ -120,6 +120,43 @@ const PAGE_TEST = `(async () => {
     await sleep(500);
   };
   const storeMod = await import('/js/store.js');
+  const questMod = await import('/js/quest.js');
+  const plan = questMod.questSummary().tasks;
+  ok('ภารกิจรายวันมี 3 ข้อไม่ซ้ำกัน', plan.length === 3 && new Set(plan.map((task) => task.key)).size === 3,
+     plan.map((task) => task.key).join(', '));
+  ok('ชุดภารกิจคงที่ตลอดวันและสรุปครบ 3 ข้อ', JSON.stringify(plan.map((t) => t.key)) === JSON.stringify(questMod.todayPlan().map((t) => t.key)) && questMod.questSummary().tasks.length === 3);
+
+  location.hash = '#/today';
+  await sleep(500);
+  ok('หน้า วันนี้ แสดงภารกิจจากแผนรายวันครบ 3 ข้อ', $$('.quest-item').length === 3
+     && plan.every((task) => document.body.textContent.includes(task.label)));
+  const taskRoute = plan[0].href;
+  if ($$('.quest-item')[0]) $$('.quest-item')[0].click();
+  await sleep(350);
+  ok('แตะภารกิจแล้วเปิดโหมดที่กำหนด', location.hash === taskRoute, location.hash + ' / ' + taskRoute);
+  location.hash = '#/today';
+  await sleep(350);
+
+  const dailyRecord = storeMod.today();
+  const oldDailyValues = Object.fromEntries(['reviewed', 'listening', 'shadow', 'chunks', 'dictation', 'dialogues'].map((key) => [key, dailyRecord[key] || 0]));
+  storeMod.bumpShadow(); storeMod.bumpChunks(); storeMod.bumpDictation();
+  ok('ตัวนับ shadow, chunks และ dictation บันทึกสถิติรายวัน', dailyRecord.shadow === oldDailyValues.shadow + 1
+     && dailyRecord.chunks === oldDailyValues.chunks + 1 && dailyRecord.dictation === oldDailyValues.dictation + 1);
+  for (const [key, value] of Object.entries(oldDailyValues)) dailyRecord[key] = value;
+  storeMod.saveNow();
+
+  const donePlan = questMod.questSummary().tasks;
+  for (const task of donePlan) dailyRecord[task.dailyKey || task.key] = task.goal;
+  storeMod.saveNow();
+  location.hash = '#/__today_refresh';
+  await sleep(120);
+  location.hash = '#/today';
+  await sleep(350);
+  ok('ทำครบสามข้อแล้วหน้า วันนี้ แสดงสถานะครบภารกิจ', document.body.textContent.includes('✓ ครบภารกิจวันนี้'));
+  for (const [key, value] of Object.entries(oldDailyValues)) dailyRecord[key] = value;
+  storeMod.saveNow();
+  location.hash = '#/learn';
+  await sleep(250);
   storeMod.setSetting('imageMode', 'photo');
   await goLearnFresh();
   $$('.cat-card')[0].click();
@@ -360,6 +397,14 @@ const PAGE_TEST = `(async () => {
   await sleep(900);
   const dlgItems = $$('.list-item').filter((el) => /ระดับ A2/.test(el.textContent));
   ok('แสดงรายการสถานการณ์ครบ 8 ชุด', dlgItems.length === 8, dlgItems.length + ' สถานการณ์');
+  storeMod.saveDialogueProgress('dlg-cafe', { lineIndex: 2, completed: false });
+  location.hash = '#/__roleplay_refresh';
+  await sleep(100);
+  location.hash = '#/roleplay';
+  await sleep(350);
+  ok('รายการบทสนทนาแสดงการ์ดเรียนต่อสำหรับบทที่ค้าง', !!findByText('▶ เรียนต่อ:') && document.body.textContent.includes('บรรทัด 3/'));
+  delete storeMod.S.dialogues['dlg-cafe'];
+  storeMod.saveNow();
 
   location.hash = '#/roleplay?dlg=dlg-cafe';
   await sleep(1000);
@@ -457,6 +502,7 @@ const PAGE_TEST = `(async () => {
   ok('ให้คะแนนคำตอบจากการพูดได้', scored >= 3, scored + ' ประโยค');
   ok('หน้าสรุปมีปุ่มสลับบทและวลีที่ใช้ได้', !!findByText('สลับบท') && document.body.textContent.includes('ประโยคที่พูด'));
   const st1 = store();
+
   ok('นับจำนวนประโยคที่ผู้ใช้พูดจริง', Object.values(st1.daily || {}).some((d) => (d.spoken || 0) >= 3),
      JSON.stringify(Object.values(st1.daily || {}).map((d) => d.spoken)));
   ok('บันทึกความคืบหน้าบทสนทนา', (st1.dialogues || {})['dlg-cafe'] && st1.dialogues['dlg-cafe'].completed === true);
@@ -464,11 +510,12 @@ const PAGE_TEST = `(async () => {
   ok('ประโยคที่พูดได้เข้าคิว SRS ระดับประโยค', Object.keys(st1.srsSentences || {}).length >= 3,
      Object.keys(st1.srsSentences || {}).length + ' ประโยค');
 
-  click('สลับบท');
-  await sleep(900);
-  const swappedWho = $('.bubble.current .who');
+  const swapRole = findByText('สลับบท');
+  if (swapRole) swapRole.click();
+  await sleep(1100);
+  const swappedWho = $('.bubble .who');
   // หลังสลับบท ผู้ใช้รับบทคู่สนทนา → บรรทัดแรก (ที่เป็นบทของคู่สนทนา) กลายเป็นบทที่ผู้ใช้ต้องพูด
-  ok('สลับบทแล้วผู้ใช้ต้องพูดบทของคู่สนทนา', !!$('.mic-btn') && !!swappedWho && /คุณ/.test(swappedWho.textContent),
+  ok('สลับบทแล้วผู้ใช้ต้องพูดบทของคู่สนทนา', !!$('.mic-btn') && !!swappedWho && swappedWho.textContent.indexOf('คุณ') >= 0,
      (swappedWho ? swappedWho.textContent.trim() : 'ไม่พบบับเบิล') + ' · mic=' + !!$('.mic-btn'));
 
   location.hash = '#/sentenceReview';

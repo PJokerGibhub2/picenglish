@@ -86,7 +86,7 @@ function listView(root, mode, title, description, open) {
 }
 
 function practiceView(root, mode, params = {}) {
-  let timer = null, disposed = false, activeRate = 1;
+  let timer = null, disposed = false, activeRate = 1, countedDictation = false;
   let chunk = db.chunks.find((c) => c.id === params.id);
   const open = (id) => { location.hash = `#/${mode}?id=${encodeURIComponent(id)}`; };
   if (!chunk) { listView(root, mode, mode === 'dictation' ? 'ฟังแล้วพิมพ์' : 'เรียงประโยค', mode === 'dictation' ? 'ฟังประโยคแล้วพิมพ์ตาม เพื่อฝึกจับคำจากเสียง' : 'อ่านความหมายไทย แล้วแตะชิปคำเพื่อเรียงเป็นประโยค', open); return () => { disposed = true; clearTimeout(timer); stopSpeaking(); }; }
@@ -127,6 +127,7 @@ function practiceView(root, mode, params = {}) {
       markComplete(mode, chunk.id, aligned.pct);
       store.gradeSentence('dict:' + chunk.id, passedNow ? 3 : 1);
       if (passedNow) {
+        if (!countedDictation) { countedDictation = true; store.bumpDictation(); }
         sfxSuccess(); actions.replaceChildren(); advance(aligned.pct);
       } else {
         sfxSoft();

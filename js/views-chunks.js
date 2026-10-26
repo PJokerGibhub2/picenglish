@@ -20,6 +20,11 @@ export function chunks(root, params = {}) {
   let activeId = params.id || '';
   const scores = new Map();
   let listening = false;
+  const markUsed = (id, pct) => {
+    const alreadyUsed = store.chunkState(id).done;
+    store.markChunk(id, pct);
+    if (!alreadyUsed) store.bumpChunks();
+  };
   mount(root);
 
   if (!db.chunks.length) { root.appendChild(emptyState('💬', 'ยังไม่มีประโยคสำเร็จรูป', '')); return () => {}; }
@@ -90,13 +95,13 @@ export function chunks(root, params = {}) {
             scores.set(c.id, pct);
             score.textContent = `ได้ ${pct}% · ${pct >= (Number(S().passThreshold) || 70) ? 'ผ่านแล้ว ไปต่อได้เลย' : 'ลองอีกครั้งได้'} ` + result.said;
             score.style.color = pct >= (Number(S().passThreshold) || 70) ? 'var(--teal)' : '';
-            if (pct >= (Number(S().passThreshold) || 70)) { store.markChunk(c.id, pct); refresh(); advance(c.id); }
+            if (pct >= (Number(S().passThreshold) || 70)) { markUsed(c.id, pct); refresh(); advance(c.id); }
           } else if (result.err === 'unsupported') {
             score.textContent = 'เบราว์เซอร์นี้ให้คะแนนอัตโนมัติไม่ได้';
-            card.appendChild(micPanel({ audioText: c.en, speak: say, banner: 'ฟังเสียงต้นแบบแล้วอัดเสียงตัวเอง จากนั้นให้คะแนนตัวเองได้เลย', onRate: (stars) => { if (stars >= 3) { store.markChunk(c.id, scores.get(c.id) || 0); refresh(); } }, onNext: () => advance(c.id) }));
+            card.appendChild(micPanel({ audioText: c.en, speak: say, banner: 'ฟังเสียงต้นแบบแล้วอัดเสียงตัวเอง จากนั้นให้คะแนนตัวเองได้เลย', onRate: (stars) => { if (stars >= 3) { markUsed(c.id, scores.get(c.id) || 0); refresh(); } }, onNext: () => advance(c.id) }));
           } else score.textContent = 'ฟังเสียงไม่สำเร็จ ลองอีกครั้งหรือใช้ปุ่มอัดเสียง';
         } }, '🎤 พูดตาม'),
-        h('button', { class: `btn ${state.done ? 'btn-ghost' : 'btn-primary'} btn-sm`, type: 'button', onclick: () => { store.markChunk(c.id, scores.get(c.id) || 0); refresh(); advance(c.id); } }, state.done ? '✓ ใช้ได้แล้ว' : 'ใช้ได้แล้ว'));
+        h('button', { class: `btn ${state.done ? 'btn-ghost' : 'btn-primary'} btn-sm`, type: 'button', onclick: () => { markUsed(c.id, scores.get(c.id) || 0); refresh(); advance(c.id); } }, state.done ? '✓ ใช้ได้แล้ว' : 'ใช้ได้แล้ว'));
       card.append(actions, score);
       list.appendChild(card);
     }

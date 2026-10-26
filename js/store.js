@@ -36,7 +36,7 @@ const DEFAULTS = {
   stats: {},                // id -> {seen, correct, wrong, last}
   favorites: [],            // id[]
   hard: [],                 // id[] คำที่กด "ยังไม่แน่ใจ"
-  daily: {},                // 'YYYY-MM-DD' -> {reviewed, correct, newWords, spoken, dialogues, secondsSpoken, selfRatings}
+  daily: {},                // 'YYYY-MM-DD' -> สถิติรายวัน
 };
 
 function todayKey(d = new Date()) {
@@ -102,12 +102,15 @@ export function placement() { return S.placement || null; }
 /* ---------------- สถิติรายวัน ---------------- */
 export function today() {
   const k = todayKey();
-  if (!S.daily[k]) S.daily[k] = { reviewed: 0, correct: 0, newWords: 0, spoken: 0, dialogues: 0, listening: 0, secondsSpoken: 0, selfRatings: [] };
+  if (!S.daily[k]) S.daily[k] = { reviewed: 0, correct: 0, newWords: 0, spoken: 0, dialogues: 0, listening: 0, shadow: 0, chunks: 0, dictation: 0, secondsSpoken: 0, selfRatings: [] };
   const t = S.daily[k];
   // เผื่อข้อมูลเก่าที่บันทึกไว้ก่อนมีฟิลด์ใหม่
   if (t.spoken === undefined) t.spoken = 0;
   if (t.dialogues === undefined) t.dialogues = 0;
   if (t.listening === undefined) t.listening = 0;
+  if (t.shadow === undefined) t.shadow = 0;
+  if (t.chunks === undefined) t.chunks = 0;
+  if (t.dictation === undefined) t.dictation = 0;
   if (t.secondsSpoken === undefined) t.secondsSpoken = 0;
   if (!Array.isArray(t.selfRatings)) t.selfRatings = [];
   if (t.xp === undefined) t.xp = 0;
@@ -174,6 +177,9 @@ export function bumpDaily(field, by = 1) {
   t[field] = (t[field] || 0) + by;
   save();
 }
+export function bumpShadow() { bumpDaily('shadow', 1); }
+export function bumpChunks() { bumpDaily('chunks', 1); }
+export function bumpDictation() { bumpDaily('dictation', 1); }
 export function streakDays() {
   let n = 0;
   const d = new Date();

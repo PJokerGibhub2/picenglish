@@ -202,17 +202,22 @@ export function roleplay(root, params = {}) {
   let bubbleBox = null;
   let actionBox = null;
   let statusEl = null;
+  let advanceTimer = null;
+  let alive = true;
   const lineBlobs = new Map();   // lineKey -> Blob (เสียงที่ผู้ใช้พูดล่าสุด)
   const attempts = new Map();    // lineKey -> จำนวนครั้งที่ลอง
   const lastScore = new Map();   // lineKey -> คะแนนล่าสุด
 
   function destroy() {
+    alive = false;
+    clearTimeout(advanceTimer);
+    advanceTimer = null;
     stopSpeaking();
     stopPlayback();
     try { if (rec && recording) rec.stop(); } catch (e) { /* ignore */ }
     recording = false; busy = false;
   }
-  const go = (fn) => { destroy(); fn(); };
+  const go = (fn) => { destroy(); alive = true; fn(); };
 
   /* ---------- รายการสถานการณ์ ---------- */
   function list() {
@@ -224,12 +229,22 @@ export function roleplay(root, params = {}) {
     root.appendChild(h('div', { class: 'small muted', style: { marginBottom: '10px' },
       text: 'เลือกสถานการณ์ที่คุณเจอจริงในชีวิต แล้วพูดบทของคุณเอง — แอปจะอ่านบทคู่สนทนาให้ฟัง' }));
 
+    const active = db.dialogues.map((dialogue) => ({ dialogue, progress: store.dialogueProgress(dialogue.id) }))
+      .filter(({ dialogue, progress }) => progress.lastPlayed && !progress.completed && progress.lineIndex < dialogue.lines.length)
+      .sort((a, b) => b.progress.lastPlayed - a.progress.lastPlayed)[0];
+    if (active) root.appendChild(h('button', {
+      class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginBottom: '10px' },
+      onclick: () => go(() => { dlgId = active.dialogue.id; myRole = 'me'; idx = active.progress.lineIndex || 0; scores = []; player(); }),
+    }, h('div', { class: 'thumb', text: '▶' }), h('div', { class: 'lt' },
+      h('b', { text: `▶ เรียนต่อ: ${active.dialogue.title}` }),
+      h('div', { class: 'small muted', text: `บรรทัด ${active.progress.lineIndex + 1}/${active.dialogue.lines.length}` }))));
+
     for (const d of db.dialogues) {
       const p = store.dialogueProgress(d.id);
       const pct = p.completed ? 100 : Math.round((p.lineIndex / Math.max(1, d.lines.length)) * 100);
       root.appendChild(h('div', {
         class: 'list-item', style: { padding: '14px', alignItems: 'flex-start' },
-        onclick: () => go(() => { dlgId = d.id; myRole = 'me'; idx = p.lineIndex || 0; scores = []; player(); }),
+        onclick: () => go(() => { dlgId = d.id; myRole = 'me'; idx = p.completed ? 0 : p.lineIndex || 0; scores = []; player(); }),
       },
       h('div', { class: 'thumb', style: { fontSize: '1.7rem' }, text: d.emoji || '💬' }),
       h('div', { class: 'lt' },
@@ -248,6 +263,7 @@ export function roleplay(root, params = {}) {
     mount(root);
     const d = getDialogue(dlgId);
     if (!d) return list();
+    store.saveDialogueProgress(d.id, { lineIndex: idx, completed: false });
 
     // ส่วนหัว
     root.appendChild(h('div', { class: 'row', style: { marginBottom: '8px' } },
@@ -791,6 +807,15 @@ export function roleplay(root, params = {}) {
 
   function summary(d) {
     mount(root);
+    const currentIndex = db.dialogues.findIndex((item) => item.id === d.id);
+    const completedAll = store.completedDialogues() >= db.dialogues.length;
+    let next = null;
+    if (!completedAll) {
+      for (let offset = 1; offset <= db.dialogues.length; offset++) {
+        const candidate = db.dialogues[(currentIndex + offset) % db.dialogues.length];
+        if (!store.dialogueProgress(candidate.id).completed) { next = candidate; break; }
+      }
+    }
     const avg = scores.length ? Math.round(scores.reduce((n, s) => n + s.score, 0) / scores.length) : 0;
     const passed = scores.filter((s) => s.score >= threshold()).length;
     root.appendChild(h('div', { class: 'card center' },
@@ -814,21 +839,37 @@ export function roleplay(root, params = {}) {
       root.appendChild(card);
     }
 
-    root.appendChild(h('div', { class: 'row', style: { gap: '10px', marginTop: '14px' } },
-      h('button', {
-        class: 'btn btn-primary btn-block', type: 'button',
-        onclick: () => go(() => { myRole = myRole === 'me' ? 'staff' : 'me'; idx = 0; scores = []; player(); }),
-      }, icon('shuffle', 18), 'สลับบท'),
+    if (next) {
+      const countdown = h('div', { class: 'small muted center', style: { marginTop: '12px' }, text: 'บทถัดไปใน 2 วินาที' });
+      root.appendChild(countdown);
+      root.appendChild(h('div', { class: 'row', style: { gap: '10px', marginTop: '8px' } },
+        h('button', { class: 'btn btn-primary btn-block', type: 'button', onclick: () => {
+          clearTimeout(advanceTimer); advanceTimer = null;
+          go(() => { dlgId = next.id; idx = 0; myRole = 'me'; scores = []; player(); });
+        } }, `▶ บทถัดไป: ${next.title}`),
+        h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => {
+          clearTimeout(advanceTimer); advanceTimer = null; countdown.textContent = 'ยกเลิกการไปบทถัดไปแล้ว';
+        } }, 'ยกเลิก')));
+      advanceTimer = setTimeout(() => {
+        advanceTimer = null;
+        if (alive) go(() => { dlgId = next.id; idx = 0; myRole = 'me'; scores = []; player(); });
+      }, 2000);
+    } else if (completedAll) {
+      root.appendChild(h('div', { class: 'card center', style: { marginTop: '12px' }, text: 'จบโหมดแล้ว 🎉' }));
+      root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', style: { marginTop: '10px' }, onclick: () => go(list) }, 'กลับไปรายการบทสนทนา'));
+    } else {
+      root.appendChild(h('div', { class: 'card center', style: { marginTop: '12px' }, text: 'จบสถานการณ์แล้ว' }));
+      root.appendChild(h('button', { class: 'btn btn-ghost btn-block', type: 'button', style: { marginTop: '10px' }, onclick: () => go(list) }, 'กลับไปรายการบทสนทนา'));
+    }
+    root.appendChild(h('div', { class: 'row', style: { gap: '10px', marginTop: '10px' } },
+      h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => go(() => { myRole = myRole === 'me' ? 'staff' : 'me'; idx = 0; scores = []; player(); }) }, icon('shuffle', 18), 'สลับบท'),
       h('button', { class: 'btn btn-ghost btn-block', type: 'button', onclick: () => go(list) }, 'สถานการณ์อื่น')));
-
-    root.appendChild(h('div', { class: 'small muted center', style: { marginTop: '12px' },
-      text: 'ลองสลับบทดู — คุณจะได้พูดอีกฝั่ง ซึ่งมักเป็นประโยคที่คนอื่นพูดกับเรา' }));
     return () => {};
   }
 
   if (dlgId && getDialogue(dlgId)) {
     const p = store.dialogueProgress(dlgId);
-    idx = Math.min(p.lineIndex || 0, (getDialogue(dlgId).lines.length - 1));
+    idx = p.completed ? 0 : Math.min(p.lineIndex || 0, (getDialogue(dlgId).lines.length - 1));
     player();
   } else {
     list();

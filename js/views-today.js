@@ -7,11 +7,13 @@
 
 import { db } from './data.js';
 import * as store from './store.js';
-import { h, mount } from './ui.js';
+import { h, mount, toast } from './ui.js';
 import { mascot, MASCOT_NAME } from './mascot.js';
 import { continuePoint } from './progress.js';
+import { questSummary } from './quest.js';
 
 const WEEK_GOAL = 15;   // เป้าประโยคที่พูดต่อสัปดาห์
+let completionToastDate = '';
 
 function greeting() {
   const hour = new Date().getHours();
@@ -21,60 +23,19 @@ function greeting() {
   return 'สวัสดีตอนค่ำ';
 }
 
-/** สรุปภารกิจวันนี้จากสถิติจริง (ไม่ใช่ตัวเลขสมมติ) */
-function buildQuest() {
-  const t = store.today();
-  const reviewed = (t.reviewed || 0) + (t.newWords || 0);
-  const dialogues = t.dialogues || 0;
-  const seconds = t.secondsSpoken || 0;
-  const listening = t.listening || 0;
-  return [
-    {
-      id: 'review',
-      emoji: '🔁',
-      label: 'ทวน 5 ข้อ',
-      now: Math.min(reviewed, 5),
-      goal: 5,
-      done: reviewed >= 5,
-      href: '#/review',
-    },
-    {
-      id: 'dialogue',
-      emoji: '💬',
-      label: 'สนทนา 1 สถานการณ์',
-      now: Math.min(dialogues, 1),
-      goal: 1,
-      done: dialogues >= 1,
-      href: '#/roleplay',
-    },
-    {
-      id: 'onemin',
-      emoji: '⏱️',
-      label: 'พูดคนเดียว 60 วินาที',
-      now: Math.min(seconds, 60),
-      goal: 60,
-      done: seconds >= 20,
-      href: '#/onemin',
-      unit: 'วิ',
-    },
-    {
-      id: 'listening',
-      emoji: '🎧',
-      label: 'ฟัง 1 บท',
-      now: Math.min(listening, 1),
-      goal: 1,
-      done: listening >= 1,
-      href: '#/listening',
-    },
-  ];
-}
-
 export function today(root) {
   function render() {
     mount(root);
-    const quest = buildQuest();
-    const doneCount = quest.filter((q) => q.done).length;
-    const allDone = doneCount === quest.length;
+    const summary = questSummary();
+    const quest = summary.tasks;
+    const doneCount = summary.done;
+    const allDone = doneCount === summary.total;
+    const now = new Date();
+    const dateKey = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    if (allDone && completionToastDate !== dateKey) {
+      completionToastDate = dateKey;
+      toast('✓ ครบภารกิจวันนี้', 'ok', 2200);
+    }
     const streak = store.streakDays();
     const spokenWeek = store.spokenLast7Days();
     const xp = store.totalXp();
@@ -85,7 +46,7 @@ export function today(root) {
     root.appendChild(h('div', { class: 'row', style: { alignItems: 'flex-start', marginBottom: '2px' } },
       h('div', { style: { flex: '1' } },
         h('div', { class: 'greet', text: greeting() }),
-        h('div', { class: 'h1', text: allDone ? 'ครบภารกิจแล้ว!' : 'วันนี้ฝึกกันนะ!' })),
+        h('div', { class: 'h1', text: allDone ? '✓ ครบภารกิจวันนี้' : 'วันนี้ฝึกกันนะ!' })),
       streak > 0 ? h('span', { class: 'chip-streak', text: '🔥 ' + streak }) : null));
 
     // ---------- มาสคอต + คำพูด ----------
@@ -121,7 +82,7 @@ export function today(root) {
     h('span', { class: 'pill', text: 'เริ่ม' })));
 
     // ---------- ภารกิจ ----------
-    root.appendChild(h('div', { class: 'section-title', text: 'ภารกิจวันนี้ · 5 นาที' }));
+    root.appendChild(h('div', { class: 'section-title', text: `ภารกิจวันนี้ · ประมาณ ${summary.minutes} นาที` }));
     const questWrap = h('div', { class: 'quest' });
     for (const q of quest) {
       questWrap.appendChild(h('button', {
@@ -130,8 +91,11 @@ export function today(root) {
         onclick: () => { location.hash = q.href; },
       },
       h('span', { class: 'box', text: '✓' }),
-      h('span', { class: 't' }, q.emoji + ' ' + q.label),
-      h('span', { class: 'n', text: `${q.now}/${q.goal}${q.unit ? ' ' + q.unit : ''}` })));
+      h('span', { class: 't' },
+        h('span', { text: q.emoji + ' ' + q.label }),
+        h('div', { class: 'progress', style: { marginTop: '6px' } },
+          h('i', { style: { width: `${Math.round(q.now / q.goal * 100)}%` } }))),
+      h('span', { class: 'n', text: `${q.now}/${q.goal}` })));
     }
     root.appendChild(questWrap);
 
