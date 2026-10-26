@@ -1,11 +1,10 @@
-/**
- * ui.js — ตัวช่วยสร้าง DOM ขนาดเล็ก + toast + bottom sheet + ภาพ
+﻿/**
+ * ui.js — ตัวช่วยสร้าง DOM ขนาดเล็ก + toast + bottom sheet
  * (ไม่ใช้เฟรมเวิร์ก เพื่อให้ไฟล์เล็ก เปิดได้เร็ว และไม่ต้องมีขั้นตอน build)
  */
 
-import { photoFor, candidatesOf, setPhotoChoice } from './images.js';
-import { artFor } from './art.js';
-import { isFavorite, toggleFavorite, settings } from './store.js';
+import { isFavorite, toggleFavorite } from './store.js';
+import { categoryOf } from './data.js';
 
 /* ---------------- DOM ---------------- */
 
@@ -151,118 +150,18 @@ export function sheetHeader(title, subtitle, onClose) {
     h('button', { class: 'icon-btn', type: 'button', 'aria-label': 'ปิด', onclick: onClose }, icon('close')));
 }
 
-/* ---------------- ภาพ ---------------- */
-/**
- * สร้างกล่องภาพสำหรับคำหนึ่งคำ
- * แสดงอีโมจิทันที (ทำงานออฟไลน์ได้เสมอ) แล้วค่อยแทนที่ด้วยภาพถ่ายจริงเมื่อโหลดเสร็จ
- * opts.allowCycle = true จะมีปุ่ม "เปลี่ยนภาพ" ให้เลือกภาพถัดไปจากคลัง (ภาพจากคลังฟรีอาจไม่ตรงความหมาย 100%)
- */
-export function photoBox(word, opts = {}) {
-  const cat = opts.color || '#4f46e5';
-  const wrap = h('div', { class: `photo-wrap ${opts.class || ''}`, style: { '--cat': cat } });
-  const emoji = h('div', { class: 'photo-emoji', text: word.emoji || '🖼️' });
-  wrap.appendChild(emoji);
-
-  let img = null;
-  let credit = null;
-  let loading = null;
-
-  const apply = (photo) => {
-    if (!photo) { if (loading) { loading.remove(); loading = null; } return; }
-    if (!img) {
-      img = h('img', {
-        alt: word.word || word.titleEn || word.title || '',
-        loading: 'lazy', decoding: 'async',
-        onerror: () => { if (img) { img.remove(); img = null; } },
-        onload: () => { if (loading) { loading.remove(); loading = null; } emoji.remove(); },
-      });
-      wrap.insertBefore(img, wrap.firstChild);
-    }
-    img.src = photo.url;
-    if (opts.showCredit !== false) {
-      if (!credit) {
-        credit = h('div', { class: 'photo-credit' });
-        wrap.appendChild(credit);
-      }
-      mount(credit,
-        h('a', { href: photo.page, target: '_blank', rel: 'noopener noreferrer', text: photo.artist }),
-        ' · ',
-        photo.licenseUrl
-          ? h('a', { href: photo.licenseUrl, target: '_blank', rel: 'noopener noreferrer', text: photo.license })
-          : photo.license);
-    }
-    wrap.dataset.photoUrl = photo.url;
-  };
-
-  // โหมดภาพ: art = ภาพกราฟฟิกน่ารัก (แนะนำ, ออฟไลน์) | photo = ภาพถ่ายจริง | emoji = อีโมจิเท่านั้น
-  const mode = opts.mode || (settings().imageMode || 'art');
-
-  if (mode === 'art') {
-    const art = artFor(word.id);
-    if (art) {
-      const imgEl = h('img', {
-        class: 'art-img', src: art.url, alt: word.word || word.titleEn || '',
-        loading: 'lazy', decoding: 'async',
-        onerror: () => { if (imgEl) imgEl.remove(); },
-      });
-      wrap.appendChild(imgEl);
-      emoji.remove();
-    }
-  } else if (mode === 'photo') {
-    loading = h('div', { class: 'photo-loading' }, h('div', { class: 'tiny muted', text: '…' }));
-    wrap.appendChild(loading);
-    photoFor(word, { cycle: !!opts.cycle }).then(apply).catch(() => { if (loading) loading.remove(); });
-  }
-
-  if (opts.allowCycle && mode === 'photo') {
-    wrap.appendChild(h('button', {
-      class: 'photo-btn', type: 'button', text: '🖼 เปลี่ยนภาพ',
-      onclick: (e) => {
-        e.stopPropagation();
-        openPhotoPicker(word, (photo) => apply(photo));
-      },
-    }));
-  }
-
-  return wrap;
+export function wordHero(word, { size = 'lg' } = {}) {
+  const cat = categoryOf(word.category);
+  const letter = (word.word || '?').trim().charAt(0).toLocaleUpperCase();
+  return h('section', { class: `word-hero word-hero-${size}`, style: { '--cat': cat?.color || '#6366f1' } },
+    h('div', { class: 'word-hero-bar' }),
+    h('div', { class: 'word-hero-main' },
+      h('div', { class: 'word-hero-monogram en', 'aria-hidden': 'true', text: letter }),
+      h('div', { class: 'word-hero-copy' },
+        h('div', { class: 'word-hero-en word-en en', text: word.word }),
+        h('div', { class: 'word-hero-ipa word-ipa mono-ipa', text: word.ipa }),
+        h('div', { class: 'word-hero-th word-th' }, word.thai, h('span', { class: 'pos-tag', text: word.pos })))));
 }
-
-/**
- * แผงให้ผู้ใช้เลือกภาพเอง — ภาพจากคลังฟรีบางครั้งไม่ตรงความหมาย
- * การให้ผู้ใช้เลือกเองทำให้แก้ปัญหาได้ทันที และจำภาพที่เลือกไว้ถาวร
- */
-export function openPhotoPicker(word, onPick) {
-  openSheet((close) => {
-    const box = h('div', {});
-    box.appendChild(sheetHeader('เลือกภาพให้คำนี้', `${word.word} — ${word.thai}`, close));
-    const status = h('div', { class: 'small muted', style: { marginBottom: '10px' }, text: 'กำลังโหลดรายการภาพ…' });
-    const grid = h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' } });
-    box.appendChild(status);
-    box.appendChild(grid);
-
-    candidatesOf(word).then((list) => {
-      if (!list.length) {
-        status.textContent = 'ไม่พบภาพถ่ายสำหรับคำนี้ — จะใช้ภาพอีโมจิแทน (ดูสวยและใช้ได้ตอนออฟไลน์)';
-        return;
-      }
-      status.textContent = `พบ ${list.length} ภาพ — แตะภาพที่ตรงความหมายที่สุด (มีเครดิตและไลเซนส์กำกับให้อัตโนมัติ)`;
-      list.forEach((c, i) => {
-        grid.appendChild(h('button', {
-          class: 'mtile pic', type: 'button', style: { height: '104px' }, title: c.title,
-          onclick: async () => {
-            await setPhotoChoice(word.id, i);
-            close();
-            onPick && onPick(c);
-            toast('บันทึกภาพที่เลือกไว้แล้ว', 'ok');
-          },
-        }, h('img', { src: c.url, alt: c.title, loading: 'lazy' })));
-      });
-    }).catch(() => { status.textContent = 'โหลดรายการภาพไม่สำเร็จ ลองใหม่อีกครั้ง'; });
-
-    return box;
-  });
-}
-
 export function starButton(word, opts = {}) {
   const btn = h('button', {
     class: 'icon-btn', type: 'button', 'aria-label': 'บันทึกเป็นคำโปรด',

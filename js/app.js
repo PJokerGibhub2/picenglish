@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app.js — ตัวควบคุมหลัก: router, ธีม, ปุ่มตั้งค่า, service worker
  */
 
@@ -13,7 +13,6 @@ import { h, mount, toast, emptyState } from './ui.js';
 import * as store from './store.js';
 import { loadVoices, loadAudioManifest } from './speech.js';
 import { initLiff, profileChip, liffState } from './liff.js';
-import { loadArtManifest } from './art.js';
 import { placement } from './views-placement.js';
 import { listening } from './views-listening.js';
 import { shadow } from './views-shadow.js';
@@ -34,7 +33,7 @@ const TITLES = {
   onemin: 'พูดคนเดียว 60 วินาที',
   games: 'เกม',
   quiz: 'ควิซปรนัย',
-  match: 'จับคู่ภาพ-คำ',
+  match: 'จับคู่คำอังกฤษ-ไทย',
   speak: 'ฝึกออกเสียง',
   review: 'ทบทวน (SRS)',
   mine: 'คำของฉัน',
@@ -258,7 +257,6 @@ async function main() {
 
   loadVoices().catch(() => {});
   loadAudioManifest().catch(() => {});
-  await loadArtManifest().catch(() => {});   // ภาพกราฟฟิกในเครื่อง ต้องพร้อมก่อนวาดหน้าแรก
 
   // LINE (LIFF) — ถ้ามีการตั้งค่า LIFF ID หรือเปิดโหมดพรีวิว
   initLiff().then((st) => {

@@ -6,7 +6,7 @@
 import { db, wordsOf, categoryOf, shuffle, distractors, getWord } from './data.js';
 import * as store from './store.js';
 import {
-  h, mount, clear, toast, openSheet, closeSheet, sheetHeader, photoBox, starButton,
+  h, mount, clear, toast, openSheet, closeSheet, sheetHeader, wordHero, starButton,
   fmtInterval, progressBar, emptyState, icon,
 } from './ui.js';
 import {
@@ -16,8 +16,6 @@ import {
 import { micPanel } from './micfallback.js';
 import { sfxTap } from './sfx.js';
 import { VERSION, BUILD_DATE } from './version.js';
-import { photoFor, preloadPhotos, clearPhotoCache } from './images.js';
-import { artFor, artCredits } from './art.js';
 import { recordingsUsage, clearRecordings, QUOTA, testMicrophone, micDiagnosticsReport } from './recorder.js';
 import { shareToLine, liffState } from './liff.js';
 
@@ -150,7 +148,7 @@ export function learn(root, params = {}) {
     root.appendChild(h('div', { class: 'card', style: { background: 'linear-gradient(140deg, var(--primary), color-mix(in srgb, var(--primary) 55%, #ec4899))', color: '#fff', border: '0' } },
       h('div', { class: 'row' },
         h('div', { style: { flex: '1' } },
-          h('div', { class: 'bold', style: { fontSize: '1.05rem' }, text: 'เรียนคำศัพท์ด้วยภาพ' }),
+          h('div', { class: 'bold', style: { fontSize: '1.05rem' }, text: 'เรียนคำศัพท์จากคำและเสียง' }),
           h('div', { class: 'small', style: { opacity: '.9' }, text: `${db.words.length} คำ · 8 หมวด · มีเสียงอ่านและประโยคใช้งาน` })),
         h('div', { style: { fontSize: '2rem' }, text: '📸' }))));
 
@@ -239,19 +237,12 @@ export function learn(root, params = {}) {
     const sentEl = sentenceBlock(current);
     const card = h('div', { class: 'flash-card', style: { marginTop: '12px' } });
     const front = h('div', { class: 'flash-face flash-front' },
-      photoBox(current, { color: cat.color, showPhotos: S().showPhotos, allowCycle: true }),
-      h('div', { class: 'word-block' },
-        h('div', { class: 'word-en en', text: current.word }),
-        h('div', { class: 'word-ipa mono-ipa', text: current.ipa }),
-        S().showThai ? h('div', { class: 'word-th' }, current.thai, h('span', { class: 'pos-tag', text: current.pos })) : null),
+      wordHero(current),
       h('div', { class: 'flash-actions' },
         flashActions(current, () => sayWord(current), () => speakWordSentence(sentEl, current))));
 
     const back = h('div', { class: 'flash-face flash-back' },
-      h('div', { class: 'word-block', style: { paddingBottom: '2px' } },
-        h('div', { style: { fontSize: '2.2rem', lineHeight: '1.1' }, text: current.emoji }),
-        h('div', { class: 'word-en en', style: { fontSize: '1.5rem', marginTop: '4px' }, text: current.word }),
-        h('div', { class: 'word-th' }, current.thai, h('span', { class: 'pos-tag', text: current.pos }))),
+      wordHero(current, { size: 'sm' }),
       h('div', { style: { padding: '0 16px 16px' } },
         h('div', { class: 'tiny muted', style: { margin: '6px 0' }, text: 'แตะคำใดก็ได้ในประโยคเพื่อฟังคำนั้น' }),
         sentEl,
@@ -353,12 +344,8 @@ export function listen(root) {
 
     const cat = categoryOf(w.category);
     const card = h('div', { class: 'card' });
-    card.appendChild(h('div', { class: 'row' },
-      h('div', { style: { flex: '1' } },
-        h('div', { class: 'word-en en', text: w.word }),
-        h('div', { class: 'word-ipa mono-ipa', text: w.ipa }),
-        h('div', { class: 'word-th', text: w.thai })),
-      h('div', { class: 'pill emoji', style: { fontSize: '1.6rem' }, text: w.emoji })));
+    card.appendChild(wordHero(w, { size: 'sm' }));
+    card.appendChild(h('div', { class: 'row', style: { justifyContent: 'flex-end' } }, starButton(w)));
     card.appendChild(h('div', { class: 'tiny muted', style: { marginTop: '8px' }, text: `${cat.emoji} ${cat.th} · แตะคำในประโยคเพื่อฟังคำนั้น` }));
 
     sentEl = sentenceBlock(w, { class: 'en' });
@@ -472,7 +459,7 @@ export function games(root) {
   const s = gameScores();
   root.appendChild(h('div', { class: 'section-title', text: 'เล่นเพื่อจำให้แม่นขึ้น' }));
   const items = [
-    { emoji: '🧩', title: 'จับคู่ภาพ-คำ', desc: 'แตะภาพแล้วแตะคำให้ตรงกัน ฝึกความจำภาพ', href: '#/match', best: s.matchBest ? `เร็วสุด ${s.matchBest} วิ` : null },
+    { emoji: '🧩', title: 'จับคู่คำอังกฤษ-ไทย', desc: 'แตะคำภาษาอังกฤษ แล้วจับคู่กับความหมายภาษาไทย', href: '#/match', best: s.matchBest ? `เร็วสุด ${s.matchBest} วิ` : null },
     { emoji: '❓', title: 'ควิซปรนัย', desc: '10 ข้อ วัดความเข้าใจคำศัพท์และประโยค', href: '#/quiz', best: s.quizBest !== undefined ? `สูงสุด ${s.quizBest}/10` : null },
     { emoji: '🎤', title: 'ฝึกออกเสียง', desc: 'พูดตามแล้วให้คะแนนทีละคำ', href: '#/speak', best: s.speakBest ? `สูงสุด ${s.speakBest}%` : null },
   ];
@@ -526,7 +513,7 @@ export function quiz(root) {
     const pool = shuffle(wordsOf(catId));
     const picked = pool.slice(0, Math.min(TOTAL, pool.length));
     questions = picked.map((w, i) => {
-      const kind = ['photo2word', 'word2thai', 'thai2word', 'cloze'][i % 4];
+      const kind = ['word2thai', 'thai2word', 'cloze'][i % 3];
       return { word: w, kind };
     });
     qi = 0; score = 0; wrongList = [];
@@ -539,7 +526,7 @@ export function quiz(root) {
     const pool = wordsOf(catId);
     root.appendChild(h('div', { class: 'card' },
       h('div', { class: 'bold', text: `พร้อมทำ ${Math.min(TOTAL, pool.length)} ข้อ` }),
-      h('div', { class: 'small muted', text: 'คำถามจะสลับ 4 รูปแบบ: ดูภาพเลือกคำ / ดูคำเลือกความหมาย / ดูความหมายเลือกคำ / เติมคำในประโยค' })));
+      h('div', { class: 'small muted', text: 'คำถามจะสลับ 4 รูปแบบ: ดูคำเลือกความหมาย / ดูความหมายเลือกคำ / เติมคำในประโยค' })));
     root.appendChild(h('button', {
       class: 'btn btn-primary btn-block', type: 'button', style: { marginTop: '12px' },
       onclick: () => go(() => { build(); question(); }),
@@ -565,16 +552,10 @@ export function quiz(root) {
     let options = [];
     let prompt;
 
-    if (q.kind === 'photo2word') {
-      body.appendChild(photoBox(w, { color: categoryOf(w.category).color, showPhotos: S().showPhotos, showCredit: false }));
-      prompt = 'ภาพนี้คือคำใด';
-      options = [w, ...distractors(w, 3)].map((x) => ({ id: x.id, label: x.word, en: true }));
-    } else if (q.kind === 'word2thai') {
+    if (q.kind === 'word2thai') {
       prompt = 'คำนี้แปลว่าอะไร';
-      body.appendChild(h('div', { class: 'center', style: { padding: '10px 0' } },
-        h('div', { class: 'word-en en', text: w.word }),
-        h('div', { class: 'word-ipa mono-ipa', text: w.ipa }),
-        h('button', { class: 'btn btn-ghost btn-sm', type: 'button', style: { marginTop: '8px' }, onclick: () => sayWord(w) }, icon('sound', 16), 'ฟังเสียง')));
+      body.appendChild(wordHero(w, { size: 'sm' }));
+      body.appendChild(h('button', { class: 'btn btn-ghost btn-sm', type: 'button', style: { marginTop: '8px' }, onclick: () => sayWord(w) }, icon('sound', 16), 'ฟังเสียง'));
       options = [w, ...distractors(w, 3)].map((x) => ({ id: x.id, label: x.thai, en: false }));
     } else if (q.kind === 'thai2word') {
       prompt = 'คำภาษาอังกฤษของคำนี้คือ';
@@ -653,7 +634,7 @@ export function quiz(root) {
 }
 
 /* ================================================================== *
- * 5) เกมจับคู่ภาพ-คำ
+ * 5) เกมจับคู่คำอังกฤษ-ไทย
  * ================================================================== */
 
 export function match(root) {
@@ -678,7 +659,7 @@ export function match(root) {
     root.appendChild(categoryChips(catId, (id) => { catId = id; setup(); }));
     root.appendChild(h('div', { class: 'card' },
       h('div', { class: 'bold', text: `จับคู่ ${PAIRS} คู่` }),
-      h('div', { class: 'small muted', text: 'แตะภาพ แล้วแตะคำที่ตรงกัน ใช้เวลาน้อยที่สุดเพื่อทำสถิติ' })));
+      h('div', { class: 'small muted', text: 'แตะคำภาษาอังกฤษ แล้วจับคู่กับความหมายภาษาไทย' })));
     root.appendChild(h('button', {
       class: 'btn btn-primary btn-block', type: 'button', style: { marginTop: '12px' },
       onclick: () => go(play),
@@ -693,8 +674,8 @@ export function match(root) {
     const picked = shuffle(pool).slice(0, PAIRS);
     tiles = [];
     for (const w of picked) {
-      tiles.push({ type: 'pic', word: w, done: false });
-      tiles.push({ type: 'word', word: w, done: false });
+      tiles.push({ type: 'en', word: w, done: false });
+      tiles.push({ type: 'th', word: w, done: false });
     }
     tiles = shuffle(tiles);
     first = null; lock = false; moves = 0; matched = 0;
@@ -718,33 +699,15 @@ export function match(root) {
 
     for (const t of tiles) {
       const el = h('button', {
-        class: `mtile ${t.type === 'pic' ? 'pic' : ''}`, type: 'button',
-      }, t.type === 'pic'
-        ? h('div', { class: 'ph', text: t.word.emoji })
-        : h('div', { class: 'txt en', text: t.word.word }));
+        class: `mtile ${t.type}`, type: 'button',
+      }, t.type === 'en'
+        ? h('div', { class: 'txt en', text: t.word.word })
+        : h('div', { class: 'txt', text: t.word.thai }));
       t.el = el;
       el.onclick = () => pick(t);
       grid.appendChild(el);
-
-      const imgMode = S().imageMode || 'art';
-      if (t.type === 'pic' && imgMode === 'art' && artFor(t.word.id)) {
-        const artEl = h('img', {
-          class: 'mtile-art', src: artFor(t.word.id).url, alt: t.word.word, loading: 'lazy',
-          onload: () => { const ph = el.querySelector('.ph'); if (ph) ph.remove(); },
-        });
-        el.insertBefore(artEl, el.firstChild);
-      } else if (t.type === 'pic' && imgMode === 'photo') {
-        // ใส่ภาพจริงทับอีโมจิเมื่อโหลดเสร็จ (ถ้าออฟไลน์จะเห็นอีโมจิแทน)
-        photoFor(t.word).then((p) => {
-          if (!p || t.done) return;
-          const img = h('img', {
-            src: p.url, alt: t.word.word, loading: 'lazy',
-            onload: () => { const ph = el.querySelector('.ph'); if (ph) ph.remove(); },
-          });
-          el.insertBefore(img, el.firstChild);
-        }).catch(() => {});
-      }
     }
+
   }
 
   function pick(t) {
@@ -752,7 +715,7 @@ export function match(root) {
     if (!first) {
       first = t;
       t.el.classList.add('sel');
-      if (t.type === 'word') say(t.word.word);
+      if (t.type === 'en') say(t.word.word);
       return;
     }
     if (first === t) { t.el.classList.remove('sel'); first = null; return; }
@@ -760,7 +723,7 @@ export function match(root) {
       first.el.classList.remove('sel');
       first = t;
       t.el.classList.add('sel');
-      if (t.type === 'word') say(t.word.word);
+      if (t.type === 'en') say(t.word.word);
       return;
     }
 
@@ -841,11 +804,8 @@ export function speakView(root) {
 
     const target = mode === 'word' ? current.word : current.example;
     const card = h('div', { class: 'card' });
-    card.appendChild(h('div', { class: 'row' },
-      h('div', { style: { flex: '1' } },
-        h('div', { class: 'word-en en', style: { fontSize: mode === 'word' ? '1.9rem' : '1.1rem' }, text: current.word }),
-        h('div', { class: 'small muted', text: current.thai })),
-      starButton(current)));
+    card.appendChild(wordHero(current, { size: 'sm' }));
+    card.appendChild(h('div', { class: 'row', style: { justifyContent: 'flex-end' } }, starButton(current)));
 
     sentEl = h('div', { class: 'sentence', style: { marginTop: '10px' } });
     renderSentence(sentEl, target);
@@ -1053,13 +1013,9 @@ export function review(root) {
       h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: () => go(home) }, '← ออก'),
       h('div', { class: 'spacer' }),
       h('span', { class: 'small muted', text: `${idx + 1}/${queue.length}` })));
-    root.appendChild(progressBar(idx, queue.length));
-
-    const cat = categoryOf(current.category);
-    const sentEl = sentenceBlock(current);
+    root.appendChild(progressBar(idx, queue.length));    const sentEl = sentenceBlock(current);
     const el = h('div', { class: 'card', style: { marginTop: '12px', textAlign: 'center' } });
-    el.appendChild(h('div', { class: 'word-en en', style: { fontSize: '2rem' }, text: current.word }));
-    el.appendChild(h('div', { class: 'word-ipa mono-ipa', text: current.ipa }));
+    el.appendChild(wordHero(current, { size: 'sm' }));
     el.appendChild(h('button', {
       class: 'btn btn-ghost btn-sm', type: 'button', style: { marginTop: '8px' },
       onclick: (e) => { e.stopPropagation(); sayWord(current); },
@@ -1072,7 +1028,6 @@ export function review(root) {
       h('div', { class: 'sentence-th', text: current.exampleThai }),
       h('div', { style: { marginTop: '10px' } }, keyVocabBlock(current)));
     el.appendChild(hidden);
-    el.appendChild(photoBox(current, { color: cat.color, showPhotos: S().showPhotos, showCredit: false }));
     root.appendChild(el);
 
     const revealBtn = h('button', { class: 'btn btn-primary btn-block', type: 'button', style: { marginTop: '12px' }, onclick: () => reveal() }, 'ดูเฉลย');
@@ -1179,18 +1134,16 @@ export function mine(root) {
       const st = store.statOf(w.id);
       const total = st.correct + st.wrong;
       const acc = total ? Math.round((st.correct / total) * 100) + '%' : 'ยังไม่ทดสอบ';
-      root.appendChild(h('div', {
-        class: 'list-item',
-        onclick: () => detail(w),
-      },
-      h('div', { class: 'thumb', text: w.emoji }),
-      h('div', { class: 'lt' },
-        h('b', { class: 'en', text: w.word }),
-        h('div', { text: `${w.thai} · ${acc}` })),
-      h('button', {
-        class: 'icon-btn', type: 'button', 'aria-label': 'ออกเสียง',
-        onclick: (e) => { e.stopPropagation(); sayWord(w); },
-      }, icon('sound', 18))));
+      const item = h('div', { class: 'card', style: { marginTop: '10px' } },
+        wordHero(w, { size: 'sm' }),
+        h('div', { class: 'row', style: { justifyContent: 'space-between', marginTop: '8px' } },
+          h('span', { class: 'small muted', text: `ความแม่นยำ ${acc}` }),
+          h('button', {
+            class: 'icon-btn', type: 'button', 'aria-label': 'ออกเสียง',
+            onclick: (e) => { e.stopPropagation(); sayWord(w); },
+          }, icon('sound', 18))));
+      item.addEventListener('click', () => detail(w));
+      root.appendChild(item);
     }
     return () => {};
   }
@@ -1199,7 +1152,7 @@ export function mine(root) {
     openSheet((close) => {
       const box = h('div', {});
       box.appendChild(sheetHeader(w.word, w.thai, close));
-      box.appendChild(photoBox(w, { color: categoryOf(w.category).color, showPhotos: S().showPhotos, allowCycle: true }));
+      box.appendChild(wordHero(w));
       const sentEl = sentenceBlock(w);
       sentEl.style.marginTop = '12px';
       box.appendChild(sentEl);
@@ -1525,23 +1478,6 @@ export function openSettings(onChange) {
         h('div', {}, h('label', { text: 'อ่านออกเสียงอัตโนมัติ' }), h('div', { class: 'desc', text: 'เปิดการ์ด/เข้าหน้าฟังแล้วอ่านให้ฟังทันที' })),
         switchEl('autoPlay')),
       h('div', { class: 'field' },
-        h('div', {}, h('label', { text: 'ภาพประกอบ' }),
-          h('div', { class: 'desc', text: 'ภาพกราฟฟิกน่ารัก = ใช้ได้ออฟไลน์และตรงความหมายกว่า' })),
-        (() => {
-          const sel = h('select', {},
-            h('option', { value: 'art', text: 'ภาพกราฟฟิก (แนะนำ)' }),
-            h('option', { value: 'photo', text: 'ภาพถ่ายจริง' }),
-            h('option', { value: 'emoji', text: 'อีโมจิเท่านั้น' }));
-          sel.value = S().imageMode || 'art';
-          sel.onchange = () => { store.setSetting('imageMode', sel.value); onChange && onChange(); };
-          return sel;
-        })()),
-      h('div', { class: 'tiny muted', style: { marginTop: '-4px' },
-        text: 'ภาพกราฟฟิก: ' + (artCredits().map((c) => `${c.credit} (${c.license})`).join(' · ') || 'OpenMoji (CC BY-SA 4.0)') }),
-      h('div', { class: 'field' },
-        h('div', {}, h('label', { text: 'แสดงคำแปลไทยบนการ์ด' }), h('div', { class: 'desc', text: 'ปิดเพื่อทดสอบตัวเองก่อนดูเฉลย' })),
-        switchEl('showThai')),
-      h('div', { class: 'field' },
         h('div', {}, h('label', { text: 'จำนวนคำต่อรอบเรียน' }), h('div', { class: 'desc', text: '' })),
         (() => {
           const sel = h('select', {});
@@ -1616,26 +1552,6 @@ export function openSettings(onChange) {
     }, '🗑 ลบเสียงที่บันทึกไว้'));
 
     box.appendChild(h('div', { class: 'section-title', text: 'ออฟไลน์ & ข้อมูล' }));
-    const status = h('div', { class: 'small muted', style: { marginBottom: '8px' }, text: '' });
-    box.appendChild(h('button', {
-      class: 'btn btn-ghost btn-block', type: 'button',
-      onclick: async (e) => {
-        const btn = e.currentTarget;
-        btn.disabled = true;
-        status.textContent = 'กำลังโหลดภาพ… (ใช้เวลาสักครู่)';
-        const { done, failed } = await preloadPhotos(db.words, (d, f, total, word) => {
-          status.textContent = `โหลดภาพแล้ว ${d + f}/${total} — ${word}`;
-        });
-        status.textContent = `เสร็จแล้ว: ได้ภาพ ${done} คำ` + (failed.length ? ` · หาไม่เจอ ${failed.length} คำ (จะใช้อีโมจิแทน)` : '');
-        btn.disabled = false;
-      },
-    }, '⬇️ ดาวน์โหลดภาพทั้งหมดไว้ใช้ออฟไลน์'));
-    box.appendChild(status);
-    box.appendChild(h('button', {
-      class: 'btn btn-ghost btn-block', type: 'button', style: { marginTop: '8px' },
-      onclick: () => { clearPhotoCache(); toast('ล้างแคชภาพแล้ว'); },
-    }, '🧹 ล้างแคชภาพ'));
-
     box.appendChild(h('div', { class: 'row', style: { gap: '8px', marginTop: '8px' } },
       h('button', {
         class: 'btn btn-ghost btn-block', type: 'button',
@@ -1690,7 +1606,6 @@ export function openSettings(onChange) {
     }, '💚 แชร์ให้เพื่อนใน LINE'));
 
     box.appendChild(h('div', { class: 'tiny muted', style: { marginTop: '16px' } },
-      h('div', { text: 'เครดิตภาพ: Wikimedia Commons (แสดงผู้ถ่ายและไลเซนส์กำกับใต้ภาพทุกภาพ)' }),
       h('div', { text: 'เสียงอ่าน: Web Speech API ของเบราว์เซอร์ · ไม่มีการส่งข้อมูลผู้ใช้ออกจากเครื่อง' })));
     return box;
   }, { id: 'settings' });

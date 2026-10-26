@@ -1,4 +1,4 @@
-/**
+﻿/**
  * e2e_test.mjs — ทดสอบการทำงานจริงของแอปผ่าน Chrome DevTools Protocol
  *
  * วิธีใช้:
@@ -94,15 +94,8 @@ const PAGE_TEST = `(async () => {
   ok('การ์ดมีปุ่มออกเสียง/อ่านประโยค', !!findByText('ออกเสียงคำ') && !!findByText('อ่านประโยค'));
 
   // โหมดภาพเริ่มต้น = ภาพกราฟฟิกน่ารัก (SVG ในเครื่อง ใช้งานออฟไลน์ได้)
-  const artImgs = $$('.photo-wrap .art-img');
-  ok('การ์ดแสดงภาพกราฟฟิกน่ารัก (โหมดเริ่มต้น)', artImgs.length >= 1, artImgs.length + ' ภาพ');
-  ok('ภาพกราฟฟิกโหลดจากไฟล์ในเครื่อง (data/art/)', artImgs.length > 0 && /\/data\/art\//.test(artImgs[0].getAttribute('src')),
-     artImgs.length ? artImgs[0].getAttribute('src').split('/').slice(-1)[0] : '-');
-  ok('ภาพกราฟฟิกแสดงจริง (โหลดสำเร็จ)', artImgs.length > 0 && artImgs[0].complete && artImgs[0].naturalWidth > 0,
-     artImgs.length ? artImgs[0].naturalWidth + 'px' : '-');
-  ok('ไม่มีปุ่มเปลี่ยนภาพในโหมดภาพกราฟฟิก (ไม่ต้องใช้)', !findByText('เปลี่ยนภาพ'));
-
-  // ไอคอนต้องเป็น SVG จริงและมีขนาดvisible (บั๊ก createElement('svg') จะทำให้ไอคอนหายทั้งแอป)
+  ok('หน้าแฟลชการ์ดไม่มีรูปภาพ', $$('#view img').length === 0, $$('#view img').length + ' รูป');
+  ok('การ์ดมี monogram คำ IPA และคำแปลไทยครบ', !!$('.word-hero-monogram') && !!$('.word-hero-en') && !!$('.word-hero-ipa') && !!$('.word-hero-th'));
   const svgs = $$('svg');
   ok('ไอคอนถูกสร้างในเนมสเปซ SVG จริง', svgs.length > 0 && svgs.every((s) => s.namespaceURI === 'http://www.w3.org/2000/svg'), svgs.length + ' ไอคอน');
   ok('ไอคอนมี path ที่มีข้อมูล', svgs.length > 0 && svgs.every((s) => { const p = s.querySelector('path'); return p && (p.getAttribute('d') || '').length > 0; }));
@@ -111,7 +104,6 @@ const PAGE_TEST = `(async () => {
      shownSvg.length > 0 && shownSvg.every((s) => { const r = s.getBoundingClientRect(); return r.width > 4 && r.height > 4; }),
      shownSvg.length + '/' + svgs.length + ' ไอคอนที่มองเห็น');
 
-  /* ---------- 2.1) โหมดภาพถ่ายจริง + แผงเลือกภาพ (ยังใช้งานได้เมื่อผู้ใช้เลือก) ---------- */
   // ต้องบังคับให้ router วาดหน้าใหม่ (การตั้ง hash ซ้ำค่าเดิมจะไม่ทำให้ router ทำงาน)
   const goLearnFresh = async () => {
     location.hash = '#/__reset__';
@@ -157,35 +149,9 @@ const PAGE_TEST = `(async () => {
   storeMod.saveNow();
   location.hash = '#/learn';
   await sleep(250);
-  storeMod.setSetting('imageMode', 'photo');
-  await goLearnFresh();
+    await goLearnFresh();
   $$('.cat-card')[0].click();
-  await sleep(2600);
-  ok('สลับเป็นโหมดภาพถ่ายจริงได้', !!$('.photo-wrap img'));
-  ok('โหมดภาพถ่ายมีปุ่มเปลี่ยนภาพ', !!findByText('เปลี่ยนภาพ'));
-  const photoImgBefore = $('.photo-wrap img') ? $('.photo-wrap img').getAttribute('src') : '';
-  click('เปลี่ยนภาพ');
-  await sleep(2600);
-  const thumbs = $$('#sheet-body .mtile img');
-  ok('แผงเลือกภาพแสดงภาพตัวเลือก', thumbs.length >= 1, thumbs.length + ' ภาพ');
-  if (thumbs.length >= 2) {
-    thumbs[1].closest('button').click();
-    await sleep(900);
-    const after = $('.photo-wrap img') ? $('.photo-wrap img').getAttribute('src') : '';
-    const short = (u) => decodeURIComponent(((u || '').split('/').pop() || '').split('?')[0]).slice(0, 34);
-    ok('เลือกภาพอื่นแล้วภาพบนการ์ดเปลี่ยนตาม', after && after !== photoImgBefore, short(photoImgBefore) + ' -> ' + short(after));
-    ok('ปิดแผงหลังเลือกภาพแล้ว', $('#sheet').classList.contains('hidden'));
-  } else {
-    $('#sheet').classList.add('hidden');
-  }
-  const credit = $('.photo-credit');
-  ok('แสดงเครดิต/ไลเซนส์ของภาพถ่าย (ข้อกำหนดของคลังฟรี)', !!credit && credit.textContent.length > 3, credit ? credit.textContent.slice(0, 40) : 'ไม่พบเครดิต');
-  // กลับไปโหมดภาพกราฟฟิก (ค่าเริ่มต้น)
-  storeMod.setSetting('imageMode', 'art');
-  await goLearnFresh();
-  $$('.cat-card')[0].click();
-  await sleep(1200);
-  ok('กลับมาโหมดภาพกราฟฟิกได้', $$('.photo-wrap .art-img').length >= 1);
+  await sleep(500);
   ok('ยังไม่เฉลย (ปุ่มให้คะแนนซ่อนอยู่)', $('.advance-grid').classList.contains('hidden'));
 
   $('.flash-card').click();
@@ -250,6 +216,7 @@ const PAGE_TEST = `(async () => {
   await sleep(700);
   ok('ควิซแสดง 4 ตัวเลือก', $$('.opt').length === 4, $$('.opt').length + ' ตัวเลือก');
   ok('ควิซมีแถบความคืบหน้า', !!$('.progress'));
+  ok('quiz has no images', $$('#view img').length === 0);
   const firstOptText = $('.opt').textContent;
   $('.opt').click();
   await sleep(400);
@@ -260,52 +227,32 @@ const PAGE_TEST = `(async () => {
   await waitFor(() => $$('.opt').length === 4 && $('.opt').textContent !== firstOptText, 4000);
   ok('ไปข้อถัดไปอัตโนมัติ', document.body.textContent.includes('ข้อ 2/'), '');
 
-  /* ---------- 5) เกมจับคู่ ---------- */
+  /* ---------- 5) text-only matching game ---------- */
   location.hash = '#/match';
   await sleep(800);
   click('เริ่มเกม');
   await sleep(600);
-  ok('กระดานมี 10 ช่อง (5 คู่)', $$('.mtile').length === 10, $$('.mtile').length + ' ช่อง');
-  ok('มีช่องภาพและช่องคำอย่างละ 5', $$('.mtile.pic').length === 5 && $$('.mtile:not(.pic)').length === 5);
-
+  ok('กระดานมี 10 ช่อง อังกฤษและไทยอย่างละ 5', $$('.mtile').length === 10 && $$('.mtile.en').length === 5 && $$('.mtile.th').length === 5);
+  ok('จับคู่ทำงานโดยไม่มีรูป', $$('#view img').length === 0);
   const words = await (await fetch('data/words.json')).json();
-  const wordTile = $$('.mtile:not(.pic)')[0];
-  const label = wordTile.querySelector('.txt').textContent.trim();
-  const rec = words.find((w) => w.word === label);
-  const picTile = $$('.mtile.pic').find((t) => {
-    const img = t.querySelector('img');
-    if (img && img.alt === label) return true;
-    const ph = t.querySelector('.ph');
-    return rec && ph && ph.textContent.trim() === rec.emoji;
-  });
-  ok('จับคู่ภาพกับคำได้ถูกต้อง', !!picTile, label);
-  if (picTile) {
-    picTile.click();
-    await sleep(200);
-    wordTile.click();
-    await sleep(400);
-    ok('คู่ที่ถูกต้องถูกทำเครื่องหมายว่าจบ', picTile.classList.contains('done') && wordTile.classList.contains('done'));
+  const enTile = $$('.mtile.en')[0];
+  const label = enTile.querySelector('.txt').textContent.trim();
+  const word = words.find((w) => w.word === label);
+  const thTile = $$('.mtile.th').find((t) => word && t.querySelector('.txt').textContent.trim() === word.thai);
+  ok('จับคู่คำอังกฤษกับคำไทยได้', !!thTile, label);
+  if (thTile) {
+    enTile.click(); await sleep(200);
+    thTile.click(); await sleep(400);
+    ok('คู่ที่ถูกต้องถูกทำเครื่องหมาย', enTile.classList.contains('done') && thTile.classList.contains('done'));
   }
-  const a = $$('.mtile:not(.done)')[0];
-  const aIsPic = a.classList.contains('pic');
-  const aLabel = aIsPic
-    ? ((a.querySelector('img') || {}).alt
-       || (words.find((x) => x.emoji === (a.querySelector('.ph') ? a.querySelector('.ph').textContent.trim() : '')) || {}).word)
-    : a.querySelector('.txt').textContent.trim();
-  const mismatch = $$('.mtile:not(.done)').filter((t) => t.classList.contains('pic') !== aIsPic)
-    .find((t) => {
-      const label = aIsPic ? t.querySelector('.txt').textContent.trim()
-        : ((t.querySelector('img') || {}).alt
-           || (words.find((x) => x.emoji === (t.querySelector('.ph') ? t.querySelector('.ph').textContent.trim() : '')) || {}).word);
-      return label && label !== aLabel;
-    });
-  ok('เลือกคู่ที่ไม่ตรงกันได้สำหรับทดสอบ', !!mismatch, aLabel + ' vs อื่นๆ');
-  if (mismatch) {
-    a.click(); await sleep(130); mismatch.click(); await sleep(180);
-    ok('คู่ที่ผิดขึ้นอนิเมชันสั่น', a.classList.contains('shake') || mismatch.classList.contains('shake'));
+  const aTile = $$('.mtile:not(.done)')[0];
+  const otherTile = $$('.mtile:not(.done)').find((t) => t.classList.contains(aTile.classList.contains('en') ? 'th' : 'en'));
+  ok('เลือกคู่ที่ไม่ตรงกันได้', !!otherTile);
+  if (otherTile) {
+    aTile.click(); await sleep(130); otherTile.click(); await sleep(180);
+    ok('คู่ที่ไม่ตรงกันมีการตอบสนอง', aTile.classList.contains('shake') || otherTile.classList.contains('shake'));
     await sleep(700);
   }
-
   /* ---------- 6) ฝึกออกเสียง ---------- */
   location.hash = '#/speak';
   await sleep(800);
@@ -350,14 +297,14 @@ const PAGE_TEST = `(async () => {
   await sleep(700);
   ok('หน้าคำของฉันมีสถิติ 3 ช่อง', $$('.stat').length === 3);
   ok('มีแท็บคำโปรด/คำยาก/ทั้งหมด', !!findByText('คำโปรด') && !!findByText('คำยาก') && !!findByText('ทั้งหมด'));
-  ok('คำที่ติดดาวปรากฏในคำโปรด', $$('.list-item').length >= 1, $$('.list-item').length + ' รายการ');
+  ok('คำที่ติดดาวปรากฏในคำโปรด', $$('#view .card').length >= 1, $$('#view .card').length + ' รายการ');
   click('คำยาก');
   await sleep(500);
   ok('แท็บคำยากทำงาน (ว่างเพราะยังไม่ทำเครื่องหมาย)', document.body.textContent.includes('ยังไม่มีคำยาก'));
   click('ทั้งหมด');
   await sleep(500);
-  ok('แท็บทั้งหมดแสดงคำที่เรียนแล้ว', $$('.list-item').length >= 1, $$('.list-item').length + ' รายการ');
-  $$('.list-item')[0].click();
+  ok('แท็บทั้งหมดแสดงคำที่เรียนแล้ว', $$('#view .card').length >= 1, $$('#view .card').length + ' รายการ');
+  if ($$('#view .card')[0]) $$('#view .card')[0].click();
   await sleep(500);
   ok('แตะรายการแล้วเปิดรายละเอียดคำ', !!$('#sheet-body') && $('#sheet-body').textContent.includes('ทบทวน'));
   $('#sheet').classList.add('hidden');
@@ -366,9 +313,10 @@ const PAGE_TEST = `(async () => {
   document.getElementById('btn-settings').click();
   await sleep(500);
   const sheetText = $('#sheet-body').textContent;
+  const hasImageSetting = Array.from($('#sheet-body label')).some((el) => el.textContent.includes('\u0E20\u0E32\u0E1E\u0E1B\u0E23\u0E30\u0E01\u0E2D\u0E1A'));
+  ok('settings contain no image controls or credits', !hasImageSetting && !sheetText.includes('OpenMoji') && !sheetText.includes('Wikimedia'));
   ok('เปิดหน้าตั้งค่าได้', sheetText.includes('ตั้งค่า'));
   ok('มีตัวเลือกเสียงอ่าน', !!$('#sheet-body select'));
-  ok('มีปุ่มดาวน์โหลดภาพออฟไลน์', sheetText.includes('ดาวน์โหลดภาพทั้งหมด'));
   ok('มีแถวดาวน์โหลดเสียงออฟไลน์', !!$('[data-audio-download] button') && sheetText.includes('ดาวน์โหลดเสียงทั้งหมด'));
   ok('มีปุ่มส่งออก/นำเข้า/ล้างข้อมูล', sheetText.includes('ส่งออกข้อมูล') && sheetText.includes('นำเข้าข้อมูล') && sheetText.includes('ล้างความคืบหน้า'));
   const themeSel = $$('#sheet-body select').find((s) => Array.from(s.options).some((o) => o.value === 'dark'));
@@ -382,8 +330,8 @@ const PAGE_TEST = `(async () => {
     await sleep(200);
     ok('เปลี่ยนธีมกลับเป็นสว่างได้', document.documentElement.dataset.theme === 'light');
   }
-  const photoSwitch = $$('#sheet-body .switch input');
-  ok('มีสวิตช์ตั้งค่าอย่างน้อย 3 ตัว', photoSwitch.length >= 3, photoSwitch.length + ' ตัว');
+  const settingSwitches = $$('#sheet-body .switch input');
+  ok('มีสวิตช์ตั้งค่าอย่างน้อย 3 ตัว', settingSwitches.length >= 3, settingSwitches.length + ' ตัว');
   document.getElementById('sheet').classList.add('hidden');
 
   /* ---------- 10) โหมดฝึกพูด: บทสนทนาจำลอง (ทดสอบวงจรการพูดจริง) ---------- */
@@ -521,8 +469,7 @@ const PAGE_TEST = `(async () => {
   location.hash = '#/sentenceReview';
   await sleep(800);
   ok('หน้าทบทวนประโยคเปิดได้', document.body.textContent.includes('ประโยค'));
-
-  /* ---------- 10.4) เอฟเฟกต์เสียง + ปุ่มฟังบทสนทนา + ไม่มีรูปในโหมดสนทนา ---------- */
+  /* ---------- 10.4) sound effects and dialogue playback ---------- */
   const sfxMod = await import('/js/sfx.js');
   ok('มีโมดูลเสียงเอฟเฟกต์ (สังเคราะห์ในเครื่อง)', typeof sfxMod.sfxMicStart === 'function' && typeof sfxMod.sfxSuccess === 'function');
   ok('ตั้งค่าเสียงเอฟเฟกต์เปิดเป็นค่าเริ่มต้น', store().settings.sfx !== false, String(store().settings.sfx));
@@ -531,7 +478,6 @@ const PAGE_TEST = `(async () => {
   location.hash = '#/roleplay?dlg=dlg-cafe';
   await sleep(1600);
   ok('เข้าห้องสนทนาได้', !!$('.bubble'), $$('.bubble').length + ' บับเบิล');
-  ok('โหมดสนทนาไม่มีรูปภาพประกอบแล้ว', !$('.dlg-photo'), $('.dlg-photo') ? 'ยังมีรูป' : 'ไม่มีรูป');
   ok('บับเบิลมีปุ่มฟังเสียงประโยค', $$('button[aria-label="ฟังเสียงประโยคนี้"]').length >= 1,
      $$('button[aria-label="ฟังเสียงประโยคนี้"]').length + ' ปุ่ม');
   /* ---------- 10.5) พูดคนเดียว 60 วินาที ---------- */
@@ -685,22 +631,6 @@ const PAGE_TEST = `(async () => {
   ok('meta ระบุ Kokoro af_heart / am_adam', kmeta.engine === 'kokoro-onnx'
      && kmeta.voices.f === 'af_heart' && kmeta.voices.m === 'am_adam',
      kmeta.engine + ' · ' + kmeta.voices.f + ' / ' + kmeta.voices.m);
-  /* ---------- 11) ระบบภาพจริงจาก Wikimedia Commons ---------- */
-  const imgMod = await import('/js/images.js');
-  const probe = words.find((w) => w.word === 'receipt') || words[0];
-  const photo = await imgMod.photoFor(probe, { force: true });
-  ok('ดึงภาพจริงจาก Wikimedia Commons ได้ (CORS ผ่าน)', !!photo && !!photo.url, photo ? photo.title : 'ไม่พบภาพ');
-  ok('ภาพที่ได้มีข้อมูลเครดิต/ไลเซนส์', !!photo && !!photo.artist && !!photo.license,
-     photo ? photo.artist + ' / ' + photo.license : '-');
-  const candidates = await imgMod.fetchCandidates(probe);
-  ok('ตัวกรองภาพตัดภาพที่ไม่เหมาะออก', Array.isArray(candidates) && candidates.every((c) => !/\\b(map|logo|diagram|chart)\\b/i.test(c.title)),
-     candidates.length + ' ภาพที่ผ่านการคัดเลือก');
-  const other = words.find((w) => w.word === 'menu') || words[1];
-  const photo2 = await imgMod.photoFor(other);
-  ok('คำที่ภาพหายากก็ยังได้ภาพ (โหมดผ่อนปรน)', !!photo2 && !!photo2.url, photo2 ? photo2.title : 'ไม่พบภาพ');
-  const photo3 = await imgMod.photoFor(other, { cycle: true });
-  ok('เรียกภาพถัดไป (ปุ่มเปลี่ยนภาพ) ได้', !!photo3 && !!photo3.url, photo3 ? photo3.title.slice(0, 45) : 'ไม่พบภาพ');
-
   /* ---------- 12) ความทนทาน ---------- */
   location.hash = '#/placement?short=1';
   await sleep(700);

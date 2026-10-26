@@ -1,4 +1,4 @@
-﻿/**
+/**
  * views-speaking.js — โหมด "ฝึกพูด" (เฟส 1)
  *
  *  หลักการออกแบบ
@@ -11,7 +11,7 @@
 import { db, getDialogue, categoryOf, shuffle, sample } from './data.js';
 import * as store from './store.js';
 import {
-  h, mount, clear, toast, openSheet, closeSheet, sheetHeader, photoBox, emptyState,
+  h, mount, clear, toast, openSheet, closeSheet, sheetHeader, wordHero, emptyState,
   progressBar, fmtInterval, icon,
 } from './ui.js';
 import {
@@ -152,7 +152,7 @@ export function speakingHub(root) {
 
   root.appendChild(h('div', { class: 'section-title', text: 'เกม' }));
   for (const it of [
-    { emoji: '🧩', title: 'จับคู่ภาพ-คำ', href: '#/match' },
+    { emoji: '🧩', title: 'จับคู่คำอังกฤษ-ไทย', href: '#/match' },
     { emoji: '❓', title: 'ควิซปรนัย', href: '#/quiz' },
     { emoji: '🎤', title: 'ฝึกออกเสียงคำศัพท์', href: '#/speak' },
   ]) {
@@ -689,10 +689,9 @@ export function roleplay(root, params = {}) {
     openSheet((close) => {
       const box = h('div', {});
       box.appendChild(sheetHeader(clean, dict ? dict.thai : 'ฟังช้าๆ แล้วพูดตาม', close));
-      box.appendChild(h('div', { class: 'center', style: { padding: '6px 0 12px' } },
-        h('div', { class: 'word-en en', style: { fontSize: '2.1rem' }, text: clean }),
-        dict ? h('div', { class: 'word-ipa mono-ipa', text: dict.ipa }) : null));
-      if (dict) box.appendChild(photoBox(dict, { showPhotos: S().showPhotos, class: 'dlg-photo' }));
+      if (dict) box.appendChild(wordHero(dict, { size: 'sm' }));
+      else box.appendChild(h('div', { class: 'center', style: { padding: '6px 0 12px' } },
+        h('div', { class: 'word-en en', style: { fontSize: '2.1rem' }, text: clean })));
       box.appendChild(h('div', { class: 'row row-wrap', style: { gap: '8px', justifyContent: 'center' } },
         h('button', { class: 'btn btn-primary btn-sm', type: 'button', onclick: () => sayText(clean, { rate: 1, voiceURI: S().voiceURI, gender: S().voiceGender, audioKey: dict ? 'word:' + dict.id : null }) }, '🔊 ฟังช้าๆ (ปกติ)'),
         h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: () => sayText(clean, { rate: 0.55, voiceURI: S().voiceURI, gender: S().voiceGender }) }, '🐢 ช้ามาก'),
