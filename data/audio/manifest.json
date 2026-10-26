@@ -1962,5 +1962,833 @@
 "alt:dlg-office:9:1": {
 "f": "f/alt_dlg-office_9_1.mp3",
 "m": "m/alt_dlg-office_9_1.mp3"
+},
+"lis:lis-daily-01:0": {
+"f": "f/lis_lis-daily-01_0.mp3",
+"m": "m/lis_lis-daily-01_0.mp3"
+},
+"lis:lis-daily-01:1": {
+"f": "f/lis_lis-daily-01_1.mp3",
+"m": "m/lis_lis-daily-01_1.mp3"
+},
+"lis:lis-daily-01:2": {
+"f": "f/lis_lis-daily-01_2.mp3",
+"m": "m/lis_lis-daily-01_2.mp3"
+},
+"lis:lis-daily-01:3": {
+"f": "f/lis_lis-daily-01_3.mp3",
+"m": "m/lis_lis-daily-01_3.mp3"
+},
+"lis:lis-daily-02:0": {
+"f": "f/lis_lis-daily-02_0.mp3",
+"m": "m/lis_lis-daily-02_0.mp3"
+},
+"lis:lis-daily-02:1": {
+"f": "f/lis_lis-daily-02_1.mp3",
+"m": "m/lis_lis-daily-02_1.mp3"
+},
+"lis:lis-daily-02:2": {
+"f": "f/lis_lis-daily-02_2.mp3",
+"m": "m/lis_lis-daily-02_2.mp3"
+},
+"lis:lis-daily-02:3": {
+"f": "f/lis_lis-daily-02_3.mp3",
+"m": "m/lis_lis-daily-02_3.mp3"
+},
+"lis:lis-daily-03:0": {
+"f": "f/lis_lis-daily-03_0.mp3",
+"m": "m/lis_lis-daily-03_0.mp3"
+},
+"lis:lis-daily-03:1": {
+"f": "f/lis_lis-daily-03_1.mp3",
+"m": "m/lis_lis-daily-03_1.mp3"
+},
+"lis:lis-daily-03:2": {
+"f": "f/lis_lis-daily-03_2.mp3",
+"m": "m/lis_lis-daily-03_2.mp3"
+},
+"lis:lis-daily-03:3": {
+"f": "f/lis_lis-daily-03_3.mp3",
+"m": "m/lis_lis-daily-03_3.mp3"
+},
+"lis:lis-daily-04:0": {
+"f": "f/lis_lis-daily-04_0.mp3",
+"m": "m/lis_lis-daily-04_0.mp3"
+},
+"lis:lis-daily-04:1": {
+"f": "f/lis_lis-daily-04_1.mp3",
+"m": "m/lis_lis-daily-04_1.mp3"
+},
+"lis:lis-daily-04:2": {
+"f": "f/lis_lis-daily-04_2.mp3",
+"m": "m/lis_lis-daily-04_2.mp3"
+},
+"lis:lis-daily-04:3": {
+"f": "f/lis_lis-daily-04_3.mp3",
+"m": "m/lis_lis-daily-04_3.mp3"
+},
+"lis:lis-daily-05:0": {
+"f": "f/lis_lis-daily-05_0.mp3",
+"m": "m/lis_lis-daily-05_0.mp3"
+},
+"lis:lis-daily-05:1": {
+"f": "f/lis_lis-daily-05_1.mp3",
+"m": "m/lis_lis-daily-05_1.mp3"
+},
+"lis:lis-daily-05:2": {
+"f": "f/lis_lis-daily-05_2.mp3",
+"m": "m/lis_lis-daily-05_2.mp3"
+},
+"lis:lis-daily-05:3": {
+"f": "f/lis_lis-daily-05_3.mp3",
+"m": "m/lis_lis-daily-05_3.mp3"
+},
+"lis:lis-daily-06:0": {
+"f": "f/lis_lis-daily-06_0.mp3",
+"m": "m/lis_lis-daily-06_0.mp3"
+},
+"lis:lis-daily-06:1": {
+"f": "f/lis_lis-daily-06_1.mp3",
+"m": "m/lis_lis-daily-06_1.mp3"
+},
+"lis:lis-daily-06:2": {
+"f": "f/lis_lis-daily-06_2.mp3",
+"m": "m/lis_lis-daily-06_2.mp3"
+},
+"lis:lis-daily-06:3": {
+"f": "f/lis_lis-daily-06_3.mp3",
+"m": "m/lis_lis-daily-06_3.mp3"
+},
+"lis:lis-daily-07:0": {
+"f": "f/lis_lis-daily-07_0.mp3",
+"m": "m/lis_lis-daily-07_0.mp3"
+},
+"lis:lis-daily-07:1": {
+"f": "f/lis_lis-daily-07_1.mp3",
+"m": "m/lis_lis-daily-07_1.mp3"
+},
+"lis:lis-daily-07:2": {
+"f": "f/lis_lis-daily-07_2.mp3",
+"m": "m/lis_lis-daily-07_2.mp3"
+},
+"lis:lis-daily-07:3": {
+"f": "f/lis_lis-daily-07_3.mp3",
+"m": "m/lis_lis-daily-07_3.mp3"
+},
+"lis:lis-daily-08:0": {
+"f": "f/lis_lis-daily-08_0.mp3",
+"m": "m/lis_lis-daily-08_0.mp3"
+},
+"lis:lis-daily-08:1": {
+"f": "f/lis_lis-daily-08_1.mp3",
+"m": "m/lis_lis-daily-08_1.mp3"
+},
+"lis:lis-daily-08:2": {
+"f": "f/lis_lis-daily-08_2.mp3",
+"m": "m/lis_lis-daily-08_2.mp3"
+},
+"lis:lis-daily-08:3": {
+"f": "f/lis_lis-daily-08_3.mp3",
+"m": "m/lis_lis-daily-08_3.mp3"
+},
+"lis:lis-daily-09:0": {
+"f": "f/lis_lis-daily-09_0.mp3",
+"m": "m/lis_lis-daily-09_0.mp3"
+},
+"lis:lis-daily-09:1": {
+"f": "f/lis_lis-daily-09_1.mp3",
+"m": "m/lis_lis-daily-09_1.mp3"
+},
+"lis:lis-daily-09:2": {
+"f": "f/lis_lis-daily-09_2.mp3",
+"m": "m/lis_lis-daily-09_2.mp3"
+},
+"lis:lis-daily-09:3": {
+"f": "f/lis_lis-daily-09_3.mp3",
+"m": "m/lis_lis-daily-09_3.mp3"
+},
+"lis:lis-cafe-01:0": {
+"f": "f/lis_lis-cafe-01_0.mp3",
+"m": "m/lis_lis-cafe-01_0.mp3"
+},
+"lis:lis-cafe-01:1": {
+"f": "f/lis_lis-cafe-01_1.mp3",
+"m": "m/lis_lis-cafe-01_1.mp3"
+},
+"lis:lis-cafe-01:2": {
+"f": "f/lis_lis-cafe-01_2.mp3",
+"m": "m/lis_lis-cafe-01_2.mp3"
+},
+"lis:lis-cafe-01:3": {
+"f": "f/lis_lis-cafe-01_3.mp3",
+"m": "m/lis_lis-cafe-01_3.mp3"
+},
+"lis:lis-cafe-02:0": {
+"f": "f/lis_lis-cafe-02_0.mp3",
+"m": "m/lis_lis-cafe-02_0.mp3"
+},
+"lis:lis-cafe-02:1": {
+"f": "f/lis_lis-cafe-02_1.mp3",
+"m": "m/lis_lis-cafe-02_1.mp3"
+},
+"lis:lis-cafe-02:2": {
+"f": "f/lis_lis-cafe-02_2.mp3",
+"m": "m/lis_lis-cafe-02_2.mp3"
+},
+"lis:lis-cafe-02:3": {
+"f": "f/lis_lis-cafe-02_3.mp3",
+"m": "m/lis_lis-cafe-02_3.mp3"
+},
+"lis:lis-cafe-03:0": {
+"f": "f/lis_lis-cafe-03_0.mp3",
+"m": "m/lis_lis-cafe-03_0.mp3"
+},
+"lis:lis-cafe-03:1": {
+"f": "f/lis_lis-cafe-03_1.mp3",
+"m": "m/lis_lis-cafe-03_1.mp3"
+},
+"lis:lis-cafe-03:2": {
+"f": "f/lis_lis-cafe-03_2.mp3",
+"m": "m/lis_lis-cafe-03_2.mp3"
+},
+"lis:lis-cafe-03:3": {
+"f": "f/lis_lis-cafe-03_3.mp3",
+"m": "m/lis_lis-cafe-03_3.mp3"
+},
+"lis:lis-cafe-04:0": {
+"f": "f/lis_lis-cafe-04_0.mp3",
+"m": "m/lis_lis-cafe-04_0.mp3"
+},
+"lis:lis-cafe-04:1": {
+"f": "f/lis_lis-cafe-04_1.mp3",
+"m": "m/lis_lis-cafe-04_1.mp3"
+},
+"lis:lis-cafe-04:2": {
+"f": "f/lis_lis-cafe-04_2.mp3",
+"m": "m/lis_lis-cafe-04_2.mp3"
+},
+"lis:lis-cafe-04:3": {
+"f": "f/lis_lis-cafe-04_3.mp3",
+"m": "m/lis_lis-cafe-04_3.mp3"
+},
+"lis:lis-cafe-05:0": {
+"f": "f/lis_lis-cafe-05_0.mp3",
+"m": "m/lis_lis-cafe-05_0.mp3"
+},
+"lis:lis-cafe-05:1": {
+"f": "f/lis_lis-cafe-05_1.mp3",
+"m": "m/lis_lis-cafe-05_1.mp3"
+},
+"lis:lis-cafe-05:2": {
+"f": "f/lis_lis-cafe-05_2.mp3",
+"m": "m/lis_lis-cafe-05_2.mp3"
+},
+"lis:lis-cafe-05:3": {
+"f": "f/lis_lis-cafe-05_3.mp3",
+"m": "m/lis_lis-cafe-05_3.mp3"
+},
+"lis:lis-cafe-06:0": {
+"f": "f/lis_lis-cafe-06_0.mp3",
+"m": "m/lis_lis-cafe-06_0.mp3"
+},
+"lis:lis-cafe-06:1": {
+"f": "f/lis_lis-cafe-06_1.mp3",
+"m": "m/lis_lis-cafe-06_1.mp3"
+},
+"lis:lis-cafe-06:2": {
+"f": "f/lis_lis-cafe-06_2.mp3",
+"m": "m/lis_lis-cafe-06_2.mp3"
+},
+"lis:lis-cafe-06:3": {
+"f": "f/lis_lis-cafe-06_3.mp3",
+"m": "m/lis_lis-cafe-06_3.mp3"
+},
+"lis:lis-cafe-07:0": {
+"f": "f/lis_lis-cafe-07_0.mp3",
+"m": "m/lis_lis-cafe-07_0.mp3"
+},
+"lis:lis-cafe-07:1": {
+"f": "f/lis_lis-cafe-07_1.mp3",
+"m": "m/lis_lis-cafe-07_1.mp3"
+},
+"lis:lis-cafe-07:2": {
+"f": "f/lis_lis-cafe-07_2.mp3",
+"m": "m/lis_lis-cafe-07_2.mp3"
+},
+"lis:lis-cafe-07:3": {
+"f": "f/lis_lis-cafe-07_3.mp3",
+"m": "m/lis_lis-cafe-07_3.mp3"
+},
+"lis:lis-cafe-08:0": {
+"f": "f/lis_lis-cafe-08_0.mp3",
+"m": "m/lis_lis-cafe-08_0.mp3"
+},
+"lis:lis-cafe-08:1": {
+"f": "f/lis_lis-cafe-08_1.mp3",
+"m": "m/lis_lis-cafe-08_1.mp3"
+},
+"lis:lis-cafe-08:2": {
+"f": "f/lis_lis-cafe-08_2.mp3",
+"m": "m/lis_lis-cafe-08_2.mp3"
+},
+"lis:lis-cafe-08:3": {
+"f": "f/lis_lis-cafe-08_3.mp3",
+"m": "m/lis_lis-cafe-08_3.mp3"
+},
+"lis:lis-cafe-09:0": {
+"f": "f/lis_lis-cafe-09_0.mp3",
+"m": "m/lis_lis-cafe-09_0.mp3"
+},
+"lis:lis-cafe-09:1": {
+"f": "f/lis_lis-cafe-09_1.mp3",
+"m": "m/lis_lis-cafe-09_1.mp3"
+},
+"lis:lis-cafe-09:2": {
+"f": "f/lis_lis-cafe-09_2.mp3",
+"m": "m/lis_lis-cafe-09_2.mp3"
+},
+"lis:lis-cafe-09:3": {
+"f": "f/lis_lis-cafe-09_3.mp3",
+"m": "m/lis_lis-cafe-09_3.mp3"
+},
+"lis:lis-routine-01:0": {
+"f": "f/lis_lis-routine-01_0.mp3",
+"m": "m/lis_lis-routine-01_0.mp3"
+},
+"lis:lis-routine-01:1": {
+"f": "f/lis_lis-routine-01_1.mp3",
+"m": "m/lis_lis-routine-01_1.mp3"
+},
+"lis:lis-routine-01:2": {
+"f": "f/lis_lis-routine-01_2.mp3",
+"m": "m/lis_lis-routine-01_2.mp3"
+},
+"lis:lis-routine-01:3": {
+"f": "f/lis_lis-routine-01_3.mp3",
+"m": "m/lis_lis-routine-01_3.mp3"
+},
+"lis:lis-routine-01:4": {
+"f": "f/lis_lis-routine-01_4.mp3",
+"m": "m/lis_lis-routine-01_4.mp3"
+},
+"lis:lis-routine-02:0": {
+"f": "f/lis_lis-routine-02_0.mp3",
+"m": "m/lis_lis-routine-02_0.mp3"
+},
+"lis:lis-routine-02:1": {
+"f": "f/lis_lis-routine-02_1.mp3",
+"m": "m/lis_lis-routine-02_1.mp3"
+},
+"lis:lis-routine-02:2": {
+"f": "f/lis_lis-routine-02_2.mp3",
+"m": "m/lis_lis-routine-02_2.mp3"
+},
+"lis:lis-routine-02:3": {
+"f": "f/lis_lis-routine-02_3.mp3",
+"m": "m/lis_lis-routine-02_3.mp3"
+},
+"lis:lis-routine-02:4": {
+"f": "f/lis_lis-routine-02_4.mp3",
+"m": "m/lis_lis-routine-02_4.mp3"
+},
+"lis:lis-routine-03:0": {
+"f": "f/lis_lis-routine-03_0.mp3",
+"m": "m/lis_lis-routine-03_0.mp3"
+},
+"lis:lis-routine-03:1": {
+"f": "f/lis_lis-routine-03_1.mp3",
+"m": "m/lis_lis-routine-03_1.mp3"
+},
+"lis:lis-routine-03:2": {
+"f": "f/lis_lis-routine-03_2.mp3",
+"m": "m/lis_lis-routine-03_2.mp3"
+},
+"lis:lis-routine-03:3": {
+"f": "f/lis_lis-routine-03_3.mp3",
+"m": "m/lis_lis-routine-03_3.mp3"
+},
+"lis:lis-routine-03:4": {
+"f": "f/lis_lis-routine-03_4.mp3",
+"m": "m/lis_lis-routine-03_4.mp3"
+},
+"lis:lis-routine-04:0": {
+"f": "f/lis_lis-routine-04_0.mp3",
+"m": "m/lis_lis-routine-04_0.mp3"
+},
+"lis:lis-routine-04:1": {
+"f": "f/lis_lis-routine-04_1.mp3",
+"m": "m/lis_lis-routine-04_1.mp3"
+},
+"lis:lis-routine-04:2": {
+"f": "f/lis_lis-routine-04_2.mp3",
+"m": "m/lis_lis-routine-04_2.mp3"
+},
+"lis:lis-routine-04:3": {
+"f": "f/lis_lis-routine-04_3.mp3",
+"m": "m/lis_lis-routine-04_3.mp3"
+},
+"lis:lis-routine-04:4": {
+"f": "f/lis_lis-routine-04_4.mp3",
+"m": "m/lis_lis-routine-04_4.mp3"
+},
+"lis:lis-routine-05:0": {
+"f": "f/lis_lis-routine-05_0.mp3",
+"m": "m/lis_lis-routine-05_0.mp3"
+},
+"lis:lis-routine-05:1": {
+"f": "f/lis_lis-routine-05_1.mp3",
+"m": "m/lis_lis-routine-05_1.mp3"
+},
+"lis:lis-routine-05:2": {
+"f": "f/lis_lis-routine-05_2.mp3",
+"m": "m/lis_lis-routine-05_2.mp3"
+},
+"lis:lis-routine-05:3": {
+"f": "f/lis_lis-routine-05_3.mp3",
+"m": "m/lis_lis-routine-05_3.mp3"
+},
+"lis:lis-routine-05:4": {
+"f": "f/lis_lis-routine-05_4.mp3",
+"m": "m/lis_lis-routine-05_4.mp3"
+},
+"lis:lis-routine-06:0": {
+"f": "f/lis_lis-routine-06_0.mp3",
+"m": "m/lis_lis-routine-06_0.mp3"
+},
+"lis:lis-routine-06:1": {
+"f": "f/lis_lis-routine-06_1.mp3",
+"m": "m/lis_lis-routine-06_1.mp3"
+},
+"lis:lis-routine-06:2": {
+"f": "f/lis_lis-routine-06_2.mp3",
+"m": "m/lis_lis-routine-06_2.mp3"
+},
+"lis:lis-routine-06:3": {
+"f": "f/lis_lis-routine-06_3.mp3",
+"m": "m/lis_lis-routine-06_3.mp3"
+},
+"lis:lis-routine-06:4": {
+"f": "f/lis_lis-routine-06_4.mp3",
+"m": "m/lis_lis-routine-06_4.mp3"
+},
+"lis:lis-routine-07:0": {
+"f": "f/lis_lis-routine-07_0.mp3",
+"m": "m/lis_lis-routine-07_0.mp3"
+},
+"lis:lis-routine-07:1": {
+"f": "f/lis_lis-routine-07_1.mp3",
+"m": "m/lis_lis-routine-07_1.mp3"
+},
+"lis:lis-routine-07:2": {
+"f": "f/lis_lis-routine-07_2.mp3",
+"m": "m/lis_lis-routine-07_2.mp3"
+},
+"lis:lis-routine-07:3": {
+"f": "f/lis_lis-routine-07_3.mp3",
+"m": "m/lis_lis-routine-07_3.mp3"
+},
+"lis:lis-routine-07:4": {
+"f": "f/lis_lis-routine-07_4.mp3",
+"m": "m/lis_lis-routine-07_4.mp3"
+},
+"lis:lis-routine-08:0": {
+"f": "f/lis_lis-routine-08_0.mp3",
+"m": "m/lis_lis-routine-08_0.mp3"
+},
+"lis:lis-routine-08:1": {
+"f": "f/lis_lis-routine-08_1.mp3",
+"m": "m/lis_lis-routine-08_1.mp3"
+},
+"lis:lis-routine-08:2": {
+"f": "f/lis_lis-routine-08_2.mp3",
+"m": "m/lis_lis-routine-08_2.mp3"
+},
+"lis:lis-routine-08:3": {
+"f": "f/lis_lis-routine-08_3.mp3",
+"m": "m/lis_lis-routine-08_3.mp3"
+},
+"lis:lis-routine-08:4": {
+"f": "f/lis_lis-routine-08_4.mp3",
+"m": "m/lis_lis-routine-08_4.mp3"
+},
+"lis:lis-routine-09:0": {
+"f": "f/lis_lis-routine-09_0.mp3",
+"m": "m/lis_lis-routine-09_0.mp3"
+},
+"lis:lis-routine-09:1": {
+"f": "f/lis_lis-routine-09_1.mp3",
+"m": "m/lis_lis-routine-09_1.mp3"
+},
+"lis:lis-routine-09:2": {
+"f": "f/lis_lis-routine-09_2.mp3",
+"m": "m/lis_lis-routine-09_2.mp3"
+},
+"lis:lis-routine-09:3": {
+"f": "f/lis_lis-routine-09_3.mp3",
+"m": "m/lis_lis-routine-09_3.mp3"
+},
+"lis:lis-routine-09:4": {
+"f": "f/lis_lis-routine-09_4.mp3",
+"m": "m/lis_lis-routine-09_4.mp3"
+},
+"lis:lis-service-01:0": {
+"f": "f/lis_lis-service-01_0.mp3",
+"m": "m/lis_lis-service-01_0.mp3"
+},
+"lis:lis-service-01:1": {
+"f": "f/lis_lis-service-01_1.mp3",
+"m": "m/lis_lis-service-01_1.mp3"
+},
+"lis:lis-service-01:2": {
+"f": "f/lis_lis-service-01_2.mp3",
+"m": "m/lis_lis-service-01_2.mp3"
+},
+"lis:lis-service-01:3": {
+"f": "f/lis_lis-service-01_3.mp3",
+"m": "m/lis_lis-service-01_3.mp3"
+},
+"lis:lis-service-01:4": {
+"f": "f/lis_lis-service-01_4.mp3",
+"m": "m/lis_lis-service-01_4.mp3"
+},
+"lis:lis-service-02:0": {
+"f": "f/lis_lis-service-02_0.mp3",
+"m": "m/lis_lis-service-02_0.mp3"
+},
+"lis:lis-service-02:1": {
+"f": "f/lis_lis-service-02_1.mp3",
+"m": "m/lis_lis-service-02_1.mp3"
+},
+"lis:lis-service-02:2": {
+"f": "f/lis_lis-service-02_2.mp3",
+"m": "m/lis_lis-service-02_2.mp3"
+},
+"lis:lis-service-02:3": {
+"f": "f/lis_lis-service-02_3.mp3",
+"m": "m/lis_lis-service-02_3.mp3"
+},
+"lis:lis-service-02:4": {
+"f": "f/lis_lis-service-02_4.mp3",
+"m": "m/lis_lis-service-02_4.mp3"
+},
+"lis:lis-service-03:0": {
+"f": "f/lis_lis-service-03_0.mp3",
+"m": "m/lis_lis-service-03_0.mp3"
+},
+"lis:lis-service-03:1": {
+"f": "f/lis_lis-service-03_1.mp3",
+"m": "m/lis_lis-service-03_1.mp3"
+},
+"lis:lis-service-03:2": {
+"f": "f/lis_lis-service-03_2.mp3",
+"m": "m/lis_lis-service-03_2.mp3"
+},
+"lis:lis-service-03:3": {
+"f": "f/lis_lis-service-03_3.mp3",
+"m": "m/lis_lis-service-03_3.mp3"
+},
+"lis:lis-service-03:4": {
+"f": "f/lis_lis-service-03_4.mp3",
+"m": "m/lis_lis-service-03_4.mp3"
+},
+"lis:lis-service-04:0": {
+"f": "f/lis_lis-service-04_0.mp3",
+"m": "m/lis_lis-service-04_0.mp3"
+},
+"lis:lis-service-04:1": {
+"f": "f/lis_lis-service-04_1.mp3",
+"m": "m/lis_lis-service-04_1.mp3"
+},
+"lis:lis-service-04:2": {
+"f": "f/lis_lis-service-04_2.mp3",
+"m": "m/lis_lis-service-04_2.mp3"
+},
+"lis:lis-service-04:3": {
+"f": "f/lis_lis-service-04_3.mp3",
+"m": "m/lis_lis-service-04_3.mp3"
+},
+"lis:lis-service-04:4": {
+"f": "f/lis_lis-service-04_4.mp3",
+"m": "m/lis_lis-service-04_4.mp3"
+},
+"lis:lis-service-05:0": {
+"f": "f/lis_lis-service-05_0.mp3",
+"m": "m/lis_lis-service-05_0.mp3"
+},
+"lis:lis-service-05:1": {
+"f": "f/lis_lis-service-05_1.mp3",
+"m": "m/lis_lis-service-05_1.mp3"
+},
+"lis:lis-service-05:2": {
+"f": "f/lis_lis-service-05_2.mp3",
+"m": "m/lis_lis-service-05_2.mp3"
+},
+"lis:lis-service-05:3": {
+"f": "f/lis_lis-service-05_3.mp3",
+"m": "m/lis_lis-service-05_3.mp3"
+},
+"lis:lis-service-05:4": {
+"f": "f/lis_lis-service-05_4.mp3",
+"m": "m/lis_lis-service-05_4.mp3"
+},
+"lis:lis-service-06:0": {
+"f": "f/lis_lis-service-06_0.mp3",
+"m": "m/lis_lis-service-06_0.mp3"
+},
+"lis:lis-service-06:1": {
+"f": "f/lis_lis-service-06_1.mp3",
+"m": "m/lis_lis-service-06_1.mp3"
+},
+"lis:lis-service-06:2": {
+"f": "f/lis_lis-service-06_2.mp3",
+"m": "m/lis_lis-service-06_2.mp3"
+},
+"lis:lis-service-06:3": {
+"f": "f/lis_lis-service-06_3.mp3",
+"m": "m/lis_lis-service-06_3.mp3"
+},
+"lis:lis-service-06:4": {
+"f": "f/lis_lis-service-06_4.mp3",
+"m": "m/lis_lis-service-06_4.mp3"
+},
+"lis:lis-service-07:0": {
+"f": "f/lis_lis-service-07_0.mp3",
+"m": "m/lis_lis-service-07_0.mp3"
+},
+"lis:lis-service-07:1": {
+"f": "f/lis_lis-service-07_1.mp3",
+"m": "m/lis_lis-service-07_1.mp3"
+},
+"lis:lis-service-07:2": {
+"f": "f/lis_lis-service-07_2.mp3",
+"m": "m/lis_lis-service-07_2.mp3"
+},
+"lis:lis-service-07:3": {
+"f": "f/lis_lis-service-07_3.mp3",
+"m": "m/lis_lis-service-07_3.mp3"
+},
+"lis:lis-service-07:4": {
+"f": "f/lis_lis-service-07_4.mp3",
+"m": "m/lis_lis-service-07_4.mp3"
+},
+"lis:lis-service-08:0": {
+"f": "f/lis_lis-service-08_0.mp3",
+"m": "m/lis_lis-service-08_0.mp3"
+},
+"lis:lis-service-08:1": {
+"f": "f/lis_lis-service-08_1.mp3",
+"m": "m/lis_lis-service-08_1.mp3"
+},
+"lis:lis-service-08:2": {
+"f": "f/lis_lis-service-08_2.mp3",
+"m": "m/lis_lis-service-08_2.mp3"
+},
+"lis:lis-service-08:3": {
+"f": "f/lis_lis-service-08_3.mp3",
+"m": "m/lis_lis-service-08_3.mp3"
+},
+"lis:lis-service-08:4": {
+"f": "f/lis_lis-service-08_4.mp3",
+"m": "m/lis_lis-service-08_4.mp3"
+},
+"lis:lis-service-09:0": {
+"f": "f/lis_lis-service-09_0.mp3",
+"m": "m/lis_lis-service-09_0.mp3"
+},
+"lis:lis-service-09:1": {
+"f": "f/lis_lis-service-09_1.mp3",
+"m": "m/lis_lis-service-09_1.mp3"
+},
+"lis:lis-service-09:2": {
+"f": "f/lis_lis-service-09_2.mp3",
+"m": "m/lis_lis-service-09_2.mp3"
+},
+"lis:lis-service-09:3": {
+"f": "f/lis_lis-service-09_3.mp3",
+"m": "m/lis_lis-service-09_3.mp3"
+},
+"lis:lis-service-09:4": {
+"f": "f/lis_lis-service-09_4.mp3",
+"m": "m/lis_lis-service-09_4.mp3"
+},
+"lis:lis-story-01:0": {
+"f": "f/lis_lis-story-01_0.mp3",
+"m": "m/lis_lis-story-01_0.mp3"
+},
+"lis:lis-story-01:1": {
+"f": "f/lis_lis-story-01_1.mp3",
+"m": "m/lis_lis-story-01_1.mp3"
+},
+"lis:lis-story-01:2": {
+"f": "f/lis_lis-story-01_2.mp3",
+"m": "m/lis_lis-story-01_2.mp3"
+},
+"lis:lis-story-01:3": {
+"f": "f/lis_lis-story-01_3.mp3",
+"m": "m/lis_lis-story-01_3.mp3"
+},
+"lis:lis-story-01:4": {
+"f": "f/lis_lis-story-01_4.mp3",
+"m": "m/lis_lis-story-01_4.mp3"
+},
+"lis:lis-story-02:0": {
+"f": "f/lis_lis-story-02_0.mp3",
+"m": "m/lis_lis-story-02_0.mp3"
+},
+"lis:lis-story-02:1": {
+"f": "f/lis_lis-story-02_1.mp3",
+"m": "m/lis_lis-story-02_1.mp3"
+},
+"lis:lis-story-02:2": {
+"f": "f/lis_lis-story-02_2.mp3",
+"m": "m/lis_lis-story-02_2.mp3"
+},
+"lis:lis-story-02:3": {
+"f": "f/lis_lis-story-02_3.mp3",
+"m": "m/lis_lis-story-02_3.mp3"
+},
+"lis:lis-story-02:4": {
+"f": "f/lis_lis-story-02_4.mp3",
+"m": "m/lis_lis-story-02_4.mp3"
+},
+"lis:lis-story-03:0": {
+"f": "f/lis_lis-story-03_0.mp3",
+"m": "m/lis_lis-story-03_0.mp3"
+},
+"lis:lis-story-03:1": {
+"f": "f/lis_lis-story-03_1.mp3",
+"m": "m/lis_lis-story-03_1.mp3"
+},
+"lis:lis-story-03:2": {
+"f": "f/lis_lis-story-03_2.mp3",
+"m": "m/lis_lis-story-03_2.mp3"
+},
+"lis:lis-story-03:3": {
+"f": "f/lis_lis-story-03_3.mp3",
+"m": "m/lis_lis-story-03_3.mp3"
+},
+"lis:lis-story-03:4": {
+"f": "f/lis_lis-story-03_4.mp3",
+"m": "m/lis_lis-story-03_4.mp3"
+},
+"lis:lis-story-04:0": {
+"f": "f/lis_lis-story-04_0.mp3",
+"m": "m/lis_lis-story-04_0.mp3"
+},
+"lis:lis-story-04:1": {
+"f": "f/lis_lis-story-04_1.mp3",
+"m": "m/lis_lis-story-04_1.mp3"
+},
+"lis:lis-story-04:2": {
+"f": "f/lis_lis-story-04_2.mp3",
+"m": "m/lis_lis-story-04_2.mp3"
+},
+"lis:lis-story-04:3": {
+"f": "f/lis_lis-story-04_3.mp3",
+"m": "m/lis_lis-story-04_3.mp3"
+},
+"lis:lis-story-04:4": {
+"f": "f/lis_lis-story-04_4.mp3",
+"m": "m/lis_lis-story-04_4.mp3"
+},
+"lis:lis-story-05:0": {
+"f": "f/lis_lis-story-05_0.mp3",
+"m": "m/lis_lis-story-05_0.mp3"
+},
+"lis:lis-story-05:1": {
+"f": "f/lis_lis-story-05_1.mp3",
+"m": "m/lis_lis-story-05_1.mp3"
+},
+"lis:lis-story-05:2": {
+"f": "f/lis_lis-story-05_2.mp3",
+"m": "m/lis_lis-story-05_2.mp3"
+},
+"lis:lis-story-05:3": {
+"f": "f/lis_lis-story-05_3.mp3",
+"m": "m/lis_lis-story-05_3.mp3"
+},
+"lis:lis-story-05:4": {
+"f": "f/lis_lis-story-05_4.mp3",
+"m": "m/lis_lis-story-05_4.mp3"
+},
+"lis:lis-story-06:0": {
+"f": "f/lis_lis-story-06_0.mp3",
+"m": "m/lis_lis-story-06_0.mp3"
+},
+"lis:lis-story-06:1": {
+"f": "f/lis_lis-story-06_1.mp3",
+"m": "m/lis_lis-story-06_1.mp3"
+},
+"lis:lis-story-06:2": {
+"f": "f/lis_lis-story-06_2.mp3",
+"m": "m/lis_lis-story-06_2.mp3"
+},
+"lis:lis-story-06:3": {
+"f": "f/lis_lis-story-06_3.mp3",
+"m": "m/lis_lis-story-06_3.mp3"
+},
+"lis:lis-story-06:4": {
+"f": "f/lis_lis-story-06_4.mp3",
+"m": "m/lis_lis-story-06_4.mp3"
+},
+"lis:lis-story-07:0": {
+"f": "f/lis_lis-story-07_0.mp3",
+"m": "m/lis_lis-story-07_0.mp3"
+},
+"lis:lis-story-07:1": {
+"f": "f/lis_lis-story-07_1.mp3",
+"m": "m/lis_lis-story-07_1.mp3"
+},
+"lis:lis-story-07:2": {
+"f": "f/lis_lis-story-07_2.mp3",
+"m": "m/lis_lis-story-07_2.mp3"
+},
+"lis:lis-story-07:3": {
+"f": "f/lis_lis-story-07_3.mp3",
+"m": "m/lis_lis-story-07_3.mp3"
+},
+"lis:lis-story-07:4": {
+"f": "f/lis_lis-story-07_4.mp3",
+"m": "m/lis_lis-story-07_4.mp3"
+},
+"lis:lis-story-08:0": {
+"f": "f/lis_lis-story-08_0.mp3",
+"m": "m/lis_lis-story-08_0.mp3"
+},
+"lis:lis-story-08:1": {
+"f": "f/lis_lis-story-08_1.mp3",
+"m": "m/lis_lis-story-08_1.mp3"
+},
+"lis:lis-story-08:2": {
+"f": "f/lis_lis-story-08_2.mp3",
+"m": "m/lis_lis-story-08_2.mp3"
+},
+"lis:lis-story-08:3": {
+"f": "f/lis_lis-story-08_3.mp3",
+"m": "m/lis_lis-story-08_3.mp3"
+},
+"lis:lis-story-08:4": {
+"f": "f/lis_lis-story-08_4.mp3",
+"m": "m/lis_lis-story-08_4.mp3"
+},
+"lis:lis-story-09:0": {
+"f": "f/lis_lis-story-09_0.mp3",
+"m": "m/lis_lis-story-09_0.mp3"
+},
+"lis:lis-story-09:1": {
+"f": "f/lis_lis-story-09_1.mp3",
+"m": "m/lis_lis-story-09_1.mp3"
+},
+"lis:lis-story-09:2": {
+"f": "f/lis_lis-story-09_2.mp3",
+"m": "m/lis_lis-story-09_2.mp3"
+},
+"lis:lis-story-09:3": {
+"f": "f/lis_lis-story-09_3.mp3",
+"m": "m/lis_lis-story-09_3.mp3"
+},
+"lis:lis-story-09:4": {
+"f": "f/lis_lis-story-09_4.mp3",
+"m": "m/lis_lis-story-09_4.mp3"
 }
 }

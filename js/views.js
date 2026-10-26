@@ -154,6 +154,12 @@ export function learn(root, params = {}) {
           h('div', { class: 'small', style: { opacity: '.9' }, text: `${db.words.length} คำ · 8 หมวด · มีเสียงอ่านและประโยคใช้งาน` })),
         h('div', { style: { fontSize: '2rem' }, text: '📸' }))));
 
+    root.appendChild(h('a', { href: '#/listening', class: 'list-item', style: { marginTop: '10px' } },
+      h('div', { class: 'thumb', style: { fontSize: '1.5rem' }, text: '🎧' }),
+      h('div', { class: 'lt' }, h('b', { text: 'ฝึกฟัง' }),
+        h('div', { class: 'small muted', text: 'บทฟังพร้อมคำถามและถอดความ' })),
+      h('span', { class: 'pill', text: `${db.listening.length} บท` })));
+
     if (placement) root.appendChild(h('a', { class: 'card list-item', href: '#/placement', style: { textDecoration: 'none' } },
       h('div', { class: 'thumb', text: '🧭' }),
       h('div', { class: 'lt' }, h('b', { text: 'ระดับของคุณ: ' + placement.level }), h('div', { class: 'small', text: 'แตะเพื่อดูหรือทำแบบทดสอบใหม่' }))));
@@ -185,7 +191,6 @@ export function learn(root, params = {}) {
         h('b', { style: { fontFamily: 'var(--font)' }, text: 'ฟังประโยค + ไฮไลท์คำ' }),
         h('div', { text: 'อ่านตามพร้อมไฮไลท์ แตะคำใดก็ได้เพื่อฟัง' })),
       h('span', { class: 'pill', text: 'ฟัง' })));
-
     root.appendChild(h('div', { class: 'small muted center', style: { marginTop: '10px' }, text: `เรียนไปแล้วทั้งหมด ${totalLearned} คำ` }));
   }
 
@@ -1436,18 +1441,6 @@ export function openSettings(onChange) {
       },
     }, '↻ ล้างแคช')));
 
-    const voiceSelect = h('select', {});
-    const fillVoices = () => {
-      clear(voiceSelect);
-      voiceSelect.appendChild(h('option', { value: '', text: 'อัตโนมัติ (แนะนำ)' }));
-      for (const v of englishVoices()) {
-        voiceSelect.appendChild(h('option', { value: v.voiceURI, text: `${v.name} (${v.lang})` }));
-      }
-      voiceSelect.value = S().voiceURI || '';
-    };
-    fillVoices();
-    loadVoices().then(fillVoices);
-    voiceSelect.onchange = () => { store.setSetting('voiceURI', voiceSelect.value); onChange && onChange(); };
 
     const rows = [
       h('div', { class: 'field' },
@@ -1471,34 +1464,26 @@ export function openSettings(onChange) {
           return h('div', { class: 'row', style: { gap: '8px' } }, r, out);
         })()),
       h('div', { class: 'field' },
-        h('div', {}, h('label', { text: 'เสียงที่ต้องการ' }), h('div', { class: 'desc', text: 'ไฟล์เสียงสร้างจาก Kokoro TTS — af_heart (หญิง, เสียงหลัก) / am_adam (ชาย)' })),
+        h('div', {}, h('label', { text: 'เสียงของแอป (2 เสียงเท่านั้น)' }), h('div', { class: 'desc', text: 'Kokoro TTS เท่านั้น: af_heart (หญิง, เสียงหลัก) / am_adam (ชาย, เสียงรอง) — ไม่ใช้เสียงของระบบ' })),
         (() => {
           const sel = h('select', {},
             h('option', { value: 'male', text: 'เสียงผู้ชาย (Kokoro am_adam)' }),
             h('option', { value: 'female', text: 'เสียงผู้หญิง (Kokoro af_heart)' }),
             h('option', { value: 'auto', text: 'ดีที่สุดที่มีในเครื่อง' }));
-          sel.value = S().voiceGender || 'male';
+          sel.value = S().voiceGender || 'female';
           sel.onchange = () => {
             store.setSetting('voiceGender', sel.value);
             audioDownloadedGender = null;
             if (!audioDownloadRunning) audioDownloadStatus = '';
             refreshAudioDownload();
-            store.setSetting('voiceURI', '');
-            fillVoices();
+
             say('Hi, I will be your English voice. Let us practice together.', { rate: S().rate, gender: sel.value, voiceURI: '' });
             onChange && onChange();
           };
           return sel;
         })()),
       audioDownloadRow(),
-      h('div', { class: 'field' },
-        h('div', {}, h('label', { text: 'เสียงอ่านภาษาอังกฤษ' }), h('div', { class: 'desc', text: 'ถ้าเสียงไม่ถูกต้อง ให้ติดตั้งเสียงใหม่ในระบบปฏิบัติการ' })),
-        h('div', { class: 'row', style: { gap: '6px' } },
-          voiceSelect,
-          h('button', {
-            class: 'icon-btn', type: 'button', 'aria-label': 'ทดสอบเสียงนี้',
-            onclick: () => say('Could I get a medium latte, please?', { rate: S().rate, voiceURI: S().voiceURI, gender: S().voiceGender }),
-          }, icon('sound', 18)))),
+
       h('div', { class: 'field' },
         h('div', {}, h('label', { text: 'อ่านออกเสียงอัตโนมัติ' }), h('div', { class: 'desc', text: 'เปิดการ์ด/เข้าหน้าฟังแล้วอ่านให้ฟังทันที' })),
         switchEl('autoPlay')),

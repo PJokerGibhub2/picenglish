@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 generate_kokoro.py — สร้างไฟล์เสียงด้วย Kokoro TTS (ออฟไลน์, ไม่ต้องใช้ API)
 
@@ -67,6 +67,18 @@ def load_tasks():
                 txt = (a.get('en') or '').strip()
                 if txt:
                     tasks.append((f"alt:{d['id']}:{i}:{j}", txt))
+
+    # บทฟัง: แยกไฟล์ทีละบรรทัด เพื่อเล่นต่อเนื่องพร้อมไฮไลท์คาราโอเกะ
+    lpath = os.path.join(ROOT, 'data', 'listening.json')
+    if os.path.exists(lpath):
+        with open(lpath, encoding='utf-8') as fh:
+            ldata = json.load(fh)
+        lessons = ldata.get('lessons', []) if isinstance(ldata, dict) else ldata
+        for les in lessons:
+            for i, seg in enumerate(les.get('transcript') or []):
+                en = (seg.get('en') or '').strip()
+                if en:
+                    tasks.append((f"lis:{les['id']}:{i}", en))
     return tasks
 
 

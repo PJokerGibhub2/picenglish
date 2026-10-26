@@ -14,12 +14,14 @@ import { loadVoices, loadAudioManifest } from './speech.js';
 import { initLiff, profileChip, liffState } from './liff.js';
 import { loadArtManifest } from './art.js';
 import { placement } from './views-placement.js';
+import { listening } from './views-listening.js';
 
 const TITLES = {
   today: 'PicEnglish',
   placement: 'ทดสอบวัดระดับ',
   learn: 'การ์ดคำศัพท์',
   listen: 'ฟังประโยค',
+  listening: 'ฝึกฟัง',
   speaking: 'ฝึกพูด',
   roleplay: 'บทสนทนาจำลอง',
   sentenceReview: 'ทบทวนประโยค',
@@ -41,6 +43,7 @@ const ROUTES = {
   roleplay,
   sentenceReview,
   onemin: oneMinute,
+  listening,
 };
 
 const TABS = ['learn', 'listen', 'speaking', 'review', 'mine'];

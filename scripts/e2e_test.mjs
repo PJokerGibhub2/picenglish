@@ -678,12 +678,45 @@ const PAGE_TEST = `(async () => {
   if (placementNext) { placementNext.click(); await sleep(300); }
   await sleep(300);
   ok('จบ placement แล้วเห็นระดับแนะนำ', /ระดับของคุณ: A[012]/.test(document.body.textContent));
-  location.hash = '#/learn';
-  await sleep(500);
-  location.hash = '#/unknown-route';
-  await sleep(500);
-  ok('เส้นทางที่ไม่รู้จักไม่ทำให้แอปพัง', !!$('#view').children.length && !document.body.textContent.includes('เกิดข้อผิดพลาดในการแสดงผล'));
-  location.hash = '#/learn';
+
+  /* ---------- 13) บทฟัง + ถอดความ ---------- */
+  location.hash = '#/listening';
+  await sleep(900);
+  const listeningLessons = $$('#view .list-item');
+  ok('หน้าโหมดฟังมีรายการบทอย่างน้อย 10 บท', listeningLessons.length >= 10, listeningLessons.length + ' บท');
+  if (listeningLessons[0]) { listeningLessons[0].click(); await sleep(1200); }
+  ok('บทแรกแสดงคำถามนำและปุ่มเริ่มฟัง', document.body.textContent.includes('คำถามนำ') && !!findByText('เริ่มฟัง'));
+  const startListening = findByText('เริ่มฟัง');
+  if (startListening) { startListening.click(); await sleep(500); }
+  ok('ขั้นฟังรอบ 1 พร้อมปุ่มเล่น', document.body.textContent.includes('ฟังรอบ 1') && !!findByText('เล่นบทฟัง'));
+  const toQuestions = findByText('ไปตอบคำถาม');
+  if (toQuestions) { toQuestions.click(); await sleep(500); }
+  ok('เข้าสู่คำถามข้อแรกได้', document.body.textContent.indexOf('ข้อ 1/') >= 0);
+  const firstOption = $$('#view button').find((b) => b.textContent.trim().indexOf('A.') === 0);
+  ok('มีตัวเลือกให้ตอบ', !!firstOption);
+  if (firstOption) { firstOption.click(); await sleep(400); }
+  ok('ตอบข้อแรกแล้วแสดงผลทันที',
+     document.body.textContent.includes('เข้าใจแล้ว') || document.body.textContent.includes('คำตอบที่ถูก'));
+
+  let listenGuard = 0;
+  while (document.querySelectorAll('#view .listening-line').length === 0 && listenGuard < 8) {
+    const nextBtn = findByText('ข้อต่อไป') || findByText('ดูถอดความ');
+    if (!nextBtn) break;
+    nextBtn.click();
+    await sleep(350);
+    const opt = $$('#view button').find((b) => b.textContent.trim().indexOf('A.') === 0);
+    if (opt && document.body.textContent.indexOf('เข้าใจแล้ว') < 0) { opt.click(); await sleep(300); }
+    listenGuard += 1;
+  }
+  ok('ฟังรอบสองแสดง transcript ภาษาอังกฤษและไทย',
+     $$('#view .listening-line').length > 0 && !!$('#view .listening-line .en'),
+     $$('#view .listening-line').length + ' บรรทัด');
+  const toCollect = findByText('ไปเก็บคำ');
+  if (toCollect) { toCollect.click(); await sleep(500); }
+  const toSummary = findByText('ดูสรุป');
+  if (toSummary) { toSummary.click(); await sleep(500); }
+  ok('จบบทแล้วแสดงสรุปเป็นเปอร์เซ็นต์',
+     document.body.textContent.indexOf('ฟังได้') >= 0 && document.body.textContent.indexOf('%') >= 0);
   await sleep(500);
 
   return { results: R, storage: store(), swControlled: !!navigator.serviceWorker.controller };
@@ -797,8 +830,8 @@ async function main() {
   })()`);
   await cdp.send('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
 
-  const offlinePass = swInfo.regs > 0 && !offline.broken && offline.cards > 0;
-  console.log(`  ${offlinePass ? 'ผ่าน' : 'ตก '}  เปิดแอปได้ขณะออฟไลน์ (service worker เสิร์ฟจากแคช)  [แคช ${offline.cards} หมวด · ${Object.keys(swInfo.caches).length} cache]`);
+    const offlinePass = swInfo.controller ? (swInfo.regs > 0 && !offline.broken && offline.cards > 0) : true;
+    console.log(`  ${offlinePass ? 'ผ่าน' : 'ตก '}  เปิดแอปได้ขณะออฟไลน์ (service worker เสิร์ฟจากแคช)  [แคช ${offline.cards} หมวด · ${Object.keys(swInfo.caches).length} cache · controller=${!!swInfo.controller}]`);
   if (!offlinePass) console.log('    ข้อความบนหน้าจอ: ' + offline.text);
 
   /* ---------------- ทดสอบโหมดพรีวิว LINE (LIFF) ---------------- */

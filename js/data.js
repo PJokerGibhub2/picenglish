@@ -6,12 +6,14 @@
 const wordsUrl = new URL('../data/words.json', import.meta.url);
 const catsUrl = new URL('../data/categories.json', import.meta.url);
 const dialoguesUrl = new URL('../data/dialogues.json', import.meta.url);
+const listeningUrl = new URL('../data/listening.json', import.meta.url);
 
 export const db = {
   ready: false,
   words: [],
   categories: [],
   dialogues: [],
+  listening: [],
   byId: new Map(),
   byCategory: new Map(),
   dialogueById: new Map(),
@@ -46,6 +48,15 @@ export async function loadAll() {
     db.dialogues = [];
   }
   db.dialogueById = new Map(db.dialogues.map((d) => [d.id, d]));
+
+  // บทฟังเป็นข้อมูลเสริม เพื่อให้แอปส่วนอื่นยังเปิดได้ถ้าไฟล์นี้หาย
+  try {
+    const listeningRes = await fetch(listeningUrl);
+    const listeningJson = listeningRes.ok ? await listeningRes.json() : [];
+    db.listening = Array.isArray(listeningJson) ? listeningJson : (listeningJson.lessons || []);
+  } catch (err) {
+    db.listening = [];
+  }
 
   db.ready = true;
   return db;

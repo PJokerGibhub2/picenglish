@@ -415,6 +415,7 @@ h1, .h1 { font-size: var(--fs-display); font-weight: 800; letter-spacing: -.02em
 .sentence .w.ok { color: var(--success); font-weight: 700; }
 .sentence .w.bad { color: var(--danger); font-weight: 700; text-decoration: underline wavy var(--danger); }
 .sentence-th { font-size: .9rem; color: var(--text-soft); }
+.listening-active { outline: 2px solid var(--primary); background: var(--surface-2); }
 .keyvocab { display: flex; flex-wrap: wrap; gap: 7px; }
 .kv {
   display: inline-flex; align-items: baseline; gap: 6px;

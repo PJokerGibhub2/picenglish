@@ -26,6 +26,7 @@ const DEFAULTS = {
   srs: {},                  // id -> {ease, interval, reps, lapses, due, last}
   srsSentences: {},         // "dlgId:lineIndex" -> เหมือน srs (ทบทวนระดับประโยค)
   dialogues: {},            // dlgId -> {lineIndex, completed, plays, bestScore, lastPlayed}
+  listening: {},            // lessonId -> { completed, bestPercent, lastPlayed }
   placement: null,          // ผลวัดระดับล่าสุด เก็บในเครื่อง
   xp: 0,                    // แต้มประสบการณ์รวม
   stats: {},                // id -> {seen, correct, wrong, last}
@@ -97,15 +98,26 @@ export function placement() { return S.placement || null; }
 /* ---------------- สถิติรายวัน ---------------- */
 export function today() {
   const k = todayKey();
-  if (!S.daily[k]) S.daily[k] = { reviewed: 0, correct: 0, newWords: 0, spoken: 0, dialogues: 0, secondsSpoken: 0, selfRatings: [] };
+  if (!S.daily[k]) S.daily[k] = { reviewed: 0, correct: 0, newWords: 0, spoken: 0, dialogues: 0, listening: 0, secondsSpoken: 0, selfRatings: [] };
   const t = S.daily[k];
   // เผื่อข้อมูลเก่าที่บันทึกไว้ก่อนมีฟิลด์ใหม่
   if (t.spoken === undefined) t.spoken = 0;
   if (t.dialogues === undefined) t.dialogues = 0;
+  if (t.listening === undefined) t.listening = 0;
   if (t.secondsSpoken === undefined) t.secondsSpoken = 0;
   if (!Array.isArray(t.selfRatings)) t.selfRatings = [];
   if (t.xp === undefined) t.xp = 0;
   return t;
+}
+export function bumpListening(lessonId, percent = 0) {
+  const rec = S.listening[lessonId] || { completed: 0, bestPercent: 0, lastPlayed: 0 };
+  rec.completed += 1;
+  rec.bestPercent = Math.max(rec.bestPercent || 0, percent);
+  rec.lastPlayed = Date.now();
+  S.listening[lessonId] = rec;
+  bumpDaily('listening', 1);
+  saveNow();
+  return rec;
 }
 export function bumpDaily(field, by = 1) {
   const t = today();

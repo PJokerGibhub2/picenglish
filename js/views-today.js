@@ -26,6 +26,7 @@ function buildQuest() {
   const reviewed = (t.reviewed || 0) + (t.newWords || 0);
   const dialogues = t.dialogues || 0;
   const seconds = t.secondsSpoken || 0;
+  const listening = t.listening || 0;
   return [
     {
       id: 'review',
@@ -55,6 +56,15 @@ function buildQuest() {
       href: '#/onemin',
       unit: 'วิ',
     },
+    {
+      id: 'listening',
+      emoji: '🎧',
+      label: 'ฟัง 1 บท',
+      now: Math.min(listening, 1),
+      goal: 1,
+      done: listening >= 1,
+      href: '#/listening',
+    },
   ];
 }
 
@@ -81,8 +91,8 @@ export function today(root) {
     let speech;
     if (allDone) speech = 'ครบทุกภารกิจแล้ว! เก่งมาก 🎉 อยากฝึกต่ออีกนิดไหม?';
     else if (doneCount === 0) speech = `เหลือ 5 นาทีก็ได้นะ! เริ่มจากอะไรก่อนก็ได้ — ${MASCOT_NAME}เป็นเพื่อนเอง`;
-    else if (doneCount === 1) speech = 'เริ่มได้ดีมาก! อีก 2 อย่างก็ครบแล้ว';
-    else speech = 'เหลืออีก 1 อย่างเท่านั้น! ไปกันเลย';
+    else if (doneCount === quest.length - 1) speech = 'เหลืออีก 1 อย่างเท่านั้น! ไปกันเลย';
+    else speech = `เริ่มได้ดีมาก! อีก ${quest.length - doneCount} อย่างก็ครบแล้ว`;
 
     root.appendChild(h('div', { class: 'today-hero' },
       mascot(allDone ? 'celebrate' : doneCount > 0 ? 'happy' : 'idle', 116),

@@ -36,7 +36,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-daily-01",
+                                                                                               "lis-daily-02"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -75,7 +76,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-daily-03",
+                                                                                               "lis-daily-04"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -120,7 +122,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-daily-05",
+                                                                                               "lis-daily-06"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -159,7 +162,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-daily-07"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -204,7 +207,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-daily-08"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -244,7 +247,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-daily-09"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -299,7 +302,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-cafe-01",
+                                                                                               "lis-cafe-02"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-cafe"
@@ -338,7 +342,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-cafe-03",
+                                                                                               "lis-cafe-04"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-restaurant"
@@ -383,7 +388,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-cafe-05",
+                                                                                               "lis-cafe-06"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-shopping"
@@ -422,7 +428,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-cafe-07"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -468,7 +474,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-cafe-08"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-directions"
@@ -507,7 +513,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-cafe-09"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -562,7 +568,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-routine-01",
+                                                                                               "lis-routine-02"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -601,7 +608,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-routine-03",
+                                                                                               "lis-routine-04"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -646,7 +654,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-routine-05",
+                                                                                               "lis-routine-06"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -686,7 +695,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-routine-07"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -731,7 +740,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-routine-08"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -770,7 +779,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-routine-09"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -825,7 +834,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-service-01",
+                                                                                               "lis-service-02"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-reservation"
@@ -864,7 +874,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-service-03",
+                                                                                               "lis-service-04"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-hotel"
@@ -910,7 +921,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-service-05",
+                                                                                               "lis-service-06"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -949,7 +961,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-service-07"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -994,7 +1006,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-service-08"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -1033,7 +1045,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-service-09"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -1088,7 +1100,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-story-01",
+                                                                                               "lis-story-02"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -1128,7 +1141,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-story-03",
+                                                                                               "lis-story-04"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -1173,7 +1187,8 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-story-05",
+                                                                                               "lis-story-06"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-pharmacy"
@@ -1212,7 +1227,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-story-07"
                                                                                            ],
                                                                              "dialogues":  [
 
@@ -1257,7 +1272,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-story-08"
                                                                                            ],
                                                                              "dialogues":  [
                                                                                                "dlg-office"
@@ -1296,7 +1311,7 @@
                                                                        ],
                                                              "content":  {
                                                                              "listening":  [
-
+                                                                                               "lis-story-09"
                                                                                            ],
                                                                              "dialogues":  [
 

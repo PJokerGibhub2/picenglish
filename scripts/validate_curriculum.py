@@ -45,6 +45,7 @@ def main():
     pp = ROOT / 'data/placement.json'
     words = read_json(ROOT / 'data/words.json')
     dialogues = read_json(ROOT / 'data/dialogues.json')
+    listening = read_json(ROOT / 'data/listening.json')
     manifest = read_json(ROOT / 'data/audio/manifest.json')
     curriculum = read_json(cp)
     placement = read_json(pp)
@@ -53,7 +54,7 @@ def main():
     levels = curriculum.get('levels', [])
     if [level.get('id') for level in levels] != LEVELS:
         err(cp, 'ต้องมี level A0, A1.1, A1.2, A2.1, A2.2 ตามลำดับ')
-    ids, orders, word_owners, dialogue_owners = set(), [], Counter(), Counter()
+    ids, orders, word_owners, dialogue_owners, listening_owners = set(), [], Counter(), Counter(), Counter()
     total_units = total_lessons = blank_tasks = 0
     known_words = {w.get('id') for w in words if w.get('id')}
     known_dialogues = {d.get('id') for d in dialogues if d.get('id')}
@@ -87,6 +88,8 @@ def main():
                 for dialogue in content.get('dialogues', []):
                     dialogue_owners[dialogue] += 1
                     if dialogue not in known_dialogues: err(cp, f'C3: ไม่พบบทสนทนา {dialogue}', lesson)
+                for listening_id in content.get('listening', []):
+                    listening_owners[listening_id] += 1
                 revisit = lesson.get('revisit', [])
                 if len(revisit) != len(set(revisit)): err(cp, 'C5: revisit มีรายการซ้ำในบทเดียวกัน', lesson)
                 for ref in revisit:
@@ -137,6 +140,72 @@ def main():
         for skill in SKILLS:
             if counts[(level, skill)] < 4: err(pp, f'ต้องมีอย่างน้อย 4 ข้อ: {level}/{skill} (พบ {counts[(level, skill)]})')
 
+    listening_path = ROOT / 'data/listening.json'
+    known_listening = set()
+    listening_by_level = Counter()
+    total_listening_questions = 0
+    valid_question_types = {'gist', 'detail', 'number', 'order', 'inference'}
+    listening_titles = {level: set() for level in LEVELS}
+    if not isinstance(listening, list):
+        err(listening_path, 'L0: listening.json ต้องเป็น array')
+        listening = []
+    for lesson in listening:
+        lid = lesson.get('id') if isinstance(lesson, dict) else None
+        if not isinstance(lid, str) or not lid.startswith('lis-') or lid in known_listening:
+            err(listening_path, f'L1: id ต้องไม่ซ้ำและขึ้นต้นด้วย lis- ({lid})', lesson if isinstance(lesson, dict) else None)
+        if lid:
+            known_listening.add(lid)
+        level = lesson.get('level') if isinstance(lesson, dict) else None
+        if level not in LEVELS:
+            err(listening_path, f'L2: level ไม่ถูกต้อง ({level})', lesson if isinstance(lesson, dict) else None)
+        else:
+            listening_by_level[level] += 1
+            title = lesson.get('title')
+            if title in listening_titles[level]:
+                err(listening_path, f'L2: title ซ้ำในระดับ {level}: {title}', lesson)
+            listening_titles[level].add(title)
+        transcript = lesson.get('transcript', []) if isinstance(lesson, dict) else []
+        if not isinstance(transcript, list) or not 4 <= len(transcript) <= 10:
+            err(listening_path, 'L3: transcript ต้องมี 4–10 บรรทัด', lesson if isinstance(lesson, dict) else None)
+            transcript = transcript if isinstance(transcript, list) else []
+        for index, line in enumerate(transcript):
+            if not isinstance(line, dict) or not str(line.get('en', '')).strip() or not str(line.get('th', '')).strip():
+                err(listening_path, f'L3: transcript บรรทัด {index} ต้องมี en และ th ไม่ว่าง', lesson)
+        questions = lesson.get('questions', []) if isinstance(lesson, dict) else []
+        if not isinstance(questions, list) or not 3 <= len(questions) <= 6:
+            err(listening_path, 'L4: questions ต้องมี 3–6 ข้อ', lesson if isinstance(lesson, dict) else None)
+            questions = questions if isinstance(questions, list) else []
+        total_listening_questions += len(questions)
+        for qi, question in enumerate(questions):
+            if not isinstance(question, dict):
+                err(listening_path, f'L4: คำถาม {qi} ต้องเป็น object', lesson)
+                continue
+            options, answer = question.get('options'), question.get('answer')
+            if question.get('type') not in valid_question_types:
+                err(listening_path, f'L4: type คำถาม {qi} ไม่ถูกต้อง ({question.get("type")})', lesson)
+            if not isinstance(options, list) or not 3 <= len(options) <= 4:
+                err(listening_path, f'L4: options คำถาม {qi} ต้องมี 3–4 ตัวเลือก', lesson)
+            if not isinstance(answer, int) or isinstance(answer, bool) or not isinstance(options, list) or not 0 <= answer < len(options):
+                err(listening_path, f'L4: answer คำถาม {qi} อยู่นอกช่วง options', lesson)
+            line_index = question.get('line')
+            if not isinstance(line_index, int) or isinstance(line_index, bool) or not 0 <= line_index < len(transcript):
+                err(listening_path, f'L5: line คำถาม {qi} ไม่มี index ใน transcript', lesson)
+        targets = lesson.get('targetWords', []) if isinstance(lesson, dict) else []
+        if not isinstance(targets, list) or not 2 <= len(targets) <= 4 or any(word not in known_words for word in targets):
+            missing = [word for word in targets if word not in known_words] if isinstance(targets, list) else []
+            err(listening_path, f'L6: targetWords ต้องมี 2–4 id ที่พบใน data/words.json: {missing}', lesson if isinstance(lesson, dict) else None)
+        seconds = lesson.get('seconds') if isinstance(lesson, dict) else None
+        if not isinstance(seconds, int) or isinstance(seconds, bool) or not 8 <= seconds <= 90:
+            err(listening_path, f'L7: seconds ต้องอยู่ระหว่าง 8–90 ({seconds})', lesson if isinstance(lesson, dict) else None)
+    for level in LEVELS:
+        if listening_by_level[level] != 9:
+            err(listening_path, f'L2: {level} ต้องมี 9 บท (พบ {listening_by_level[level]})')
+    for listening_id in known_listening | set(listening_owners):
+        if listening_owners[listening_id] != 1:
+            err(cp, f'L8: {listening_id} ต้องถูกอ้างครั้งเดียว (พบ {listening_owners[listening_id]} ครั้ง)')
+    for listening_id in sorted(set(listening_owners) - known_listening):
+        err(cp, f'L8: อ้างบทฟังที่ไม่มีอยู่ {listening_id}')
+
     print('สรุปหลักสูตร:')
     print('+----------------------+------------------+')
     print('| รายการ               | จำนวน            |')
@@ -144,6 +213,9 @@ def main():
     print(f'| Level / Unit / Lesson | {len(levels)} / {total_units} / {total_lessons:<5}|')
     print(f'| คำศัพท์อ้าง           | {len(word_owners)}/{len(known_words):<14}|')
     print(f'| บทสนทนาอ้าง          | {len(dialogue_owners)}/{len(known_dialogues):<14}|')
+    print('| บทฟังต่อระดับ         | ' + ' / '.join(f'{listening_by_level[level]}' for level in LEVELS) + ' (A0–A2.2) |')
+    print(f'| บทฟังอ้างแล้ว         | {sum(1 for key in known_listening if listening_owners[key] == 1)}/{len(known_listening):<14}|')
+    print(f'| คำถามบทฟังรวม         | {total_listening_questions:<16}|')
     print(f'| บทที่ tasks ว่าง      | {blank_tasks:<16}|')
     print(f'| ข้อสอบ placement      | {len(items):<16}|')
     print('+----------------------+------------------+')
