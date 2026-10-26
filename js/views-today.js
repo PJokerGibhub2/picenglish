@@ -88,6 +88,13 @@ export function today(root) {
       mascot(allDone ? 'celebrate' : doneCount > 0 ? 'happy' : 'idle', 116),
       h('div', { class: 'speech', text: speech })));
 
+    if (!store.placement()) root.appendChild(h('button', {
+      class: 'card list-item', type: 'button', style: { width: '100%', textAlign: 'left', marginTop: '10px' },
+      onclick: () => { location.hash = '#/placement'; },
+    }, h('div', { class: 'thumb', text: '🧭' }),
+    h('div', { class: 'lt' }, h('b', { text: 'วัดระดับ 3 นาที' }), h('div', { class: 'small', text: 'เลือกจุดเริ่มเรียนที่เหมาะกับคุณ · ไม่บังคับ' })),
+    h('span', { class: 'pill', text: 'เริ่ม' })));
+
     // ---------- ภารกิจ ----------
     root.appendChild(h('div', { class: 'section-title', text: 'ภารกิจวันนี้ · 5 นาที' }));
     const questWrap = h('div', { class: 'quest' });

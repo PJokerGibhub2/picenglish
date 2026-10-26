@@ -13,9 +13,11 @@ import * as store from './store.js';
 import { loadVoices, loadAudioManifest } from './speech.js';
 import { initLiff, profileChip, liffState } from './liff.js';
 import { loadArtManifest } from './art.js';
+import { placement } from './views-placement.js';
 
 const TITLES = {
   today: 'PicEnglish',
+  placement: 'ทดสอบวัดระดับ',
   learn: 'การ์ดคำศัพท์',
   listen: 'ฟังประโยค',
   speaking: 'ฝึกพูด',
@@ -33,6 +35,7 @@ const TITLES = {
 // เส้นทางทั้งหมด (เพิ่มโหมดฝึกพูดเข้าไปโดยไม่แตะ views เดิม)
 const ROUTES = {
   today,
+  placement,
   ...views,
   speaking: speakingHub,
   roleplay,

@@ -26,6 +26,7 @@ const DEFAULTS = {
   srs: {},                  // id -> {ease, interval, reps, lapses, due, last}
   srsSentences: {},         // "dlgId:lineIndex" -> เหมือน srs (ทบทวนระดับประโยค)
   dialogues: {},            // dlgId -> {lineIndex, completed, plays, bestScore, lastPlayed}
+  placement: null,          // ผลวัดระดับล่าสุด เก็บในเครื่อง
   xp: 0,                    // แต้มประสบการณ์รวม
   stats: {},                // id -> {seen, correct, wrong, last}
   favorites: [],            // id[]
@@ -86,6 +87,12 @@ export function setSetting(key, value) {
   save();
 }
 export function settings() { return S.settings; }
+export function setPlacement(result) {
+  S.placement = result ? { ...result, takenAt: result.takenAt || Date.now() } : null;
+  saveNow();
+  return S.placement;
+}
+export function placement() { return S.placement || null; }
 
 /* ---------------- สถิติรายวัน ---------------- */
 export function today() {

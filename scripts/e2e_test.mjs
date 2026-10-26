@@ -655,6 +655,31 @@ const PAGE_TEST = `(async () => {
   ok('เรียกภาพถัดไป (ปุ่มเปลี่ยนภาพ) ได้', !!photo3 && !!photo3.url, photo3 ? photo3.title.slice(0, 45) : 'ไม่พบภาพ');
 
   /* ---------- 12) ความทนทาน ---------- */
+  location.hash = '#/placement?short=1';
+  await sleep(700);
+  ok('มีเส้นทางทดสอบวัดระดับ', document.body.textContent.includes('ทดสอบวัดระดับ 3 นาที'));
+  const placementStart = findByText('เริ่มทดสอบ');
+  ok('เริ่มทดสอบวัดระดับได้', !!placementStart);
+  if (placementStart) placementStart.click();
+  await sleep(500);
+  ok('เริ่มแล้วแสดงข้อสอบ placement', document.body.textContent.indexOf('1/5') >= 0);
+  const placementOption = Array.from(document.querySelectorAll('#view button')).find((b) => b.textContent.trim() !== '🔊 ฟังคำศัพท์' && b.textContent.trim() !== 'เริ่มทดสอบ');
+  if (placementOption) placementOption.click();
+  await sleep(150);
+  ok('ตอบข้อแล้วแสดงผลทันทีและไปต่อได้', /ถูกแล้ว|ไม่เป็นไร/.test(document.body.textContent) && !!findByText('ต่อไป'));
+  let placementNext = findByText('ต่อไป');
+  for (let i = 0; i < 4 && placementNext; i++) {
+    placementNext.click(); await sleep(150);
+    const option = Array.from(document.querySelectorAll('#view button:not(:disabled)')).find((b) => b.textContent.trim() !== '🔊 ฟังคำศัพท์' && b.textContent.trim() !== 'ต่อไป');
+    if (option) option.click();
+    await sleep(100);
+    placementNext = findByText('ต่อไป');
+  }
+  if (placementNext) { placementNext.click(); await sleep(300); }
+  await sleep(300);
+  ok('จบ placement แล้วเห็นระดับแนะนำ', /ระดับของคุณ: A[012]/.test(document.body.textContent));
+  location.hash = '#/learn';
+  await sleep(500);
   location.hash = '#/unknown-route';
   await sleep(500);
   ok('เส้นทางที่ไม่รู้จักไม่ทำให้แอปพัง', !!$('#view').children.length && !document.body.textContent.includes('เกิดข้อผิดพลาดในการแสดงผล'));

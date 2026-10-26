@@ -146,12 +146,17 @@ export function learn(root, params = {}) {
   function picker() {
     mount(root);
     const totalLearned = store.learnedCount();
+    const placement = store.placement();
     root.appendChild(h('div', { class: 'card', style: { background: 'linear-gradient(140deg, var(--primary), color-mix(in srgb, var(--primary) 55%, #ec4899))', color: '#fff', border: '0' } },
       h('div', { class: 'row' },
         h('div', { style: { flex: '1' } },
           h('div', { class: 'bold', style: { fontSize: '1.05rem' }, text: 'เรียนคำศัพท์ด้วยภาพ' }),
           h('div', { class: 'small', style: { opacity: '.9' }, text: `${db.words.length} คำ · 8 หมวด · มีเสียงอ่านและประโยคใช้งาน` })),
         h('div', { style: { fontSize: '2rem' }, text: '📸' }))));
+
+    if (placement) root.appendChild(h('a', { class: 'card list-item', href: '#/placement', style: { textDecoration: 'none' } },
+      h('div', { class: 'thumb', text: '🧭' }),
+      h('div', { class: 'lt' }, h('b', { text: 'ระดับของคุณ: ' + placement.level }), h('div', { class: 'small', text: 'แตะเพื่อดูหรือทำแบบทดสอบใหม่' }))));
 
     root.appendChild(h('div', { class: 'section-title', text: 'เลือกหมวด' }));
     const grid = h('div', { class: 'cat-grid' });
@@ -165,7 +170,7 @@ export function learn(root, params = {}) {
       h('div', { class: 'emoji', text: c.emoji }),
       h('div', { class: 'cth', text: c.th }),
       h('div', { class: 'cen', text: c.en }),
-      h('div', { class: 'cmeta', text: `เรียนแล้ว ${learned}/${words.length}` })));
+      h('div', { class: 'cmeta', text: `เรียนแล้ว ${learned}/${words.length}${placement ? ' · ' + placement.level : ''}` })));
     }
     root.appendChild(grid);
 
@@ -1392,6 +1397,10 @@ export function openSettings(onChange) {
   openSheet((close) => {
     const box = h('div', {});
     box.appendChild(sheetHeader('ตั้งค่า', 'ข้อมูลทั้งหมดเก็บไว้ในเครื่องของคุณเท่านั้น', close));
+  box.appendChild(h('div', { class: 'field' },
+    h('div', {}, h('label', { text: 'ทดสอบวัดระดับใหม่' }),
+      h('div', { class: 'desc', text: 'ทำแบบทดสอบสั้น ๆ เพื่อแนะนำระดับเริ่มเรียนอีกครั้ง' })),
+    h('a', { class: 'btn btn-ghost btn-sm', href: '#/placement', text: 'เริ่มทดสอบ' })));
   box.appendChild(h('div', { class: 'field' },
     h('div', {}, h('label', { text: 'แสดงกรอบวินิจฉัย' }),
       h('div', { class: 'desc', text: 'เปิดเพื่อดูขอบของทุกองค์ประกอบ (ใช้หาจุดที่ล้นจอ) แล้วปิดกลับ' })),

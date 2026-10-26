@@ -1,0 +1,825 @@
+﻿{
+    "version":  1,
+    "items":  [
+                  {
+                      "id":  "pl-0-v-0",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า breakfast แปลว่าอะไร",
+                      "level":  "A0",
+                      "options":  [
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น",
+                                      "ของว่าง"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-l-0",
+                      "audioText":  "breakfast",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:food-breakfast",
+                      "options":  [
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น",
+                                      "ของว่าง"
+                                  ],
+                      "level":  "A0"
+                  },
+                  {
+                      "id":  "pl-0-p-0",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You are meeting someone for the first time. What can you say?",
+                      "level":  "A0",
+                      "options":  [
+                                      "Hello, my name is May.",
+                                      "Where is the station?",
+                                      "Could I have the bill, please?",
+                                      "I need a doctor."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-v-1",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า lunch แปลว่าอะไร",
+                      "level":  "A0",
+                      "options":  [
+                                      "อาหารกลางวัน",
+                                      "อาหารเช้า",
+                                      "อาหารเย็น",
+                                      "ของว่าง"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-l-1",
+                      "audioText":  "lunch",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:food-lunch",
+                      "options":  [
+                                      "อาหารกลางวัน",
+                                      "อาหารเช้า",
+                                      "อาหารเย็น",
+                                      "ของว่าง"
+                                  ],
+                      "level":  "A0"
+                  },
+                  {
+                      "id":  "pl-0-p-1",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You are meeting someone for the first time. What can you say?",
+                      "level":  "A0",
+                      "options":  [
+                                      "Hello, my name is May.",
+                                      "Where is the station?",
+                                      "Could I have the bill, please?",
+                                      "I need a doctor."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-v-2",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า dinner แปลว่าอะไร",
+                      "level":  "A0",
+                      "options":  [
+                                      "อาหารเย็น",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "ของว่าง"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-l-2",
+                      "audioText":  "dinner",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:food-dinner",
+                      "options":  [
+                                      "อาหารเย็น",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "ของว่าง"
+                                  ],
+                      "level":  "A0"
+                  },
+                  {
+                      "id":  "pl-0-p-2",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You are meeting someone for the first time. What can you say?",
+                      "level":  "A0",
+                      "options":  [
+                                      "Hello, my name is May.",
+                                      "Where is the station?",
+                                      "Could I have the bill, please?",
+                                      "I need a doctor."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-v-3",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า snack แปลว่าอะไร",
+                      "level":  "A0",
+                      "options":  [
+                                      "ของว่าง",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-0-l-3",
+                      "audioText":  "snack",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:food-snack",
+                      "options":  [
+                                      "ของว่าง",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A0"
+                  },
+                  {
+                      "id":  "pl-0-p-3",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You are meeting someone for the first time. What can you say?",
+                      "level":  "A0",
+                      "options":  [
+                                      "Hello, my name is May.",
+                                      "Where is the station?",
+                                      "Could I have the bill, please?",
+                                      "I need a doctor."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-v-0",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า refill แปลว่าอะไร",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "การเติมเครื่องดื่ม",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-l-0",
+                      "audioText":  "refill",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:restaurant-refill",
+                      "options":  [
+                                      "การเติมเครื่องดื่ม",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.1"
+                  },
+                  {
+                      "id":  "pl-1-p-0",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to order a drink politely. What should you say?",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "Could I have a coffee, please?",
+                                      "I have a meeting tomorrow.",
+                                      "Turn left at the bank.",
+                                      "I feel much better now."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-v-1",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า bill แปลว่าอะไร",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "บิล / ใบเก็บเงิน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-l-1",
+                      "audioText":  "bill",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:restaurant-bill",
+                      "options":  [
+                                      "บิล / ใบเก็บเงิน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.1"
+                  },
+                  {
+                      "id":  "pl-1-p-1",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to order a drink politely. What should you say?",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "Could I have a coffee, please?",
+                                      "I have a meeting tomorrow.",
+                                      "Turn left at the bank.",
+                                      "I feel much better now."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-v-2",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า tip แปลว่าอะไร",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "ทิป / เงินให้พนักงาน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-l-2",
+                      "audioText":  "tip",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:restaurant-tip",
+                      "options":  [
+                                      "ทิป / เงินให้พนักงาน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.1"
+                  },
+                  {
+                      "id":  "pl-1-p-2",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to order a drink politely. What should you say?",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "Could I have a coffee, please?",
+                                      "I have a meeting tomorrow.",
+                                      "Turn left at the bank.",
+                                      "I feel much better now."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-v-3",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า takeaway แปลว่าอะไร",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "อาหารกลับบ้าน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-1-l-3",
+                      "audioText":  "takeaway",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:restaurant-takeaway",
+                      "options":  [
+                                      "อาหารกลับบ้าน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.1"
+                  },
+                  {
+                      "id":  "pl-1-p-3",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to order a drink politely. What should you say?",
+                      "level":  "A1.1",
+                      "options":  [
+                                      "Could I have a coffee, please?",
+                                      "I have a meeting tomorrow.",
+                                      "Turn left at the bank.",
+                                      "I feel much better now."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-v-0",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า bedroom แปลว่าอะไร",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "ห้องนอน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-l-0",
+                      "audioText":  "bedroom",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:home-bedroom",
+                      "options":  [
+                                      "ห้องนอน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.2"
+                  },
+                  {
+                      "id":  "pl-2-p-0",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to ask how much an item costs. What should you say?",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "How much is this, please?",
+                                      "I would like another towel.",
+                                      "I missed the bus this morning.",
+                                      "I am feeling a little tired."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-v-1",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า kitchen แปลว่าอะไร",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "ห้องครัว",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-l-1",
+                      "audioText":  "kitchen",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:home-kitchen",
+                      "options":  [
+                                      "ห้องครัว",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.2"
+                  },
+                  {
+                      "id":  "pl-2-p-1",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to ask how much an item costs. What should you say?",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "How much is this, please?",
+                                      "I would like another towel.",
+                                      "I missed the bus this morning.",
+                                      "I am feeling a little tired."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-v-2",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า living room แปลว่าอะไร",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "ห้องนั่งเล่น",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-l-2",
+                      "audioText":  "living room",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:home-living-room",
+                      "options":  [
+                                      "ห้องนั่งเล่น",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.2"
+                  },
+                  {
+                      "id":  "pl-2-p-2",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to ask how much an item costs. What should you say?",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "How much is this, please?",
+                                      "I would like another towel.",
+                                      "I missed the bus this morning.",
+                                      "I am feeling a little tired."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-v-3",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า furniture แปลว่าอะไร",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "เครื่องเรือน / เฟอร์นิเจอร์",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-2-l-3",
+                      "audioText":  "furniture",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:home-furniture",
+                      "options":  [
+                                      "เครื่องเรือน / เฟอร์นิเจอร์",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A1.2"
+                  },
+                  {
+                      "id":  "pl-2-p-3",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to ask how much an item costs. What should you say?",
+                      "level":  "A1.2",
+                      "options":  [
+                                      "How much is this, please?",
+                                      "I would like another towel.",
+                                      "I missed the bus this morning.",
+                                      "I am feeling a little tired."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-v-0",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า save แปลว่าอะไร",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "ออม / ประหยัด",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-l-0",
+                      "audioText":  "save",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:shopping-save",
+                      "options":  [
+                                      "ออม / ประหยัด",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.1"
+                  },
+                  {
+                      "id":  "pl-3-p-0",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You need to change your hotel reservation. What should you say?",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "Could I change my reservation, please?",
+                                      "I usually walk to work.",
+                                      "Where can I buy a ticket?",
+                                      "That meal was delicious."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-v-1",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า wallet แปลว่าอะไร",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "กระเป๋าสตางค์",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-l-1",
+                      "audioText":  "wallet",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:shopping-wallet",
+                      "options":  [
+                                      "กระเป๋าสตางค์",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.1"
+                  },
+                  {
+                      "id":  "pl-3-p-1",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You need to change your hotel reservation. What should you say?",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "Could I change my reservation, please?",
+                                      "I usually walk to work.",
+                                      "Where can I buy a ticket?",
+                                      "That meal was delicious."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-v-2",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า fever แปลว่าอะไร",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "ไข้ / มีไข้",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-l-2",
+                      "audioText":  "fever",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:health-fever",
+                      "options":  [
+                                      "ไข้ / มีไข้",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.1"
+                  },
+                  {
+                      "id":  "pl-3-p-2",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You need to change your hotel reservation. What should you say?",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "Could I change my reservation, please?",
+                                      "I usually walk to work.",
+                                      "Where can I buy a ticket?",
+                                      "That meal was delicious."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-v-3",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า headache แปลว่าอะไร",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "อาการปวดหัว",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-3-l-3",
+                      "audioText":  "headache",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:health-headache",
+                      "options":  [
+                                      "อาการปวดหัว",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.1"
+                  },
+                  {
+                      "id":  "pl-3-p-3",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You need to change your hotel reservation. What should you say?",
+                      "level":  "A2.1",
+                      "options":  [
+                                      "Could I change my reservation, please?",
+                                      "I usually walk to work.",
+                                      "Where can I buy a ticket?",
+                                      "That meal was delicious."
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-v-0",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า sick leave แปลว่าอะไร",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "ลาป่วย",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-l-0",
+                      "audioText":  "sick leave",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:work-sick-leave",
+                      "options":  [
+                                      "ลาป่วย",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.2"
+                  },
+                  {
+                      "id":  "pl-4-p-0",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to explain a small problem at work. What should you say?",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "I have a problem with this order.",
+                                      "One coffee, please.",
+                                      "How much is the red shirt?",
+                                      "Can you show me the way?"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-v-1",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า apply for แปลว่าอะไร",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "สมัคร (งาน)",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-l-1",
+                      "audioText":  "apply for",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:work-apply-for",
+                      "options":  [
+                                      "สมัคร (งาน)",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.2"
+                  },
+                  {
+                      "id":  "pl-4-p-1",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to explain a small problem at work. What should you say?",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "I have a problem with this order.",
+                                      "One coffee, please.",
+                                      "How much is the red shirt?",
+                                      "Can you show me the way?"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-v-2",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า deadline แปลว่าอะไร",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "กำหนดส่งงาน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-l-2",
+                      "audioText":  "deadline",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:work-deadline",
+                      "options":  [
+                                      "กำหนดส่งงาน",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.2"
+                  },
+                  {
+                      "id":  "pl-4-p-2",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to explain a small problem at work. What should you say?",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "I have a problem with this order.",
+                                      "One coffee, please.",
+                                      "How much is the red shirt?",
+                                      "Can you show me the way?"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-v-3",
+                      "skill":  "vocab",
+                      "answer":  0,
+                      "prompt":  "คำว่า overtime แปลว่าอะไร",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "การทำงานล่วงเวลา",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ]
+                  },
+                  {
+                      "id":  "pl-4-l-3",
+                      "audioText":  "overtime",
+                      "answer":  0,
+                      "skill":  "listening",
+                      "prompt":  "ฟังคำศัพท์ แล้วเลือกความหมายที่ตรงกัน",
+                      "audioKey":  "word:work-overtime",
+                      "options":  [
+                                      "การทำงานล่วงเวลา",
+                                      "อาหารเช้า",
+                                      "อาหารกลางวัน",
+                                      "อาหารเย็น"
+                                  ],
+                      "level":  "A2.2"
+                  },
+                  {
+                      "id":  "pl-4-p-3",
+                      "skill":  "phrase",
+                      "answer":  0,
+                      "prompt":  "สถานการณ์นี้ควรพูดว่าอะไร: You want to explain a small problem at work. What should you say?",
+                      "level":  "A2.2",
+                      "options":  [
+                                      "I have a problem with this order.",
+                                      "One coffee, please.",
+                                      "How much is the red shirt?",
+                                      "Can you show me the way?"
+                                  ]
+                  }
+              ]
+}
