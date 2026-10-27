@@ -88,7 +88,7 @@ export async function speakView(root) {
         ? h('button', { class: `speak-mic${state.busy ? ' listening' : ''}`, disabled: state.busy, onclick: recognize }, icon('mic', 30), h('span', { text: state.busy ? 'กำลังฟัง…' : 'แตะแล้วพูด' }))
         : h('div', { class: 'card speak-fallback' }, h('p', { class: 'muted', text: supported.note }),
           btn3d(state.record ? 'หยุดอัดเสียง' : 'อัดเสียง', { block: true, icon: 'mic', onclick: recordToggle }),
-          state.blob ? h('div', { class: 'self-rate' }, h('span', { text: 'ฟังเทียบแล้วให้คะแนนตัวเอง' }), h('div', { class: 'rating-stars' }, ...[1,2,3,4,5].map((n) => h('button', { class: n <= state.rating ? 'on' : '', text: '★', onclick: () => { state.rating = n; draw(); } }))),
+          state.blob ? h('div', { class: 'self-rate' }, h('span', { text: 'ฟังเทียบแล้วให้คะแนนตัวเอง' }), h('div', { class: 'rating-stars' }, ...[1,2,3,4,5].map((n) => h('button', { class: n <= state.rating ? 'on' : '', text: '★', 'aria-label': `ให้คะแนน ${n} ดาว`, onclick: () => { state.rating = n; draw(); } }))),
             state.rating ? btn3d('บันทึกคะแนน', { tone: 'brand', onclick: () => rate(item, state.rating >= 3 ? 80 : 40, '', state.blob) }) : null) : null)) : null,
       state.result ? h('div', { class: `speak-result${state.result.passed ? ' passed' : ''}` },
         h('div', { class: 'speak-score', text: `${state.result.pct}%` }),

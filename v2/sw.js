@@ -4,7 +4,7 @@
  * → เปลี่ยนเป็น "network-first" สำหรับ HTML/JS/CSS และใช้ fetch cache:'reload'
  *   ตอน precache เพื่อไม่ให้ HTTP cache ของเบราว์เซอร์มาทับ
  */
-const VERSION = 'v2.10.0';
+const VERSION = 'v2.11.0';
 const CACHE = `pangpood-${VERSION}`;
 
 const SHELL = [

@@ -1,0 +1,382 @@
+{
+ "version": "v2",
+ "stamp": "2026-10-27 05:00:32",
+ "results": [
+  {
+   "screen": "path",
+   "route": "#/path",
+   "audit": {
+    "text": "สวัสดี! ผมพัง 🐘มาเริ่มพูดอังกฤษกันวันละ 5 นาทีไปต่อเอาตัวรอดA0 → A1.1 · 0/20👋ทักทาย & แนะนำตัวSay hello0/5ทักทายครั้งแรกบอกชื่อและที่มาถามชื่อเขาพูดถึงความรู้สึกทบทวน Unit 1☕สั่งกาแฟ & เครื่องดื่มOr",
+    "buttons": 79,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": true,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 7845,
+    "interactive": 79,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "quest",
+   "route": "#/quest",
+   "audit": {
+    "text": "เควสวันนี้ทำภารกิจครบ 3 ข้อเพื่อรับ XP เพิ่มทำแล้ว 0/3ทำทีละนิดก็เก่งขึ้นได้จบบทเรียน 1 บท0/1พูด 3 ข้อ0/3ทบทวน 10 ข้อ0/10ไปเรียนต่อ🔁ทบทวนคำที่พลาดฝึกคำที่อยากจำให้แม่นขึ้น",
+    "buttons": 8,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": false,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 657,
+    "interactive": 8,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "practice",
+   "route": "#/practice",
+   "audit": {
+    "text": "ฝึกพูดและฟังเลือกกิจกรรมที่อยากฝึกได้เลย🎤ฝึกออกเสียงฝึกคำศัพท์และประโยคทีละข้อ🎭บทสนทนาฝึกพูดในสถานการณ์จริง🗣️พูดตามเงาฟังแล้วฝึกพูดตามทีละประโยค🎧ฟังบทเต็มฟังเรื่องสั้นพร้อมคำถาม💬คลังประโยครวมวลีท",
+    "buttons": 12,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 515,
+    "interactive": 12,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "words",
+   "route": "#/words",
+   "audit": {
+    "text": "คลังคำ300 คำ · 12 หมวด · แตะเพื่อฟังเสียง📝 ต้องทบทวน · 0 ข้อข้อที่ตอบผิดจะมาอยู่ตรงนี้ ให้กลับมาฝึกซ้ำได้เสมอทั้งหมด🍜 อาหารและเครื่องดื่ม🍽️ ร้านอาหารและสั่งอาหาร🧭 เดินทางและทิศทาง🏠 ที่พักและที่อย",
+    "buttons": 320,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": true,
+    "skip": true,
+    "clear": false,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 21913,
+    "interactive": 320,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "me",
+   "route": "#/me",
+   "audit": {
+    "text": "สวัสดี พัง!เรียนจบแล้ว 0/60 บท⭐0XP รวม🔥0สตรีค (วัน)✓0/60บทที่จบวันนี้คำที่ตอบถูก 0 ข้อ🔁ทบทวนคำที่พลาดฝึกคำที่ถึงเวลาทบทวนอีกครั้ง7 วันที่ผ่านมาพพฤศสอาจอความคืบหน้าตาม Sectionเอาตัวรอด0% · 0/20 บทใช้",
+    "buttons": 15,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 1507,
+    "interactive": 14,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "lesson",
+   "route": "#/lesson?id=u1-l1",
+   "audit": {
+    "text": "✕ทักทายครั้งแรก1/10พังหลับแล้ว… แตะเพื่อไปต่อฟังแล้วเลือกความหมายฟังซ้ำมันอยู่ใกล้ตรงนี้ไหมสวัสดี ฉันเพิ่งย้ายมาอยู่ที่นี่ช่วยฉันหน่อยได้ไหมขอบคุณ ขอให้เป็นวันที่ดีตรวจคำตอบ",
+    "buttons": 13,
+    "disabled": 1,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": true,
+    "skip": false,
+    "clear": false,
+    "back": false,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 7,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "speak",
+   "route": "#/speak",
+   "audit": {
+    "text": "ฝึกออกเสียงพูดตามต้นแบบ แล้วดูคำที่ได้ยินชัดคำประโยคทั้งหมด🍜 อาหารและเครื่องดื่ม🍽️ ร้านอาหารและสั่งอาหาร🧭 เดินทางและทิศทาง🏠 ที่พักและที่อยู่อาศัย🛍️ ช้อปปิ้งและเงิน🩺 สุขภาพและร่างกาย💼 งานและออฟฟ",
+    "buttons": 25,
+    "disabled": 0,
+    "tiny": [
+     "ข้ามข้อนี้ 87x40"
+    ],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": true,
+    "skip": true,
+    "clear": false,
+    "back": false,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 735,
+    "interactive": 25,
+    "empty": false
+   },
+   "issues": [
+    {
+     "level": "warn",
+     "code": "TAP_TARGET",
+     "detail": "ข้ามข้อนี้ 87x40"
+    }
+   ]
+  },
+  {
+   "screen": "roleplay",
+   "route": "#/roleplay",
+   "audit": {
+    "text": "บทสนทนาเลือกสถานการณ์แล้วฝึกพูดทีละบรรทัด▶เรียนต่อสั่งกาแฟจบแล้ว 0/8 บท☕สั่งกาแฟOrdering coffee · A2 · 9 บรรทัด›🍽️สั่งอาหารในร้านOrdering food at a restaurant · A2 · 10 บรรทัด›📅โทรจองโต๊ะร้านอาหารBo",
+    "buttons": 15,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": false,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 913,
+    "interactive": 15,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "listening",
+   "route": "#/listening",
+   "audit": {
+    "text": "ฟังบทเต็มฟังเรื่องสั้นพร้อมคำถามเช็กความเข้าใจทั้งหมดA0A1.1A1.2A2.1A2.2🏠ทักทายเพื่อนบ้านA0 · 9 วินาที · 3 คำถาม›🪑ขอที่นั่งA0 · 9 วินาที · 3 คำถาม›🔑หากุญแจบ้านA0 · 8 วินาที · 3 คำถาม›🍳ถามหาห้องครัว",
+    "buttons": 57,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 3876,
+    "interactive": 57,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "shadow",
+   "route": "#/shadow",
+   "audit": {
+    "text": "พูดตามเงาฟังประโยค แล้วลองพูดตามทีละบรรทัดทั้งหมดA0A1A2B1🗣️ทักทายเพื่อนบ้าน0/4 บรรทัด · A0🗣️ขอที่นั่ง0/4 บรรทัด · A0🗣️หากุญแจบ้าน0/4 บรรทัด · A0🗣️ถามหาห้องครัว0/4 บรรทัด · A0🗣️บอกเวลาอาหาร0/4 บรร",
+    "buttons": 56,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 50,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "chunks",
+   "route": "#/chunks",
+   "audit": {
+    "text": "คลังประโยคประโยคใช้ได้จริงในสถานการณ์ต่าง ๆใช้ได้แล้ว 0/150▶เรียนต่อa hot tea with lemon, please.ทั้งหมดคาเฟ่ร้านอาหารซื้อของเดินทางที่พักสุขภาพทำงานsmalltalka hot tea with lemon, please.ขอชาร้อนใส่มะ",
+    "buttons": 617,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": false,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 611,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "chunk-type",
+   "route": "#/chunks/type?id=ch-cafe-01",
+   "audit": {
+    "text": "←พิมพ์ตามA0ฟังประโยคแล้วพิมพ์ตามขอชาร้อนใส่มะนาวได้ไหม▶ ฟัง🐢 0.6×💡 ใบ้↩︎ ย้อนคำ🗑 ล้างตรวจคำตอบ",
+    "buttons": 14,
+    "disabled": 1,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 1,
+    "undo": false,
+    "hint": true,
+    "skip": false,
+    "clear": true,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 8,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "chunk-order",
+   "route": "#/chunks/order?id=ch-cafe-01",
+   "audit": {
+    "text": "←เรียงประโยคA0เรียงคำให้เป็นประโยคตามความหมายภาษาไทยขอชาร้อนใส่มะนาวได้ไหม0/6 คำlemonwithteaahotplease🗑 ล้างทั้งหมดตรวจลำดับ💡 ใบ้คำที่ 1ข้าม",
+    "buttons": 17,
+    "disabled": 0,
+    "tiny": [
+     "a 37x44"
+    ],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": true,
+    "skip": true,
+    "clear": false,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 11,
+    "empty": false
+   },
+   "issues": [
+    {
+     "level": "warn",
+     "code": "TAP_TARGET",
+     "detail": "a 37x44"
+    }
+   ]
+  },
+  {
+   "screen": "sentences",
+   "route": "#/sentences",
+   "audit": {
+    "text": "←ทบทวนประโยค1/10ปกติผมกินอาหารเช้ากับภรรยาตอนเจ็ดโมงฟังแล้วเลือกความหมาย▶ ฟังประโยคมีเคสที่พอดีกับแท็บเล็ตของฉันไหมขอตรวจสุขภาพก่อนเดินทางได้ไหมปกติผมกินอาหารเช้ากับภรรยาตอนเจ็ดโมงฉันใช้คำว่า แผนกต้อน",
+    "buttons": 12,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": true,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 6,
+    "empty": false
+   },
+   "issues": []
+  },
+  {
+   "screen": "review",
+   "route": "#/review",
+   "audit": {
+    "text": "วันนี้ทบทวนครบแล้วพังพักผ่อนแล้ว… กลับมาเรียนได้ทุกเมื่อกลับไปเควส",
+    "buttons": 7,
+    "disabled": 0,
+    "tiny": [],
+    "noLabel": [],
+    "images": 1,
+    "inputs": 0,
+    "undo": false,
+    "hint": false,
+    "skip": false,
+    "clear": false,
+    "back": true,
+    "submit": false,
+    "overflowX": false,
+    "viewHeight": 844,
+    "interactive": 1,
+    "empty": false
+   },
+   "issues": []
+  }
+ ]
+}

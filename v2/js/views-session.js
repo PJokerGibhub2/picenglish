@@ -53,7 +53,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
 
   document.body.classList.add('in-session');
   const next = review ? null : nextLesson(path, lessonId);
-  const state = { index: 0, firstCorrect: 0, finalCorrect: 0, xp: 0, retried: new Set(), selected: null, built: [], listening: false, done: false, streak: 0, sleeping: false };
+  const state = { index: 0, firstCorrect: 0, finalCorrect: 0, xp: 0, retried: new Set(), selected: null, built: [], listening: false, done: false, streak: 0, sleeping: false, hintsUsed: 0 };
   const timers = new Set();
   let autoTimer = null;
   let idleTimer = null;
@@ -69,6 +69,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
   const content = h('div', { class: 'session-content' });
   const questionHost = h('div', { class: 'session-question' });
   const mascotEl = mascot('idle', 84);
+  mascotEl.setAttribute('aria-hidden', 'true');
   mascotEl.classList.add('session-mascot');
   const sleepHint = h('div', { class: 'session-sleep-hint muted small', hidden: true, text: 'พังหลับแล้ว… แตะเพื่อไปต่อ' });
   const shell = h('section', { class: 'session' }, top,
@@ -141,22 +142,36 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
     const parts = [mascotEl, bubble];
     if (['word-en-th', 'word-th-en', 'word-listen', 'chunk-meaning', 'line-listen', 'listen-question', 'dialog-line'].includes(item.type)) parts.push(optionButtons(item));
     if (item.type === 'chunk-order') {
-      const built = h('div', { class: 'built-sentence', text: 'แตะคำด้านล่างเพื่อเรียงประโยค' });
-      const chips = h('div', { class: 'tile-bank' }, ...item.tiles.map((word, i) => {
-        const button = h('button', { class: 'chip-btn tile', type: 'button', onclick: () => {
-        state.built.push({ word, i }); button.remove();
-        built.textContent = state.built.map((x) => x.word).join(' ') || 'แตะคำด้านล่างเพื่อเรียงประโยค';
+      const built = h('div', { class: 'built-sentence', 'aria-label': 'คำที่เลือกแล้ว แตะคำเพื่อคืนลงคลัง' });
+      const count = h('div', { class: 'muted small', text: `0/${item.tiles.length} คำ` });
+      const chips = h('div', { class: 'tile-bank' });
+      const buildBank = () => {
+        mount(chips, ...item.tiles.map((word, i) => state.built.some((x) => x.i === i) ? null : h('button', { class: 'chip-btn tile', type: 'button', onclick: () => { state.built.push({ word, i }); updateOrder(); } }, word)));
+      };
+      const updateOrder = () => {
+        mount(built, ...(state.built.length ? state.built.map((x, index) => h('button', { class: 'chip-btn tile built-tile', type: 'button', text: x.word, 'aria-label': `คืนคำ ${x.word} ลงคลังคำ`, onclick: () => { state.built.splice(index, 1); updateOrder(); } })) : [h('span', { text: 'แตะคำด้านล่างเพื่อเรียงประโยค' })]));
+        count.textContent = `${state.built.length}/${item.tiles.length} คำ`;
         state.selected = state.built.length ? state.built.map((x) => x.word).join(' ') : null;
-        questionHost.querySelector('.session-check').disabled = !state.selected;
-        } }, word);
-        return button;
-      }));
-      parts.push(built, chips);
+        const check = questionHost.querySelector('.session-check');
+        if (check) check.disabled = !state.selected;
+        clearAll.disabled = !state.built.length;
+        buildBank();
+      };
+      const clearAll = h('button', { class: 'chip-btn', type: 'button', text: '🗑 ล้างทั้งหมด', 'aria-label': 'คืนคำทั้งหมดลงคลัง', disabled: true, onclick: () => { sfxTap(); state.built = []; updateOrder(); } });
+      buildBank();
+      parts.push(count, built, chips, clearAll);
     }
     if (item.type === 'chunk-type') {
       const input = h('input', { class: 'session-input', type: 'text', autocomplete: 'off', placeholder: 'พิมพ์ประโยคภาษาอังกฤษ' });
-      input.addEventListener('input', () => { state.selected = input.value.trim() || null; questionHost.querySelector('.session-check').disabled = !state.selected; });
-      parts.push(input);
+      const toolRow = h('div', { class: 'drill-actions type-tools' });
+      const refreshCheck = () => { state.selected = input.value.trim() || null; const check = questionHost.querySelector('.session-check'); if (check) check.disabled = !state.selected; };
+      input.addEventListener('input', refreshCheck);
+      const updateTyped = (value) => { input.value = value; refreshCheck(); };
+      toolRow.append(
+        h('button', { class: 'chip-btn', type: 'button', text: '💡 ใบ้', 'aria-label': 'ใบ้คำถัดไป', onclick: () => { const typed = normalizeEn(input.value).split(' ').filter(Boolean); const next = normalizeEn(item.answer).split(' ').filter(Boolean)[typed.length]; if (next) { state.hintsUsed++; updateTyped(`${input.value.trimEnd()}${input.value.trim() ? ' ' : ''}${next} `); } } }),
+        h('button', { class: 'chip-btn', type: 'button', text: '↩︎ ย้อนคำ', 'aria-label': 'ลบคำสุดท้าย', onclick: () => { const typed = input.value.trimEnd().split(/\s+/); typed.pop(); updateTyped(typed.join(' ')); } }),
+        h('button', { class: 'chip-btn', type: 'button', text: '🗑 ล้าง', 'aria-label': 'ล้างข้อความทั้งหมด', onclick: () => updateTyped('') }));
+      parts.push(input, toolRow);
     }
     if (item.type === 'speak-word') {
       const result = h('div', { class: 'session-stt muted', text: 'แตะปุ่มไมค์แล้วพูดตาม' });

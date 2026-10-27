@@ -77,7 +77,7 @@ export async function roleplayView(root, query = new URLSearchParams()) {
               s.blob ? h('div', {},
                 btn3d('ฟังเสียงของฉัน', { tone: 'sun', onclick: () => playBlob(s.blob) }),
                 h('div', { class: 'rating-stars' },
-                  ...[1, 2, 3, 4, 5].map((n) => h('button', { class: n <= s.rating ? 'on' : '', text: '★', onclick: () => { s.rating = n; draw(); } })),
+                  ...[1, 2, 3, 4, 5].map((n) => h('button', { class: n <= s.rating ? 'on' : '', text: '★', 'aria-label': `ให้คะแนน ${n} ดาว`, onclick: () => { s.rating = n; draw(); } })),
                   s.rating ? btn3d('บันทึกคะแนน', { onclick: () => { s.result = { pct: s.rating * 20, alignment: { missing: [] } }; s.scores.push(s.result.pct); draw(); } }) : null)) : null))
           : h('div', { class: `speak-result${s.result.pct >= 70 ? ' passed' : ''}` },
             h('div', { class: 'speak-score', text: `${s.result.pct}%` }),

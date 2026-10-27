@@ -576,3 +576,29 @@ body.in-session #view { width: 100%; max-width: none; height: 100dvh; padding: 0
 .self-record, .self-rating { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }
 .self-record[hidden], .self-rating[hidden] { display: none; }
 @media (max-height: 700px) { .session-mascot { width: 84px !important; height: 84px !important; } }
+
+/* T19: ขนาดเป้าหมายสัมผัสที่สม่ำเสมอทั้งหน้าจอ */
+.icon-btn, .session-exit, .unit-guide { box-sizing: border-box; width: 44px; min-width: 44px; height: 44px; min-height: 44px; }
+.rp-bubble-head .icon-btn { width: 44px; min-width: 44px; height: 44px; min-height: 44px; }
+.chip, .chip-btn, .tile, .word-chip { box-sizing: border-box; min-height: 44px; }
+.answer { min-height: 56px; }
+.type-tools { gap: 8px; }
+.type-tools > * { min-height: 44px; }
+.built-sentence { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; }
+.built-tile { border-style: solid; }
+@media (max-width: 360px) {
+  #view { padding-left: 12px; padding-right: 12px; }
+  .type-tools { gap: 6px; }
+  .type-tools .btn3d, .type-tools .chip-btn { padding-left: 10px; padding-right: 10px; font-size: .8rem; }
+}
+
+/* แตะง่ายมาตรฐาน 44px (ผลจาก QA audit) */
+.btn3d { min-height: 44px; }
+#view a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+.speak-actions .btn3d, .drill-actions .btn3d { min-height: 46px; }
+input[type='range'] { height: 28px; }
+/* ปิดช่องว่าง hit target ที่เหลือ (QA audit รอบ 2) */
+.bubble .listen-again { min-height: 44px; }
+.session-skip, .speak-skip { min-height: 44px; }
+#view a { min-width: 44px; }
+.drill-card a, .card a { min-height: 44px; }
