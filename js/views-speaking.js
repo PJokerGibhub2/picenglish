@@ -1122,7 +1122,7 @@ export function oneMinute(root) {
       const stars = r.selfRating ? '★'.repeat(r.selfRating) + '☆'.repeat(5 - r.selfRating) : '☆☆☆☆☆';
       historyEl.appendChild(h('div', { class: 'list-item', style: { padding: '10px 12px' } },
         h('button', {
-          class: 'btn btn-ghost btn-sm', type: 'button', style: { width: '44px', minHeight: '40px', padding: 0 },
+          class: 'btn btn-ghost btn-sm', type: 'button', 'aria-label': 'ฟังเสียงบันทึก', style: { width: '44px', minHeight: '44px', padding: 0 },
           onclick: () => playBlob(r.blob, 1),
         }, '🔊'),
         h('div', { class: 'lt' },

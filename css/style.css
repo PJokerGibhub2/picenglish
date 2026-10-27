@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    PicEnglish — Design System v2 (มืดพรีเมียม + สลับธีมสว่างได้)
    ธีมมืด = ค่าเริ่มต้น · ธีมสว่าง = html[data-theme="light"]
    ชื่อคลาสเดิมทั้งหมดคงไว้ เพื่อไม่ให้โค้ดหน้าจอต้องแก้
@@ -692,3 +692,21 @@ html.debug-outline .view { outline: 2px solid #34D399 !important; }
   .word-hero-monogram { flex-basis: 68px; width: 68px; height: 68px; border-radius: 21px; font-size: 3.7rem; }
   .word-hero-en { font-size: 1.8rem; }
 }
+
+/* มาตรฐานการแตะ 44px (WCAG 2.2 target size) */
+.icon-btn, .btn-icon { min-width: 44px; min-height: 44px; }
+.btn { min-height: 44px; }
+.btn-sm { min-height: 44px; }
+.chip, .pill-btn, .kv { min-height: 44px; }
+button.pill { min-height: 44px; }
+.seg button { min-height: 44px; }
+.answer, .mtile { min-height: 56px; }
+.update-bar .btn { min-height: 44px; }
+
+/* ให้แถวที่มีปุ่มหลายปุ่มพับลงบรรทัดใหม่ได้บนจอแคบ */
+.row:has(> .btn ~ .btn) { flex-wrap: wrap; }
+
+/* QA รอบ 2: ป้ายระดับ (A0/A1) และลิงก์เล็ก ต้องแตะง่าย */
+.pill { min-width: 44px; }
+button.pill, a.pill { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+#view a { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }

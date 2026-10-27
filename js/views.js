@@ -620,7 +620,7 @@ export function quiz(root) {
         root.appendChild(h('div', { class: 'list-item' },
           h('div', { class: 'thumb', text: w.emoji }),
           h('div', { class: 'lt' }, h('b', { class: 'en', text: w.word }), h('div', { text: w.thai })),
-          h('button', { class: 'icon-btn', type: 'button', onclick: () => sayWord(w) }, icon('sound', 18)),
+          h('button', { class: 'icon-btn', type: 'button', 'aria-label': 'ออกเสียง', onclick: () => sayWord(w) }, icon('sound', 18)),
           starButton(w)));
       }
     }

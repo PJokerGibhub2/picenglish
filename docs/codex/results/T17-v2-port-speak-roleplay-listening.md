@@ -1,0 +1,3 @@
+เพิ่มแท็บ “ฝึก” และโหมดฝึกออกเสียง บทสนทนา และฟังบทเต็มใน V2 แล้ว พร้อมบันทึกความคืบหน้าและใช้ข้อมูลเดิมของ V2 รายงานอยู่ที่ [T17-done.md](/C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/docs/codex/inbox/T17-done.md)
+
+ตรวจ parser ของไฟล์ JavaScript ที่แก้และ `git diff --check` ผ่าน แต่เรียก `node --check` และตรวจในเบราว์เซอร์ไม่ได้ เพราะเครื่องนี้ไม่มี Node ใน PATH ยังไม่ได้แก้ `sw.js` หรือ `version.js` ตามข้อห้าม จึงยังไม่ได้เพิ่มไฟล์ view ใหม่ในรายการ precache ของ service worker.

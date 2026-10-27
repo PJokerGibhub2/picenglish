@@ -1,0 +1,5 @@
+ทำ T16 แล้วใน [views-session.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/views-session.js), [views-path.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/views-path.js) และ [style.css](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/css/style.css) ครอบคลุมแอนิเมชันโจทย์/คำตอบ, reduced motion, มาสคอสหลับและตื่น, streak, ฉลอง Unit ครั้งเดียว, node สั่น, เลื่อนหา node ปัจจุบัน และ cleanup timer/frame ของ view
+
+รายงานอยู่ที่ [T16-done.md](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/docs/codex/inbox/T16-done.md) ตามที่ร้องขอ
+
+ยังยืนยัน `node --check` และ E2E ไม่ได้ เพราะเครื่องนี้ไม่พบคำสั่ง `node` ใน PATH หรือในตำแหน่งติดตั้งมาตรฐาน จึงยังรับรองเกณฑ์เรื่อง syntax และไม่มี console error ไม่ได้.

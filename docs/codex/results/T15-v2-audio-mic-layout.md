@@ -1,0 +1,7 @@
+แก้ T15 ใน V2 แล้ว: เพิ่มแถวเวอร์ชันและปุ่มทดสอบ/อัปเดต, ปรับ fallback เสียงและทางเลือกฝึกพูดแบบอัดเสียงฟังเทียบ, เพิ่มเสียงตอบถูก/ผิด และจัดหน้าเรียนแนวตั้งกึ่งกลาง
+
+ไฟล์ที่แก้: [views-me.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/views-me.js), [speech.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/speech.js), [sfx.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/sfx.js), [views-session.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/views-session.js), [listen-once.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/listen-once.js), [app.js](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/js/app.js), [style.css](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/v2/css/style.css)
+
+รายงานและขั้นตอนตรวจด้วยมืออยู่ที่ [T15-done.md](C:/Users/ASUS/OneDrive/Documents/deepseek-harness/default-workspace/english-picture-app/docs/codex/inbox/T15-done.md)
+
+`git diff --check` ผ่าน แต่ยังยืนยัน `node --check` และการแสดงผลบนอุปกรณ์จริงไม่ได้ เพราะไม่มีคำสั่ง `node` ในสภาพแวดล้อมนี้ และไม่ได้ทดสอบหลายขนาดจอด้วยเบราว์เซอร์.
