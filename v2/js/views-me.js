@@ -4,9 +4,10 @@ import { mascot } from './mascot2.js';
 import { db, loadAll } from './data.js';
 import * as pg from './progress2.js';
 import * as store from './store.js';
-import { setPlaybackVolume, sayText, loadVoices, loadAudioManifest } from './speech.js';
+import { setPlaybackVolume, sayText, loadVoices, loadAudioManifest, audioDiagnostics, audioUrl } from './speech.js';
+import { startRecording, playBlob } from './recorder.js';
 import { loadPath } from './views-path.js';
-import { VERSION } from './version.js';
+import { VERSION, BUILD_DATE } from './version.js';
 
 let ready = false;
 async function ensure() {
@@ -52,6 +53,72 @@ export async function meView(root) {
     toast('รีเซ็ตความคืบหน้าแล้ว');
     setTimeout(() => location.reload(), 250);
   };
+  const audioResult = h('div', { class: 'muted small', 'aria-live': 'polite' });
+  const micResult = h('div', { class: 'muted small', 'aria-live': 'polite' });
+  const testAudio = async (button) => {
+    button.disabled = true;
+    audioResult.textContent = 'กำลังทดสอบเสียง…';
+    try {
+      await loadAudioManifest();
+      if (!audioUrl('word:feelings-kind', 'female')) {
+        const d = audioDiagnostics();
+        audioResult.textContent = d.lastError || (d.manifestLoaded ? 'ไม่พบเสียง word:feelings-kind ใน manifest' : 'ไม่มี manifest');
+      } else {
+        const result = await sayText('kind', { audioKey: 'word:feelings-kind', gender: 'female' });
+        if (result?.source === 'mp3') audioResult.textContent = '✓ เล่นเสียงได้ (af_heart · ไฟล์ MP3)';
+        else {
+          const d = audioDiagnostics();
+          const detail = /404|โหลดไม่ได้|MediaError/i.test(d.lastError) ? 'ไฟล์ 404' : /NotAllowedError|blocked/i.test(d.lastError) ? 'play() ถูกบล็อก' : d.lastError || 'เล่นไฟล์เสียงไม่ได้';
+          audioResult.textContent = `ทดสอบ MP3 ไม่สำเร็จ: ${detail}`;
+        }
+      }
+    } catch (err) { audioResult.textContent = `ทดสอบเสียงไม่สำเร็จ: ${err.name || 'Error'} · ${err.message || ''}`; }
+    button.disabled = false;
+  };
+  const testMic = async (button) => {
+    button.disabled = true;
+    micResult.textContent = 'กำลังขอสิทธิ์และอัดเสียง 2 วินาที…';
+    let probe;
+    try {
+      if (!navigator.mediaDevices?.getUserMedia) throw Object.assign(new Error('ไม่รองรับ getUserMedia'), { name: 'NotFoundError' });
+      probe = await navigator.mediaDevices.getUserMedia({ audio: true });
+      probe.getTracks().forEach((track) => track.stop());
+      probe = null;
+      const recording = await startRecording();
+      if (!recording) throw new Error('เปิดเครื่องอัดเสียงไม่ได้');
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const blob = await recording.stop();
+      if (!blob?.size) throw new Error('ไม่มีข้อมูลเสียงที่บันทึกได้');
+      micResult.textContent = `อัดได้ ${blob.size} ไบต์ · กำลังเล่นกลับ…`;
+      await playBlob(blob);
+      micResult.textContent = '✓ ไมค์ใช้งานได้และเล่นเสียงที่อัดกลับแล้ว';
+    } catch (err) {
+      if (probe) probe.getTracks().forEach((track) => track.stop());
+      const ua = navigator.userAgent || '';
+      const inApp = /Line\//i.test(ua) || /; wv\)/i.test(ua) || /Instagram|FBAN|FBAV/i.test(ua);
+      const cause = inApp ? 'เบราว์เซอร์ในแอปอาจไม่อนุญาตไมค์' : err.name === 'NotAllowedError' ? 'ไม่ได้อนุญาตใช้ไมค์' : err.name === 'NotFoundError' ? 'ไม่พบไมโครโฟน' : err.name === 'SecurityError' ? 'ต้องเปิดผ่าน HTTPS หรือ localhost' : `${err.name || 'Error'}: ${err.message || 'ไมค์ใช้งานไม่ได้'}`;
+      micResult.textContent = `ไมค์ทดสอบไม่สำเร็จ: ${cause}`;
+    }
+    button.disabled = false;
+  };
+  const updateApp = async (button, status) => {
+    button.disabled = true;
+    status.textContent = 'กำลังอัปเดตแอป…';
+    try {
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.filter((key) => key.startsWith('pangpood-')).map((key) => caches.delete(key)));
+      }
+      const registration = 'serviceWorker' in navigator ? await navigator.serviceWorker.getRegistration() : null;
+      if (registration) { await registration.update().catch(() => {}); await registration.unregister(); }
+      status.textContent = 'กำลังเปิดแอปเวอร์ชันล่าสุด…';
+      location.reload();
+    } catch (err) { status.textContent = `อัปเดตไม่สำเร็จ: ${err.message || err}`; button.disabled = false; }
+  };
+  const updateStatus = h('div', { class: 'muted small', 'aria-live': 'polite' });
+  const updateButton = h('button', { class: 'chip-btn', type: 'button', onclick: (e) => updateApp(e.currentTarget, updateStatus) }, 'อัปเดตแอป');
+  const audioButton = h('button', { class: 'chip-btn', type: 'button', onclick: (e) => testAudio(e.currentTarget) }, 'ทดสอบเสียง');
+  const micButton = h('button', { class: 'chip-btn', type: 'button', onclick: (e) => testMic(e.currentTarget) }, 'ทดสอบไมค์');
 
   mount(root,
     h('div', { class: 'me-head' }, mascot('wave', 104), h('div', {},
@@ -89,11 +156,14 @@ export async function meView(root) {
       h('div', { class: 'row gap8 volume-row' }, slider, out),
       h('div', { class: 'row gap8 voice-buttons' },
         h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('I usually have breakfast at seven with my wife.', { audioKey: 'sent:food-breakfast', gender: 'female' }) }, icon('sound', 18), h('span', { text: 'หญิง (af_heart)' })),
-        h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('I usually have breakfast at seven with my wife.', { audioKey: 'sent:food-breakfast', gender: 'male' }) }, icon('sound', 18), h('span', { text: 'ชาย (am_adam)' })))),
+        h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('I usually have breakfast at seven with my wife.', { audioKey: 'sent:food-breakfast', gender: 'male' }) }, icon('sound', 18), h('span', { text: 'ชาย (am_adam)' }))),
+      h('div', { class: 'row gap8' }, audioButton, micButton), audioResult, micResult),
     h('div', { class: 'card about-card' },
       h('div', { class: 'card-title', text: 'เกี่ยวกับ' }),
-      h('div', { class: 'muted small', text: `PangPood ${VERSION} · ${db.words.length} คำ · ${db.categories.length} หมวด` }),
+      h('div', { class: 'muted small', text: `PangPood ${VERSION} · build ${BUILD_DATE}` }),
+      h('div', { class: 'muted small', text: `${db.words.length} คำ · ${db.categories.length} หมวด` }),
       h('div', { class: 'muted small', text: 'ทำงานออฟไลน์ได้ · ข้อมูลเก็บอยู่ในเครื่องนี้' })),
+    h('div', { class: 'card' }, h('div', { class: 'card-title', text: 'แอปเวอร์ชันล่าสุด' }), updateButton, updateStatus),
     h('div', { class: 'card reset-card' },
       h('div', { class: 'card-title', text: 'รีเซ็ตความคืบหน้า' }),
       h('div', { class: 'muted small', text: 'ล้าง XP บทเรียน สถิติ เควส และการตั้งค่าในแอปนี้' }),

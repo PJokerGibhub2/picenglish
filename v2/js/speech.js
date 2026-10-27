@@ -3,6 +3,8 @@
  * ทำงานในเบราว์เซอร์ล้วน ไม่เรียกบริการภายนอก ไม่มีค่าใช้จ่าย
  */
 
+import { toast } from './ui2.js';
+
 /* ------------------------------------------------------------------ *
  * 1) Text-to-Speech
  * ------------------------------------------------------------------ */
@@ -109,14 +111,19 @@ function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); }
 
 const AUDIO_MANIFEST_URL = new URL('../data/audio/manifest.json', import.meta.url);
 let audioManifest = null;
+let manifestError = '';
 let currentAudio = null;
+let lastAudioError = '';
+let lastAudioUrl = '';
 
 export async function loadAudioManifest() {
   if (audioManifest !== null) return audioManifest;
   try {
     const res = await fetch(AUDIO_MANIFEST_URL);
+    if (!res.ok) manifestError = `ไม่มี manifest (HTTP ${res.status})`;
     audioManifest = res.ok ? await res.json() : {};
   } catch (err) {
+    manifestError = `ไม่มี manifest: ${err.message || err}`;
     audioManifest = {};
   }
   return audioManifest;
@@ -138,6 +145,16 @@ export function audioUrl(key, gender) {
   if (typeof entry === 'string') rel = entry;
   else rel = entry[g] || entry.f || entry.m || null;
   return rel ? new URL(rel, AUDIO_MANIFEST_URL).href : null;
+}
+
+export function audioDiagnostics() {
+  return {
+    manifestLoaded: audioManifest !== null,
+    manifestCount: audioManifest ? Object.keys(audioManifest).length : 0,
+    lastUrl: lastAudioUrl,
+    lastError: lastAudioError || manifestError || (audioManifest === null ? 'ยังไม่ได้โหลด manifest' : ''),
+    ctxState: audioCtx ? audioCtx.state : 'unavailable',
+  };
 }
 
 export function stopAudio() {
@@ -194,29 +211,57 @@ export function setPlaybackVolume(level) {
 
 export function getPlaybackVolume() { return volumeLevel; }
 
-export function playFile(url, rate = 1) {
-  return new Promise((resolve) => {
+export async function playFile(url, rate = 1) {
+  lastAudioUrl = url || '';
+  lastAudioError = '';
+  const attempt = async (useChain) => {
     stopAudio();
     let a;
-    try { a = new Audio(url); } catch (e) { return resolve(); }
+    try { a = new Audio(url); } catch (e) { lastAudioError = e.message || 'สร้าง audio ไม่สำเร็จ'; return false; }
     a.playbackRate = clamp(rate, 0.5, 2);
     a.preservesPitch = true;
     a.volume = 1;
     currentAudio = a;
-    if (ensureChain()) {
+    if (useChain && ensureChain()) {
       try {
-        if (audioCtx.state === 'suspended') audioCtx.resume();
+        if (audioCtx.state === 'suspended') await audioCtx.resume();
         currentSource = audioCtx.createMediaElementSource(a);
         currentSource.connect(masterGain);
       } catch (e) {
+        lastAudioError = `Web Audio: ${e.name || 'Error'} ${e.message || ''}`.trim();
         currentSource = null;
+        try { a.pause(); } catch (ignore) { /* ignore */ }
+        currentAudio = null;
+        return false;
       }
     }
-    const done = () => { currentAudio = null; currentSource = null; resolve(); };
-    a.addEventListener('ended', done);
-    a.addEventListener('error', done);
-    a.play().catch(done);
-  });
+    return new Promise((resolve) => {
+    let settled = false;
+    const done = (ok, error = '') => {
+      if (settled) return;
+      settled = true;
+      if (!ok && error) lastAudioError = error;
+      if (currentAudio === a) currentAudio = null;
+      currentSource = null;
+      resolve(ok);
+    };
+    a.addEventListener('ended', () => done(true), { once: true });
+    a.addEventListener('error', () => done(false, a.error ? `ไฟล์เสียงโหลดไม่ได้ (MediaError ${a.error.code})` : 'ไฟล์เสียงโหลดไม่ได้'), { once: true });
+    a.play().catch((e) => done(false, `${e.name || 'Error'}: ${e.message || 'play() ไม่สำเร็จ'}`));
+    });
+  };
+  let ok = false;
+  try { ok = await attempt(true); } catch (e) { lastAudioError = `${e.name || 'Error'}: ${e.message || e}`; }
+  if (!ok) {
+    // ลองเล่นตรงจาก <audio> อีกครั้ง เผื่อ browser ปฏิเสธ Web Audio chain
+    try { ok = await attempt(false); } catch (e) { lastAudioError = `${e.name || 'Error'}: ${e.message || e}`; }
+  }
+  if (!ok) toastAudioFailure();
+  return ok;
+}
+
+function toastAudioFailure() {
+  toast('เสียงไม่เล่น — แตะอีกครั้ง');
 }
 
 /**
@@ -227,9 +272,14 @@ export function playFile(url, rate = 1) {
 export function sayText(text, opts = {}) {
   const url = opts.audioKey ? audioUrl(opts.audioKey, opts.gender) : null;
   if (url) {
-    return playFile(url, opts.rate ?? 1).then(() => { opts.onEnd && opts.onEnd(); });
+    return playFile(url, opts.rate ?? 1).then((ok) => {
+      if (ok) { opts.onEnd && opts.onEnd(); return { ok: true, source: 'mp3' }; }
+      return speak(text, opts).then(() => ({ ok: ttsSupported(), source: 'webspeech' }));
+    });
   }
-  return speak(text, opts);
+  lastAudioError = manifestError || (audioManifest === null ? 'ไม่มี manifest' : `ไม่มีไฟล์ใน manifest: ${opts.audioKey || 'ไม่ระบุ key'}`);
+  if (!ttsSupported()) toastAudioFailure();
+  return speak(text, opts).then(() => ({ ok: ttsSupported(), source: 'webspeech' }));
 }
 
 /* ------------------------------------------------------------------ *

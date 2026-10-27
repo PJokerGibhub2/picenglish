@@ -79,6 +79,18 @@ export function sfxSoft() {
   tone({ freq: 329.63, dur: 0.18, gain: 0.04, type: 'sine', when: 0.1 });
 }
 
+/** ตอบถูก — โน้ตคู่สั้น ๆ ไล่สูงขึ้น */
+export function sfxCorrect() {
+  tone({ freq: 587.33, dur: 0.12, gain: 0.045, type: 'sine' });
+  tone({ freq: 783.99, dur: 0.14, gain: 0.045, type: 'sine', when: 0.1 });
+}
+
+/** ตอบผิด — โน้ตคู่ไล่ต่ำอย่างนุ่มนวล */
+export function sfxWrong() {
+  tone({ freq: 440, dur: 0.13, gain: 0.035, type: 'sine' });
+  tone({ freq: 349.23, dur: 0.15, gain: 0.03, type: 'sine', when: 0.1 });
+}
+
 /** จบบท/ทำครบ — ขึ้นบันไดสั้น ๆ */
 export function sfxComplete() {
   [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {

@@ -75,6 +75,18 @@ function boot() {
 
   // service worker (scope = โฟลเดอร์ v2 เท่านั้น)
   if ('serviceWorker' in navigator) {
+    const reloadKey = 'pangpood-sw-controller-reloaded';
+    let reloadedThisSession = false;
+    try {
+      reloadedThisSession = sessionStorage.getItem(reloadKey) === '1';
+      if (reloadedThisSession) sessionStorage.removeItem(reloadKey);
+    } catch (e) { /* session storage อาจถูกปิด */ }
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (reloadedThisSession) return;
+      reloadedThisSession = true;
+      try { sessionStorage.setItem(reloadKey, '1'); } catch (e) { /* ใช้ตัวกันซ้ำในหน้านี้แทน */ }
+      location.reload();
+    }, { once: true });
     navigator.serviceWorker.register('./sw.js', { scope: './', updateViaCache: 'none' })
       .then((reg) => { reg.update && reg.update(); })
       .catch(() => { /* ออฟไลน์ครั้งแรกก็ยังใช้ได้ */ });

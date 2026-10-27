@@ -1,7 +1,7 @@
 ﻿/* sw.js — service worker ของ PangPood (V2) · scope = โฟลเดอร์ /v2/ เท่านั้น
  * แยก cache จาก V1 เด็ดขาด (ชื่อ cache ขึ้นต้นด้วย pangpood-)
  */
-const VERSION = 'v2.5.0';
+const VERSION = 'v2.6.0';
 const CACHE = `pangpood-${VERSION}`;
 
 const SHELL = [

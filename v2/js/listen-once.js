@@ -1,6 +1,6 @@
 /** ฟังเสียงหนึ่งครั้ง พร้อมบันทึกเสียงไว้ฟังเทียบเมื่อเบราว์เซอร์รองรับ */
 
-import { createRecognizer, stopSpeaking } from './speech.js';
+import { createRecognizer, stopSpeaking, sttSupported } from './speech.js';
 import { startRecording } from './recorder.js';
 import * as store from './store.js';
 
@@ -17,6 +17,7 @@ export function stopListeningOnce() {
 }
 
 export function listenOnce(hooks = {}) {
+  if (!sttSupported()) return Promise.resolve({ said: '', blob: null, err: 'unsupported' });
   return new Promise((resolve) => {
     stopSpeaking();
     let recHandle = null;

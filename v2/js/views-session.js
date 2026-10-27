@@ -6,7 +6,8 @@ import { buildSession } from './session.js';
 import * as pg from './progress2.js';
 import { sayText, stopSpeaking, sttSupported, alignWords, loadAudioManifest } from './speech.js';
 import { listenOnce, stopListeningOnce } from './listen-once.js';
-import { sfxSuccess, sfxSoft, sfxComplete } from './sfx.js';
+import { sfxCorrect, sfxWrong, sfxTap, sfxComplete } from './sfx.js';
+import { startRecording, playBlob } from './recorder.js';
 import { loadPath } from './views-path.js';
 import * as store from './store.js';
 
@@ -56,13 +57,16 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
   const top = h('div', { class: 'session-top' });
   const content = h('div', { class: 'session-content' });
   const questionHost = h('div', { class: 'session-question' });
-  const mascotEl = mascot('idle', 96);
+  const mascotEl = mascot('idle', 84);
   mascotEl.classList.add('session-mascot');
   const shell = h('section', { class: 'session' }, top,
     h('div', { class: 'session-track' }, bar(0)),
     h('div', { class: 'session-body' }, content),
     h('div', { class: 'session-foot' }, questionHost));
   mount(root, shell);
+  shell.addEventListener('click', (event) => {
+    if (event.target.closest('button')) sfxTap();
+  }, true);
 
   const play = async (item) => {
     if (!item.audioText) return;
@@ -109,7 +113,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
     else if (item.type === 'listen-question' || (item.type === 'dialog-line' && item.mode === 'english')) { kicker.textContent = item.prompt; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
     else { kicker.textContent = 'พูดตามคำนี้'; target.textContent = item.prompt; target.classList.add('en'); }
     const bubble = h('div', { class: 'bubble' }, kicker, target, audioButton);
-    const parts = [h('div', { class: 'session-line' }, mascotEl, bubble)];
+    const parts = [mascotEl, bubble];
     if (['word-en-th', 'word-th-en', 'word-listen', 'chunk-meaning', 'line-listen', 'listen-question', 'dialog-line'].includes(item.type)) parts.push(optionButtons(item));
     if (item.type === 'chunk-order') {
       const built = h('div', { class: 'built-sentence', text: 'แตะคำด้านล่างเพื่อเรียงประโยค' });
@@ -131,11 +135,71 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
     }
     if (item.type === 'speak-word') {
       const result = h('div', { class: 'session-stt muted', text: 'แตะปุ่มไมค์แล้วพูดตาม' });
+      const fallback = h('div', { class: 'self-record', hidden: true });
+      let manualRecording = null;
+      let recordedBlob = null;
+      const enableSelfMode = (reason) => {
+        result.textContent = `${reason} · เปลี่ยนเป็นอัดเสียงแล้วฟังเทียบได้`;
+        fallback.hidden = false;
+      };
+      const startSelfRecord = h('button', { class: 'chip-btn', type: 'button', text: 'เริ่มอัดเสียง', onclick: async () => {
+        startSelfRecord.disabled = true;
+        manualRecording = await startRecording();
+        if (!manualRecording) {
+          result.textContent = 'เริ่มอัดไม่ได้ ตรวจสิทธิ์ไมค์หรือเปิดใน Safari/Chrome';
+          startSelfRecord.disabled = false;
+          return;
+        }
+        result.textContent = 'กำลังอัด… แตะ “หยุดและฟัง” เมื่อพร้อม';
+        stopSelfRecord.disabled = false;
+      } });
+      const stopSelfRecord = h('button', { class: 'chip-btn', type: 'button', text: 'หยุดและฟัง', disabled: true, onclick: async () => {
+        stopSelfRecord.disabled = true;
+        recordedBlob = manualRecording ? await manualRecording.stop() : null;
+        manualRecording = null;
+        startSelfRecord.disabled = false;
+        if (!recordedBlob) { result.textContent = 'ไม่ได้เสียงบันทึก ลองอัดอีกครั้งได้'; return; }
+        result.textContent = 'กำลังเล่นเสียงของคุณ…';
+        await playBlob(recordedBlob);
+        result.textContent = 'ฟังเทียบกับคำต้นแบบ แล้วเลือกดาว 1–5 ดวง';
+        stars.hidden = false;
+      } });
+      const stars = h('div', { class: 'self-rating', hidden: true }, ...[1, 2, 3, 4, 5].map((rating) => h('button', {
+        class: 'chip-btn', type: 'button', text: '⭐'.repeat(rating), 'aria-label': `${rating} ดาว`,
+        onclick: () => {
+          state.selected = rating >= 3 ? item.answer : null;
+          result.textContent = rating >= 3 ? `ให้คะแนนตัวเอง ${rating}/5 · ผ่านแล้ว` : `ให้คะแนนตัวเอง ${rating}/5 · อัดใหม่หรือข้ามได้`;
+          questionHost.querySelector('.session-check').disabled = !state.selected;
+        },
+      })));
+      fallback.append(h('div', { class: 'muted small', text: 'พูดตามคำ แล้วฟังเสียงตัวเองเทียบกับคำต้นแบบ' }), startSelfRecord, stopSelfRecord, stars);
       const mic = btn3d('เริ่มพูด', { tone: 'violet', block: true, onclick: async () => {
         if (state.listening) return;
+        if (!sttSupported()) {
+          mic.hidden = true;
+          enableSelfMode('เบราว์เซอร์นี้แปลงเสียงเป็นข้อความไม่ได้');
+          return;
+        }
         state.listening = true; mic.disabled = true; result.textContent = 'กำลังฟัง…';
+        let probe;
+        try {
+          if (!navigator.mediaDevices?.getUserMedia) throw Object.assign(new Error('ไม่รองรับ getUserMedia'), { name: 'NotFoundError' });
+          probe = await navigator.mediaDevices.getUserMedia({ audio: true });
+          probe.getTracks().forEach((track) => track.stop());
+          probe = null;
+        } catch (err) {
+          if (probe) probe.getTracks().forEach((track) => track.stop());
+          state.listening = false; mic.disabled = false; mic.hidden = true;
+          const ua = navigator.userAgent || '';
+          const inApp = /Line\//i.test(ua) || /; wv\)/i.test(ua) || /Instagram|FBAN|FBAV/i.test(ua);
+          const reason = inApp ? 'เบราว์เซอร์ในแอปไม่อนุญาตไมค์' : err.name === 'NotAllowedError' ? 'ไม่ได้อนุญาตไมค์' : err.name === 'NotFoundError' ? 'ไม่พบไมโครโฟน' : err.name === 'SecurityError' ? 'ต้องเปิดผ่าน HTTPS หรือ localhost' : `ไมค์ใช้ไม่ได้ (${err.name || 'Error'})`;
+          enableSelfMode(reason);
+          return;
+        }
         const res = await listenOnce({ onInterim: (said) => { result.textContent = said || 'กำลังฟัง…'; } });
         state.listening = false; mic.disabled = false;
+        if (res.err === 'unsupported') { mic.hidden = true; enableSelfMode('เบราว์เซอร์ไม่รองรับการรู้จำเสียง'); return; }
+        if (res.err) { mic.hidden = true; enableSelfMode(`ฟังเสียงไม่สำเร็จ (${res.err})`); return; }
         const score = alignWords(item.answer, res.said).score;
         result.textContent = res.err ? 'ฟังไม่สำเร็จ ลองอีกครั้งได้เลย' : `ได้ยิน: ${res.said || 'ยังไม่ได้ยินคำตอบ'} · ${score}%`;
         state.selected = score >= 70 ? item.answer : (res.said || null);
@@ -146,7 +210,11 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
         class: 'chip-btn session-skip', type: 'button', text: 'ข้ามข้อนี้ (ไม่มีไมค์ก็เรียนต่อได้)',
         onclick: () => { state.selected = item.answer; state.index++; renderQuestion(); },
       });
-      parts.push(mic, result, skipSpeak);
+      if (!sttSupported()) {
+        mic.hidden = true;
+        enableSelfMode('เบราว์เซอร์นี้แปลงเสียงเป็นข้อความไม่ได้');
+      }
+      parts.push(mic, result, fallback, skipSpeak);
     }
     mount(content, ...parts);
     mount(questionHost);
@@ -177,7 +245,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
   };
   const showFeedback = (item, correct, allowRetry) => {
     mascotReact(mascotEl, correct ? 'cheer' : 'sad', 1300);
-    if (correct) sfxSuccess(); else sfxSoft();
+    if (correct) sfxCorrect(); else sfxWrong();
     questionHost.querySelectorAll('.session-check').forEach((el) => el.remove());
     const feedback = h('div', { class: `feedback ${correct ? 'is-correct' : 'is-wrong'}` },
       h('div', { class: 'feedback-title', text: correct ? 'เก่งมาก! ถูกแล้ว 🎉' : 'ไม่เป็นไร ลองอีกครั้งได้นะ' }),

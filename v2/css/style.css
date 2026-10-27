@@ -455,3 +455,19 @@ body.in-session #view { width: 100%; max-width: none; height: 100dvh; padding: 0
 @media (max-height: 700px) { .session-mascot { width: 72px; height: 78px; flex-basis: 72px; } }
 .bubble-sound-icon { color: var(--sky); display: flex; justify-content: flex-start; padding: 2px 0 4px; }
 .bubble-sound-icon svg { width: 46px; height: 46px; }
+
+/* T15: เรียงเนื้อหาบทเรียนแนวตั้งและจัดกึ่งกลาง */
+.session-body { justify-content: center; gap: 14px; padding: 8px 14px; }
+.session-content { display: flex; flex-direction: column; align-items: center; gap: 14px; width: 100%; max-width: 560px; margin: 0 auto; }
+.session-mascot { position: static !important; display: block !important; flex: 0 0 auto; width: 84px !important; height: 84px !important; margin: 0 auto; opacity: 1; }
+.bubble { width: 92%; max-width: 520px; flex: 0 1 auto; margin: 0 auto; padding: 12px; text-align: center; }
+.bubble::before { display: none; }
+.bubble-kicker { text-align: center; }
+.bubble-target { font-size: clamp(1.3rem, 6.2vw, 1.75rem); line-height: 1.2; }
+.bubble-sound-icon { justify-content: center; }
+.answers, .session-answers { justify-items: center; gap: 9px; margin-bottom: 0; }
+.answer { min-height: 52px; height: auto; text-align: center; overflow-wrap: anywhere; }
+.session-foot { padding-top: 8px; }
+.self-record, .self-rating { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }
+.self-record[hidden], .self-rating[hidden] { display: none; }
+@media (max-height: 700px) { .session-mascot { width: 84px !important; height: 84px !important; } }
