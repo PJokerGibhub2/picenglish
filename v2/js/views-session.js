@@ -42,9 +42,12 @@ export async function sessionView(root, lessonId) {
   const top = h('div', { class: 'session-top' });
   const content = h('div', { class: 'session-content' });
   const questionHost = h('div', { class: 'session-question' });
-  const mascotEl = mascot('idle', 112);
-  const shell = h('section', { class: 'session' }, top, h('div', { class: 'session-progress' }, bar(0), h('span', { class: 'session-count' })),
-    h('div', { class: 'session-stage' }, mascotEl, content), questionHost);
+  const mascotEl = mascot('idle', 72);
+  mascotEl.classList.add('session-mascot');
+  const shell = h('section', { class: 'session' }, top,
+    h('div', { class: 'session-track' }, bar(0)),
+    h('div', { class: 'session-body' }, content),
+    h('div', { class: 'session-foot' }, questionHost), mascotEl);
   mount(root, shell);
 
   const play = (item) => {
@@ -78,7 +81,7 @@ export async function sessionView(root, lessonId) {
     state.listening = false;
     const item = items[state.index];
     updateTop();
-    const prompt = h('div', { class: 'prompt' });
+    const prompt = h('div', { class: 'prompt session-prompt' });
     const audioButton = item.audioText ? h('button', { class: 'listen-again', type: 'button', onclick: () => play(item), 'aria-label': 'ฟังซ้ำ' }, icon('sound', 22), ' ฟังซ้ำ') : null;
     if (item.type === 'word-en-th') prompt.append(h('div', { class: 'prompt-kicker', text: 'เลือกความหมายภาษาไทย' }), h('div', { class: 'prompt-en', text: item.prompt }));
     else if (item.type === 'word-th-en') prompt.append(h('div', { class: 'prompt-kicker', text: 'คำภาษาอังกฤษคือคำใด' }), h('div', { class: 'prompt-th', text: item.prompt }));
@@ -181,6 +184,7 @@ export async function sessionView(root, lessonId) {
     pg.complete(lessonId, pct);
     pg.bumpDaily({ xp: state.xp - 20 });
     sfxComplete(); confetti(); mascotReact(mascotEl, 'cheer', 2400);
+    mascotEl.classList.remove('session-mascot');
     const nextBtn = next ? btn3d('บทถัดไป', { block: true, size: 'lg', icon: 'play', onclick: () => { clearTimeout(autoTimer); location.hash = `#/lesson?id=${encodeURIComponent(next.lesson.id)}`; } })
       : btn3d('กลับเส้นทาง', { block: true, size: 'lg', onclick: () => { clearTimeout(autoTimer); location.hash = '#/path'; } });
     const cancelAuto = h('button', { class: 'chip-btn', type: 'button', text: 'ยกเลิกการไปต่ออัตโนมัติ', onclick: () => { clearTimeout(autoTimer); cancelAuto.remove(); } });

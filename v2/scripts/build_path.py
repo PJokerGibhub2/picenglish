@@ -17,18 +17,18 @@ DATA = ROOT / "data"
 # ── แผน: 12 Unit × 5 บท ────────────────────────────────────────────────
 # (id, ชื่อไทย, ชื่ออังกฤษ, emoji, สี, หมวดคำ, สถานการณ์ประโยค, บทสนทนา)
 UNITS = [
-    ("u1", "ทักทาย & แนะนำตัว", "Say hello", "👋", "#2EC27E", "feelings", ["smalltalk"], None),
-    ("u2", "สั่งกาแฟ & เครื่องดื่ม", "Order drinks", "☕", "#FFB020", "food", ["cafe"], "dlg-cafe"),
-    ("u3", "สั่งอาหารที่ร้าน", "Order a meal", "🍽️", "#FF6B6B", "restaurant", ["restaurant"], "dlg-restaurant"),
-    ("u4", "ซื้อของ & ถามราคา", "Shop & bargain", "🛍️", "#7C5CFF", "shopping", ["shopping"], "dlg-shopping"),
-    ("u5", "เดินทาง & ถามทาง", "Get around", "🧭", "#0EA5E9", "travel", ["travel"], "dlg-directions"),
-    ("u6", "ขึ้นรถ & ต่อรถ", "Take a ride", "🚌", "#06B6D4", "transport", ["travel"], "dlg-reservation"),
-    ("u7", "ที่พัก & โรงแรม", "Hotel & home", "🏨", "#10B981", "home", ["hotel"], "dlg-hotel"),
-    ("u8", "โทรศัพท์ & อินเทอร์เน็ต", "Phone & online", "📱", "#8B5CF6", "phone", ["hotel"], None),
+    ("u1", "ทักทาย & แนะนำตัว", "Say hello", "👋", "#17C964", "feelings", ["smalltalk"], None),
+    ("u2", "สั่งกาแฟ & เครื่องดื่ม", "Order drinks", "☕", "#FFC93C", "food", ["cafe"], "dlg-cafe"),
+    ("u3", "สั่งอาหารที่ร้าน", "Order a meal", "🍽️", "#FF5A5F", "restaurant", ["restaurant"], "dlg-restaurant"),
+    ("u4", "ซื้อของ & ถามราคา", "Shop & bargain", "🛍️", "#8B5CF6", "shopping", ["shopping"], "dlg-shopping"),
+    ("u5", "เดินทาง & ถามทาง", "Get around", "🧭", "#1CB0F6", "travel", ["travel"], "dlg-directions"),
+    ("u6", "ขึ้นรถ & ต่อรถ", "Take a ride", "🚌", "#06D6A0", "transport", ["travel"], "dlg-reservation"),
+    ("u7", "ที่พัก & โรงแรม", "Hotel & home", "🏨", "#FF8A3D", "home", ["hotel"], "dlg-hotel"),
+    ("u8", "โทรศัพท์ & อินเทอร์เน็ต", "Phone & online", "📱", "#A855F7", "phone", ["hotel"], None),
     ("u9", "ธนาคาร & เงิน", "Money matters", "🏦", "#22C55E", "bank", ["shopping"], None),
-    ("u10", "สุขภาพ & ขอความช่วยเหลือ", "Health & help", "🩺", "#14B8A6", "health", ["health"], "dlg-pharmacy"),
-    ("u11", "งาน & นัดหมาย", "Work & plans", "💼", "#6366F1", "work", ["work"], "dlg-office"),
-    ("u12", "ด่านสุดท้าย: พูดได้ครบ", "Final boss", "👑", "#EC4899", "emergency", ["smalltalk"], None),
+    ("u10", "สุขภาพ & ขอความช่วยเหลือ", "Health & help", "🩺", "#F43F5E", "health", ["health"], "dlg-pharmacy"),
+    ("u11", "งาน & นัดหมาย", "Work & plans", "💼", "#3B82F6", "work", ["work"], "dlg-office"),
+    ("u12", "ด่านสุดท้าย: พูดได้ครบ", "Final boss", "👑", "#F59E0B", "emergency", ["smalltalk"], None),
 ]
 
 LESSON_TITLES = {

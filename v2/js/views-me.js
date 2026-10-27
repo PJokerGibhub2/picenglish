@@ -36,7 +36,7 @@ export async function meView(root) {
       store.setSetting('volume', v);
       setPlaybackVolume(v);
     },
-    onchange: () => sayText('Hello! I am Pang, your little elephant friend.', { gender: 'female' }),
+    onchange: () => sayText('I usually have breakfast at seven with my wife.', { audioKey: 'sent:food-breakfast', gender: 'female' }),
   });
   const out = h('span', { class: 'muted small', text: vol.toFixed(1) });
 
@@ -64,9 +64,9 @@ export async function meView(root) {
       h('div', { class: 'muted small', text: 'ใช้เสียงคุณภาพเดียวกันทุกเครื่อง (2 เสียงเท่านั้น)' }),
       h('div', { class: 'row gap8' }, slider, out),
       h('div', { class: 'row gap8' },
-        h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('This is the app voice.', { gender: 'female' }) },
+        h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('I usually have breakfast at seven with my wife.', { audioKey: 'sent:food-breakfast', gender: 'female' }) },
           icon('sound', 18), h('span', { text: 'ฟังเสียง (หญิง)' })),
-        h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('This is the app voice.', { gender: 'male' }) },
+        h('button', { class: 'chip-btn', type: 'button', onclick: () => sayText('I usually have breakfast at seven with my wife.', { audioKey: 'sent:food-breakfast', gender: 'male' }) },
           icon('sound', 18), h('span', { text: 'ฟังเสียง (ชาย)' })))),
 
     h('div', { class: 'card' },

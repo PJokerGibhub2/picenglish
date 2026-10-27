@@ -1,4 +1,4 @@
-﻿export const VERSION = 'v2.1.0';
+﻿export const VERSION = 'v2.2.0';
 export const BUILD_DATE = '2026-10-27';
 export const APP_NAME = 'PangPood';
 export const APP_NAME_TH = 'พังพูด';

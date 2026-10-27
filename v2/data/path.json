@@ -13,7 +13,7 @@
      "title": "ทักทาย & แนะนำตัว",
      "en": "Say hello",
      "emoji": "👋",
-     "color": "#2EC27E",
+     "color": "#17C964",
      "section": "s1",
      "lessons": [
       {
@@ -151,7 +151,7 @@
      "title": "สั่งกาแฟ & เครื่องดื่ม",
      "en": "Order drinks",
      "emoji": "☕",
-     "color": "#FFB020",
+     "color": "#FFC93C",
      "section": "s1",
      "lessons": [
       {
@@ -289,7 +289,7 @@
      "title": "สั่งอาหารที่ร้าน",
      "en": "Order a meal",
      "emoji": "🍽️",
-     "color": "#FF6B6B",
+     "color": "#FF5A5F",
      "section": "s1",
      "lessons": [
       {
@@ -427,7 +427,7 @@
      "title": "ซื้อของ & ถามราคา",
      "en": "Shop & bargain",
      "emoji": "🛍️",
-     "color": "#7C5CFF",
+     "color": "#8B5CF6",
      "section": "s1",
      "lessons": [
       {
@@ -573,7 +573,7 @@
      "title": "เดินทาง & ถามทาง",
      "en": "Get around",
      "emoji": "🧭",
-     "color": "#0EA5E9",
+     "color": "#1CB0F6",
      "section": "s2",
      "lessons": [
       {
@@ -711,7 +711,7 @@
      "title": "ขึ้นรถ & ต่อรถ",
      "en": "Take a ride",
      "emoji": "🚌",
-     "color": "#06B6D4",
+     "color": "#06D6A0",
      "section": "s2",
      "lessons": [
       {
@@ -849,7 +849,7 @@
      "title": "ที่พัก & โรงแรม",
      "en": "Hotel & home",
      "emoji": "🏨",
-     "color": "#10B981",
+     "color": "#FF8A3D",
      "section": "s2",
      "lessons": [
       {
@@ -987,7 +987,7 @@
      "title": "โทรศัพท์ & อินเทอร์เน็ต",
      "en": "Phone & online",
      "emoji": "📱",
-     "color": "#8B5CF6",
+     "color": "#A855F7",
      "section": "s2",
      "lessons": [
       {
@@ -1271,7 +1271,7 @@
      "title": "สุขภาพ & ขอความช่วยเหลือ",
      "en": "Health & help",
      "emoji": "🩺",
-     "color": "#14B8A6",
+     "color": "#F43F5E",
      "section": "s3",
      "lessons": [
       {
@@ -1405,7 +1405,7 @@
      "title": "งาน & นัดหมาย",
      "en": "Work & plans",
      "emoji": "💼",
-     "color": "#6366F1",
+     "color": "#3B82F6",
      "section": "s3",
      "lessons": [
       {
@@ -1539,7 +1539,7 @@
      "title": "ด่านสุดท้าย: พูดได้ครบ",
      "en": "Final boss",
      "emoji": "👑",
-     "color": "#EC4899",
+     "color": "#F59E0B",
      "section": "s3",
      "lessons": [
       {
