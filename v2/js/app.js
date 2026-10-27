@@ -2,6 +2,7 @@
  * ต่างจาก V1: แท็บล่าง 4 อัน, หน้าหลักเป็นเส้นทาง, ไม่มี topbar หนา
  */
 import { h, mount, icon, toast } from './ui2.js';
+import { loadAudioManifest } from './speech.js';
 import { pathView } from './views-path.js';
 import { wordsView } from './views-words.js';
 import { questView } from './views-quest.js';
@@ -63,6 +64,7 @@ async function route() {
 }
 
 function boot() {
+  loadAudioManifest().catch(() => {});
   document.getElementById('ver-tag').textContent = VERSION;
   renderTabs(currentTab);
   route();

@@ -1,10 +1,10 @@
-/* views-session.js — หน้าฝึกบทเรียนแบบเกม */
+﻿/* views-session.js — หน้าฝึกบทเรียนแบบเกม */
 import { h, mount, icon, btn3d, bar, confetti } from './ui2.js';
 import { mascot, mascotReact } from './mascot2.js';
 import { db, loadAll, normalizeEn } from './data.js';
 import { buildSession } from './session.js';
 import * as pg from './progress2.js';
-import { sayText, stopSpeaking, sttSupported, alignWords } from './speech.js';
+import { sayText, stopSpeaking, sttSupported, alignWords, loadAudioManifest } from './speech.js';
 import { listenOnce, stopListeningOnce } from './listen-once.js';
 import { sfxSuccess, sfxSoft, sfxComplete } from './sfx.js';
 import { loadPath } from './views-path.js';
@@ -42,18 +42,19 @@ export async function sessionView(root, lessonId) {
   const top = h('div', { class: 'session-top' });
   const content = h('div', { class: 'session-content' });
   const questionHost = h('div', { class: 'session-question' });
-  const mascotEl = mascot('idle', 72);
+  const mascotEl = mascot('idle', 96);
   mascotEl.classList.add('session-mascot');
   const shell = h('section', { class: 'session' }, top,
     h('div', { class: 'session-track' }, bar(0)),
     h('div', { class: 'session-body' }, content),
-    h('div', { class: 'session-foot' }, questionHost), mascotEl);
+    h('div', { class: 'session-foot' }, questionHost));
   mount(root, shell);
 
-  const play = (item) => {
+  const play = async (item) => {
     if (!item.audioText) return;
     stopSpeaking();
-    sayText(item.audioText, { audioKey: item.audioKey, gender: 'f' });
+    await loadAudioManifest().catch(() => {});   // กันกรณีแตะเร็วเกินกว่า manifest จะโหลดเสร็จ
+    sayText(item.audioText, { audioKey: item.audioKey, gender: 'female' });
   };
   const updateTop = () => {
     const item = items[state.index];
@@ -81,18 +82,19 @@ export async function sessionView(root, lessonId) {
     state.listening = false;
     const item = items[state.index];
     updateTop();
-    const prompt = h('div', { class: 'prompt session-prompt' });
-    const audioButton = item.audioText ? h('button', { class: 'listen-again', type: 'button', onclick: () => play(item), 'aria-label': 'ฟังซ้ำ' }, icon('sound', 22), ' ฟังซ้ำ') : null;
-    if (item.type === 'word-en-th') prompt.append(h('div', { class: 'prompt-kicker', text: 'เลือกความหมายภาษาไทย' }), h('div', { class: 'prompt-en', text: item.prompt }));
-    else if (item.type === 'word-th-en') prompt.append(h('div', { class: 'prompt-kicker', text: 'คำภาษาอังกฤษคือคำใด' }), h('div', { class: 'prompt-th', text: item.prompt }));
-    else if (item.type === 'word-listen') prompt.append(h('div', { class: 'prompt-kicker', text: 'ฟังแล้วเลือกคำศัพท์' }));
-    else if (item.type === 'chunk-order') prompt.append(h('div', { class: 'prompt-kicker', text: 'เรียงชิปให้เป็นประโยคภาษาอังกฤษ' }), h('div', { class: 'prompt-th', text: item.prompt }));
-    else if (item.type === 'chunk-type') prompt.append(h('div', { class: 'prompt-kicker', text: item.prompt }));
-    else if (item.type === 'chunk-meaning') prompt.append(h('div', { class: 'prompt-kicker', text: 'เลือกความหมายภาษาไทย' }), h('div', { class: 'prompt-en', text: item.prompt }));
-    else if (item.type === 'line-listen') prompt.append(h('div', { class: 'prompt-kicker', text: item.prompt }));
-    else prompt.append(h('div', { class: 'prompt-kicker', text: 'พูดตามคำนี้' }), h('div', { class: 'prompt-en', text: item.prompt }));
-    if (audioButton) prompt.appendChild(audioButton);
-    const parts = [prompt];
+    const kicker = h('div', { class: 'bubble-kicker' });
+    const target = h('div', { class: 'bubble-target' });
+    const audioButton = item.audioText ? h('button', { class: 'listen-again', type: 'button', onclick: () => play(item), 'aria-label': 'ฟังซ้ำ' }, icon('sound', 22), h('span', { text: 'ฟังซ้ำ' })) : null;
+    if (item.type === 'word-en-th') { kicker.textContent = 'เลือกความหมายภาษาไทย'; target.textContent = item.prompt; target.classList.add('en'); }
+    else if (item.type === 'word-th-en') { kicker.textContent = 'คำภาษาอังกฤษคือคำใด'; target.textContent = item.prompt; }
+    else if (item.type === 'word-listen') { kicker.textContent = 'ฟังแล้วเลือกคำศัพท์'; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
+    else if (item.type === 'chunk-order') { kicker.textContent = 'เรียงชิปให้เป็นประโยคภาษาอังกฤษ'; target.textContent = item.prompt; }
+    else if (item.type === 'chunk-type') { kicker.textContent = 'ฟังแล้วพิมพ์ตาม'; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
+    else if (item.type === 'chunk-meaning') { kicker.textContent = 'เลือกความหมายภาษาไทย'; target.textContent = item.prompt; target.classList.add('en'); }
+    else if (item.type === 'line-listen') { kicker.textContent = 'ฟังแล้วเลือกความหมาย'; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
+    else { kicker.textContent = 'พูดตามคำนี้'; target.textContent = item.prompt; target.classList.add('en'); }
+    const bubble = h('div', { class: 'bubble' }, kicker, target, audioButton);
+    const parts = [h('div', { class: 'session-line' }, mascotEl, bubble)];
     if (['word-en-th', 'word-th-en', 'word-listen', 'chunk-meaning', 'line-listen'].includes(item.type)) parts.push(optionButtons(item));
     if (item.type === 'chunk-order') {
       const built = h('div', { class: 'built-sentence', text: 'แตะคำด้านล่างเพื่อเรียงประโยค' });

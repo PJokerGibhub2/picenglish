@@ -421,3 +421,14 @@ body.in-session #view { width: 100%; max-width: none; height: 100dvh; padding: 0
 @keyframes feedback-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-height: 700px) { .session-mascot { display: none; } }
 @media (prefers-reduced-motion: reduce) { .answer, .feedback, .session-confirm-wrap { transition: none; animation: none; } }
+
+/* แถว "มาสคอส + ฟองคำพูด" */
+.session-line { display: flex; align-items: flex-end; gap: 8px; width: 100%; }
+.session-mascot { position: static; width: 96px; height: 104px; flex: 0 0 96px; pointer-events: none; }
+.bubble { position: relative; flex: 1 1 auto; min-width: 0; background: var(--card); border: 2px solid var(--line); border-radius: 20px; padding: 14px 16px; box-shadow: var(--shadow-card); }
+.bubble::before { content: ''; position: absolute; left: -9px; bottom: 24px; width: 16px; height: 16px; background: var(--card); border-left: 2px solid var(--line); border-bottom: 2px solid var(--line); transform: rotate(45deg); border-bottom-left-radius: 3px; }
+.bubble-kicker { font-size: .82rem; font-weight: 800; color: var(--ink-soft); }
+.bubble-target { font-size: clamp(1.45rem, 7vw, 2rem); font-weight: 900; line-height: 1.25; margin: 2px 0 6px; overflow-wrap: anywhere; }
+@media (max-height: 700px) { .session-mascot { width: 72px; height: 78px; flex-basis: 72px; } }
+.bubble-sound-icon { color: var(--sky); display: flex; justify-content: flex-start; padding: 2px 0 4px; }
+.bubble-sound-icon svg { width: 46px; height: 46px; }
