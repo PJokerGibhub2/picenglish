@@ -1,5 +1,5 @@
 ﻿/* views-session.js — หน้าฝึกบทเรียนแบบเกม */
-import { h, mount, icon, btn3d, bar, confetti } from './ui2.js';
+import { h, mount, icon, btn3d, bar, confetti, toast } from './ui2.js';
 import { mascot, mascotReact } from './mascot2.js';
 import { db, loadAll, normalizeEn } from './data.js';
 import { buildSession } from './session.js';
@@ -53,12 +53,24 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
 
   document.body.classList.add('in-session');
   const next = review ? null : nextLesson(path, lessonId);
-  const state = { index: 0, firstCorrect: 0, finalCorrect: 0, xp: 0, retried: new Set(), selected: null, built: [], listening: false, done: false };
+  const state = { index: 0, firstCorrect: 0, finalCorrect: 0, xp: 0, retried: new Set(), selected: null, built: [], listening: false, done: false, streak: 0, sleeping: false };
+  const timers = new Set();
+  let autoTimer = null;
+  let idleTimer = null;
+  let disposed = false;
+  const schedule = (fn, ms) => {
+    const timer = setTimeout(() => { timers.delete(timer); if (!disposed) fn(); }, ms);
+    timers.add(timer);
+    return timer;
+  };
+  const clearScheduled = (timer) => { clearTimeout(timer); timers.delete(timer); };
+  let summaryFrame = null;
   const top = h('div', { class: 'session-top' });
   const content = h('div', { class: 'session-content' });
   const questionHost = h('div', { class: 'session-question' });
   const mascotEl = mascot('idle', 84);
   mascotEl.classList.add('session-mascot');
+  const sleepHint = h('div', { class: 'session-sleep-hint muted small', hidden: true, text: 'พังหลับแล้ว… แตะเพื่อไปต่อ' });
   const shell = h('section', { class: 'session' }, top,
     h('div', { class: 'session-track' }, bar(0)),
     h('div', { class: 'session-body' }, content),
@@ -67,6 +79,19 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
   shell.addEventListener('click', (event) => {
     if (event.target.closest('button')) sfxTap();
   }, true);
+  const wake = () => {
+    if (state.done) return;
+    if (state.sleeping) { state.sleeping = false; mascotReact(mascotEl, 'idle', 1); sleepHint.hidden = true; }
+    clearScheduled(idleTimer);
+    idleTimer = schedule(() => {
+      if (state.done) return;
+      state.sleeping = true;
+      mascotReact(mascotEl, 'sleep', 60 * 60 * 1000);
+      sleepHint.hidden = false;
+    }, 18000);
+  };
+  shell.addEventListener('pointerdown', wake);
+  shell.addEventListener('keydown', wake);
 
   const play = async (item) => {
     if (!item.audioText) return;
@@ -216,12 +241,17 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       }
       parts.push(mic, result, fallback, skipSpeak);
     }
+    parts.splice(1, 0, sleepHint);
     mount(content, ...parts);
+    content.classList.remove('session-in');
+    void content.offsetWidth;
+    content.classList.add('session-in');
+    wake();
     mount(questionHost);
     const check = btn3d('ตรวจคำตอบ', { block: true, size: 'lg', onclick: checkAnswer });
     check.classList.add('session-check'); check.disabled = true;
     questionHost.appendChild(check);
-    if (item.audioKey) setTimeout(() => play(item), 250);
+    if (item.audioKey) schedule(() => play(item), 250);
   };
   const checkAnswer = () => {
     const item = items[state.index];
@@ -231,6 +261,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       : item.type === 'speak-word' ? normalizeEn(answer) === normalizeEn(item.answer)
         : String(answer).trim().toLowerCase() === String(item.answer).trim().toLowerCase();
     if (correct && !state.retried.has(item.id)) { state.firstCorrect++; state.xp += 2; }
+    state.streak = correct ? state.streak + 1 : 0;
     if (correct && !review) {
       if (item.type === 'speak-word') pg.bumpActivity('speak');
       else if (['word-listen', 'line-listen', 'listen-question'].includes(item.type) || (item.type === 'dialog-line' && item.mode !== 'english')) pg.bumpActivity('listen');
@@ -242,9 +273,13 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       state.retried.add(`${item.id}:used`);
       showFeedback(item, false, true);
     } else showFeedback(item, correct, false);
+    if (correct && state.streak === 3) {
+      mascotReact(mascotEl, 'cheer', 800);
+      toast('ต่อเนื่อง 3 ข้อ! 🔥', 1400);
+    }
   };
   const showFeedback = (item, correct, allowRetry) => {
-    mascotReact(mascotEl, correct ? 'cheer' : 'sad', 1300);
+    mascotReact(mascotEl, correct ? 'cheer' : 'sad', correct ? 1300 : 900);
     if (correct) sfxCorrect(); else sfxWrong();
     questionHost.querySelectorAll('.session-check').forEach((el) => el.remove());
     const feedback = h('div', { class: `feedback ${correct ? 'is-correct' : 'is-wrong'}` },
@@ -256,6 +291,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       if (review) pg.bumpActivity('review');
       state.index++; renderQuestion();
     } }));
+    feedback.classList.add('feedback-in');
     questionHost.append(feedback, actions);
   };
   function confirmExit() {
@@ -271,7 +307,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
   }
   function finish() {
     if (state.done) return;
-    state.done = true; stopSpeaking(); stopListeningOnce();
+    state.done = true; clearScheduled(idleTimer); stopSpeaking(); stopListeningOnce();
     const pct = Math.round((state.finalCorrect / items.length) * 100);
     state.xp += 10;
     if (!review) { pg.complete(lessonId, pct); pg.bumpActivity('lesson'); }
@@ -282,19 +318,36 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       : btn3d(review ? 'กลับไปเควส' : 'กลับเส้นทาง', { block: true, size: 'lg', onclick: () => { clearTimeout(autoTimer); location.hash = review ? '#/quest' : '#/path'; } });
     const cancelAuto = h('button', { class: 'chip-btn', type: 'button', text: 'ยกเลิกการไปต่ออัตโนมัติ', onclick: () => { clearTimeout(autoTimer); cancelAuto.remove(); } });
     mount(top, h('span', { class: 'session-exit-placeholder' }), h('div', { class: 'session-title', text: 'จบบทเรียนแล้ว!' }), h('span', { class: 'session-count', text: '✓' }));
-    mount(content, h('div', { class: 'session-summary' }, mascotEl,
-      h('div', { class: 'summary-pct', text: `${pct}%` }),
+    const pctEl = h('div', { class: 'summary-pct', text: '0%' });
+    const xpEl = h('div', { class: 'summary-xp', text: '⭐ ได้รับ 0 XP' });
+    mount(content, h('div', { class: 'session-summary session-in' }, mascotEl,
+      pctEl,
       h('div', { class: 'summary-title', text: `${state.finalCorrect}/${items.length} ข้อถูก` }),
-      h('div', { class: 'summary-xp', text: `⭐ ได้รับ ${state.xp} XP` }),
+      xpEl,
       h('div', { class: 'summary-note muted small', text: 'ข้อที่ต้องทบทวนถูกเก็บไว้ให้กลับมาฝึกอีกครั้ง' }), nextBtn, cancelAuto));
+    const started = performance.now();
+    const countUp = (now) => {
+      if (disposed) return;
+      const progress = Math.min(1, (now - started) / 500);
+      const eased = 1 - (1 - progress) ** 3;
+      pctEl.textContent = `${Math.round(pct * eased)}%`;
+      xpEl.textContent = `⭐ ได้รับ ${Math.round(state.xp * eased)} XP`;
+      if (progress < 1) summaryFrame = requestAnimationFrame(countUp);
+    };
+    summaryFrame = requestAnimationFrame(countUp);
     mount(questionHost);
     shell.querySelector('.bar-fill').style.width = '100%';
     if (!review && next) autoTimer = setTimeout(() => { location.hash = `#/lesson?id=${encodeURIComponent(next.lesson.id)}`; }, 3000);
   }
-  let autoTimer = null;
   renderQuestion();
   return () => {
-    clearTimeout(autoTimer); stopSpeaking(); stopListeningOnce(); document.body.classList.remove('in-session');
+    disposed = true;
+    timers.forEach(clearTimeout); timers.clear();
+    clearTimeout(autoTimer); clearTimeout(idleTimer);
+    if (summaryFrame !== null) cancelAnimationFrame(summaryFrame);
+    clearTimeout(mascotEl._reactTimer);
+    shell.removeEventListener('pointerdown', wake); shell.removeEventListener('keydown', wake);
+    stopSpeaking(); stopListeningOnce(); document.body.classList.remove('in-session');
     document.querySelector('.session-confirm-wrap')?.remove();
   };
 }
