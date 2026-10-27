@@ -13,6 +13,10 @@ import { roleplayView } from './views-roleplay.js';
 import { listeningView } from './views-listening.js';
 import { sessionView } from './views-session.js';
 import { reviewView } from './views-review.js';
+import { shadowView } from './views-shadow.js';
+import { chunksView } from './views-chunks.js';
+import { chunkDrillView } from './views-chunk-drill.js';
+import { sentencesView } from './views-sentences.js';
 import { VERSION, APP_NAME } from './version.js';
 
 const TABS = [
@@ -43,11 +47,13 @@ function renderTabs(active) {
 }
 
 async function route() {
-  const { tab, query } = parseHash();
+  const { tab, rest, query } = parseHash();
   const inSession = tab === 'lesson';
   const inReview = tab === 'review';
+  const inDrill = tab === 'chunks' && ['type', 'order'].includes(rest[0]);
+  const inSpecial = ['shadow', 'chunks', 'sentences'].includes(tab);
   const found = TABS.find((t) => t.id === tab) || TABS[0];
-  currentTab = inSession ? 'path' : (['speak', 'roleplay', 'listening'].includes(tab) ? 'practice' : found.id);
+  currentTab = inSession ? 'path' : (['speak', 'roleplay', 'listening', 'shadow', 'chunks', 'sentences'].includes(tab) ? 'practice' : found.id);
   renderTabs(currentTab);
 
   const view = document.getElementById('view');
@@ -55,12 +61,16 @@ async function route() {
   mount(view);
   view.scrollTop = 0;
   document.body.dataset.tab = currentTab;
-  document.body.classList.toggle('in-session', inSession || inReview);
+  document.body.classList.toggle('in-session', inSession || inReview || inDrill || inSpecial);
 
   try {
     const cleanup = inSession
       ? await sessionView(view, query.get('id') || '')
       : inReview ? await reviewView(view)
+      : tab === 'shadow' ? await shadowView(view, query)
+      : tab === 'chunks' && inDrill ? await chunkDrillView(view, rest[0], query)
+      : tab === 'chunks' ? await chunksView(view)
+      : tab === 'sentences' ? await sentencesView(view)
       : tab === 'speak' ? await speakView(view)
       : tab === 'roleplay' ? await roleplayView(view, query)
       : tab === 'listening' ? await listeningView(view, query)

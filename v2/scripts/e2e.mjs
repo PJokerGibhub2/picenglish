@@ -178,6 +178,25 @@ async function main() {
   const lisLen = String(await ev("document.getElementById('view').textContent")).length;
   ok('หน้าฟังบทเต็มเปิดได้', lisLen > 40, `${lisLen} ตัวอักษร`);
 
+  // ---- 5.6) โหมดฝึก รอบ 2 ----
+  console.log('\n5.6) โหมดฝึก (พูดตามเงา/คลังประโยค/ทบทวนประโยค)');
+  await send('Page.navigate', { url: BASE + '#/shadow' });
+  await sleep(1800);
+  const shText = String(await ev("document.getElementById('view').textContent"));
+  ok('พูดตามเงาเปิดได้', shText.includes('พูดตามเงา'), `${shText.length} ตัวอักษร`);
+  await send('Page.navigate', { url: BASE + '#/chunks' });
+  await sleep(1900);
+  const chText = String(await ev("document.getElementById('view').textContent"));
+  ok('คลังประโยค 150 เปิดได้', chText.includes('ใช้ได้') || chText.includes('ประโยค'), `${chText.length} ตัวอักษร`);
+  await send('Page.navigate', { url: BASE + '#/chunks/type?id=ch-cafe-01' });
+  await sleep(1800);
+  const typeText = String(await ev("document.getElementById('view').textContent"));
+  ok('หน้าพิมพ์ตามเปิดได้', typeText.includes('พิมพ์ตาม'), typeText.slice(0, 20));
+  await send('Page.navigate', { url: BASE + '#/sentences' });
+  await sleep(1800);
+  const seText = String(await ev("document.getElementById('view').textContent"));
+  ok('ทบทวนประโยคเปิดได้', seText.length > 15, seText.slice(0, 20));
+
   // ---- 6) service worker ----
   console.log('\n6) ออฟไลน์');
   const swCount = await ev("(async () => (await navigator.serviceWorker.getRegistrations()).length)()");

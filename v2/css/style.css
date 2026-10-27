@@ -224,6 +224,25 @@ body.no-scroll { overflow: hidden; }
 .listen-option { width: 100%; display: flex; justify-content: space-between; gap: 10px; margin-top: 8px; padding: 12px; border: 2px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); text-align: left; font: inherit; cursor: pointer; }
 .listen-option.correct { border-color: var(--brand); background: var(--brand-soft); }
 .listen-option.incorrect { border-color: var(--coral); background: var(--coral-soft); }
+.filter-row, .chip-row, .drill-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin: 12px 0; }
+.chip { max-width: 100%; padding: 7px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg-soft); color: var(--ink); font: inherit; font-size: .82rem; cursor: pointer; overflow-wrap: anywhere; }
+.chip.on { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-dark); font-weight: 900; }
+.sentence-large { display: block; margin: 10px 0; font-size: clamp(1.25rem, 5vw, 1.8rem); line-height: 1.3; font-weight: 900; overflow-wrap: anywhere; }
+.drill-card { max-width: 680px; margin: 8px auto 20px; text-align: center; }
+.drill-card .btn3d { max-width: 100%; }
+.drill-actions .btn3d { min-width: 0; flex: 1 1 130px; }
+.search-input { display: block; width: 100%; min-width: 0; margin: 10px 0; padding: 12px; border: 2px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); font: inherit; }
+.chunk-title-row { display: flex; align-items: flex-start; gap: 8px; }
+.chunk-title-row .sentence-large { min-width: 0; flex: 1; }
+.done-mark { color: var(--brand-dark); font-size: 1.25rem; font-weight: 900; }
+.progress-track { height: 8px; margin-top: 8px; overflow: hidden; border-radius: 99px; background: var(--bg-soft); }
+.progress-fill { height: 100%; border-radius: inherit; background: var(--brand); }
+.word-chip { max-width: 100%; padding: 9px 12px; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 12px; background: var(--card); color: var(--ink); font: inherit; font-weight: 800; overflow-wrap: anywhere; cursor: pointer; }
+.word-result { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; margin: 12px 0; }
+.word-correct { color: #13834f; background: var(--brand-soft); padding: 4px 6px; border-radius: 6px; }
+.word-wrong { color: #ba3941; background: var(--coral-soft); padding: 4px 6px; border-radius: 6px; }
+.word-missing { color: var(--ink-soft); background: var(--bg-soft); padding: 4px 6px; border-radius: 6px; }
+@media (max-width: 390px) { .drill-actions .btn3d { flex-basis: 100%; } .chunk-card .sentence-large { font-size: 1.2rem; } }
 @media (max-width: 380px) { .practice-grid { grid-template-columns: 1fr; } .practice-card { min-height: 96px; } .speak-audio-row .btn3d { font-size: .74rem; padding: 8px; } }
 .node-label { font-size: .78rem; font-weight: 900; color: var(--ink-soft); max-width: 150px; text-align: center; line-height: 1.25; overflow-wrap: anywhere; }
 
