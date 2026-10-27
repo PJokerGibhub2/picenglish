@@ -6,6 +6,7 @@ import { pathView } from './views-path.js';
 import { wordsView } from './views-words.js';
 import { questView } from './views-quest.js';
 import { meView } from './views-me.js';
+import { sessionView } from './views-session.js';
 import { VERSION, APP_NAME } from './version.js';
 
 const TABS = [
@@ -35,9 +36,10 @@ function renderTabs(active) {
 }
 
 async function route() {
-  const { tab } = parseHash();
+  const { tab, query } = parseHash();
+  const inSession = tab === 'lesson';
   const found = TABS.find((t) => t.id === tab) || TABS[0];
-  currentTab = found.id;
+  currentTab = inSession ? 'path' : found.id;
   renderTabs(currentTab);
 
   const view = document.getElementById('view');
@@ -45,11 +47,15 @@ async function route() {
   mount(view);
   view.scrollTop = 0;
   document.body.dataset.tab = currentTab;
+  document.body.classList.toggle('in-session', inSession);
 
   try {
-    const cleanup = await found.view(view);
+    const cleanup = inSession
+      ? await sessionView(view, query.get('id') || '')
+      : await found.view(view);
     currentCleanup = typeof cleanup === 'function' ? cleanup : null;
   } catch (err) {
+    document.body.classList.remove('in-session');
     mount(view, h('div', { class: 'card' },
       h('div', { class: 'bold', text: 'เปิดหน้านี้ไม่ได้' }),
       h('div', { class: 'muted small', text: String(err && err.message ? err.message : err) })));

@@ -363,3 +363,55 @@ body.no-scroll { overflow: hidden; }
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 .confetti-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 90; }
+
+/* ── lesson session ────────────────────────────────────────────────── */
+body.in-session { padding: 0; overflow: hidden; }
+body.in-session .topbar, body.in-session .tabbar { display: none; }
+body.in-session #view { width: 100%; max-width: 680px; height: 100dvh; padding: env(safe-area-inset-top, 0px) 18px env(safe-area-inset-bottom, 0px); overflow: auto; }
+.session { min-height: 100%; display: flex; flex-direction: column; }
+.session-top { display: flex; align-items: center; gap: 12px; min-height: 52px; }
+.session-exit { flex: 0 0 auto; width: 40px; height: 40px; border: 0; border-radius: 14px; background: var(--bg-soft); color: var(--ink); font-size: 1.2rem; cursor: pointer; }
+.session-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 900; font-size: .9rem; }
+.session-count { font-weight: 900; color: var(--ink-soft); font-size: .85rem; }
+.session-progress { display: flex; align-items: center; gap: 10px; margin: 8px 2px 12px; }
+.session-stage { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 100px; }
+.session-stage .p-mascot { flex: 0 0 auto; width: 88px !important; height: 96px !important; }
+.session-content { width: 100%; min-width: 0; text-align: center; }
+.prompt { display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 6px auto 18px; }
+.prompt-kicker { color: var(--ink-soft); font-weight: 800; font-size: .88rem; }
+.prompt-en { font-family: 'Nunito', ui-rounded, system-ui, sans-serif; font-size: clamp(1.65rem, 8vw, 2.5rem); line-height: 1.18; font-weight: 900; overflow-wrap: anywhere; }
+.prompt-th { font-size: clamp(1.3rem, 6vw, 1.9rem); line-height: 1.3; font-weight: 900; }
+.listen-again { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 42px; padding: 7px 15px; border: 2px solid var(--line); border-radius: 999px; background: var(--card); color: var(--brand-dark); font: inherit; font-weight: 900; cursor: pointer; }
+.answers { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 16px; }
+.answer { min-height: 56px; padding: 11px 14px; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 17px; background: var(--card); color: var(--ink); font: inherit; font-size: 1rem; font-weight: 800; cursor: pointer; transition: background .16s ease, border-color .16s ease, transform .16s ease; }
+.answer.selected { border-color: var(--brand); background: var(--brand-soft); }
+.answer.correct { border-color: var(--brand); background: var(--brand-soft); }
+.answer.wrong { border-color: var(--coral); background: var(--coral-soft); }
+.session-check:disabled { opacity: .48; cursor: not-allowed; }
+.tile-bank { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 10px 0 16px; }
+.tile { font-size: .98rem; }
+.built-sentence { min-height: 52px; padding: 12px; border: 2px dashed var(--line); border-radius: 16px; background: var(--bg-soft); font-family: 'Nunito', system-ui, sans-serif; font-size: 1.1rem; font-weight: 900; }
+.session-input { width: 100%; min-height: 56px; margin: 8px 0 16px; padding: 12px 14px; border: 2px solid var(--line); border-radius: 16px; background: var(--card); color: var(--ink); font: inherit; font-size: 1.05rem; }
+.session-input:focus { outline: 2px solid var(--brand); }
+.session-stt { margin: 12px 0; min-height: 24px; }
+.feedback { margin: 16px 0 10px; padding: 14px; border-radius: 18px; text-align: center; animation: feedback-in .18s ease-out; }
+.feedback.is-correct { background: var(--brand-soft); color: var(--brand-dark); }
+.feedback.is-wrong { background: var(--coral-soft); color: var(--ink); }
+.feedback-title { font-weight: 900; font-size: 1.05rem; }
+.feedback-answer { display: flex; flex-direction: column; gap: 3px; margin-top: 8px; font-family: 'Nunito', system-ui, sans-serif; font-size: 1.15rem; }
+.feedback-actions { display: grid; gap: 9px; margin-bottom: 18px; }
+.session-summary { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.session-summary .p-mascot { margin: -12px 0 -6px; }
+.summary-pct { font-size: 3.3rem; line-height: 1; font-weight: 1000; color: var(--brand-dark); }
+.summary-title { font-size: 1.2rem; font-weight: 900; }
+.summary-xp { color: #9a6500; background: var(--sun-soft); border-radius: 999px; padding: 7px 14px; font-weight: 900; }
+.summary-note { margin-bottom: 4px; }
+.review-library { padding: 12px; }
+.review-rows { display: flex; flex-direction: column; gap: 8px; }
+.review-row { display: flex; align-items: center; gap: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+.review-copy { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.session-confirm-wrap { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 20px; background: rgba(8, 24, 20, .5); animation: feedback-in .18s ease-out; }
+.session-confirm { width: min(100%, 390px); display: flex; flex-direction: column; gap: 12px; padding: 22px; border-radius: 24px; background: var(--bg); box-shadow: var(--shadow-card); text-align: center; }
+@keyframes feedback-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@media (min-width: 480px) { .answers { grid-template-columns: 1fr 1fr; } }
+@media (prefers-reduced-motion: reduce) { .answer, .feedback, .session-confirm-wrap { transition: none; animation: none; } }

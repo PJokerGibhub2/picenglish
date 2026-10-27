@@ -42,6 +42,19 @@ export async function wordsView(root) {
   let q = '';
 
   const list = h('div', { class: 'word-list' });
+  let review = [];
+  try { review = JSON.parse(localStorage.getItem('pangpood-v2.review') || '[]'); } catch { review = []; }
+  const reviewCard = h('section', { class: 'card review-library' });
+  function paintReview() {
+    mount(reviewCard,
+      h('div', { class: 'card-title', text: `📝 ต้องทบทวน · ${review.length} ข้อ` }),
+      review.length ? h('div', { class: 'review-rows' }, ...review.slice(-8).reverse().map((item) => h('div', { class: 'review-row' },
+        h('div', { class: 'review-copy' },
+          h('div', { class: 'bold', text: item.answer }),
+          h('div', { class: 'muted small', text: `บท ${item.lessonId}` })),
+        h('button', { class: 'chip-btn', type: 'button', onclick: () => { location.hash = `#/lesson?id=${encodeURIComponent(item.lessonId)}`; } }, 'ฝึกบทนี้'))))
+        : h('div', { class: 'muted small', text: 'ข้อที่ตอบผิดจะมาอยู่ตรงนี้ ให้กลับมาฝึกซ้ำได้เสมอ' }));
+  }
 
   function paint() {
     const items = (cat === 'all' ? db.words : wordsOf(cat))
@@ -83,8 +96,9 @@ export async function wordsView(root) {
     h('div', { class: 'page-head' },
       h('div', { class: 'page-title', text: 'คลังคำ' }),
       h('div', { class: 'page-sub', text: `${db.words.length} คำ · ${db.categories.length} หมวด · แตะเพื่อฟังเสียง` })),
-    search, chips, list);
+    reviewCard, search, chips, list);
 
+  paintReview();
   paint();
   return () => {};
 }

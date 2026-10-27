@@ -38,15 +38,7 @@ function onNode(entry, { unlocked, done }) {
     toast('ทำบทก่อนหน้าให้จบก่อนนะ 🐘');
     return;
   }
-  // Phase 2 จะเปิด session engine ที่นี่
-  sheet(`${entry.lesson.kind === 'review' ? '👑 ทบทวน' : '📘'} ${entry.lesson.title}`,
-    h('div', { class: 'sheet-block' },
-      h('p', { class: 'muted', text: `Unit: ${entry.unit.title} · ${entry.lesson.words.length} คำ · ${entry.lesson.chunks.length} ประโยค` }),
-      h('p', { class: 'muted small', text: 'บทเรียนแบบเล่นเกมจะมาในเฟสถัดไป (กำลังสร้างระบบแบบฝึก)' }),
-      btn3d('ลองทำแบบทดสอบสั้น', {
-        block: true, icon: 'play',
-        onclick: () => { location.hash = `#/try?id=${encodeURIComponent(entry.lesson.id)}`; },
-      })));
+  location.hash = `#/lesson?id=${encodeURIComponent(entry.lesson.id)}`;
 }
 
 /** การ์ดหัว Unit + เส้นทางย่อย */
