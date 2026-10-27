@@ -1,6 +1,7 @@
 /* progress2.js — ความคืบหน้าของเส้นทาง PangPood (เก็บแยกจาก V1 เด็ดขาด) */
 const KEY = 'pangpood-v2.path';
 const STATS_KEY = 'pangpood-v2.stats';
+const ACTIVITY_KEY = 'pangpood-v2.activity';
 
 function read(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch { return fallback; }
@@ -67,6 +68,25 @@ export function sectionDone(sec) {
 function todayKey() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+const ACTIVITY_KINDS = ['lesson', 'review', 'words', 'speak', 'listen'];
+
+export function bumpActivity(kind, n = 1) {
+  if (!ACTIVITY_KINDS.includes(kind)) return todayActivity();
+  const data = read(ACTIVITY_KEY, {});
+  const day = todayKey();
+  const row = { ...Object.fromEntries(ACTIVITY_KINDS.map((key) => [key, 0])), ...(data[day] || {}) };
+  row[kind] = Math.max(0, Number(row[kind]) || 0) + Math.max(0, Math.round(Number(n) || 0));
+  data[day] = row;
+  write(ACTIVITY_KEY, data);
+  return row;
+}
+
+export function todayActivity() {
+  const data = read(ACTIVITY_KEY, {});
+  const row = data[todayKey()] || {};
+  return Object.fromEntries(ACTIVITY_KINDS.map((key) => [key, Math.max(0, Number(row[key]) || 0)]));
 }
 
 export function stats() {

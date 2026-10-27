@@ -5,6 +5,8 @@
 import { h, mount, icon, btn3d, bar, sheet, toast } from './ui2.js';
 import { mascot, mascotReact } from './mascot2.js';
 import * as pg from './progress2.js';
+import { db, loadAll } from './data.js';
+import { sayText, loadAudioManifest } from './speech.js';
 
 let pathData = null;
 export async function loadPath() {
@@ -51,11 +53,13 @@ function unitBlock(entryUnit, path) {
   const done = pg.unitDone(unit);
   const total = unit.lessons.length;
   const pct = total ? Math.round((done / total) * 100) : 0;
+  const complete = total > 0 && done === total;
 
-  const head = h('div', { class: 'unit-head', style: { '--unit': unit.color } },
+  const head = h('div', { class: `unit-head${complete ? ' unit-complete' : ''}`, style: { '--unit': unit.color } },
     h('div', { class: 'unit-emoji', text: unit.emoji }),
     h('div', { class: 'unit-titles' },
       h('div', { class: 'unit-name', text: unit.title }),
+      complete ? h('div', { class: 'unit-stamp', text: '✓ จบ Unit' }) : null,
       h('div', { class: 'unit-en', text: unit.en }),
       h('div', { class: 'unit-prog' }, bar(pct, { tone: 'brand' }),
         h('span', { class: 'unit-prog-txt', text: `${done}/${total}` }))),
@@ -82,11 +86,22 @@ function unitBlock(entryUnit, path) {
 }
 
 function guide(unit) {
-  sheet(`คู่มือ · ${unit.title}`,
+  const showGuide = async () => {
+    await loadAll();
+    await loadAudioManifest().catch(() => {});
+    const ids = [...new Set(unit.lessons.flatMap((lesson) => lesson.words || []))].slice(0, 5);
+    const words = ids.map((id) => db.byId.get(id)).filter(Boolean);
+    sheet(`คู่มือ · ${unit.title}`,
     h('div', { class: 'sheet-block' },
       h('p', { class: 'muted', text: `Unit นี้มี ${unit.lessons.length} บท · เป้าหมาย: "${unit.en}"` }),
       h('ol', { class: 'guide-list' }, ...unit.lessons.map((l) => h('li', { text: l.title }))),
+      words.length ? h('div', { class: 'guide-words' }, h('div', { class: 'bold', text: 'คำศัพท์ใน Unit นี้' }),
+        ...words.map((word) => h('div', { class: 'guide-word' },
+          h('span', {}, h('strong', { text: word.en }), h('small', { class: 'muted', text: word.thai || '' })),
+          h('button', { class: 'icon-btn', type: 'button', 'aria-label': `ฟัง ${word.en}`, onclick: () => sayText(word.en, { audioKey: `word:${word.id}`, gender: 'female' }) }, icon('sound', 18))))) : null,
       h('p', { class: 'muted small', text: '💡 เรียนวันละ 1 บท (ประมาณ 5 นาที) ก็พอแล้ว' })));
+  };
+  showGuide();
 }
 
 export async function pathView(root) {
@@ -124,6 +139,7 @@ export async function pathView(root) {
       h('div', { class: 'section-title', text: sec.title }),
       h('div', { class: 'section-sub', text: `${sec.subtitle} · ${sd.done}/${sd.total}` })));
     for (const unit of sec.units) root.appendChild(unitBlock({ unit }, path));
+    if (sd.total > 0 && sd.done === sd.total) root.appendChild(h('div', { class: 'section-complete', text: 'จบ Section แล้ว 🎉' }));
   }
 
   // ท้ายเส้นทาง: มาสคอสนอนรอ

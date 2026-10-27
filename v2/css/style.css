@@ -122,6 +122,9 @@ body.no-scroll { overflow: hidden; }
   border-radius: 20px; padding: 10px 12px; box-shadow: var(--shadow-card);
   border-left: 6px solid var(--unit, var(--brand));
 }
+.unit-head.unit-complete { border-color: var(--brand); border-left-color: var(--brand); }
+.unit-stamp { display: inline-flex; width: fit-content; margin-top: 3px; padding: 2px 8px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-dark); font-size: .7rem; font-weight: 900; }
+.section-complete { margin: 4px 2px 18px; padding: 8px 12px; border-radius: 12px; background: var(--brand-soft); color: var(--brand-dark); font-size: .8rem; font-weight: 800; text-align: center; }
 .unit-emoji { font-size: 1.7rem; }
 .unit-titles { flex: 1; min-width: 0; }
 .unit-name { font-weight: 900; font-size: 1rem; overflow-wrap: anywhere; }
@@ -323,8 +326,21 @@ body.no-scroll { overflow: hidden; }
 .week-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; }
 .week-bar-wrap { height: 64px; display: flex; align-items: flex-end; }
 .week-bar { width: 14px; border-radius: 6px; background: var(--brand); }
+.week-bar.active { background: var(--brand); }
+.week-bar.today { background: var(--sun); }
 .week-lbl { font-size: .66rem; color: var(--ink-soft); font-weight: 700; }
 .range { flex: 1; accent-color: var(--brand); }
+.week-xp { min-height: 14px; font-size: .62rem; }
+.section-progress { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+.section-progress-head { display: flex; justify-content: space-between; gap: 8px; font-size: .84rem; }
+.guide-words { display: flex; flex-direction: column; gap: 7px; }
+.guide-word { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 7px 10px; border-radius: 12px; background: var(--surface, var(--card)); }
+.guide-word span { display: flex; flex-direction: column; }
+.guide-word small { font-size: .75rem; }
+.quest-claimed { color: var(--brand-dark); font-size: .82rem; font-weight: 800; }
+.reset-card { border-color: color-mix(in srgb, #ef4444 28%, var(--line)); }
+.reset-button { width: 100%; padding: 10px 14px; border: 0; border-radius: 12px; background: #dc2626; color: #fff; font: inherit; font-weight: 900; cursor: pointer; }
+.voice-buttons > button { flex: 1; justify-content: center; }
 
 /* ── sheet ─────────────────────────────────────────────────────────── */
 .sheet-wrap { position: fixed; inset: 0; z-index: 60; display: flex; align-items: flex-end; }

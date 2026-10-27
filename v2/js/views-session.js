@@ -163,6 +163,11 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       : item.type === 'speak-word' ? normalizeEn(answer) === normalizeEn(item.answer)
         : String(answer).trim().toLowerCase() === String(item.answer).trim().toLowerCase();
     if (correct && !state.retried.has(item.id)) { state.firstCorrect++; state.xp += 2; }
+    if (correct && !review) {
+      if (item.type === 'speak-word') pg.bumpActivity('speak');
+      else if (['word-listen', 'line-listen', 'listen-question'].includes(item.type) || (item.type === 'dialog-line' && item.mode !== 'english')) pg.bumpActivity('listen');
+      else pg.bumpActivity('words');
+    }
     if (!correct) { rememberReview(lessonId, item); state.retried.add(item.id); }
     if (correct) state.finalCorrect++;
     if (!correct && !state.retried.has(`${item.id}:used`)) {
@@ -179,7 +184,10 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
       !correct ? h('div', { class: 'feedback-answer' }, h('span', { class: 'muted small', text: 'คำตอบที่ถูก' }), h('strong', { text: correctAnswer(item) })) : null);
     const actions = h('div', { class: 'feedback-actions' });
     if (allowRetry) actions.appendChild(btn3d('ลองอีกครั้ง', { block: true, onclick: renderQuestion }));
-    actions.appendChild(btn3d('ต่อไป', { block: true, tone: allowRetry ? 'ghost' : 'brand', onclick: () => { state.index++; renderQuestion(); } }));
+    actions.appendChild(btn3d('ต่อไป', { block: true, tone: allowRetry ? 'ghost' : 'brand', onclick: () => {
+      if (review) pg.bumpActivity('review');
+      state.index++; renderQuestion();
+    } }));
     questionHost.append(feedback, actions);
   };
   function confirmExit() {
@@ -198,7 +206,7 @@ export async function sessionView(root, lessonId, { review = false, reviewItems 
     state.done = true; stopSpeaking(); stopListeningOnce();
     const pct = Math.round((state.finalCorrect / items.length) * 100);
     state.xp += 10;
-    if (!review) pg.complete(lessonId, pct);
+    if (!review) { pg.complete(lessonId, pct); pg.bumpActivity('lesson'); }
     pg.bumpDaily({ xp: review ? state.xp : state.xp - 20 });
     sfxComplete(); confetti(); mascotReact(mascotEl, 'cheer', 2400);
     mascotEl.classList.remove('session-mascot');
