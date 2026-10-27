@@ -1,5 +1,5 @@
 /* หน้าฉัน: สถิติและการตั้งค่าเสียง */
-import { h, mount, icon, btn3d, bar, toast } from './ui2.js';
+import { h, mount, icon, btn3d, bar, toast, confetti } from './ui2.js';
 import { mascot } from './mascot2.js';
 import { db, loadAll } from './data.js';
 import * as pg from './progress2.js';
@@ -8,6 +8,7 @@ import { setPlaybackVolume, sayText, loadVoices, loadAudioManifest, audioDiagnos
 import { startRecording, playBlob } from './recorder.js';
 import { loadPath } from './views-path.js';
 import { VERSION, BUILD_DATE } from './version.js';
+import { sfxComplete } from './sfx.js';
 
 let ready = false;
 async function ensure() {
@@ -29,6 +30,13 @@ export async function meView(root) {
   const week = pg.last7();
   const maxXp = Math.max(20, ...week.map((d) => d.xp));
   const activity = pg.todayActivity();
+  const calendar = pg.calendar(28);
+  const chest = pg.chestState();
+  const chestButton = h('button', { class: 'btn3d', type: 'button', disabled: !chest.canClaim, text: chest.claimed ? 'เปิดแล้วสัปดาห์นี้' : chest.canClaim ? 'เปิดกล่อง (+50 XP)' : `สะสมกิจกรรม 3 วัน (${chest.activeDays}/3)` });
+  chestButton.onclick = () => {
+    const result = pg.claimChest();
+    if (result.claimed) { chestButton.textContent = 'เปิดแล้วสัปดาห์นี้'; chestButton.disabled = true; confetti(); sfxComplete(); }
+  };
   const vol = Number(store.settings().volume) || 1.8;
   const out = h('span', { class: 'muted small', text: vol.toFixed(1) });
   const slider = h('input', {
@@ -139,6 +147,18 @@ export async function meView(root) {
       stat('⭐', String(st.xp || 0), 'XP รวม'),
       stat('🔥', String(st.streak || 0), 'สตรีค (วัน)'),
       stat('✓', `${done}/${total}`, 'บทที่จบ')),
+    h('div', { class: 'card' }, h('div', { class: 'card-title', text: 'สตรีคการเรียน' }),
+      h('div', { class: 'calendar-grid', 'aria-label': 'ปฏิทินกิจกรรม 28 วัน' }, ...calendar.map((day) => h('div', { class: `calendar-day${day.active ? ' active' : ''}${day.key === calendar[27].key ? ' today' : ''}`, title: `${day.key} · ${day.xp} XP`, 'aria-label': `${day.label} ${day.active ? 'มีกิจกรรม' : 'ไม่มี XP'}` }, day.label))),
+      h('div', { class: 'muted small', text: `${st.streak || 0} วันติดต่อกัน · สีเข้มคือวันที่มี XP` })),
+    h('div', { class: 'card chest-card' }, h('div', { class: 'card-title', text: '🎁 กล่องรางวัลประจำสัปดาห์' }),
+      h('div', { class: 'muted small', text: `ทำกิจกรรมอย่างน้อย 3 วัน · ตอนนี้ ${chest.activeDays}/3 วัน` }), chestButton),
+    h('div', { class: 'card word-review-links' }, h('div', { class: 'card-title', text: 'คำของฉัน' }),
+      h('div', { class: 'muted small', text: `⭐ โปรด ${store.favorites().length} คำ · ⚠ ยาก ${store.hardWords().length} คำ` }),
+      h('div', { class: 'row gap8' },
+        h('button', { class: 'chip-btn', type: 'button', onclick: () => { location.hash = '#/review?mode=fav'; } }, 'ทบทวนคำโปรด'),
+        h('button', { class: 'chip-btn', type: 'button', onclick: () => { location.hash = '#/review?mode=hard'; } }, 'ทบทวนคำยาก'))),
+    h('button', { class: 'quest-review-card', type: 'button', onclick: () => { location.hash = '#/onemin'; } },
+      h('span', { class: 'quest-review-icon', text: '🎙️' }), h('span', {}, h('strong', { text: 'พูดคนเดียว 1 นาที' }), h('small', { class: 'muted', text: 'อัดเสียงและฟังตัวเองได้' })), icon('play', 18)),
     h('div', { class: 'card me-today' },
       h('div', { class: 'card-title', text: 'วันนี้' }),
       h('div', { class: 'muted small', text: `คำที่ตอบถูก ${activity.words} ข้อ` })),

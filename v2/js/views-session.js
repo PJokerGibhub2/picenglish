@@ -31,14 +31,14 @@ function correctAnswer(item) {
   return item.answer;
 }
 
-export async function sessionView(root, lessonId, { review = false, reviewItems = [] } = {}) {
+export async function sessionView(root, lessonId, { review = false, reviewItems = [], reviewWords = [] } = {}) {
   const path = review ? null : await loadPath();
   const entry = review ? { lesson: { id: 'review', title: 'ทบทวนคำที่พลาด' } } : pathEntry(path, lessonId);
   if (!entry) { mount(root, h('div', { class: 'card', text: 'ไม่พบบทเรียนนี้' })); return () => {}; }
   await loadAll();
   let lesson = entry.lesson;
   if (review) {
-    const due = store.dueWords(db.words, 10);
+    const due = reviewWords.length ? reviewWords : store.dueWords(db.words, 10);
     let words = due;
     if (!words.length) {
       let rows = [];

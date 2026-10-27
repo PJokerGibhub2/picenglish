@@ -2,6 +2,7 @@
 const KEY = 'pangpood-v2.path';
 const STATS_KEY = 'pangpood-v2.stats';
 const ACTIVITY_KEY = 'pangpood-v2.activity';
+const CHEST_KEY = 'pangpood-v2.chest';
 
 function read(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch { return fallback; }
@@ -121,4 +122,52 @@ export function last7() {
     out.push({ key: k, label: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'][d.getDay()], xp: s.days[k] || 0 });
   }
   return out;
+}
+
+export function calendar(days = 28) {
+  const s = stats();
+  const out = [];
+  const count = Math.max(1, Math.min(366, Math.round(Number(days) || 28)));
+  for (let i = count - 1; i >= 0; i--) {
+    const d = new Date(); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() - i);
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const xp = Math.max(0, Number(s.days[key]) || 0);
+    out.push({ key, label: String(d.getDate()), xp, active: xp > 0 });
+  }
+  return out;
+}
+
+export function weekKey(date = new Date()) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const week = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
+}
+
+export function chestState() {
+  const key = weekKey();
+  const claimed = read(CHEST_KEY, {})[key] === true;
+  const s = stats();
+  const now = new Date(); now.setHours(12, 0, 0, 0);
+  const sinceMonday = (now.getDay() + 6) % 7;
+  now.setDate(now.getDate() - sinceMonday);
+  let activeDays = 0;
+  for (let i = 0; i <= sinceMonday; i++) {
+    const day = new Date(now); day.setDate(now.getDate() + i);
+    const dayKey = `${day.getFullYear()}-${String(day.getMonth() + 1).padStart(2, '0')}-${String(day.getDate()).padStart(2, '0')}`;
+    if ((Number(s.days[dayKey]) || 0) > 0) activeDays++;
+  }
+  return { canClaim: !claimed && activeDays >= 3, claimed, activeDays };
+}
+
+export function claimChest() {
+  const state = chestState();
+  if (!state.canClaim) return { ...state, stats: stats() };
+  const chest = read(CHEST_KEY, {});
+  chest[weekKey()] = true;
+  write(CHEST_KEY, chest);
+  const updated = bumpDaily({ xp: 50, words: 0 });
+  return { ...chestState(), stats: updated };
 }

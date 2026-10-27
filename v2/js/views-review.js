@@ -5,9 +5,11 @@ import { db, loadAll } from './data.js';
 import * as store from './store.js';
 import { sessionView } from './views-session.js';
 
-export async function reviewView(root) {
+export async function reviewView(root, query = new URLSearchParams()) {
   await loadAll();
-  const due = store.dueWords(db.words, 10);
+  const mode = query.get('mode');
+  const selected = mode === 'fav' ? store.favorites() : mode === 'hard' ? store.hardWords() : null;
+  const due = selected ? selected.map((id) => db.byId.get(id)).filter(Boolean).slice(0, 30) : store.dueWords(db.words, 10);
   let failed = [];
   let failedItems = [];
   if (!due.length) {
@@ -19,6 +21,13 @@ export async function reviewView(root) {
     } catch { failed = []; }
   }
   if (!due.length && !failed.length && !failedItems.length) {
+    if (selected) {
+      mount(root, h('div', { class: 'review-empty' }, mascot('sleep', 126),
+        h('div', { class: 'page-title', text: 'ชุดคำนี้ยังว่างอยู่' }),
+        h('div', { class: 'muted', text: 'เพิ่มคำโปรดหรือทำเครื่องหมายคำยากจากคลังคำได้ทุกเมื่อ' }),
+        h('button', { class: 'btn3d', type: 'button', text: 'ไปคลังคำ', onclick: () => { location.hash = '#/words'; } })));
+      return () => {};
+    }
     mount(root,
       h('div', { class: 'review-empty' }, mascot('sleep', 126),
         h('div', { class: 'page-title', text: 'วันนี้ทบทวนครบแล้ว' }),
@@ -26,5 +35,5 @@ export async function reviewView(root) {
         h('button', { class: 'btn3d', type: 'button', text: 'กลับไปเควส', onclick: () => { location.hash = '#/quest'; } })));
     return () => {};
   }
-  return sessionView(root, 'review', { review: true, reviewItems: failedItems });
+  return sessionView(root, 'review', { review: true, reviewItems: failedItems, reviewWords: selected ? due : [] });
 }

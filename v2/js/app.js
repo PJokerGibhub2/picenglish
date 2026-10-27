@@ -17,6 +17,8 @@ import { shadowView } from './views-shadow.js';
 import { chunksView } from './views-chunks.js';
 import { chunkDrillView } from './views-chunk-drill.js';
 import { sentencesView } from './views-sentences.js';
+import { placementView } from './views-placement.js';
+import { oneminView } from './views-onemin.js';
 import { VERSION, APP_NAME } from './version.js';
 
 const TABS = [
@@ -51,9 +53,9 @@ async function route() {
   const inSession = tab === 'lesson';
   const inReview = tab === 'review';
   const inDrill = tab === 'chunks' && ['type', 'order'].includes(rest[0]);
-  const inSpecial = ['shadow', 'chunks', 'sentences'].includes(tab);
+  const inSpecial = ['shadow', 'chunks', 'sentences', 'placement', 'onemin'].includes(tab);
   const found = TABS.find((t) => t.id === tab) || TABS[0];
-  currentTab = inSession ? 'path' : (['speak', 'roleplay', 'listening', 'shadow', 'chunks', 'sentences'].includes(tab) ? 'practice' : found.id);
+  currentTab = inSession ? 'path' : (['speak', 'roleplay', 'listening', 'shadow', 'chunks', 'sentences', 'placement', 'onemin'].includes(tab) ? 'practice' : found.id);
   renderTabs(currentTab);
 
   const view = document.getElementById('view');
@@ -66,11 +68,13 @@ async function route() {
   try {
     const cleanup = inSession
       ? await sessionView(view, query.get('id') || '')
-      : inReview ? await reviewView(view)
+      : inReview ? await reviewView(view, query)
       : tab === 'shadow' ? await shadowView(view, query)
       : tab === 'chunks' && inDrill ? await chunkDrillView(view, rest[0], query)
       : tab === 'chunks' ? await chunksView(view)
       : tab === 'sentences' ? await sentencesView(view)
+      : tab === 'placement' ? await placementView(view)
+      : tab === 'onemin' ? await oneminView(view, query)
       : tab === 'speak' ? await speakView(view)
       : tab === 'roleplay' ? await roleplayView(view, query)
       : tab === 'listening' ? await listeningView(view, query)

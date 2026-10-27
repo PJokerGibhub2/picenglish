@@ -35,7 +35,7 @@ export function createSession(options = {}) {
   let finished = false;
 
   function enough() {
-    return answers >= goal || LEVELS.every((level) => counts[level].total >= 3);
+    return answers >= goal;
   }
   function next() {
     if (current || finished || enough()) { if (enough()) finished = true; return null; }

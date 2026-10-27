@@ -7,6 +7,7 @@ import { mascot, mascotReact } from './mascot2.js';
 import * as pg from './progress2.js';
 import { db, loadAll } from './data.js';
 import { sayText, loadAudioManifest } from './speech.js';
+import * as store from './store.js';
 
 let pathData = null;
 export async function loadPath() {
@@ -143,7 +144,7 @@ export async function pathView(root) {
     h('div', { class: 'hero-copy' },
       h('div', { class: 'hero-hi', text: done === 0 ? 'สวัสดี! ผมพัง 🐘' : 'ดีจัง กลับมาแล้ว!' }),
       h('div', { class: 'hero-text', text: done === 0
-        ? 'มาเริ่มพูดอังกฤษกันวันละ 5 นาที'
+        ? (st.streak ? `มาเริ่มพูดอังกฤษกัน · สตรีค ${st.streak} วัน` : 'มาเริ่มพูดอังกฤษกันวันละ 5 นาที')
         : `ทำไปแล้ว ${done}/${total} บท · สตรีค ${st.streak || 0} วัน` }),
       next ? btn3d('ไปต่อ', {
         tone: 'brand', icon: 'play',
@@ -155,6 +156,10 @@ export async function pathView(root) {
       }) : h('div', { class: 'hero-done', text: 'จบเส้นทางแล้ว 🎉' })));
 
   root.appendChild(hero);
+
+  if (!store.placement()) root.appendChild(h('button', { class: 'quest-review-card placement-path-card', type: 'button', onclick: () => { location.hash = '#/placement'; } },
+    h('span', { class: 'quest-review-icon', text: '🧭' }),
+    h('span', {}, h('strong', { text: 'วัดระดับภาษา' }), h('small', { class: 'muted', text: 'ช่วยเลือกบทเรียนเริ่มต้นที่เหมาะกับคุณ' })), icon('arrow', 18)));
 
   // แถบ Section + Unit
   for (const sec of path.sections) {
