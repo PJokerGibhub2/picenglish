@@ -73,5 +73,9 @@ export async function questView(root) {
     btn3d('ไปเรียนต่อ', {
       block: true, size: 'lg', icon: 'play',
       onclick: () => { location.hash = '#/path'; },
-    }));
+    }),
+    h('button', { class: 'quest-review-card', type: 'button', onclick: () => { location.hash = '#/review'; } },
+      h('span', { class: 'quest-review-icon', text: '👑' }),
+      h('span', {}, h('strong', { text: 'ทบทวนคำที่พลาด' }), h('small', { class: 'muted', text: 'คำที่ถึงเวลาและคำที่อยากฝึกซ้ำ' })),
+      icon('play', 18)));
 }

@@ -15,11 +15,15 @@ export async function loadPath() {
 }
 
 function nodeFor(entry, { unlocked, done, current, stars }) {
+  const isReview = entry.lesson.kind === 'review';
   const cls = ['node'];
+  if (isReview) cls.push('node-review');
   if (done) cls.push('done');
   if (current) cls.push('current');
   if (!unlocked) cls.push('locked');
-  const inner = done
+  const inner = isReview
+    ? icon('crown', 28)
+    : done
     ? icon('check', 30)
     : unlocked ? icon('play', 28) : icon('lock', 24);
   return h('button', {

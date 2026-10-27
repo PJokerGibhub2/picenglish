@@ -8,6 +8,7 @@ import { wordsView } from './views-words.js';
 import { questView } from './views-quest.js';
 import { meView } from './views-me.js';
 import { sessionView } from './views-session.js';
+import { reviewView } from './views-review.js';
 import { VERSION, APP_NAME } from './version.js';
 
 const TABS = [
@@ -39,6 +40,7 @@ function renderTabs(active) {
 async function route() {
   const { tab, query } = parseHash();
   const inSession = tab === 'lesson';
+  const inReview = tab === 'review';
   const found = TABS.find((t) => t.id === tab) || TABS[0];
   currentTab = inSession ? 'path' : found.id;
   renderTabs(currentTab);
@@ -48,11 +50,12 @@ async function route() {
   mount(view);
   view.scrollTop = 0;
   document.body.dataset.tab = currentTab;
-  document.body.classList.toggle('in-session', inSession);
+  document.body.classList.toggle('in-session', inSession || inReview);
 
   try {
     const cleanup = inSession
       ? await sessionView(view, query.get('id') || '')
+      : inReview ? await reviewView(view)
       : await found.view(view);
     currentCleanup = typeof cleanup === 'function' ? cleanup : null;
   } catch (err) {

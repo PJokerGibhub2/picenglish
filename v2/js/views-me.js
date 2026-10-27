@@ -52,6 +52,11 @@ export async function meView(root) {
       stat('⭐', String(st.xp || 0), 'XP รวม'),
       stat('✓', `${done}`, 'บทที่จบ')),
 
+    h('button', { class: 'quest-review-card', type: 'button', onclick: () => { location.hash = '#/review'; } },
+      h('span', { class: 'quest-review-icon', text: '🔁' }),
+      h('span', {}, h('strong', { text: 'ทบทวนคำที่พลาด' }), h('small', { class: 'muted', text: 'ฝึกคำที่ถึงเวลาอีกครั้ง' })),
+      icon('play', 18)),
+
     h('div', { class: 'card' },
       h('div', { class: 'card-title', text: '7 วันที่ผ่านมา' }),
       h('div', { class: 'week' }, ...week.map((d) => h('div', { class: 'week-col' },

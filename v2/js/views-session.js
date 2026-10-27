@@ -8,6 +8,7 @@ import { sayText, stopSpeaking, sttSupported, alignWords, loadAudioManifest } fr
 import { listenOnce, stopListeningOnce } from './listen-once.js';
 import { sfxSuccess, sfxSoft, sfxComplete } from './sfx.js';
 import { loadPath } from './views-path.js';
+import * as store from './store.js';
 
 function pathEntry(path, id) { return pg.flatten(path).find((entry) => entry.lesson.id === id) || null; }
 function nextLesson(path, id) {
@@ -19,7 +20,8 @@ function rememberReview(lessonId, item) {
   try {
     const key = 'pangpood-v2.review';
     const rows = JSON.parse(localStorage.getItem(key) || '[]');
-    if (!rows.some((row) => row.lessonId === lessonId && row.itemId === item.id)) rows.push({ lessonId, itemId: item.id, type: item.type, answer: item.answer, at: Date.now() });
+    if (!rows.some((row) => row.lessonId === lessonId && row.itemId === item.id)) rows.push({ lessonId, itemId: item.id, entityId: item.entityId, type: item.type, answer: item.answer, item, at: Date.now() });
+    if (rows.length > 50) rows.splice(0, rows.length - 50);
     localStorage.setItem(key, JSON.stringify(rows));
   } catch (err) { /* พื้นที่จัดเก็บอาจเต็ม */ }
 }
@@ -28,16 +30,28 @@ function correctAnswer(item) {
   return item.answer;
 }
 
-export async function sessionView(root, lessonId) {
-  const path = await loadPath();
-  const entry = pathEntry(path, lessonId);
+export async function sessionView(root, lessonId, { review = false, reviewItems = [] } = {}) {
+  const path = review ? null : await loadPath();
+  const entry = review ? { lesson: { id: 'review', title: 'ทบทวนคำที่พลาด' } } : pathEntry(path, lessonId);
   if (!entry) { mount(root, h('div', { class: 'card', text: 'ไม่พบบทเรียนนี้' })); return () => {}; }
   await loadAll();
-  const items = await buildSession(entry.lesson, { size: 10, stt: sttSupported() });
+  let lesson = entry.lesson;
+  if (review) {
+    const due = store.dueWords(db.words, 10);
+    let words = due;
+    if (!words.length) {
+      let rows = [];
+      try { rows = JSON.parse(localStorage.getItem('pangpood-v2.review') || '[]'); } catch { rows = []; }
+      const ids = [...new Set(rows.map((row) => row.entityId).filter((id) => db.byId.has(id)))].slice(0, 10);
+      words = ids.map((id) => db.byId.get(id));
+    }
+    lesson = { ...entry.lesson, words: words.map((word) => word.id), chunks: [] };
+  }
+  const items = reviewItems.length ? reviewItems.slice(0, 10) : await buildSession(lesson, { size: 10, stt: false });
   if (!items.length) { mount(root, h('div', { class: 'card', text: 'บทนี้ยังไม่มีแบบฝึกให้เล่น' })); return () => {}; }
 
   document.body.classList.add('in-session');
-  const next = nextLesson(path, lessonId);
+  const next = review ? null : nextLesson(path, lessonId);
   const state = { index: 0, firstCorrect: 0, finalCorrect: 0, xp: 0, retried: new Set(), selected: null, built: [], listening: false, done: false };
   const top = h('div', { class: 'session-top' });
   const content = h('div', { class: 'session-content' });
@@ -91,11 +105,12 @@ export async function sessionView(root, lessonId) {
     else if (item.type === 'chunk-order') { kicker.textContent = 'เรียงชิปให้เป็นประโยคภาษาอังกฤษ'; target.textContent = item.prompt; }
     else if (item.type === 'chunk-type') { kicker.textContent = 'ฟังแล้วพิมพ์ตาม'; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
     else if (item.type === 'chunk-meaning') { kicker.textContent = 'เลือกความหมายภาษาไทย'; target.textContent = item.prompt; target.classList.add('en'); }
-    else if (item.type === 'line-listen') { kicker.textContent = 'ฟังแล้วเลือกความหมาย'; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
+    else if (item.type === 'line-listen' || (item.type === 'dialog-line' && item.mode === 'meaning')) { kicker.textContent = 'ฟังแล้วเลือกความหมาย'; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
+    else if (item.type === 'listen-question' || (item.type === 'dialog-line' && item.mode === 'english')) { kicker.textContent = item.prompt; target.classList.add('bubble-sound-icon'); target.appendChild(icon('sound', 46)); }
     else { kicker.textContent = 'พูดตามคำนี้'; target.textContent = item.prompt; target.classList.add('en'); }
     const bubble = h('div', { class: 'bubble' }, kicker, target, audioButton);
     const parts = [h('div', { class: 'session-line' }, mascotEl, bubble)];
-    if (['word-en-th', 'word-th-en', 'word-listen', 'chunk-meaning', 'line-listen'].includes(item.type)) parts.push(optionButtons(item));
+    if (['word-en-th', 'word-th-en', 'word-listen', 'chunk-meaning', 'line-listen', 'listen-question', 'dialog-line'].includes(item.type)) parts.push(optionButtons(item));
     if (item.type === 'chunk-order') {
       const built = h('div', { class: 'built-sentence', text: 'แตะคำด้านล่างเพื่อเรียงประโยค' });
       const chips = h('div', { class: 'tile-bank' }, ...item.tiles.map((word, i) => {
@@ -138,7 +153,7 @@ export async function sessionView(root, lessonId) {
     const check = btn3d('ตรวจคำตอบ', { block: true, size: 'lg', onclick: checkAnswer });
     check.classList.add('session-check'); check.disabled = true;
     questionHost.appendChild(check);
-    if (item.type === 'word-listen' || item.type === 'line-listen') setTimeout(() => play(item), 250);
+    if (item.audioKey) setTimeout(() => play(item), 250);
   };
   const checkAnswer = () => {
     const item = items[state.index];
@@ -183,12 +198,12 @@ export async function sessionView(root, lessonId) {
     state.done = true; stopSpeaking(); stopListeningOnce();
     const pct = Math.round((state.finalCorrect / items.length) * 100);
     state.xp += 10;
-    pg.complete(lessonId, pct);
-    pg.bumpDaily({ xp: state.xp - 20 });
+    if (!review) pg.complete(lessonId, pct);
+    pg.bumpDaily({ xp: review ? state.xp : state.xp - 20 });
     sfxComplete(); confetti(); mascotReact(mascotEl, 'cheer', 2400);
     mascotEl.classList.remove('session-mascot');
-    const nextBtn = next ? btn3d('บทถัดไป', { block: true, size: 'lg', icon: 'play', onclick: () => { clearTimeout(autoTimer); location.hash = `#/lesson?id=${encodeURIComponent(next.lesson.id)}`; } })
-      : btn3d('กลับเส้นทาง', { block: true, size: 'lg', onclick: () => { clearTimeout(autoTimer); location.hash = '#/path'; } });
+    const nextBtn = !review && next ? btn3d('บทถัดไป', { block: true, size: 'lg', icon: 'play', onclick: () => { clearTimeout(autoTimer); location.hash = `#/lesson?id=${encodeURIComponent(next.lesson.id)}`; } })
+      : btn3d(review ? 'กลับไปเควส' : 'กลับเส้นทาง', { block: true, size: 'lg', onclick: () => { clearTimeout(autoTimer); location.hash = review ? '#/quest' : '#/path'; } });
     const cancelAuto = h('button', { class: 'chip-btn', type: 'button', text: 'ยกเลิกการไปต่ออัตโนมัติ', onclick: () => { clearTimeout(autoTimer); cancelAuto.remove(); } });
     mount(top, h('span', { class: 'session-exit-placeholder' }), h('div', { class: 'session-title', text: 'จบบทเรียนแล้ว!' }), h('span', { class: 'session-count', text: '✓' }));
     mount(content, h('div', { class: 'session-summary' }, mascotEl,
@@ -198,7 +213,7 @@ export async function sessionView(root, lessonId) {
       h('div', { class: 'summary-note muted small', text: 'ข้อที่ต้องทบทวนถูกเก็บไว้ให้กลับมาฝึกอีกครั้ง' }), nextBtn, cancelAuto));
     mount(questionHost);
     shell.querySelector('.bar-fill').style.width = '100%';
-    if (next) autoTimer = setTimeout(() => { location.hash = `#/lesson?id=${encodeURIComponent(next.lesson.id)}`; }, 3000);
+    if (!review && next) autoTimer = setTimeout(() => { location.hash = `#/lesson?id=${encodeURIComponent(next.lesson.id)}`; }, 3000);
   }
   let autoTimer = null;
   renderQuestion();
