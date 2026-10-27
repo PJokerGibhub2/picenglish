@@ -7,6 +7,10 @@ import { pathView } from './views-path.js';
 import { wordsView } from './views-words.js';
 import { questView } from './views-quest.js';
 import { meView } from './views-me.js';
+import { practiceView } from './views-practice.js';
+import { speakView } from './views-speak.js';
+import { roleplayView } from './views-roleplay.js';
+import { listeningView } from './views-listening.js';
 import { sessionView } from './views-session.js';
 import { reviewView } from './views-review.js';
 import { VERSION, APP_NAME } from './version.js';
@@ -14,6 +18,7 @@ import { VERSION, APP_NAME } from './version.js';
 const TABS = [
   { id: 'path', label: 'เส้นทาง', icon: 'route', view: pathView },
   { id: 'quest', label: 'เควส', icon: 'target', view: questView },
+  { id: 'practice', label: 'ฝึก', icon: 'mic', view: practiceView },
   { id: 'words', label: 'คลังคำ', icon: 'book', view: wordsView },
   { id: 'me', label: 'ฉัน', icon: 'user', view: meView },
 ];
@@ -42,7 +47,7 @@ async function route() {
   const inSession = tab === 'lesson';
   const inReview = tab === 'review';
   const found = TABS.find((t) => t.id === tab) || TABS[0];
-  currentTab = inSession ? 'path' : found.id;
+  currentTab = inSession ? 'path' : (['speak', 'roleplay', 'listening'].includes(tab) ? 'practice' : found.id);
   renderTabs(currentTab);
 
   const view = document.getElementById('view');
@@ -56,6 +61,9 @@ async function route() {
     const cleanup = inSession
       ? await sessionView(view, query.get('id') || '')
       : inReview ? await reviewView(view)
+      : tab === 'speak' ? await speakView(view)
+      : tab === 'roleplay' ? await roleplayView(view, query)
+      : tab === 'listening' ? await listeningView(view, query)
       : await found.view(view);
     currentCleanup = typeof cleanup === 'function' ? cleanup : null;
   } catch (err) {

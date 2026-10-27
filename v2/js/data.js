@@ -74,6 +74,22 @@ export async function loadAll() {
 
 export function getDialogue(id) { return db.dialogueById.get(id); }
 
+export async function loadListening() {
+  if (db.listening.length) return db.listening;
+  await loadAll();
+  return db.listening;
+}
+
+export async function loadChunks() {
+  if (db.chunks.length) return db.chunks;
+  await loadAll();
+  return db.chunks;
+}
+
+export function listeningById(id) {
+  return db.listening.find((lesson) => lesson.id === id);
+}
+
 export function getWord(id) { return db.byId.get(id); }
 
 export function wordsOf(categoryId) {

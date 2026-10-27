@@ -56,7 +56,7 @@ async function main() {
   console.log('\n1) เปิดแอป');
   await send('Page.navigate', { url: BASE });
   await sleep(3200);
-  ok('แอปบูตได้ (มีแท็บล่าง 4 อัน)', (await ev("document.querySelectorAll('.tab').length")) === 4);
+  ok('แอปบูตได้ (มีแท็บล่าง 5 อัน)', (await ev("document.querySelectorAll('.tab').length")) === 5);
   ok('หน้าหลักเป็นเส้นทาง (12 unit)', (await ev("document.querySelectorAll('.unit').length")) === 12);
   ok('มี node ทั้งหมด 60 บท', (await ev("document.querySelectorAll('.node').length")) === 60);
   ok('ไม่มี scroll แนวนอน', (await ev('document.documentElement.scrollWidth <= window.innerWidth + 1')));
@@ -160,6 +160,23 @@ async function main() {
   await sleep(1600);
   const reviewText = await ev("document.getElementById('view').textContent");
   ok('โหมดทบทวนเปิดได้', String(reviewText).length > 10, String(reviewText).slice(0, 24));
+
+  // ---- 5.5) โหมดฝึก (ย้ายจาก V1) ----
+  console.log('\n5.5) โหมดฝึก');
+  await send('Page.navigate', { url: BASE + '#/practice' });
+  await sleep(1700);
+  ok('หน้า "ฝึก" มีการ์ดโหมดฝึก', (await ev("document.querySelectorAll('#view .card, #view .practice-card').length")) >= 4);
+  await send('Page.navigate', { url: BASE + '#/speak' });
+  await sleep(1800);
+  const speakLen = String(await ev("document.getElementById('view').textContent")).length;
+  ok('ฝึกออกเสียงเปิดได้', speakLen > 20, `${speakLen} ตัวอักษร`);
+  await send('Page.navigate', { url: BASE + '#/roleplay' });
+  await sleep(1700);
+  ok('รายการบทสนทนาเปิดได้', (await ev("document.querySelectorAll('#view .card, #view button').length")) >= 8);
+  await send('Page.navigate', { url: BASE + '#/listening' });
+  await sleep(1700);
+  const lisLen = String(await ev("document.getElementById('view').textContent")).length;
+  ok('หน้าฟังบทเต็มเปิดได้', lisLen > 40, `${lisLen} ตัวอักษร`);
 
   // ---- 6) service worker ----
   console.log('\n6) ออฟไลน์');

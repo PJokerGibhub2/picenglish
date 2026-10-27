@@ -1,10 +1,10 @@
-/* sw.js — service worker ของ PangPood (V2) · scope = โฟลเดอร์ /v2/ เท่านั้น
+﻿/* sw.js — service worker ของ PangPood (V2) · scope = โฟลเดอร์ /v2/ เท่านั้น
  *
  * บทเรียนจากการใช้งานจริง: cache-first ทำให้เครื่องที่เคยเปิดแอปค้างเวอร์ชันเก่า
  * → เปลี่ยนเป็น "network-first" สำหรับ HTML/JS/CSS และใช้ fetch cache:'reload'
  *   ตอน precache เพื่อไม่ให้ HTTP cache ของเบราว์เซอร์มาทับ
  */
-const VERSION = 'v2.8.0';
+const VERSION = 'v2.9.0';
 const CACHE = `pangpood-${VERSION}`;
 
 const SHELL = [
@@ -30,6 +30,10 @@ const SHELL = [
   './js/views-me.js',
   './js/views-session.js',
   './js/views-review.js',
+  './js/views-practice.js',
+  './js/views-speak.js',
+  './js/views-roleplay.js',
+  './js/views-listening.js',
   './js/session.js',
   './data/path.json',
   './data/words.json',
