@@ -1,0 +1,23 @@
+{
+  "name": "PangPood · พังพูด — พูดอังกฤษได้ทุกวัน",
+  "short_name": "พังพูด",
+  "description": "เรียนพูดอังกฤษวันละ 5 นาที กับช้างน้อยพัง · ออฟไลน์ได้ · ไม่มีโฆษณา",
+  "lang": "th",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2ec27e",
+  "categories": ["education"],
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "เส้นทางของพัง", "url": "./#/path", "description": "ไปบทเรียนถัดไป" },
+    { "name": "เควสวันนี้", "url": "./#/quest", "description": "ภารกิจ 5 นาที" }
+  ]
+}

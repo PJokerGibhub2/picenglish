@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ad68b"/>
+      <stop offset="1" stop-color="#22a268"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="206" r="118" fill="#ffffff" opacity=".14"/>
+  <!-- หู -->
+  <ellipse cx="152" cy="206" rx="62" ry="84" fill="#a3bcd4"/>
+  <ellipse cx="166" cy="212" rx="34" ry="54" fill="#f3b7c4"/>
+  <ellipse cx="360" cy="206" rx="62" ry="84" fill="#a3bcd4"/>
+  <ellipse cx="346" cy="212" rx="34" ry="54" fill="#f3b7c4"/>
+  <!-- หัว -->
+  <circle cx="256" cy="212" r="104" fill="#b7cde2"/>
+  <!-- งวงม้วนเป็นกรอบคำพูด -->
+  <path d="M256 268 q -8 62 -34 92 q -20 24 6 34 q 28 10 44 -20" stroke="#b7cde2" stroke-width="40" fill="none" stroke-linecap="round"/>
+  <!-- ตา -->
+  <circle cx="216" cy="196" r="13" fill="#22303c"/>
+  <circle cx="221" cy="191" r="4.5" fill="#ffffff"/>
+  <circle cx="296" cy="196" r="13" fill="#22303c"/>
+  <circle cx="301" cy="191" r="4.5" fill="#ffffff"/>
+  <!-- แก้ม -->
+  <circle cx="190" cy="236" r="15" fill="#f5b6c3" opacity=".7"/>
+  <circle cx="322" cy="236" r="15" fill="#f5b6c3" opacity=".7"/>
+  <!-- ผ้าพันคอ -->
+  <path d="M158 292 q 98 54 196 0 l 6 28 q -104 58 -208 0 z" fill="#ff6b6b"/>
+  <!-- ฟองคำพูดเล็ก ๆ สื่อ "พูด" -->
+  <g fill="#ffffff">
+    <rect x="336" y="330" width="104" height="76" rx="26"/>
+    <path d="M356 400 l -16 34 l 40 -22 z"/>
+    <circle cx="366" cy="368" r="9" fill="#2ec27e"/>
+    <circle cx="388" cy="368" r="9" fill="#2ec27e"/>
+    <circle cx="410" cy="368" r="9" fill="#2ec27e"/>
+  </g>
+</svg>

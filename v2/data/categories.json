@@ -1,0 +1,88 @@
+{
+ "categories": [
+  {
+   "id": "food",
+   "th": "อาหารและเครื่องดื่ม",
+   "en": "Food & Drinks",
+   "emoji": "🍜",
+   "color": "#f97316"
+  },
+  {
+   "id": "restaurant",
+   "th": "ร้านอาหารและสั่งอาหาร",
+   "en": "Restaurant & Ordering",
+   "emoji": "🍽️",
+   "color": "#ef4444"
+  },
+  {
+   "id": "travel",
+   "th": "เดินทางและทิศทาง",
+   "en": "Travel & Directions",
+   "emoji": "🧭",
+   "color": "#0ea5e9"
+  },
+  {
+   "id": "home",
+   "th": "ที่พักและที่อยู่อาศัย",
+   "en": "Accommodation & Home",
+   "emoji": "🏠",
+   "color": "#22c55e"
+  },
+  {
+   "id": "shopping",
+   "th": "ช้อปปิ้งและเงิน",
+   "en": "Shopping & Money",
+   "emoji": "🛍️",
+   "color": "#a855f7"
+  },
+  {
+   "id": "health",
+   "th": "สุขภาพและร่างกาย",
+   "en": "Health & Body",
+   "emoji": "🩺",
+   "color": "#14b8a6"
+  },
+  {
+   "id": "work",
+   "th": "งานและออฟฟิศ",
+   "en": "Work & Office",
+   "emoji": "💼",
+   "color": "#6366f1"
+  },
+  {
+   "id": "feelings",
+   "th": "อารมณ์และบุคลิก",
+   "en": "Feelings & Personality",
+   "emoji": "😊",
+   "color": "#ec4899"
+  },
+  {
+   "id": "transport",
+   "th": "การเดินทางในเมือง",
+   "en": "Getting Around",
+   "emoji": "🚌",
+   "color": "#06b6d4"
+  },
+  {
+   "id": "phone",
+   "th": "โทรศัพท์และอินเทอร์เน็ต",
+   "en": "Phone & Internet",
+   "emoji": "📱",
+   "color": "#8b5cf6"
+  },
+  {
+   "id": "bank",
+   "th": "ธนาคารและเงิน",
+   "en": "Bank & Money",
+   "emoji": "🏦",
+   "color": "#10b981"
+  },
+  {
+   "id": "emergency",
+   "th": "เหตุฉุกเฉินและขอความช่วยเหลือ",
+   "en": "Help & Emergencies",
+   "emoji": "🆘",
+   "color": "#ef4444"
+  }
+ ]
+}

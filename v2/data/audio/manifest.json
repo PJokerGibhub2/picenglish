@@ -1,0 +1,5026 @@
+{
+"word:food-breakfast": {
+"f": "f/word_food-breakfast.mp3",
+"m": "m/word_food-breakfast.mp3"
+},
+"sent:food-breakfast": {
+"f": "f/sent_food-breakfast.mp3",
+"m": "m/sent_food-breakfast.mp3"
+},
+"word:food-lunch": {
+"f": "f/word_food-lunch.mp3",
+"m": "m/word_food-lunch.mp3"
+},
+"sent:food-lunch": {
+"f": "f/sent_food-lunch.mp3",
+"m": "m/sent_food-lunch.mp3"
+},
+"word:food-dinner": {
+"f": "f/word_food-dinner.mp3",
+"m": "m/word_food-dinner.mp3"
+},
+"sent:food-dinner": {
+"f": "f/sent_food-dinner.mp3",
+"m": "m/sent_food-dinner.mp3"
+},
+"word:food-snack": {
+"f": "f/word_food-snack.mp3",
+"m": "m/word_food-snack.mp3"
+},
+"sent:food-snack": {
+"f": "f/sent_food-snack.mp3",
+"m": "m/sent_food-snack.mp3"
+},
+"word:food-ingredient": {
+"f": "f/word_food-ingredient.mp3",
+"m": "m/word_food-ingredient.mp3"
+},
+"sent:food-ingredient": {
+"f": "f/sent_food-ingredient.mp3",
+"m": "m/sent_food-ingredient.mp3"
+},
+"word:food-recipe": {
+"f": "f/word_food-recipe.mp3",
+"m": "m/word_food-recipe.mp3"
+},
+"sent:food-recipe": {
+"f": "f/sent_food-recipe.mp3",
+"m": "m/sent_food-recipe.mp3"
+},
+"word:food-soup": {
+"f": "f/word_food-soup.mp3",
+"m": "m/word_food-soup.mp3"
+},
+"sent:food-soup": {
+"f": "f/sent_food-soup.mp3",
+"m": "m/sent_food-soup.mp3"
+},
+"word:food-grill": {
+"f": "f/word_food-grill.mp3",
+"m": "m/word_food-grill.mp3"
+},
+"sent:food-grill": {
+"f": "f/sent_food-grill.mp3",
+"m": "m/sent_food-grill.mp3"
+},
+"word:food-spicy": {
+"f": "f/word_food-spicy.mp3",
+"m": "m/word_food-spicy.mp3"
+},
+"sent:food-spicy": {
+"f": "f/sent_food-spicy.mp3",
+"m": "m/sent_food-spicy.mp3"
+},
+"word:food-leftovers": {
+"f": "f/word_food-leftovers.mp3",
+"m": "m/word_food-leftovers.mp3"
+},
+"sent:food-leftovers": {
+"f": "f/sent_food-leftovers.mp3",
+"m": "m/sent_food-leftovers.mp3"
+},
+"word:food-dessert": {
+"f": "f/word_food-dessert.mp3",
+"m": "m/word_food-dessert.mp3"
+},
+"sent:food-dessert": {
+"f": "f/sent_food-dessert.mp3",
+"m": "m/sent_food-dessert.mp3"
+},
+"word:food-portion": {
+"f": "f/word_food-portion.mp3",
+"m": "m/word_food-portion.mp3"
+},
+"sent:food-portion": {
+"f": "f/sent_food-portion.mp3",
+"m": "m/sent_food-portion.mp3"
+},
+"word:restaurant-reservation": {
+"f": "f/word_restaurant-reservation.mp3",
+"m": "m/word_restaurant-reservation.mp3"
+},
+"sent:restaurant-reservation": {
+"f": "f/sent_restaurant-reservation.mp3",
+"m": "m/sent_restaurant-reservation.mp3"
+},
+"word:restaurant-table-for-two": {
+"f": "f/word_restaurant-table-for-two.mp3",
+"m": "m/word_restaurant-table-for-two.mp3"
+},
+"sent:restaurant-table-for-two": {
+"f": "f/sent_restaurant-table-for-two.mp3",
+"m": "m/sent_restaurant-table-for-two.mp3"
+},
+"word:restaurant-menu": {
+"f": "f/word_restaurant-menu.mp3",
+"m": "m/word_restaurant-menu.mp3"
+},
+"sent:restaurant-menu": {
+"f": "f/sent_restaurant-menu.mp3",
+"m": "m/sent_restaurant-menu.mp3"
+},
+"word:restaurant-order": {
+"f": "f/word_restaurant-order.mp3",
+"m": "m/word_restaurant-order.mp3"
+},
+"sent:restaurant-order": {
+"f": "f/sent_restaurant-order.mp3",
+"m": "m/sent_restaurant-order.mp3"
+},
+"word:restaurant-recommend": {
+"f": "f/word_restaurant-recommend.mp3",
+"m": "m/word_restaurant-recommend.mp3"
+},
+"sent:restaurant-recommend": {
+"f": "f/sent_restaurant-recommend.mp3",
+"m": "m/sent_restaurant-recommend.mp3"
+},
+"word:restaurant-appetizer": {
+"f": "f/word_restaurant-appetizer.mp3",
+"m": "m/word_restaurant-appetizer.mp3"
+},
+"sent:restaurant-appetizer": {
+"f": "f/sent_restaurant-appetizer.mp3",
+"m": "m/sent_restaurant-appetizer.mp3"
+},
+"word:restaurant-main-course": {
+"f": "f/word_restaurant-main-course.mp3",
+"m": "m/word_restaurant-main-course.mp3"
+},
+"sent:restaurant-main-course": {
+"f": "f/sent_restaurant-main-course.mp3",
+"m": "m/sent_restaurant-main-course.mp3"
+},
+"word:restaurant-refill": {
+"f": "f/word_restaurant-refill.mp3",
+"m": "m/word_restaurant-refill.mp3"
+},
+"sent:restaurant-refill": {
+"f": "f/sent_restaurant-refill.mp3",
+"m": "m/sent_restaurant-refill.mp3"
+},
+"word:restaurant-bill": {
+"f": "f/word_restaurant-bill.mp3",
+"m": "m/word_restaurant-bill.mp3"
+},
+"sent:restaurant-bill": {
+"f": "f/sent_restaurant-bill.mp3",
+"m": "m/sent_restaurant-bill.mp3"
+},
+"word:restaurant-tip": {
+"f": "f/word_restaurant-tip.mp3",
+"m": "m/word_restaurant-tip.mp3"
+},
+"sent:restaurant-tip": {
+"f": "f/sent_restaurant-tip.mp3",
+"m": "m/sent_restaurant-tip.mp3"
+},
+"word:restaurant-takeaway": {
+"f": "f/word_restaurant-takeaway.mp3",
+"m": "m/word_restaurant-takeaway.mp3"
+},
+"sent:restaurant-takeaway": {
+"f": "f/sent_restaurant-takeaway.mp3",
+"m": "m/sent_restaurant-takeaway.mp3"
+},
+"word:restaurant-allergy": {
+"f": "f/word_restaurant-allergy.mp3",
+"m": "m/word_restaurant-allergy.mp3"
+},
+"sent:restaurant-allergy": {
+"f": "f/sent_restaurant-allergy.mp3",
+"m": "m/sent_restaurant-allergy.mp3"
+},
+"word:travel-ticket": {
+"f": "f/word_travel-ticket.mp3",
+"m": "m/word_travel-ticket.mp3"
+},
+"sent:travel-ticket": {
+"f": "f/sent_travel-ticket.mp3",
+"m": "m/sent_travel-ticket.mp3"
+},
+"word:travel-passport": {
+"f": "f/word_travel-passport.mp3",
+"m": "m/word_travel-passport.mp3"
+},
+"sent:travel-passport": {
+"f": "f/sent_travel-passport.mp3",
+"m": "m/sent_travel-passport.mp3"
+},
+"word:travel-airport": {
+"f": "f/word_travel-airport.mp3",
+"m": "m/word_travel-airport.mp3"
+},
+"sent:travel-airport": {
+"f": "f/sent_travel-airport.mp3",
+"m": "m/sent_travel-airport.mp3"
+},
+"word:travel-luggage": {
+"f": "f/word_travel-luggage.mp3",
+"m": "m/word_travel-luggage.mp3"
+},
+"sent:travel-luggage": {
+"f": "f/sent_travel-luggage.mp3",
+"m": "m/sent_travel-luggage.mp3"
+},
+"word:travel-map": {
+"f": "f/word_travel-map.mp3",
+"m": "m/word_travel-map.mp3"
+},
+"sent:travel-map": {
+"f": "f/sent_travel-map.mp3",
+"m": "m/sent_travel-map.mp3"
+},
+"word:travel-bus": {
+"f": "f/word_travel-bus.mp3",
+"m": "m/word_travel-bus.mp3"
+},
+"sent:travel-bus": {
+"f": "f/sent_travel-bus.mp3",
+"m": "m/sent_travel-bus.mp3"
+},
+"word:travel-train": {
+"f": "f/word_travel-train.mp3",
+"m": "m/word_travel-train.mp3"
+},
+"sent:travel-train": {
+"f": "f/sent_travel-train.mp3",
+"m": "m/sent_travel-train.mp3"
+},
+"word:travel-schedule": {
+"f": "f/word_travel-schedule.mp3",
+"m": "m/word_travel-schedule.mp3"
+},
+"sent:travel-schedule": {
+"f": "f/sent_travel-schedule.mp3",
+"m": "m/sent_travel-schedule.mp3"
+},
+"word:travel-destination": {
+"f": "f/word_travel-destination.mp3",
+"m": "m/word_travel-destination.mp3"
+},
+"sent:travel-destination": {
+"f": "f/sent_travel-destination.mp3",
+"m": "m/sent_travel-destination.mp3"
+},
+"word:travel-gate": {
+"f": "f/word_travel-gate.mp3",
+"m": "m/word_travel-gate.mp3"
+},
+"sent:travel-gate": {
+"f": "f/sent_travel-gate.mp3",
+"m": "m/sent_travel-gate.mp3"
+},
+"word:travel-turn-left": {
+"f": "f/word_travel-turn-left.mp3",
+"m": "m/word_travel-turn-left.mp3"
+},
+"sent:travel-turn-left": {
+"f": "f/sent_travel-turn-left.mp3",
+"m": "m/sent_travel-turn-left.mp3"
+},
+"word:travel-ask-for-directions": {
+"f": "f/word_travel-ask-for-directions.mp3",
+"m": "m/word_travel-ask-for-directions.mp3"
+},
+"sent:travel-ask-for-directions": {
+"f": "f/sent_travel-ask-for-directions.mp3",
+"m": "m/sent_travel-ask-for-directions.mp3"
+},
+"word:home-apartment": {
+"f": "f/word_home-apartment.mp3",
+"m": "m/word_home-apartment.mp3"
+},
+"sent:home-apartment": {
+"f": "f/sent_home-apartment.mp3",
+"m": "m/sent_home-apartment.mp3"
+},
+"word:home-house": {
+"f": "f/word_home-house.mp3",
+"m": "m/word_home-house.mp3"
+},
+"sent:home-house": {
+"f": "f/sent_home-house.mp3",
+"m": "m/sent_home-house.mp3"
+},
+"word:home-bedroom": {
+"f": "f/word_home-bedroom.mp3",
+"m": "m/word_home-bedroom.mp3"
+},
+"sent:home-bedroom": {
+"f": "f/sent_home-bedroom.mp3",
+"m": "m/sent_home-bedroom.mp3"
+},
+"word:home-kitchen": {
+"f": "f/word_home-kitchen.mp3",
+"m": "m/word_home-kitchen.mp3"
+},
+"sent:home-kitchen": {
+"f": "f/sent_home-kitchen.mp3",
+"m": "m/sent_home-kitchen.mp3"
+},
+"word:home-living-room": {
+"f": "f/word_home-living-room.mp3",
+"m": "m/word_home-living-room.mp3"
+},
+"sent:home-living-room": {
+"f": "f/sent_home-living-room.mp3",
+"m": "m/sent_home-living-room.mp3"
+},
+"word:home-furniture": {
+"f": "f/word_home-furniture.mp3",
+"m": "m/word_home-furniture.mp3"
+},
+"sent:home-furniture": {
+"f": "f/sent_home-furniture.mp3",
+"m": "m/sent_home-furniture.mp3"
+},
+"word:home-lamp": {
+"f": "f/word_home-lamp.mp3",
+"m": "m/word_home-lamp.mp3"
+},
+"sent:home-lamp": {
+"f": "f/sent_home-lamp.mp3",
+"m": "m/sent_home-lamp.mp3"
+},
+"word:home-refrigerator": {
+"f": "f/word_home-refrigerator.mp3",
+"m": "m/word_home-refrigerator.mp3"
+},
+"sent:home-refrigerator": {
+"f": "f/sent_home-refrigerator.mp3",
+"m": "m/sent_home-refrigerator.mp3"
+},
+"word:home-rent": {
+"f": "f/word_home-rent.mp3",
+"m": "m/word_home-rent.mp3"
+},
+"sent:home-rent": {
+"f": "f/sent_home-rent.mp3",
+"m": "m/sent_home-rent.mp3"
+},
+"word:home-neighbor": {
+"f": "f/word_home-neighbor.mp3",
+"m": "m/word_home-neighbor.mp3"
+},
+"sent:home-neighbor": {
+"f": "f/sent_home-neighbor.mp3",
+"m": "m/sent_home-neighbor.mp3"
+},
+"word:home-key": {
+"f": "f/word_home-key.mp3",
+"m": "m/word_home-key.mp3"
+},
+"sent:home-key": {
+"f": "f/sent_home-key.mp3",
+"m": "m/sent_home-key.mp3"
+},
+"word:home-balcony": {
+"f": "f/word_home-balcony.mp3",
+"m": "m/word_home-balcony.mp3"
+},
+"sent:home-balcony": {
+"f": "f/sent_home-balcony.mp3",
+"m": "m/sent_home-balcony.mp3"
+},
+"word:shopping-receipt": {
+"f": "f/word_shopping-receipt.mp3",
+"m": "m/word_shopping-receipt.mp3"
+},
+"sent:shopping-receipt": {
+"f": "f/sent_shopping-receipt.mp3",
+"m": "m/sent_shopping-receipt.mp3"
+},
+"word:shopping-price": {
+"f": "f/word_shopping-price.mp3",
+"m": "m/word_shopping-price.mp3"
+},
+"sent:shopping-price": {
+"f": "f/sent_shopping-price.mp3",
+"m": "m/sent_shopping-price.mp3"
+},
+"word:shopping-discount": {
+"f": "f/word_shopping-discount.mp3",
+"m": "m/word_shopping-discount.mp3"
+},
+"sent:shopping-discount": {
+"f": "f/sent_shopping-discount.mp3",
+"m": "m/sent_shopping-discount.mp3"
+},
+"word:shopping-change": {
+"f": "f/word_shopping-change.mp3",
+"m": "m/word_shopping-change.mp3"
+},
+"sent:shopping-change": {
+"f": "f/sent_shopping-change.mp3",
+"m": "m/sent_shopping-change.mp3"
+},
+"word:shopping-credit-card": {
+"f": "f/word_shopping-credit-card.mp3",
+"m": "m/word_shopping-credit-card.mp3"
+},
+"sent:shopping-credit-card": {
+"f": "f/sent_shopping-credit-card.mp3",
+"m": "m/sent_shopping-credit-card.mp3"
+},
+"word:shopping-cash": {
+"f": "f/word_shopping-cash.mp3",
+"m": "m/word_shopping-cash.mp3"
+},
+"sent:shopping-cash": {
+"f": "f/sent_shopping-cash.mp3",
+"m": "m/sent_shopping-cash.mp3"
+},
+"word:shopping-expensive": {
+"f": "f/word_shopping-expensive.mp3",
+"m": "m/word_shopping-expensive.mp3"
+},
+"sent:shopping-expensive": {
+"f": "f/sent_shopping-expensive.mp3",
+"m": "m/sent_shopping-expensive.mp3"
+},
+"word:shopping-cheap": {
+"f": "f/word_shopping-cheap.mp3",
+"m": "m/word_shopping-cheap.mp3"
+},
+"sent:shopping-cheap": {
+"f": "f/sent_shopping-cheap.mp3",
+"m": "m/sent_shopping-cheap.mp3"
+},
+"word:shopping-bargain": {
+"f": "f/word_shopping-bargain.mp3",
+"m": "m/word_shopping-bargain.mp3"
+},
+"sent:shopping-bargain": {
+"f": "f/sent_shopping-bargain.mp3",
+"m": "m/sent_shopping-bargain.mp3"
+},
+"word:shopping-bank": {
+"f": "f/word_shopping-bank.mp3",
+"m": "m/word_shopping-bank.mp3"
+},
+"sent:shopping-bank": {
+"f": "f/sent_shopping-bank.mp3",
+"m": "m/sent_shopping-bank.mp3"
+},
+"word:shopping-save": {
+"f": "f/word_shopping-save.mp3",
+"m": "m/word_shopping-save.mp3"
+},
+"sent:shopping-save": {
+"f": "f/sent_shopping-save.mp3",
+"m": "m/sent_shopping-save.mp3"
+},
+"word:shopping-wallet": {
+"f": "f/word_shopping-wallet.mp3",
+"m": "m/word_shopping-wallet.mp3"
+},
+"sent:shopping-wallet": {
+"f": "f/sent_shopping-wallet.mp3",
+"m": "m/sent_shopping-wallet.mp3"
+},
+"word:health-fever": {
+"f": "f/word_health-fever.mp3",
+"m": "m/word_health-fever.mp3"
+},
+"sent:health-fever": {
+"f": "f/sent_health-fever.mp3",
+"m": "m/sent_health-fever.mp3"
+},
+"word:health-headache": {
+"f": "f/word_health-headache.mp3",
+"m": "m/word_health-headache.mp3"
+},
+"sent:health-headache": {
+"f": "f/sent_health-headache.mp3",
+"m": "m/sent_health-headache.mp3"
+},
+"word:health-cough": {
+"f": "f/word_health-cough.mp3",
+"m": "m/word_health-cough.mp3"
+},
+"sent:health-cough": {
+"f": "f/sent_health-cough.mp3",
+"m": "m/sent_health-cough.mp3"
+},
+"word:health-sore-throat": {
+"f": "f/word_health-sore-throat.mp3",
+"m": "m/word_health-sore-throat.mp3"
+},
+"sent:health-sore-throat": {
+"f": "f/sent_health-sore-throat.mp3",
+"m": "m/sent_health-sore-throat.mp3"
+},
+"word:health-stomachache": {
+"f": "f/word_health-stomachache.mp3",
+"m": "m/word_health-stomachache.mp3"
+},
+"sent:health-stomachache": {
+"f": "f/sent_health-stomachache.mp3",
+"m": "m/sent_health-stomachache.mp3"
+},
+"word:health-rest": {
+"f": "f/word_health-rest.mp3",
+"m": "m/word_health-rest.mp3"
+},
+"sent:health-rest": {
+"f": "f/sent_health-rest.mp3",
+"m": "m/sent_health-rest.mp3"
+},
+"word:health-ill": {
+"f": "f/word_health-ill.mp3",
+"m": "m/word_health-ill.mp3"
+},
+"sent:health-ill": {
+"f": "f/sent_health-ill.mp3",
+"m": "m/sent_health-ill.mp3"
+},
+"word:health-doctor": {
+"f": "f/word_health-doctor.mp3",
+"m": "m/word_health-doctor.mp3"
+},
+"sent:health-doctor": {
+"f": "f/sent_health-doctor.mp3",
+"m": "m/sent_health-doctor.mp3"
+},
+"word:health-appointment": {
+"f": "f/word_health-appointment.mp3",
+"m": "m/word_health-appointment.mp3"
+},
+"sent:health-appointment": {
+"f": "f/sent_health-appointment.mp3",
+"m": "m/sent_health-appointment.mp3"
+},
+"word:health-medicine": {
+"f": "f/word_health-medicine.mp3",
+"m": "m/word_health-medicine.mp3"
+},
+"sent:health-medicine": {
+"f": "f/sent_health-medicine.mp3",
+"m": "m/sent_health-medicine.mp3"
+},
+"word:health-hurt": {
+"f": "f/word_health-hurt.mp3",
+"m": "m/word_health-hurt.mp3"
+},
+"sent:health-hurt": {
+"f": "f/sent_health-hurt.mp3",
+"m": "m/sent_health-hurt.mp3"
+},
+"word:health-healthy": {
+"f": "f/word_health-healthy.mp3",
+"m": "m/word_health-healthy.mp3"
+},
+"sent:health-healthy": {
+"f": "f/sent_health-healthy.mp3",
+"m": "m/sent_health-healthy.mp3"
+},
+"word:work-meeting": {
+"f": "f/word_work-meeting.mp3",
+"m": "m/word_work-meeting.mp3"
+},
+"sent:work-meeting": {
+"f": "f/sent_work-meeting.mp3",
+"m": "m/sent_work-meeting.mp3"
+},
+"word:work-email": {
+"f": "f/word_work-email.mp3",
+"m": "m/word_work-email.mp3"
+},
+"sent:work-email": {
+"f": "f/sent_work-email.mp3",
+"m": "m/sent_work-email.mp3"
+},
+"word:work-colleague": {
+"f": "f/word_work-colleague.mp3",
+"m": "m/word_work-colleague.mp3"
+},
+"sent:work-colleague": {
+"f": "f/sent_work-colleague.mp3",
+"m": "m/sent_work-colleague.mp3"
+},
+"word:work-boss": {
+"f": "f/word_work-boss.mp3",
+"m": "m/word_work-boss.mp3"
+},
+"sent:work-boss": {
+"f": "f/sent_work-boss.mp3",
+"m": "m/sent_work-boss.mp3"
+},
+"word:work-salary": {
+"f": "f/word_work-salary.mp3",
+"m": "m/word_work-salary.mp3"
+},
+"sent:work-salary": {
+"f": "f/sent_work-salary.mp3",
+"m": "m/sent_work-salary.mp3"
+},
+"word:work-sick-leave": {
+"f": "f/word_work-sick-leave.mp3",
+"m": "m/word_work-sick-leave.mp3"
+},
+"sent:work-sick-leave": {
+"f": "f/sent_work-sick-leave.mp3",
+"m": "m/sent_work-sick-leave.mp3"
+},
+"word:work-apply-for": {
+"f": "f/word_work-apply-for.mp3",
+"m": "m/word_work-apply-for.mp3"
+},
+"sent:work-apply-for": {
+"f": "f/sent_work-apply-for.mp3",
+"m": "m/sent_work-apply-for.mp3"
+},
+"word:work-deadline": {
+"f": "f/word_work-deadline.mp3",
+"m": "m/word_work-deadline.mp3"
+},
+"sent:work-deadline": {
+"f": "f/sent_work-deadline.mp3",
+"m": "m/sent_work-deadline.mp3"
+},
+"word:work-overtime": {
+"f": "f/word_work-overtime.mp3",
+"m": "m/word_work-overtime.mp3"
+},
+"sent:work-overtime": {
+"f": "f/sent_work-overtime.mp3",
+"m": "m/sent_work-overtime.mp3"
+},
+"word:work-interview": {
+"f": "f/word_work-interview.mp3",
+"m": "m/word_work-interview.mp3"
+},
+"sent:work-interview": {
+"f": "f/sent_work-interview.mp3",
+"m": "m/sent_work-interview.mp3"
+},
+"word:work-report": {
+"f": "f/word_work-report.mp3",
+"m": "m/word_work-report.mp3"
+},
+"sent:work-report": {
+"f": "f/sent_work-report.mp3",
+"m": "m/sent_work-report.mp3"
+},
+"word:work-promotion": {
+"f": "f/word_work-promotion.mp3",
+"m": "m/word_work-promotion.mp3"
+},
+"sent:work-promotion": {
+"f": "f/sent_work-promotion.mp3",
+"m": "m/sent_work-promotion.mp3"
+},
+"word:feelings-stressed": {
+"f": "f/word_feelings-stressed.mp3",
+"m": "m/word_feelings-stressed.mp3"
+},
+"sent:feelings-stressed": {
+"f": "f/sent_feelings-stressed.mp3",
+"m": "m/sent_feelings-stressed.mp3"
+},
+"word:feelings-tired": {
+"f": "f/word_feelings-tired.mp3",
+"m": "m/word_feelings-tired.mp3"
+},
+"sent:feelings-tired": {
+"f": "f/sent_feelings-tired.mp3",
+"m": "m/sent_feelings-tired.mp3"
+},
+"word:feelings-proud": {
+"f": "f/word_feelings-proud.mp3",
+"m": "m/word_feelings-proud.mp3"
+},
+"sent:feelings-proud": {
+"f": "f/sent_feelings-proud.mp3",
+"m": "m/sent_feelings-proud.mp3"
+},
+"word:feelings-kind": {
+"f": "f/word_feelings-kind.mp3",
+"m": "m/word_feelings-kind.mp3"
+},
+"sent:feelings-kind": {
+"f": "f/sent_feelings-kind.mp3",
+"m": "m/sent_feelings-kind.mp3"
+},
+"word:feelings-punctual": {
+"f": "f/word_feelings-punctual.mp3",
+"m": "m/word_feelings-punctual.mp3"
+},
+"sent:feelings-punctual": {
+"f": "f/sent_feelings-punctual.mp3",
+"m": "m/sent_feelings-punctual.mp3"
+},
+"word:feelings-shy": {
+"f": "f/word_feelings-shy.mp3",
+"m": "m/word_feelings-shy.mp3"
+},
+"sent:feelings-shy": {
+"f": "f/sent_feelings-shy.mp3",
+"m": "m/sent_feelings-shy.mp3"
+},
+"word:feelings-confident": {
+"f": "f/word_feelings-confident.mp3",
+"m": "m/word_feelings-confident.mp3"
+},
+"sent:feelings-confident": {
+"f": "f/sent_feelings-confident.mp3",
+"m": "m/sent_feelings-confident.mp3"
+},
+"word:feelings-nervous": {
+"f": "f/word_feelings-nervous.mp3",
+"m": "m/word_feelings-nervous.mp3"
+},
+"sent:feelings-nervous": {
+"f": "f/sent_feelings-nervous.mp3",
+"m": "m/sent_feelings-nervous.mp3"
+},
+"word:feelings-friendly": {
+"f": "f/word_feelings-friendly.mp3",
+"m": "m/word_feelings-friendly.mp3"
+},
+"sent:feelings-friendly": {
+"f": "f/sent_feelings-friendly.mp3",
+"m": "m/sent_feelings-friendly.mp3"
+},
+"word:feelings-patient": {
+"f": "f/word_feelings-patient.mp3",
+"m": "m/word_feelings-patient.mp3"
+},
+"sent:feelings-patient": {
+"f": "f/sent_feelings-patient.mp3",
+"m": "m/sent_feelings-patient.mp3"
+},
+"word:feelings-cheerful": {
+"f": "f/word_feelings-cheerful.mp3",
+"m": "m/word_feelings-cheerful.mp3"
+},
+"sent:feelings-cheerful": {
+"f": "f/sent_feelings-cheerful.mp3",
+"m": "m/sent_feelings-cheerful.mp3"
+},
+"word:feelings-worry": {
+"f": "f/word_feelings-worry.mp3",
+"m": "m/word_feelings-worry.mp3"
+},
+"sent:feelings-worry": {
+"f": "f/sent_feelings-worry.mp3",
+"m": "m/sent_feelings-worry.mp3"
+},
+"dlg-cafe:0": {
+"f": "f/dlg-cafe_0.mp3",
+"m": "m/dlg-cafe_0.mp3"
+},
+"dlg-cafe:1": {
+"f": "f/dlg-cafe_1.mp3",
+"m": "m/dlg-cafe_1.mp3"
+},
+"dlg-cafe:2": {
+"f": "f/dlg-cafe_2.mp3",
+"m": "m/dlg-cafe_2.mp3"
+},
+"dlg-cafe:3": {
+"f": "f/dlg-cafe_3.mp3",
+"m": "m/dlg-cafe_3.mp3"
+},
+"dlg-cafe:4": {
+"f": "f/dlg-cafe_4.mp3",
+"m": "m/dlg-cafe_4.mp3"
+},
+"dlg-cafe:5": {
+"f": "f/dlg-cafe_5.mp3",
+"m": "m/dlg-cafe_5.mp3"
+},
+"dlg-cafe:6": {
+"f": "f/dlg-cafe_6.mp3",
+"m": "m/dlg-cafe_6.mp3"
+},
+"dlg-cafe:7": {
+"f": "f/dlg-cafe_7.mp3",
+"m": "m/dlg-cafe_7.mp3"
+},
+"dlg-cafe:8": {
+"f": "f/dlg-cafe_8.mp3",
+"m": "m/dlg-cafe_8.mp3"
+},
+"dlg-restaurant:0": {
+"f": "f/dlg-restaurant_0.mp3",
+"m": "m/dlg-restaurant_0.mp3"
+},
+"dlg-restaurant:1": {
+"f": "f/dlg-restaurant_1.mp3",
+"m": "m/dlg-restaurant_1.mp3"
+},
+"dlg-restaurant:2": {
+"f": "f/dlg-restaurant_2.mp3",
+"m": "m/dlg-restaurant_2.mp3"
+},
+"dlg-restaurant:3": {
+"f": "f/dlg-restaurant_3.mp3",
+"m": "m/dlg-restaurant_3.mp3"
+},
+"dlg-restaurant:4": {
+"f": "f/dlg-restaurant_4.mp3",
+"m": "m/dlg-restaurant_4.mp3"
+},
+"dlg-restaurant:5": {
+"f": "f/dlg-restaurant_5.mp3",
+"m": "m/dlg-restaurant_5.mp3"
+},
+"dlg-restaurant:6": {
+"f": "f/dlg-restaurant_6.mp3",
+"m": "m/dlg-restaurant_6.mp3"
+},
+"dlg-restaurant:7": {
+"f": "f/dlg-restaurant_7.mp3",
+"m": "m/dlg-restaurant_7.mp3"
+},
+"dlg-restaurant:8": {
+"f": "f/dlg-restaurant_8.mp3",
+"m": "m/dlg-restaurant_8.mp3"
+},
+"dlg-restaurant:9": {
+"f": "f/dlg-restaurant_9.mp3",
+"m": "m/dlg-restaurant_9.mp3"
+},
+"dlg-reservation:0": {
+"f": "f/dlg-reservation_0.mp3",
+"m": "m/dlg-reservation_0.mp3"
+},
+"dlg-reservation:1": {
+"f": "f/dlg-reservation_1.mp3",
+"m": "m/dlg-reservation_1.mp3"
+},
+"dlg-reservation:2": {
+"f": "f/dlg-reservation_2.mp3",
+"m": "m/dlg-reservation_2.mp3"
+},
+"dlg-reservation:3": {
+"f": "f/dlg-reservation_3.mp3",
+"m": "m/dlg-reservation_3.mp3"
+},
+"dlg-reservation:4": {
+"f": "f/dlg-reservation_4.mp3",
+"m": "m/dlg-reservation_4.mp3"
+},
+"dlg-reservation:5": {
+"f": "f/dlg-reservation_5.mp3",
+"m": "m/dlg-reservation_5.mp3"
+},
+"dlg-reservation:6": {
+"f": "f/dlg-reservation_6.mp3",
+"m": "m/dlg-reservation_6.mp3"
+},
+"dlg-reservation:7": {
+"f": "f/dlg-reservation_7.mp3",
+"m": "m/dlg-reservation_7.mp3"
+},
+"dlg-reservation:8": {
+"f": "f/dlg-reservation_8.mp3",
+"m": "m/dlg-reservation_8.mp3"
+},
+"dlg-reservation:9": {
+"f": "f/dlg-reservation_9.mp3",
+"m": "m/dlg-reservation_9.mp3"
+},
+"dlg-hotel:0": {
+"f": "f/dlg-hotel_0.mp3",
+"m": "m/dlg-hotel_0.mp3"
+},
+"dlg-hotel:1": {
+"f": "f/dlg-hotel_1.mp3",
+"m": "m/dlg-hotel_1.mp3"
+},
+"dlg-hotel:2": {
+"f": "f/dlg-hotel_2.mp3",
+"m": "m/dlg-hotel_2.mp3"
+},
+"dlg-hotel:3": {
+"f": "f/dlg-hotel_3.mp3",
+"m": "m/dlg-hotel_3.mp3"
+},
+"dlg-hotel:4": {
+"f": "f/dlg-hotel_4.mp3",
+"m": "m/dlg-hotel_4.mp3"
+},
+"dlg-hotel:5": {
+"f": "f/dlg-hotel_5.mp3",
+"m": "m/dlg-hotel_5.mp3"
+},
+"dlg-hotel:6": {
+"f": "f/dlg-hotel_6.mp3",
+"m": "m/dlg-hotel_6.mp3"
+},
+"dlg-hotel:7": {
+"f": "f/dlg-hotel_7.mp3",
+"m": "m/dlg-hotel_7.mp3"
+},
+"dlg-hotel:8": {
+"f": "f/dlg-hotel_8.mp3",
+"m": "m/dlg-hotel_8.mp3"
+},
+"dlg-hotel:9": {
+"f": "f/dlg-hotel_9.mp3",
+"m": "m/dlg-hotel_9.mp3"
+},
+"dlg-directions:0": {
+"f": "f/dlg-directions_0.mp3",
+"m": "m/dlg-directions_0.mp3"
+},
+"dlg-directions:1": {
+"f": "f/dlg-directions_1.mp3",
+"m": "m/dlg-directions_1.mp3"
+},
+"dlg-directions:2": {
+"f": "f/dlg-directions_2.mp3",
+"m": "m/dlg-directions_2.mp3"
+},
+"dlg-directions:3": {
+"f": "f/dlg-directions_3.mp3",
+"m": "m/dlg-directions_3.mp3"
+},
+"dlg-directions:4": {
+"f": "f/dlg-directions_4.mp3",
+"m": "m/dlg-directions_4.mp3"
+},
+"dlg-directions:5": {
+"f": "f/dlg-directions_5.mp3",
+"m": "m/dlg-directions_5.mp3"
+},
+"dlg-directions:6": {
+"f": "f/dlg-directions_6.mp3",
+"m": "m/dlg-directions_6.mp3"
+},
+"dlg-directions:7": {
+"f": "f/dlg-directions_7.mp3",
+"m": "m/dlg-directions_7.mp3"
+},
+"dlg-directions:8": {
+"f": "f/dlg-directions_8.mp3",
+"m": "m/dlg-directions_8.mp3"
+},
+"dlg-directions:9": {
+"f": "f/dlg-directions_9.mp3",
+"m": "m/dlg-directions_9.mp3"
+},
+"dlg-shopping:0": {
+"f": "f/dlg-shopping_0.mp3",
+"m": "m/dlg-shopping_0.mp3"
+},
+"dlg-shopping:1": {
+"f": "f/dlg-shopping_1.mp3",
+"m": "m/dlg-shopping_1.mp3"
+},
+"dlg-shopping:2": {
+"f": "f/dlg-shopping_2.mp3",
+"m": "m/dlg-shopping_2.mp3"
+},
+"dlg-shopping:3": {
+"f": "f/dlg-shopping_3.mp3",
+"m": "m/dlg-shopping_3.mp3"
+},
+"dlg-shopping:4": {
+"f": "f/dlg-shopping_4.mp3",
+"m": "m/dlg-shopping_4.mp3"
+},
+"dlg-shopping:5": {
+"f": "f/dlg-shopping_5.mp3",
+"m": "m/dlg-shopping_5.mp3"
+},
+"dlg-shopping:6": {
+"f": "f/dlg-shopping_6.mp3",
+"m": "m/dlg-shopping_6.mp3"
+},
+"dlg-shopping:7": {
+"f": "f/dlg-shopping_7.mp3",
+"m": "m/dlg-shopping_7.mp3"
+},
+"dlg-shopping:8": {
+"f": "f/dlg-shopping_8.mp3",
+"m": "m/dlg-shopping_8.mp3"
+},
+"dlg-shopping:9": {
+"f": "f/dlg-shopping_9.mp3",
+"m": "m/dlg-shopping_9.mp3"
+},
+"dlg-pharmacy:0": {
+"f": "f/dlg-pharmacy_0.mp3",
+"m": "m/dlg-pharmacy_0.mp3"
+},
+"dlg-pharmacy:1": {
+"f": "f/dlg-pharmacy_1.mp3",
+"m": "m/dlg-pharmacy_1.mp3"
+},
+"dlg-pharmacy:2": {
+"f": "f/dlg-pharmacy_2.mp3",
+"m": "m/dlg-pharmacy_2.mp3"
+},
+"dlg-pharmacy:3": {
+"f": "f/dlg-pharmacy_3.mp3",
+"m": "m/dlg-pharmacy_3.mp3"
+},
+"dlg-pharmacy:4": {
+"f": "f/dlg-pharmacy_4.mp3",
+"m": "m/dlg-pharmacy_4.mp3"
+},
+"dlg-pharmacy:5": {
+"f": "f/dlg-pharmacy_5.mp3",
+"m": "m/dlg-pharmacy_5.mp3"
+},
+"dlg-pharmacy:6": {
+"f": "f/dlg-pharmacy_6.mp3",
+"m": "m/dlg-pharmacy_6.mp3"
+},
+"dlg-pharmacy:7": {
+"f": "f/dlg-pharmacy_7.mp3",
+"m": "m/dlg-pharmacy_7.mp3"
+},
+"dlg-pharmacy:8": {
+"f": "f/dlg-pharmacy_8.mp3",
+"m": "m/dlg-pharmacy_8.mp3"
+},
+"dlg-pharmacy:9": {
+"f": "f/dlg-pharmacy_9.mp3",
+"m": "m/dlg-pharmacy_9.mp3"
+},
+"dlg-office:0": {
+"f": "f/dlg-office_0.mp3",
+"m": "m/dlg-office_0.mp3"
+},
+"dlg-office:1": {
+"f": "f/dlg-office_1.mp3",
+"m": "m/dlg-office_1.mp3"
+},
+"dlg-office:2": {
+"f": "f/dlg-office_2.mp3",
+"m": "m/dlg-office_2.mp3"
+},
+"dlg-office:3": {
+"f": "f/dlg-office_3.mp3",
+"m": "m/dlg-office_3.mp3"
+},
+"dlg-office:4": {
+"f": "f/dlg-office_4.mp3",
+"m": "m/dlg-office_4.mp3"
+},
+"dlg-office:5": {
+"f": "f/dlg-office_5.mp3",
+"m": "m/dlg-office_5.mp3"
+},
+"dlg-office:6": {
+"f": "f/dlg-office_6.mp3",
+"m": "m/dlg-office_6.mp3"
+},
+"dlg-office:7": {
+"f": "f/dlg-office_7.mp3",
+"m": "m/dlg-office_7.mp3"
+},
+"dlg-office:8": {
+"f": "f/dlg-office_8.mp3",
+"m": "m/dlg-office_8.mp3"
+},
+"dlg-office:9": {
+"f": "f/dlg-office_9.mp3",
+"m": "m/dlg-office_9.mp3"
+},
+"kp:dlg-cafe:0:0": {
+"f": "f/kp_dlg-cafe_0_0.mp3",
+"m": "m/kp_dlg-cafe_0_0.mp3"
+},
+"kp:dlg-cafe:0:1": {
+"f": "f/kp_dlg-cafe_0_1.mp3",
+"m": "m/kp_dlg-cafe_0_1.mp3"
+},
+"kp:dlg-cafe:1:0": {
+"f": "f/kp_dlg-cafe_1_0.mp3",
+"m": "m/kp_dlg-cafe_1_0.mp3"
+},
+"kp:dlg-cafe:1:1": {
+"f": "f/kp_dlg-cafe_1_1.mp3",
+"m": "m/kp_dlg-cafe_1_1.mp3"
+},
+"kp:dlg-cafe:1:2": {
+"f": "f/kp_dlg-cafe_1_2.mp3",
+"m": "m/kp_dlg-cafe_1_2.mp3"
+},
+"alt:dlg-cafe:1:0": {
+"f": "f/alt_dlg-cafe_1_0.mp3",
+"m": "m/alt_dlg-cafe_1_0.mp3"
+},
+"alt:dlg-cafe:1:1": {
+"f": "f/alt_dlg-cafe_1_1.mp3",
+"m": "m/alt_dlg-cafe_1_1.mp3"
+},
+"kp:dlg-cafe:2:0": {
+"f": "f/kp_dlg-cafe_2_0.mp3",
+"m": "m/kp_dlg-cafe_2_0.mp3"
+},
+"kp:dlg-cafe:2:1": {
+"f": "f/kp_dlg-cafe_2_1.mp3",
+"m": "m/kp_dlg-cafe_2_1.mp3"
+},
+"kp:dlg-cafe:3:0": {
+"f": "f/kp_dlg-cafe_3_0.mp3",
+"m": "m/kp_dlg-cafe_3_0.mp3"
+},
+"kp:dlg-cafe:3:1": {
+"f": "f/kp_dlg-cafe_3_1.mp3",
+"m": "m/kp_dlg-cafe_3_1.mp3"
+},
+"alt:dlg-cafe:3:0": {
+"f": "f/alt_dlg-cafe_3_0.mp3",
+"m": "m/alt_dlg-cafe_3_0.mp3"
+},
+"alt:dlg-cafe:3:1": {
+"f": "f/alt_dlg-cafe_3_1.mp3",
+"m": "m/alt_dlg-cafe_3_1.mp3"
+},
+"kp:dlg-cafe:4:0": {
+"f": "f/kp_dlg-cafe_4_0.mp3",
+"m": "m/kp_dlg-cafe_4_0.mp3"
+},
+"kp:dlg-cafe:4:1": {
+"f": "f/kp_dlg-cafe_4_1.mp3",
+"m": "m/kp_dlg-cafe_4_1.mp3"
+},
+"kp:dlg-cafe:5:0": {
+"f": "f/kp_dlg-cafe_5_0.mp3",
+"m": "m/kp_dlg-cafe_5_0.mp3"
+},
+"kp:dlg-cafe:5:1": {
+"f": "f/kp_dlg-cafe_5_1.mp3",
+"m": "m/kp_dlg-cafe_5_1.mp3"
+},
+"alt:dlg-cafe:5:0": {
+"f": "f/alt_dlg-cafe_5_0.mp3",
+"m": "m/alt_dlg-cafe_5_0.mp3"
+},
+"alt:dlg-cafe:5:1": {
+"f": "f/alt_dlg-cafe_5_1.mp3",
+"m": "m/alt_dlg-cafe_5_1.mp3"
+},
+"kp:dlg-cafe:6:0": {
+"f": "f/kp_dlg-cafe_6_0.mp3",
+"m": "m/kp_dlg-cafe_6_0.mp3"
+},
+"kp:dlg-cafe:7:0": {
+"f": "f/kp_dlg-cafe_7_0.mp3",
+"m": "m/kp_dlg-cafe_7_0.mp3"
+},
+"kp:dlg-cafe:7:1": {
+"f": "f/kp_dlg-cafe_7_1.mp3",
+"m": "m/kp_dlg-cafe_7_1.mp3"
+},
+"alt:dlg-cafe:7:0": {
+"f": "f/alt_dlg-cafe_7_0.mp3",
+"m": "m/alt_dlg-cafe_7_0.mp3"
+},
+"alt:dlg-cafe:7:1": {
+"f": "f/alt_dlg-cafe_7_1.mp3",
+"m": "m/alt_dlg-cafe_7_1.mp3"
+},
+"kp:dlg-cafe:8:0": {
+"f": "f/kp_dlg-cafe_8_0.mp3",
+"m": "m/kp_dlg-cafe_8_0.mp3"
+},
+"kp:dlg-cafe:8:1": {
+"f": "f/kp_dlg-cafe_8_1.mp3",
+"m": "m/kp_dlg-cafe_8_1.mp3"
+},
+"kp:dlg-restaurant:0:0": {
+"f": "f/kp_dlg-restaurant_0_0.mp3",
+"m": "m/kp_dlg-restaurant_0_0.mp3"
+},
+"kp:dlg-restaurant:0:1": {
+"f": "f/kp_dlg-restaurant_0_1.mp3",
+"m": "m/kp_dlg-restaurant_0_1.mp3"
+},
+"kp:dlg-restaurant:1:0": {
+"f": "f/kp_dlg-restaurant_1_0.mp3",
+"m": "m/kp_dlg-restaurant_1_0.mp3"
+},
+"alt:dlg-restaurant:1:0": {
+"f": "f/alt_dlg-restaurant_1_0.mp3",
+"m": "m/alt_dlg-restaurant_1_0.mp3"
+},
+"alt:dlg-restaurant:1:1": {
+"f": "f/alt_dlg-restaurant_1_1.mp3",
+"m": "m/alt_dlg-restaurant_1_1.mp3"
+},
+"kp:dlg-restaurant:2:0": {
+"f": "f/kp_dlg-restaurant_2_0.mp3",
+"m": "m/kp_dlg-restaurant_2_0.mp3"
+},
+"kp:dlg-restaurant:2:1": {
+"f": "f/kp_dlg-restaurant_2_1.mp3",
+"m": "m/kp_dlg-restaurant_2_1.mp3"
+},
+"kp:dlg-restaurant:3:0": {
+"f": "f/kp_dlg-restaurant_3_0.mp3",
+"m": "m/kp_dlg-restaurant_3_0.mp3"
+},
+"kp:dlg-restaurant:3:1": {
+"f": "f/kp_dlg-restaurant_3_1.mp3",
+"m": "m/kp_dlg-restaurant_3_1.mp3"
+},
+"alt:dlg-restaurant:3:0": {
+"f": "f/alt_dlg-restaurant_3_0.mp3",
+"m": "m/alt_dlg-restaurant_3_0.mp3"
+},
+"alt:dlg-restaurant:3:1": {
+"f": "f/alt_dlg-restaurant_3_1.mp3",
+"m": "m/alt_dlg-restaurant_3_1.mp3"
+},
+"kp:dlg-restaurant:4:0": {
+"f": "f/kp_dlg-restaurant_4_0.mp3",
+"m": "m/kp_dlg-restaurant_4_0.mp3"
+},
+"kp:dlg-restaurant:4:1": {
+"f": "f/kp_dlg-restaurant_4_1.mp3",
+"m": "m/kp_dlg-restaurant_4_1.mp3"
+},
+"kp:dlg-restaurant:5:0": {
+"f": "f/kp_dlg-restaurant_5_0.mp3",
+"m": "m/kp_dlg-restaurant_5_0.mp3"
+},
+"kp:dlg-restaurant:5:1": {
+"f": "f/kp_dlg-restaurant_5_1.mp3",
+"m": "m/kp_dlg-restaurant_5_1.mp3"
+},
+"alt:dlg-restaurant:5:0": {
+"f": "f/alt_dlg-restaurant_5_0.mp3",
+"m": "m/alt_dlg-restaurant_5_0.mp3"
+},
+"alt:dlg-restaurant:5:1": {
+"f": "f/alt_dlg-restaurant_5_1.mp3",
+"m": "m/alt_dlg-restaurant_5_1.mp3"
+},
+"kp:dlg-restaurant:6:0": {
+"f": "f/kp_dlg-restaurant_6_0.mp3",
+"m": "m/kp_dlg-restaurant_6_0.mp3"
+},
+"kp:dlg-restaurant:6:1": {
+"f": "f/kp_dlg-restaurant_6_1.mp3",
+"m": "m/kp_dlg-restaurant_6_1.mp3"
+},
+"kp:dlg-restaurant:7:0": {
+"f": "f/kp_dlg-restaurant_7_0.mp3",
+"m": "m/kp_dlg-restaurant_7_0.mp3"
+},
+"kp:dlg-restaurant:7:1": {
+"f": "f/kp_dlg-restaurant_7_1.mp3",
+"m": "m/kp_dlg-restaurant_7_1.mp3"
+},
+"alt:dlg-restaurant:7:0": {
+"f": "f/alt_dlg-restaurant_7_0.mp3",
+"m": "m/alt_dlg-restaurant_7_0.mp3"
+},
+"alt:dlg-restaurant:7:1": {
+"f": "f/alt_dlg-restaurant_7_1.mp3",
+"m": "m/alt_dlg-restaurant_7_1.mp3"
+},
+"kp:dlg-restaurant:8:0": {
+"f": "f/kp_dlg-restaurant_8_0.mp3",
+"m": "m/kp_dlg-restaurant_8_0.mp3"
+},
+"kp:dlg-restaurant:8:1": {
+"f": "f/kp_dlg-restaurant_8_1.mp3",
+"m": "m/kp_dlg-restaurant_8_1.mp3"
+},
+"kp:dlg-restaurant:9:0": {
+"f": "f/kp_dlg-restaurant_9_0.mp3",
+"m": "m/kp_dlg-restaurant_9_0.mp3"
+},
+"kp:dlg-restaurant:9:1": {
+"f": "f/kp_dlg-restaurant_9_1.mp3",
+"m": "m/kp_dlg-restaurant_9_1.mp3"
+},
+"alt:dlg-restaurant:9:0": {
+"f": "f/alt_dlg-restaurant_9_0.mp3",
+"m": "m/alt_dlg-restaurant_9_0.mp3"
+},
+"alt:dlg-restaurant:9:1": {
+"f": "f/alt_dlg-restaurant_9_1.mp3",
+"m": "m/alt_dlg-restaurant_9_1.mp3"
+},
+"kp:dlg-reservation:0:0": {
+"f": "f/kp_dlg-reservation_0_0.mp3",
+"m": "m/kp_dlg-reservation_0_0.mp3"
+},
+"kp:dlg-reservation:1:0": {
+"f": "f/kp_dlg-reservation_1_0.mp3",
+"m": "m/kp_dlg-reservation_1_0.mp3"
+},
+"kp:dlg-reservation:1:1": {
+"f": "f/kp_dlg-reservation_1_1.mp3",
+"m": "m/kp_dlg-reservation_1_1.mp3"
+},
+"alt:dlg-reservation:1:0": {
+"f": "f/alt_dlg-reservation_1_0.mp3",
+"m": "m/alt_dlg-reservation_1_0.mp3"
+},
+"alt:dlg-reservation:1:1": {
+"f": "f/alt_dlg-reservation_1_1.mp3",
+"m": "m/alt_dlg-reservation_1_1.mp3"
+},
+"kp:dlg-reservation:2:0": {
+"f": "f/kp_dlg-reservation_2_0.mp3",
+"m": "m/kp_dlg-reservation_2_0.mp3"
+},
+"kp:dlg-reservation:3:0": {
+"f": "f/kp_dlg-reservation_3_0.mp3",
+"m": "m/kp_dlg-reservation_3_0.mp3"
+},
+"kp:dlg-reservation:3:1": {
+"f": "f/kp_dlg-reservation_3_1.mp3",
+"m": "m/kp_dlg-reservation_3_1.mp3"
+},
+"alt:dlg-reservation:3:0": {
+"f": "f/alt_dlg-reservation_3_0.mp3",
+"m": "m/alt_dlg-reservation_3_0.mp3"
+},
+"alt:dlg-reservation:3:1": {
+"f": "f/alt_dlg-reservation_3_1.mp3",
+"m": "m/alt_dlg-reservation_3_1.mp3"
+},
+"kp:dlg-reservation:4:0": {
+"f": "f/kp_dlg-reservation_4_0.mp3",
+"m": "m/kp_dlg-reservation_4_0.mp3"
+},
+"kp:dlg-reservation:4:1": {
+"f": "f/kp_dlg-reservation_4_1.mp3",
+"m": "m/kp_dlg-reservation_4_1.mp3"
+},
+"kp:dlg-reservation:5:0": {
+"f": "f/kp_dlg-reservation_5_0.mp3",
+"m": "m/kp_dlg-reservation_5_0.mp3"
+},
+"alt:dlg-reservation:5:0": {
+"f": "f/alt_dlg-reservation_5_0.mp3",
+"m": "m/alt_dlg-reservation_5_0.mp3"
+},
+"alt:dlg-reservation:5:1": {
+"f": "f/alt_dlg-reservation_5_1.mp3",
+"m": "m/alt_dlg-reservation_5_1.mp3"
+},
+"kp:dlg-reservation:6:0": {
+"f": "f/kp_dlg-reservation_6_0.mp3",
+"m": "m/kp_dlg-reservation_6_0.mp3"
+},
+"kp:dlg-reservation:6:1": {
+"f": "f/kp_dlg-reservation_6_1.mp3",
+"m": "m/kp_dlg-reservation_6_1.mp3"
+},
+"kp:dlg-reservation:7:0": {
+"f": "f/kp_dlg-reservation_7_0.mp3",
+"m": "m/kp_dlg-reservation_7_0.mp3"
+},
+"alt:dlg-reservation:7:0": {
+"f": "f/alt_dlg-reservation_7_0.mp3",
+"m": "m/alt_dlg-reservation_7_0.mp3"
+},
+"alt:dlg-reservation:7:1": {
+"f": "f/alt_dlg-reservation_7_1.mp3",
+"m": "m/alt_dlg-reservation_7_1.mp3"
+},
+"kp:dlg-reservation:8:0": {
+"f": "f/kp_dlg-reservation_8_0.mp3",
+"m": "m/kp_dlg-reservation_8_0.mp3"
+},
+"kp:dlg-reservation:8:1": {
+"f": "f/kp_dlg-reservation_8_1.mp3",
+"m": "m/kp_dlg-reservation_8_1.mp3"
+},
+"kp:dlg-reservation:9:0": {
+"f": "f/kp_dlg-reservation_9_0.mp3",
+"m": "m/kp_dlg-reservation_9_0.mp3"
+},
+"alt:dlg-reservation:9:0": {
+"f": "f/alt_dlg-reservation_9_0.mp3",
+"m": "m/alt_dlg-reservation_9_0.mp3"
+},
+"alt:dlg-reservation:9:1": {
+"f": "f/alt_dlg-reservation_9_1.mp3",
+"m": "m/alt_dlg-reservation_9_1.mp3"
+},
+"kp:dlg-hotel:0:0": {
+"f": "f/kp_dlg-hotel_0_0.mp3",
+"m": "m/kp_dlg-hotel_0_0.mp3"
+},
+"kp:dlg-hotel:1:0": {
+"f": "f/kp_dlg-hotel_1_0.mp3",
+"m": "m/kp_dlg-hotel_1_0.mp3"
+},
+"kp:dlg-hotel:1:1": {
+"f": "f/kp_dlg-hotel_1_1.mp3",
+"m": "m/kp_dlg-hotel_1_1.mp3"
+},
+"alt:dlg-hotel:1:0": {
+"f": "f/alt_dlg-hotel_1_0.mp3",
+"m": "m/alt_dlg-hotel_1_0.mp3"
+},
+"alt:dlg-hotel:1:1": {
+"f": "f/alt_dlg-hotel_1_1.mp3",
+"m": "m/alt_dlg-hotel_1_1.mp3"
+},
+"kp:dlg-hotel:2:0": {
+"f": "f/kp_dlg-hotel_2_0.mp3",
+"m": "m/kp_dlg-hotel_2_0.mp3"
+},
+"kp:dlg-hotel:3:0": {
+"f": "f/kp_dlg-hotel_3_0.mp3",
+"m": "m/kp_dlg-hotel_3_0.mp3"
+},
+"kp:dlg-hotel:3:1": {
+"f": "f/kp_dlg-hotel_3_1.mp3",
+"m": "m/kp_dlg-hotel_3_1.mp3"
+},
+"alt:dlg-hotel:3:0": {
+"f": "f/alt_dlg-hotel_3_0.mp3",
+"m": "m/alt_dlg-hotel_3_0.mp3"
+},
+"alt:dlg-hotel:3:1": {
+"f": "f/alt_dlg-hotel_3_1.mp3",
+"m": "m/alt_dlg-hotel_3_1.mp3"
+},
+"kp:dlg-hotel:4:0": {
+"f": "f/kp_dlg-hotel_4_0.mp3",
+"m": "m/kp_dlg-hotel_4_0.mp3"
+},
+"kp:dlg-hotel:5:0": {
+"f": "f/kp_dlg-hotel_5_0.mp3",
+"m": "m/kp_dlg-hotel_5_0.mp3"
+},
+"kp:dlg-hotel:5:1": {
+"f": "f/kp_dlg-hotel_5_1.mp3",
+"m": "m/kp_dlg-hotel_5_1.mp3"
+},
+"alt:dlg-hotel:5:0": {
+"f": "f/alt_dlg-hotel_5_0.mp3",
+"m": "m/alt_dlg-hotel_5_0.mp3"
+},
+"alt:dlg-hotel:5:1": {
+"f": "f/alt_dlg-hotel_5_1.mp3",
+"m": "m/alt_dlg-hotel_5_1.mp3"
+},
+"kp:dlg-hotel:6:0": {
+"f": "f/kp_dlg-hotel_6_0.mp3",
+"m": "m/kp_dlg-hotel_6_0.mp3"
+},
+"kp:dlg-hotel:6:1": {
+"f": "f/kp_dlg-hotel_6_1.mp3",
+"m": "m/kp_dlg-hotel_6_1.mp3"
+},
+"kp:dlg-hotel:7:0": {
+"f": "f/kp_dlg-hotel_7_0.mp3",
+"m": "m/kp_dlg-hotel_7_0.mp3"
+},
+"alt:dlg-hotel:7:0": {
+"f": "f/alt_dlg-hotel_7_0.mp3",
+"m": "m/alt_dlg-hotel_7_0.mp3"
+},
+"alt:dlg-hotel:7:1": {
+"f": "f/alt_dlg-hotel_7_1.mp3",
+"m": "m/alt_dlg-hotel_7_1.mp3"
+},
+"kp:dlg-hotel:8:0": {
+"f": "f/kp_dlg-hotel_8_0.mp3",
+"m": "m/kp_dlg-hotel_8_0.mp3"
+},
+"kp:dlg-hotel:8:1": {
+"f": "f/kp_dlg-hotel_8_1.mp3",
+"m": "m/kp_dlg-hotel_8_1.mp3"
+},
+"kp:dlg-hotel:9:0": {
+"f": "f/kp_dlg-hotel_9_0.mp3",
+"m": "m/kp_dlg-hotel_9_0.mp3"
+},
+"kp:dlg-hotel:9:1": {
+"f": "f/kp_dlg-hotel_9_1.mp3",
+"m": "m/kp_dlg-hotel_9_1.mp3"
+},
+"alt:dlg-hotel:9:0": {
+"f": "f/alt_dlg-hotel_9_0.mp3",
+"m": "m/alt_dlg-hotel_9_0.mp3"
+},
+"alt:dlg-hotel:9:1": {
+"f": "f/alt_dlg-hotel_9_1.mp3",
+"m": "m/alt_dlg-hotel_9_1.mp3"
+},
+"kp:dlg-directions:0:0": {
+"f": "f/kp_dlg-directions_0_0.mp3",
+"m": "m/kp_dlg-directions_0_0.mp3"
+},
+"kp:dlg-directions:0:1": {
+"f": "f/kp_dlg-directions_0_1.mp3",
+"m": "m/kp_dlg-directions_0_1.mp3"
+},
+"kp:dlg-directions:1:0": {
+"f": "f/kp_dlg-directions_1_0.mp3",
+"m": "m/kp_dlg-directions_1_0.mp3"
+},
+"kp:dlg-directions:1:1": {
+"f": "f/kp_dlg-directions_1_1.mp3",
+"m": "m/kp_dlg-directions_1_1.mp3"
+},
+"alt:dlg-directions:1:0": {
+"f": "f/alt_dlg-directions_1_0.mp3",
+"m": "m/alt_dlg-directions_1_0.mp3"
+},
+"alt:dlg-directions:1:1": {
+"f": "f/alt_dlg-directions_1_1.mp3",
+"m": "m/alt_dlg-directions_1_1.mp3"
+},
+"kp:dlg-directions:2:0": {
+"f": "f/kp_dlg-directions_2_0.mp3",
+"m": "m/kp_dlg-directions_2_0.mp3"
+},
+"kp:dlg-directions:2:1": {
+"f": "f/kp_dlg-directions_2_1.mp3",
+"m": "m/kp_dlg-directions_2_1.mp3"
+},
+"kp:dlg-directions:3:0": {
+"f": "f/kp_dlg-directions_3_0.mp3",
+"m": "m/kp_dlg-directions_3_0.mp3"
+},
+"alt:dlg-directions:3:0": {
+"f": "f/alt_dlg-directions_3_0.mp3",
+"m": "m/alt_dlg-directions_3_0.mp3"
+},
+"alt:dlg-directions:3:1": {
+"f": "f/alt_dlg-directions_3_1.mp3",
+"m": "m/alt_dlg-directions_3_1.mp3"
+},
+"kp:dlg-directions:4:0": {
+"f": "f/kp_dlg-directions_4_0.mp3",
+"m": "m/kp_dlg-directions_4_0.mp3"
+},
+"kp:dlg-directions:4:1": {
+"f": "f/kp_dlg-directions_4_1.mp3",
+"m": "m/kp_dlg-directions_4_1.mp3"
+},
+"kp:dlg-directions:4:2": {
+"f": "f/kp_dlg-directions_4_2.mp3",
+"m": "m/kp_dlg-directions_4_2.mp3"
+},
+"kp:dlg-directions:5:0": {
+"f": "f/kp_dlg-directions_5_0.mp3",
+"m": "m/kp_dlg-directions_5_0.mp3"
+},
+"kp:dlg-directions:5:1": {
+"f": "f/kp_dlg-directions_5_1.mp3",
+"m": "m/kp_dlg-directions_5_1.mp3"
+},
+"alt:dlg-directions:5:0": {
+"f": "f/alt_dlg-directions_5_0.mp3",
+"m": "m/alt_dlg-directions_5_0.mp3"
+},
+"alt:dlg-directions:5:1": {
+"f": "f/alt_dlg-directions_5_1.mp3",
+"m": "m/alt_dlg-directions_5_1.mp3"
+},
+"kp:dlg-directions:6:0": {
+"f": "f/kp_dlg-directions_6_0.mp3",
+"m": "m/kp_dlg-directions_6_0.mp3"
+},
+"kp:dlg-directions:6:1": {
+"f": "f/kp_dlg-directions_6_1.mp3",
+"m": "m/kp_dlg-directions_6_1.mp3"
+},
+"kp:dlg-directions:7:0": {
+"f": "f/kp_dlg-directions_7_0.mp3",
+"m": "m/kp_dlg-directions_7_0.mp3"
+},
+"alt:dlg-directions:7:0": {
+"f": "f/alt_dlg-directions_7_0.mp3",
+"m": "m/alt_dlg-directions_7_0.mp3"
+},
+"alt:dlg-directions:7:1": {
+"f": "f/alt_dlg-directions_7_1.mp3",
+"m": "m/alt_dlg-directions_7_1.mp3"
+},
+"kp:dlg-directions:8:0": {
+"f": "f/kp_dlg-directions_8_0.mp3",
+"m": "m/kp_dlg-directions_8_0.mp3"
+},
+"kp:dlg-directions:8:1": {
+"f": "f/kp_dlg-directions_8_1.mp3",
+"m": "m/kp_dlg-directions_8_1.mp3"
+},
+"kp:dlg-directions:9:0": {
+"f": "f/kp_dlg-directions_9_0.mp3",
+"m": "m/kp_dlg-directions_9_0.mp3"
+},
+"kp:dlg-directions:9:1": {
+"f": "f/kp_dlg-directions_9_1.mp3",
+"m": "m/kp_dlg-directions_9_1.mp3"
+},
+"alt:dlg-directions:9:0": {
+"f": "f/alt_dlg-directions_9_0.mp3",
+"m": "m/alt_dlg-directions_9_0.mp3"
+},
+"alt:dlg-directions:9:1": {
+"f": "f/alt_dlg-directions_9_1.mp3",
+"m": "m/alt_dlg-directions_9_1.mp3"
+},
+"kp:dlg-shopping:0:0": {
+"f": "f/kp_dlg-shopping_0_0.mp3",
+"m": "m/kp_dlg-shopping_0_0.mp3"
+},
+"kp:dlg-shopping:1:0": {
+"f": "f/kp_dlg-shopping_1_0.mp3",
+"m": "m/kp_dlg-shopping_1_0.mp3"
+},
+"kp:dlg-shopping:1:1": {
+"f": "f/kp_dlg-shopping_1_1.mp3",
+"m": "m/kp_dlg-shopping_1_1.mp3"
+},
+"alt:dlg-shopping:1:0": {
+"f": "f/alt_dlg-shopping_1_0.mp3",
+"m": "m/alt_dlg-shopping_1_0.mp3"
+},
+"alt:dlg-shopping:1:1": {
+"f": "f/alt_dlg-shopping_1_1.mp3",
+"m": "m/alt_dlg-shopping_1_1.mp3"
+},
+"kp:dlg-shopping:2:0": {
+"f": "f/kp_dlg-shopping_2_0.mp3",
+"m": "m/kp_dlg-shopping_2_0.mp3"
+},
+"kp:dlg-shopping:3:0": {
+"f": "f/kp_dlg-shopping_3_0.mp3",
+"m": "m/kp_dlg-shopping_3_0.mp3"
+},
+"kp:dlg-shopping:3:1": {
+"f": "f/kp_dlg-shopping_3_1.mp3",
+"m": "m/kp_dlg-shopping_3_1.mp3"
+},
+"alt:dlg-shopping:3:0": {
+"f": "f/alt_dlg-shopping_3_0.mp3",
+"m": "m/alt_dlg-shopping_3_0.mp3"
+},
+"alt:dlg-shopping:3:1": {
+"f": "f/alt_dlg-shopping_3_1.mp3",
+"m": "m/alt_dlg-shopping_3_1.mp3"
+},
+"kp:dlg-shopping:4:0": {
+"f": "f/kp_dlg-shopping_4_0.mp3",
+"m": "m/kp_dlg-shopping_4_0.mp3"
+},
+"kp:dlg-shopping:4:1": {
+"f": "f/kp_dlg-shopping_4_1.mp3",
+"m": "m/kp_dlg-shopping_4_1.mp3"
+},
+"kp:dlg-shopping:5:0": {
+"f": "f/kp_dlg-shopping_5_0.mp3",
+"m": "m/kp_dlg-shopping_5_0.mp3"
+},
+"kp:dlg-shopping:5:1": {
+"f": "f/kp_dlg-shopping_5_1.mp3",
+"m": "m/kp_dlg-shopping_5_1.mp3"
+},
+"alt:dlg-shopping:5:0": {
+"f": "f/alt_dlg-shopping_5_0.mp3",
+"m": "m/alt_dlg-shopping_5_0.mp3"
+},
+"alt:dlg-shopping:5:1": {
+"f": "f/alt_dlg-shopping_5_1.mp3",
+"m": "m/alt_dlg-shopping_5_1.mp3"
+},
+"kp:dlg-shopping:6:0": {
+"f": "f/kp_dlg-shopping_6_0.mp3",
+"m": "m/kp_dlg-shopping_6_0.mp3"
+},
+"kp:dlg-shopping:6:1": {
+"f": "f/kp_dlg-shopping_6_1.mp3",
+"m": "m/kp_dlg-shopping_6_1.mp3"
+},
+"kp:dlg-shopping:7:0": {
+"f": "f/kp_dlg-shopping_7_0.mp3",
+"m": "m/kp_dlg-shopping_7_0.mp3"
+},
+"alt:dlg-shopping:7:0": {
+"f": "f/alt_dlg-shopping_7_0.mp3",
+"m": "m/alt_dlg-shopping_7_0.mp3"
+},
+"alt:dlg-shopping:7:1": {
+"f": "f/alt_dlg-shopping_7_1.mp3",
+"m": "m/alt_dlg-shopping_7_1.mp3"
+},
+"kp:dlg-shopping:8:0": {
+"f": "f/kp_dlg-shopping_8_0.mp3",
+"m": "m/kp_dlg-shopping_8_0.mp3"
+},
+"kp:dlg-shopping:8:1": {
+"f": "f/kp_dlg-shopping_8_1.mp3",
+"m": "m/kp_dlg-shopping_8_1.mp3"
+},
+"kp:dlg-shopping:9:0": {
+"f": "f/kp_dlg-shopping_9_0.mp3",
+"m": "m/kp_dlg-shopping_9_0.mp3"
+},
+"kp:dlg-shopping:9:1": {
+"f": "f/kp_dlg-shopping_9_1.mp3",
+"m": "m/kp_dlg-shopping_9_1.mp3"
+},
+"alt:dlg-shopping:9:0": {
+"f": "f/alt_dlg-shopping_9_0.mp3",
+"m": "m/alt_dlg-shopping_9_0.mp3"
+},
+"alt:dlg-shopping:9:1": {
+"f": "f/alt_dlg-shopping_9_1.mp3",
+"m": "m/alt_dlg-shopping_9_1.mp3"
+},
+"kp:dlg-pharmacy:0:0": {
+"f": "f/kp_dlg-pharmacy_0_0.mp3",
+"m": "m/kp_dlg-pharmacy_0_0.mp3"
+},
+"kp:dlg-pharmacy:1:0": {
+"f": "f/kp_dlg-pharmacy_1_0.mp3",
+"m": "m/kp_dlg-pharmacy_1_0.mp3"
+},
+"kp:dlg-pharmacy:1:1": {
+"f": "f/kp_dlg-pharmacy_1_1.mp3",
+"m": "m/kp_dlg-pharmacy_1_1.mp3"
+},
+"kp:dlg-pharmacy:1:2": {
+"f": "f/kp_dlg-pharmacy_1_2.mp3",
+"m": "m/kp_dlg-pharmacy_1_2.mp3"
+},
+"alt:dlg-pharmacy:1:0": {
+"f": "f/alt_dlg-pharmacy_1_0.mp3",
+"m": "m/alt_dlg-pharmacy_1_0.mp3"
+},
+"alt:dlg-pharmacy:1:1": {
+"f": "f/alt_dlg-pharmacy_1_1.mp3",
+"m": "m/alt_dlg-pharmacy_1_1.mp3"
+},
+"kp:dlg-pharmacy:2:0": {
+"f": "f/kp_dlg-pharmacy_2_0.mp3",
+"m": "m/kp_dlg-pharmacy_2_0.mp3"
+},
+"kp:dlg-pharmacy:3:0": {
+"f": "f/kp_dlg-pharmacy_3_0.mp3",
+"m": "m/kp_dlg-pharmacy_3_0.mp3"
+},
+"kp:dlg-pharmacy:3:1": {
+"f": "f/kp_dlg-pharmacy_3_1.mp3",
+"m": "m/kp_dlg-pharmacy_3_1.mp3"
+},
+"alt:dlg-pharmacy:3:0": {
+"f": "f/alt_dlg-pharmacy_3_0.mp3",
+"m": "m/alt_dlg-pharmacy_3_0.mp3"
+},
+"alt:dlg-pharmacy:3:1": {
+"f": "f/alt_dlg-pharmacy_3_1.mp3",
+"m": "m/alt_dlg-pharmacy_3_1.mp3"
+},
+"kp:dlg-pharmacy:4:0": {
+"f": "f/kp_dlg-pharmacy_4_0.mp3",
+"m": "m/kp_dlg-pharmacy_4_0.mp3"
+},
+"kp:dlg-pharmacy:4:1": {
+"f": "f/kp_dlg-pharmacy_4_1.mp3",
+"m": "m/kp_dlg-pharmacy_4_1.mp3"
+},
+"kp:dlg-pharmacy:5:0": {
+"f": "f/kp_dlg-pharmacy_5_0.mp3",
+"m": "m/kp_dlg-pharmacy_5_0.mp3"
+},
+"kp:dlg-pharmacy:5:1": {
+"f": "f/kp_dlg-pharmacy_5_1.mp3",
+"m": "m/kp_dlg-pharmacy_5_1.mp3"
+},
+"kp:dlg-pharmacy:5:2": {
+"f": "f/kp_dlg-pharmacy_5_2.mp3",
+"m": "m/kp_dlg-pharmacy_5_2.mp3"
+},
+"alt:dlg-pharmacy:5:0": {
+"f": "f/alt_dlg-pharmacy_5_0.mp3",
+"m": "m/alt_dlg-pharmacy_5_0.mp3"
+},
+"alt:dlg-pharmacy:5:1": {
+"f": "f/alt_dlg-pharmacy_5_1.mp3",
+"m": "m/alt_dlg-pharmacy_5_1.mp3"
+},
+"kp:dlg-pharmacy:6:0": {
+"f": "f/kp_dlg-pharmacy_6_0.mp3",
+"m": "m/kp_dlg-pharmacy_6_0.mp3"
+},
+"kp:dlg-pharmacy:6:1": {
+"f": "f/kp_dlg-pharmacy_6_1.mp3",
+"m": "m/kp_dlg-pharmacy_6_1.mp3"
+},
+"kp:dlg-pharmacy:7:0": {
+"f": "f/kp_dlg-pharmacy_7_0.mp3",
+"m": "m/kp_dlg-pharmacy_7_0.mp3"
+},
+"alt:dlg-pharmacy:7:0": {
+"f": "f/alt_dlg-pharmacy_7_0.mp3",
+"m": "m/alt_dlg-pharmacy_7_0.mp3"
+},
+"alt:dlg-pharmacy:7:1": {
+"f": "f/alt_dlg-pharmacy_7_1.mp3",
+"m": "m/alt_dlg-pharmacy_7_1.mp3"
+},
+"kp:dlg-pharmacy:8:0": {
+"f": "f/kp_dlg-pharmacy_8_0.mp3",
+"m": "m/kp_dlg-pharmacy_8_0.mp3"
+},
+"kp:dlg-pharmacy:8:1": {
+"f": "f/kp_dlg-pharmacy_8_1.mp3",
+"m": "m/kp_dlg-pharmacy_8_1.mp3"
+},
+"kp:dlg-pharmacy:9:0": {
+"f": "f/kp_dlg-pharmacy_9_0.mp3",
+"m": "m/kp_dlg-pharmacy_9_0.mp3"
+},
+"kp:dlg-pharmacy:9:1": {
+"f": "f/kp_dlg-pharmacy_9_1.mp3",
+"m": "m/kp_dlg-pharmacy_9_1.mp3"
+},
+"alt:dlg-pharmacy:9:0": {
+"f": "f/alt_dlg-pharmacy_9_0.mp3",
+"m": "m/alt_dlg-pharmacy_9_0.mp3"
+},
+"alt:dlg-pharmacy:9:1": {
+"f": "f/alt_dlg-pharmacy_9_1.mp3",
+"m": "m/alt_dlg-pharmacy_9_1.mp3"
+},
+"kp:dlg-office:0:0": {
+"f": "f/kp_dlg-office_0_0.mp3",
+"m": "m/kp_dlg-office_0_0.mp3"
+},
+"kp:dlg-office:0:1": {
+"f": "f/kp_dlg-office_0_1.mp3",
+"m": "m/kp_dlg-office_0_1.mp3"
+},
+"kp:dlg-office:1:0": {
+"f": "f/kp_dlg-office_1_0.mp3",
+"m": "m/kp_dlg-office_1_0.mp3"
+},
+"kp:dlg-office:1:1": {
+"f": "f/kp_dlg-office_1_1.mp3",
+"m": "m/kp_dlg-office_1_1.mp3"
+},
+"alt:dlg-office:1:0": {
+"f": "f/alt_dlg-office_1_0.mp3",
+"m": "m/alt_dlg-office_1_0.mp3"
+},
+"alt:dlg-office:1:1": {
+"f": "f/alt_dlg-office_1_1.mp3",
+"m": "m/alt_dlg-office_1_1.mp3"
+},
+"kp:dlg-office:2:0": {
+"f": "f/kp_dlg-office_2_0.mp3",
+"m": "m/kp_dlg-office_2_0.mp3"
+},
+"kp:dlg-office:2:1": {
+"f": "f/kp_dlg-office_2_1.mp3",
+"m": "m/kp_dlg-office_2_1.mp3"
+},
+"kp:dlg-office:3:0": {
+"f": "f/kp_dlg-office_3_0.mp3",
+"m": "m/kp_dlg-office_3_0.mp3"
+},
+"kp:dlg-office:3:1": {
+"f": "f/kp_dlg-office_3_1.mp3",
+"m": "m/kp_dlg-office_3_1.mp3"
+},
+"alt:dlg-office:3:0": {
+"f": "f/alt_dlg-office_3_0.mp3",
+"m": "m/alt_dlg-office_3_0.mp3"
+},
+"alt:dlg-office:3:1": {
+"f": "f/alt_dlg-office_3_1.mp3",
+"m": "m/alt_dlg-office_3_1.mp3"
+},
+"kp:dlg-office:4:0": {
+"f": "f/kp_dlg-office_4_0.mp3",
+"m": "m/kp_dlg-office_4_0.mp3"
+},
+"kp:dlg-office:4:1": {
+"f": "f/kp_dlg-office_4_1.mp3",
+"m": "m/kp_dlg-office_4_1.mp3"
+},
+"kp:dlg-office:5:0": {
+"f": "f/kp_dlg-office_5_0.mp3",
+"m": "m/kp_dlg-office_5_0.mp3"
+},
+"kp:dlg-office:5:1": {
+"f": "f/kp_dlg-office_5_1.mp3",
+"m": "m/kp_dlg-office_5_1.mp3"
+},
+"alt:dlg-office:5:0": {
+"f": "f/alt_dlg-office_5_0.mp3",
+"m": "m/alt_dlg-office_5_0.mp3"
+},
+"alt:dlg-office:5:1": {
+"f": "f/alt_dlg-office_5_1.mp3",
+"m": "m/alt_dlg-office_5_1.mp3"
+},
+"kp:dlg-office:6:0": {
+"f": "f/kp_dlg-office_6_0.mp3",
+"m": "m/kp_dlg-office_6_0.mp3"
+},
+"kp:dlg-office:6:1": {
+"f": "f/kp_dlg-office_6_1.mp3",
+"m": "m/kp_dlg-office_6_1.mp3"
+},
+"kp:dlg-office:6:2": {
+"f": "f/kp_dlg-office_6_2.mp3",
+"m": "m/kp_dlg-office_6_2.mp3"
+},
+"kp:dlg-office:7:0": {
+"f": "f/kp_dlg-office_7_0.mp3",
+"m": "m/kp_dlg-office_7_0.mp3"
+},
+"kp:dlg-office:7:1": {
+"f": "f/kp_dlg-office_7_1.mp3",
+"m": "m/kp_dlg-office_7_1.mp3"
+},
+"alt:dlg-office:7:0": {
+"f": "f/alt_dlg-office_7_0.mp3",
+"m": "m/alt_dlg-office_7_0.mp3"
+},
+"alt:dlg-office:7:1": {
+"f": "f/alt_dlg-office_7_1.mp3",
+"m": "m/alt_dlg-office_7_1.mp3"
+},
+"kp:dlg-office:8:0": {
+"f": "f/kp_dlg-office_8_0.mp3",
+"m": "m/kp_dlg-office_8_0.mp3"
+},
+"kp:dlg-office:9:0": {
+"f": "f/kp_dlg-office_9_0.mp3",
+"m": "m/kp_dlg-office_9_0.mp3"
+},
+"alt:dlg-office:9:0": {
+"f": "f/alt_dlg-office_9_0.mp3",
+"m": "m/alt_dlg-office_9_0.mp3"
+},
+"alt:dlg-office:9:1": {
+"f": "f/alt_dlg-office_9_1.mp3",
+"m": "m/alt_dlg-office_9_1.mp3"
+},
+"lis:lis-daily-01:0": {
+"f": "f/lis_lis-daily-01_0.mp3",
+"m": "m/lis_lis-daily-01_0.mp3"
+},
+"lis:lis-daily-01:1": {
+"f": "f/lis_lis-daily-01_1.mp3",
+"m": "m/lis_lis-daily-01_1.mp3"
+},
+"lis:lis-daily-01:2": {
+"f": "f/lis_lis-daily-01_2.mp3",
+"m": "m/lis_lis-daily-01_2.mp3"
+},
+"lis:lis-daily-01:3": {
+"f": "f/lis_lis-daily-01_3.mp3",
+"m": "m/lis_lis-daily-01_3.mp3"
+},
+"lis:lis-daily-02:0": {
+"f": "f/lis_lis-daily-02_0.mp3",
+"m": "m/lis_lis-daily-02_0.mp3"
+},
+"lis:lis-daily-02:1": {
+"f": "f/lis_lis-daily-02_1.mp3",
+"m": "m/lis_lis-daily-02_1.mp3"
+},
+"lis:lis-daily-02:2": {
+"f": "f/lis_lis-daily-02_2.mp3",
+"m": "m/lis_lis-daily-02_2.mp3"
+},
+"lis:lis-daily-02:3": {
+"f": "f/lis_lis-daily-02_3.mp3",
+"m": "m/lis_lis-daily-02_3.mp3"
+},
+"lis:lis-daily-03:0": {
+"f": "f/lis_lis-daily-03_0.mp3",
+"m": "m/lis_lis-daily-03_0.mp3"
+},
+"lis:lis-daily-03:1": {
+"f": "f/lis_lis-daily-03_1.mp3",
+"m": "m/lis_lis-daily-03_1.mp3"
+},
+"lis:lis-daily-03:2": {
+"f": "f/lis_lis-daily-03_2.mp3",
+"m": "m/lis_lis-daily-03_2.mp3"
+},
+"lis:lis-daily-03:3": {
+"f": "f/lis_lis-daily-03_3.mp3",
+"m": "m/lis_lis-daily-03_3.mp3"
+},
+"lis:lis-daily-04:0": {
+"f": "f/lis_lis-daily-04_0.mp3",
+"m": "m/lis_lis-daily-04_0.mp3"
+},
+"lis:lis-daily-04:1": {
+"f": "f/lis_lis-daily-04_1.mp3",
+"m": "m/lis_lis-daily-04_1.mp3"
+},
+"lis:lis-daily-04:2": {
+"f": "f/lis_lis-daily-04_2.mp3",
+"m": "m/lis_lis-daily-04_2.mp3"
+},
+"lis:lis-daily-04:3": {
+"f": "f/lis_lis-daily-04_3.mp3",
+"m": "m/lis_lis-daily-04_3.mp3"
+},
+"lis:lis-daily-05:0": {
+"f": "f/lis_lis-daily-05_0.mp3",
+"m": "m/lis_lis-daily-05_0.mp3"
+},
+"lis:lis-daily-05:1": {
+"f": "f/lis_lis-daily-05_1.mp3",
+"m": "m/lis_lis-daily-05_1.mp3"
+},
+"lis:lis-daily-05:2": {
+"f": "f/lis_lis-daily-05_2.mp3",
+"m": "m/lis_lis-daily-05_2.mp3"
+},
+"lis:lis-daily-05:3": {
+"f": "f/lis_lis-daily-05_3.mp3",
+"m": "m/lis_lis-daily-05_3.mp3"
+},
+"lis:lis-daily-06:0": {
+"f": "f/lis_lis-daily-06_0.mp3",
+"m": "m/lis_lis-daily-06_0.mp3"
+},
+"lis:lis-daily-06:1": {
+"f": "f/lis_lis-daily-06_1.mp3",
+"m": "m/lis_lis-daily-06_1.mp3"
+},
+"lis:lis-daily-06:2": {
+"f": "f/lis_lis-daily-06_2.mp3",
+"m": "m/lis_lis-daily-06_2.mp3"
+},
+"lis:lis-daily-06:3": {
+"f": "f/lis_lis-daily-06_3.mp3",
+"m": "m/lis_lis-daily-06_3.mp3"
+},
+"lis:lis-daily-07:0": {
+"f": "f/lis_lis-daily-07_0.mp3",
+"m": "m/lis_lis-daily-07_0.mp3"
+},
+"lis:lis-daily-07:1": {
+"f": "f/lis_lis-daily-07_1.mp3",
+"m": "m/lis_lis-daily-07_1.mp3"
+},
+"lis:lis-daily-07:2": {
+"f": "f/lis_lis-daily-07_2.mp3",
+"m": "m/lis_lis-daily-07_2.mp3"
+},
+"lis:lis-daily-07:3": {
+"f": "f/lis_lis-daily-07_3.mp3",
+"m": "m/lis_lis-daily-07_3.mp3"
+},
+"lis:lis-daily-08:0": {
+"f": "f/lis_lis-daily-08_0.mp3",
+"m": "m/lis_lis-daily-08_0.mp3"
+},
+"lis:lis-daily-08:1": {
+"f": "f/lis_lis-daily-08_1.mp3",
+"m": "m/lis_lis-daily-08_1.mp3"
+},
+"lis:lis-daily-08:2": {
+"f": "f/lis_lis-daily-08_2.mp3",
+"m": "m/lis_lis-daily-08_2.mp3"
+},
+"lis:lis-daily-08:3": {
+"f": "f/lis_lis-daily-08_3.mp3",
+"m": "m/lis_lis-daily-08_3.mp3"
+},
+"lis:lis-daily-09:0": {
+"f": "f/lis_lis-daily-09_0.mp3",
+"m": "m/lis_lis-daily-09_0.mp3"
+},
+"lis:lis-daily-09:1": {
+"f": "f/lis_lis-daily-09_1.mp3",
+"m": "m/lis_lis-daily-09_1.mp3"
+},
+"lis:lis-daily-09:2": {
+"f": "f/lis_lis-daily-09_2.mp3",
+"m": "m/lis_lis-daily-09_2.mp3"
+},
+"lis:lis-daily-09:3": {
+"f": "f/lis_lis-daily-09_3.mp3",
+"m": "m/lis_lis-daily-09_3.mp3"
+},
+"lis:lis-cafe-01:0": {
+"f": "f/lis_lis-cafe-01_0.mp3",
+"m": "m/lis_lis-cafe-01_0.mp3"
+},
+"lis:lis-cafe-01:1": {
+"f": "f/lis_lis-cafe-01_1.mp3",
+"m": "m/lis_lis-cafe-01_1.mp3"
+},
+"lis:lis-cafe-01:2": {
+"f": "f/lis_lis-cafe-01_2.mp3",
+"m": "m/lis_lis-cafe-01_2.mp3"
+},
+"lis:lis-cafe-01:3": {
+"f": "f/lis_lis-cafe-01_3.mp3",
+"m": "m/lis_lis-cafe-01_3.mp3"
+},
+"lis:lis-cafe-02:0": {
+"f": "f/lis_lis-cafe-02_0.mp3",
+"m": "m/lis_lis-cafe-02_0.mp3"
+},
+"lis:lis-cafe-02:1": {
+"f": "f/lis_lis-cafe-02_1.mp3",
+"m": "m/lis_lis-cafe-02_1.mp3"
+},
+"lis:lis-cafe-02:2": {
+"f": "f/lis_lis-cafe-02_2.mp3",
+"m": "m/lis_lis-cafe-02_2.mp3"
+},
+"lis:lis-cafe-02:3": {
+"f": "f/lis_lis-cafe-02_3.mp3",
+"m": "m/lis_lis-cafe-02_3.mp3"
+},
+"lis:lis-cafe-03:0": {
+"f": "f/lis_lis-cafe-03_0.mp3",
+"m": "m/lis_lis-cafe-03_0.mp3"
+},
+"lis:lis-cafe-03:1": {
+"f": "f/lis_lis-cafe-03_1.mp3",
+"m": "m/lis_lis-cafe-03_1.mp3"
+},
+"lis:lis-cafe-03:2": {
+"f": "f/lis_lis-cafe-03_2.mp3",
+"m": "m/lis_lis-cafe-03_2.mp3"
+},
+"lis:lis-cafe-03:3": {
+"f": "f/lis_lis-cafe-03_3.mp3",
+"m": "m/lis_lis-cafe-03_3.mp3"
+},
+"lis:lis-cafe-04:0": {
+"f": "f/lis_lis-cafe-04_0.mp3",
+"m": "m/lis_lis-cafe-04_0.mp3"
+},
+"lis:lis-cafe-04:1": {
+"f": "f/lis_lis-cafe-04_1.mp3",
+"m": "m/lis_lis-cafe-04_1.mp3"
+},
+"lis:lis-cafe-04:2": {
+"f": "f/lis_lis-cafe-04_2.mp3",
+"m": "m/lis_lis-cafe-04_2.mp3"
+},
+"lis:lis-cafe-04:3": {
+"f": "f/lis_lis-cafe-04_3.mp3",
+"m": "m/lis_lis-cafe-04_3.mp3"
+},
+"lis:lis-cafe-05:0": {
+"f": "f/lis_lis-cafe-05_0.mp3",
+"m": "m/lis_lis-cafe-05_0.mp3"
+},
+"lis:lis-cafe-05:1": {
+"f": "f/lis_lis-cafe-05_1.mp3",
+"m": "m/lis_lis-cafe-05_1.mp3"
+},
+"lis:lis-cafe-05:2": {
+"f": "f/lis_lis-cafe-05_2.mp3",
+"m": "m/lis_lis-cafe-05_2.mp3"
+},
+"lis:lis-cafe-05:3": {
+"f": "f/lis_lis-cafe-05_3.mp3",
+"m": "m/lis_lis-cafe-05_3.mp3"
+},
+"lis:lis-cafe-06:0": {
+"f": "f/lis_lis-cafe-06_0.mp3",
+"m": "m/lis_lis-cafe-06_0.mp3"
+},
+"lis:lis-cafe-06:1": {
+"f": "f/lis_lis-cafe-06_1.mp3",
+"m": "m/lis_lis-cafe-06_1.mp3"
+},
+"lis:lis-cafe-06:2": {
+"f": "f/lis_lis-cafe-06_2.mp3",
+"m": "m/lis_lis-cafe-06_2.mp3"
+},
+"lis:lis-cafe-06:3": {
+"f": "f/lis_lis-cafe-06_3.mp3",
+"m": "m/lis_lis-cafe-06_3.mp3"
+},
+"lis:lis-cafe-07:0": {
+"f": "f/lis_lis-cafe-07_0.mp3",
+"m": "m/lis_lis-cafe-07_0.mp3"
+},
+"lis:lis-cafe-07:1": {
+"f": "f/lis_lis-cafe-07_1.mp3",
+"m": "m/lis_lis-cafe-07_1.mp3"
+},
+"lis:lis-cafe-07:2": {
+"f": "f/lis_lis-cafe-07_2.mp3",
+"m": "m/lis_lis-cafe-07_2.mp3"
+},
+"lis:lis-cafe-07:3": {
+"f": "f/lis_lis-cafe-07_3.mp3",
+"m": "m/lis_lis-cafe-07_3.mp3"
+},
+"lis:lis-cafe-08:0": {
+"f": "f/lis_lis-cafe-08_0.mp3",
+"m": "m/lis_lis-cafe-08_0.mp3"
+},
+"lis:lis-cafe-08:1": {
+"f": "f/lis_lis-cafe-08_1.mp3",
+"m": "m/lis_lis-cafe-08_1.mp3"
+},
+"lis:lis-cafe-08:2": {
+"f": "f/lis_lis-cafe-08_2.mp3",
+"m": "m/lis_lis-cafe-08_2.mp3"
+},
+"lis:lis-cafe-08:3": {
+"f": "f/lis_lis-cafe-08_3.mp3",
+"m": "m/lis_lis-cafe-08_3.mp3"
+},
+"lis:lis-cafe-09:0": {
+"f": "f/lis_lis-cafe-09_0.mp3",
+"m": "m/lis_lis-cafe-09_0.mp3"
+},
+"lis:lis-cafe-09:1": {
+"f": "f/lis_lis-cafe-09_1.mp3",
+"m": "m/lis_lis-cafe-09_1.mp3"
+},
+"lis:lis-cafe-09:2": {
+"f": "f/lis_lis-cafe-09_2.mp3",
+"m": "m/lis_lis-cafe-09_2.mp3"
+},
+"lis:lis-cafe-09:3": {
+"f": "f/lis_lis-cafe-09_3.mp3",
+"m": "m/lis_lis-cafe-09_3.mp3"
+},
+"lis:lis-routine-01:0": {
+"f": "f/lis_lis-routine-01_0.mp3",
+"m": "m/lis_lis-routine-01_0.mp3"
+},
+"lis:lis-routine-01:1": {
+"f": "f/lis_lis-routine-01_1.mp3",
+"m": "m/lis_lis-routine-01_1.mp3"
+},
+"lis:lis-routine-01:2": {
+"f": "f/lis_lis-routine-01_2.mp3",
+"m": "m/lis_lis-routine-01_2.mp3"
+},
+"lis:lis-routine-01:3": {
+"f": "f/lis_lis-routine-01_3.mp3",
+"m": "m/lis_lis-routine-01_3.mp3"
+},
+"lis:lis-routine-01:4": {
+"f": "f/lis_lis-routine-01_4.mp3",
+"m": "m/lis_lis-routine-01_4.mp3"
+},
+"lis:lis-routine-02:0": {
+"f": "f/lis_lis-routine-02_0.mp3",
+"m": "m/lis_lis-routine-02_0.mp3"
+},
+"lis:lis-routine-02:1": {
+"f": "f/lis_lis-routine-02_1.mp3",
+"m": "m/lis_lis-routine-02_1.mp3"
+},
+"lis:lis-routine-02:2": {
+"f": "f/lis_lis-routine-02_2.mp3",
+"m": "m/lis_lis-routine-02_2.mp3"
+},
+"lis:lis-routine-02:3": {
+"f": "f/lis_lis-routine-02_3.mp3",
+"m": "m/lis_lis-routine-02_3.mp3"
+},
+"lis:lis-routine-02:4": {
+"f": "f/lis_lis-routine-02_4.mp3",
+"m": "m/lis_lis-routine-02_4.mp3"
+},
+"lis:lis-routine-03:0": {
+"f": "f/lis_lis-routine-03_0.mp3",
+"m": "m/lis_lis-routine-03_0.mp3"
+},
+"lis:lis-routine-03:1": {
+"f": "f/lis_lis-routine-03_1.mp3",
+"m": "m/lis_lis-routine-03_1.mp3"
+},
+"lis:lis-routine-03:2": {
+"f": "f/lis_lis-routine-03_2.mp3",
+"m": "m/lis_lis-routine-03_2.mp3"
+},
+"lis:lis-routine-03:3": {
+"f": "f/lis_lis-routine-03_3.mp3",
+"m": "m/lis_lis-routine-03_3.mp3"
+},
+"lis:lis-routine-03:4": {
+"f": "f/lis_lis-routine-03_4.mp3",
+"m": "m/lis_lis-routine-03_4.mp3"
+},
+"lis:lis-routine-04:0": {
+"f": "f/lis_lis-routine-04_0.mp3",
+"m": "m/lis_lis-routine-04_0.mp3"
+},
+"lis:lis-routine-04:1": {
+"f": "f/lis_lis-routine-04_1.mp3",
+"m": "m/lis_lis-routine-04_1.mp3"
+},
+"lis:lis-routine-04:2": {
+"f": "f/lis_lis-routine-04_2.mp3",
+"m": "m/lis_lis-routine-04_2.mp3"
+},
+"lis:lis-routine-04:3": {
+"f": "f/lis_lis-routine-04_3.mp3",
+"m": "m/lis_lis-routine-04_3.mp3"
+},
+"lis:lis-routine-04:4": {
+"f": "f/lis_lis-routine-04_4.mp3",
+"m": "m/lis_lis-routine-04_4.mp3"
+},
+"lis:lis-routine-05:0": {
+"f": "f/lis_lis-routine-05_0.mp3",
+"m": "m/lis_lis-routine-05_0.mp3"
+},
+"lis:lis-routine-05:1": {
+"f": "f/lis_lis-routine-05_1.mp3",
+"m": "m/lis_lis-routine-05_1.mp3"
+},
+"lis:lis-routine-05:2": {
+"f": "f/lis_lis-routine-05_2.mp3",
+"m": "m/lis_lis-routine-05_2.mp3"
+},
+"lis:lis-routine-05:3": {
+"f": "f/lis_lis-routine-05_3.mp3",
+"m": "m/lis_lis-routine-05_3.mp3"
+},
+"lis:lis-routine-05:4": {
+"f": "f/lis_lis-routine-05_4.mp3",
+"m": "m/lis_lis-routine-05_4.mp3"
+},
+"lis:lis-routine-06:0": {
+"f": "f/lis_lis-routine-06_0.mp3",
+"m": "m/lis_lis-routine-06_0.mp3"
+},
+"lis:lis-routine-06:1": {
+"f": "f/lis_lis-routine-06_1.mp3",
+"m": "m/lis_lis-routine-06_1.mp3"
+},
+"lis:lis-routine-06:2": {
+"f": "f/lis_lis-routine-06_2.mp3",
+"m": "m/lis_lis-routine-06_2.mp3"
+},
+"lis:lis-routine-06:3": {
+"f": "f/lis_lis-routine-06_3.mp3",
+"m": "m/lis_lis-routine-06_3.mp3"
+},
+"lis:lis-routine-06:4": {
+"f": "f/lis_lis-routine-06_4.mp3",
+"m": "m/lis_lis-routine-06_4.mp3"
+},
+"lis:lis-routine-07:0": {
+"f": "f/lis_lis-routine-07_0.mp3",
+"m": "m/lis_lis-routine-07_0.mp3"
+},
+"lis:lis-routine-07:1": {
+"f": "f/lis_lis-routine-07_1.mp3",
+"m": "m/lis_lis-routine-07_1.mp3"
+},
+"lis:lis-routine-07:2": {
+"f": "f/lis_lis-routine-07_2.mp3",
+"m": "m/lis_lis-routine-07_2.mp3"
+},
+"lis:lis-routine-07:3": {
+"f": "f/lis_lis-routine-07_3.mp3",
+"m": "m/lis_lis-routine-07_3.mp3"
+},
+"lis:lis-routine-07:4": {
+"f": "f/lis_lis-routine-07_4.mp3",
+"m": "m/lis_lis-routine-07_4.mp3"
+},
+"lis:lis-routine-08:0": {
+"f": "f/lis_lis-routine-08_0.mp3",
+"m": "m/lis_lis-routine-08_0.mp3"
+},
+"lis:lis-routine-08:1": {
+"f": "f/lis_lis-routine-08_1.mp3",
+"m": "m/lis_lis-routine-08_1.mp3"
+},
+"lis:lis-routine-08:2": {
+"f": "f/lis_lis-routine-08_2.mp3",
+"m": "m/lis_lis-routine-08_2.mp3"
+},
+"lis:lis-routine-08:3": {
+"f": "f/lis_lis-routine-08_3.mp3",
+"m": "m/lis_lis-routine-08_3.mp3"
+},
+"lis:lis-routine-08:4": {
+"f": "f/lis_lis-routine-08_4.mp3",
+"m": "m/lis_lis-routine-08_4.mp3"
+},
+"lis:lis-routine-09:0": {
+"f": "f/lis_lis-routine-09_0.mp3",
+"m": "m/lis_lis-routine-09_0.mp3"
+},
+"lis:lis-routine-09:1": {
+"f": "f/lis_lis-routine-09_1.mp3",
+"m": "m/lis_lis-routine-09_1.mp3"
+},
+"lis:lis-routine-09:2": {
+"f": "f/lis_lis-routine-09_2.mp3",
+"m": "m/lis_lis-routine-09_2.mp3"
+},
+"lis:lis-routine-09:3": {
+"f": "f/lis_lis-routine-09_3.mp3",
+"m": "m/lis_lis-routine-09_3.mp3"
+},
+"lis:lis-routine-09:4": {
+"f": "f/lis_lis-routine-09_4.mp3",
+"m": "m/lis_lis-routine-09_4.mp3"
+},
+"lis:lis-service-01:0": {
+"f": "f/lis_lis-service-01_0.mp3",
+"m": "m/lis_lis-service-01_0.mp3"
+},
+"lis:lis-service-01:1": {
+"f": "f/lis_lis-service-01_1.mp3",
+"m": "m/lis_lis-service-01_1.mp3"
+},
+"lis:lis-service-01:2": {
+"f": "f/lis_lis-service-01_2.mp3",
+"m": "m/lis_lis-service-01_2.mp3"
+},
+"lis:lis-service-01:3": {
+"f": "f/lis_lis-service-01_3.mp3",
+"m": "m/lis_lis-service-01_3.mp3"
+},
+"lis:lis-service-01:4": {
+"f": "f/lis_lis-service-01_4.mp3",
+"m": "m/lis_lis-service-01_4.mp3"
+},
+"lis:lis-service-02:0": {
+"f": "f/lis_lis-service-02_0.mp3",
+"m": "m/lis_lis-service-02_0.mp3"
+},
+"lis:lis-service-02:1": {
+"f": "f/lis_lis-service-02_1.mp3",
+"m": "m/lis_lis-service-02_1.mp3"
+},
+"lis:lis-service-02:2": {
+"f": "f/lis_lis-service-02_2.mp3",
+"m": "m/lis_lis-service-02_2.mp3"
+},
+"lis:lis-service-02:3": {
+"f": "f/lis_lis-service-02_3.mp3",
+"m": "m/lis_lis-service-02_3.mp3"
+},
+"lis:lis-service-02:4": {
+"f": "f/lis_lis-service-02_4.mp3",
+"m": "m/lis_lis-service-02_4.mp3"
+},
+"lis:lis-service-03:0": {
+"f": "f/lis_lis-service-03_0.mp3",
+"m": "m/lis_lis-service-03_0.mp3"
+},
+"lis:lis-service-03:1": {
+"f": "f/lis_lis-service-03_1.mp3",
+"m": "m/lis_lis-service-03_1.mp3"
+},
+"lis:lis-service-03:2": {
+"f": "f/lis_lis-service-03_2.mp3",
+"m": "m/lis_lis-service-03_2.mp3"
+},
+"lis:lis-service-03:3": {
+"f": "f/lis_lis-service-03_3.mp3",
+"m": "m/lis_lis-service-03_3.mp3"
+},
+"lis:lis-service-03:4": {
+"f": "f/lis_lis-service-03_4.mp3",
+"m": "m/lis_lis-service-03_4.mp3"
+},
+"lis:lis-service-04:0": {
+"f": "f/lis_lis-service-04_0.mp3",
+"m": "m/lis_lis-service-04_0.mp3"
+},
+"lis:lis-service-04:1": {
+"f": "f/lis_lis-service-04_1.mp3",
+"m": "m/lis_lis-service-04_1.mp3"
+},
+"lis:lis-service-04:2": {
+"f": "f/lis_lis-service-04_2.mp3",
+"m": "m/lis_lis-service-04_2.mp3"
+},
+"lis:lis-service-04:3": {
+"f": "f/lis_lis-service-04_3.mp3",
+"m": "m/lis_lis-service-04_3.mp3"
+},
+"lis:lis-service-04:4": {
+"f": "f/lis_lis-service-04_4.mp3",
+"m": "m/lis_lis-service-04_4.mp3"
+},
+"lis:lis-service-05:0": {
+"f": "f/lis_lis-service-05_0.mp3",
+"m": "m/lis_lis-service-05_0.mp3"
+},
+"lis:lis-service-05:1": {
+"f": "f/lis_lis-service-05_1.mp3",
+"m": "m/lis_lis-service-05_1.mp3"
+},
+"lis:lis-service-05:2": {
+"f": "f/lis_lis-service-05_2.mp3",
+"m": "m/lis_lis-service-05_2.mp3"
+},
+"lis:lis-service-05:3": {
+"f": "f/lis_lis-service-05_3.mp3",
+"m": "m/lis_lis-service-05_3.mp3"
+},
+"lis:lis-service-05:4": {
+"f": "f/lis_lis-service-05_4.mp3",
+"m": "m/lis_lis-service-05_4.mp3"
+},
+"lis:lis-service-06:0": {
+"f": "f/lis_lis-service-06_0.mp3",
+"m": "m/lis_lis-service-06_0.mp3"
+},
+"lis:lis-service-06:1": {
+"f": "f/lis_lis-service-06_1.mp3",
+"m": "m/lis_lis-service-06_1.mp3"
+},
+"lis:lis-service-06:2": {
+"f": "f/lis_lis-service-06_2.mp3",
+"m": "m/lis_lis-service-06_2.mp3"
+},
+"lis:lis-service-06:3": {
+"f": "f/lis_lis-service-06_3.mp3",
+"m": "m/lis_lis-service-06_3.mp3"
+},
+"lis:lis-service-06:4": {
+"f": "f/lis_lis-service-06_4.mp3",
+"m": "m/lis_lis-service-06_4.mp3"
+},
+"lis:lis-service-07:0": {
+"f": "f/lis_lis-service-07_0.mp3",
+"m": "m/lis_lis-service-07_0.mp3"
+},
+"lis:lis-service-07:1": {
+"f": "f/lis_lis-service-07_1.mp3",
+"m": "m/lis_lis-service-07_1.mp3"
+},
+"lis:lis-service-07:2": {
+"f": "f/lis_lis-service-07_2.mp3",
+"m": "m/lis_lis-service-07_2.mp3"
+},
+"lis:lis-service-07:3": {
+"f": "f/lis_lis-service-07_3.mp3",
+"m": "m/lis_lis-service-07_3.mp3"
+},
+"lis:lis-service-07:4": {
+"f": "f/lis_lis-service-07_4.mp3",
+"m": "m/lis_lis-service-07_4.mp3"
+},
+"lis:lis-service-08:0": {
+"f": "f/lis_lis-service-08_0.mp3",
+"m": "m/lis_lis-service-08_0.mp3"
+},
+"lis:lis-service-08:1": {
+"f": "f/lis_lis-service-08_1.mp3",
+"m": "m/lis_lis-service-08_1.mp3"
+},
+"lis:lis-service-08:2": {
+"f": "f/lis_lis-service-08_2.mp3",
+"m": "m/lis_lis-service-08_2.mp3"
+},
+"lis:lis-service-08:3": {
+"f": "f/lis_lis-service-08_3.mp3",
+"m": "m/lis_lis-service-08_3.mp3"
+},
+"lis:lis-service-08:4": {
+"f": "f/lis_lis-service-08_4.mp3",
+"m": "m/lis_lis-service-08_4.mp3"
+},
+"lis:lis-service-09:0": {
+"f": "f/lis_lis-service-09_0.mp3",
+"m": "m/lis_lis-service-09_0.mp3"
+},
+"lis:lis-service-09:1": {
+"f": "f/lis_lis-service-09_1.mp3",
+"m": "m/lis_lis-service-09_1.mp3"
+},
+"lis:lis-service-09:2": {
+"f": "f/lis_lis-service-09_2.mp3",
+"m": "m/lis_lis-service-09_2.mp3"
+},
+"lis:lis-service-09:3": {
+"f": "f/lis_lis-service-09_3.mp3",
+"m": "m/lis_lis-service-09_3.mp3"
+},
+"lis:lis-service-09:4": {
+"f": "f/lis_lis-service-09_4.mp3",
+"m": "m/lis_lis-service-09_4.mp3"
+},
+"lis:lis-story-01:0": {
+"f": "f/lis_lis-story-01_0.mp3",
+"m": "m/lis_lis-story-01_0.mp3"
+},
+"lis:lis-story-01:1": {
+"f": "f/lis_lis-story-01_1.mp3",
+"m": "m/lis_lis-story-01_1.mp3"
+},
+"lis:lis-story-01:2": {
+"f": "f/lis_lis-story-01_2.mp3",
+"m": "m/lis_lis-story-01_2.mp3"
+},
+"lis:lis-story-01:3": {
+"f": "f/lis_lis-story-01_3.mp3",
+"m": "m/lis_lis-story-01_3.mp3"
+},
+"lis:lis-story-01:4": {
+"f": "f/lis_lis-story-01_4.mp3",
+"m": "m/lis_lis-story-01_4.mp3"
+},
+"lis:lis-story-02:0": {
+"f": "f/lis_lis-story-02_0.mp3",
+"m": "m/lis_lis-story-02_0.mp3"
+},
+"lis:lis-story-02:1": {
+"f": "f/lis_lis-story-02_1.mp3",
+"m": "m/lis_lis-story-02_1.mp3"
+},
+"lis:lis-story-02:2": {
+"f": "f/lis_lis-story-02_2.mp3",
+"m": "m/lis_lis-story-02_2.mp3"
+},
+"lis:lis-story-02:3": {
+"f": "f/lis_lis-story-02_3.mp3",
+"m": "m/lis_lis-story-02_3.mp3"
+},
+"lis:lis-story-02:4": {
+"f": "f/lis_lis-story-02_4.mp3",
+"m": "m/lis_lis-story-02_4.mp3"
+},
+"lis:lis-story-03:0": {
+"f": "f/lis_lis-story-03_0.mp3",
+"m": "m/lis_lis-story-03_0.mp3"
+},
+"lis:lis-story-03:1": {
+"f": "f/lis_lis-story-03_1.mp3",
+"m": "m/lis_lis-story-03_1.mp3"
+},
+"lis:lis-story-03:2": {
+"f": "f/lis_lis-story-03_2.mp3",
+"m": "m/lis_lis-story-03_2.mp3"
+},
+"lis:lis-story-03:3": {
+"f": "f/lis_lis-story-03_3.mp3",
+"m": "m/lis_lis-story-03_3.mp3"
+},
+"lis:lis-story-03:4": {
+"f": "f/lis_lis-story-03_4.mp3",
+"m": "m/lis_lis-story-03_4.mp3"
+},
+"lis:lis-story-04:0": {
+"f": "f/lis_lis-story-04_0.mp3",
+"m": "m/lis_lis-story-04_0.mp3"
+},
+"lis:lis-story-04:1": {
+"f": "f/lis_lis-story-04_1.mp3",
+"m": "m/lis_lis-story-04_1.mp3"
+},
+"lis:lis-story-04:2": {
+"f": "f/lis_lis-story-04_2.mp3",
+"m": "m/lis_lis-story-04_2.mp3"
+},
+"lis:lis-story-04:3": {
+"f": "f/lis_lis-story-04_3.mp3",
+"m": "m/lis_lis-story-04_3.mp3"
+},
+"lis:lis-story-04:4": {
+"f": "f/lis_lis-story-04_4.mp3",
+"m": "m/lis_lis-story-04_4.mp3"
+},
+"lis:lis-story-05:0": {
+"f": "f/lis_lis-story-05_0.mp3",
+"m": "m/lis_lis-story-05_0.mp3"
+},
+"lis:lis-story-05:1": {
+"f": "f/lis_lis-story-05_1.mp3",
+"m": "m/lis_lis-story-05_1.mp3"
+},
+"lis:lis-story-05:2": {
+"f": "f/lis_lis-story-05_2.mp3",
+"m": "m/lis_lis-story-05_2.mp3"
+},
+"lis:lis-story-05:3": {
+"f": "f/lis_lis-story-05_3.mp3",
+"m": "m/lis_lis-story-05_3.mp3"
+},
+"lis:lis-story-05:4": {
+"f": "f/lis_lis-story-05_4.mp3",
+"m": "m/lis_lis-story-05_4.mp3"
+},
+"lis:lis-story-06:0": {
+"f": "f/lis_lis-story-06_0.mp3",
+"m": "m/lis_lis-story-06_0.mp3"
+},
+"lis:lis-story-06:1": {
+"f": "f/lis_lis-story-06_1.mp3",
+"m": "m/lis_lis-story-06_1.mp3"
+},
+"lis:lis-story-06:2": {
+"f": "f/lis_lis-story-06_2.mp3",
+"m": "m/lis_lis-story-06_2.mp3"
+},
+"lis:lis-story-06:3": {
+"f": "f/lis_lis-story-06_3.mp3",
+"m": "m/lis_lis-story-06_3.mp3"
+},
+"lis:lis-story-06:4": {
+"f": "f/lis_lis-story-06_4.mp3",
+"m": "m/lis_lis-story-06_4.mp3"
+},
+"lis:lis-story-07:0": {
+"f": "f/lis_lis-story-07_0.mp3",
+"m": "m/lis_lis-story-07_0.mp3"
+},
+"lis:lis-story-07:1": {
+"f": "f/lis_lis-story-07_1.mp3",
+"m": "m/lis_lis-story-07_1.mp3"
+},
+"lis:lis-story-07:2": {
+"f": "f/lis_lis-story-07_2.mp3",
+"m": "m/lis_lis-story-07_2.mp3"
+},
+"lis:lis-story-07:3": {
+"f": "f/lis_lis-story-07_3.mp3",
+"m": "m/lis_lis-story-07_3.mp3"
+},
+"lis:lis-story-07:4": {
+"f": "f/lis_lis-story-07_4.mp3",
+"m": "m/lis_lis-story-07_4.mp3"
+},
+"lis:lis-story-08:0": {
+"f": "f/lis_lis-story-08_0.mp3",
+"m": "m/lis_lis-story-08_0.mp3"
+},
+"lis:lis-story-08:1": {
+"f": "f/lis_lis-story-08_1.mp3",
+"m": "m/lis_lis-story-08_1.mp3"
+},
+"lis:lis-story-08:2": {
+"f": "f/lis_lis-story-08_2.mp3",
+"m": "m/lis_lis-story-08_2.mp3"
+},
+"lis:lis-story-08:3": {
+"f": "f/lis_lis-story-08_3.mp3",
+"m": "m/lis_lis-story-08_3.mp3"
+},
+"lis:lis-story-08:4": {
+"f": "f/lis_lis-story-08_4.mp3",
+"m": "m/lis_lis-story-08_4.mp3"
+},
+"lis:lis-story-09:0": {
+"f": "f/lis_lis-story-09_0.mp3",
+"m": "m/lis_lis-story-09_0.mp3"
+},
+"lis:lis-story-09:1": {
+"f": "f/lis_lis-story-09_1.mp3",
+"m": "m/lis_lis-story-09_1.mp3"
+},
+"lis:lis-story-09:2": {
+"f": "f/lis_lis-story-09_2.mp3",
+"m": "m/lis_lis-story-09_2.mp3"
+},
+"lis:lis-story-09:3": {
+"f": "f/lis_lis-story-09_3.mp3",
+"m": "m/lis_lis-story-09_3.mp3"
+},
+"lis:lis-story-09:4": {
+"f": "f/lis_lis-story-09_4.mp3",
+"m": "m/lis_lis-story-09_4.mp3"
+},
+"chunk:ch-cafe-01": {
+"f": "f/chunk_ch-cafe-01.mp3",
+"m": "m/chunk_ch-cafe-01.mp3"
+},
+"chunk:ch-cafe-02": {
+"f": "f/chunk_ch-cafe-02.mp3",
+"m": "m/chunk_ch-cafe-02.mp3"
+},
+"chunk:ch-cafe-03": {
+"f": "f/chunk_ch-cafe-03.mp3",
+"m": "m/chunk_ch-cafe-03.mp3"
+},
+"chunk:ch-cafe-04": {
+"f": "f/chunk_ch-cafe-04.mp3",
+"m": "m/chunk_ch-cafe-04.mp3"
+},
+"chunk:ch-cafe-05": {
+"f": "f/chunk_ch-cafe-05.mp3",
+"m": "m/chunk_ch-cafe-05.mp3"
+},
+"chunk:ch-cafe-06": {
+"f": "f/chunk_ch-cafe-06.mp3",
+"m": "m/chunk_ch-cafe-06.mp3"
+},
+"chunk:ch-cafe-07": {
+"f": "f/chunk_ch-cafe-07.mp3",
+"m": "m/chunk_ch-cafe-07.mp3"
+},
+"chunk:ch-cafe-08": {
+"f": "f/chunk_ch-cafe-08.mp3",
+"m": "m/chunk_ch-cafe-08.mp3"
+},
+"chunk:ch-cafe-09": {
+"f": "f/chunk_ch-cafe-09.mp3",
+"m": "m/chunk_ch-cafe-09.mp3"
+},
+"chunk:ch-cafe-10": {
+"f": "f/chunk_ch-cafe-10.mp3",
+"m": "m/chunk_ch-cafe-10.mp3"
+},
+"chunk:ch-cafe-11": {
+"f": "f/chunk_ch-cafe-11.mp3",
+"m": "m/chunk_ch-cafe-11.mp3"
+},
+"chunk:ch-cafe-12": {
+"f": "f/chunk_ch-cafe-12.mp3",
+"m": "m/chunk_ch-cafe-12.mp3"
+},
+"chunk:ch-cafe-13": {
+"f": "f/chunk_ch-cafe-13.mp3",
+"m": "m/chunk_ch-cafe-13.mp3"
+},
+"chunk:ch-cafe-14": {
+"f": "f/chunk_ch-cafe-14.mp3",
+"m": "m/chunk_ch-cafe-14.mp3"
+},
+"chunk:ch-cafe-15": {
+"f": "f/chunk_ch-cafe-15.mp3",
+"m": "m/chunk_ch-cafe-15.mp3"
+},
+"chunk:ch-cafe-16": {
+"f": "f/chunk_ch-cafe-16.mp3",
+"m": "m/chunk_ch-cafe-16.mp3"
+},
+"chunk:ch-cafe-17": {
+"f": "f/chunk_ch-cafe-17.mp3",
+"m": "m/chunk_ch-cafe-17.mp3"
+},
+"chunk:ch-cafe-18": {
+"f": "f/chunk_ch-cafe-18.mp3",
+"m": "m/chunk_ch-cafe-18.mp3"
+},
+"chunk:ch-cafe-19": {
+"f": "f/chunk_ch-cafe-19.mp3",
+"m": "m/chunk_ch-cafe-19.mp3"
+},
+"chunk:ch-rest-01": {
+"f": "f/chunk_ch-rest-01.mp3",
+"m": "m/chunk_ch-rest-01.mp3"
+},
+"chunk:ch-rest-02": {
+"f": "f/chunk_ch-rest-02.mp3",
+"m": "m/chunk_ch-rest-02.mp3"
+},
+"chunk:ch-rest-03": {
+"f": "f/chunk_ch-rest-03.mp3",
+"m": "m/chunk_ch-rest-03.mp3"
+},
+"chunk:ch-rest-04": {
+"f": "f/chunk_ch-rest-04.mp3",
+"m": "m/chunk_ch-rest-04.mp3"
+},
+"chunk:ch-rest-05": {
+"f": "f/chunk_ch-rest-05.mp3",
+"m": "m/chunk_ch-rest-05.mp3"
+},
+"chunk:ch-rest-06": {
+"f": "f/chunk_ch-rest-06.mp3",
+"m": "m/chunk_ch-rest-06.mp3"
+},
+"chunk:ch-rest-07": {
+"f": "f/chunk_ch-rest-07.mp3",
+"m": "m/chunk_ch-rest-07.mp3"
+},
+"chunk:ch-rest-08": {
+"f": "f/chunk_ch-rest-08.mp3",
+"m": "m/chunk_ch-rest-08.mp3"
+},
+"chunk:ch-rest-09": {
+"f": "f/chunk_ch-rest-09.mp3",
+"m": "m/chunk_ch-rest-09.mp3"
+},
+"chunk:ch-rest-10": {
+"f": "f/chunk_ch-rest-10.mp3",
+"m": "m/chunk_ch-rest-10.mp3"
+},
+"chunk:ch-rest-11": {
+"f": "f/chunk_ch-rest-11.mp3",
+"m": "m/chunk_ch-rest-11.mp3"
+},
+"chunk:ch-rest-12": {
+"f": "f/chunk_ch-rest-12.mp3",
+"m": "m/chunk_ch-rest-12.mp3"
+},
+"chunk:ch-rest-13": {
+"f": "f/chunk_ch-rest-13.mp3",
+"m": "m/chunk_ch-rest-13.mp3"
+},
+"chunk:ch-rest-14": {
+"f": "f/chunk_ch-rest-14.mp3",
+"m": "m/chunk_ch-rest-14.mp3"
+},
+"chunk:ch-rest-15": {
+"f": "f/chunk_ch-rest-15.mp3",
+"m": "m/chunk_ch-rest-15.mp3"
+},
+"chunk:ch-rest-16": {
+"f": "f/chunk_ch-rest-16.mp3",
+"m": "m/chunk_ch-rest-16.mp3"
+},
+"chunk:ch-rest-17": {
+"f": "f/chunk_ch-rest-17.mp3",
+"m": "m/chunk_ch-rest-17.mp3"
+},
+"chunk:ch-rest-18": {
+"f": "f/chunk_ch-rest-18.mp3",
+"m": "m/chunk_ch-rest-18.mp3"
+},
+"chunk:ch-rest-19": {
+"f": "f/chunk_ch-rest-19.mp3",
+"m": "m/chunk_ch-rest-19.mp3"
+},
+"chunk:ch-shop-01": {
+"f": "f/chunk_ch-shop-01.mp3",
+"m": "m/chunk_ch-shop-01.mp3"
+},
+"chunk:ch-shop-02": {
+"f": "f/chunk_ch-shop-02.mp3",
+"m": "m/chunk_ch-shop-02.mp3"
+},
+"chunk:ch-shop-03": {
+"f": "f/chunk_ch-shop-03.mp3",
+"m": "m/chunk_ch-shop-03.mp3"
+},
+"chunk:ch-shop-04": {
+"f": "f/chunk_ch-shop-04.mp3",
+"m": "m/chunk_ch-shop-04.mp3"
+},
+"chunk:ch-shop-05": {
+"f": "f/chunk_ch-shop-05.mp3",
+"m": "m/chunk_ch-shop-05.mp3"
+},
+"chunk:ch-shop-06": {
+"f": "f/chunk_ch-shop-06.mp3",
+"m": "m/chunk_ch-shop-06.mp3"
+},
+"chunk:ch-shop-07": {
+"f": "f/chunk_ch-shop-07.mp3",
+"m": "m/chunk_ch-shop-07.mp3"
+},
+"chunk:ch-shop-08": {
+"f": "f/chunk_ch-shop-08.mp3",
+"m": "m/chunk_ch-shop-08.mp3"
+},
+"chunk:ch-shop-09": {
+"f": "f/chunk_ch-shop-09.mp3",
+"m": "m/chunk_ch-shop-09.mp3"
+},
+"chunk:ch-shop-10": {
+"f": "f/chunk_ch-shop-10.mp3",
+"m": "m/chunk_ch-shop-10.mp3"
+},
+"chunk:ch-shop-11": {
+"f": "f/chunk_ch-shop-11.mp3",
+"m": "m/chunk_ch-shop-11.mp3"
+},
+"chunk:ch-shop-12": {
+"f": "f/chunk_ch-shop-12.mp3",
+"m": "m/chunk_ch-shop-12.mp3"
+},
+"chunk:ch-shop-13": {
+"f": "f/chunk_ch-shop-13.mp3",
+"m": "m/chunk_ch-shop-13.mp3"
+},
+"chunk:ch-shop-14": {
+"f": "f/chunk_ch-shop-14.mp3",
+"m": "m/chunk_ch-shop-14.mp3"
+},
+"chunk:ch-shop-15": {
+"f": "f/chunk_ch-shop-15.mp3",
+"m": "m/chunk_ch-shop-15.mp3"
+},
+"chunk:ch-shop-16": {
+"f": "f/chunk_ch-shop-16.mp3",
+"m": "m/chunk_ch-shop-16.mp3"
+},
+"chunk:ch-shop-17": {
+"f": "f/chunk_ch-shop-17.mp3",
+"m": "m/chunk_ch-shop-17.mp3"
+},
+"chunk:ch-shop-18": {
+"f": "f/chunk_ch-shop-18.mp3",
+"m": "m/chunk_ch-shop-18.mp3"
+},
+"chunk:ch-shop-19": {
+"f": "f/chunk_ch-shop-19.mp3",
+"m": "m/chunk_ch-shop-19.mp3"
+},
+"chunk:ch-trav-01": {
+"f": "f/chunk_ch-trav-01.mp3",
+"m": "m/chunk_ch-trav-01.mp3"
+},
+"chunk:ch-trav-02": {
+"f": "f/chunk_ch-trav-02.mp3",
+"m": "m/chunk_ch-trav-02.mp3"
+},
+"chunk:ch-trav-03": {
+"f": "f/chunk_ch-trav-03.mp3",
+"m": "m/chunk_ch-trav-03.mp3"
+},
+"chunk:ch-trav-04": {
+"f": "f/chunk_ch-trav-04.mp3",
+"m": "m/chunk_ch-trav-04.mp3"
+},
+"chunk:ch-trav-05": {
+"f": "f/chunk_ch-trav-05.mp3",
+"m": "m/chunk_ch-trav-05.mp3"
+},
+"chunk:ch-trav-06": {
+"f": "f/chunk_ch-trav-06.mp3",
+"m": "m/chunk_ch-trav-06.mp3"
+},
+"chunk:ch-trav-07": {
+"f": "f/chunk_ch-trav-07.mp3",
+"m": "m/chunk_ch-trav-07.mp3"
+},
+"chunk:ch-trav-08": {
+"f": "f/chunk_ch-trav-08.mp3",
+"m": "m/chunk_ch-trav-08.mp3"
+},
+"chunk:ch-trav-09": {
+"f": "f/chunk_ch-trav-09.mp3",
+"m": "m/chunk_ch-trav-09.mp3"
+},
+"chunk:ch-trav-10": {
+"f": "f/chunk_ch-trav-10.mp3",
+"m": "m/chunk_ch-trav-10.mp3"
+},
+"chunk:ch-trav-11": {
+"f": "f/chunk_ch-trav-11.mp3",
+"m": "m/chunk_ch-trav-11.mp3"
+},
+"chunk:ch-trav-12": {
+"f": "f/chunk_ch-trav-12.mp3",
+"m": "m/chunk_ch-trav-12.mp3"
+},
+"chunk:ch-trav-13": {
+"f": "f/chunk_ch-trav-13.mp3",
+"m": "m/chunk_ch-trav-13.mp3"
+},
+"chunk:ch-trav-14": {
+"f": "f/chunk_ch-trav-14.mp3",
+"m": "m/chunk_ch-trav-14.mp3"
+},
+"chunk:ch-trav-15": {
+"f": "f/chunk_ch-trav-15.mp3",
+"m": "m/chunk_ch-trav-15.mp3"
+},
+"chunk:ch-trav-16": {
+"f": "f/chunk_ch-trav-16.mp3",
+"m": "m/chunk_ch-trav-16.mp3"
+},
+"chunk:ch-trav-17": {
+"f": "f/chunk_ch-trav-17.mp3",
+"m": "m/chunk_ch-trav-17.mp3"
+},
+"chunk:ch-trav-18": {
+"f": "f/chunk_ch-trav-18.mp3",
+"m": "m/chunk_ch-trav-18.mp3"
+},
+"chunk:ch-trav-19": {
+"f": "f/chunk_ch-trav-19.mp3",
+"m": "m/chunk_ch-trav-19.mp3"
+},
+"chunk:ch-hote-01": {
+"f": "f/chunk_ch-hote-01.mp3",
+"m": "m/chunk_ch-hote-01.mp3"
+},
+"chunk:ch-hote-02": {
+"f": "f/chunk_ch-hote-02.mp3",
+"m": "m/chunk_ch-hote-02.mp3"
+},
+"chunk:ch-hote-03": {
+"f": "f/chunk_ch-hote-03.mp3",
+"m": "m/chunk_ch-hote-03.mp3"
+},
+"chunk:ch-hote-04": {
+"f": "f/chunk_ch-hote-04.mp3",
+"m": "m/chunk_ch-hote-04.mp3"
+},
+"chunk:ch-hote-05": {
+"f": "f/chunk_ch-hote-05.mp3",
+"m": "m/chunk_ch-hote-05.mp3"
+},
+"chunk:ch-hote-06": {
+"f": "f/chunk_ch-hote-06.mp3",
+"m": "m/chunk_ch-hote-06.mp3"
+},
+"chunk:ch-hote-07": {
+"f": "f/chunk_ch-hote-07.mp3",
+"m": "m/chunk_ch-hote-07.mp3"
+},
+"chunk:ch-hote-08": {
+"f": "f/chunk_ch-hote-08.mp3",
+"m": "m/chunk_ch-hote-08.mp3"
+},
+"chunk:ch-hote-09": {
+"f": "f/chunk_ch-hote-09.mp3",
+"m": "m/chunk_ch-hote-09.mp3"
+},
+"chunk:ch-hote-10": {
+"f": "f/chunk_ch-hote-10.mp3",
+"m": "m/chunk_ch-hote-10.mp3"
+},
+"chunk:ch-hote-11": {
+"f": "f/chunk_ch-hote-11.mp3",
+"m": "m/chunk_ch-hote-11.mp3"
+},
+"chunk:ch-hote-12": {
+"f": "f/chunk_ch-hote-12.mp3",
+"m": "m/chunk_ch-hote-12.mp3"
+},
+"chunk:ch-hote-13": {
+"f": "f/chunk_ch-hote-13.mp3",
+"m": "m/chunk_ch-hote-13.mp3"
+},
+"chunk:ch-hote-14": {
+"f": "f/chunk_ch-hote-14.mp3",
+"m": "m/chunk_ch-hote-14.mp3"
+},
+"chunk:ch-hote-15": {
+"f": "f/chunk_ch-hote-15.mp3",
+"m": "m/chunk_ch-hote-15.mp3"
+},
+"chunk:ch-hote-16": {
+"f": "f/chunk_ch-hote-16.mp3",
+"m": "m/chunk_ch-hote-16.mp3"
+},
+"chunk:ch-hote-17": {
+"f": "f/chunk_ch-hote-17.mp3",
+"m": "m/chunk_ch-hote-17.mp3"
+},
+"chunk:ch-hote-18": {
+"f": "f/chunk_ch-hote-18.mp3",
+"m": "m/chunk_ch-hote-18.mp3"
+},
+"chunk:ch-hote-19": {
+"f": "f/chunk_ch-hote-19.mp3",
+"m": "m/chunk_ch-hote-19.mp3"
+},
+"chunk:ch-heal-01": {
+"f": "f/chunk_ch-heal-01.mp3",
+"m": "m/chunk_ch-heal-01.mp3"
+},
+"chunk:ch-heal-02": {
+"f": "f/chunk_ch-heal-02.mp3",
+"m": "m/chunk_ch-heal-02.mp3"
+},
+"chunk:ch-heal-03": {
+"f": "f/chunk_ch-heal-03.mp3",
+"m": "m/chunk_ch-heal-03.mp3"
+},
+"chunk:ch-heal-04": {
+"f": "f/chunk_ch-heal-04.mp3",
+"m": "m/chunk_ch-heal-04.mp3"
+},
+"chunk:ch-heal-05": {
+"f": "f/chunk_ch-heal-05.mp3",
+"m": "m/chunk_ch-heal-05.mp3"
+},
+"chunk:ch-heal-06": {
+"f": "f/chunk_ch-heal-06.mp3",
+"m": "m/chunk_ch-heal-06.mp3"
+},
+"chunk:ch-heal-07": {
+"f": "f/chunk_ch-heal-07.mp3",
+"m": "m/chunk_ch-heal-07.mp3"
+},
+"chunk:ch-heal-08": {
+"f": "f/chunk_ch-heal-08.mp3",
+"m": "m/chunk_ch-heal-08.mp3"
+},
+"chunk:ch-heal-09": {
+"f": "f/chunk_ch-heal-09.mp3",
+"m": "m/chunk_ch-heal-09.mp3"
+},
+"chunk:ch-heal-10": {
+"f": "f/chunk_ch-heal-10.mp3",
+"m": "m/chunk_ch-heal-10.mp3"
+},
+"chunk:ch-heal-11": {
+"f": "f/chunk_ch-heal-11.mp3",
+"m": "m/chunk_ch-heal-11.mp3"
+},
+"chunk:ch-heal-12": {
+"f": "f/chunk_ch-heal-12.mp3",
+"m": "m/chunk_ch-heal-12.mp3"
+},
+"chunk:ch-heal-13": {
+"f": "f/chunk_ch-heal-13.mp3",
+"m": "m/chunk_ch-heal-13.mp3"
+},
+"chunk:ch-heal-14": {
+"f": "f/chunk_ch-heal-14.mp3",
+"m": "m/chunk_ch-heal-14.mp3"
+},
+"chunk:ch-heal-15": {
+"f": "f/chunk_ch-heal-15.mp3",
+"m": "m/chunk_ch-heal-15.mp3"
+},
+"chunk:ch-heal-16": {
+"f": "f/chunk_ch-heal-16.mp3",
+"m": "m/chunk_ch-heal-16.mp3"
+},
+"chunk:ch-heal-17": {
+"f": "f/chunk_ch-heal-17.mp3",
+"m": "m/chunk_ch-heal-17.mp3"
+},
+"chunk:ch-heal-18": {
+"f": "f/chunk_ch-heal-18.mp3",
+"m": "m/chunk_ch-heal-18.mp3"
+},
+"chunk:ch-heal-19": {
+"f": "f/chunk_ch-heal-19.mp3",
+"m": "m/chunk_ch-heal-19.mp3"
+},
+"chunk:ch-work-01": {
+"f": "f/chunk_ch-work-01.mp3",
+"m": "m/chunk_ch-work-01.mp3"
+},
+"chunk:ch-work-02": {
+"f": "f/chunk_ch-work-02.mp3",
+"m": "m/chunk_ch-work-02.mp3"
+},
+"chunk:ch-work-03": {
+"f": "f/chunk_ch-work-03.mp3",
+"m": "m/chunk_ch-work-03.mp3"
+},
+"chunk:ch-work-04": {
+"f": "f/chunk_ch-work-04.mp3",
+"m": "m/chunk_ch-work-04.mp3"
+},
+"chunk:ch-work-05": {
+"f": "f/chunk_ch-work-05.mp3",
+"m": "m/chunk_ch-work-05.mp3"
+},
+"chunk:ch-work-06": {
+"f": "f/chunk_ch-work-06.mp3",
+"m": "m/chunk_ch-work-06.mp3"
+},
+"chunk:ch-work-07": {
+"f": "f/chunk_ch-work-07.mp3",
+"m": "m/chunk_ch-work-07.mp3"
+},
+"chunk:ch-work-08": {
+"f": "f/chunk_ch-work-08.mp3",
+"m": "m/chunk_ch-work-08.mp3"
+},
+"chunk:ch-work-09": {
+"f": "f/chunk_ch-work-09.mp3",
+"m": "m/chunk_ch-work-09.mp3"
+},
+"chunk:ch-work-10": {
+"f": "f/chunk_ch-work-10.mp3",
+"m": "m/chunk_ch-work-10.mp3"
+},
+"chunk:ch-work-11": {
+"f": "f/chunk_ch-work-11.mp3",
+"m": "m/chunk_ch-work-11.mp3"
+},
+"chunk:ch-work-12": {
+"f": "f/chunk_ch-work-12.mp3",
+"m": "m/chunk_ch-work-12.mp3"
+},
+"chunk:ch-work-13": {
+"f": "f/chunk_ch-work-13.mp3",
+"m": "m/chunk_ch-work-13.mp3"
+},
+"chunk:ch-work-14": {
+"f": "f/chunk_ch-work-14.mp3",
+"m": "m/chunk_ch-work-14.mp3"
+},
+"chunk:ch-work-15": {
+"f": "f/chunk_ch-work-15.mp3",
+"m": "m/chunk_ch-work-15.mp3"
+},
+"chunk:ch-work-16": {
+"f": "f/chunk_ch-work-16.mp3",
+"m": "m/chunk_ch-work-16.mp3"
+},
+"chunk:ch-work-17": {
+"f": "f/chunk_ch-work-17.mp3",
+"m": "m/chunk_ch-work-17.mp3"
+},
+"chunk:ch-work-18": {
+"f": "f/chunk_ch-work-18.mp3",
+"m": "m/chunk_ch-work-18.mp3"
+},
+"chunk:ch-smal-01": {
+"f": "f/chunk_ch-smal-01.mp3",
+"m": "m/chunk_ch-smal-01.mp3"
+},
+"chunk:ch-smal-02": {
+"f": "f/chunk_ch-smal-02.mp3",
+"m": "m/chunk_ch-smal-02.mp3"
+},
+"chunk:ch-smal-03": {
+"f": "f/chunk_ch-smal-03.mp3",
+"m": "m/chunk_ch-smal-03.mp3"
+},
+"chunk:ch-smal-04": {
+"f": "f/chunk_ch-smal-04.mp3",
+"m": "m/chunk_ch-smal-04.mp3"
+},
+"chunk:ch-smal-05": {
+"f": "f/chunk_ch-smal-05.mp3",
+"m": "m/chunk_ch-smal-05.mp3"
+},
+"chunk:ch-smal-06": {
+"f": "f/chunk_ch-smal-06.mp3",
+"m": "m/chunk_ch-smal-06.mp3"
+},
+"chunk:ch-smal-07": {
+"f": "f/chunk_ch-smal-07.mp3",
+"m": "m/chunk_ch-smal-07.mp3"
+},
+"chunk:ch-smal-08": {
+"f": "f/chunk_ch-smal-08.mp3",
+"m": "m/chunk_ch-smal-08.mp3"
+},
+"chunk:ch-smal-09": {
+"f": "f/chunk_ch-smal-09.mp3",
+"m": "m/chunk_ch-smal-09.mp3"
+},
+"chunk:ch-smal-10": {
+"f": "f/chunk_ch-smal-10.mp3",
+"m": "m/chunk_ch-smal-10.mp3"
+},
+"chunk:ch-smal-11": {
+"f": "f/chunk_ch-smal-11.mp3",
+"m": "m/chunk_ch-smal-11.mp3"
+},
+"chunk:ch-smal-12": {
+"f": "f/chunk_ch-smal-12.mp3",
+"m": "m/chunk_ch-smal-12.mp3"
+},
+"chunk:ch-smal-13": {
+"f": "f/chunk_ch-smal-13.mp3",
+"m": "m/chunk_ch-smal-13.mp3"
+},
+"chunk:ch-smal-14": {
+"f": "f/chunk_ch-smal-14.mp3",
+"m": "m/chunk_ch-smal-14.mp3"
+},
+"chunk:ch-smal-15": {
+"f": "f/chunk_ch-smal-15.mp3",
+"m": "m/chunk_ch-smal-15.mp3"
+},
+"chunk:ch-smal-16": {
+"f": "f/chunk_ch-smal-16.mp3",
+"m": "m/chunk_ch-smal-16.mp3"
+},
+"chunk:ch-smal-17": {
+"f": "f/chunk_ch-smal-17.mp3",
+"m": "m/chunk_ch-smal-17.mp3"
+},
+"chunk:ch-smal-18": {
+"f": "f/chunk_ch-smal-18.mp3",
+"m": "m/chunk_ch-smal-18.mp3"
+},
+"word:food-porridge": {
+"f": "f/word_food-porridge.mp3",
+"m": "m/word_food-porridge.mp3"
+},
+"sent:food-porridge": {
+"f": "f/sent_food-porridge.mp3",
+"m": "m/sent_food-porridge.mp3"
+},
+"word:food-rice": {
+"f": "f/word_food-rice.mp3",
+"m": "m/word_food-rice.mp3"
+},
+"sent:food-rice": {
+"f": "f/sent_food-rice.mp3",
+"m": "m/sent_food-rice.mp3"
+},
+"word:food-bread": {
+"f": "f/word_food-bread.mp3",
+"m": "m/word_food-bread.mp3"
+},
+"sent:food-bread": {
+"f": "f/sent_food-bread.mp3",
+"m": "m/sent_food-bread.mp3"
+},
+"word:food-egg": {
+"f": "f/word_food-egg.mp3",
+"m": "m/word_food-egg.mp3"
+},
+"sent:food-egg": {
+"f": "f/sent_food-egg.mp3",
+"m": "m/sent_food-egg.mp3"
+},
+"word:food-vegetables": {
+"f": "f/word_food-vegetables.mp3",
+"m": "m/word_food-vegetables.mp3"
+},
+"sent:food-vegetables": {
+"f": "f/sent_food-vegetables.mp3",
+"m": "m/sent_food-vegetables.mp3"
+},
+"word:food-fruit": {
+"f": "f/word_food-fruit.mp3",
+"m": "m/word_food-fruit.mp3"
+},
+"sent:food-fruit": {
+"f": "f/sent_food-fruit.mp3",
+"m": "m/sent_food-fruit.mp3"
+},
+"word:food-chicken": {
+"f": "f/word_food-chicken.mp3",
+"m": "m/word_food-chicken.mp3"
+},
+"sent:food-chicken": {
+"f": "f/sent_food-chicken.mp3",
+"m": "m/sent_food-chicken.mp3"
+},
+"word:food-fish": {
+"f": "f/word_food-fish.mp3",
+"m": "m/word_food-fish.mp3"
+},
+"sent:food-fish": {
+"f": "f/sent_food-fish.mp3",
+"m": "m/sent_food-fish.mp3"
+},
+"word:food-beef": {
+"f": "f/word_food-beef.mp3",
+"m": "m/word_food-beef.mp3"
+},
+"sent:food-beef": {
+"f": "f/sent_food-beef.mp3",
+"m": "m/sent_food-beef.mp3"
+},
+"word:food-water": {
+"f": "f/word_food-water.mp3",
+"m": "m/word_food-water.mp3"
+},
+"sent:food-water": {
+"f": "f/sent_food-water.mp3",
+"m": "m/sent_food-water.mp3"
+},
+"word:food-milk": {
+"f": "f/word_food-milk.mp3",
+"m": "m/word_food-milk.mp3"
+},
+"sent:food-milk": {
+"f": "f/sent_food-milk.mp3",
+"m": "m/sent_food-milk.mp3"
+},
+"word:food-coffee": {
+"f": "f/word_food-coffee.mp3",
+"m": "m/word_food-coffee.mp3"
+},
+"sent:food-coffee": {
+"f": "f/sent_food-coffee.mp3",
+"m": "m/sent_food-coffee.mp3"
+},
+"word:food-tea": {
+"f": "f/word_food-tea.mp3",
+"m": "m/word_food-tea.mp3"
+},
+"sent:food-tea": {
+"f": "f/sent_food-tea.mp3",
+"m": "m/sent_food-tea.mp3"
+},
+"word:restaurant-waiter": {
+"f": "f/word_restaurant-waiter.mp3",
+"m": "m/word_restaurant-waiter.mp3"
+},
+"sent:restaurant-waiter": {
+"f": "f/sent_restaurant-waiter.mp3",
+"m": "m/sent_restaurant-waiter.mp3"
+},
+"word:restaurant-customer": {
+"f": "f/word_restaurant-customer.mp3",
+"m": "m/word_restaurant-customer.mp3"
+},
+"sent:restaurant-customer": {
+"f": "f/sent_restaurant-customer.mp3",
+"m": "m/sent_restaurant-customer.mp3"
+},
+"word:restaurant-plate": {
+"f": "f/word_restaurant-plate.mp3",
+"m": "m/word_restaurant-plate.mp3"
+},
+"sent:restaurant-plate": {
+"f": "f/sent_restaurant-plate.mp3",
+"m": "m/sent_restaurant-plate.mp3"
+},
+"word:restaurant-spoon": {
+"f": "f/word_restaurant-spoon.mp3",
+"m": "m/word_restaurant-spoon.mp3"
+},
+"sent:restaurant-spoon": {
+"f": "f/sent_restaurant-spoon.mp3",
+"m": "m/sent_restaurant-spoon.mp3"
+},
+"word:restaurant-fork": {
+"f": "f/word_restaurant-fork.mp3",
+"m": "m/word_restaurant-fork.mp3"
+},
+"sent:restaurant-fork": {
+"f": "f/sent_restaurant-fork.mp3",
+"m": "m/sent_restaurant-fork.mp3"
+},
+"word:restaurant-knife": {
+"f": "f/word_restaurant-knife.mp3",
+"m": "m/word_restaurant-knife.mp3"
+},
+"sent:restaurant-knife": {
+"f": "f/sent_restaurant-knife.mp3",
+"m": "m/sent_restaurant-knife.mp3"
+},
+"word:restaurant-glass": {
+"f": "f/word_restaurant-glass.mp3",
+"m": "m/word_restaurant-glass.mp3"
+},
+"sent:restaurant-glass": {
+"f": "f/sent_restaurant-glass.mp3",
+"m": "m/sent_restaurant-glass.mp3"
+},
+"word:restaurant-bottle": {
+"f": "f/word_restaurant-bottle.mp3",
+"m": "m/word_restaurant-bottle.mp3"
+},
+"sent:restaurant-bottle": {
+"f": "f/sent_restaurant-bottle.mp3",
+"m": "m/sent_restaurant-bottle.mp3"
+},
+"word:restaurant-drinks-menu": {
+"f": "f/word_restaurant-drinks-menu.mp3",
+"m": "m/word_restaurant-drinks-menu.mp3"
+},
+"sent:restaurant-drinks-menu": {
+"f": "f/sent_restaurant-drinks-menu.mp3",
+"m": "m/sent_restaurant-drinks-menu.mp3"
+},
+"word:restaurant-today-s-special": {
+"f": "f/word_restaurant-today-s-special.mp3",
+"m": "m/word_restaurant-today-s-special.mp3"
+},
+"sent:restaurant-today-s-special": {
+"f": "f/sent_restaurant-today-s-special.mp3",
+"m": "m/sent_restaurant-today-s-special.mp3"
+},
+"word:restaurant-savory": {
+"f": "f/word_restaurant-savory.mp3",
+"m": "m/word_restaurant-savory.mp3"
+},
+"sent:restaurant-savory": {
+"f": "f/sent_restaurant-savory.mp3",
+"m": "m/sent_restaurant-savory.mp3"
+},
+"word:restaurant-without": {
+"f": "f/word_restaurant-without.mp3",
+"m": "m/word_restaurant-without.mp3"
+},
+"sent:restaurant-without": {
+"f": "f/sent_restaurant-without.mp3",
+"m": "m/sent_restaurant-without.mp3"
+},
+"word:restaurant-pay-separately": {
+"f": "f/word_restaurant-pay-separately.mp3",
+"m": "m/word_restaurant-pay-separately.mp3"
+},
+"sent:restaurant-pay-separately": {
+"f": "f/sent_restaurant-pay-separately.mp3",
+"m": "m/sent_restaurant-pay-separately.mp3"
+},
+"word:travel-hotel": {
+"f": "f/word_travel-hotel.mp3",
+"m": "m/word_travel-hotel.mp3"
+},
+"sent:travel-hotel": {
+"f": "f/sent_travel-hotel.mp3",
+"m": "m/sent_travel-hotel.mp3"
+},
+"word:travel-room": {
+"f": "f/word_travel-room.mp3",
+"m": "m/word_travel-room.mp3"
+},
+"sent:travel-room": {
+"f": "f/sent_travel-room.mp3",
+"m": "m/sent_travel-room.mp3"
+},
+"word:travel-suitcase": {
+"f": "f/word_travel-suitcase.mp3",
+"m": "m/word_travel-suitcase.mp3"
+},
+"sent:travel-suitcase": {
+"f": "f/sent_travel-suitcase.mp3",
+"m": "m/sent_travel-suitcase.mp3"
+},
+"word:travel-flight": {
+"f": "f/word_travel-flight.mp3",
+"m": "m/word_travel-flight.mp3"
+},
+"sent:travel-flight": {
+"f": "f/sent_travel-flight.mp3",
+"m": "m/sent_travel-flight.mp3"
+},
+"word:travel-platform": {
+"f": "f/word_travel-platform.mp3",
+"m": "m/word_travel-platform.mp3"
+},
+"sent:travel-platform": {
+"f": "f/sent_travel-platform.mp3",
+"m": "m/sent_travel-platform.mp3"
+},
+"word:travel-delayed": {
+"f": "f/word_travel-delayed.mp3",
+"m": "m/word_travel-delayed.mp3"
+},
+"sent:travel-delayed": {
+"f": "f/sent_travel-delayed.mp3",
+"m": "m/sent_travel-delayed.mp3"
+},
+"word:travel-go-straight": {
+"f": "f/word_travel-go-straight.mp3",
+"m": "m/word_travel-go-straight.mp3"
+},
+"sent:travel-go-straight": {
+"f": "f/sent_travel-go-straight.mp3",
+"m": "m/sent_travel-go-straight.mp3"
+},
+"word:travel-turn-right": {
+"f": "f/word_travel-turn-right.mp3",
+"m": "m/word_travel-turn-right.mp3"
+},
+"sent:travel-turn-right": {
+"f": "f/sent_travel-turn-right.mp3",
+"m": "m/sent_travel-turn-right.mp3"
+},
+"word:travel-near": {
+"f": "f/word_travel-near.mp3",
+"m": "m/word_travel-near.mp3"
+},
+"sent:travel-near": {
+"f": "f/sent_travel-near.mp3",
+"m": "m/sent_travel-near.mp3"
+},
+"word:travel-far": {
+"f": "f/word_travel-far.mp3",
+"m": "m/word_travel-far.mp3"
+},
+"sent:travel-far": {
+"f": "f/sent_travel-far.mp3",
+"m": "m/sent_travel-far.mp3"
+},
+"word:travel-reception": {
+"f": "f/word_travel-reception.mp3",
+"m": "m/word_travel-reception.mp3"
+},
+"sent:travel-reception": {
+"f": "f/sent_travel-reception.mp3",
+"m": "m/sent_travel-reception.mp3"
+},
+"word:travel-check-in": {
+"f": "f/word_travel-check-in.mp3",
+"m": "m/word_travel-check-in.mp3"
+},
+"sent:travel-check-in": {
+"f": "f/sent_travel-check-in.mp3",
+"m": "m/sent_travel-check-in.mp3"
+},
+"word:travel-check-out": {
+"f": "f/word_travel-check-out.mp3",
+"m": "m/word_travel-check-out.mp3"
+},
+"sent:travel-check-out": {
+"f": "f/sent_travel-check-out.mp3",
+"m": "m/sent_travel-check-out.mp3"
+},
+"word:home-bathroom": {
+"f": "f/word_home-bathroom.mp3",
+"m": "m/word_home-bathroom.mp3"
+},
+"sent:home-bathroom": {
+"f": "f/sent_home-bathroom.mp3",
+"m": "m/sent_home-bathroom.mp3"
+},
+"word:home-sofa": {
+"f": "f/word_home-sofa.mp3",
+"m": "m/word_home-sofa.mp3"
+},
+"sent:home-sofa": {
+"f": "f/sent_home-sofa.mp3",
+"m": "m/sent_home-sofa.mp3"
+},
+"word:home-table": {
+"f": "f/word_home-table.mp3",
+"m": "m/word_home-table.mp3"
+},
+"sent:home-table": {
+"f": "f/sent_home-table.mp3",
+"m": "m/sent_home-table.mp3"
+},
+"word:home-chair": {
+"f": "f/word_home-chair.mp3",
+"m": "m/word_home-chair.mp3"
+},
+"sent:home-chair": {
+"f": "f/sent_home-chair.mp3",
+"m": "m/sent_home-chair.mp3"
+},
+"word:home-window": {
+"f": "f/word_home-window.mp3",
+"m": "m/word_home-window.mp3"
+},
+"sent:home-window": {
+"f": "f/sent_home-window.mp3",
+"m": "m/sent_home-window.mp3"
+},
+"word:home-door": {
+"f": "f/word_home-door.mp3",
+"m": "m/word_home-door.mp3"
+},
+"sent:home-door": {
+"f": "f/sent_home-door.mp3",
+"m": "m/sent_home-door.mp3"
+},
+"word:home-house-key": {
+"f": "f/word_home-house-key.mp3",
+"m": "m/word_home-house-key.mp3"
+},
+"sent:home-house-key": {
+"f": "f/sent_home-house-key.mp3",
+"m": "m/sent_home-house-key.mp3"
+},
+"word:home-shelf": {
+"f": "f/word_home-shelf.mp3",
+"m": "m/word_home-shelf.mp3"
+},
+"sent:home-shelf": {
+"f": "f/sent_home-shelf.mp3",
+"m": "m/sent_home-shelf.mp3"
+},
+"word:home-towel": {
+"f": "f/word_home-towel.mp3",
+"m": "m/word_home-towel.mp3"
+},
+"sent:home-towel": {
+"f": "f/sent_home-towel.mp3",
+"m": "m/sent_home-towel.mp3"
+},
+"word:home-blanket": {
+"f": "f/word_home-blanket.mp3",
+"m": "m/word_home-blanket.mp3"
+},
+"sent:home-blanket": {
+"f": "f/sent_home-blanket.mp3",
+"m": "m/sent_home-blanket.mp3"
+},
+"word:home-light": {
+"f": "f/word_home-light.mp3",
+"m": "m/word_home-light.mp3"
+},
+"sent:home-light": {
+"f": "f/sent_home-light.mp3",
+"m": "m/sent_home-light.mp3"
+},
+"word:home-noise": {
+"f": "f/word_home-noise.mp3",
+"m": "m/word_home-noise.mp3"
+},
+"sent:home-noise": {
+"f": "f/sent_home-noise.mp3",
+"m": "m/sent_home-noise.mp3"
+},
+"word:home-fix": {
+"f": "f/word_home-fix.mp3",
+"m": "m/word_home-fix.mp3"
+},
+"sent:home-fix": {
+"f": "f/sent_home-fix.mp3",
+"m": "m/sent_home-fix.mp3"
+},
+"word:shopping-shop": {
+"f": "f/word_shopping-shop.mp3",
+"m": "m/word_shopping-shop.mp3"
+},
+"sent:shopping-shop": {
+"f": "f/sent_shopping-shop.mp3",
+"m": "m/sent_shopping-shop.mp3"
+},
+"word:shopping-size": {
+"f": "f/word_shopping-size.mp3",
+"m": "m/word_shopping-size.mp3"
+},
+"sent:shopping-size": {
+"f": "f/sent_shopping-size.mp3",
+"m": "m/sent_shopping-size.mp3"
+},
+"word:shopping-color": {
+"f": "f/word_shopping-color.mp3",
+"m": "m/word_shopping-color.mp3"
+},
+"sent:shopping-color": {
+"f": "f/sent_shopping-color.mp3",
+"m": "m/sent_shopping-color.mp3"
+},
+"word:shopping-try-on": {
+"f": "f/word_shopping-try-on.mp3",
+"m": "m/word_shopping-try-on.mp3"
+},
+"sent:shopping-try-on": {
+"f": "f/sent_shopping-try-on.mp3",
+"m": "m/sent_shopping-try-on.mp3"
+},
+"word:shopping-fits-well": {
+"f": "f/word_shopping-fits-well.mp3",
+"m": "m/word_shopping-fits-well.mp3"
+},
+"sent:shopping-fits-well": {
+"f": "f/sent_shopping-fits-well.mp3",
+"m": "m/sent_shopping-fits-well.mp3"
+},
+"word:shopping-debit-card": {
+"f": "f/word_shopping-debit-card.mp3",
+"m": "m/word_shopping-debit-card.mp3"
+},
+"sent:shopping-debit-card": {
+"f": "f/sent_shopping-debit-card.mp3",
+"m": "m/sent_shopping-debit-card.mp3"
+},
+"word:shopping-return": {
+"f": "f/word_shopping-return.mp3",
+"m": "m/word_shopping-return.mp3"
+},
+"sent:shopping-return": {
+"f": "f/sent_shopping-return.mp3",
+"m": "m/sent_shopping-return.mp3"
+},
+"word:shopping-exchange": {
+"f": "f/word_shopping-exchange.mp3",
+"m": "m/word_shopping-exchange.mp3"
+},
+"sent:shopping-exchange": {
+"f": "f/sent_shopping-exchange.mp3",
+"m": "m/sent_shopping-exchange.mp3"
+},
+"word:shopping-grocery-store": {
+"f": "f/word_shopping-grocery-store.mp3",
+"m": "m/word_shopping-grocery-store.mp3"
+},
+"sent:shopping-grocery-store": {
+"f": "f/sent_shopping-grocery-store.mp3",
+"m": "m/sent_shopping-grocery-store.mp3"
+},
+"word:shopping-bag": {
+"f": "f/word_shopping-bag.mp3",
+"m": "m/word_shopping-bag.mp3"
+},
+"sent:shopping-bag": {
+"f": "f/sent_shopping-bag.mp3",
+"m": "m/sent_shopping-bag.mp3"
+},
+"word:shopping-on-sale": {
+"f": "f/word_shopping-on-sale.mp3",
+"m": "m/word_shopping-on-sale.mp3"
+},
+"sent:shopping-on-sale": {
+"f": "f/sent_shopping-on-sale.mp3",
+"m": "m/sent_shopping-on-sale.mp3"
+},
+"word:shopping-reasonable": {
+"f": "f/word_shopping-reasonable.mp3",
+"m": "m/word_shopping-reasonable.mp3"
+},
+"sent:shopping-reasonable": {
+"f": "f/sent_shopping-reasonable.mp3",
+"m": "m/sent_shopping-reasonable.mp3"
+},
+"word:shopping-gift": {
+"f": "f/word_shopping-gift.mp3",
+"m": "m/word_shopping-gift.mp3"
+},
+"sent:shopping-gift": {
+"f": "f/sent_shopping-gift.mp3",
+"m": "m/sent_shopping-gift.mp3"
+},
+"word:health-clinic": {
+"f": "f/word_health-clinic.mp3",
+"m": "m/word_health-clinic.mp3"
+},
+"sent:health-clinic": {
+"f": "f/sent_health-clinic.mp3",
+"m": "m/sent_health-clinic.mp3"
+},
+"word:health-nurse": {
+"f": "f/word_health-nurse.mp3",
+"m": "m/word_health-nurse.mp3"
+},
+"sent:health-nurse": {
+"f": "f/sent_health-nurse.mp3",
+"m": "m/sent_health-nurse.mp3"
+},
+"word:health-tablet": {
+"f": "f/word_health-tablet.mp3",
+"m": "m/word_health-tablet.mp3"
+},
+"sent:health-tablet": {
+"f": "f/sent_health-tablet.mp3",
+"m": "m/sent_health-tablet.mp3"
+},
+"word:health-symptoms": {
+"f": "f/word_health-symptoms.mp3",
+"m": "m/word_health-symptoms.mp3"
+},
+"sent:health-symptoms": {
+"f": "f/sent_health-symptoms.mp3",
+"m": "m/sent_health-symptoms.mp3"
+},
+"word:health-backache": {
+"f": "f/word_health-backache.mp3",
+"m": "m/word_health-backache.mp3"
+},
+"sent:health-backache": {
+"f": "f/sent_health-backache.mp3",
+"m": "m/sent_health-backache.mp3"
+},
+"word:health-pharmacy": {
+"f": "f/word_health-pharmacy.mp3",
+"m": "m/word_health-pharmacy.mp3"
+},
+"sent:health-pharmacy": {
+"f": "f/sent_health-pharmacy.mp3",
+"m": "m/sent_health-pharmacy.mp3"
+},
+"word:health-allergic": {
+"f": "f/word_health-allergic.mp3",
+"m": "m/word_health-allergic.mp3"
+},
+"sent:health-allergic": {
+"f": "f/sent_health-allergic.mp3",
+"m": "m/sent_health-allergic.mp3"
+},
+"word:health-nauseous": {
+"f": "f/word_health-nauseous.mp3",
+"m": "m/word_health-nauseous.mp3"
+},
+"sent:health-nauseous": {
+"f": "f/sent_health-nauseous.mp3",
+"m": "m/sent_health-nauseous.mp3"
+},
+"word:health-dizzy": {
+"f": "f/word_health-dizzy.mp3",
+"m": "m/word_health-dizzy.mp3"
+},
+"sent:health-dizzy": {
+"f": "f/sent_health-dizzy.mp3",
+"m": "m/sent_health-dizzy.mp3"
+},
+"word:health-temperature": {
+"f": "f/word_health-temperature.mp3",
+"m": "m/word_health-temperature.mp3"
+},
+"sent:health-temperature": {
+"f": "f/sent_health-temperature.mp3",
+"m": "m/sent_health-temperature.mp3"
+},
+"word:health-wound": {
+"f": "f/word_health-wound.mp3",
+"m": "m/word_health-wound.mp3"
+},
+"sent:health-wound": {
+"f": "f/sent_health-wound.mp3",
+"m": "m/sent_health-wound.mp3"
+},
+"word:health-bandage": {
+"f": "f/word_health-bandage.mp3",
+"m": "m/word_health-bandage.mp3"
+},
+"sent:health-bandage": {
+"f": "f/sent_health-bandage.mp3",
+"m": "m/sent_health-bandage.mp3"
+},
+"word:health-recover": {
+"f": "f/word_health-recover.mp3",
+"m": "m/word_health-recover.mp3"
+},
+"sent:health-recover": {
+"f": "f/sent_health-recover.mp3",
+"m": "m/sent_health-recover.mp3"
+},
+"word:work-office": {
+"f": "f/word_work-office.mp3",
+"m": "m/word_work-office.mp3"
+},
+"sent:work-office": {
+"f": "f/sent_work-office.mp3",
+"m": "m/sent_work-office.mp3"
+},
+"word:work-teammate": {
+"f": "f/word_work-teammate.mp3",
+"m": "m/word_work-teammate.mp3"
+},
+"sent:work-teammate": {
+"f": "f/sent_work-teammate.mp3",
+"m": "m/sent_work-teammate.mp3"
+},
+"word:work-manager": {
+"f": "f/word_work-manager.mp3",
+"m": "m/word_work-manager.mp3"
+},
+"sent:work-manager": {
+"f": "f/sent_work-manager.mp3",
+"m": "m/sent_work-manager.mp3"
+},
+"word:work-work-schedule": {
+"f": "f/word_work-work-schedule.mp3",
+"m": "m/word_work-work-schedule.mp3"
+},
+"sent:work-work-schedule": {
+"f": "f/sent_work-work-schedule.mp3",
+"m": "m/sent_work-work-schedule.mp3"
+},
+"word:work-take-a-break": {
+"f": "f/word_work-take-a-break.mp3",
+"m": "m/word_work-take-a-break.mp3"
+},
+"sent:work-take-a-break": {
+"f": "f/sent_work-take-a-break.mp3",
+"m": "m/sent_work-take-a-break.mp3"
+},
+"word:work-work": {
+"f": "f/word_work-work.mp3",
+"m": "m/word_work-work.mp3"
+},
+"sent:work-work": {
+"f": "f/sent_work-work.mp3",
+"m": "m/sent_work-work.mp3"
+},
+"word:work-new-job": {
+"f": "f/word_work-new-job.mp3",
+"m": "m/word_work-new-job.mp3"
+},
+"sent:work-new-job": {
+"f": "f/sent_work-new-job.mp3",
+"m": "m/sent_work-new-job.mp3"
+},
+"word:work-start-work": {
+"f": "f/word_work-start-work.mp3",
+"m": "m/word_work-start-work.mp3"
+},
+"sent:work-start-work": {
+"f": "f/sent_work-start-work.mp3",
+"m": "m/sent_work-start-work.mp3"
+},
+"word:work-finish": {
+"f": "f/word_work-finish.mp3",
+"m": "m/word_work-finish.mp3"
+},
+"sent:work-finish": {
+"f": "f/sent_work-finish.mp3",
+"m": "m/sent_work-finish.mp3"
+},
+"word:work-help-me": {
+"f": "f/word_work-help-me.mp3",
+"m": "m/word_work-help-me.mp3"
+},
+"sent:work-help-me": {
+"f": "f/sent_work-help-me.mp3",
+"m": "m/sent_work-help-me.mp3"
+},
+"word:work-phone-call": {
+"f": "f/word_work-phone-call.mp3",
+"m": "m/word_work-phone-call.mp3"
+},
+"sent:work-phone-call": {
+"f": "f/sent_work-phone-call.mp3",
+"m": "m/sent_work-phone-call.mp3"
+},
+"word:work-client": {
+"f": "f/word_work-client.mp3",
+"m": "m/word_work-client.mp3"
+},
+"sent:work-client": {
+"f": "f/sent_work-client.mp3",
+"m": "m/sent_work-client.mp3"
+},
+"word:work-day-off": {
+"f": "f/word_work-day-off.mp3",
+"m": "m/word_work-day-off.mp3"
+},
+"sent:work-day-off": {
+"f": "f/sent_work-day-off.mp3",
+"m": "m/sent_work-day-off.mp3"
+},
+"word:feelings-happy": {
+"f": "f/word_feelings-happy.mp3",
+"m": "m/word_feelings-happy.mp3"
+},
+"sent:feelings-happy": {
+"f": "f/sent_feelings-happy.mp3",
+"m": "m/sent_feelings-happy.mp3"
+},
+"word:feelings-sad": {
+"f": "f/word_feelings-sad.mp3",
+"m": "m/word_feelings-sad.mp3"
+},
+"sent:feelings-sad": {
+"f": "f/sent_feelings-sad.mp3",
+"m": "m/sent_feelings-sad.mp3"
+},
+"word:feelings-angry": {
+"f": "f/word_feelings-angry.mp3",
+"m": "m/word_feelings-angry.mp3"
+},
+"sent:feelings-angry": {
+"f": "f/sent_feelings-angry.mp3",
+"m": "m/sent_feelings-angry.mp3"
+},
+"word:feelings-calm": {
+"f": "f/word_feelings-calm.mp3",
+"m": "m/word_feelings-calm.mp3"
+},
+"sent:feelings-calm": {
+"f": "f/sent_feelings-calm.mp3",
+"m": "m/sent_feelings-calm.mp3"
+},
+"word:feelings-excited": {
+"f": "f/word_feelings-excited.mp3",
+"m": "m/word_feelings-excited.mp3"
+},
+"sent:feelings-excited": {
+"f": "f/sent_feelings-excited.mp3",
+"m": "m/sent_feelings-excited.mp3"
+},
+"word:feelings-sleepy": {
+"f": "f/word_feelings-sleepy.mp3",
+"m": "m/word_feelings-sleepy.mp3"
+},
+"sent:feelings-sleepy": {
+"f": "f/sent_feelings-sleepy.mp3",
+"m": "m/sent_feelings-sleepy.mp3"
+},
+"word:feelings-surprised": {
+"f": "f/word_feelings-surprised.mp3",
+"m": "m/word_feelings-surprised.mp3"
+},
+"sent:feelings-surprised": {
+"f": "f/sent_feelings-surprised.mp3",
+"m": "m/sent_feelings-surprised.mp3"
+},
+"word:feelings-worried": {
+"f": "f/word_feelings-worried.mp3",
+"m": "m/word_feelings-worried.mp3"
+},
+"sent:feelings-worried": {
+"f": "f/sent_feelings-worried.mp3",
+"m": "m/sent_feelings-worried.mp3"
+},
+"word:feelings-grateful": {
+"f": "f/word_feelings-grateful.mp3",
+"m": "m/word_feelings-grateful.mp3"
+},
+"sent:feelings-grateful": {
+"f": "f/sent_feelings-grateful.mp3",
+"m": "m/sent_feelings-grateful.mp3"
+},
+"word:feelings-curious": {
+"f": "f/word_feelings-curious.mp3",
+"m": "m/word_feelings-curious.mp3"
+},
+"sent:feelings-curious": {
+"f": "f/sent_feelings-curious.mp3",
+"m": "m/sent_feelings-curious.mp3"
+},
+"word:feelings-relaxed": {
+"f": "f/word_feelings-relaxed.mp3",
+"m": "m/word_feelings-relaxed.mp3"
+},
+"sent:feelings-relaxed": {
+"f": "f/sent_feelings-relaxed.mp3",
+"m": "m/sent_feelings-relaxed.mp3"
+},
+"word:feelings-uncomfortable": {
+"f": "f/word_feelings-uncomfortable.mp3",
+"m": "m/word_feelings-uncomfortable.mp3"
+},
+"sent:feelings-uncomfortable": {
+"f": "f/sent_feelings-uncomfortable.mp3",
+"m": "m/sent_feelings-uncomfortable.mp3"
+},
+"word:feelings-awake": {
+"f": "f/word_feelings-awake.mp3",
+"m": "m/word_feelings-awake.mp3"
+},
+"sent:feelings-awake": {
+"f": "f/sent_feelings-awake.mp3",
+"m": "m/sent_feelings-awake.mp3"
+},
+"word:transport-bus-stop": {
+"f": "f/word_transport-bus-stop.mp3",
+"m": "m/word_transport-bus-stop.mp3"
+},
+"sent:transport-bus-stop": {
+"f": "f/sent_transport-bus-stop.mp3",
+"m": "m/sent_transport-bus-stop.mp3"
+},
+"word:transport-bus-station": {
+"f": "f/word_transport-bus-station.mp3",
+"m": "m/word_transport-bus-station.mp3"
+},
+"sent:transport-bus-station": {
+"f": "f/sent_transport-bus-station.mp3",
+"m": "m/sent_transport-bus-station.mp3"
+},
+"word:transport-subway-station": {
+"f": "f/word_transport-subway-station.mp3",
+"m": "m/word_transport-subway-station.mp3"
+},
+"sent:transport-subway-station": {
+"f": "f/sent_transport-subway-station.mp3",
+"m": "m/sent_transport-subway-station.mp3"
+},
+"word:transport-train-station": {
+"f": "f/word_transport-train-station.mp3",
+"m": "m/word_transport-train-station.mp3"
+},
+"sent:transport-train-station": {
+"f": "f/sent_transport-train-station.mp3",
+"m": "m/sent_transport-train-station.mp3"
+},
+"word:transport-taxi-stand": {
+"f": "f/word_transport-taxi-stand.mp3",
+"m": "m/word_transport-taxi-stand.mp3"
+},
+"sent:transport-taxi-stand": {
+"f": "f/sent_transport-taxi-stand.mp3",
+"m": "m/sent_transport-taxi-stand.mp3"
+},
+"word:transport-bus-route": {
+"f": "f/word_transport-bus-route.mp3",
+"m": "m/word_transport-bus-route.mp3"
+},
+"sent:transport-bus-route": {
+"f": "f/sent_transport-bus-route.mp3",
+"m": "m/sent_transport-bus-route.mp3"
+},
+"word:transport-ticket-machine": {
+"f": "f/word_transport-ticket-machine.mp3",
+"m": "m/word_transport-ticket-machine.mp3"
+},
+"sent:transport-ticket-machine": {
+"f": "f/sent_transport-ticket-machine.mp3",
+"m": "m/sent_transport-ticket-machine.mp3"
+},
+"word:transport-fare-card": {
+"f": "f/word_transport-fare-card.mp3",
+"m": "m/word_transport-fare-card.mp3"
+},
+"sent:transport-fare-card": {
+"f": "f/sent_transport-fare-card.mp3",
+"m": "m/sent_transport-fare-card.mp3"
+},
+"word:transport-traffic-light": {
+"f": "f/word_transport-traffic-light.mp3",
+"m": "m/word_transport-traffic-light.mp3"
+},
+"sent:transport-traffic-light": {
+"f": "f/sent_transport-traffic-light.mp3",
+"m": "m/sent_transport-traffic-light.mp3"
+},
+"word:transport-pedestrian-crossing": {
+"f": "f/word_transport-pedestrian-crossing.mp3",
+"m": "m/word_transport-pedestrian-crossing.mp3"
+},
+"sent:transport-pedestrian-crossing": {
+"f": "f/sent_transport-pedestrian-crossing.mp3",
+"m": "m/sent_transport-pedestrian-crossing.mp3"
+},
+"word:transport-bike-lane": {
+"f": "f/word_transport-bike-lane.mp3",
+"m": "m/word_transport-bike-lane.mp3"
+},
+"sent:transport-bike-lane": {
+"f": "f/sent_transport-bike-lane.mp3",
+"m": "m/sent_transport-bike-lane.mp3"
+},
+"word:transport-parking-lot": {
+"f": "f/word_transport-parking-lot.mp3",
+"m": "m/word_transport-parking-lot.mp3"
+},
+"sent:transport-parking-lot": {
+"f": "f/sent_transport-parking-lot.mp3",
+"m": "m/sent_transport-parking-lot.mp3"
+},
+"word:transport-road-sign": {
+"f": "f/word_transport-road-sign.mp3",
+"m": "m/word_transport-road-sign.mp3"
+},
+"sent:transport-road-sign": {
+"f": "f/sent_transport-road-sign.mp3",
+"m": "m/sent_transport-road-sign.mp3"
+},
+"word:transport-seat-belt": {
+"f": "f/word_transport-seat-belt.mp3",
+"m": "m/word_transport-seat-belt.mp3"
+},
+"sent:transport-seat-belt": {
+"f": "f/sent_transport-seat-belt.mp3",
+"m": "m/sent_transport-seat-belt.mp3"
+},
+"word:transport-driver": {
+"f": "f/word_transport-driver.mp3",
+"m": "m/word_transport-driver.mp3"
+},
+"sent:transport-driver": {
+"f": "f/sent_transport-driver.mp3",
+"m": "m/sent_transport-driver.mp3"
+},
+"word:transport-passenger": {
+"f": "f/word_transport-passenger.mp3",
+"m": "m/word_transport-passenger.mp3"
+},
+"sent:transport-passenger": {
+"f": "f/sent_transport-passenger.mp3",
+"m": "m/sent_transport-passenger.mp3"
+},
+"word:transport-traffic-jam": {
+"f": "f/word_transport-traffic-jam.mp3",
+"m": "m/word_transport-traffic-jam.mp3"
+},
+"sent:transport-traffic-jam": {
+"f": "f/sent_transport-traffic-jam.mp3",
+"m": "m/sent_transport-traffic-jam.mp3"
+},
+"word:transport-route": {
+"f": "f/word_transport-route.mp3",
+"m": "m/word_transport-route.mp3"
+},
+"sent:transport-route": {
+"f": "f/sent_transport-route.mp3",
+"m": "m/sent_transport-route.mp3"
+},
+"word:transport-express-bus": {
+"f": "f/word_transport-express-bus.mp3",
+"m": "m/word_transport-express-bus.mp3"
+},
+"sent:transport-express-bus": {
+"f": "f/sent_transport-express-bus.mp3",
+"m": "m/sent_transport-express-bus.mp3"
+},
+"word:transport-toll-road": {
+"f": "f/word_transport-toll-road.mp3",
+"m": "m/word_transport-toll-road.mp3"
+},
+"sent:transport-toll-road": {
+"f": "f/sent_transport-toll-road.mp3",
+"m": "m/sent_transport-toll-road.mp3"
+},
+"word:transport-helmet": {
+"f": "f/word_transport-helmet.mp3",
+"m": "m/word_transport-helmet.mp3"
+},
+"sent:transport-helmet": {
+"f": "f/sent_transport-helmet.mp3",
+"m": "m/sent_transport-helmet.mp3"
+},
+"word:transport-bicycle": {
+"f": "f/word_transport-bicycle.mp3",
+"m": "m/word_transport-bicycle.mp3"
+},
+"sent:transport-bicycle": {
+"f": "f/sent_transport-bicycle.mp3",
+"m": "m/sent_transport-bicycle.mp3"
+},
+"word:transport-rideshare": {
+"f": "f/word_transport-rideshare.mp3",
+"m": "m/word_transport-rideshare.mp3"
+},
+"sent:transport-rideshare": {
+"f": "f/sent_transport-rideshare.mp3",
+"m": "m/sent_transport-rideshare.mp3"
+},
+"word:transport-bus-fare": {
+"f": "f/word_transport-bus-fare.mp3",
+"m": "m/word_transport-bus-fare.mp3"
+},
+"sent:transport-bus-fare": {
+"f": "f/sent_transport-bus-fare.mp3",
+"m": "m/sent_transport-bus-fare.mp3"
+},
+"word:transport-parking-meter": {
+"f": "f/word_transport-parking-meter.mp3",
+"m": "m/word_transport-parking-meter.mp3"
+},
+"sent:transport-parking-meter": {
+"f": "f/sent_transport-parking-meter.mp3",
+"m": "m/sent_transport-parking-meter.mp3"
+},
+"word:phone-smartphone": {
+"f": "f/word_phone-smartphone.mp3",
+"m": "m/word_phone-smartphone.mp3"
+},
+"sent:phone-smartphone": {
+"f": "f/sent_phone-smartphone.mp3",
+"m": "m/sent_phone-smartphone.mp3"
+},
+"word:phone-charger": {
+"f": "f/word_phone-charger.mp3",
+"m": "m/word_phone-charger.mp3"
+},
+"sent:phone-charger": {
+"f": "f/sent_phone-charger.mp3",
+"m": "m/sent_phone-charger.mp3"
+},
+"word:phone-battery": {
+"f": "f/word_phone-battery.mp3",
+"m": "m/word_phone-battery.mp3"
+},
+"sent:phone-battery": {
+"f": "f/sent_phone-battery.mp3",
+"m": "m/sent_phone-battery.mp3"
+},
+"word:phone-screen": {
+"f": "f/word_phone-screen.mp3",
+"m": "m/word_phone-screen.mp3"
+},
+"sent:phone-screen": {
+"f": "f/sent_phone-screen.mp3",
+"m": "m/sent_phone-screen.mp3"
+},
+"word:phone-password": {
+"f": "f/word_phone-password.mp3",
+"m": "m/word_phone-password.mp3"
+},
+"sent:phone-password": {
+"f": "f/sent_phone-password.mp3",
+"m": "m/sent_phone-password.mp3"
+},
+"word:phone-wi-fi": {
+"f": "f/word_phone-wi-fi.mp3",
+"m": "m/word_phone-wi-fi.mp3"
+},
+"sent:phone-wi-fi": {
+"f": "f/sent_phone-wi-fi.mp3",
+"m": "m/sent_phone-wi-fi.mp3"
+},
+"word:phone-hotspot": {
+"f": "f/word_phone-hotspot.mp3",
+"m": "m/word_phone-hotspot.mp3"
+},
+"sent:phone-hotspot": {
+"f": "f/sent_phone-hotspot.mp3",
+"m": "m/sent_phone-hotspot.mp3"
+},
+"word:phone-signal": {
+"f": "f/word_phone-signal.mp3",
+"m": "m/word_phone-signal.mp3"
+},
+"sent:phone-signal": {
+"f": "f/sent_phone-signal.mp3",
+"m": "m/sent_phone-signal.mp3"
+},
+"word:phone-app": {
+"f": "f/word_phone-app.mp3",
+"m": "m/word_phone-app.mp3"
+},
+"sent:phone-app": {
+"f": "f/sent_phone-app.mp3",
+"m": "m/sent_phone-app.mp3"
+},
+"word:phone-browser": {
+"f": "f/word_phone-browser.mp3",
+"m": "m/word_phone-browser.mp3"
+},
+"sent:phone-browser": {
+"f": "f/sent_phone-browser.mp3",
+"m": "m/sent_phone-browser.mp3"
+},
+"word:phone-download": {
+"f": "f/word_phone-download.mp3",
+"m": "m/word_phone-download.mp3"
+},
+"sent:phone-download": {
+"f": "f/sent_phone-download.mp3",
+"m": "m/sent_phone-download.mp3"
+},
+"word:phone-upload": {
+"f": "f/word_phone-upload.mp3",
+"m": "m/word_phone-upload.mp3"
+},
+"sent:phone-upload": {
+"f": "f/sent_phone-upload.mp3",
+"m": "m/sent_phone-upload.mp3"
+},
+"word:phone-data-plan": {
+"f": "f/word_phone-data-plan.mp3",
+"m": "m/word_phone-data-plan.mp3"
+},
+"sent:phone-data-plan": {
+"f": "f/sent_phone-data-plan.mp3",
+"m": "m/sent_phone-data-plan.mp3"
+},
+"word:phone-mobile-data": {
+"f": "f/word_phone-mobile-data.mp3",
+"m": "m/word_phone-mobile-data.mp3"
+},
+"sent:phone-mobile-data": {
+"f": "f/sent_phone-mobile-data.mp3",
+"m": "m/sent_phone-mobile-data.mp3"
+},
+"word:phone-sim-card": {
+"f": "f/word_phone-sim-card.mp3",
+"m": "m/word_phone-sim-card.mp3"
+},
+"sent:phone-sim-card": {
+"f": "f/sent_phone-sim-card.mp3",
+"m": "m/sent_phone-sim-card.mp3"
+},
+"word:phone-voicemail": {
+"f": "f/word_phone-voicemail.mp3",
+"m": "m/word_phone-voicemail.mp3"
+},
+"sent:phone-voicemail": {
+"f": "f/sent_phone-voicemail.mp3",
+"m": "m/sent_phone-voicemail.mp3"
+},
+"word:phone-text-message": {
+"f": "f/word_phone-text-message.mp3",
+"m": "m/word_phone-text-message.mp3"
+},
+"sent:phone-text-message": {
+"f": "f/sent_phone-text-message.mp3",
+"m": "m/sent_phone-text-message.mp3"
+},
+"word:phone-missed-call": {
+"f": "f/word_phone-missed-call.mp3",
+"m": "m/word_phone-missed-call.mp3"
+},
+"sent:phone-missed-call": {
+"f": "f/sent_phone-missed-call.mp3",
+"m": "m/sent_phone-missed-call.mp3"
+},
+"word:phone-contact": {
+"f": "f/word_phone-contact.mp3",
+"m": "m/word_phone-contact.mp3"
+},
+"sent:phone-contact": {
+"f": "f/sent_phone-contact.mp3",
+"m": "m/sent_phone-contact.mp3"
+},
+"word:phone-ringtone": {
+"f": "f/word_phone-ringtone.mp3",
+"m": "m/word_phone-ringtone.mp3"
+},
+"sent:phone-ringtone": {
+"f": "f/sent_phone-ringtone.mp3",
+"m": "m/sent_phone-ringtone.mp3"
+},
+"word:phone-settings": {
+"f": "f/word_phone-settings.mp3",
+"m": "m/word_phone-settings.mp3"
+},
+"sent:phone-settings": {
+"f": "f/sent_phone-settings.mp3",
+"m": "m/sent_phone-settings.mp3"
+},
+"word:phone-username": {
+"f": "f/word_phone-username.mp3",
+"m": "m/word_phone-username.mp3"
+},
+"sent:phone-username": {
+"f": "f/sent_phone-username.mp3",
+"m": "m/sent_phone-username.mp3"
+},
+"word:phone-microphone": {
+"f": "f/word_phone-microphone.mp3",
+"m": "m/word_phone-microphone.mp3"
+},
+"sent:phone-microphone": {
+"f": "f/sent_phone-microphone.mp3",
+"m": "m/sent_phone-microphone.mp3"
+},
+"word:phone-headphones": {
+"f": "f/word_phone-headphones.mp3",
+"m": "m/word_phone-headphones.mp3"
+},
+"sent:phone-headphones": {
+"f": "f/sent_phone-headphones.mp3",
+"m": "m/sent_phone-headphones.mp3"
+},
+"word:phone-video-call": {
+"f": "f/word_phone-video-call.mp3",
+"m": "m/word_phone-video-call.mp3"
+},
+"sent:phone-video-call": {
+"f": "f/sent_phone-video-call.mp3",
+"m": "m/sent_phone-video-call.mp3"
+},
+"word:bank-account": {
+"f": "f/word_bank-account.mp3",
+"m": "m/word_bank-account.mp3"
+},
+"sent:bank-account": {
+"f": "f/sent_bank-account.mp3",
+"m": "m/sent_bank-account.mp3"
+},
+"word:bank-atm": {
+"f": "f/word_bank-atm.mp3",
+"m": "m/word_bank-atm.mp3"
+},
+"sent:bank-atm": {
+"f": "f/sent_bank-atm.mp3",
+"m": "m/sent_bank-atm.mp3"
+},
+"word:bank-withdrawal": {
+"f": "f/word_bank-withdrawal.mp3",
+"m": "m/word_bank-withdrawal.mp3"
+},
+"sent:bank-withdrawal": {
+"f": "f/sent_bank-withdrawal.mp3",
+"m": "m/sent_bank-withdrawal.mp3"
+},
+"word:bank-balance": {
+"f": "f/word_bank-balance.mp3",
+"m": "m/word_bank-balance.mp3"
+},
+"sent:bank-balance": {
+"f": "f/sent_bank-balance.mp3",
+"m": "m/sent_bank-balance.mp3"
+},
+"word:bank-bank-transfer": {
+"f": "f/word_bank-bank-transfer.mp3",
+"m": "m/word_bank-bank-transfer.mp3"
+},
+"sent:bank-bank-transfer": {
+"f": "f/sent_bank-bank-transfer.mp3",
+"m": "m/sent_bank-bank-transfer.mp3"
+},
+"word:bank-bank-fee": {
+"f": "f/word_bank-bank-fee.mp3",
+"m": "m/word_bank-bank-fee.mp3"
+},
+"sent:bank-bank-fee": {
+"f": "f/sent_bank-bank-fee.mp3",
+"m": "m/sent_bank-bank-fee.mp3"
+},
+"word:bank-exchange-rate": {
+"f": "f/word_bank-exchange-rate.mp3",
+"m": "m/word_bank-exchange-rate.mp3"
+},
+"sent:bank-exchange-rate": {
+"f": "f/sent_bank-exchange-rate.mp3",
+"m": "m/sent_bank-exchange-rate.mp3"
+},
+"word:bank-loan": {
+"f": "f/word_bank-loan.mp3",
+"m": "m/word_bank-loan.mp3"
+},
+"sent:bank-loan": {
+"f": "f/sent_bank-loan.mp3",
+"m": "m/sent_bank-loan.mp3"
+},
+"word:bank-interest": {
+"f": "f/word_bank-interest.mp3",
+"m": "m/word_bank-interest.mp3"
+},
+"sent:bank-interest": {
+"f": "f/sent_bank-interest.mp3",
+"m": "m/sent_bank-interest.mp3"
+},
+"word:bank-statement": {
+"f": "f/word_bank-statement.mp3",
+"m": "m/word_bank-statement.mp3"
+},
+"sent:bank-statement": {
+"f": "f/sent_bank-statement.mp3",
+"m": "m/sent_bank-statement.mp3"
+},
+"word:bank-pin": {
+"f": "f/word_bank-pin.mp3",
+"m": "m/word_bank-pin.mp3"
+},
+"sent:bank-pin": {
+"f": "f/sent_bank-pin.mp3",
+"m": "m/sent_bank-pin.mp3"
+},
+"word:bank-branch": {
+"f": "f/word_bank-branch.mp3",
+"m": "m/word_bank-branch.mp3"
+},
+"sent:bank-branch": {
+"f": "f/sent_bank-branch.mp3",
+"m": "m/sent_bank-branch.mp3"
+},
+"word:bank-teller": {
+"f": "f/word_bank-teller.mp3",
+"m": "m/word_bank-teller.mp3"
+},
+"sent:bank-teller": {
+"f": "f/sent_bank-teller.mp3",
+"m": "m/sent_bank-teller.mp3"
+},
+"word:bank-check": {
+"f": "f/word_bank-check.mp3",
+"m": "m/word_bank-check.mp3"
+},
+"sent:bank-check": {
+"f": "f/sent_bank-check.mp3",
+"m": "m/sent_bank-check.mp3"
+},
+"word:bank-savings-account": {
+"f": "f/word_bank-savings-account.mp3",
+"m": "m/word_bank-savings-account.mp3"
+},
+"sent:bank-savings-account": {
+"f": "f/sent_bank-savings-account.mp3",
+"m": "m/sent_bank-savings-account.mp3"
+},
+"word:bank-current-account": {
+"f": "f/word_bank-current-account.mp3",
+"m": "m/word_bank-current-account.mp3"
+},
+"sent:bank-current-account": {
+"f": "f/sent_bank-current-account.mp3",
+"m": "m/sent_bank-current-account.mp3"
+},
+"word:bank-mortgage": {
+"f": "f/word_bank-mortgage.mp3",
+"m": "m/word_bank-mortgage.mp3"
+},
+"sent:bank-mortgage": {
+"f": "f/sent_bank-mortgage.mp3",
+"m": "m/sent_bank-mortgage.mp3"
+},
+"word:bank-currency": {
+"f": "f/word_bank-currency.mp3",
+"m": "m/word_bank-currency.mp3"
+},
+"sent:bank-currency": {
+"f": "f/sent_bank-currency.mp3",
+"m": "m/sent_bank-currency.mp3"
+},
+"word:bank-coin": {
+"f": "f/word_bank-coin.mp3",
+"m": "m/word_bank-coin.mp3"
+},
+"sent:bank-coin": {
+"f": "f/sent_bank-coin.mp3",
+"m": "m/sent_bank-coin.mp3"
+},
+"word:bank-banknote": {
+"f": "f/word_bank-banknote.mp3",
+"m": "m/word_bank-banknote.mp3"
+},
+"sent:bank-banknote": {
+"f": "f/sent_bank-banknote.mp3",
+"m": "m/sent_bank-banknote.mp3"
+},
+"word:bank-online-banking": {
+"f": "f/word_bank-online-banking.mp3",
+"m": "m/word_bank-online-banking.mp3"
+},
+"sent:bank-online-banking": {
+"f": "f/sent_bank-online-banking.mp3",
+"m": "m/sent_bank-online-banking.mp3"
+},
+"word:bank-transaction": {
+"f": "f/word_bank-transaction.mp3",
+"m": "m/word_bank-transaction.mp3"
+},
+"sent:bank-transaction": {
+"f": "f/sent_bank-transaction.mp3",
+"m": "m/sent_bank-transaction.mp3"
+},
+"word:bank-transfer-limit": {
+"f": "f/word_bank-transfer-limit.mp3",
+"m": "m/word_bank-transfer-limit.mp3"
+},
+"sent:bank-transfer-limit": {
+"f": "f/sent_bank-transfer-limit.mp3",
+"m": "m/sent_bank-transfer-limit.mp3"
+},
+"word:bank-cash-withdrawal": {
+"f": "f/word_bank-cash-withdrawal.mp3",
+"m": "m/word_bank-cash-withdrawal.mp3"
+},
+"sent:bank-cash-withdrawal": {
+"f": "f/sent_bank-cash-withdrawal.mp3",
+"m": "m/sent_bank-cash-withdrawal.mp3"
+},
+"word:bank-account-holder": {
+"f": "f/word_bank-account-holder.mp3",
+"m": "m/word_bank-account-holder.mp3"
+},
+"sent:bank-account-holder": {
+"f": "f/sent_bank-account-holder.mp3",
+"m": "m/sent_bank-account-holder.mp3"
+},
+"word:emergency-emergency": {
+"f": "f/word_emergency-emergency.mp3",
+"m": "m/word_emergency-emergency.mp3"
+},
+"sent:emergency-emergency": {
+"f": "f/sent_emergency-emergency.mp3",
+"m": "m/sent_emergency-emergency.mp3"
+},
+"word:emergency-ambulance": {
+"f": "f/word_emergency-ambulance.mp3",
+"m": "m/word_emergency-ambulance.mp3"
+},
+"sent:emergency-ambulance": {
+"f": "f/sent_emergency-ambulance.mp3",
+"m": "m/sent_emergency-ambulance.mp3"
+},
+"word:emergency-firefighter": {
+"f": "f/word_emergency-firefighter.mp3",
+"m": "m/word_emergency-firefighter.mp3"
+},
+"sent:emergency-firefighter": {
+"f": "f/sent_emergency-firefighter.mp3",
+"m": "m/sent_emergency-firefighter.mp3"
+},
+"word:emergency-police-officer": {
+"f": "f/word_emergency-police-officer.mp3",
+"m": "m/word_emergency-police-officer.mp3"
+},
+"sent:emergency-police-officer": {
+"f": "f/sent_emergency-police-officer.mp3",
+"m": "m/sent_emergency-police-officer.mp3"
+},
+"word:emergency-fire-extinguisher": {
+"f": "f/word_emergency-fire-extinguisher.mp3",
+"m": "m/word_emergency-fire-extinguisher.mp3"
+},
+"sent:emergency-fire-extinguisher": {
+"f": "f/sent_emergency-fire-extinguisher.mp3",
+"m": "m/sent_emergency-fire-extinguisher.mp3"
+},
+"word:emergency-first-aid": {
+"f": "f/word_emergency-first-aid.mp3",
+"m": "m/word_emergency-first-aid.mp3"
+},
+"sent:emergency-first-aid": {
+"f": "f/sent_emergency-first-aid.mp3",
+"m": "m/sent_emergency-first-aid.mp3"
+},
+"word:emergency-help-line": {
+"f": "f/word_emergency-help-line.mp3",
+"m": "m/word_emergency-help-line.mp3"
+},
+"sent:emergency-help-line": {
+"f": "f/sent_emergency-help-line.mp3",
+"m": "m/sent_emergency-help-line.mp3"
+},
+"word:emergency-danger": {
+"f": "f/word_emergency-danger.mp3",
+"m": "m/word_emergency-danger.mp3"
+},
+"sent:emergency-danger": {
+"f": "f/sent_emergency-danger.mp3",
+"m": "m/sent_emergency-danger.mp3"
+},
+"word:emergency-missing-person": {
+"f": "f/word_emergency-missing-person.mp3",
+"m": "m/word_emergency-missing-person.mp3"
+},
+"sent:emergency-missing-person": {
+"f": "f/sent_emergency-missing-person.mp3",
+"m": "m/sent_emergency-missing-person.mp3"
+},
+"word:emergency-accident": {
+"f": "f/word_emergency-accident.mp3",
+"m": "m/word_emergency-accident.mp3"
+},
+"sent:emergency-accident": {
+"f": "f/sent_emergency-accident.mp3",
+"m": "m/sent_emergency-accident.mp3"
+},
+"word:emergency-fire": {
+"f": "f/word_emergency-fire.mp3",
+"m": "m/word_emergency-fire.mp3"
+},
+"sent:emergency-fire": {
+"f": "f/sent_emergency-fire.mp3",
+"m": "m/sent_emergency-fire.mp3"
+},
+"word:emergency-flood": {
+"f": "f/word_emergency-flood.mp3",
+"m": "m/word_emergency-flood.mp3"
+},
+"sent:emergency-flood": {
+"f": "f/sent_emergency-flood.mp3",
+"m": "m/sent_emergency-flood.mp3"
+},
+"word:emergency-earthquake": {
+"f": "f/word_emergency-earthquake.mp3",
+"m": "m/word_emergency-earthquake.mp3"
+},
+"sent:emergency-earthquake": {
+"f": "f/sent_emergency-earthquake.mp3",
+"m": "m/sent_emergency-earthquake.mp3"
+},
+"word:emergency-storm": {
+"f": "f/word_emergency-storm.mp3",
+"m": "m/word_emergency-storm.mp3"
+},
+"sent:emergency-storm": {
+"f": "f/sent_emergency-storm.mp3",
+"m": "m/sent_emergency-storm.mp3"
+},
+"word:emergency-shelter": {
+"f": "f/word_emergency-shelter.mp3",
+"m": "m/word_emergency-shelter.mp3"
+},
+"sent:emergency-shelter": {
+"f": "f/sent_emergency-shelter.mp3",
+"m": "m/sent_emergency-shelter.mp3"
+},
+"word:emergency-rescue": {
+"f": "f/word_emergency-rescue.mp3",
+"m": "m/word_emergency-rescue.mp3"
+},
+"sent:emergency-rescue": {
+"f": "f/sent_emergency-rescue.mp3",
+"m": "m/sent_emergency-rescue.mp3"
+},
+"word:emergency-emergency-exit": {
+"f": "f/word_emergency-emergency-exit.mp3",
+"m": "m/word_emergency-emergency-exit.mp3"
+},
+"sent:emergency-emergency-exit": {
+"f": "f/sent_emergency-emergency-exit.mp3",
+"m": "m/sent_emergency-emergency-exit.mp3"
+},
+"word:emergency-hotline": {
+"f": "f/word_emergency-hotline.mp3",
+"m": "m/word_emergency-hotline.mp3"
+},
+"sent:emergency-hotline": {
+"f": "f/sent_emergency-hotline.mp3",
+"m": "m/sent_emergency-hotline.mp3"
+},
+"word:emergency-location": {
+"f": "f/word_emergency-location.mp3",
+"m": "m/word_emergency-location.mp3"
+},
+"sent:emergency-location": {
+"f": "f/sent_emergency-location.mp3",
+"m": "m/sent_emergency-location.mp3"
+},
+"word:emergency-safety": {
+"f": "f/word_emergency-safety.mp3",
+"m": "m/word_emergency-safety.mp3"
+},
+"sent:emergency-safety": {
+"f": "f/sent_emergency-safety.mp3",
+"m": "m/sent_emergency-safety.mp3"
+},
+"word:emergency-injured-person": {
+"f": "f/word_emergency-injured-person.mp3",
+"m": "m/word_emergency-injured-person.mp3"
+},
+"sent:emergency-injured-person": {
+"f": "f/sent_emergency-injured-person.mp3",
+"m": "m/sent_emergency-injured-person.mp3"
+},
+"word:emergency-theft": {
+"f": "f/word_emergency-theft.mp3",
+"m": "m/word_emergency-theft.mp3"
+},
+"sent:emergency-theft": {
+"f": "f/sent_emergency-theft.mp3",
+"m": "m/sent_emergency-theft.mp3"
+},
+"word:emergency-smoke-alarm": {
+"f": "f/word_emergency-smoke-alarm.mp3",
+"m": "m/word_emergency-smoke-alarm.mp3"
+},
+"sent:emergency-smoke-alarm": {
+"f": "f/sent_emergency-smoke-alarm.mp3",
+"m": "m/sent_emergency-smoke-alarm.mp3"
+},
+"word:emergency-power-outage": {
+"f": "f/word_emergency-power-outage.mp3",
+"m": "m/word_emergency-power-outage.mp3"
+},
+"sent:emergency-power-outage": {
+"f": "f/sent_emergency-power-outage.mp3",
+"m": "m/sent_emergency-power-outage.mp3"
+},
+"word:emergency-rescue-team": {
+"f": "f/word_emergency-rescue-team.mp3",
+"m": "m/word_emergency-rescue-team.mp3"
+},
+"sent:emergency-rescue-team": {
+"f": "f/sent_emergency-rescue-team.mp3",
+"m": "m/sent_emergency-rescue-team.mp3"
+}
+}

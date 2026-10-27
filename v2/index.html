@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PangPood · พังพูด — พูดอังกฤษได้ทุกวัน</title>
+  <meta name="description" content="เรียนพูดอังกฤษวันละ 5 นาที กับช้างน้อยพัง — ใช้งานออฟไลน์ได้ ไม่มีโฆษณา">
+  <meta name="theme-color" content="#2EC27E">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand-img" src="./icons/icon-192.png" alt="" aria-hidden="true">
+      <span class="brand-copy">
+        <span class="brand-name">PangPood</span>
+        <span class="brand-th">พังพูด</span>
+      </span>
+    </div>
+    <div class="top-actions">
+      <span class="ver" id="ver-tag">v2</span>
+      <button class="icon-btn" id="gear" type="button" aria-label="ตั้งค่า"></button>
+    </div>
+  </header>
+
+  <main id="view"></main>
+  <nav id="tabbar" class="tabbar" aria-label="เมนูหลัก"></nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

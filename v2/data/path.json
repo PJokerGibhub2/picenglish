@@ -1,0 +1,1674 @@
+{
+ "version": 1,
+ "app": "PangPood",
+ "sections": [
+  {
+   "id": "s1",
+   "title": "เอาตัวรอด",
+   "subtitle": "A0 → A1.1",
+   "color": "#2EC27E",
+   "units": [
+    {
+     "id": "u1",
+     "title": "ทักทาย & แนะนำตัว",
+     "en": "Say hello",
+     "emoji": "👋",
+     "color": "#2EC27E",
+     "section": "s1",
+     "lessons": [
+      {
+       "id": "u1-l1",
+       "title": "ทักทายครั้งแรก",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "feelings-stressed",
+        "feelings-tired",
+        "feelings-proud",
+        "feelings-kind",
+        "feelings-punctual"
+       ],
+       "chunks": [
+        "ch-smal-01",
+        "ch-smal-02",
+        "ch-smal-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-01"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u1-l2",
+       "title": "บอกชื่อและที่มา",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "feelings-shy",
+        "feelings-confident",
+        "feelings-nervous",
+        "feelings-friendly",
+        "feelings-patient"
+       ],
+       "chunks": [
+        "ch-smal-04",
+        "ch-smal-05",
+        "ch-smal-06"
+       ],
+       "listening": [
+        [
+         "lis-cafe-04"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u1-l3",
+       "title": "ถามชื่อเขา",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "feelings-cheerful",
+        "feelings-worry",
+        "feelings-happy",
+        "feelings-sad",
+        "feelings-angry"
+       ],
+       "chunks": [
+        "ch-smal-07",
+        "ch-smal-08",
+        "ch-smal-09"
+       ],
+       "listening": [
+        [
+         "lis-routine-07"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u1-l4",
+       "title": "พูดถึงความรู้สึก",
+       "kind": "mix",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "feelings-calm",
+        "feelings-excited",
+        "feelings-sleepy",
+        "feelings-surprised",
+        "feelings-worried"
+       ],
+       "chunks": [
+        "ch-smal-10",
+        "ch-smal-11",
+        "ch-smal-12"
+       ],
+       "listening": [
+        [
+         "lis-story-01"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u1-l5",
+       "title": "ทบทวน Unit 1",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "feelings-grateful",
+        "feelings-curious",
+        "feelings-relaxed",
+        "feelings-uncomfortable",
+        "feelings-awake"
+       ],
+       "chunks": [
+        "ch-smal-13",
+        "ch-smal-14",
+        "ch-smal-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u2",
+     "title": "สั่งกาแฟ & เครื่องดื่ม",
+     "en": "Order drinks",
+     "emoji": "☕",
+     "color": "#FFB020",
+     "section": "s1",
+     "lessons": [
+      {
+       "id": "u2-l1",
+       "title": "กาแฟหนึ่งแก้ว",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "food-breakfast",
+        "food-lunch",
+        "food-dinner",
+        "food-snack",
+        "food-ingredient"
+       ],
+       "chunks": [
+        "ch-cafe-01",
+        "ch-cafe-02",
+        "ch-cafe-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-02"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u2-l2",
+       "title": "สั่งแบบมืออาชีพ",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "food-recipe",
+        "food-soup",
+        "food-grill",
+        "food-spicy",
+        "food-leftovers"
+       ],
+       "chunks": [
+        "ch-cafe-04",
+        "ch-cafe-05",
+        "ch-cafe-06"
+       ],
+       "listening": [
+        [
+         "lis-cafe-05"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u2-l3",
+       "title": "ถามราคาและขนาด",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "food-dessert",
+        "food-portion",
+        "food-porridge",
+        "food-rice",
+        "food-bread"
+       ],
+       "chunks": [
+        "ch-cafe-07",
+        "ch-cafe-08",
+        "ch-cafe-09"
+       ],
+       "listening": [
+        [
+         "lis-routine-08"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u2-l4",
+       "title": "นั่งในหรือกลับบ้าน",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "food-egg",
+        "food-vegetables",
+        "food-fruit",
+        "food-chicken",
+        "food-fish"
+       ],
+       "chunks": [
+        "ch-cafe-10",
+        "ch-cafe-11",
+        "ch-cafe-12"
+       ],
+       "listening": [
+        [
+         "lis-story-02"
+        ]
+       ],
+       "dialogue": "dlg-cafe"
+      },
+      {
+       "id": "u2-l5",
+       "title": "ทบทวน Unit 2",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "food-beef",
+        "food-water",
+        "food-milk",
+        "food-coffee",
+        "food-tea"
+       ],
+       "chunks": [
+        "ch-cafe-13",
+        "ch-cafe-14",
+        "ch-cafe-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u3",
+     "title": "สั่งอาหารที่ร้าน",
+     "en": "Order a meal",
+     "emoji": "🍽️",
+     "color": "#FF6B6B",
+     "section": "s1",
+     "lessons": [
+      {
+       "id": "u3-l1",
+       "title": "เมนูมื้อกลางวัน",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "restaurant-reservation",
+        "restaurant-table-for-two",
+        "restaurant-menu",
+        "restaurant-order",
+        "restaurant-recommend"
+       ],
+       "chunks": [
+        "ch-rest-01",
+        "ch-rest-02",
+        "ch-rest-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-03"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u3-l2",
+       "title": "สั่งอาหารจานเดียว",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "restaurant-appetizer",
+        "restaurant-main-course",
+        "restaurant-refill",
+        "restaurant-bill",
+        "restaurant-tip"
+       ],
+       "chunks": [
+        "ch-rest-04",
+        "ch-rest-05",
+        "ch-rest-06"
+       ],
+       "listening": [
+        [
+         "lis-cafe-06"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u3-l3",
+       "title": "ขอร้องเรื่องอาหาร",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "restaurant-takeaway",
+        "restaurant-allergy",
+        "restaurant-waiter",
+        "restaurant-customer",
+        "restaurant-plate"
+       ],
+       "chunks": [
+        "ch-rest-07",
+        "ch-rest-08",
+        "ch-rest-09"
+       ],
+       "listening": [
+        [
+         "lis-routine-09"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u3-l4",
+       "title": "คิดเงินแยก",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "restaurant-spoon",
+        "restaurant-fork",
+        "restaurant-knife",
+        "restaurant-glass",
+        "restaurant-bottle"
+       ],
+       "chunks": [
+        "ch-rest-10",
+        "ch-rest-11",
+        "ch-rest-12"
+       ],
+       "listening": [
+        [
+         "lis-story-03"
+        ]
+       ],
+       "dialogue": "dlg-restaurant"
+      },
+      {
+       "id": "u3-l5",
+       "title": "ทบทวน Unit 3",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "restaurant-drinks-menu",
+        "restaurant-today-s-special",
+        "restaurant-savory",
+        "restaurant-without",
+        "restaurant-pay-separately"
+       ],
+       "chunks": [
+        "ch-rest-13",
+        "ch-rest-14",
+        "ch-rest-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u4",
+     "title": "ซื้อของ & ถามราคา",
+     "en": "Shop & bargain",
+     "emoji": "🛍️",
+     "color": "#7C5CFF",
+     "section": "s1",
+     "lessons": [
+      {
+       "id": "u4-l1",
+       "title": "ถามราคาสินค้า",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "shopping-receipt",
+        "shopping-price",
+        "shopping-discount",
+        "shopping-change",
+        "shopping-credit-card"
+       ],
+       "chunks": [
+        "ch-shop-01",
+        "ch-shop-02",
+        "ch-shop-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-04"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u4-l2",
+       "title": "ลองแล้วตัดสินใจ",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "shopping-cash",
+        "shopping-expensive",
+        "shopping-cheap",
+        "shopping-bargain",
+        "shopping-bank"
+       ],
+       "chunks": [
+        "ch-shop-04",
+        "ch-shop-05",
+        "ch-shop-06"
+       ],
+       "listening": [
+        [
+         "lis-cafe-07"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u4-l3",
+       "title": "ต่อรองอย่างสุภาพ",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "shopping-save",
+        "shopping-wallet",
+        "shopping-shop",
+        "shopping-size",
+        "shopping-color"
+       ],
+       "chunks": [
+        "ch-shop-07",
+        "ch-shop-08",
+        "ch-shop-09"
+       ],
+       "listening": [
+        [
+         "lis-service-01"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u4-l4",
+       "title": "คืนและเปลี่ยนของ",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "shopping-try-on",
+        "shopping-fits-well",
+        "shopping-debit-card",
+        "shopping-return",
+        "shopping-exchange"
+       ],
+       "chunks": [
+        "ch-shop-10",
+        "ch-shop-11",
+        "ch-shop-12"
+       ],
+       "listening": [
+        [
+         "lis-story-04"
+        ]
+       ],
+       "dialogue": "dlg-shopping"
+      },
+      {
+       "id": "u4-l5",
+       "title": "ทบทวน Unit 4",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "shopping-grocery-store",
+        "shopping-bag",
+        "shopping-on-sale",
+        "shopping-reasonable",
+        "shopping-gift"
+       ],
+       "chunks": [
+        "ch-shop-13",
+        "ch-shop-14",
+        "ch-shop-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "ใช้ชีวิตจริง",
+   "subtitle": "A1.2 → A2.1",
+   "color": "#0EA5E9",
+   "units": [
+    {
+     "id": "u5",
+     "title": "เดินทาง & ถามทาง",
+     "en": "Get around",
+     "emoji": "🧭",
+     "color": "#0EA5E9",
+     "section": "s2",
+     "lessons": [
+      {
+       "id": "u5-l1",
+       "title": "ถามทางไปสถานที่",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "travel-ticket",
+        "travel-passport",
+        "travel-airport",
+        "travel-luggage",
+        "travel-map"
+       ],
+       "chunks": [
+        "ch-trav-01",
+        "ch-trav-02",
+        "ch-trav-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-05"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u5-l2",
+       "title": "ขึ้นรถเมล์/แท็กซี่",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "travel-bus",
+        "travel-train",
+        "travel-schedule",
+        "travel-destination",
+        "travel-gate"
+       ],
+       "chunks": [
+        "ch-trav-04",
+        "ch-trav-05",
+        "ch-trav-06"
+       ],
+       "listening": [
+        [
+         "lis-cafe-08"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u5-l3",
+       "title": "บอกระยะทาง",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "travel-turn-left",
+        "travel-ask-for-directions",
+        "travel-hotel",
+        "travel-room",
+        "travel-suitcase"
+       ],
+       "chunks": [
+        "ch-trav-07",
+        "ch-trav-08",
+        "ch-trav-09"
+       ],
+       "listening": [
+        [
+         "lis-service-02"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u5-l4",
+       "title": "ถึงที่หมาย",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "travel-flight",
+        "travel-platform",
+        "travel-delayed",
+        "travel-go-straight",
+        "travel-turn-right"
+       ],
+       "chunks": [
+        "ch-trav-10",
+        "ch-trav-11",
+        "ch-trav-12"
+       ],
+       "listening": [
+        [
+         "lis-story-05"
+        ]
+       ],
+       "dialogue": "dlg-directions"
+      },
+      {
+       "id": "u5-l5",
+       "title": "ทบทวน Unit 5",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "travel-near",
+        "travel-far",
+        "travel-reception",
+        "travel-check-in",
+        "travel-check-out"
+       ],
+       "chunks": [
+        "ch-trav-13",
+        "ch-trav-14",
+        "ch-trav-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u6",
+     "title": "ขึ้นรถ & ต่อรถ",
+     "en": "Take a ride",
+     "emoji": "🚌",
+     "color": "#06B6D4",
+     "section": "s2",
+     "lessons": [
+      {
+       "id": "u6-l1",
+       "title": "ซื้อตั๋ว",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "transport-bus-stop",
+        "transport-bus-station",
+        "transport-subway-station",
+        "transport-train-station",
+        "transport-taxi-stand"
+       ],
+       "chunks": [
+        "ch-trav-01",
+        "ch-trav-02",
+        "ch-trav-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-06"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u6-l2",
+       "title": "ถามป้าย/สายรถ",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "transport-bus-route",
+        "transport-ticket-machine",
+        "transport-fare-card",
+        "transport-traffic-light",
+        "transport-pedestrian-crossing"
+       ],
+       "chunks": [
+        "ch-trav-04",
+        "ch-trav-05",
+        "ch-trav-06"
+       ],
+       "listening": [
+        [
+         "lis-cafe-09"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u6-l3",
+       "title": "ต่อรถ",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "transport-bike-lane",
+        "transport-parking-lot",
+        "transport-road-sign",
+        "transport-seat-belt",
+        "transport-driver"
+       ],
+       "chunks": [
+        "ch-trav-07",
+        "ch-trav-08",
+        "ch-trav-09"
+       ],
+       "listening": [
+        [
+         "lis-service-03"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u6-l4",
+       "title": "ตกหล่น/ของหาย",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "transport-passenger",
+        "transport-traffic-jam",
+        "transport-route",
+        "transport-express-bus",
+        "transport-toll-road"
+       ],
+       "chunks": [
+        "ch-trav-10",
+        "ch-trav-11",
+        "ch-trav-12"
+       ],
+       "listening": [
+        [
+         "lis-story-06"
+        ]
+       ],
+       "dialogue": "dlg-reservation"
+      },
+      {
+       "id": "u6-l5",
+       "title": "ทบทวน Unit 6",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "transport-helmet",
+        "transport-bicycle",
+        "transport-rideshare",
+        "transport-bus-fare",
+        "transport-parking-meter"
+       ],
+       "chunks": [
+        "ch-trav-13",
+        "ch-trav-14",
+        "ch-trav-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u7",
+     "title": "ที่พัก & โรงแรม",
+     "en": "Hotel & home",
+     "emoji": "🏨",
+     "color": "#10B981",
+     "section": "s2",
+     "lessons": [
+      {
+       "id": "u7-l1",
+       "title": "เช็กอินโรงแรม",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "home-apartment",
+        "home-house",
+        "home-bedroom",
+        "home-kitchen",
+        "home-living-room"
+       ],
+       "chunks": [
+        "ch-hote-01",
+        "ch-hote-02",
+        "ch-hote-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-07"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u7-l2",
+       "title": "ขอสิ่งอำนวยความสะดวก",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "home-furniture",
+        "home-lamp",
+        "home-refrigerator",
+        "home-rent",
+        "home-neighbor"
+       ],
+       "chunks": [
+        "ch-hote-04",
+        "ch-hote-05",
+        "ch-hote-06"
+       ],
+       "listening": [
+        [
+         "lis-routine-01"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u7-l3",
+       "title": "ปัญหาห้องพัก",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "home-key",
+        "home-balcony",
+        "home-bathroom",
+        "home-sofa",
+        "home-table"
+       ],
+       "chunks": [
+        "ch-hote-07",
+        "ch-hote-08",
+        "ch-hote-09"
+       ],
+       "listening": [
+        [
+         "lis-service-04"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u7-l4",
+       "title": "เช็กเอาต์",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "home-chair",
+        "home-window",
+        "home-door",
+        "home-house-key",
+        "home-shelf"
+       ],
+       "chunks": [
+        "ch-hote-10",
+        "ch-hote-11",
+        "ch-hote-12"
+       ],
+       "listening": [
+        [
+         "lis-story-07"
+        ]
+       ],
+       "dialogue": "dlg-hotel"
+      },
+      {
+       "id": "u7-l5",
+       "title": "ทบทวน Unit 7",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "home-towel",
+        "home-blanket",
+        "home-light",
+        "home-noise",
+        "home-fix"
+       ],
+       "chunks": [
+        "ch-hote-13",
+        "ch-hote-14",
+        "ch-hote-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u8",
+     "title": "โทรศัพท์ & อินเทอร์เน็ต",
+     "en": "Phone & online",
+     "emoji": "📱",
+     "color": "#8B5CF6",
+     "section": "s2",
+     "lessons": [
+      {
+       "id": "u8-l1",
+       "title": "ขอ Wi-Fi รหัส",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "phone-smartphone",
+        "phone-charger",
+        "phone-battery",
+        "phone-screen",
+        "phone-password"
+       ],
+       "chunks": [
+        "ch-hote-01",
+        "ch-hote-02",
+        "ch-hote-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-08"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u8-l2",
+       "title": "โทรหาคน",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "phone-wi-fi",
+        "phone-hotspot",
+        "phone-signal",
+        "phone-app",
+        "phone-browser"
+       ],
+       "chunks": [
+        "ch-hote-04",
+        "ch-hote-05",
+        "ch-hote-06"
+       ],
+       "listening": [
+        [
+         "lis-routine-02"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u8-l3",
+       "title": "ส่งข้อความ",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "phone-download",
+        "phone-upload",
+        "phone-data-plan",
+        "phone-mobile-data",
+        "phone-sim-card"
+       ],
+       "chunks": [
+        "ch-hote-07",
+        "ch-hote-08",
+        "ch-hote-09"
+       ],
+       "listening": [
+        [
+         "lis-service-05"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u8-l4",
+       "title": "เติมเงิน/แพ็กเกจ",
+       "kind": "mix",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "phone-voicemail",
+        "phone-text-message",
+        "phone-missed-call",
+        "phone-contact",
+        "phone-ringtone"
+       ],
+       "chunks": [
+        "ch-hote-10",
+        "ch-hote-11",
+        "ch-hote-12"
+       ],
+       "listening": [
+        [
+         "lis-story-08"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u8-l5",
+       "title": "ทบทวน Unit 8",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "phone-settings",
+        "phone-username",
+        "phone-microphone",
+        "phone-headphones",
+        "phone-video-call"
+       ],
+       "chunks": [
+        "ch-hote-13",
+        "ch-hote-14",
+        "ch-hote-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "พูดได้จริง",
+   "subtitle": "A2.1 → A2.2",
+   "color": "#7C5CFF",
+   "units": [
+    {
+     "id": "u9",
+     "title": "ธนาคาร & เงิน",
+     "en": "Money matters",
+     "emoji": "🏦",
+     "color": "#22C55E",
+     "section": "s3",
+     "lessons": [
+      {
+       "id": "u9-l1",
+       "title": "เปิดบัญชี/แลกเงิน",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "bank-account",
+        "bank-atm",
+        "bank-withdrawal",
+        "bank-balance",
+        "bank-bank-transfer"
+       ],
+       "chunks": [
+        "ch-shop-01",
+        "ch-shop-02",
+        "ch-shop-03"
+       ],
+       "listening": [
+        [
+         "lis-daily-09"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u9-l2",
+       "title": "ถอนเงินที่ตู้",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "bank-bank-fee",
+        "bank-exchange-rate",
+        "bank-loan",
+        "bank-interest",
+        "bank-statement"
+       ],
+       "chunks": [
+        "ch-shop-04",
+        "ch-shop-05",
+        "ch-shop-06"
+       ],
+       "listening": [
+        [
+         "lis-routine-03"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u9-l3",
+       "title": "ถามค่าธรรมเนียม",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "bank-pin",
+        "bank-branch",
+        "bank-teller",
+        "bank-check",
+        "bank-savings-account"
+       ],
+       "chunks": [
+        "ch-shop-07",
+        "ch-shop-08",
+        "ch-shop-09"
+       ],
+       "listening": [
+        [
+         "lis-service-06"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u9-l4",
+       "title": "จ่ายด้วยบัตร",
+       "kind": "mix",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "bank-current-account",
+        "bank-mortgage",
+        "bank-currency",
+        "bank-coin",
+        "bank-banknote"
+       ],
+       "chunks": [
+        "ch-shop-10",
+        "ch-shop-11",
+        "ch-shop-12"
+       ],
+       "listening": [
+        [
+         "lis-story-09"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u9-l5",
+       "title": "ทบทวน Unit 9",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "bank-online-banking",
+        "bank-transaction",
+        "bank-transfer-limit",
+        "bank-cash-withdrawal",
+        "bank-account-holder"
+       ],
+       "chunks": [
+        "ch-shop-13",
+        "ch-shop-14",
+        "ch-shop-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u10",
+     "title": "สุขภาพ & ขอความช่วยเหลือ",
+     "en": "Health & help",
+     "emoji": "🩺",
+     "color": "#14B8A6",
+     "section": "s3",
+     "lessons": [
+      {
+       "id": "u10-l1",
+       "title": "บอกอาการ",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "health-fever",
+        "health-headache",
+        "health-cough",
+        "health-sore-throat",
+        "health-stomachache"
+       ],
+       "chunks": [
+        "ch-heal-01",
+        "ch-heal-02",
+        "ch-heal-03"
+       ],
+       "listening": [
+        [
+         "lis-cafe-01"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u10-l2",
+       "title": "ซื้อยาที่ร้านขายยา",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "health-rest",
+        "health-ill",
+        "health-doctor",
+        "health-appointment",
+        "health-medicine"
+       ],
+       "chunks": [
+        "ch-heal-04",
+        "ch-heal-05",
+        "ch-heal-06"
+       ],
+       "listening": [
+        [
+         "lis-routine-04"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u10-l3",
+       "title": "ขอความช่วยเหลือด่วน",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "health-hurt",
+        "health-healthy",
+        "health-clinic",
+        "health-nurse",
+        "health-tablet"
+       ],
+       "chunks": [
+        "ch-heal-07",
+        "ch-heal-08",
+        "ch-heal-09"
+       ],
+       "listening": [
+        [
+         "lis-service-07"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u10-l4",
+       "title": "โทรหาหมอ",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "health-symptoms",
+        "health-backache",
+        "health-pharmacy",
+        "health-allergic",
+        "health-nauseous"
+       ],
+       "chunks": [
+        "ch-heal-10",
+        "ch-heal-11",
+        "ch-heal-12"
+       ],
+       "listening": [],
+       "dialogue": "dlg-pharmacy"
+      },
+      {
+       "id": "u10-l5",
+       "title": "ทบทวน Unit 10",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "health-dizzy",
+        "health-temperature",
+        "health-wound",
+        "health-bandage",
+        "health-recover"
+       ],
+       "chunks": [
+        "ch-heal-13",
+        "ch-heal-14",
+        "ch-heal-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u11",
+     "title": "งาน & นัดหมาย",
+     "en": "Work & plans",
+     "emoji": "💼",
+     "color": "#6366F1",
+     "section": "s3",
+     "lessons": [
+      {
+       "id": "u11-l1",
+       "title": "แนะนำตัวในที่ทำงาน",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "work-meeting",
+        "work-email",
+        "work-colleague",
+        "work-boss",
+        "work-salary"
+       ],
+       "chunks": [
+        "ch-work-01",
+        "ch-work-02",
+        "ch-work-03"
+       ],
+       "listening": [
+        [
+         "lis-cafe-02"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u11-l2",
+       "title": "นัดประชุม",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "work-sick-leave",
+        "work-apply-for",
+        "work-deadline",
+        "work-overtime",
+        "work-interview"
+       ],
+       "chunks": [
+        "ch-work-04",
+        "ch-work-05",
+        "ch-work-06"
+       ],
+       "listening": [
+        [
+         "lis-routine-05"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u11-l3",
+       "title": "ขอให้ช่วยงาน",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "work-report",
+        "work-promotion",
+        "work-office",
+        "work-teammate",
+        "work-manager"
+       ],
+       "chunks": [
+        "ch-work-07",
+        "ch-work-08",
+        "ch-work-09"
+       ],
+       "listening": [
+        [
+         "lis-service-08"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u11-l4",
+       "title": "เลื่อนนัด",
+       "kind": "dialog",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "work-work-schedule",
+        "work-take-a-break",
+        "work-work",
+        "work-new-job",
+        "work-start-work"
+       ],
+       "chunks": [
+        "ch-work-10",
+        "ch-work-11",
+        "ch-work-12"
+       ],
+       "listening": [],
+       "dialogue": "dlg-office"
+      },
+      {
+       "id": "u11-l5",
+       "title": "ทบทวน Unit 11",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "work-finish",
+        "work-help-me",
+        "work-phone-call",
+        "work-client",
+        "work-day-off"
+       ],
+       "chunks": [
+        "ch-work-13",
+        "ch-work-14",
+        "ch-work-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    },
+    {
+     "id": "u12",
+     "title": "ด่านสุดท้าย: พูดได้ครบ",
+     "en": "Final boss",
+     "emoji": "👑",
+     "color": "#EC4899",
+     "section": "s3",
+     "lessons": [
+      {
+       "id": "u12-l1",
+       "title": "เหตุฉุกเฉินจริง",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "emergency-emergency",
+        "emergency-ambulance",
+        "emergency-firefighter",
+        "emergency-police-officer",
+        "emergency-fire-extinguisher"
+       ],
+       "chunks": [
+        "ch-smal-01",
+        "ch-smal-02",
+        "ch-smal-03"
+       ],
+       "listening": [
+        [
+         "lis-cafe-03"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u12-l2",
+       "title": "ขอโทษ/แก้สถานการณ์",
+       "kind": "mix",
+       "exercises": [
+        "words"
+       ],
+       "words": [
+        "emergency-first-aid",
+        "emergency-help-line",
+        "emergency-danger",
+        "emergency-missing-person",
+        "emergency-accident"
+       ],
+       "chunks": [
+        "ch-smal-04",
+        "ch-smal-05",
+        "ch-smal-06"
+       ],
+       "listening": [
+        [
+         "lis-routine-06"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u12-l3",
+       "title": "พูดให้เขาฟังรู้เรื่อง",
+       "kind": "mix",
+       "exercises": [
+        "words",
+        "chunks"
+       ],
+       "words": [
+        "emergency-fire",
+        "emergency-flood",
+        "emergency-earthquake",
+        "emergency-storm",
+        "emergency-shelter"
+       ],
+       "chunks": [
+        "ch-smal-07",
+        "ch-smal-08",
+        "ch-smal-09"
+       ],
+       "listening": [
+        [
+         "lis-service-09"
+        ]
+       ],
+       "dialogue": null
+      },
+      {
+       "id": "u12-l4",
+       "title": "ยืนยันข้อมูล",
+       "kind": "mix",
+       "exercises": [
+        "chunks",
+        "dictation"
+       ],
+       "words": [
+        "emergency-rescue",
+        "emergency-emergency-exit",
+        "emergency-hotline",
+        "emergency-location",
+        "emergency-safety"
+       ],
+       "chunks": [
+        "ch-smal-10",
+        "ch-smal-11",
+        "ch-smal-12"
+       ],
+       "listening": [],
+       "dialogue": null
+      },
+      {
+       "id": "u12-l5",
+       "title": "ด่านเทพ: พูดได้ครบ",
+       "kind": "review",
+       "exercises": [
+        "review"
+       ],
+       "words": [
+        "emergency-injured-person",
+        "emergency-theft",
+        "emergency-smoke-alarm",
+        "emergency-power-outage",
+        "emergency-rescue-team"
+       ],
+       "chunks": [
+        "ch-smal-13",
+        "ch-smal-14",
+        "ch-smal-15"
+       ],
+       "listening": [],
+       "dialogue": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

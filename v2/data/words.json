@@ -1,0 +1,6317 @@
+[
+ {
+  "id": "food-breakfast",
+  "word": "breakfast",
+  "pos": "n.",
+  "ipa": "/ˈbrek.fəst/",
+  "thai": "อาหารเช้า",
+  "emoji": "🍳",
+  "imageQuery": "breakfast table morning",
+  "example": "I usually have breakfast at seven with my wife.",
+  "exampleThai": "ปกติผมกินอาหารเช้ากับภรรยาตอนเจ็ดโมง",
+  "keyVocab": [
+   {
+    "en": "usually have",
+    "thai": "ปกติกิน"
+   },
+   {
+    "en": "at seven",
+    "thai": "ตอนเจ็ดโมง"
+   }
+  ],
+  "tip": "ใช้ have breakfast ไม่ใช่ eat breakfast และไม่ใส่ a เมื่อพูดถึงมื้อเช้าทั่วไป",
+  "category": "food",
+  "commonsCategory": "Breakfast",
+  "photo": true,
+  "article": "Breakfast"
+ },
+ {
+  "id": "food-lunch",
+  "word": "lunch",
+  "pos": "n.",
+  "ipa": "/lʌntʃ/",
+  "thai": "อาหารกลางวัน",
+  "emoji": "🥗",
+  "imageQuery": "lunch break office",
+  "example": "Let's grab lunch together after the meeting ends.",
+  "exampleThai": "ไปกินข้าวเที่ยงด้วยกันหลังประชุมเลิกนะ",
+  "keyVocab": [
+   {
+    "en": "grab lunch",
+    "thai": "ไปกินข้าวเที่ยงเร็วๆ"
+   },
+   {
+    "en": "after the meeting",
+    "thai": "หลังประชุม"
+   }
+  ],
+  "tip": "grab lunch เป็นสำนวน แปลว่า กินข้าวเที่ยงเร็วๆ ใช้บ่อยในที่ทำงาน",
+  "category": "food",
+  "commonsCategory": "Lunch",
+  "photo": true,
+  "article": "Lunch"
+ },
+ {
+  "id": "food-dinner",
+  "word": "dinner",
+  "pos": "n.",
+  "ipa": "/ˈdɪn.ɚ/",
+  "thai": "อาหารเย็น",
+  "emoji": "🍽️",
+  "imageQuery": "family dinner table",
+  "example": "We are having dinner with my parents on Friday night.",
+  "exampleThai": "คืนวันศุกร์นี้เราจะไปกินข้าวเย็นกับพ่อแม่ผม",
+  "keyVocab": [
+   {
+    "en": "having dinner",
+    "thai": "กินข้าวเย็น"
+   },
+   {
+    "en": "on Friday night",
+    "thai": "คืนวันศุกร์"
+   }
+  ],
+  "tip": "dinner คือมื้อเย็น ใช้ have dinner บ่อยกว่า eat dinner",
+  "category": "food",
+  "commonsCategory": "Dinners",
+  "photo": true,
+  "article": "Dinner"
+ },
+ {
+  "id": "food-snack",
+  "word": "snack",
+  "pos": "n.",
+  "ipa": "/snæk/",
+  "thai": "ของว่าง",
+  "emoji": "🥜",
+  "imageQuery": "healthy snack nuts",
+  "example": "I keep some nuts in my desk for a quick snack.",
+  "exampleThai": "ผมเก็บถั่วไว้ในโต๊ะทำงาน เอาไว้กินเล่นตอนหิว",
+  "keyVocab": [
+   {
+    "en": "keep some nuts",
+    "thai": "เก็บถั่วไว้บ้าง"
+   },
+   {
+    "en": "a quick snack",
+    "thai": "ของว่างกินเร็วๆ"
+   }
+  ],
+  "tip": "snack เป็นได้ทั้งคำนาม (ของว่าง) และคำกริยา (กินเล่น)",
+  "category": "food",
+  "commonsCategory": "Snack food",
+  "photo": true,
+  "article": "Snack"
+ },
+ {
+  "id": "food-ingredient",
+  "word": "ingredient",
+  "pos": "n.",
+  "ipa": "/ɪnˈɡriː.di.ənt/",
+  "thai": "วัตถุดิบ / ส่วนผสม",
+  "emoji": "🥕",
+  "imageQuery": "fresh ingredients cooking",
+  "example": "Fresh ingredients make a simple dish taste much better.",
+  "exampleThai": "วัตถุดิบสดๆ ทำให้เมนูง่ายๆ อร่อยขึ้นเยอะ",
+  "keyVocab": [
+   {
+    "en": "Fresh ingredients",
+    "thai": "วัตถุดิบสดๆ"
+   },
+   {
+    "en": "a simple dish",
+    "thai": "เมนูง่ายๆ"
+   }
+  ],
+  "tip": "ใช้พหูพจน์ ingredients เมื่อพูดถึงหลายอย่าง ออกเสียงเน้น -gri-",
+  "category": "food",
+  "commonsCategory": "Food ingredients",
+  "photo": true,
+  "article": "Ingredient"
+ },
+ {
+  "id": "food-recipe",
+  "word": "recipe",
+  "pos": "n.",
+  "ipa": "/ˈres.ə.pi/",
+  "thai": "สูตรอาหาร",
+  "emoji": "📖",
+  "imageQuery": "cooking recipe book",
+  "example": "My mother gave me her recipe for Thai green curry.",
+  "exampleThai": "แม่ให้สูตรแกงเขียวหวานของท่านกับฉันมา",
+  "keyVocab": [
+   {
+    "en": "gave me",
+    "thai": "ให้ฉัน"
+   },
+   {
+    "en": "Thai green curry",
+    "thai": "แกงเขียวหวาน"
+   }
+  ],
+  "tip": "recipe ออกเสียง เรส-ซะ-พี ไม่ใช่ รี-ไซป์ และใช้ recipe for + อาหาร",
+  "category": "food",
+  "commonsCategory": "Recipes",
+  "photo": true,
+  "article": "Recipe"
+ },
+ {
+  "id": "food-soup",
+  "word": "soup",
+  "pos": "n.",
+  "ipa": "/suːp/",
+  "thai": "ซุป",
+  "emoji": "🍲",
+  "imageQuery": "hot soup bowl",
+  "example": "This soup is too salty for me, can you fix it?",
+  "exampleThai": "ซุปถ้วยนี้เค็มเกินไปสำหรับฉัน ช่วยแก้ให้หน่อยได้ไหม",
+  "keyVocab": [
+   {
+    "en": "too salty",
+    "thai": "เค็มเกินไป"
+   },
+   {
+    "en": "fix it",
+    "thai": "แก้ให้หน่อย"
+   }
+  ],
+  "tip": "soup เป็นคำนามนับไม่ได้ พูด a bowl of soup ได้ แต่ไม่พูด a soup",
+  "category": "food",
+  "commonsCategory": "Soups",
+  "photo": true,
+  "article": "Soup"
+ },
+ {
+  "id": "food-grill",
+  "word": "grill",
+  "pos": "v.",
+  "ipa": "/ɡrɪl/",
+  "thai": "ย่าง",
+  "emoji": "🔥",
+  "imageQuery": "grilling fish outdoor",
+  "example": "We usually grill fish and vegetables on Sunday evenings.",
+  "exampleThai": "ปกติเราย่างปลากับผักตอนเย็นวันอาทิตย์",
+  "keyVocab": [
+   {
+    "en": "grill fish",
+    "thai": "ย่างปลา"
+   },
+   {
+    "en": "Sunday evenings",
+    "thai": "เย็นวันอาทิตย์"
+   }
+  ],
+  "tip": "grill ย่างบนตะแกรง ต่างจาก roast (อบ) และ barbecue (บาร์บีคิว)",
+  "category": "food",
+  "commonsCategory": "Grilling",
+  "photo": true,
+  "article": "Grilling"
+ },
+ {
+  "id": "food-spicy",
+  "word": "spicy",
+  "pos": "adj.",
+  "ipa": "/ˈspaɪ.si/",
+  "thai": "เผ็ด",
+  "emoji": "🌶️",
+  "imageQuery": "spicy chili food",
+  "example": "I love spicy food, but my husband can't handle it.",
+  "exampleThai": "ฉันชอบอาหารเผ็ด แต่สามีฉันกินเผ็ดไม่ไหว",
+  "keyVocab": [
+   {
+    "en": "spicy food",
+    "thai": "อาหารเผ็ด"
+   },
+   {
+    "en": "can't handle it",
+    "thai": "กินไม่ไหว / รับไม่ไหว"
+   }
+  ],
+  "tip": "บอกความเผ็ดได้ว่า mildly spicy หรือ Thai spicy ถ้าเอาแบบไทยๆ",
+  "category": "food",
+  "commonsCategory": "Chili peppers",
+  "photo": true,
+  "article": "Pungency"
+ },
+ {
+  "id": "food-leftovers",
+  "word": "leftovers",
+  "pos": "n.",
+  "ipa": "/ˈleft.oʊ.vɚz/",
+  "thai": "อาหารที่กินเหลือ",
+  "emoji": "🍱",
+  "imageQuery": "leftover food container",
+  "example": "We ate the leftovers from last night for lunch today.",
+  "exampleThai": "วันนี้เรากินอาหารที่เหลือจากเมื่อคืนเป็นมื้อเที่ยง",
+  "keyVocab": [
+   {
+    "en": "from last night",
+    "thai": "จากเมื่อคืน"
+   },
+   {
+    "en": "for lunch",
+    "thai": "เป็นมื้อเที่ยง"
+   }
+  ],
+  "tip": "leftovers ใช้เป็นพหูพจน์เสมอ หมายถึงอาหารที่กินเหลือแช่ตู้เย็นไว้",
+  "category": "food",
+  "commonsCategory": "Leftovers",
+  "photo": true,
+  "article": "Leftovers"
+ },
+ {
+  "id": "food-dessert",
+  "word": "dessert",
+  "pos": "n.",
+  "ipa": "/dɪˈzɝːt/",
+  "thai": "ของหวาน",
+  "emoji": "🍰",
+  "imageQuery": "dessert cake plate",
+  "example": "Would you like some dessert or just coffee?",
+  "exampleThai": "รับของหวานไหมคะ หรือเอาแค่กาแฟ",
+  "keyVocab": [
+   {
+    "en": "Would you like",
+    "thai": "รับ...ไหม"
+   },
+   {
+    "en": "just coffee",
+    "thai": "แค่กาแฟ"
+   }
+  ],
+  "tip": "dessert (ของหวาน) สะกด ss แต่ desert (ทะเลทราย) สะกด s เดียว",
+  "category": "food",
+  "commonsCategory": "Desserts",
+  "photo": true,
+  "article": "Dessert"
+ },
+ {
+  "id": "food-portion",
+  "word": "portion",
+  "pos": "n.",
+  "ipa": "/ˈpɔːr.ʃən/",
+  "thai": "ปริมาณอาหารต่อจาน",
+  "emoji": "🍛",
+  "imageQuery": "large food portion plate",
+  "example": "The portions here are huge, so let's share one plate.",
+  "exampleThai": "ที่ร้านนี้เสิร์ฟจานใหญ่ งั้นแบ่งกันจานเดียวเถอะ",
+  "keyVocab": [
+   {
+    "en": "are huge",
+    "thai": "ใหญ่โต"
+   },
+   {
+    "en": "share one plate",
+    "thai": "แบ่งกันจานเดียว"
+   }
+  ],
+  "tip": "portion = ปริมาณอาหารต่อจาน พูด portion size หรือ a small portion",
+  "category": "food",
+  "commonsCategory": "Meals",
+  "photo": true,
+  "article": "Serving size"
+ },
+ {
+  "id": "food-porridge",
+  "word": "porridge",
+  "pos": "n.",
+  "ipa": "/ˈpɔːrɪdʒ/",
+  "thai": "โจ๊ก",
+  "emoji": "💬",
+  "example": "I need porridge today.",
+  "exampleThai": "ฉันใช้คำว่า โจ๊ก ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "โจ๊ก",
+    "en": "porridge"
+   }
+  ],
+  "tip": "ใช้ porridge ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-rice",
+  "word": "rice",
+  "pos": "n.",
+  "ipa": "/raɪs/",
+  "thai": "ข้าว",
+  "emoji": "💬",
+  "example": "I need rice today.",
+  "exampleThai": "ฉันใช้คำว่า ข้าว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ข้าว",
+    "en": "rice"
+   }
+  ],
+  "tip": "ใช้ rice ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-bread",
+  "word": "bread",
+  "pos": "n.",
+  "ipa": "/brɛd/",
+  "thai": "ขนมปัง",
+  "emoji": "💬",
+  "example": "I need bread today.",
+  "exampleThai": "ฉันใช้คำว่า ขนมปัง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ขนมปัง",
+    "en": "bread"
+   }
+  ],
+  "tip": "ใช้ bread ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-egg",
+  "word": "egg",
+  "pos": "n.",
+  "ipa": "/ɛɡ/",
+  "thai": "ไข่",
+  "emoji": "💬",
+  "example": "I need egg today.",
+  "exampleThai": "ฉันใช้คำว่า ไข่ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ไข่",
+    "en": "egg"
+   }
+  ],
+  "tip": "ใช้ egg ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-vegetables",
+  "word": "vegetables",
+  "pos": "n.",
+  "ipa": "/ˈvɛdʒtəbəlz/",
+  "thai": "ผัก",
+  "emoji": "💬",
+  "example": "I need vegetables today.",
+  "exampleThai": "ฉันใช้คำว่า ผัก ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผัก",
+    "en": "vegetables"
+   }
+  ],
+  "tip": "ใช้ vegetables ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-fruit",
+  "word": "fruit",
+  "pos": "n.",
+  "ipa": "/fruːt/",
+  "thai": "ผลไม้",
+  "emoji": "💬",
+  "example": "I need fruit today.",
+  "exampleThai": "ฉันใช้คำว่า ผลไม้ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผลไม้",
+    "en": "fruit"
+   }
+  ],
+  "tip": "ใช้ fruit ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-chicken",
+  "word": "chicken",
+  "pos": "n.",
+  "ipa": "/ˈtʃɪkɪn/",
+  "thai": "ไก่",
+  "emoji": "💬",
+  "example": "I need chicken today.",
+  "exampleThai": "ฉันใช้คำว่า ไก่ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ไก่",
+    "en": "chicken"
+   }
+  ],
+  "tip": "ใช้ chicken ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-fish",
+  "word": "fish",
+  "pos": "n.",
+  "ipa": "/fɪʃ/",
+  "thai": "ปลา",
+  "emoji": "💬",
+  "example": "I need fish today.",
+  "exampleThai": "ฉันใช้คำว่า ปลา ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ปลา",
+    "en": "fish"
+   }
+  ],
+  "tip": "ใช้ fish ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-beef",
+  "word": "beef",
+  "pos": "n.",
+  "ipa": "/biːf/",
+  "thai": "เนื้อวัว",
+  "emoji": "💬",
+  "example": "I need beef today.",
+  "exampleThai": "ฉันใช้คำว่า เนื้อวัว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เนื้อวัว",
+    "en": "beef"
+   }
+  ],
+  "tip": "ใช้ beef ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-water",
+  "word": "water",
+  "pos": "n.",
+  "ipa": "/ˈwɔːtər/",
+  "thai": "น้ำ",
+  "emoji": "💬",
+  "example": "I need water today.",
+  "exampleThai": "ฉันใช้คำว่า น้ำ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "น้ำ",
+    "en": "water"
+   }
+  ],
+  "tip": "ใช้ water ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-milk",
+  "word": "milk",
+  "pos": "n.",
+  "ipa": "/mɪlk/",
+  "thai": "นม",
+  "emoji": "💬",
+  "example": "I need milk today.",
+  "exampleThai": "ฉันใช้คำว่า นม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "นม",
+    "en": "milk"
+   }
+  ],
+  "tip": "ใช้ milk ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-coffee",
+  "word": "coffee",
+  "pos": "n.",
+  "ipa": "/ˈkɔːfi/",
+  "thai": "กาแฟ",
+  "emoji": "💬",
+  "example": "I need coffee today.",
+  "exampleThai": "ฉันใช้คำว่า กาแฟ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "กาแฟ",
+    "en": "coffee"
+   }
+  ],
+  "tip": "ใช้ coffee ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "food-tea",
+  "word": "tea",
+  "pos": "n.",
+  "ipa": "/tiː/",
+  "thai": "ชา",
+  "emoji": "💬",
+  "example": "I need tea today.",
+  "exampleThai": "ฉันใช้คำว่า ชา ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ชา",
+    "en": "tea"
+   }
+  ],
+  "tip": "ใช้ tea ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "food"
+ },
+ {
+  "id": "restaurant-reservation",
+  "word": "reservation",
+  "pos": "n.",
+  "ipa": "/ˌrez.ɚˈveɪ.ʃən/",
+  "thai": "การจองโต๊ะ",
+  "emoji": "📅",
+  "imageQuery": "restaurant table booking",
+  "example": "I made a reservation for four at seven tonight.",
+  "exampleThai": "ฉันจองโต๊ะไว้สำหรับสี่คนตอนหนึ่งทุ่มคืนนี้",
+  "keyVocab": [
+   {
+    "en": "made a reservation",
+    "thai": "จองโต๊ะไว้"
+   },
+   {
+    "en": "for four",
+    "thai": "สำหรับสี่คน"
+   }
+  ],
+  "tip": "ใช้ make/have a reservation พนักงานมักถามว่า Do you have a reservation?",
+  "category": "restaurant",
+  "commonsCategory": "Reservations",
+  "photo": true,
+  "article": "Table reservation"
+ },
+ {
+  "id": "restaurant-table-for-two",
+  "word": "table for two",
+  "pos": "phr.",
+  "ipa": "/ˈteɪ.bəl fɚ tuː/",
+  "thai": "โต๊ะสำหรับสองคน",
+  "emoji": "👫",
+  "imageQuery": "table for two restaurant",
+  "example": "Good evening, we'd like a table for two, please.",
+  "exampleThai": "สวัสดีตอนเย็นครับ เราขอโต๊ะสองที่ครับ",
+  "keyVocab": [
+   {
+    "en": "Good evening",
+    "thai": "สวัสดีตอนเย็น"
+   },
+   {
+    "en": "we'd like",
+    "thai": "เราขอ"
+   }
+  ],
+  "tip": "บอกจำนวนคนว่า a table for two/three/four แล้วปิดท้ายด้วย please",
+  "category": "restaurant",
+  "commonsCategory": "Restaurant tables",
+  "photo": true,
+  "article": "Table (furniture)"
+ },
+ {
+  "id": "restaurant-menu",
+  "word": "menu",
+  "pos": "n.",
+  "ipa": "/ˈmen.juː/",
+  "thai": "เมนู",
+  "emoji": "📋",
+  "imageQuery": "restaurant menu card",
+  "example": "Could we see the menu, and do you have Thai options?",
+  "exampleThai": "ขอดูเมนูหน่อยได้ไหม แล้วมีเมนูไทยไหมคะ",
+  "keyVocab": [
+   {
+    "en": "Could we see",
+    "thai": "ขอดู...ได้ไหม"
+   },
+   {
+    "en": "Thai options",
+    "thai": "ตัวเลือกอาหารไทย"
+   }
+  ],
+  "tip": "ขอเมนูอย่างสุภาพใช้ Could we see the menu? หรือ Can I have the menu?",
+  "category": "restaurant",
+  "commonsCategory": "Food menus",
+  "photo": true,
+  "article": "Menu"
+ },
+ {
+  "id": "restaurant-order",
+  "word": "order",
+  "pos": "v.",
+  "ipa": "/ˈɔːr.dɚ/",
+  "thai": "สั่งอาหาร",
+  "emoji": "📝",
+  "imageQuery": "waiter taking order",
+  "example": "Are you ready to order, or do you need more time?",
+  "exampleThai": "พร้อมจะสั่งอาหารหรือยังคะ หรือขอเวลาอีกหน่อย",
+  "keyVocab": [
+   {
+    "en": "ready to order",
+    "thai": "พร้อมสั่งอาหาร"
+   },
+   {
+    "en": "more time",
+    "thai": "เวลาอีกหน่อย"
+   }
+  ],
+  "tip": "order เป็นได้ทั้งกริยา (สั่ง) และคำนาม (ออร์เดอร์)",
+  "category": "restaurant",
+  "commonsCategory": "Waiters",
+  "photo": true
+ },
+ {
+  "id": "restaurant-recommend",
+  "word": "recommend",
+  "pos": "v.",
+  "ipa": "/ˌrek.əˈmend/",
+  "thai": "แนะนำ",
+  "emoji": "👍",
+  "imageQuery": "waiter suggesting dish",
+  "example": "Could you recommend something mild? I can't eat chili.",
+  "exampleThai": "ช่วยแนะนำอะไรที่ไม่เผ็ดหน่อยได้ไหม ฉันกินพริกไม่ได้",
+  "keyVocab": [
+   {
+    "en": "recommend something",
+    "thai": "แนะนำอะไรสักอย่าง"
+   },
+   {
+    "en": "can't eat chili",
+    "thai": "กินพริกไม่ได้"
+   }
+  ],
+  "tip": "ใช้ recommend + สิ่งของ หรือ recommend that + ประโยค แต่ไม่ใช้ recommend me",
+  "category": "restaurant",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Recommendation"
+ },
+ {
+  "id": "restaurant-appetizer",
+  "word": "appetizer",
+  "pos": "n.",
+  "ipa": "/ˈæp.ə.taɪ.zɚ/",
+  "thai": "อาหารเรียกน้ำย่อย",
+  "emoji": "🍤",
+  "imageQuery": "appetizer starter plate",
+  "example": "Let's start with an appetizer and share the main dish.",
+  "exampleThai": "เริ่มด้วยของว่างก่อน แล้วค่อยแบ่งจานหลักกัน",
+  "keyVocab": [
+   {
+    "en": "start with",
+    "thai": "เริ่มด้วย"
+   },
+   {
+    "en": "share the main dish",
+    "thai": "แบ่งจานหลักกัน"
+   }
+  ],
+  "tip": "appetizer ใช้ในอเมริกา ส่วนอังกฤษเรียกว่า starter",
+  "category": "restaurant",
+  "commonsCategory": "Appetizers",
+  "photo": true,
+  "article": "Hors d'oeuvre"
+ },
+ {
+  "id": "restaurant-main-course",
+  "word": "main course",
+  "pos": "n.",
+  "ipa": "/ˈmeɪn kɔːrs/",
+  "thai": "จานหลัก",
+  "emoji": "🥩",
+  "imageQuery": "main course steak dinner",
+  "example": "For my main course, I'll have the grilled salmon.",
+  "exampleThai": "จานหลักของฉันขอเป็นแซลมอนย่าง",
+  "keyVocab": [
+   {
+    "en": "For my main course",
+    "thai": "สำหรับจานหลักของฉัน"
+   },
+   {
+    "en": "grilled salmon",
+    "thai": "แซลมอนย่าง"
+   }
+  ],
+  "tip": "เวลาสั่งใช้ For my main course, I'll have... ดูสุภาพและเป็นธรรมชาติ",
+  "category": "restaurant",
+  "commonsCategory": "Main course",
+  "photo": true,
+  "article": "Main course"
+ },
+ {
+  "id": "restaurant-refill",
+  "word": "refill",
+  "pos": "n.",
+  "ipa": "/ˈriː.fɪl/",
+  "thai": "การเติมเครื่องดื่ม",
+  "emoji": "🥤",
+  "imageQuery": "refill soda glass",
+  "example": "Can I get a refill on my coffee, please?",
+  "exampleThai": "ขอเติมกาแฟหน่อยได้ไหมคะ",
+  "keyVocab": [
+   {
+    "en": "get a refill",
+    "thai": "ขอเติม"
+   },
+   {
+    "en": "on my coffee",
+    "thai": "กาแฟของฉัน"
+   }
+  ],
+  "tip": "ในอเมริกาหลายร้านเติมน้ำอัดลมฟรี เรียกว่า free refills",
+  "category": "restaurant",
+  "commonsCategory": "Pouring",
+  "photo": true,
+  "article": "Free refill"
+ },
+ {
+  "id": "restaurant-bill",
+  "word": "bill",
+  "pos": "n.",
+  "ipa": "/bɪl/",
+  "thai": "บิล / ใบเก็บเงิน",
+  "emoji": "🧾",
+  "imageQuery": "restaurant bill receipt",
+  "example": "Could we have the bill, please? We need to leave soon.",
+  "exampleThai": "ขอเช็คบิลหน่อยได้ไหมครับ เราต้องรีบไปแล้ว",
+  "keyVocab": [
+   {
+    "en": "have the bill",
+    "thai": "ขอเช็คบิล"
+   },
+   {
+    "en": "leave soon",
+    "thai": "ไปในอีกไม่นาน"
+   }
+  ],
+  "tip": "คนอเมริกันพูด the check มากกว่า the bill ส่วนอังกฤษใช้ the bill",
+  "category": "restaurant",
+  "commonsCategory": "Invoices",
+  "photo": true,
+  "article": "Invoice"
+ },
+ {
+  "id": "restaurant-tip",
+  "word": "tip",
+  "pos": "n.",
+  "ipa": "/tɪp/",
+  "thai": "ทิป / เงินให้พนักงาน",
+  "emoji": "💵",
+  "imageQuery": "tipping money restaurant",
+  "example": "We left a good tip because the service was great.",
+  "exampleThai": "เราให้ทิปดีๆ เพราะบริการดีมาก",
+  "keyVocab": [
+   {
+    "en": "left a good tip",
+    "thai": "ให้ทิปดีๆ"
+   },
+   {
+    "en": "the service was great",
+    "thai": "บริการดีมาก"
+   }
+  ],
+  "tip": "ในสหรัฐฯ ให้ทิป 15-20% ของบิล ถ้าไม่ให้ถือว่าเสียมารยาท",
+  "category": "restaurant",
+  "commonsCategory": "Gratuity",
+  "photo": true,
+  "article": "Gratuity"
+ },
+ {
+  "id": "restaurant-takeaway",
+  "word": "takeaway",
+  "pos": "n.",
+  "ipa": "/ˈteɪk.ə.weɪ/",
+  "thai": "อาหารกลับบ้าน",
+  "emoji": "🥡",
+  "imageQuery": "takeaway food bag",
+  "example": "We were too tired, so we ordered takeaway instead.",
+  "exampleThai": "เราเหนื่อยเกินไป เลยสั่งอาหารกลับบ้านมากินแทน",
+  "keyVocab": [
+   {
+    "en": "too tired",
+    "thai": "เหนื่อยเกินไป"
+   },
+   {
+    "en": "ordered takeaway",
+    "thai": "สั่งอาหารกลับบ้าน"
+   }
+  ],
+  "tip": "อังกฤษใช้ takeaway อเมริกันใช้ takeout พูดสั้นๆ ว่า to go ก็ได้",
+  "category": "restaurant",
+  "commonsCategory": "Take-out food",
+  "photo": true,
+  "article": "Take-out"
+ },
+ {
+  "id": "restaurant-allergy",
+  "word": "allergy",
+  "pos": "n.",
+  "ipa": "/ˈæl.ɚ.dʒi/",
+  "thai": "การแพ้อาหาร",
+  "emoji": "🤧",
+  "imageQuery": "food allergy warning",
+  "example": "I have a peanut allergy, so please check the sauce.",
+  "exampleThai": "ฉันแพ้ถั่วลิสง รบกวนเช็คซอสให้หน่อยนะ",
+  "keyVocab": [
+   {
+    "en": "a peanut allergy",
+    "thai": "การแพ้ถั่วลิสง"
+   },
+   {
+    "en": "check the sauce",
+    "thai": "เช็คซอส"
+   }
+  ],
+  "tip": "บอกพนักงานว่า I'm allergic to... ใช้บ่อยกว่า และถามว่า Does this contain nuts?",
+  "category": "restaurant",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Food allergy"
+ },
+ {
+  "id": "restaurant-waiter",
+  "word": "waiter",
+  "pos": "n.",
+  "ipa": "/ˈweɪtər/",
+  "thai": "พนักงานเสิร์ฟ",
+  "emoji": "💬",
+  "example": "I need waiter today.",
+  "exampleThai": "ฉันใช้คำว่า พนักงานเสิร์ฟ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "พนักงานเสิร์ฟ",
+    "en": "waiter"
+   }
+  ],
+  "tip": "ใช้ waiter ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-customer",
+  "word": "customer",
+  "pos": "n.",
+  "ipa": "/ˈkʌstəmər/",
+  "thai": "ลูกค้า",
+  "emoji": "💬",
+  "example": "I need customer today.",
+  "exampleThai": "ฉันใช้คำว่า ลูกค้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ลูกค้า",
+    "en": "customer"
+   }
+  ],
+  "tip": "ใช้ customer ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-plate",
+  "word": "plate",
+  "pos": "n.",
+  "ipa": "/pleɪt/",
+  "thai": "จาน",
+  "emoji": "💬",
+  "example": "I need plate today.",
+  "exampleThai": "ฉันใช้คำว่า จาน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "จาน",
+    "en": "plate"
+   }
+  ],
+  "tip": "ใช้ plate ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-spoon",
+  "word": "spoon",
+  "pos": "n.",
+  "ipa": "/spuːn/",
+  "thai": "ช้อน",
+  "emoji": "💬",
+  "example": "I need spoon today.",
+  "exampleThai": "ฉันใช้คำว่า ช้อน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ช้อน",
+    "en": "spoon"
+   }
+  ],
+  "tip": "ใช้ spoon ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-fork",
+  "word": "fork",
+  "pos": "n.",
+  "ipa": "/fɔːrk/",
+  "thai": "ส้อม",
+  "emoji": "💬",
+  "example": "I need fork today.",
+  "exampleThai": "ฉันใช้คำว่า ส้อม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ส้อม",
+    "en": "fork"
+   }
+  ],
+  "tip": "ใช้ fork ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-knife",
+  "word": "knife",
+  "pos": "n.",
+  "ipa": "/naɪf/",
+  "thai": "มีด",
+  "emoji": "💬",
+  "example": "I need knife today.",
+  "exampleThai": "ฉันใช้คำว่า มีด ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "มีด",
+    "en": "knife"
+   }
+  ],
+  "tip": "ใช้ knife ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-glass",
+  "word": "glass",
+  "pos": "n.",
+  "ipa": "/ɡlæs/",
+  "thai": "แก้ว",
+  "emoji": "💬",
+  "example": "I need glass today.",
+  "exampleThai": "ฉันใช้คำว่า แก้ว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "แก้ว",
+    "en": "glass"
+   }
+  ],
+  "tip": "ใช้ glass ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-bottle",
+  "word": "bottle",
+  "pos": "n.",
+  "ipa": "/ˈbɑːtəl/",
+  "thai": "ขวด",
+  "emoji": "💬",
+  "example": "I need bottle today.",
+  "exampleThai": "ฉันใช้คำว่า ขวด ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ขวด",
+    "en": "bottle"
+   }
+  ],
+  "tip": "ใช้ bottle ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-drinks-menu",
+  "word": "drinks menu",
+  "pos": "n.",
+  "ipa": "/drɪŋks ˈmɛnjuː/",
+  "thai": "เมนูเครื่องดื่ม",
+  "emoji": "💬",
+  "example": "I need drinks menu today.",
+  "exampleThai": "ฉันใช้คำว่า เมนูเครื่องดื่ม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เมนูเครื่องดื่ม",
+    "en": "drinks menu"
+   }
+  ],
+  "tip": "ใช้ drinks menu ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-today-s-special",
+  "word": "today's special",
+  "pos": "n.",
+  "ipa": "/todays.special/",
+  "thai": "จานพิเศษ",
+  "emoji": "💬",
+  "example": "I need today's special today.",
+  "exampleThai": "ฉันใช้คำว่า จานพิเศษ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "จานพิเศษ",
+    "en": "today's special"
+   }
+  ],
+  "tip": "ใช้ today's special ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-savory",
+  "word": "savory",
+  "pos": "n.",
+  "ipa": "/ˈseɪvəri/",
+  "thai": "รสกลมกล่อม",
+  "emoji": "💬",
+  "example": "This soup has a savory flavor.",
+  "exampleThai": "ซุปนี้มีรสกลมกล่อม",
+  "keyVocab": [
+   {
+    "thai": "เผ็ด",
+    "en": "savory"
+   }
+  ],
+  "tip": "ใช้ savory เพื่อบรรยายรสชาติอาหารที่กลมกล่อม",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-without",
+  "word": "without",
+  "pos": "n.",
+  "ipa": "/wɪˈðaʊt/",
+  "thai": "ไม่ใส่",
+  "emoji": "💬",
+  "example": "I would like this dish without onions.",
+  "exampleThai": "ฉันขออาหารจานนี้โดยไม่ใส่หัวหอม",
+  "keyVocab": [
+   {
+    "thai": "ไม่ใส่",
+    "en": "without"
+   }
+  ],
+  "tip": "ใช้ without เพื่อแจ้งส่วนผสมที่ไม่ต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "restaurant-pay-separately",
+  "word": "pay separately",
+  "pos": "n.",
+  "ipa": "/peɪ ˈsɛprətli/",
+  "thai": "จ่ายแยก",
+  "emoji": "💬",
+  "example": "I need pay separately today.",
+  "exampleThai": "ฉันใช้คำว่า จ่ายแยก ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "จ่ายแยก",
+    "en": "pay separately"
+   }
+  ],
+  "tip": "ใช้ pay separately ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "restaurant"
+ },
+ {
+  "id": "travel-ticket",
+  "word": "ticket",
+  "pos": "n.",
+  "ipa": "/ˈtɪk.ɪt/",
+  "thai": "ตั๋ว",
+  "emoji": "🎫",
+  "imageQuery": "train ticket",
+  "example": "I bought a round-trip ticket to Chiang Mai yesterday.",
+  "exampleThai": "ฉันซื้อตั๋วไป-กลับเชียงใหม่เมื่อวานนี้",
+  "keyVocab": [
+   {
+    "en": "round-trip",
+    "thai": "ไป-กลับ"
+   },
+   {
+    "en": "bought",
+    "thai": "ซื้อ (อดีตของ buy)"
+   }
+  ],
+  "tip": "ticket ใช้กับตั๋วเครื่องบิน รถไฟ คอนเสิร์ต แต่ตั๋วรถเมล์มักเรียกว่า bus fare",
+  "category": "travel",
+  "commonsCategory": "Tickets",
+  "photo": true,
+  "article": "Ticket (admission)"
+ },
+ {
+  "id": "travel-passport",
+  "word": "passport",
+  "pos": "n.",
+  "ipa": "/ˈpæs.pɔːrt/",
+  "thai": "หนังสือเดินทาง",
+  "emoji": "🛂",
+  "imageQuery": "passport travel document",
+  "example": "Don't forget to put your passport in your bag.",
+  "exampleThai": "อย่าลืมเอาหนังสือเดินทางใส่กระเป๋านะ",
+  "keyVocab": [
+   {
+    "en": "forget",
+    "thai": "ลืม"
+   },
+   {
+    "en": "passport",
+    "thai": "หนังสือเดินทาง"
+   },
+   {
+    "en": "bag",
+    "thai": "กระเป๋า"
+   }
+  ],
+  "tip": "passport คือหนังสือเดินทาง อย่าลืมเช็กวันหมดอายุ (expiry date) ก่อนเดินทาง",
+  "category": "travel",
+  "commonsCategory": "Passports",
+  "photo": true,
+  "article": "Passport"
+ },
+ {
+  "id": "travel-airport",
+  "word": "airport",
+  "pos": "n.",
+  "ipa": "/ˈer.pɔːrt/",
+  "thai": "สนามบิน",
+  "emoji": "✈️",
+  "imageQuery": "airport departure hall",
+  "example": "We should get to the airport two hours early.",
+  "exampleThai": "เราไปถึงสนามบินก่อนเวลา 2 ชั่วโมงดีกว่า",
+  "keyVocab": [
+   {
+    "en": "get to",
+    "thai": "ไปถึง"
+   },
+   {
+    "en": "airport",
+    "thai": "สนามบิน"
+   },
+   {
+    "en": "early",
+    "thai": "แต่เช้า / ก่อนเวลา"
+   }
+  ],
+  "tip": "airport คือสนามบิน terminal คืออาคารผู้โดยสาร และ gate คือประตูขึ้นเครื่อง",
+  "category": "travel",
+  "commonsCategory": "Airport terminals",
+  "photo": true,
+  "article": "Airport"
+ },
+ {
+  "id": "travel-luggage",
+  "word": "luggage",
+  "pos": "n.",
+  "ipa": "/ˈlʌɡ.ɪdʒ/",
+  "thai": "กระเป๋าเดินทาง",
+  "emoji": "🧳",
+  "imageQuery": "travel luggage suitcase",
+  "example": "My luggage is too heavy to carry upstairs.",
+  "exampleThai": "กระเป๋าเดินทางฉันหนักเกินกว่าจะยกขึ้นชั้นบนไหว",
+  "keyVocab": [
+   {
+    "en": "luggage",
+    "thai": "กระเป๋าเดินทาง"
+   },
+   {
+    "en": "heavy",
+    "thai": "หนัก"
+   },
+   {
+    "en": "carry",
+    "thai": "ยก / หิ้ว"
+   }
+  ],
+  "tip": "luggage เป็นคำนับไม่ได้ ห้ามเติม s ใช้ a piece of luggage หรือ two bags แทน",
+  "category": "travel",
+  "commonsCategory": "Luggage",
+  "photo": true,
+  "article": "Baggage"
+ },
+ {
+  "id": "travel-map",
+  "word": "map",
+  "pos": "n.",
+  "ipa": "/mæp/",
+  "thai": "แผนที่",
+  "emoji": "🗺️",
+  "imageQuery": "city street map",
+  "example": "Let me check the map on my phone.",
+  "exampleThai": "ขอฉันดูแผนที่ในมือถือแป๊บนะ",
+  "keyVocab": [
+   {
+    "en": "check",
+    "thai": "ดู / ตรวจสอบ"
+   },
+   {
+    "en": "map",
+    "thai": "แผนที่"
+   },
+   {
+    "en": "phone",
+    "thai": "โทรศัพท์ / มือถือ"
+   }
+  ],
+  "tip": "map อ่านว่า แม็พ ถ้าจะถามว่ามีแผนที่ไหม ใช้ Do you have a map?",
+  "category": "travel",
+  "commonsCategory": "Road maps",
+  "photo": true,
+  "article": "Map"
+ },
+ {
+  "id": "travel-bus",
+  "word": "bus",
+  "pos": "n.",
+  "ipa": "/bʌs/",
+  "thai": "รถเมล์",
+  "emoji": "🚌",
+  "imageQuery": "public city bus",
+  "example": "The bus to the city center leaves every ten minutes.",
+  "exampleThai": "รถเมล์ไปกลางเมืองออกทุกสิบนาที",
+  "keyVocab": [
+   {
+    "en": "city center",
+    "thai": "ใจกลางเมือง"
+   },
+   {
+    "en": "leaves",
+    "thai": "ออก (รถออก)"
+   },
+   {
+    "en": "every ten minutes",
+    "thai": "ทุกสิบนาที"
+   }
+  ],
+  "tip": "ขึ้นรถเมล์ใช้ take a bus หรือ get on the bus ลงรถใช้ get off the bus",
+  "category": "travel",
+  "commonsCategory": "Buses",
+  "photo": true,
+  "article": "Bus"
+ },
+ {
+  "id": "travel-train",
+  "word": "train",
+  "pos": "n.",
+  "ipa": "/treɪn/",
+  "thai": "รถไฟ",
+  "emoji": "🚆",
+  "imageQuery": "train railway station",
+  "example": "I usually take the train to work in the morning.",
+  "exampleThai": "ปกติฉันนั่งรถไฟไปทำงานตอนเช้า",
+  "keyVocab": [
+   {
+    "en": "take the train",
+    "thai": "นั่งรถไฟ"
+   },
+   {
+    "en": "usually",
+    "thai": "โดยปกติ"
+   },
+   {
+    "en": "in the morning",
+    "thai": "ตอนเช้า"
+   }
+  ],
+  "tip": "นั่งรถไฟใช้ take the train ส่วนสถานีรถไฟเรียกว่า train station",
+  "category": "travel",
+  "commonsCategory": "Passenger trains",
+  "photo": true,
+  "article": "Train"
+ },
+ {
+  "id": "travel-schedule",
+  "word": "schedule",
+  "pos": "n.",
+  "ipa": "/ˈskedʒ.uːl/",
+  "thai": "ตารางเวลา",
+  "emoji": "📅",
+  "imageQuery": "travel schedule calendar",
+  "example": "Please check the train schedule before we leave home.",
+  "exampleThai": "ช่วยเช็กตารางรถไฟก่อนเราออกจากบ้านหน่อยนะ",
+  "keyVocab": [
+   {
+    "en": "schedule",
+    "thai": "ตารางเวลา"
+   },
+   {
+    "en": "check",
+    "thai": "ตรวจสอบ / ดู"
+   },
+   {
+    "en": "before we leave",
+    "thai": "ก่อนที่เราจะออกเดินทาง"
+   }
+  ],
+  "tip": "schedule สำเนียงอเมริกันออกเสียง สเก็ดจูล ไม่ใช่ เช็ดจูล แบบอังกฤษ",
+  "category": "travel",
+  "commonsCategory": "Timetables",
+  "photo": true,
+  "article": "Public transport timetable"
+ },
+ {
+  "id": "travel-destination",
+  "word": "destination",
+  "pos": "n.",
+  "ipa": "/ˌdes.təˈneɪ.ʃən/",
+  "thai": "จุดหมายปลายทาง",
+  "emoji": "📍",
+  "imageQuery": "destination map pin",
+  "example": "Our final destination is a small island in the south.",
+  "exampleThai": "จุดหมายสุดท้ายของเราคือเกาะเล็กๆ ทางภาคใต้",
+  "keyVocab": [
+   {
+    "en": "final destination",
+    "thai": "จุดหมายปลายทางสุดท้าย"
+   },
+   {
+    "en": "island",
+    "thai": "เกาะ"
+   },
+   {
+    "en": "in the south",
+    "thai": "ทางภาคใต้"
+   }
+  ],
+  "tip": "destination คือจุดหมายปลายทาง มักได้ยินคำว่า final destination ในประกาศสนามบิน",
+  "category": "travel",
+  "commonsCategory": "Tourism",
+  "photo": true,
+  "article": "Destination"
+ },
+ {
+  "id": "travel-gate",
+  "word": "gate",
+  "pos": "n.",
+  "ipa": "/ɡeɪt/",
+  "thai": "ประตูขึ้นเครื่อง",
+  "emoji": "🚪",
+  "imageQuery": "airport boarding gate",
+  "example": "Our flight leaves from gate twelve at nine o'clock.",
+  "exampleThai": "เที่ยวบินเราออกจากประตู 12 ตอนเก้าโมง",
+  "keyVocab": [
+   {
+    "en": "flight",
+    "thai": "เที่ยวบิน"
+   },
+   {
+    "en": "gate",
+    "thai": "ประตูขึ้นเครื่อง"
+   },
+   {
+    "en": "leaves from",
+    "thai": "ออกจาก"
+   }
+  ],
+  "tip": "gate ในสนามบินคือประตูขึ้นเครื่อง ควรถึงก่อนเวลาออกอย่างน้อย 30 นาที",
+  "category": "travel",
+  "commonsCategory": "Airport gates",
+  "photo": true,
+  "article": "Gate (airport)"
+ },
+ {
+  "id": "travel-turn-left",
+  "word": "turn left",
+  "pos": "phr.",
+  "ipa": "/ˌtɝːn ˈleft/",
+  "thai": "เลี้ยวซ้าย",
+  "emoji": "⬅️",
+  "imageQuery": "turning left street",
+  "example": "Walk two blocks and then turn left at the bank.",
+  "exampleThai": "เดินไปสองช่วงตึก แล้วเลี้ยวซ้ายตรงธนาคาร",
+  "keyVocab": [
+   {
+    "en": "turn left",
+    "thai": "เลี้ยวซ้าย"
+   },
+   {
+    "en": "blocks",
+    "thai": "ช่วงตึก"
+   },
+   {
+    "en": "bank",
+    "thai": "ธนาคาร"
+   }
+  ],
+  "tip": "turn left = เลี้ยวซ้าย, turn right = เลี้ยวขวา, go straight = ตรงไป",
+  "category": "travel",
+  "commonsCategory": "Turn signs",
+  "photo": true,
+  "article": "Traffic sign"
+ },
+ {
+  "id": "travel-ask-for-directions",
+  "word": "ask for directions",
+  "pos": "phr.",
+  "ipa": "/ˈæsk fər dəˈrek.ʃənz/",
+  "thai": "ถามทาง",
+  "emoji": "🧭",
+  "imageQuery": "asking directions tourist",
+  "example": "If you get lost, ask for directions at the hotel.",
+  "exampleThai": "ถ้าหลงทางก็ถามทางที่โรงแรมได้เลย",
+  "keyVocab": [
+   {
+    "en": "get lost",
+    "thai": "หลงทาง"
+   },
+   {
+    "en": "ask for directions",
+    "thai": "ถามทาง"
+   },
+   {
+    "en": "hotel",
+    "thai": "โรงแรม"
+   }
+  ],
+  "tip": "ask for directions = ถามทาง เริ่มประโยคสุภาพด้วย Excuse me, where is ...?",
+  "category": "travel",
+  "commonsCategory": "People pointing",
+  "photo": true
+ },
+ {
+  "id": "travel-hotel",
+  "word": "hotel",
+  "pos": "n.",
+  "ipa": "/hoʊˈtɛl/",
+  "thai": "โรงแรม",
+  "emoji": "💬",
+  "example": "I need hotel today.",
+  "exampleThai": "ฉันใช้คำว่า โรงแรม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "โรงแรม",
+    "en": "hotel"
+   }
+  ],
+  "tip": "ใช้ hotel ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-room",
+  "word": "room",
+  "pos": "n.",
+  "ipa": "/ruːm/",
+  "thai": "ห้อง",
+  "emoji": "💬",
+  "example": "I need room today.",
+  "exampleThai": "ฉันใช้คำว่า ห้อง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ห้อง",
+    "en": "room"
+   }
+  ],
+  "tip": "ใช้ room ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-suitcase",
+  "word": "suitcase",
+  "pos": "n.",
+  "ipa": "/ˈsuːtkeɪs/",
+  "thai": "กระเป๋าเดินทาง",
+  "emoji": "💬",
+  "example": "I need suitcase today.",
+  "exampleThai": "ฉันใช้คำว่า กระเป๋าเดินทาง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "กระเป๋าเดินทาง",
+    "en": "suitcase"
+   }
+  ],
+  "tip": "ใช้ suitcase ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-flight",
+  "word": "flight",
+  "pos": "n.",
+  "ipa": "/flaɪt/",
+  "thai": "เที่ยวบิน",
+  "emoji": "💬",
+  "example": "I need flight today.",
+  "exampleThai": "ฉันใช้คำว่า เที่ยวบิน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เที่ยวบิน",
+    "en": "flight"
+   }
+  ],
+  "tip": "ใช้ flight ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-platform",
+  "word": "platform",
+  "pos": "n.",
+  "ipa": "/ˈplætfɔːrm/",
+  "thai": "ชานชาลา",
+  "emoji": "💬",
+  "example": "I need platform today.",
+  "exampleThai": "ฉันใช้คำว่า ชานชาลา ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ชานชาลา",
+    "en": "platform"
+   }
+  ],
+  "tip": "ใช้ platform ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-delayed",
+  "word": "delayed",
+  "pos": "n.",
+  "ipa": "/dɪˈleɪd/",
+  "thai": "ล่าช้า",
+  "emoji": "💬",
+  "example": "I need delayed today.",
+  "exampleThai": "ฉันใช้คำว่า ล่าช้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ล่าช้า",
+    "en": "delayed"
+   }
+  ],
+  "tip": "ใช้ delayed ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-go-straight",
+  "word": "go straight",
+  "pos": "n.",
+  "ipa": "/ɡoʊ streɪt/",
+  "thai": "ตรงไป",
+  "emoji": "💬",
+  "example": "I need go straight today.",
+  "exampleThai": "ฉันใช้คำว่า ตรงไป ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ตรงไป",
+    "en": "go straight"
+   }
+  ],
+  "tip": "ใช้ go straight ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-turn-right",
+  "word": "turn right",
+  "pos": "n.",
+  "ipa": "/tɜːrn raɪt/",
+  "thai": "เลี้ยวขวา",
+  "emoji": "💬",
+  "example": "I need turn right today.",
+  "exampleThai": "ฉันใช้คำว่า เลี้ยวขวา ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เลี้ยวขวา",
+    "en": "turn right"
+   }
+  ],
+  "tip": "ใช้ turn right ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-near",
+  "word": "near",
+  "pos": "n.",
+  "ipa": "/nɪr/",
+  "thai": "ใกล้",
+  "emoji": "💬",
+  "example": "The hotel is near the station.",
+  "exampleThai": "โรงแรมอยู่ใกล้สถานี",
+  "keyVocab": [
+   {
+    "thai": "ใกล้",
+    "en": "near"
+   }
+  ],
+  "tip": "ใช้ near เพื่อบอกตำแหน่งที่อยู่ใกล้กัน",
+  "category": "travel"
+ },
+ {
+  "id": "travel-far",
+  "word": "far",
+  "pos": "n.",
+  "ipa": "/fɑːr/",
+  "thai": "ไกล",
+  "emoji": "💬",
+  "example": "The beach is far from the city.",
+  "exampleThai": "ชายหาดอยู่ไกลจากตัวเมือง",
+  "keyVocab": [
+   {
+    "thai": "ไกล",
+    "en": "far"
+   }
+  ],
+  "tip": "ใช้ far from เพื่อบอกระยะทางที่ไกล",
+  "category": "travel"
+ },
+ {
+  "id": "travel-reception",
+  "word": "reception",
+  "pos": "n.",
+  "ipa": "/rɪˈsɛpʃən/",
+  "thai": "แผนกต้อนรับ",
+  "emoji": "💬",
+  "example": "I need reception today.",
+  "exampleThai": "ฉันใช้คำว่า แผนกต้อนรับ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "แผนกต้อนรับ",
+    "en": "reception"
+   }
+  ],
+  "tip": "ใช้ reception ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-check-in",
+  "word": "check in",
+  "pos": "n.",
+  "ipa": "/tʃɛk ɪn/",
+  "thai": "เช็คอิน",
+  "emoji": "💬",
+  "example": "I need check in today.",
+  "exampleThai": "ฉันใช้คำว่า เช็คอิน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เช็คอิน",
+    "en": "check in"
+   }
+  ],
+  "tip": "ใช้ check in ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "travel-check-out",
+  "word": "check out",
+  "pos": "n.",
+  "ipa": "/tʃɛk aʊt/",
+  "thai": "เช็คเอาต์",
+  "emoji": "💬",
+  "example": "I need check out today.",
+  "exampleThai": "ฉันใช้คำว่า เช็คเอาต์ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เช็คเอาต์",
+    "en": "check out"
+   }
+  ],
+  "tip": "ใช้ check out ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "travel"
+ },
+ {
+  "id": "home-apartment",
+  "word": "apartment",
+  "pos": "n.",
+  "ipa": "/əˈpɑːrt.mənt/",
+  "thai": "อพาร์ตเมนต์ / ห้องชุด",
+  "emoji": "🏢",
+  "imageQuery": "modern apartment building",
+  "example": "My apartment is on the fifth floor near the market.",
+  "exampleThai": "อพาร์ตเมนต์ของฉันอยู่ชั้นห้าใกล้ตลาด",
+  "keyVocab": [
+   {
+    "en": "apartment",
+    "thai": "อพาร์ตเมนต์"
+   },
+   {
+    "en": "fifth floor",
+    "thai": "ชั้นห้า"
+   },
+   {
+    "en": "near the market",
+    "thai": "ใกล้ตลาด"
+   }
+  ],
+  "tip": "apartment คือห้องชุดให้เช่า อังกฤษใช้ flat ส่วน condo คือห้องชุดที่ซื้อกรรมสิทธิ์",
+  "category": "home",
+  "commonsCategory": "Apartment buildings",
+  "photo": true,
+  "article": "Apartment"
+ },
+ {
+  "id": "home-house",
+  "word": "house",
+  "pos": "n.",
+  "ipa": "/haʊs/",
+  "thai": "บ้าน",
+  "emoji": "🏠",
+  "imageQuery": "family house exterior",
+  "example": "Their new house has a small garden and a garage.",
+  "exampleThai": "บ้านหลังใหม่ของพวกเขามีสวนเล็กๆ กับโรงรถ",
+  "keyVocab": [
+   {
+    "en": "new house",
+    "thai": "บ้านหลังใหม่"
+   },
+   {
+    "en": "garden",
+    "thai": "สวน"
+   },
+   {
+    "en": "garage",
+    "thai": "โรงรถ"
+   }
+  ],
+  "tip": "house คือตัวบ้าน ส่วน home คือบ้านในความรู้สึก ใช้พูดถึงที่ที่เราอยู่อาศัย",
+  "category": "home",
+  "commonsCategory": "Houses",
+  "photo": true,
+  "article": "House"
+ },
+ {
+  "id": "home-bedroom",
+  "word": "bedroom",
+  "pos": "n.",
+  "ipa": "/ˈbed.ruːm/",
+  "thai": "ห้องนอน",
+  "emoji": "🛏️",
+  "imageQuery": "cozy bedroom interior",
+  "example": "I share a bedroom with my younger brother.",
+  "exampleThai": "ฉันนอนห้องเดียวกับน้องชาย",
+  "keyVocab": [
+   {
+    "en": "share",
+    "thai": "ใช้ร่วมกัน"
+   },
+   {
+    "en": "bedroom",
+    "thai": "ห้องนอน"
+   },
+   {
+    "en": "younger brother",
+    "thai": "น้องชาย"
+   }
+  ],
+  "tip": "bedroom คือห้องนอน bathroom คือห้องน้ำ และ kitchen คือห้องครัว",
+  "category": "home",
+  "commonsCategory": "Bedrooms",
+  "photo": true,
+  "article": "Bedroom"
+ },
+ {
+  "id": "home-kitchen",
+  "word": "kitchen",
+  "pos": "n.",
+  "ipa": "/ˈkɪtʃ.ən/",
+  "thai": "ห้องครัว",
+  "emoji": "🍳",
+  "imageQuery": "home kitchen interior",
+  "example": "My mother is cooking dinner in the kitchen right now.",
+  "exampleThai": "ตอนนี้แม่กำลังทำอาหารเย็นอยู่ในครัว",
+  "keyVocab": [
+   {
+    "en": "cooking dinner",
+    "thai": "ทำอาหารเย็น"
+   },
+   {
+    "en": "kitchen",
+    "thai": "ห้องครัว"
+   },
+   {
+    "en": "right now",
+    "thai": "ตอนนี้"
+   }
+  ],
+  "tip": "kitchen อ่านว่า คิทเช่น ระวังออกเสียงเป็น คิชเช่น ซึ่งไม่ถูกต้อง",
+  "category": "home",
+  "commonsCategory": "Kitchens",
+  "photo": true,
+  "article": "Kitchen"
+ },
+ {
+  "id": "home-living-room",
+  "word": "living room",
+  "pos": "n.",
+  "ipa": "/ˈlɪv.ɪŋ ruːm/",
+  "thai": "ห้องนั่งเล่น",
+  "emoji": "🛋️",
+  "imageQuery": "living room sofa",
+  "example": "We watch TV together in the living room every night.",
+  "exampleThai": "เราดูทีวีด้วยกันที่ห้องนั่งเล่นทุกคืน",
+  "keyVocab": [
+   {
+    "en": "watch TV",
+    "thai": "ดูทีวี"
+   },
+   {
+    "en": "living room",
+    "thai": "ห้องนั่งเล่น"
+   },
+   {
+    "en": "every night",
+    "thai": "ทุกคืน"
+   }
+  ],
+  "tip": "living room คือห้องนั่งเล่น บางคนเรียกว่า lounge หรือ family room",
+  "category": "home",
+  "commonsCategory": "Living rooms",
+  "photo": true,
+  "article": "Living room"
+ },
+ {
+  "id": "home-furniture",
+  "word": "furniture",
+  "pos": "n.",
+  "ipa": "/ˈfɝː.nɪ.tʃɚ/",
+  "thai": "เครื่องเรือน / เฟอร์นิเจอร์",
+  "emoji": "🪑",
+  "imageQuery": "wooden furniture set",
+  "example": "We bought some new furniture for our small living room.",
+  "exampleThai": "เราซื้อเฟอร์นิเจอร์ใหม่เข้าห้องนั่งเล่นเล็กๆ ของเรา",
+  "keyVocab": [
+   {
+    "en": "bought",
+    "thai": "ซื้อ (อดีตของ buy)"
+   },
+   {
+    "en": "furniture",
+    "thai": "เฟอร์นิเจอร์"
+   },
+   {
+    "en": "living room",
+    "thai": "ห้องนั่งเล่น"
+   }
+  ],
+  "tip": "furniture เป็นคำนับไม่ได้ ห้ามเติม s ถ้าจะนับใช้ a piece of furniture",
+  "category": "home",
+  "commonsCategory": "Furniture",
+  "photo": true,
+  "article": "Furniture"
+ },
+ {
+  "id": "home-lamp",
+  "word": "lamp",
+  "pos": "n.",
+  "ipa": "/læmp/",
+  "thai": "โคมไฟ",
+  "emoji": "💡",
+  "imageQuery": "bedside table lamp",
+  "example": "Please turn on the lamp next to my bed.",
+  "exampleThai": "ช่วยเปิดโคมไฟข้างเตียงฉันหน่อย",
+  "keyVocab": [
+   {
+    "en": "turn on",
+    "thai": "เปิด (ไฟ/เครื่องใช้)"
+   },
+   {
+    "en": "lamp",
+    "thai": "โคมไฟ"
+   },
+   {
+    "en": "next to my bed",
+    "thai": "ข้างเตียงของฉัน"
+   }
+  ],
+  "tip": "lamp คือโคมไฟไฟตั้งโต๊ะหรือหัวเตียง ส่วนไฟเพดานเรียกว่า light",
+  "category": "home",
+  "commonsCategory": "Lamps",
+  "photo": true,
+  "article": "Light fixture"
+ },
+ {
+  "id": "home-refrigerator",
+  "word": "refrigerator",
+  "pos": "n.",
+  "ipa": "/rɪˈfrɪdʒ.ə.reɪ.tɚ/",
+  "thai": "ตู้เย็น",
+  "emoji": "🧊",
+  "imageQuery": "open refrigerator kitchen",
+  "example": "There is no milk left in the refrigerator.",
+  "exampleThai": "นมในตู้เย็นไม่เหลือแล้ว",
+  "keyVocab": [
+   {
+    "en": "milk",
+    "thai": "นม"
+   },
+   {
+    "en": "left",
+    "thai": "เหลืออยู่"
+   },
+   {
+    "en": "refrigerator",
+    "thai": "ตู้เย็น"
+   }
+  ],
+  "tip": "refrigerator คือตู้เย็น ในภาษาพูดมักย่อสั้นๆ ว่า fridge",
+  "category": "home",
+  "commonsCategory": "Refrigerators",
+  "photo": true,
+  "article": "Refrigerator"
+ },
+ {
+  "id": "home-rent",
+  "word": "rent",
+  "pos": "n.",
+  "ipa": "/rent/",
+  "thai": "ค่าเช่า",
+  "emoji": "💰",
+  "imageQuery": "rent payment money",
+  "example": "The rent for this room is due on Friday.",
+  "exampleThai": "ค่าเช่าห้องนี้ต้องจ่ายวันศุกร์",
+  "keyVocab": [
+   {
+    "en": "rent",
+    "thai": "ค่าเช่า"
+   },
+   {
+    "en": "due on Friday",
+    "thai": "ครบกำหนดวันศุกร์"
+   },
+   {
+    "en": "room",
+    "thai": "ห้อง"
+   }
+  ],
+  "tip": "rent เป็นได้ทั้งคำนาม (ค่าเช่า) และคำกริยา (เช่า) เช่น I rent a room.",
+  "category": "home",
+  "commonsCategory": "Renting",
+  "photo": true,
+  "article": "Renting"
+ },
+ {
+  "id": "home-neighbor",
+  "word": "neighbor",
+  "pos": "n.",
+  "ipa": "/ˈneɪ.bɚ/",
+  "thai": "เพื่อนบ้าน",
+  "emoji": "🏘️",
+  "imageQuery": "friendly neighbors house",
+  "example": "My neighbor always helps me when I am busy.",
+  "exampleThai": "เพื่อนบ้านฉันช่วยฉันทุกครั้งที่ฉันยุ่ง",
+  "keyVocab": [
+   {
+    "en": "neighbor",
+    "thai": "เพื่อนบ้าน"
+   },
+   {
+    "en": "helps",
+    "thai": "ช่วย"
+   },
+   {
+    "en": "busy",
+    "thai": "ยุ่ง / ไม่ว่าง"
+   }
+  ],
+  "tip": "neighbor สะกดแบบอเมริกัน อังกฤษเขียน neighbour ออกเสียง เนย์เบอร์",
+  "category": "home",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Neighbor"
+ },
+ {
+  "id": "home-key",
+  "word": "key",
+  "pos": "n.",
+  "ipa": "/kiː/",
+  "thai": "กุญแจ",
+  "emoji": "🔑",
+  "imageQuery": "door key lock",
+  "example": "I can't find my house key anywhere.",
+  "exampleThai": "ฉันหากุญแจบ้านไม่เจอเลย",
+  "keyVocab": [
+   {
+    "en": "house key",
+    "thai": "กุญแจบ้าน"
+   },
+   {
+    "en": "anywhere",
+    "thai": "ที่ไหนเลย"
+   },
+   {
+    "en": "find",
+    "thai": "หาเจอ"
+   }
+  ],
+  "tip": "key = กุญแจดอกหนึ่งใช้ a key ส่วนพวงกุญแจเรียกว่า keychain",
+  "category": "home",
+  "commonsCategory": "Keys",
+  "photo": true,
+  "article": "Lock and key"
+ },
+ {
+  "id": "home-balcony",
+  "word": "balcony",
+  "pos": "n.",
+  "ipa": "/ˈbæl.kə.ni/",
+  "thai": "ระเบียง",
+  "emoji": "🌇",
+  "imageQuery": "apartment balcony view",
+  "example": "We drink coffee on the balcony every Sunday morning.",
+  "exampleThai": "เรานั่งดื่มกาแฟที่ระเบียงทุกเช้าวันอาทิตย์",
+  "keyVocab": [
+   {
+    "en": "coffee",
+    "thai": "กาแฟ"
+   },
+   {
+    "en": "balcony",
+    "thai": "ระเบียง"
+   },
+   {
+    "en": "Sunday morning",
+    "thai": "เช้าวันอาทิตย์"
+   }
+  ],
+  "tip": "balcony อ่านว่า แบ็ล-คะ-นี เน้นพยางค์แรก หมายถึงระเบียง",
+  "category": "home",
+  "commonsCategory": "Balconies",
+  "photo": true,
+  "article": "Balcony"
+ },
+ {
+  "id": "home-bathroom",
+  "word": "bathroom",
+  "pos": "n.",
+  "ipa": "/ˈbæθruːm/",
+  "thai": "ห้องน้ำ",
+  "emoji": "💬",
+  "example": "I need bathroom today.",
+  "exampleThai": "ฉันใช้คำว่า ห้องน้ำ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ห้องน้ำ",
+    "en": "bathroom"
+   }
+  ],
+  "tip": "ใช้ bathroom ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-sofa",
+  "word": "sofa",
+  "pos": "n.",
+  "ipa": "/ˈsoʊfə/",
+  "thai": "โซฟา",
+  "emoji": "💬",
+  "example": "I need sofa today.",
+  "exampleThai": "ฉันใช้คำว่า โซฟา ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "โซฟา",
+    "en": "sofa"
+   }
+  ],
+  "tip": "ใช้ sofa ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-table",
+  "word": "table",
+  "pos": "n.",
+  "ipa": "/ˈteɪbəl/",
+  "thai": "โต๊ะ",
+  "emoji": "💬",
+  "example": "I need table today.",
+  "exampleThai": "ฉันใช้คำว่า โต๊ะ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "โต๊ะ",
+    "en": "table"
+   }
+  ],
+  "tip": "ใช้ table ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-chair",
+  "word": "chair",
+  "pos": "n.",
+  "ipa": "/tʃɛr/",
+  "thai": "เก้าอี้",
+  "emoji": "💬",
+  "example": "I need chair today.",
+  "exampleThai": "ฉันใช้คำว่า เก้าอี้ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เก้าอี้",
+    "en": "chair"
+   }
+  ],
+  "tip": "ใช้ chair ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-window",
+  "word": "window",
+  "pos": "n.",
+  "ipa": "/ˈwɪndoʊ/",
+  "thai": "หน้าต่าง",
+  "emoji": "💬",
+  "example": "I need window today.",
+  "exampleThai": "ฉันใช้คำว่า หน้าต่าง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "หน้าต่าง",
+    "en": "window"
+   }
+  ],
+  "tip": "ใช้ window ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-door",
+  "word": "door",
+  "pos": "n.",
+  "ipa": "/dɔːr/",
+  "thai": "ประตู",
+  "emoji": "💬",
+  "example": "I need door today.",
+  "exampleThai": "ฉันใช้คำว่า ประตู ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ประตู",
+    "en": "door"
+   }
+  ],
+  "tip": "ใช้ door ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-house-key",
+  "word": "house key",
+  "pos": "n.",
+  "ipa": "/haʊs kiː/",
+  "thai": "กุญแจบ้าน",
+  "emoji": "💬",
+  "example": "I need house key today.",
+  "exampleThai": "ฉันใช้คำว่า กุญแจบ้าน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "กุญแจบ้าน",
+    "en": "house key"
+   }
+  ],
+  "tip": "ใช้ house key ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-shelf",
+  "word": "shelf",
+  "pos": "n.",
+  "ipa": "/ʃɛlf/",
+  "thai": "ชั้น",
+  "emoji": "💬",
+  "example": "I need shelf today.",
+  "exampleThai": "ฉันใช้คำว่า ชั้น ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ชั้น",
+    "en": "shelf"
+   }
+  ],
+  "tip": "ใช้ shelf ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-towel",
+  "word": "towel",
+  "pos": "n.",
+  "ipa": "/ˈtaʊəl/",
+  "thai": "ผ้าเช็ดตัว",
+  "emoji": "💬",
+  "example": "I need towel today.",
+  "exampleThai": "ฉันใช้คำว่า ผ้าเช็ดตัว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผ้าเช็ดตัว",
+    "en": "towel"
+   }
+  ],
+  "tip": "ใช้ towel ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-blanket",
+  "word": "blanket",
+  "pos": "n.",
+  "ipa": "/ˈblæŋkɪt/",
+  "thai": "ผ้าห่ม",
+  "emoji": "💬",
+  "example": "I need blanket today.",
+  "exampleThai": "ฉันใช้คำว่า ผ้าห่ม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผ้าห่ม",
+    "en": "blanket"
+   }
+  ],
+  "tip": "ใช้ blanket ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-light",
+  "word": "light",
+  "pos": "n.",
+  "ipa": "/laɪt/",
+  "thai": "ไฟ",
+  "emoji": "💬",
+  "example": "I need light today.",
+  "exampleThai": "ฉันใช้คำว่า ไฟ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ไฟ",
+    "en": "light"
+   }
+  ],
+  "tip": "ใช้ light ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-noise",
+  "word": "noise",
+  "pos": "n.",
+  "ipa": "/nɔɪz/",
+  "thai": "เสียงดัง",
+  "emoji": "💬",
+  "example": "I need noise today.",
+  "exampleThai": "ฉันใช้คำว่า เสียงดัง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เสียงดัง",
+    "en": "noise"
+   }
+  ],
+  "tip": "ใช้ noise ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "home-fix",
+  "word": "fix",
+  "pos": "n.",
+  "ipa": "/fɪks/",
+  "thai": "ซ่อม",
+  "emoji": "💬",
+  "example": "I need fix today.",
+  "exampleThai": "ฉันใช้คำว่า ซ่อม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ซ่อม",
+    "en": "fix"
+   }
+  ],
+  "tip": "ใช้ fix ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "home"
+ },
+ {
+  "id": "shopping-receipt",
+  "word": "receipt",
+  "pos": "n.",
+  "ipa": "/rɪˈsiːt/",
+  "thai": "ใบเสร็จ",
+  "emoji": "🧾",
+  "imageQuery": "shopping receipt paper",
+  "example": "Could you give me a receipt for this purchase?",
+  "exampleThai": "ขอใบเสร็จสำหรับการซื้อนี้ด้วยได้ไหม",
+  "keyVocab": [
+   {
+    "en": "Could you",
+    "thai": "คุณช่วย...ได้ไหม (สุภาพ)"
+   },
+   {
+    "en": "purchase",
+    "thai": "การซื้อ / สิ่งที่ซื้อ"
+   }
+  ],
+  "tip": "receipt ออกเสียงว่า ri-SEET ตัว p ไม่ต้องออกเสียง และเป็นคำนามนับได้",
+  "category": "shopping",
+  "commonsCategory": "Receipts",
+  "photo": true,
+  "article": "Receipt"
+ },
+ {
+  "id": "shopping-price",
+  "word": "price",
+  "pos": "n.",
+  "ipa": "/praɪs/",
+  "thai": "ราคา",
+  "emoji": "🏷️",
+  "imageQuery": "price tag clothes",
+  "example": "The price of this shirt is too high for me.",
+  "exampleThai": "ราคาเสื้อตัวนี้แพงเกินไปสำหรับเรา",
+  "keyVocab": [
+   {
+    "en": "price",
+    "thai": "ราคา"
+   },
+   {
+    "en": "too high",
+    "thai": "แพงเกินไป / สูงเกินไป"
+   }
+  ],
+  "tip": "ถามราคาแบบสุภาพว่า How much is it? ส่วน price มักใช้กับ of + สิ่งของ",
+  "category": "shopping",
+  "commonsCategory": "Price tags",
+  "photo": true,
+  "article": "Price"
+ },
+ {
+  "id": "shopping-discount",
+  "word": "discount",
+  "pos": "n.",
+  "ipa": "/ˈdɪskaʊnt/",
+  "thai": "ส่วนลด",
+  "emoji": "🔻",
+  "imageQuery": "sale discount sign",
+  "example": "This shop gives a ten percent discount to students.",
+  "exampleThai": "ร้านนี้ให้ส่วนลดสิบเปอร์เซ็นต์กับนักเรียนนักศึกษา",
+  "keyVocab": [
+   {
+    "en": "discount",
+    "thai": "ส่วนลด"
+   },
+   {
+    "en": "ten percent",
+    "thai": "สิบเปอร์เซ็นต์"
+   },
+   {
+    "en": "students",
+    "thai": "นักเรียน / นักศึกษา"
+   }
+  ],
+  "tip": "พูดถึงส่วนลดว่า get / give a discount และใช้ on กับสินค้า เช่น a discount on shoes",
+  "category": "shopping",
+  "commonsCategory": "Discounts",
+  "photo": true,
+  "article": "Discounts and allowances"
+ },
+ {
+  "id": "shopping-change",
+  "word": "change",
+  "pos": "n.",
+  "ipa": "/tʃeɪndʒ/",
+  "thai": "เงินทอน",
+  "emoji": "🪙",
+  "imageQuery": "coins change hand",
+  "example": "I paid with a hundred baht note and got some change.",
+  "exampleThai": "เราจ่ายด้วยแบงก์ร้อยแล้วได้เงินทอนมา",
+  "keyVocab": [
+   {
+    "en": "paid",
+    "thai": "จ่าย (รูปอดีตของ pay)"
+   },
+   {
+    "en": "note",
+    "thai": "ธนบัตร"
+   },
+   {
+    "en": "change",
+    "thai": "เงินทอน"
+   }
+  ],
+  "tip": "change แปลว่าเงินทอนได้ด้วย นอกจากแปลว่าเปลี่ยนแปลง ดูจากบริบทของประโยค",
+  "category": "shopping",
+  "commonsCategory": "Coins",
+  "photo": true
+ },
+ {
+  "id": "shopping-credit-card",
+  "word": "credit card",
+  "pos": "n.",
+  "ipa": "/ˈkredɪt kɑːrd/",
+  "thai": "บัตรเครดิต",
+  "emoji": "💳",
+  "imageQuery": "credit card payment",
+  "example": "Can I pay by credit card instead of cash?",
+  "exampleThai": "ขอจ่ายด้วยบัตรเครดิตแทนเงินสดได้ไหม",
+  "keyVocab": [
+   {
+    "en": "pay",
+    "thai": "จ่ายเงิน"
+   },
+   {
+    "en": "credit card",
+    "thai": "บัตรเครดิต"
+   },
+   {
+    "en": "instead of",
+    "thai": "แทนที่ / แทน"
+   }
+  ],
+  "tip": "ใช้ pay by credit card แต่ใช้ pay in cash สังเกตคำบุพบทต่างกัน",
+  "category": "shopping",
+  "commonsCategory": "Credit cards",
+  "photo": true,
+  "article": "Credit card"
+ },
+ {
+  "id": "shopping-cash",
+  "word": "cash",
+  "pos": "n.",
+  "ipa": "/kæʃ/",
+  "thai": "เงินสด",
+  "emoji": "💵",
+  "imageQuery": "cash banknotes wallet",
+  "example": "I don't have any cash, so I will use my card.",
+  "exampleThai": "เราไม่มีเงินสดเลย เดี๋ยวจะใช้บัตรแทน",
+  "keyVocab": [
+   {
+    "en": "cash",
+    "thai": "เงินสด"
+   },
+   {
+    "en": "card",
+    "thai": "บัตร"
+   }
+  ],
+  "tip": "cash เป็นคำนามนับไม่ได้ จึงพูดว่า some cash หรือ a little cash ไม่ใช้ a cash",
+  "category": "shopping",
+  "commonsCategory": "Banknotes",
+  "photo": true,
+  "article": "Cash"
+ },
+ {
+  "id": "shopping-expensive",
+  "word": "expensive",
+  "pos": "adj.",
+  "ipa": "/ɪkˈspensɪv/",
+  "thai": "แพง",
+  "emoji": "💰",
+  "imageQuery": "expensive luxury store",
+  "example": "That bag is very expensive, so I will wait for a sale.",
+  "exampleThai": "กระเป๋าใบนั้นแพงมาก เราเลยจะรอตอนลดราคา",
+  "keyVocab": [
+   {
+    "en": "expensive",
+    "thai": "แพง"
+   },
+   {
+    "en": "sale",
+    "thai": "การลดราคา"
+   }
+  ],
+  "tip": "expensive ใช้กับสิ่งของ อย่าใช้บอกว่าคนแพง ให้ใช้ค่าใช้จ่ายสูงแทน",
+  "category": "shopping",
+  "commonsCategory": "Luxury goods",
+  "photo": true
+ },
+ {
+  "id": "shopping-cheap",
+  "word": "cheap",
+  "pos": "adj.",
+  "ipa": "/tʃiːp/",
+  "thai": "ถูก (ราคาไม่แพง)",
+  "emoji": "🪙",
+  "imageQuery": "cheap market stall",
+  "example": "This market is cheap, and the food is fresh.",
+  "exampleThai": "ตลาดนี้ของถูก และอาหารก็สดใหม่",
+  "keyVocab": [
+   {
+    "en": "market",
+    "thai": "ตลาด"
+   },
+   {
+    "en": "cheap",
+    "thai": "ถูก (ราคาไม่แพง)"
+   },
+   {
+    "en": "fresh",
+    "thai": "สด / สดใหม่"
+   }
+  ],
+  "tip": "cheap บอกว่าของถูก แต่ถ้าอยากสุภาพขึ้นใช้ไม่แพง good value หรือ affordable",
+  "category": "shopping",
+  "commonsCategory": null,
+  "photo": false
+ },
+ {
+  "id": "shopping-bargain",
+  "word": "bargain",
+  "pos": "v.",
+  "ipa": "/ˈbɑːrɡən/",
+  "thai": "ต่อรองราคา",
+  "emoji": "🤝",
+  "imageQuery": "market bargaining vendor",
+  "example": "In many markets, you can bargain with the seller.",
+  "exampleThai": "ในตลาดหลายแห่ง คุณต่อรองราคากับแม่ค้าได้",
+  "keyVocab": [
+   {
+    "en": "markets",
+    "thai": "ตลาด (หลายแห่ง)"
+   },
+   {
+    "en": "bargain",
+    "thai": "ต่อรองราคา"
+   },
+   {
+    "en": "seller",
+    "thai": "ผู้ขาย / แม่ค้า"
+   }
+  ],
+  "tip": "bargain ใช้เป็นคำกริยาแปลว่าต่อรอง และเป็นคำนามแปลว่าของถูกได้ด้วย",
+  "category": "shopping",
+  "commonsCategory": "Bargaining",
+  "photo": true,
+  "article": "Bargaining"
+ },
+ {
+  "id": "shopping-bank",
+  "word": "bank",
+  "pos": "n.",
+  "ipa": "/bæŋk/",
+  "thai": "ธนาคาร",
+  "emoji": "🏦",
+  "imageQuery": "bank building entrance",
+  "example": "I need to go to the bank to open a new account.",
+  "exampleThai": "เราต้องไปธนาคารเพื่อเปิดบัญชีใหม่",
+  "keyVocab": [
+   {
+    "en": "bank",
+    "thai": "ธนาคาร"
+   },
+   {
+    "en": "open",
+    "thai": "เปิด (บัญชี)"
+   },
+   {
+    "en": "account",
+    "thai": "บัญชี"
+   }
+  ],
+  "tip": "go to the bank ต้องมี the เพราะหมายถึงธนาคารที่เราจะไปแห่งนั้น",
+  "category": "shopping",
+  "commonsCategory": "Banks",
+  "photo": true,
+  "article": "Bank"
+ },
+ {
+  "id": "shopping-save",
+  "word": "save",
+  "pos": "v.",
+  "ipa": "/seɪv/",
+  "thai": "ออม / ประหยัด",
+  "emoji": "🐖",
+  "imageQuery": "piggy bank saving money",
+  "example": "I save fifty baht every day for my trip.",
+  "exampleThai": "เราออมเงินวันละห้าสิบบาทเพื่อทริปของเรา",
+  "keyVocab": [
+   {
+    "en": "save",
+    "thai": "ออม / ประหยัด"
+   },
+   {
+    "en": "every day",
+    "thai": "ทุกวัน"
+   },
+   {
+    "en": "trip",
+    "thai": "การเดินทาง / ทริป"
+   }
+  ],
+  "tip": "save money = ออมเงิน ส่วน save time = ประหยัดเวลา ใช้คำตามหลังต่างกัน",
+  "category": "shopping",
+  "commonsCategory": "Money boxes",
+  "photo": true,
+  "article": "Saving"
+ },
+ {
+  "id": "shopping-wallet",
+  "word": "wallet",
+  "pos": "n.",
+  "ipa": "/ˈwɑːlɪt/",
+  "thai": "กระเป๋าสตางค์",
+  "emoji": "👛",
+  "imageQuery": "leather wallet money",
+  "example": "My wallet is empty because I bought too many things.",
+  "exampleThai": "กระเป๋าสตางค์เราแบน เพราะซื้อของเยอะเกินไป",
+  "keyVocab": [
+   {
+    "en": "wallet",
+    "thai": "กระเป๋าสตางค์"
+   },
+   {
+    "en": "empty",
+    "thai": "ว่างเปล่า / ไม่มีเงิน"
+   },
+   {
+    "en": "bought",
+    "thai": "ซื้อ (รูปอดีตของ buy)"
+   }
+  ],
+  "tip": "wallet ใช้กับกระเป๋าสตางค์ผู้ชาย ส่วน purse มักใช้กับกระเป๋าผู้หญิง",
+  "category": "shopping",
+  "commonsCategory": "Wallets",
+  "photo": true,
+  "article": "Wallet"
+ },
+ {
+  "id": "shopping-shop",
+  "word": "shop",
+  "pos": "n.",
+  "ipa": "/ʃɑːp/",
+  "thai": "ร้านค้า",
+  "emoji": "💬",
+  "example": "I need shop today.",
+  "exampleThai": "ฉันใช้คำว่า ร้านค้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ร้านค้า",
+    "en": "shop"
+   }
+  ],
+  "tip": "ใช้ shop ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-size",
+  "word": "size",
+  "pos": "n.",
+  "ipa": "/saɪz/",
+  "thai": "ขนาด",
+  "emoji": "💬",
+  "example": "I need size today.",
+  "exampleThai": "ฉันใช้คำว่า ขนาด ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ขนาด",
+    "en": "size"
+   }
+  ],
+  "tip": "ใช้ size ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-color",
+  "word": "color",
+  "pos": "n.",
+  "ipa": "/ˈkʌlər/",
+  "thai": "สี",
+  "emoji": "💬",
+  "example": "I need color today.",
+  "exampleThai": "ฉันใช้คำว่า สี ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "สี",
+    "en": "color"
+   }
+  ],
+  "tip": "ใช้ color ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-try-on",
+  "word": "try on",
+  "pos": "n.",
+  "ipa": "/traɪ ɑːn/",
+  "thai": "ลอง",
+  "emoji": "💬",
+  "example": "I need try on today.",
+  "exampleThai": "ฉันใช้คำว่า ลอง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ลอง",
+    "en": "try on"
+   }
+  ],
+  "tip": "ใช้ try on ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-fits-well",
+  "word": "fits well",
+  "pos": "n.",
+  "ipa": "/fɪts wɛl/",
+  "thai": "พอดีตัว",
+  "emoji": "💬",
+  "example": "I need fits well today.",
+  "exampleThai": "ฉันใช้คำว่า พอดีตัว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "พอดีตัว",
+    "en": "fits well"
+   }
+  ],
+  "tip": "ใช้ fits well ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-debit-card",
+  "word": "debit card",
+  "pos": "n.",
+  "ipa": "/ˈdɛbɪt kɑːrd/",
+  "thai": "บัตรเดบิต",
+  "emoji": "💬",
+  "example": "I need debit card today.",
+  "exampleThai": "ฉันใช้คำว่า บัตรเดบิต ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "บัตรเดบิต",
+    "en": "debit card"
+   }
+  ],
+  "tip": "ใช้ debit card ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-return",
+  "word": "return",
+  "pos": "n.",
+  "ipa": "/rɪˈtɜːrn/",
+  "thai": "คืนสินค้า",
+  "emoji": "💬",
+  "example": "I need return today.",
+  "exampleThai": "ฉันใช้คำว่า คืนสินค้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "คืนสินค้า",
+    "en": "return"
+   }
+  ],
+  "tip": "ใช้ return ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-exchange",
+  "word": "exchange",
+  "pos": "n.",
+  "ipa": "/ɪksˈtʃeɪndʒ/",
+  "thai": "เปลี่ยนสินค้า",
+  "emoji": "💬",
+  "example": "I need exchange today.",
+  "exampleThai": "ฉันใช้คำว่า เปลี่ยนสินค้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เปลี่ยนสินค้า",
+    "en": "exchange"
+   }
+  ],
+  "tip": "ใช้ exchange ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-grocery-store",
+  "word": "grocery store",
+  "pos": "n.",
+  "ipa": "/ˈɡroʊsəri stɔːr/",
+  "thai": "ร้านขายของชำ",
+  "emoji": "💬",
+  "example": "I need grocery store today.",
+  "exampleThai": "ฉันใช้คำว่า ร้านขายของชำ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ร้านขายของชำ",
+    "en": "grocery store"
+   }
+  ],
+  "tip": "ใช้ grocery store ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-bag",
+  "word": "bag",
+  "pos": "n.",
+  "ipa": "/bæɡ/",
+  "thai": "ถุง",
+  "emoji": "💬",
+  "example": "I need bag today.",
+  "exampleThai": "ฉันใช้คำว่า ถุง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ถุง",
+    "en": "bag"
+   }
+  ],
+  "tip": "ใช้ bag ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-on-sale",
+  "word": "on sale",
+  "pos": "n.",
+  "ipa": "/ɑːn seɪl/",
+  "thai": "ลดราคา",
+  "emoji": "💬",
+  "example": "These apples are on sale today.",
+  "exampleThai": "แอปเปิลเหล่านี้กำลังลดราคาในวันนี้",
+  "keyVocab": [
+   {
+    "thai": "ลดราคา",
+    "en": "on sale"
+   }
+  ],
+  "tip": "ใช้ on sale เมื่อสินค้ากำลังลดราคา",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-reasonable",
+  "word": "reasonable",
+  "pos": "n.",
+  "ipa": "/ˈriːzənəbəl/",
+  "thai": "เหมาะสม",
+  "emoji": "💬",
+  "example": "I need reasonable today.",
+  "exampleThai": "ฉันใช้คำว่า เหมาะสม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เหมาะสม",
+    "en": "reasonable"
+   }
+  ],
+  "tip": "ใช้ reasonable ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "shopping-gift",
+  "word": "gift",
+  "pos": "n.",
+  "ipa": "/ɡɪft/",
+  "thai": "ของขวัญ",
+  "emoji": "💬",
+  "example": "I need gift today.",
+  "exampleThai": "ฉันใช้คำว่า ของขวัญ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ของขวัญ",
+    "en": "gift"
+   }
+  ],
+  "tip": "ใช้ gift ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "shopping"
+ },
+ {
+  "id": "health-fever",
+  "word": "fever",
+  "pos": "n.",
+  "ipa": "/ˈfiːvər/",
+  "thai": "ไข้ / มีไข้",
+  "emoji": "🤒",
+  "imageQuery": "sick person thermometer",
+  "example": "I have a high fever, so I will stay home today.",
+  "exampleThai": "เรามีไข้สูง วันนี้เลยจะพักอยู่บ้าน",
+  "keyVocab": [
+   {
+    "en": "fever",
+    "thai": "ไข้"
+   },
+   {
+    "en": "stay home",
+    "thai": "อยู่บ้าน"
+   }
+  ],
+  "tip": "ใช้ have a fever หรือ have a high fever ไม่ต้องใส่คำอื่นนำหน้า",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Fever"
+ },
+ {
+  "id": "health-headache",
+  "word": "headache",
+  "pos": "n.",
+  "ipa": "/ˈhedeɪk/",
+  "thai": "อาการปวดหัว",
+  "emoji": "🤕",
+  "imageQuery": "person headache pain",
+  "example": "I have a bad headache, so I need to rest.",
+  "exampleThai": "เราปวดหัวมาก ต้องพักหน่อย",
+  "keyVocab": [
+   {
+    "en": "headache",
+    "thai": "อาการปวดหัว"
+   },
+   {
+    "en": "rest",
+    "thai": "พักผ่อน"
+   }
+  ],
+  "tip": "ภาษาอังกฤษใช้ have a headache ส่วนภาษาไทยพูดว่าปวดหัว",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Headache"
+ },
+ {
+  "id": "health-cough",
+  "word": "cough",
+  "pos": "v.",
+  "ipa": "/kɔːf/",
+  "thai": "ไอ",
+  "emoji": "😷",
+  "imageQuery": "person coughing tissue",
+  "example": "I cough a lot at night and cannot sleep well.",
+  "exampleThai": "เรากลางคืนไอเยอะมาก นอนไม่ค่อยหลับ",
+  "keyVocab": [
+   {
+    "en": "cough",
+    "thai": "ไอ"
+   },
+   {
+    "en": "at night",
+    "thai": "ตอนกลางคืน"
+   },
+   {
+    "en": "sleep well",
+    "thai": "นอนหลับสบาย"
+   }
+  ],
+  "tip": "cough เป็นได้ทั้งกริยาและคำนาม เช่น have a bad cough = ไอหนัก",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Cough"
+ },
+ {
+  "id": "health-sore-throat",
+  "word": "sore throat",
+  "pos": "n.",
+  "ipa": "/sɔːr θroʊt/",
+  "thai": "เจ็บคอ",
+  "emoji": "🗣️",
+  "imageQuery": "sore throat pain",
+  "example": "I have a sore throat, so it is hard to talk.",
+  "exampleThai": "เราเจ็บคอ เลยพูดลำบาก",
+  "keyVocab": [
+   {
+    "en": "sore throat",
+    "thai": "เจ็บคอ"
+   },
+   {
+    "en": "hard to talk",
+    "thai": "พูดลำบาก"
+   }
+  ],
+  "tip": "ใช้ have a sore throat และ sore แปลว่าเจ็บแบบตึง ๆ ไม่ใช่บาดแผล",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Sore throat"
+ },
+ {
+  "id": "health-stomachache",
+  "word": "stomachache",
+  "pos": "n.",
+  "ipa": "/ˈstʌməkeɪk/",
+  "thai": "อาการปวดท้อง",
+  "emoji": "🤢",
+  "imageQuery": "stomach pain person",
+  "example": "My stomachache started after I ate some spicy food.",
+  "exampleThai": "เราปวดท้องหลังจากกินอาหารรสเผ็ด",
+  "keyVocab": [
+   {
+    "en": "stomachache",
+    "thai": "อาการปวดท้อง"
+   },
+   {
+    "en": "spicy food",
+    "thai": "อาหารรสเผ็ด"
+   }
+  ],
+  "tip": "เขียนติดกันว่า stomachache และใช้ have a stomachache ได้เช่นกัน",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Abdominal pain"
+ },
+ {
+  "id": "health-rest",
+  "word": "rest",
+  "pos": "v.",
+  "ipa": "/rest/",
+  "thai": "พักผ่อน",
+  "emoji": "🛌",
+  "imageQuery": "person resting in bed",
+  "example": "You should rest at home until the fever goes down.",
+  "exampleThai": "คุณควรพักผ่อนอยู่บ้านจนกว่าไข้จะลด",
+  "keyVocab": [
+   {
+    "en": "You should",
+    "thai": "คุณควร"
+   },
+   {
+    "en": "until",
+    "thai": "จนกว่า"
+   }
+  ],
+  "tip": "rest เป็นได้ทั้งกริยา (พักผ่อน) และคำนาม เช่น take a rest = พักสักหน่อย",
+  "category": "health",
+  "commonsCategory": "Resting",
+  "photo": true,
+  "article": "Rest"
+ },
+ {
+  "id": "health-ill",
+  "word": "ill",
+  "pos": "adj.",
+  "ipa": "/ɪl/",
+  "thai": "ป่วย / ไม่สบาย",
+  "emoji": "🤧",
+  "imageQuery": "sick person bed",
+  "example": "She was ill last week, so she missed two lessons.",
+  "exampleThai": "เธอป่วยเมื่อสัปดาห์ที่แล้ว เลยขาดเรียนสองคาบ",
+  "keyVocab": [
+   {
+    "en": "ill",
+    "thai": "ป่วย"
+   },
+   {
+    "en": "last week",
+    "thai": "สัปดาห์ที่แล้ว"
+   },
+   {
+    "en": "missed",
+    "thai": "พลาด / ขาด (เรียน)"
+   }
+  ],
+  "tip": "ill มักตามหลังคำกริยา be เช่น be ill ส่วน sick ใช้ได้กว้างกว่า",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Disease"
+ },
+ {
+  "id": "health-doctor",
+  "word": "doctor",
+  "pos": "n.",
+  "ipa": "/ˈdɑːktər/",
+  "thai": "หมอ / แพทย์",
+  "emoji": "👨‍⚕️",
+  "imageQuery": "doctor hospital stethoscope",
+  "example": "The doctor said I should drink more water and rest.",
+  "exampleThai": "คุณหมอบอกว่าเราควรดื่มน้ำมากขึ้นและพักผ่อน",
+  "keyVocab": [
+   {
+    "en": "doctor",
+    "thai": "หมอ"
+   },
+   {
+    "en": "drink more water",
+    "thai": "ดื่มน้ำมากขึ้น"
+   },
+   {
+    "en": "rest",
+    "thai": "พักผ่อน"
+   }
+  ],
+  "tip": "go to the doctor = ไปหาหมอ ต้องมี the และมักใช้กับกริยา go",
+  "category": "health",
+  "commonsCategory": "Physicians",
+  "photo": true,
+  "article": "Medical doctor"
+ },
+ {
+  "id": "health-appointment",
+  "word": "appointment",
+  "pos": "n.",
+  "ipa": "/əˈpɔɪntmənt/",
+  "thai": "การนัดหมาย",
+  "emoji": "📅",
+  "imageQuery": "calendar appointment schedule",
+  "example": "I have an appointment with the dentist this afternoon.",
+  "exampleThai": "เรามีนัดกับหมอฟันช่วงบ่ายนี้",
+  "keyVocab": [
+   {
+    "en": "appointment",
+    "thai": "การนัดหมาย"
+   },
+   {
+    "en": "dentist",
+    "thai": "หมอฟัน"
+   },
+   {
+    "en": "afternoon",
+    "thai": "ช่วงบ่าย"
+   }
+  ],
+  "tip": "ใช้ have an appointment with + คน เช่น with the dentist ไม่ใช้ to",
+  "category": "health",
+  "commonsCategory": "Calendars",
+  "photo": true,
+  "article": "Appointment"
+ },
+ {
+  "id": "health-medicine",
+  "word": "medicine",
+  "pos": "n.",
+  "ipa": "/ˈmedɪsɪn/",
+  "thai": "ยา",
+  "emoji": "💊",
+  "imageQuery": "medicine pills bottle",
+  "example": "Please take this medicine twice a day after meals.",
+  "exampleThai": "กรุณากินยานี้วันละสองครั้งหลังอาหาร",
+  "keyVocab": [
+   {
+    "en": "take",
+    "thai": "กิน / รับ (ยา)"
+   },
+   {
+    "en": "medicine",
+    "thai": "ยา"
+   },
+   {
+    "en": "twice a day",
+    "thai": "วันละสองครั้ง"
+   }
+  ],
+  "tip": "ภาษาอังกฤษใช้ take medicine ไม่ใช้ eat medicine และ medicine เป็นคำนามนับไม่ได้",
+  "category": "health",
+  "commonsCategory": "Pharmaceutical drugs",
+  "photo": true,
+  "article": "Medication"
+ },
+ {
+  "id": "health-hurt",
+  "word": "hurt",
+  "pos": "v.",
+  "ipa": "/hɜːrt/",
+  "thai": "เจ็บ / ทำให้เจ็บ",
+  "emoji": "🤕",
+  "imageQuery": "knee pain injury",
+  "example": "My knee hurts when I walk up the stairs.",
+  "exampleThai": "เข่าของเราเจ็บเวลาเดินขึ้นบันได",
+  "keyVocab": [
+   {
+    "en": "hurts",
+    "thai": "เจ็บ (ประธานเป็นส่วนของร่างกาย)"
+   },
+   {
+    "en": "knee",
+    "thai": "เข่า"
+   },
+   {
+    "en": "stairs",
+    "thai": "บันได"
+   }
+  ],
+  "tip": "พูดว่า My knee hurts ได้เลย ไม่ต้องใส่ it hurts my knee",
+  "category": "health",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Pain"
+ },
+ {
+  "id": "health-healthy",
+  "word": "healthy",
+  "pos": "adj.",
+  "ipa": "/ˈhelθi/",
+  "thai": "สุขภาพดี / ดีต่อสุขภาพ",
+  "emoji": "🥗",
+  "imageQuery": "healthy food vegetables",
+  "example": "Eating vegetables every day helps you stay healthy.",
+  "exampleThai": "การกินผักทุกวันช่วยให้คุณมีสุขภาพดี",
+  "keyVocab": [
+   {
+    "en": "vegetables",
+    "thai": "ผัก"
+   },
+   {
+    "en": "every day",
+    "thai": "ทุกวัน"
+   },
+   {
+    "en": "healthy",
+    "thai": "สุขภาพดี"
+   }
+  ],
+  "tip": "healthy บอกว่ามีสุขภาพดีหรือดีต่อสุขภาพ ส่วน healthful ใช้กับอาหารเท่านั้น",
+  "category": "health",
+  "commonsCategory": "Physical exercise",
+  "photo": true,
+  "article": "Health"
+ },
+ {
+  "id": "health-clinic",
+  "word": "clinic",
+  "pos": "n.",
+  "ipa": "/ˈklɪnɪk/",
+  "thai": "คลินิก",
+  "emoji": "💬",
+  "example": "I need clinic today.",
+  "exampleThai": "ฉันใช้คำว่า คลินิก ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "คลินิก",
+    "en": "clinic"
+   }
+  ],
+  "tip": "ใช้ clinic ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-nurse",
+  "word": "nurse",
+  "pos": "n.",
+  "ipa": "/nɜːrs/",
+  "thai": "พยาบาล",
+  "emoji": "💬",
+  "example": "I need nurse today.",
+  "exampleThai": "ฉันใช้คำว่า พยาบาล ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "พยาบาล",
+    "en": "nurse"
+   }
+  ],
+  "tip": "ใช้ nurse ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-tablet",
+  "word": "tablet",
+  "pos": "n.",
+  "ipa": "/ˈtæblət/",
+  "thai": "ยาเม็ด",
+  "emoji": "💬",
+  "example": "I need tablet today.",
+  "exampleThai": "ฉันใช้คำว่า ยาเม็ด ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ยาเม็ด",
+    "en": "tablet"
+   }
+  ],
+  "tip": "ใช้ tablet ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-symptoms",
+  "word": "symptoms",
+  "pos": "n.",
+  "ipa": "/ˈsɪmptəmz/",
+  "thai": "อาการ",
+  "emoji": "💬",
+  "example": "I need symptoms today.",
+  "exampleThai": "ฉันใช้คำว่า อาการ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "อาการ",
+    "en": "symptoms"
+   }
+  ],
+  "tip": "ใช้ symptoms ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-backache",
+  "word": "backache",
+  "pos": "n.",
+  "ipa": "/ˈbækeɪk/",
+  "thai": "ปวดหลัง",
+  "emoji": "💬",
+  "example": "I need backache today.",
+  "exampleThai": "ฉันใช้คำว่า ปวดหลัง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ปวดหลัง",
+    "en": "backache"
+   }
+  ],
+  "tip": "ใช้ backache ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-pharmacy",
+  "word": "pharmacy",
+  "pos": "n.",
+  "ipa": "/ˈfɑːrməsi/",
+  "thai": "ร้านขายยา",
+  "emoji": "💬",
+  "example": "The pharmacy is next to the clinic.",
+  "exampleThai": "ร้านขายยาอยู่ถัดจากคลินิก",
+  "keyVocab": [
+   {
+    "en": "pharmacy",
+    "thai": "ร้านขายยา"
+   }
+  ],
+  "tip": "ใช้ pharmacy เพื่อถามหาหรือบอกตำแหน่งร้านขายยา",
+  "category": "health"
+ },
+ {
+  "id": "health-allergic",
+  "word": "allergic",
+  "pos": "n.",
+  "ipa": "/əˈlɜːrdʒɪk/",
+  "thai": "แพ้",
+  "emoji": "💬",
+  "example": "I need allergic today.",
+  "exampleThai": "ฉันใช้คำว่า แพ้ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "แพ้",
+    "en": "allergic"
+   }
+  ],
+  "tip": "ใช้ allergic ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-nauseous",
+  "word": "nauseous",
+  "pos": "n.",
+  "ipa": "/ˈnɔːʃəs/",
+  "thai": "คลื่นไส้",
+  "emoji": "💬",
+  "example": "I need nauseous today.",
+  "exampleThai": "ฉันใช้คำว่า คลื่นไส้ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "คลื่นไส้",
+    "en": "nauseous"
+   }
+  ],
+  "tip": "ใช้ nauseous ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-dizzy",
+  "word": "dizzy",
+  "pos": "n.",
+  "ipa": "/ˈdɪzi/",
+  "thai": "เวียนหัว",
+  "emoji": "💬",
+  "example": "I need dizzy today.",
+  "exampleThai": "ฉันใช้คำว่า เวียนหัว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เวียนหัว",
+    "en": "dizzy"
+   }
+  ],
+  "tip": "ใช้ dizzy ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-temperature",
+  "word": "temperature",
+  "pos": "n.",
+  "ipa": "/ˈtɛmpərətʃər/",
+  "thai": "อุณหภูมิ",
+  "emoji": "💬",
+  "example": "I need temperature today.",
+  "exampleThai": "ฉันใช้คำว่า อุณหภูมิ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "อุณหภูมิ",
+    "en": "temperature"
+   }
+  ],
+  "tip": "ใช้ temperature ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-wound",
+  "word": "wound",
+  "pos": "n.",
+  "ipa": "/wuːnd/",
+  "thai": "บาดแผล",
+  "emoji": "💬",
+  "example": "I need wound today.",
+  "exampleThai": "ฉันใช้คำว่า บาดแผล ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "บาดแผล",
+    "en": "wound"
+   }
+  ],
+  "tip": "ใช้ wound ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-bandage",
+  "word": "bandage",
+  "pos": "n.",
+  "ipa": "/ˈbændɪdʒ/",
+  "thai": "ผ้าพันแผล",
+  "emoji": "💬",
+  "example": "I need bandage today.",
+  "exampleThai": "ฉันใช้คำว่า ผ้าพันแผล ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผ้าพันแผล",
+    "en": "bandage"
+   }
+  ],
+  "tip": "ใช้ bandage ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "health-recover",
+  "word": "recover",
+  "pos": "n.",
+  "ipa": "/rɪˈkʌvər/",
+  "thai": "หายดี",
+  "emoji": "💬",
+  "example": "I need recover today.",
+  "exampleThai": "ฉันใช้คำว่า หายดี ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "หายดี",
+    "en": "recover"
+   }
+  ],
+  "tip": "ใช้ recover ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "health"
+ },
+ {
+  "id": "work-meeting",
+  "word": "meeting",
+  "pos": "n.",
+  "ipa": "/ˈmiː.t̬ɪŋ/",
+  "thai": "การประชุม",
+  "emoji": "📅",
+  "imageQuery": "office team meeting",
+  "example": "We have a team meeting every Monday morning.",
+  "exampleThai": "เราประชุมทีมกันทุกเช้าวันจันทร์",
+  "keyVocab": [
+   {
+    "en": "team meeting",
+    "thai": "ประชุมทีม"
+   },
+   {
+    "en": "every Monday",
+    "thai": "ทุกวันจันทร์"
+   }
+  ],
+  "tip": "meeting เป็นคำนามนับได้ จึงพูดว่า a meeting หรือ two meetings",
+  "category": "work",
+  "commonsCategory": "Meetings",
+  "photo": true,
+  "article": "Meeting"
+ },
+ {
+  "id": "work-email",
+  "word": "email",
+  "pos": "n.",
+  "ipa": "/ˈiː.meɪl/",
+  "thai": "อีเมล",
+  "emoji": "📧",
+  "imageQuery": "laptop email inbox",
+  "example": "I sent an email to the client this morning.",
+  "exampleThai": "ฉันส่งอีเมลให้ลูกค้าเมื่อเช้านี้",
+  "keyVocab": [
+   {
+    "en": "sent an email",
+    "thai": "ส่งอีเมล"
+   },
+   {
+    "en": "the client",
+    "thai": "ลูกค้า"
+   }
+  ],
+  "tip": "ใช้ send an email to someone (ส่งอีเมลถึงใคร) ไม่ต้องใส่ preposition อื่นเพิ่ม",
+  "category": "work",
+  "commonsCategory": "E-mail",
+  "photo": true,
+  "article": "Email"
+ },
+ {
+  "id": "work-colleague",
+  "word": "colleague",
+  "pos": "n.",
+  "ipa": "/ˈkɑː.liːɡ/",
+  "thai": "เพื่อนร่วมงาน",
+  "emoji": "🤝",
+  "imageQuery": "colleagues talking office",
+  "example": "My colleague helped me finish the report yesterday.",
+  "exampleThai": "เพื่อนร่วมงานช่วยฉันทำรายงานให้เสร็จเมื่อวานนี้",
+  "keyVocab": [
+   {
+    "en": "My colleague",
+    "thai": "เพื่อนร่วมงานของฉัน"
+   },
+   {
+    "en": "helped me",
+    "thai": "ช่วยฉัน"
+   }
+  ],
+  "tip": "colleague ฟังดูเป็นทางการกว่า workmate ใช้กับเพื่อนร่วมงานทั่วไปได้เลย",
+  "category": "work",
+  "commonsCategory": "Office workers",
+  "photo": true,
+  "article": "Co-worker"
+ },
+ {
+  "id": "work-boss",
+  "word": "boss",
+  "pos": "n.",
+  "ipa": "/bɑːs/",
+  "thai": "หัวหน้า",
+  "emoji": "👔",
+  "imageQuery": "manager office desk",
+  "example": "My boss asked me to join the meeting tomorrow.",
+  "exampleThai": "หัวหน้าของฉันขอให้ฉันเข้าประชุมพรุ่งนี้",
+  "keyVocab": [
+   {
+    "en": "My boss",
+    "thai": "หัวหน้าของฉัน"
+   },
+   {
+    "en": "asked me to",
+    "thai": "ขอให้ฉัน"
+   }
+  ],
+  "tip": "boss ใช้พูดกันทั่วไป ส่วน manager หรือ supervisor ฟังดูเป็นทางการกว่า",
+  "category": "work",
+  "commonsCategory": "Businesspeople",
+  "photo": true,
+  "article": "Supervisor"
+ },
+ {
+  "id": "work-salary",
+  "word": "salary",
+  "pos": "n.",
+  "ipa": "/ˈsæl.ɚ.i/",
+  "thai": "เงินเดือน",
+  "emoji": "💰",
+  "imageQuery": "money salary payment",
+  "example": "The company pays my salary on the last day of the month.",
+  "exampleThai": "บริษัทจ่ายเงินเดือนฉันวันสุดท้ายของเดือน",
+  "keyVocab": [
+   {
+    "en": "pays my salary",
+    "thai": "จ่ายเงินเดือนฉัน"
+   },
+   {
+    "en": "the last day",
+    "thai": "วันสุดท้าย"
+   }
+  ],
+  "tip": "salary คือเงินเดือนรายเดือน ส่วน wage คือค่าจ้างรายวันหรือรายชั่วโมง",
+  "category": "work",
+  "commonsCategory": "Wages",
+  "photo": true,
+  "article": "Salary"
+ },
+ {
+  "id": "work-sick-leave",
+  "word": "sick leave",
+  "pos": "n.",
+  "ipa": "/ˈsɪk ˌliːv/",
+  "thai": "ลาป่วย",
+  "emoji": "🤒",
+  "imageQuery": "sick person bed",
+  "example": "She took three days of sick leave last week.",
+  "exampleThai": "เธอลาป่วยสามวันเมื่อสัปดาห์ที่แล้ว",
+  "keyVocab": [
+   {
+    "en": "three days of sick leave",
+    "thai": "ลาป่วยสามวัน"
+   },
+   {
+    "en": "last week",
+    "thai": "สัปดาห์ที่แล้ว"
+   }
+  ],
+  "tip": "ใช้ take sick leave (ลาป่วย) หรือ ask for sick leave (ขอลาป่วย)",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Sick leave"
+ },
+ {
+  "id": "work-apply-for",
+  "word": "apply for",
+  "pos": "phr.",
+  "ipa": "/əˈplaɪ fɚ/",
+  "thai": "สมัคร (งาน)",
+  "emoji": "📝",
+  "imageQuery": "writing job application",
+  "example": "I want to apply for a new job next month.",
+  "exampleThai": "ฉันอยากสมัครงานใหม่เดือนหน้า",
+  "keyVocab": [
+   {
+    "en": "apply for",
+    "thai": "สมัคร"
+   },
+   {
+    "en": "a new job",
+    "thai": "งานใหม่"
+   }
+  ],
+  "tip": "apply for + งานหรือตำแหน่ง เช่น apply for a job ไม่ใช่ apply to a job",
+  "category": "work",
+  "commonsCategory": "Recruitment",
+  "photo": true,
+  "article": "Application for employment"
+ },
+ {
+  "id": "work-deadline",
+  "word": "deadline",
+  "pos": "n.",
+  "ipa": "/ˈded.laɪn/",
+  "thai": "กำหนดส่งงาน",
+  "emoji": "⏰",
+  "imageQuery": "office clock time",
+  "example": "Our team has to meet the deadline by Friday afternoon.",
+  "exampleThai": "ทีมของเราต้องส่งงานให้ทันกำหนดบ่ายวันศุกร์",
+  "keyVocab": [
+   {
+    "en": "meet the deadline",
+    "thai": "ทำเสร็จทันกำหนด"
+   },
+   {
+    "en": "by Friday",
+    "thai": "ภายในวันศุกร์"
+   }
+  ],
+  "tip": "ใช้ meet the deadline (ทำทัน) แต่ miss the deadline (ทำไม่ทัน)",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Time limit"
+ },
+ {
+  "id": "work-overtime",
+  "word": "overtime",
+  "pos": "n.",
+  "ipa": "/ˈoʊ.vɚ.taɪm/",
+  "thai": "การทำงานล่วงเวลา",
+  "emoji": "🌙",
+  "imageQuery": "late night office",
+  "example": "He worked overtime every night to finish the project.",
+  "exampleThai": "เขาทำงานล่วงเวลาทุกคืนเพื่อให้โปรเจกต์เสร็จ",
+  "keyVocab": [
+   {
+    "en": "worked overtime",
+    "thai": "ทำงานล่วงเวลา"
+   },
+   {
+    "en": "every night",
+    "thai": "ทุกคืน"
+   }
+  ],
+  "tip": "work overtime แปลว่าทำโอที เป็นคำนามนับไม่ได้ ไม่ใช้ an overtime",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Overtime"
+ },
+ {
+  "id": "work-interview",
+  "word": "interview",
+  "pos": "n.",
+  "ipa": "/ˈɪn.t̬ɚ.vjuː/",
+  "thai": "การสัมภาษณ์งาน",
+  "emoji": "💼",
+  "imageQuery": "job interview handshake",
+  "example": "I answered many questions at my job interview today.",
+  "exampleThai": "ฉันตอบคำถามหลายข้อในการสัมภาษณ์งานวันนี้",
+  "keyVocab": [
+   {
+    "en": "job interview",
+    "thai": "การสัมภาษณ์งาน"
+   },
+   {
+    "en": "many questions",
+    "thai": "คำถามหลายข้อ"
+   }
+  ],
+  "tip": "go for an interview = ไปสัมภาษณ์งาน, have an interview = มีนัดสัมภาษณ์",
+  "category": "work",
+  "commonsCategory": "Job interviews",
+  "photo": true,
+  "article": "Job interview"
+ },
+ {
+  "id": "work-report",
+  "word": "report",
+  "pos": "n.",
+  "ipa": "/rɪˈpɔːrt/",
+  "thai": "รายงาน",
+  "emoji": "📊",
+  "imageQuery": "business report papers",
+  "example": "I have to send the monthly report before noon.",
+  "exampleThai": "ฉันต้องส่งรายงานประจำเดือนก่อนเที่ยง",
+  "keyVocab": [
+   {
+    "en": "the monthly report",
+    "thai": "รายงานประจำเดือน"
+   },
+   {
+    "en": "before noon",
+    "thai": "ก่อนเที่ยง"
+   }
+  ],
+  "tip": "report เป็นได้ทั้งคำนาม (รายงาน) และคำกริยา (รายงานให้ทราบ)",
+  "category": "work",
+  "commonsCategory": "Reports",
+  "photo": true,
+  "article": "Report"
+ },
+ {
+  "id": "work-promotion",
+  "word": "promotion",
+  "pos": "n.",
+  "ipa": "/prəˈmoʊ.ʃən/",
+  "thai": "การเลื่อนตำแหน่ง",
+  "emoji": "🎉",
+  "imageQuery": "success celebration office",
+  "example": "She got a promotion after two years of hard work.",
+  "exampleThai": "เธอได้เลื่อนตำแหน่งหลังจากทำงานหนักมาสองปี",
+  "keyVocab": [
+   {
+    "en": "got a promotion",
+    "thai": "ได้เลื่อนตำแหน่ง"
+   },
+   {
+    "en": "hard work",
+    "thai": "การทำงานหนัก"
+   }
+  ],
+  "tip": "get a promotion = ได้เลื่อนตำแหน่ง ใช้กับงาน คนละความหมายกับโปรโมชันลดราคา",
+  "category": "work",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Promotion (rank)"
+ },
+ {
+  "id": "work-office",
+  "word": "office",
+  "pos": "n.",
+  "ipa": "/ˈɔːfɪs/",
+  "thai": "สำนักงาน",
+  "emoji": "💬",
+  "example": "I need office today.",
+  "exampleThai": "ฉันใช้คำว่า สำนักงาน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "สำนักงาน",
+    "en": "office"
+   }
+  ],
+  "tip": "ใช้ office ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-teammate",
+  "word": "teammate",
+  "pos": "n.",
+  "ipa": "/ˈtiːmmeɪt/",
+  "thai": "เพื่อนร่วมทีม",
+  "emoji": "💬",
+  "example": "I need teammate today.",
+  "exampleThai": "ฉันใช้คำว่า เพื่อนร่วมทีม ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เพื่อนร่วมทีม",
+    "en": "teammate"
+   }
+  ],
+  "tip": "ใช้ teammate ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-manager",
+  "word": "manager",
+  "pos": "n.",
+  "ipa": "/ˈmænɪdʒər/",
+  "thai": "ผู้จัดการ",
+  "emoji": "💬",
+  "example": "I need manager today.",
+  "exampleThai": "ฉันใช้คำว่า ผู้จัดการ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผู้จัดการ",
+    "en": "manager"
+   }
+  ],
+  "tip": "ใช้ manager ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-work-schedule",
+  "word": "work schedule",
+  "pos": "n.",
+  "ipa": "/wɜːrk ˈskɛdʒuːl/",
+  "thai": "ตารางงาน",
+  "emoji": "💬",
+  "example": "I need work schedule today.",
+  "exampleThai": "ฉันใช้คำว่า ตารางงาน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ตารางงาน",
+    "en": "work schedule"
+   }
+  ],
+  "tip": "ใช้ work schedule ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-take-a-break",
+  "word": "take a break",
+  "pos": "n.",
+  "ipa": "/teɪk ə breɪk/",
+  "thai": "พัก",
+  "emoji": "💬",
+  "example": "I need take a break today.",
+  "exampleThai": "ฉันใช้คำว่า พัก ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "พัก",
+    "en": "take a break"
+   }
+  ],
+  "tip": "ใช้ take a break ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-work",
+  "word": "work",
+  "pos": "n.",
+  "ipa": "/wɜːrk/",
+  "thai": "งาน",
+  "emoji": "💬",
+  "example": "I need work today.",
+  "exampleThai": "ฉันใช้คำว่า งาน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "งาน",
+    "en": "work"
+   }
+  ],
+  "tip": "ใช้ work ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-new-job",
+  "word": "new job",
+  "pos": "n.",
+  "ipa": "/nuː dʒɑːb/",
+  "thai": "งานใหม่",
+  "emoji": "💬",
+  "example": "I need new job today.",
+  "exampleThai": "ฉันใช้คำว่า งานใหม่ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "งานใหม่",
+    "en": "new job"
+   }
+  ],
+  "tip": "ใช้ new job ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-start-work",
+  "word": "start work",
+  "pos": "n.",
+  "ipa": "/stɑːrt wɜːrk/",
+  "thai": "เริ่มงาน",
+  "emoji": "💬",
+  "example": "I need start work today.",
+  "exampleThai": "ฉันใช้คำว่า เริ่มงาน ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เริ่มงาน",
+    "en": "start work"
+   }
+  ],
+  "tip": "ใช้ start work ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-finish",
+  "word": "finish",
+  "pos": "n.",
+  "ipa": "/ˈfɪnɪʃ/",
+  "thai": "เสร็จสิ้น",
+  "emoji": "💬",
+  "example": "I need finish today.",
+  "exampleThai": "ฉันใช้คำว่า เสร็จสิ้น ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เสร็จสิ้น",
+    "en": "finish"
+   }
+  ],
+  "tip": "ใช้ finish ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-help-me",
+  "word": "help me",
+  "pos": "n.",
+  "ipa": "/hɛlp miː/",
+  "thai": "ช่วย",
+  "emoji": "💬",
+  "example": "I need help me today.",
+  "exampleThai": "ฉันใช้คำว่า ช่วย ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ช่วย",
+    "en": "help me"
+   }
+  ],
+  "tip": "ใช้ help me ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-phone-call",
+  "word": "phone call",
+  "pos": "n.",
+  "ipa": "/foʊn kɔːl/",
+  "thai": "โทรศัพท์",
+  "emoji": "💬",
+  "example": "I need phone call today.",
+  "exampleThai": "ฉันใช้คำว่า โทรศัพท์ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "โทรศัพท์",
+    "en": "phone call"
+   }
+  ],
+  "tip": "ใช้ phone call ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-client",
+  "word": "client",
+  "pos": "n.",
+  "ipa": "/ˈklaɪənt/",
+  "thai": "ลูกค้า",
+  "emoji": "💬",
+  "example": "I need client today.",
+  "exampleThai": "ฉันใช้คำว่า ลูกค้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ลูกค้า",
+    "en": "client"
+   }
+  ],
+  "tip": "ใช้ client ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "work-day-off",
+  "word": "day off",
+  "pos": "n.",
+  "ipa": "/deɪ ɔːf/",
+  "thai": "วันหยุด",
+  "emoji": "💬",
+  "example": "I need day off today.",
+  "exampleThai": "ฉันใช้คำว่า วันหยุด ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "วันหยุด",
+    "en": "day off"
+   }
+  ],
+  "tip": "ใช้ day off ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "work"
+ },
+ {
+  "id": "feelings-stressed",
+  "word": "stressed",
+  "pos": "adj.",
+  "ipa": "/strest/",
+  "thai": "เครียด",
+  "emoji": "😖",
+  "imageQuery": "stressed office worker",
+  "example": "I feel stressed when I have too much work.",
+  "exampleThai": "ฉันรู้สึกเครียดเวลามีงานเยอะเกินไป",
+  "keyVocab": [
+   {
+    "en": "feel stressed",
+    "thai": "รู้สึกเครียด"
+   },
+   {
+    "en": "too much work",
+    "thai": "งานเยอะเกินไป"
+   }
+  ],
+  "tip": "stressed ใช้กับคน (I am stressed) ส่วน stressful ใช้กับงาน เช่น a stressful job",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Psychological stress"
+ },
+ {
+  "id": "feelings-tired",
+  "word": "tired",
+  "pos": "adj.",
+  "ipa": "/ˈtaɪrd/",
+  "thai": "เหนื่อย",
+  "emoji": "😴",
+  "imageQuery": "tired man yawning",
+  "example": "I am really tired after a long day at work.",
+  "exampleThai": "ฉันเหนื่อยมากจริง ๆ หลังทำงานมาทั้งวัน",
+  "keyVocab": [
+   {
+    "en": "really tired",
+    "thai": "เหนื่อยมาก"
+   },
+   {
+    "en": "after a long day",
+    "thai": "หลังวันที่ยาวนาน"
+   }
+  ],
+  "tip": "tired แปลว่าเหนื่อยหรือง่วงนอน ส่วน bored แปลว่าเบื่อ อย่าสับสนสองคำนี้",
+  "category": "feelings",
+  "commonsCategory": "Yawning",
+  "photo": true,
+  "article": "Fatigue"
+ },
+ {
+  "id": "feelings-proud",
+  "word": "proud",
+  "pos": "adj.",
+  "ipa": "/praʊd/",
+  "thai": "ภูมิใจ",
+  "emoji": "😌",
+  "imageQuery": "proud person smiling",
+  "example": "I am proud of my team for finishing early.",
+  "exampleThai": "ฉันภูมิใจในทีมที่ทำงานเสร็จเร็ว",
+  "keyVocab": [
+   {
+    "en": "proud of",
+    "thai": "ภูมิใจใน"
+   },
+   {
+    "en": "finishing early",
+    "thai": "ทำเสร็จเร็ว"
+   }
+  ],
+  "tip": "ใช้ proud of + คนหรือสิ่งของ เช่น proud of my son ไม่ใช้ proud with",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Pride"
+ },
+ {
+  "id": "feelings-kind",
+  "word": "kind",
+  "pos": "adj.",
+  "ipa": "/kaɪnd/",
+  "thai": "ใจดี",
+  "emoji": "🤗",
+  "imageQuery": "kind woman helping",
+  "example": "My new manager is very kind to everyone.",
+  "exampleThai": "ผู้จัดการคนใหม่ของฉันใจดีกับทุกคนมาก",
+  "keyVocab": [
+   {
+    "en": "very kind",
+    "thai": "ใจดีมาก"
+   },
+   {
+    "en": "to everyone",
+    "thai": "กับทุกคน"
+   }
+  ],
+  "tip": "kind to somebody = ใจดีกับใคร ส่วน kind of = ค่อนข้าง หรือแบบหนึ่ง",
+  "category": "feelings",
+  "commonsCategory": "Helping",
+  "photo": true,
+  "article": "Kindness"
+ },
+ {
+  "id": "feelings-punctual",
+  "word": "punctual",
+  "pos": "adj.",
+  "ipa": "/ˈpʌŋk.tʃu.əl/",
+  "thai": "ตรงต่อเวลา",
+  "emoji": "⌚",
+  "imageQuery": "person checking watch",
+  "example": "She is always punctual for every meeting.",
+  "exampleThai": "เธอมาตรงต่อเวลาทุกการประชุมเสมอ",
+  "keyVocab": [
+   {
+    "en": "always punctual",
+    "thai": "ตรงต่อเวลาเสมอ"
+   },
+   {
+    "en": "every meeting",
+    "thai": "ทุกการประชุม"
+   }
+  ],
+  "tip": "punctual เป็นคำคุณศัพท์ ใช้ be punctual = มาและทำตรงเวลา",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Punctuality"
+ },
+ {
+  "id": "feelings-shy",
+  "word": "shy",
+  "pos": "adj.",
+  "ipa": "/ʃaɪ/",
+  "thai": "ขี้อาย",
+  "emoji": "😳",
+  "imageQuery": "shy person hiding",
+  "example": "My brother is too shy to speak in meetings.",
+  "exampleThai": "น้องชายของฉันขี้อายเกินกว่าจะพูดในการประชุม",
+  "keyVocab": [
+   {
+    "en": "too shy",
+    "thai": "ขี้อายเกินไป"
+   },
+   {
+    "en": "speak in meetings",
+    "thai": "พูดในการประชุม"
+   }
+  ],
+  "tip": "too shy to + กริยา = ขี้อายเกินกว่าจะทำอะไร ใช้ได้กับทั้งผู้ชายและผู้หญิง",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Shyness"
+ },
+ {
+  "id": "feelings-confident",
+  "word": "confident",
+  "pos": "adj.",
+  "ipa": "/ˈkɑːn.fə.dənt/",
+  "thai": "มั่นใจ",
+  "emoji": "😎",
+  "imageQuery": "confident businessman portrait",
+  "example": "He looks confident when he talks to customers.",
+  "exampleThai": "เขาดูมั่นใจเวลาพูดคุยกับลูกค้า",
+  "keyVocab": [
+   {
+    "en": "looks confident",
+    "thai": "ดูมั่นใจ"
+   },
+   {
+    "en": "talks to customers",
+    "thai": "พูดคุยกับลูกค้า"
+   }
+  ],
+  "tip": "confident = มั่นใจในตัวเอง ส่วน be confident of/about + เรื่อง = มั่นใจในเรื่องนั้น",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Confidence"
+ },
+ {
+  "id": "feelings-nervous",
+  "word": "nervous",
+  "pos": "adj.",
+  "ipa": "/ˈnɝː.vəs/",
+  "thai": "ตื่นเต้นกังวล",
+  "emoji": "😬",
+  "imageQuery": "nervous student exam",
+  "example": "I get nervous before I speak in front of people.",
+  "exampleThai": "ฉันรู้สึกกังวลก่อนพูดต่อหน้าคนเยอะ ๆ",
+  "keyVocab": [
+   {
+    "en": "get nervous",
+    "thai": "รู้สึกกังวล"
+   },
+   {
+    "en": "in front of people",
+    "thai": "ต่อหน้าคน"
+   }
+  ],
+  "tip": "nervous คือวิตกกังวล ส่วน excited คือตื่นเต้นในทางบวก เป็นคนละอารมณ์กัน",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Anxiety"
+ },
+ {
+  "id": "feelings-friendly",
+  "word": "friendly",
+  "pos": "adj.",
+  "ipa": "/ˈfrend.li/",
+  "thai": "เป็นมิตร",
+  "emoji": "😊",
+  "imageQuery": "friendly people talking",
+  "example": "Our new coworker is friendly and easy to talk to.",
+  "exampleThai": "เพื่อนร่วมงานคนใหม่ของเราเป็นมิตรและคุยด้วยง่าย",
+  "keyVocab": [
+   {
+    "en": "is friendly",
+    "thai": "เป็นมิตร"
+   },
+   {
+    "en": "easy to talk to",
+    "thai": "คุยด้วยง่าย"
+   }
+  ],
+  "tip": "friendly เป็นคำคุณศัพท์ที่ลงท้ายด้วย -ly ไม่ใช่คำวิเศษณ์ ใช้ a friendly person",
+  "category": "feelings",
+  "commonsCategory": "Friendship",
+  "photo": true,
+  "article": "Friendship"
+ },
+ {
+  "id": "feelings-patient",
+  "word": "patient",
+  "pos": "adj.",
+  "ipa": "/ˈpeɪ.ʃənt/",
+  "thai": "อดทน",
+  "emoji": "🧘",
+  "imageQuery": "patient person waiting",
+  "example": "You must be patient when you train new staff.",
+  "exampleThai": "คุณต้องอดทนเวลาสอนพนักงานใหม่",
+  "keyVocab": [
+   {
+    "en": "be patient",
+    "thai": "อดทน"
+   },
+   {
+    "en": "new staff",
+    "thai": "พนักงานใหม่"
+   }
+  ],
+  "tip": "patient (อ่านว่า เพ-เชินท์) แปลว่าอดทน ส่วน patient ที่แปลว่าคนไข้สะกดเหมือนกัน",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Patience"
+ },
+ {
+  "id": "feelings-cheerful",
+  "word": "cheerful",
+  "pos": "adj.",
+  "ipa": "/ˈtʃɪr.fəl/",
+  "thai": "ร่าเริง",
+  "emoji": "😄",
+  "imageQuery": "happy woman laughing",
+  "example": "She stays cheerful even on very busy days.",
+  "exampleThai": "เธอยังร่าเริงแม้ในวันที่งานยุ่งมาก",
+  "keyVocab": [
+   {
+    "en": "stays cheerful",
+    "thai": "ยังร่าเริง"
+   },
+   {
+    "en": "busy days",
+    "thai": "วันที่งานยุ่ง"
+   }
+  ],
+  "tip": "cheerful = ร่าเริงแจ่มใส ใช้กับคน บรรยากาศ หรือสีสันก็ได้",
+  "category": "feelings",
+  "commonsCategory": "People smiling",
+  "photo": true,
+  "article": "Happiness"
+ },
+ {
+  "id": "feelings-worry",
+  "word": "worry",
+  "pos": "v.",
+  "ipa": "/ˈwɝː.i/",
+  "thai": "กังวล",
+  "emoji": "😟",
+  "imageQuery": "worried man thinking",
+  "example": "I always worry about my work before a big meeting.",
+  "exampleThai": "ฉันมักกังวลเรื่องงานก่อนการประชุมใหญ่เสมอ",
+  "keyVocab": [
+   {
+    "en": "worry about",
+    "thai": "กังวลเรื่อง"
+   },
+   {
+    "en": "a big meeting",
+    "thai": "การประชุมใหญ่"
+   }
+  ],
+  "tip": "worry about + เรื่อง เช่น worry about money ไม่ต้องใส่ preposition อื่นเพิ่ม",
+  "category": "feelings",
+  "commonsCategory": null,
+  "photo": false,
+  "article": "Worry"
+ },
+ {
+  "id": "feelings-happy",
+  "word": "happy",
+  "pos": "adj.",
+  "ipa": "/ˈhæpi/",
+  "thai": "มีความสุข",
+  "emoji": "💬",
+  "example": "I need happy today.",
+  "exampleThai": "ฉันใช้คำว่า มีความสุข ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "มีความสุข",
+    "en": "happy"
+   }
+  ],
+  "tip": "ใช้ happy ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-sad",
+  "word": "sad",
+  "pos": "adj.",
+  "ipa": "/sæd/",
+  "thai": "เศร้า",
+  "emoji": "💬",
+  "example": "I need sad today.",
+  "exampleThai": "ฉันใช้คำว่า เศร้า ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "เศร้า",
+    "en": "sad"
+   }
+  ],
+  "tip": "ใช้ sad ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-angry",
+  "word": "angry",
+  "pos": "adj.",
+  "ipa": "/ˈæŋɡri/",
+  "thai": "โกรธ",
+  "emoji": "💬",
+  "example": "I need angry today.",
+  "exampleThai": "ฉันใช้คำว่า โกรธ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "โกรธ",
+    "en": "angry"
+   }
+  ],
+  "tip": "ใช้ angry ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-calm",
+  "word": "calm",
+  "pos": "adj.",
+  "ipa": "/kɑːm/",
+  "thai": "สงบ",
+  "emoji": "💬",
+  "example": "I need calm today.",
+  "exampleThai": "ฉันใช้คำว่า สงบ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "สงบ",
+    "en": "calm"
+   }
+  ],
+  "tip": "ใช้ calm ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-excited",
+  "word": "excited",
+  "pos": "adj.",
+  "ipa": "/ɪkˈsaɪtɪd/",
+  "thai": "ตื่นเต้น",
+  "emoji": "💬",
+  "example": "I need excited today.",
+  "exampleThai": "ฉันใช้คำว่า ตื่นเต้น ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ตื่นเต้น",
+    "en": "excited"
+   }
+  ],
+  "tip": "ใช้ excited ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-sleepy",
+  "word": "sleepy",
+  "pos": "adj.",
+  "ipa": "/ˈsliːpi/",
+  "thai": "ง่วง",
+  "emoji": "💬",
+  "example": "I need sleepy today.",
+  "exampleThai": "ฉันใช้คำว่า ง่วง ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ง่วง",
+    "en": "sleepy"
+   }
+  ],
+  "tip": "ใช้ sleepy ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-surprised",
+  "word": "surprised",
+  "pos": "adj.",
+  "ipa": "/sərˈpraɪzd/",
+  "thai": "ประหลาดใจ",
+  "emoji": "💬",
+  "example": "I need surprised today.",
+  "exampleThai": "ฉันใช้คำว่า ประหลาดใจ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ประหลาดใจ",
+    "en": "surprised"
+   }
+  ],
+  "tip": "ใช้ surprised ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-worried",
+  "word": "worried",
+  "pos": "adj.",
+  "ipa": "/ˈwɜːrid/",
+  "thai": "กังวล",
+  "emoji": "💬",
+  "example": "I need worried today.",
+  "exampleThai": "ฉันใช้คำว่า กังวล ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "กังวล",
+    "en": "worried"
+   }
+  ],
+  "tip": "ใช้ worried ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-grateful",
+  "word": "grateful",
+  "pos": "adj.",
+  "ipa": "/ˈɡreɪtfəl/",
+  "thai": "ขอบคุณ",
+  "emoji": "💬",
+  "example": "I need grateful today.",
+  "exampleThai": "ฉันใช้คำว่า ขอบคุณ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ขอบคุณ",
+    "en": "grateful"
+   }
+  ],
+  "tip": "ใช้ grateful ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-curious",
+  "word": "curious",
+  "pos": "adj.",
+  "ipa": "/ˈkjʊriəs/",
+  "thai": "สงสัย",
+  "emoji": "💬",
+  "example": "I need curious today.",
+  "exampleThai": "ฉันใช้คำว่า สงสัย ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "สงสัย",
+    "en": "curious"
+   }
+  ],
+  "tip": "ใช้ curious ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-relaxed",
+  "word": "relaxed",
+  "pos": "adj.",
+  "ipa": "/rɪˈlækst/",
+  "thai": "ผ่อนคลาย",
+  "emoji": "💬",
+  "example": "I need relaxed today.",
+  "exampleThai": "ฉันใช้คำว่า ผ่อนคลาย ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ผ่อนคลาย",
+    "en": "relaxed"
+   }
+  ],
+  "tip": "ใช้ relaxed ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-uncomfortable",
+  "word": "uncomfortable",
+  "pos": "adj.",
+  "ipa": "/ʌnˈkʌmftəbəl/",
+  "thai": "ไม่สบายใจ",
+  "emoji": "💬",
+  "example": "I need uncomfortable today.",
+  "exampleThai": "ฉันใช้คำว่า ไม่สบายใจ ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ไม่สบายใจ",
+    "en": "uncomfortable"
+   }
+  ],
+  "tip": "ใช้ uncomfortable ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "feelings-awake",
+  "word": "awake",
+  "pos": "adj.",
+  "ipa": "/əˈweɪk/",
+  "thai": "ตื่นตัว",
+  "emoji": "💬",
+  "example": "I need awake today.",
+  "exampleThai": "ฉันใช้คำว่า ตื่นตัว ในสถานการณ์นี้",
+  "keyVocab": [
+   {
+    "thai": "ตื่นตัว",
+    "en": "awake"
+   }
+  ],
+  "tip": "ใช้ awake ในบทสนทนาเกี่ยวกับชีวิตประจำวัน เพื่อสื่อสารข้อมูลหรือความต้องการ",
+  "category": "feelings"
+ },
+ {
+  "id": "transport-bus-stop",
+  "word": "bus stop",
+  "pos": "n.",
+  "ipa": "/bus stop/",
+  "thai": "ป้ายรถเมล์",
+  "emoji": "🚌",
+  "example": "Please show me the bus stop on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องป้ายรถเมล์ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ป้ายรถเมล์",
+    "en": "bus stop"
+   }
+  ],
+  "tip": "bus stop ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-bus-station",
+  "word": "bus station",
+  "pos": "n.",
+  "ipa": "/bus station/",
+  "thai": "สถานีรถโดยสาร",
+  "emoji": "🚌",
+  "example": "Please show me the bus station on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสถานีรถโดยสารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สถานีรถโดยสาร",
+    "en": "bus station"
+   }
+  ],
+  "tip": "bus station ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-subway-station",
+  "word": "subway station",
+  "pos": "n.",
+  "ipa": "/subway station/",
+  "thai": "สถานีรถไฟใต้ดิน",
+  "emoji": "🚌",
+  "example": "Please show me the subway station on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสถานีรถไฟใต้ดินก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สถานีรถไฟใต้ดิน",
+    "en": "subway station"
+   }
+  ],
+  "tip": "subway station ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-train-station",
+  "word": "train station",
+  "pos": "n.",
+  "ipa": "/train station/",
+  "thai": "สถานีรถไฟ",
+  "emoji": "🚌",
+  "example": "Please show me the train station on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสถานีรถไฟก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สถานีรถไฟ",
+    "en": "train station"
+   }
+  ],
+  "tip": "train station ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-taxi-stand",
+  "word": "taxi stand",
+  "pos": "n.",
+  "ipa": "/taxi stand/",
+  "thai": "จุดจอดแท็กซี่",
+  "emoji": "🚌",
+  "example": "Please show me the taxi stand on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องจุดจอดแท็กซี่ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "จุดจอดแท็กซี่",
+    "en": "taxi stand"
+   }
+  ],
+  "tip": "taxi stand ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-bus-route",
+  "word": "bus route",
+  "pos": "n.",
+  "ipa": "/bus route/",
+  "thai": "เส้นทางรถเมล์",
+  "emoji": "🚌",
+  "example": "Please show me the bus route on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเส้นทางรถเมล์ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เส้นทางรถเมล์",
+    "en": "bus route"
+   }
+  ],
+  "tip": "bus route ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-ticket-machine",
+  "word": "ticket machine",
+  "pos": "n.",
+  "ipa": "/ticket machine/",
+  "thai": "เครื่องจำหน่ายตั๋ว",
+  "emoji": "🚌",
+  "example": "Please show me the ticket machine on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเครื่องจำหน่ายตั๋วก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เครื่องจำหน่ายตั๋ว",
+    "en": "ticket machine"
+   }
+  ],
+  "tip": "ticket machine ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-fare-card",
+  "word": "fare card",
+  "pos": "n.",
+  "ipa": "/fare card/",
+  "thai": "บัตรโดยสาร",
+  "emoji": "🚌",
+  "example": "Please show me the fare card on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องบัตรโดยสารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "บัตรโดยสาร",
+    "en": "fare card"
+   }
+  ],
+  "tip": "fare card ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-traffic-light",
+  "word": "traffic light",
+  "pos": "n.",
+  "ipa": "/traffic light/",
+  "thai": "สัญญาณไฟจราจร",
+  "emoji": "🚌",
+  "example": "Please show me the traffic light on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสัญญาณไฟจราจรก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สัญญาณไฟจราจร",
+    "en": "traffic light"
+   }
+  ],
+  "tip": "traffic light ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-pedestrian-crossing",
+  "word": "pedestrian crossing",
+  "pos": "n.",
+  "ipa": "/pedestrian crossing/",
+  "thai": "ทางข้ามคนเดินเท้า",
+  "emoji": "🚌",
+  "example": "Please show me the pedestrian crossing on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องทางข้ามคนเดินเท้าก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ทางข้ามคนเดินเท้า",
+    "en": "pedestrian crossing"
+   }
+  ],
+  "tip": "pedestrian crossing ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-bike-lane",
+  "word": "bike lane",
+  "pos": "n.",
+  "ipa": "/bike lane/",
+  "thai": "ช่องทางจักรยาน",
+  "emoji": "🚌",
+  "example": "Please show me the bike lane on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องช่องทางจักรยานก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ช่องทางจักรยาน",
+    "en": "bike lane"
+   }
+  ],
+  "tip": "bike lane ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-parking-lot",
+  "word": "parking lot",
+  "pos": "n.",
+  "ipa": "/parking lot/",
+  "thai": "ลานจอดรถ",
+  "emoji": "🚌",
+  "example": "Please show me the parking lot on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องลานจอดรถก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ลานจอดรถ",
+    "en": "parking lot"
+   }
+  ],
+  "tip": "parking lot ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-road-sign",
+  "word": "road sign",
+  "pos": "n.",
+  "ipa": "/road sign/",
+  "thai": "ป้ายจราจร",
+  "emoji": "🚌",
+  "example": "Please show me the road sign on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องป้ายจราจรก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ป้ายจราจร",
+    "en": "road sign"
+   }
+  ],
+  "tip": "road sign ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-seat-belt",
+  "word": "seat belt",
+  "pos": "n.",
+  "ipa": "/seat belt/",
+  "thai": "เข็มขัดนิรภัย",
+  "emoji": "🚌",
+  "example": "Please show me the seat belt on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเข็มขัดนิรภัยก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เข็มขัดนิรภัย",
+    "en": "seat belt"
+   }
+  ],
+  "tip": "seat belt ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-driver",
+  "word": "driver",
+  "pos": "n.",
+  "ipa": "/driver/",
+  "thai": "คนขับรถ",
+  "emoji": "🚌",
+  "example": "Please show me the driver on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องคนขับรถก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "คนขับรถ",
+    "en": "driver"
+   }
+  ],
+  "tip": "driver ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-passenger",
+  "word": "passenger",
+  "pos": "n.",
+  "ipa": "/passenger/",
+  "thai": "ผู้โดยสาร",
+  "emoji": "🚌",
+  "example": "Please show me the passenger on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องผู้โดยสารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ผู้โดยสาร",
+    "en": "passenger"
+   }
+  ],
+  "tip": "passenger ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-traffic-jam",
+  "word": "traffic jam",
+  "pos": "n.",
+  "ipa": "/traffic jam/",
+  "thai": "รถติด",
+  "emoji": "🚌",
+  "example": "Please show me the traffic jam on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรถติดก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รถติด",
+    "en": "traffic jam"
+   }
+  ],
+  "tip": "traffic jam ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-route",
+  "word": "route",
+  "pos": "n.",
+  "ipa": "/route/",
+  "thai": "เส้นทาง",
+  "emoji": "🚌",
+  "example": "Please show me the route on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเส้นทางก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เส้นทาง",
+    "en": "route"
+   }
+  ],
+  "tip": "route ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-express-bus",
+  "word": "express bus",
+  "pos": "n.",
+  "ipa": "/express bus/",
+  "thai": "รถโดยสารด่วน",
+  "emoji": "🚌",
+  "example": "Please show me the express bus on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรถโดยสารด่วนก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รถโดยสารด่วน",
+    "en": "express bus"
+   }
+  ],
+  "tip": "express bus ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-toll-road",
+  "word": "toll road",
+  "pos": "n.",
+  "ipa": "/toll road/",
+  "thai": "ทางด่วนมีค่าผ่านทาง",
+  "emoji": "🚌",
+  "example": "Please show me the toll road on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องทางด่วนมีค่าผ่านทางก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ทางด่วนมีค่าผ่านทาง",
+    "en": "toll road"
+   }
+  ],
+  "tip": "toll road ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-helmet",
+  "word": "helmet",
+  "pos": "n.",
+  "ipa": "/helmet/",
+  "thai": "หมวกนิรภัย",
+  "emoji": "🚌",
+  "example": "Please show me the helmet on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องหมวกนิรภัยก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "หมวกนิรภัย",
+    "en": "helmet"
+   }
+  ],
+  "tip": "helmet ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-bicycle",
+  "word": "bicycle",
+  "pos": "n.",
+  "ipa": "/bicycle/",
+  "thai": "จักรยาน",
+  "emoji": "🚌",
+  "example": "Please show me the bicycle on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องจักรยานก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "จักรยาน",
+    "en": "bicycle"
+   }
+  ],
+  "tip": "bicycle ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-rideshare",
+  "word": "rideshare",
+  "pos": "n.",
+  "ipa": "/rideshare/",
+  "thai": "รถโดยสารร่วมเดินทาง",
+  "emoji": "🚌",
+  "example": "Please show me the rideshare on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรถโดยสารร่วมเดินทางก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รถโดยสารร่วมเดินทาง",
+    "en": "rideshare"
+   }
+  ],
+  "tip": "rideshare ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-bus-fare",
+  "word": "bus fare",
+  "pos": "n.",
+  "ipa": "/bus fare/",
+  "thai": "ค่าโดยสารรถเมล์",
+  "emoji": "🚌",
+  "example": "Please show me the bus fare on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องค่าโดยสารรถเมล์ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ค่าโดยสารรถเมล์",
+    "en": "bus fare"
+   }
+  ],
+  "tip": "bus fare ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "transport-parking-meter",
+  "word": "parking meter",
+  "pos": "n.",
+  "ipa": "/parking meter/",
+  "thai": "มิเตอร์จอดรถ",
+  "emoji": "🚌",
+  "example": "Please show me the parking meter on this city map.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องมิเตอร์จอดรถก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "มิเตอร์จอดรถ",
+    "en": "parking meter"
+   }
+  ],
+  "tip": "parking meter ใช้ในบริบทนี้: ใช้ถามคนขับหรือเจ้าหน้าที่เรื่องเส้นทางและการเดินทาง",
+  "category": "transport"
+ },
+ {
+  "id": "phone-smartphone",
+  "word": "smartphone",
+  "pos": "n.",
+  "ipa": "/smartphone/",
+  "thai": "สมาร์ตโฟน",
+  "emoji": "📱",
+  "example": "I need help with the smartphone on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสมาร์ตโฟนก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สมาร์ตโฟน",
+    "en": "smartphone"
+   }
+  ],
+  "tip": "smartphone ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-charger",
+  "word": "charger",
+  "pos": "n.",
+  "ipa": "/charger/",
+  "thai": "ที่ชาร์จ",
+  "emoji": "📱",
+  "example": "I need help with the charger on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องที่ชาร์จก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ที่ชาร์จ",
+    "en": "charger"
+   }
+  ],
+  "tip": "charger ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-battery",
+  "word": "battery",
+  "pos": "n.",
+  "ipa": "/battery/",
+  "thai": "แบตเตอรี่",
+  "emoji": "📱",
+  "example": "I need help with the battery on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องแบตเตอรี่ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "แบตเตอรี่",
+    "en": "battery"
+   }
+  ],
+  "tip": "battery ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-screen",
+  "word": "screen",
+  "pos": "n.",
+  "ipa": "/screen/",
+  "thai": "หน้าจอ",
+  "emoji": "📱",
+  "example": "I need help with the screen on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องหน้าจอก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "หน้าจอ",
+    "en": "screen"
+   }
+  ],
+  "tip": "screen ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-password",
+  "word": "password",
+  "pos": "n.",
+  "ipa": "/password/",
+  "thai": "รหัสผ่าน",
+  "emoji": "📱",
+  "example": "I need help with the password on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรหัสผ่านก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รหัสผ่าน",
+    "en": "password"
+   }
+  ],
+  "tip": "password ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-wi-fi",
+  "word": "Wi-Fi",
+  "pos": "n.",
+  "ipa": "/wi-fi/",
+  "thai": "ไวไฟ",
+  "emoji": "📱",
+  "example": "I need help with the Wi-Fi on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องไวไฟก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ไวไฟ",
+    "en": "Wi-Fi"
+   }
+  ],
+  "tip": "Wi-Fi ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-hotspot",
+  "word": "hotspot",
+  "pos": "n.",
+  "ipa": "/hotspot/",
+  "thai": "จุดกระจายสัญญาณ",
+  "emoji": "📱",
+  "example": "I need help with the hotspot on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องจุดกระจายสัญญาณก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "จุดกระจายสัญญาณ",
+    "en": "hotspot"
+   }
+  ],
+  "tip": "hotspot ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-signal",
+  "word": "signal",
+  "pos": "n.",
+  "ipa": "/signal/",
+  "thai": "สัญญาณ",
+  "emoji": "📱",
+  "example": "I need help with the signal on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสัญญาณก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สัญญาณ",
+    "en": "signal"
+   }
+  ],
+  "tip": "signal ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-app",
+  "word": "app",
+  "pos": "n.",
+  "ipa": "/app/",
+  "thai": "แอป",
+  "emoji": "📱",
+  "example": "I need help with the app on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องแอปก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "แอป",
+    "en": "app"
+   }
+  ],
+  "tip": "app ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-browser",
+  "word": "browser",
+  "pos": "n.",
+  "ipa": "/browser/",
+  "thai": "เบราว์เซอร์",
+  "emoji": "📱",
+  "example": "I need help with the browser on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเบราว์เซอร์ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เบราว์เซอร์",
+    "en": "browser"
+   }
+  ],
+  "tip": "browser ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-download",
+  "word": "download",
+  "pos": "n.",
+  "ipa": "/download/",
+  "thai": "การดาวน์โหลด",
+  "emoji": "📱",
+  "example": "I need help with the download on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการดาวน์โหลดก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การดาวน์โหลด",
+    "en": "download"
+   }
+  ],
+  "tip": "download ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-upload",
+  "word": "upload",
+  "pos": "n.",
+  "ipa": "/upload/",
+  "thai": "การอัปโหลด",
+  "emoji": "📱",
+  "example": "I need help with the upload on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการอัปโหลดก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การอัปโหลด",
+    "en": "upload"
+   }
+  ],
+  "tip": "upload ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-data-plan",
+  "word": "data plan",
+  "pos": "n.",
+  "ipa": "/data plan/",
+  "thai": "แพ็กเกจอินเทอร์เน็ต",
+  "emoji": "📱",
+  "example": "I need help with the data plan on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องแพ็กเกจอินเทอร์เน็ตก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "แพ็กเกจอินเทอร์เน็ต",
+    "en": "data plan"
+   }
+  ],
+  "tip": "data plan ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-mobile-data",
+  "word": "mobile data",
+  "pos": "n.",
+  "ipa": "/mobile data/",
+  "thai": "อินเทอร์เน็ตมือถือ",
+  "emoji": "📱",
+  "example": "I need help with the mobile data on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องอินเทอร์เน็ตมือถือก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "อินเทอร์เน็ตมือถือ",
+    "en": "mobile data"
+   }
+  ],
+  "tip": "mobile data ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-sim-card",
+  "word": "SIM card",
+  "pos": "n.",
+  "ipa": "/sim card/",
+  "thai": "ซิมการ์ด",
+  "emoji": "📱",
+  "example": "I need help with the SIM card on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องซิมการ์ดก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ซิมการ์ด",
+    "en": "SIM card"
+   }
+  ],
+  "tip": "SIM card ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-voicemail",
+  "word": "voicemail",
+  "pos": "n.",
+  "ipa": "/voicemail/",
+  "thai": "ข้อความเสียง",
+  "emoji": "📱",
+  "example": "I need help with the voicemail on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องข้อความเสียงก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ข้อความเสียง",
+    "en": "voicemail"
+   }
+  ],
+  "tip": "voicemail ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-text-message",
+  "word": "text message",
+  "pos": "n.",
+  "ipa": "/text message/",
+  "thai": "ข้อความตัวอักษร",
+  "emoji": "📱",
+  "example": "I need help with the text message on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องข้อความตัวอักษรก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ข้อความตัวอักษร",
+    "en": "text message"
+   }
+  ],
+  "tip": "text message ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-missed-call",
+  "word": "missed call",
+  "pos": "n.",
+  "ipa": "/missed call/",
+  "thai": "สายที่ไม่ได้รับ",
+  "emoji": "📱",
+  "example": "I need help with the missed call on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสายที่ไม่ได้รับก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สายที่ไม่ได้รับ",
+    "en": "missed call"
+   }
+  ],
+  "tip": "missed call ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-contact",
+  "word": "contact",
+  "pos": "n.",
+  "ipa": "/contact/",
+  "thai": "รายชื่อผู้ติดต่อ",
+  "emoji": "📱",
+  "example": "I need help with the contact on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรายชื่อผู้ติดต่อก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รายชื่อผู้ติดต่อ",
+    "en": "contact"
+   }
+  ],
+  "tip": "contact ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-ringtone",
+  "word": "ringtone",
+  "pos": "n.",
+  "ipa": "/ringtone/",
+  "thai": "เสียงเรียกเข้า",
+  "emoji": "📱",
+  "example": "I need help with the ringtone on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเสียงเรียกเข้าก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เสียงเรียกเข้า",
+    "en": "ringtone"
+   }
+  ],
+  "tip": "ringtone ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-settings",
+  "word": "settings",
+  "pos": "n.",
+  "ipa": "/settings/",
+  "thai": "การตั้งค่า",
+  "emoji": "📱",
+  "example": "I need help with the settings on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการตั้งค่าก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การตั้งค่า",
+    "en": "settings"
+   }
+  ],
+  "tip": "settings ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-username",
+  "word": "username",
+  "pos": "n.",
+  "ipa": "/username/",
+  "thai": "ชื่อผู้ใช้",
+  "emoji": "📱",
+  "example": "I need help with the username on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องชื่อผู้ใช้ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ชื่อผู้ใช้",
+    "en": "username"
+   }
+  ],
+  "tip": "username ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-microphone",
+  "word": "microphone",
+  "pos": "n.",
+  "ipa": "/microphone/",
+  "thai": "ไมโครโฟน",
+  "emoji": "📱",
+  "example": "I need help with the microphone on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องไมโครโฟนก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ไมโครโฟน",
+    "en": "microphone"
+   }
+  ],
+  "tip": "microphone ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-headphones",
+  "word": "headphones",
+  "pos": "n.",
+  "ipa": "/headphones/",
+  "thai": "หูฟัง",
+  "emoji": "📱",
+  "example": "I need help with the headphones on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องหูฟังก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "หูฟัง",
+    "en": "headphones"
+   }
+  ],
+  "tip": "headphones ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "phone-video-call",
+  "word": "video call",
+  "pos": "n.",
+  "ipa": "/video call/",
+  "thai": "วิดีโอคอล",
+  "emoji": "📱",
+  "example": "I need help with the video call on my phone today.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องวิดีโอคอลก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "วิดีโอคอล",
+    "en": "video call"
+   }
+  ],
+  "tip": "video call ใช้ในบริบทนี้: ใช้ขอความช่วยเหลือเกี่ยวกับมือถือหรือการเชื่อมต่อ",
+  "category": "phone"
+ },
+ {
+  "id": "bank-account",
+  "word": "account",
+  "pos": "n.",
+  "ipa": "/account/",
+  "thai": "บัญชี",
+  "emoji": "🏦",
+  "example": "I would like to ask about the account at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องบัญชีก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "บัญชี",
+    "en": "account"
+   }
+  ],
+  "tip": "account ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-atm",
+  "word": "ATM",
+  "pos": "n.",
+  "ipa": "/atm/",
+  "thai": "ตู้เอทีเอ็ม",
+  "emoji": "🏦",
+  "example": "I would like to ask about the ATM at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องตู้เอทีเอ็มก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ตู้เอทีเอ็ม",
+    "en": "ATM"
+   }
+  ],
+  "tip": "ATM ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-withdrawal",
+  "word": "withdrawal",
+  "pos": "n.",
+  "ipa": "/withdrawal/",
+  "thai": "การถอนเงิน",
+  "emoji": "🏦",
+  "example": "I would like to ask about the withdrawal at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการถอนเงินก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การถอนเงิน",
+    "en": "withdrawal"
+   }
+  ],
+  "tip": "withdrawal ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-balance",
+  "word": "balance",
+  "pos": "n.",
+  "ipa": "/balance/",
+  "thai": "ยอดเงินคงเหลือ",
+  "emoji": "🏦",
+  "example": "I would like to ask about the balance at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องยอดเงินคงเหลือก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ยอดเงินคงเหลือ",
+    "en": "balance"
+   }
+  ],
+  "tip": "balance ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-bank-transfer",
+  "word": "bank transfer",
+  "pos": "n.",
+  "ipa": "/bank transfer/",
+  "thai": "การโอนเงินผ่านธนาคาร",
+  "emoji": "🏦",
+  "example": "I would like to ask about the bank transfer at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการโอนเงินผ่านธนาคารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การโอนเงินผ่านธนาคาร",
+    "en": "bank transfer"
+   }
+  ],
+  "tip": "bank transfer ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-bank-fee",
+  "word": "bank fee",
+  "pos": "n.",
+  "ipa": "/bank fee/",
+  "thai": "ค่าธรรมเนียมธนาคาร",
+  "emoji": "🏦",
+  "example": "I would like to ask about the bank fee at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องค่าธรรมเนียมธนาคารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ค่าธรรมเนียมธนาคาร",
+    "en": "bank fee"
+   }
+  ],
+  "tip": "bank fee ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-exchange-rate",
+  "word": "exchange rate",
+  "pos": "n.",
+  "ipa": "/exchange rate/",
+  "thai": "อัตราแลกเปลี่ยน",
+  "emoji": "🏦",
+  "example": "I would like to ask about the exchange rate at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องอัตราแลกเปลี่ยนก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "อัตราแลกเปลี่ยน",
+    "en": "exchange rate"
+   }
+  ],
+  "tip": "exchange rate ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-loan",
+  "word": "loan",
+  "pos": "n.",
+  "ipa": "/loan/",
+  "thai": "เงินกู้",
+  "emoji": "🏦",
+  "example": "I would like to ask about the loan at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเงินกู้ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เงินกู้",
+    "en": "loan"
+   }
+  ],
+  "tip": "loan ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-interest",
+  "word": "interest",
+  "pos": "n.",
+  "ipa": "/interest/",
+  "thai": "ดอกเบี้ย",
+  "emoji": "🏦",
+  "example": "I would like to ask about the interest at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องดอกเบี้ยก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ดอกเบี้ย",
+    "en": "interest"
+   }
+  ],
+  "tip": "interest ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-statement",
+  "word": "statement",
+  "pos": "n.",
+  "ipa": "/statement/",
+  "thai": "รายการเดินบัญชี",
+  "emoji": "🏦",
+  "example": "I would like to ask about the statement at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรายการเดินบัญชีก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รายการเดินบัญชี",
+    "en": "statement"
+   }
+  ],
+  "tip": "statement ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-pin",
+  "word": "PIN",
+  "pos": "n.",
+  "ipa": "/pin/",
+  "thai": "รหัส PIN",
+  "emoji": "🏦",
+  "example": "I would like to ask about the PIN at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรหัส PINก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รหัส PIN",
+    "en": "PIN"
+   }
+  ],
+  "tip": "PIN ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-branch",
+  "word": "branch",
+  "pos": "n.",
+  "ipa": "/branch/",
+  "thai": "สาขาธนาคาร",
+  "emoji": "🏦",
+  "example": "I would like to ask about the branch at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสาขาธนาคารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สาขาธนาคาร",
+    "en": "branch"
+   }
+  ],
+  "tip": "branch ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-teller",
+  "word": "teller",
+  "pos": "n.",
+  "ipa": "/teller/",
+  "thai": "พนักงานธนาคาร",
+  "emoji": "🏦",
+  "example": "I would like to ask about the teller at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องพนักงานธนาคารก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "พนักงานธนาคาร",
+    "en": "teller"
+   }
+  ],
+  "tip": "teller ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-check",
+  "word": "check",
+  "pos": "n.",
+  "ipa": "/check/",
+  "thai": "เช็ค",
+  "emoji": "🏦",
+  "example": "I would like to ask about the check at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเช็คก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เช็ค",
+    "en": "check"
+   }
+  ],
+  "tip": "check ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-savings-account",
+  "word": "savings account",
+  "pos": "n.",
+  "ipa": "/savings account/",
+  "thai": "บัญชีออมทรัพย์",
+  "emoji": "🏦",
+  "example": "I would like to ask about the savings account at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องบัญชีออมทรัพย์ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "บัญชีออมทรัพย์",
+    "en": "savings account"
+   }
+  ],
+  "tip": "savings account ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-current-account",
+  "word": "current account",
+  "pos": "n.",
+  "ipa": "/current account/",
+  "thai": "บัญชีกระแสรายวัน",
+  "emoji": "🏦",
+  "example": "I would like to ask about the current account at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องบัญชีกระแสรายวันก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "บัญชีกระแสรายวัน",
+    "en": "current account"
+   }
+  ],
+  "tip": "current account ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-mortgage",
+  "word": "mortgage",
+  "pos": "n.",
+  "ipa": "/mortgage/",
+  "thai": "สินเชื่อบ้าน",
+  "emoji": "🏦",
+  "example": "I would like to ask about the mortgage at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสินเชื่อบ้านก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สินเชื่อบ้าน",
+    "en": "mortgage"
+   }
+  ],
+  "tip": "mortgage ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-currency",
+  "word": "currency",
+  "pos": "n.",
+  "ipa": "/currency/",
+  "thai": "สกุลเงิน",
+  "emoji": "🏦",
+  "example": "I would like to ask about the currency at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสกุลเงินก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สกุลเงิน",
+    "en": "currency"
+   }
+  ],
+  "tip": "currency ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-coin",
+  "word": "coin",
+  "pos": "n.",
+  "ipa": "/coin/",
+  "thai": "เหรียญ",
+  "emoji": "🏦",
+  "example": "I would like to ask about the coin at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเหรียญก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เหรียญ",
+    "en": "coin"
+   }
+  ],
+  "tip": "coin ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-banknote",
+  "word": "banknote",
+  "pos": "n.",
+  "ipa": "/banknote/",
+  "thai": "ธนบัตร",
+  "emoji": "🏦",
+  "example": "I would like to ask about the banknote at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องธนบัตรก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ธนบัตร",
+    "en": "banknote"
+   }
+  ],
+  "tip": "banknote ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-online-banking",
+  "word": "online banking",
+  "pos": "n.",
+  "ipa": "/online banking/",
+  "thai": "ธนาคารออนไลน์",
+  "emoji": "🏦",
+  "example": "I would like to ask about the online banking at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องธนาคารออนไลน์ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ธนาคารออนไลน์",
+    "en": "online banking"
+   }
+  ],
+  "tip": "online banking ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-transaction",
+  "word": "transaction",
+  "pos": "n.",
+  "ipa": "/transaction/",
+  "thai": "ธุรกรรม",
+  "emoji": "🏦",
+  "example": "I would like to ask about the transaction at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องธุรกรรมก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ธุรกรรม",
+    "en": "transaction"
+   }
+  ],
+  "tip": "transaction ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-transfer-limit",
+  "word": "transfer limit",
+  "pos": "n.",
+  "ipa": "/transfer limit/",
+  "thai": "วงเงินโอน",
+  "emoji": "🏦",
+  "example": "I would like to ask about the transfer limit at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องวงเงินโอนก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "วงเงินโอน",
+    "en": "transfer limit"
+   }
+  ],
+  "tip": "transfer limit ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-cash-withdrawal",
+  "word": "cash withdrawal",
+  "pos": "n.",
+  "ipa": "/cash withdrawal/",
+  "thai": "การถอนเงินสด",
+  "emoji": "🏦",
+  "example": "I would like to ask about the cash withdrawal at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการถอนเงินสดก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การถอนเงินสด",
+    "en": "cash withdrawal"
+   }
+  ],
+  "tip": "cash withdrawal ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "bank-account-holder",
+  "word": "account holder",
+  "pos": "n.",
+  "ipa": "/account holder/",
+  "thai": "เจ้าของบัญชี",
+  "emoji": "🏦",
+  "example": "I would like to ask about the account holder at the bank.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเจ้าของบัญชีก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เจ้าของบัญชี",
+    "en": "account holder"
+   }
+  ],
+  "tip": "account holder ใช้ในบริบทนี้: ใช้สอบถามพนักงานธนาคารก่อนทำธุรกรรม",
+  "category": "bank"
+ },
+ {
+  "id": "emergency-emergency",
+  "word": "emergency",
+  "pos": "n.",
+  "ipa": "/emergency/",
+  "thai": "เหตุฉุกเฉิน",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the emergency right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเหตุฉุกเฉินก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เหตุฉุกเฉิน",
+    "en": "emergency"
+   }
+  ],
+  "tip": "emergency ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-ambulance",
+  "word": "ambulance",
+  "pos": "n.",
+  "ipa": "/ambulance/",
+  "thai": "รถพยาบาล",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the ambulance right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องรถพยาบาลก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "รถพยาบาล",
+    "en": "ambulance"
+   }
+  ],
+  "tip": "ambulance ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-firefighter",
+  "word": "firefighter",
+  "pos": "n.",
+  "ipa": "/firefighter/",
+  "thai": "นักดับเพลิง",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the firefighter right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องนักดับเพลิงก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "นักดับเพลิง",
+    "en": "firefighter"
+   }
+  ],
+  "tip": "firefighter ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-police-officer",
+  "word": "police officer",
+  "pos": "n.",
+  "ipa": "/police officer/",
+  "thai": "เจ้าหน้าที่ตำรวจ",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the police officer right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องเจ้าหน้าที่ตำรวจก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "เจ้าหน้าที่ตำรวจ",
+    "en": "police officer"
+   }
+  ],
+  "tip": "police officer ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-fire-extinguisher",
+  "word": "fire extinguisher",
+  "pos": "n.",
+  "ipa": "/fire extinguisher/",
+  "thai": "ถังดับเพลิง",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the fire extinguisher right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องถังดับเพลิงก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ถังดับเพลิง",
+    "en": "fire extinguisher"
+   }
+  ],
+  "tip": "fire extinguisher ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-first-aid",
+  "word": "first aid",
+  "pos": "n.",
+  "ipa": "/first aid/",
+  "thai": "การปฐมพยาบาล",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the first aid right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการปฐมพยาบาลก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การปฐมพยาบาล",
+    "en": "first aid"
+   }
+  ],
+  "tip": "first aid ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-help-line",
+  "word": "help line",
+  "pos": "n.",
+  "ipa": "/help line/",
+  "thai": "สายด่วนขอความช่วยเหลือ",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the help line right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสายด่วนขอความช่วยเหลือก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สายด่วนขอความช่วยเหลือ",
+    "en": "help line"
+   }
+  ],
+  "tip": "help line ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-danger",
+  "word": "danger",
+  "pos": "n.",
+  "ipa": "/danger/",
+  "thai": "อันตราย",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the danger right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องอันตรายก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "อันตราย",
+    "en": "danger"
+   }
+  ],
+  "tip": "danger ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-missing-person",
+  "word": "missing person",
+  "pos": "n.",
+  "ipa": "/missing person/",
+  "thai": "บุคคลสูญหาย",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the missing person right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องบุคคลสูญหายก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "บุคคลสูญหาย",
+    "en": "missing person"
+   }
+  ],
+  "tip": "missing person ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-accident",
+  "word": "accident",
+  "pos": "n.",
+  "ipa": "/accident/",
+  "thai": "อุบัติเหตุ",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the accident right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องอุบัติเหตุก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "อุบัติเหตุ",
+    "en": "accident"
+   }
+  ],
+  "tip": "accident ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-fire",
+  "word": "fire",
+  "pos": "n.",
+  "ipa": "/fire/",
+  "thai": "ไฟไหม้",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the fire right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องไฟไหม้ก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ไฟไหม้",
+    "en": "fire"
+   }
+  ],
+  "tip": "fire ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-flood",
+  "word": "flood",
+  "pos": "n.",
+  "ipa": "/flood/",
+  "thai": "น้ำท่วม",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the flood right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องน้ำท่วมก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "น้ำท่วม",
+    "en": "flood"
+   }
+  ],
+  "tip": "flood ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-earthquake",
+  "word": "earthquake",
+  "pos": "n.",
+  "ipa": "/earthquake/",
+  "thai": "แผ่นดินไหว",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the earthquake right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องแผ่นดินไหวก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "แผ่นดินไหว",
+    "en": "earthquake"
+   }
+  ],
+  "tip": "earthquake ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-storm",
+  "word": "storm",
+  "pos": "n.",
+  "ipa": "/storm/",
+  "thai": "พายุ",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the storm right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องพายุก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "พายุ",
+    "en": "storm"
+   }
+  ],
+  "tip": "storm ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-shelter",
+  "word": "shelter",
+  "pos": "n.",
+  "ipa": "/shelter/",
+  "thai": "ที่หลบภัย",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the shelter right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องที่หลบภัยก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ที่หลบภัย",
+    "en": "shelter"
+   }
+  ],
+  "tip": "shelter ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-rescue",
+  "word": "rescue",
+  "pos": "n.",
+  "ipa": "/rescue/",
+  "thai": "การช่วยชีวิต",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the rescue right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการช่วยชีวิตก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การช่วยชีวิต",
+    "en": "rescue"
+   }
+  ],
+  "tip": "rescue ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-emergency-exit",
+  "word": "emergency exit",
+  "pos": "n.",
+  "ipa": "/emergency exit/",
+  "thai": "ทางออกฉุกเฉิน",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the emergency exit right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องทางออกฉุกเฉินก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ทางออกฉุกเฉิน",
+    "en": "emergency exit"
+   }
+  ],
+  "tip": "emergency exit ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-hotline",
+  "word": "hotline",
+  "pos": "n.",
+  "ipa": "/hotline/",
+  "thai": "สายด่วน",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the hotline right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสายด่วนก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สายด่วน",
+    "en": "hotline"
+   }
+  ],
+  "tip": "hotline ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-location",
+  "word": "location",
+  "pos": "n.",
+  "ipa": "/location/",
+  "thai": "ตำแหน่งที่ตั้ง",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the location right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องตำแหน่งที่ตั้งก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ตำแหน่งที่ตั้ง",
+    "en": "location"
+   }
+  ],
+  "tip": "location ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-safety",
+  "word": "safety",
+  "pos": "n.",
+  "ipa": "/safety/",
+  "thai": "ความปลอดภัย",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the safety right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องความปลอดภัยก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ความปลอดภัย",
+    "en": "safety"
+   }
+  ],
+  "tip": "safety ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-injured-person",
+  "word": "injured person",
+  "pos": "n.",
+  "ipa": "/injured person/",
+  "thai": "ผู้บาดเจ็บ",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the injured person right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องผู้บาดเจ็บก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ผู้บาดเจ็บ",
+    "en": "injured person"
+   }
+  ],
+  "tip": "injured person ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-theft",
+  "word": "theft",
+  "pos": "n.",
+  "ipa": "/theft/",
+  "thai": "การโจรกรรม",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the theft right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องการโจรกรรมก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "การโจรกรรม",
+    "en": "theft"
+   }
+  ],
+  "tip": "theft ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-smoke-alarm",
+  "word": "smoke alarm",
+  "pos": "n.",
+  "ipa": "/smoke alarm/",
+  "thai": "สัญญาณเตือนควัน",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the smoke alarm right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องสัญญาณเตือนควันก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "สัญญาณเตือนควัน",
+    "en": "smoke alarm"
+   }
+  ],
+  "tip": "smoke alarm ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-power-outage",
+  "word": "power outage",
+  "pos": "n.",
+  "ipa": "/power outage/",
+  "thai": "ไฟฟ้าดับ",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the power outage right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องไฟฟ้าดับก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ไฟฟ้าดับ",
+    "en": "power outage"
+   }
+  ],
+  "tip": "power outage ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ },
+ {
+  "id": "emergency-rescue-team",
+  "word": "rescue team",
+  "pos": "n.",
+  "ipa": "/rescue team/",
+  "thai": "ทีมกู้ภัย",
+  "emoji": "🆘",
+  "example": "Please tell the operator about the rescue team right away.",
+  "exampleThai": "ฉันอยากสอบถามเรื่องทีมกู้ภัยก่อนตัดสินใจ",
+  "keyVocab": [
+   {
+    "thai": "ทีมกู้ภัย",
+    "en": "rescue team"
+   }
+  ],
+  "tip": "rescue team ใช้ในบริบทนี้: ใช้แจ้งเหตุและขอความช่วยเหลืออย่างรวดเร็ว",
+  "category": "emergency"
+ }
+]
