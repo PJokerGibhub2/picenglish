@@ -109,10 +109,21 @@ export async function meView(root) {
         const keys = await caches.keys();
         await Promise.all(keys.filter((key) => key.startsWith('pangpood-')).map((key) => caches.delete(key)));
       }
-      const registration = 'serviceWorker' in navigator ? await navigator.serviceWorker.getRegistration() : null;
-      if (registration) { await registration.update().catch(() => {}); await registration.unregister(); }
+      if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        for (const reg of regs) {
+          // ปลดเฉพาะ service worker ที่คุมโฟลเดอร์ v2 (ไม่แตะของ V1)
+          if (reg.scope.includes('/v2/')) {
+            await reg.update().catch(() => {});
+            await reg.unregister().catch(() => {});
+          }
+        }
+      }
       status.textContent = 'กำลังเปิดแอปเวอร์ชันล่าสุด…';
-      location.reload();
+      // ใส่ query กันแคช: URL ใหม่จะไม่ถูก service worker เก่าตอบจาก cache
+      const url = new URL(location.href);
+      url.search = '?v=' + Date.now();
+      location.replace(url.href);
     } catch (err) { status.textContent = `อัปเดตไม่สำเร็จ: ${err.message || err}`; button.disabled = false; }
   };
   const updateStatus = h('div', { class: 'muted small', 'aria-live': 'polite' });
